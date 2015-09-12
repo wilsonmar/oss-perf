@@ -18,9 +18,11 @@ they do not report delays caused by JavaScript client-rendering.
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
 
-This chart shows that JMeter under-reorts response times.
+This chart shows how significantly JMeter under-reorts response times.
 
 ## This repo
+Contents of this repo was used to generate statistics for this chart.
+
 This repo contains assets used to measure "true" response times 
 
 The best of both worlds.
