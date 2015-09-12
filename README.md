@@ -16,24 +16,35 @@ The problem is that because performance testing tools focus on *file transfer ti
 they do not report time for JavaScript client-rendering,
 which grows more over time as more work is being done client-side over time.
 
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
-<img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
-
-This chart shows how significantly <strong>JMeter can under-report response times</strong>.
-
 ## Under load
 
-Contents of this repo was used to generate statistics for not just
-
+Contents of this repo was used to generate statistics such as this:
 
 <img alt="truperf_load" src="https://cloud.githubusercontent.com/assets/300046/9831874/f6a32c6e-591c-11e5-949b-607fcd2ead6b.png">
 
-The top edge of the blue triagle illustrates the ramp-up of users all communicating with the same server.
+The top edge of the blue triagle illustrates the ramp-up of 100 users all communicating with the same server.
 TODO: Make axis numbers blue as well.
 
-The users are distributed evenly among different browsers and the JMeter client emulator.
+Virtual users in the run are distributed evenly among different browsers and the JMeter client emulator.
 
-At maximum load, 
+On the left side at the beginning of the run there is some variation in response time.
+
+On the right side when a large number of users are working all at once, response time increases due to several factors.
+One is the *server* makes some users wait in the queue while it processes other users.
+TODO: Chart separting sever vs. network vs. client time.
+For some reason, Firefox is more stressed than Chrome when servers are delayed
+during periods of maximum load.
+
+
+## Bar chart
+This bar chart shows statistics on the range of response times:
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
+<img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
+
+
+
+This chart shows how significantly <strong>JMeter can under-report response times</strong>.
 
 ## This repo
 Contents of this repo was used to generate statistics for the charts above.
