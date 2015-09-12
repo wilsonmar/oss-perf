@@ -14,7 +14,7 @@ typically using different programming languages and different tools.
 
 The problem is that because performance testing tools focus on *file transfer time*,
 they do not report time for JavaScript client-rendering,
-which grows more over time as more work is being done client-side over time.
+which grows more over time as more work is being done client-side.
 
 ## Under load
 
