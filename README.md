@@ -20,13 +20,32 @@ they do not report delays caused by JavaScript client-rendering.
 
 This chart shows how significantly <strong>JMeter under-reorts response times</strong>.
 
-## This repo
+## Under load
 Contents of this repo was used to generate statistics for the chart agove.
 
-This repo contains assets used to measure "true" response times 
+<img alt="truperf_load" src="https://cloud.githubusercontent.com/assets/300046/9831874/f6a32c6e-591c-11e5-949b-607fcd2ead6b.png">
+
+The top edge of the blue triagle illustrates the ramp-up of users all communicating with the same server.
+TODO: Make axis numbers blue as well.
+
+The users are distributed evenly among different browsers and the JMeter client emulator.
+
+At maximum load, 
+
+## This repo
+This repo contains assets used to measure "true" response times.
+
+0. *BrowserMob proxy* captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several *precise* points in time that can be measured:
+
+ <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
+
 
 
 Once installedm run.
 
 Runs of modern browsers generate HAR files.
+
+<hr size=5>
+## Actions
+0. HP TruClient
 
