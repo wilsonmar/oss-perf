@@ -1,7 +1,6 @@
-# true-perf-under-load
 An example of how to measure the true response time observed by real users while generating artificial loads using JMeter, Selenium, Appium, BrowserMobProxy, etc.
 
-## The annoyance
+## Introduction: The annoyance
 There are two types of scripts that pretend to be internet browsers and mobile devices.
 
   * One type of script was created by "sniffing" the pattern of bytes traveling across the network
@@ -18,6 +17,8 @@ they do not report delays caused by JavaScript client-rendering.
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
+
+This chart shows that JMeter under-reorts response times.
 
 ## This repo
 This repo contains assets used to measure "true" response times 
