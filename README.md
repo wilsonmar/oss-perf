@@ -12,16 +12,19 @@ There are two types of scripts that pretend to be internet browsers and mobile d
 The dilemma is that these are two different types of scripting efforts, 
 typically using different programming languages and different tools.
 
-The problem is that because performance testing tools focus on file transfers,
-they do not report delays caused by JavaScript client-rendering.
+The problem is that because performance testing tools focus on *file transfer time*,
+they do not report time for JavaScript client-rendering,
+which grows more over time as more work is being done client-side over time.
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
 
-This chart shows how significantly <strong>JMeter under-reorts response times</strong>.
+This chart shows how significantly <strong>JMeter can under-report response times</strong>.
 
 ## Under load
-Contents of this repo was used to generate statistics for the chart agove.
+
+Contents of this repo was used to generate statistics for not just
+
 
 <img alt="truperf_load" src="https://cloud.githubusercontent.com/assets/300046/9831874/f6a32c6e-591c-11e5-949b-607fcd2ead6b.png">
 
@@ -33,6 +36,8 @@ The users are distributed evenly among different browsers and the JMeter client 
 At maximum load, 
 
 ## This repo
+Contents of this repo was used to generate statistics for the charts above.
+
 This repo contains assets used to measure "true" response times.
 
 0. *BrowserMob proxy* captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several *precise* points in time that can be measured:
