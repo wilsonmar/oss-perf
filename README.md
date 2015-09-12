@@ -56,16 +56,16 @@ initiates the various programs listed below on a schedule or when a build is req
 
 0. **JMeter**
 
-0. **BrowserMob proxy** 
-captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
-
- <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
-
 0. **Selenium WebDriver**
 controls desktop browsers as if humans were operating the browser.
 
 0. **Appium**
 controls native mobile smart phones as if humans were operating it.
+
+0. **BrowserMob proxy** 
+captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
+
+ <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
 
 
 0. **Netlimiter** simulaties mobile network bandwidth on top of JMeter.
