@@ -44,7 +44,8 @@ This bar chart shows statistics on the range of response times:
 
 This chart shows how significantly <strong>JMeter can under-report response times</strong>.
 TODO: Investigate conflicting results between 2 charts (Chrome vs. Firefox).
-
+TODO: Add Microsoft IE and Edge
+TODO: Add HP TruClient?
 
 ## This repo
 The contents of this repo was used to generate statistics for the charts above.
@@ -69,6 +70,4 @@ captures network traffic into HTTP Archive Report (HAR) files containing measure
 0. **Netlimiter** simulaties mobile network bandwidth on top of JMeter.
 
 <hr size=5>
-## Actions
-0. HP TruClient
 
