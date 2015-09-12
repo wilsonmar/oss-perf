@@ -47,9 +47,7 @@ TODO: Investigate conflicting results between 2 charts (Chrome vs. Firefox).
 
 
 ## This repo
-Contents of this repo was used to generate statistics for the charts above.
-
-This repo contains assets used to measure "true" response times.
+The contents of this repo was used to generate statistics for the charts above.
 
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
