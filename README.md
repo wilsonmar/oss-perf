@@ -42,24 +42,33 @@ This bar chart shows statistics on the range of response times:
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
 
-
-
 This chart shows how significantly <strong>JMeter can under-report response times</strong>.
+TODO: Investigate conflicting results between 2 charts (Chrome vs. Firefox).
+
 
 ## This repo
 Contents of this repo was used to generate statistics for the charts above.
 
 This repo contains assets used to measure "true" response times.
 
-0. *BrowserMob proxy* captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several *precise* points in time that can be measured:
+0. **Jenkins** 
+initiates the various programs listed below on a schedule or when a build is requested.
+
+0. **JMeter**
+
+0. **BrowserMob proxy** 
+captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
 
  <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
 
+0. **Selenium WebDriver**
+controls desktop browsers as if humans were operating the browser.
+
+0. **Appium**
+controls native mobile smart phones as if humans were operating it.
 
 
-Once installedm run.
-
-Runs of modern browsers generate HAR files.
+0. **Netlimiter** simulaties mobile network bandwidth on top of JMeter.
 
 <hr size=5>
 ## Actions
