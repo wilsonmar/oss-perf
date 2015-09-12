@@ -56,10 +56,10 @@ initiates the various programs listed below on a schedule or when a build is req
 0. **JMeter**
 
 0. **Selenium WebDriver**
-controls desktop browsers as if humans were operating the browser.
+controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
 
 0. **Appium**
-controls native mobile smart phones as if humans were operating it.
+controls native mobile smart phones as if humans were swiping and tapping the screen.
 
 0. **BrowserMob proxy** 
 captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
