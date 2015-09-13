@@ -36,10 +36,13 @@ Virtual users in the run are distributed evenly among different browsers and the
 On the left side at the beginning of the run there is some variation in response time.
 
 On the right side when a large number of users are working all at once, response time increases due to several factors.
-One is the *server* makes some users wait in the queue while it processes other users.
-TODO: Chart separting sever vs. network vs. client time.
-For some reason, Firefox is more stressed than Chrome when servers are delayed
+One is the **server** makes some users wait in the queue while it processes other users.
+TODO: Chart separting server vs. network vs. client time.
+
+It is yet unknown why Firefox is more stressed than Chrome when servers are delayed
 during periods of maximum load.
+
+(And Chrome takes more memory than Firefox)
 
 
 ## Bar chart
