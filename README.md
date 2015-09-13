@@ -1,6 +1,6 @@
 An example of how to measure the true response time observed by real users while generating artificial loads using JMeter, Selenium, Appium, BrowserMobProxy, etc.
 
-## Introduction: The annoyance
+## Introduction
 There are several types of scripts that pretend to be internet browsers and mobile devices:
 
   * One type of script is created from "sniffing" the pattern of bytes traveling across the network
