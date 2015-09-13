@@ -88,7 +88,7 @@ into a common location with a common date format.
 
 0. **Elasticsearch** combines and indexes logs from several sources.
 
-0. **Kibana** displays dashboards.
+0. **Kibana** displays dashboards from filtered data indexed on several dimensions.
 
 <hr size="3">
 ## App Under Test source code
