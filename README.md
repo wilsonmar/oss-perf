@@ -59,6 +59,8 @@ TODO: Add HP TruClient?
 ## This repo
 The contents of this repo was used to generate statistics for the charts above.
 
+<img alt="jmeter_with_selenium" src="https://cloud.githubusercontent.com/assets/300046/9837452/2b950fdc-59f4-11e5-9bf1-70521aec0cae.png">
+
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
 Selenium and JMeter load generators are slave nodes to Jenkins.
