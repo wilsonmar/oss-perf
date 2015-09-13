@@ -83,7 +83,8 @@ captures network traffic into HTTP Archive Report (HAR) files containing measure
 
 0. **Netlimiter** works with JMeter to simulate how network bandwidth impediments impact response times.
 
-0. **Logstash** collects logs.
+0. **Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
+into a common location with a common date format.
 
 0. **Elasticsearch** combines and indexes logs from several sources.
 
