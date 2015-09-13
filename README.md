@@ -82,7 +82,7 @@ captures network traffic into HTTP Archive Report (HAR) files containing measure
  <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
 
 
-0. **Netlimiter** simulaties mobile network bandwidth on top of JMeter.
+0. **Netlimiter** simulates mobile network bandwidth on top of JMeter.
 
 <hr size=5>
 Contact information for authors of this repop:
