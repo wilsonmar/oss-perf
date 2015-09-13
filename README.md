@@ -23,7 +23,7 @@ Contents of this repo was used to generate statistics such as this:
 <img alt="truperf_load" src="https://cloud.githubusercontent.com/assets/300046/9831874/f6a32c6e-591c-11e5-949b-607fcd2ead6b.png">
 
 The top edge of the blue triagle illustrates the ramp-up of 100 users all communicating with the same server.
-TODO: Make axis numbers blue as well.
+TODO: Make User Load axis numbers blue as well.
 
 Virtual users in the run are distributed evenly among different browsers and the JMeter client emulator.
 
@@ -52,8 +52,12 @@ The contents of this repo was used to generate statistics for the charts above.
 
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
+Selenium and JMeter load generators are slave nodes to Jenkins.
 
-0. **JMeter**
+0. **JMeter** scripts
+ramp up load on servers using less test server resources
+than Selenium scripts because they do not maintain a copy of the DOM
+of each user.
 
 0. **Selenium WebDriver**
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
@@ -70,4 +74,10 @@ captures network traffic into HTTP Archive Report (HAR) files containing measure
 0. **Netlimiter** simulaties mobile network bandwidth on top of JMeter.
 
 <hr size=5>
+Contact information for authors of this repop:
 
+Kranthi Paidi, @kkpaidi, 
+https://www.linkedin.com/pub/kranthi-paidi/1a/b62/758
+
+Wilson Mar, wilsonmar at gmail, 310.320-7878
+https://www.linkedin.com/in/wilsonmar
