@@ -1,20 +1,26 @@
 An example of how to measure the true response time observed by real users while generating artificial loads using JMeter, Selenium, Appium, BrowserMobProxy, etc.
 
 ## Introduction: The annoyance
-There are two types of scripts that pretend to be internet browsers and mobile devices.
+There are several types of scripts that pretend to be internet browsers and mobile devices:
 
-  * One type of script was created by "sniffing" the pattern of bytes traveling across the network
+  * One type of script is created from "sniffing" the pattern of bytes traveling across the network
     (JMeter, LoadRunner C-scripts, etc. are in this category)
 
-  * the other type of script was created by pretending to be someone typing and moving the mouse around the screen
+  * the other type of script (called UI scripts)
+  is created by pretending to be someone typing and moving the mouse around the screen
     (Selenium, Appium, QTP/UFT, TruClient, are in this category)
 
-The dilemma is that these are two different types of scripting efforts, 
-typically using different programming languages and different tools.
+  * a third type of script (called "headless" API scripts)
+  is created by emulating calls programs make to other programs.
 
-The problem is that because performance testing tools focus on *file transfer time*,
-they do not report time for JavaScript client-rendering,
+The dilemma is that these are different types of scripting efforts, 
+using different programming languages and different tools,
+and thus by different people in different groups that don't necessarily talk with each other.
+
+The problem is that because performance testing tools focus on **file transfer time**,
+they cannot report time for JavaScript client-rendering,
 which grows more over time as more work is being done client-side.
+
 
 ## Under load
 
