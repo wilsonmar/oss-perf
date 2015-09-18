@@ -91,9 +91,9 @@ user:
   Mobile Device Marketing Name (such as "Galaxy S5") are a superset of the 
   Mobile Device Info with values such as:
   
-    * Samsung SM-G900F Galaxy S5 (Samsung benchmark international model)
-    * Samsung SM-G900V Galaxy S5 (US carrier Verizon with non-Samsung firmware)
-    * Samsung SM-G900P Galaxy S5 (US carrier Sprint with Samsung firmware)
+      * Samsung SM-G900F Galaxy S5 (Samsung benchmark international model)
+      * Samsung SM-G900V Galaxy S5 (US carrier Verizon with non-Samsung firmware)
+      * Samsung SM-G900P Galaxy S5 (US carrier Sprint with Samsung firmware)
 
   The difference between 41 individual models of just the Galaxy S5 are explained at
   http://androidforums.com/threads/41-galaxy-s5-models-dummies-guide.892162/
