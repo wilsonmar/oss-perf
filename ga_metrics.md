@@ -28,7 +28,8 @@ Import the ** Site Performance Dashboard** by Justin Cutroni:
   1. Select the GA account.
   1. Click the blue Create button.
   
-## Site Speed Metrics
+### Site Speed Metrics
+Metrics most relevant to site speed include:
 
 * Avg. Page Load Time (Secs)
 * Page Load Time by Browser
@@ -37,6 +38,25 @@ Import the ** Site Performance Dashboard** by Justin Cutroni:
 
 * Avg. Server Response Time
 * Avg. Domain Lookup Time
+
+### Speed related Metrics
+Metrics most relevant to site speed include:
+
+* **Active Users** (count)
+  have impact on the amount of memory consumed to maintain "state" of each user logged in the system.
+
+* **New Users** (count)
+  have impact on the load on **registration** functionality which involves much database updates.
+
+* Sessions (count)
+
+* **Avg. Session duration**
+  may be good or bad depending on whether tha app aims to keep users around (to view more ads)
+  or aims to make it easier and faster to get work done. 
+
+* **Screens / Session** 
+  speaks to the **complexity** of the application being monitored.
+
 
 ## Anomalies
 First use of statistic may require some configuration, such as **timeouts**
