@@ -2,7 +2,7 @@ This page provides a tutorial on the use of Google Analytics (abbreviated to "GA
 from the viewpoint of site **speed** to ensure that sites operate 
 quickly enough for customer satistifaction and user productivity.
 Statistics on **user abandonment** and
-[Crashes and Exceptions](#Crashes and Exceptions)
+<a href="#Crashes">Crashes and Exceptions</a>
 are also relevant here.
 
 This is different than "performance" of AdWords and SEO techniques to yield customers.
@@ -74,7 +74,31 @@ if average response times are high, such as:
   
   1,038.88
   
-## Crashes and Exceptions
+<a name="Crashes"> ## Crashes and Exceptions</a>
+Crashes are a subset of Exceptions.
+
+To be actionable, crash statistics need to be segregated/filtered by **application version** and 
+user:
+
+  1. Under the menu category Behavior, select Crashes and Exceptions.
+  1. Select the **Month** time scale. Notice the total because filtering.
+  2. Select **Secondary dimension**. 
+  3. Scroll down to **Users**. 
+  4. Select a data metric such as Browser, 
+
+  The latest version may not be the one at the top of the list due to the pattern of app updates by users.
+
+  Mobile Device Marketing Name (such as "Galaxy S5") are a superset of the 
+  Mobile Device Info with values such as:
+  
+  * Samsung SM-G900F Galaxy S5 (Samsung benchmark international model)
+  * Samsung SM-G900V Galaxy S5 (US carrier Verizon with non-Samsung firmware)
+  * Samsung SM-G900P Galaxy S5 (US carrier Sprint with Samsung firmware)
+
+  The difference between 41 individual models of just the Galaxy S5 are explained at
+  http://androidforums.com/threads/41-galaxy-s5-models-dummies-guide.892162/
+  
+  Some of these models have already had as many as 13 different stock Samsung firmware releases since launch.
 
 
 ## Rate of processing
