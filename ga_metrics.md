@@ -1,7 +1,9 @@
 This page provides a tutorial on the use of Google Analytics (abbreviated to "GA" here) 
 from the viewpoint of site **speed** to ensure that sites operate 
 quickly enough for customer satistifaction and user productivity.
-Statistics on **user abandonment** is also relevant here.
+Statistics on **user abandonment** and
+[Crashes and Exceptions](#Crashes and Exceptions)
+are also relevant here.
 
 This is different than "performance" of AdWords and SEO techniques to yield customers.
 
@@ -72,6 +74,9 @@ if average response times are high, such as:
   
   1,038.88
   
+## Crashes and Exceptions
+
+
 ## Rate of processing
 Each response time should be considered along with the rate processing when the metric was obtained,
 such as the number of transactions per minute (TPM), 
