@@ -15,6 +15,10 @@ Google Analytics (abbreviated to "GA" here) is at
 
 The remainder of this tutorial assumes that you are logged in.
 
+## Tutorials on GA
+
+  * http://analytics.blogspot.com/
+
 ## Dashboard
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9965879/980a5cac-5df6-11e5-9a40-83c7805738e7.png">
 <img align="right" width="200" alt="ga_perf_dashboard_zeros" src="https://cloud.githubusercontent.com/assets/300046/9965879/980a5cac-5df6-11e5-9a40-83c7805738e7.png"></a>
@@ -31,7 +35,7 @@ Import the ** Site Performance Dashboard** by Justin Cutroni:
   1. Click the blue Create button.
 
 ### Individual Screen Views
-The ranking of how many page views by page name (such as "Home") is useful to know
+The ranking of how many **page views** by page name (such as "Home") is useful to know
 for scripting to replicate load within a prod-like test environment.
 
 ### Site Speed Metrics
@@ -55,6 +59,7 @@ Metrics most relevant to site speed include:
   have impact on the load on **registration** functionality which involves much database updates.
 
 * **Sessions (count)**
+  are the periods of time a user is active on a site (default 30 minutes).
 
 * **Avg. Session duration**
   may be good or bad depending on whether tha app aims to keep users around (to view more ads)
@@ -67,6 +72,14 @@ Metrics most relevant to site speed include:
 
   There is generally a correlation that longer sessions occur because of more screens being viewed by users.
   
+  
+## Goal related Metrics
+The percentage of users who make it all the way to conversion "goal" concluding screen 
+(such as receipt after buying, itinerary, back to Home, etc.)
+is a key influencer of customer satisfaction and website productivity.
+
+How many users "gave up" because of too much complixity or too slow response.
+
 
 ## Value Anomalies
 First use of statistic may require some configuration, such as **timeouts**
@@ -81,7 +94,6 @@ To be actionable, crash statistics need to be segregated/filtered by **applicati
 user:
 
   1. Under the menu category Behavior, select Crashes and Exceptions.
-  1. Select the **Month** time scale. Notice the total because filtering.
   2. Select **Secondary dimension**. 
   3. Scroll down to **Users**. 
   4. Select data metric User: **Browser**. Its value is always "Google Analytics".
@@ -104,7 +116,15 @@ user:
 
   5. Click the sorting arrow for data metric User: **Mobile Device Info**.
   
-      Notice the number associated with **(Not Set)**.
+      Notice the number associated with **(Not Set)**. It's 6.11% of the total.
+
+### App Speed
+Time Category used:
+
+  * Wait Time
+
+  * **Sign In** is usually the most "expensive" (longest in duration) of all views
+    even though it may not be among the most sampled (such as 17% of all User Timing Samples).
 
 
 ## Rate of processing
@@ -112,7 +132,14 @@ Each response time should be considered along with the rate processing when the 
 such as the number of transactions per minute (TPM), 
 the number of transactions per second divided by 60.
 
+
+## Segments of users
+Session statistics for users who share common attributes can be segmented.
+Segments include geographic region.
+
+
 ## Monthly Reporting
+The rate of
 
 http://analytics.blogspot.com/2011/11/simplifying-ecommerce-reporting-across.html
 
@@ -141,13 +168,17 @@ For example:
   
   QUESTION: Why does both "en" and "en-us" appear?
   
-  
-
   **Redirect Time for Countries**
 
 * when showing a list of **languages**, 
   compare GA's numbers with 
   Such information is used to prioritize language translation efforts.
+
+
+## Not that kind of performance
+Some information, such as **source/medium** where traffic originated (such as another website or Google search engine).
+The medium, to the right of the slash, is the category, such as 
+Facebook/Social.
 
 
 ## GA Measurements Protocol API
@@ -158,6 +189,11 @@ Google provides its GAMP API at https://developers.google.com/analytics/devguide
 
 ## Monthly Reporting
 But what about monthly extracts for presentations to management and colleagues?
+
+  1. Select the **Month** time scale. Notice the total before filtering.
+
+Be aware of daily, weekly, and monthly cycles of normal activities.
+The patterns may be disrupted by special events such as the Superbowl, Thanksgiving, Christmas, etc.
 
 http://www.analyticscanvas.com/ is a Windows-based client program 
 from Google Analytics Partner nModal solutions in Toronto was highlighted in 2011 at
