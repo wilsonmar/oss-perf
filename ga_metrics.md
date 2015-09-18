@@ -27,7 +27,11 @@ Import the ** Site Performance Dashboard** by Justin Cutroni:
   1. Click on the white Import button at the top of the page.
   1. Select the GA account.
   1. Click the blue Create button.
-  
+
+### Individual Screen Views
+The ranking of how many page views by page name (such as "Home") is useful to know
+for scripting to replicate load within a prod-like test environment.
+
 ### Site Speed Metrics
 Metrics most relevant to site speed include:
 
