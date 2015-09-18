@@ -59,7 +59,7 @@ Metrics most relevant to site speed include:
 
   <img alt="ga_perf_dashboard_user_engagement"       src="https://cloud.githubusercontent.com/assets/300046/9968261/abe4013e-5e04-11e5-9ce6-57cb48b0ce3a.png">
 
-There is generally a correlation that longer sessions occur because of more screens being viewed by users.
+  There is generally a correlation that longer sessions occur because of more screens being viewed by users.
   
 
 ## Value Anomalies
