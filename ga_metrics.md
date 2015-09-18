@@ -84,10 +84,12 @@ user:
   1. Select the **Month** time scale. Notice the total because filtering.
   2. Select **Secondary dimension**. 
   3. Scroll down to **Users**. 
-  4. Select a data metric such as Browser, 
+  4. Select data metric User: **Browser**. Its value is always "Google Analytics".
+  5. Select data metric User: **Mobile Device Marketing Name**.
 
   The latest version may not be the one at the top of the list due to the pattern of app updates by users.
 
+  5. Select data metric User: **Mobile Device Info**.
   Mobile Device Marketing Name (such as "Galaxy S5") are a superset of the 
   Mobile Device Info with values such as:
   
@@ -99,6 +101,10 @@ user:
   http://androidforums.com/threads/41-galaxy-s5-models-dummies-guide.892162/
   
   Some of these models have already had as many as 13 different stock Samsung firmware releases since launch.
+
+  5. Click the sorting arrow for data metric User: **Mobile Device Info**.
+  
+      Notice the number associated with **(Not Set)**.
 
 
 ## Rate of processing
