@@ -48,7 +48,7 @@ Metrics most relevant to site speed include:
 * **New Users** (count)
   have impact on the load on **registration** functionality which involves much database updates.
 
-* Sessions (count)
+* **Sessions (count)**
 
 * **Avg. Session duration**
   may be good or bad depending on whether tha app aims to keep users around (to view more ads)
@@ -108,16 +108,16 @@ For example:
 
 
 ## GA Measurements Protocol API
-To allows custom programs to make HTTP requests to send raw user interaction data directly to Google Analytics servers,
+To allows custom programs to make HTTP requests to send raw user interaction (event / hit) data 
+directly to Google Analytics servers,
 Google provides its GAMP API at https://developers.google.com/analytics/devguides/collection/protocol/v1/
-
 
 
 ## Monthly Reporting
 But what about monthly extracts for presentations to management and colleagues?
 
-http://www.analyticscanvas.com/
-by Google Analytics Partner’s nModal solutions in Toronto was highlighted in 2011 at
+http://www.analyticscanvas.com/ is a Windows-based client program 
+from Google Analytics Partner nModal solutions in Toronto was highlighted in 2011 at
 http://analytics.blogspot.com/2011/11/simplifying-ecommerce-reporting-across.html
 
 
