@@ -57,8 +57,9 @@ Metrics most relevant to site speed include:
 * **Screens / Session** 
   speaks to the **complexity** of the application being monitored.
 
+<img alt="ga_perf_dashboard_user_engagement" src="https://cloud.githubusercontent.com/assets/300046/9968261/abe4013e-5e04-11e5-9ce6-57cb48b0ce3a.png">
 
-## Anomalies
+## Value Anomalies
 First use of statistic may require some configuration, such as **timeouts**
 if average response times are high, such as:
   
