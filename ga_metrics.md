@@ -5,15 +5,47 @@ Statistics on **user abandonment**  Bounce Rate or % Exit and
 <a href="#Crashes">Crashes and Exceptions</a>
 are also relevant here.
 
-This is different than the "performance" of AdWords and SEO techniques to yield customers.
+## Retention and Revenue impact
+This work is different than the "performance" of AdWords and SEO techniques to yield customers.
 
-## GA URL
+Several efforts also improve page speed should yield improvement in user retention and revenue generated from the web property:
+
+ * Re-arrangement of UI elements
+ * Emails sent out
+ * Promotional offers
+ * Purchase of ads Google inserts onto websites
+
+## GA Dashboard URL
 PROTIP: Log out of your Gmail account before logging in if you use a corporate account.
 
 Google Analytics (abbreviated to "GA" here) is at
 <a target="_blank" href="https://www.google.com/analytics/">google.com/analytics</a>.
 
 The remainder of this tutorial assumes that you are logged in.
+
+## GA vs AppDynamics
+AppDynamics works by listening to what is occuring inside the data center.
+
+GA works by listening to on end-users' browsers.
+
+## GA Tags
+Information displayed in GA is obtained by Google capturing requests to servers from JavaScript 
+snippets embedded in website HTML.
+
+The JavaScript snippet can call a specific static tracking tag or call <a target="_blank" href="https://support.google.com/tagmanager/answer/6102821?hl=en">
+Google Tag Manager</a> container code which dynamically sets when and which tags fire
+according to variables and trigger logic.
+
+Tracking code can be asynchronous.
+
+With Universal Analytics, Google takes a page load sample of 1% of page views, which
+<a target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#siteSpeedSampleRate">can be increased</a>.
+
+## Cookie-based
+GA reports do not rely on the User ID to which a user authenticates, but on
+a unique set of cookies stored on a particular person’s browser on a particular computer.
+So there are issues with cross-domain or subdomains as well as cross-device retention 
+(when a user goes from desktop to mobile).
 
 ## GA blocking
 Note that GA may not be able to track all users.
@@ -51,13 +83,38 @@ for scripting to replicate load within a prod-like test environment.
 ### Site Speed Metrics
 Metrics most relevant to site speed include:
 
-* Avg. Page Load Time (Secs)
-* Page Load Time by Browser
+* **Avg. Page Download Time**
+  is the time to download the page. 
+  This the mother of all speed metrics since it averages the amount of time it takes to completely load the page.
+
+  Page download is impacted by the speed of network used by the user and server response time.
+
+* **Avg. Server Response Time**
+  is the time the server takes to respond to a user request, including the network time from user’s location to your server.
+ 
+* **Avg. Page Load Time (Secs)**
+ is the time it takes for pages from the sample set to load, from initiation of the pageview (e.g. click on a page link) to    load completion in the browser.
+
+Additional metrics measure activities **before** pages load:
+
+* **Avg. Redirection Time**
+  is the time spent in redirects before fetching this page. 
+  If there are no redirects, the value for this metric should be 0.
+
+* Avg. Domain Lookup Time**
+ is the time spent in DNS lookup for this page.
+
+* **Avg. Server Connection Time**
+  is time spent in establishing TCP connection for this page.
+
+* Page Load Time by Browser 
+
 * Mobile Page Load Time (Secs)
 * Load Time for Popular Pages
 
 * Avg. Server Response Time
-* Avg. Domain Lookup Time
+
+
 
 ### Speed related Metrics
 Metrics most relevant to site speed include:
@@ -82,6 +139,7 @@ Metrics most relevant to site speed include:
 
   There is generally a correlation that longer sessions occur because of more screens being viewed by users.
   
+
 ## Industry Benchmarks
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/9973608/547e30c0-5e33-11e5-84c9-e823e70498f1.jpg" height="100" alt="">
 GA provides optional enablement of percentage comparison against benchmarks of over 
@@ -113,7 +171,8 @@ if average response times are high, such as:
   
   1,038.88
   
-<a name="Crashes"> ## Crashes and Exceptions</a>
+<a name="Crashes"> 
+## Crashes and Exceptions</a>
 Crashes are a subset of Exceptions.
 
 To be actionable, crash statistics need to be segregated/filtered by **application version** and 
@@ -163,9 +222,11 @@ the number of transactions per second divided by 60.
 Session statistics for users who share common attributes can be segmented.
 Segments include geographic region.
 
+The number of visitors may include non-human bots.
 
-## Monthly Reporting
-The rate of
+
+## Extracts for Monthly Reporting
+GA provides output in various formats (CSV, PDF).
 
 http://analytics.blogspot.com/2011/11/simplifying-ecommerce-reporting-across.html
 
