@@ -77,8 +77,8 @@ Metrics most relevant to site speed include:
 GA provides optional enablement of percentage comparison against benchmarks of over 1600  Industry Vertical categories
 of different traffic size classifications (by daily visits) and 
 geographic locations.
-A positive value (for example, 67.80%) indicates the property outperforming the benchmark. 
-A negative value (for example, -25.25%) indicates the property underperforming the benchmark.
+A positive value (for example, 67.80%) show how much the property outperforming the benchmark. 
+A negative value (for example, -25.25%) shows how much the property underperforming the benchmark.
 
 ## Goal related Metrics
 The percentage of users who make it all the way to conversion "goal" concluding screen 
