@@ -72,7 +72,14 @@ Metrics most relevant to site speed include:
 
   There is generally a correlation that longer sessions occur because of more screens being viewed by users.
   
-  
+## Industry Benchmarks
+<img align="right" src="//lh5.ggpht.com/bCXGVVEpUDFH5N3DahNBt1PHqdLOq0FR7GqH8EPlgNv4kIat_0WAbtEslfIc2Qd-LmufDOs=h100" height="100" alt="">
+GA provides optional enablement of percentage comparison against benchmarks of over 1600  Industry Vertical categories
+of different traffic size classifications (by daily visits) and 
+geographic locations.
+A positive value (for example, 67.80%) indicates the property outperforming the benchmark. 
+A negative value (for example, -25.25%) indicates the property underperforming the benchmark.
+
 ## Goal related Metrics
 The percentage of users who make it all the way to conversion "goal" concluding screen 
 (such as receipt after buying, itinerary, back to Home, etc.)
