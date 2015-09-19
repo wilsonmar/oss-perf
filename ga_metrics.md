@@ -1,11 +1,11 @@
-This page provides a tutorial on the use of Google Analytics (abbreviated to "GA" here) 
+This page provides a tutorial on the use of Google Analytics (abbreviated to "GA") 
 from the viewpoint of site **speed** to ensure that sites operate 
 quickly enough for customer satistifaction and user productivity.
-Statistics on **user abandonment** and
+Statistics on **user abandonment**  Bounce Rate or % Exit and
 <a href="#Crashes">Crashes and Exceptions</a>
 are also relevant here.
 
-This is different than "performance" of AdWords and SEO techniques to yield customers.
+This is different than the "performance" of AdWords and SEO techniques to yield customers.
 
 ## GA URL
 PROTIP: Log out of your Gmail account before logging in if you use a corporate account.
@@ -14,6 +14,16 @@ Google Analytics (abbreviated to "GA" here) is at
 <a target="_blank" href="https://www.google.com/analytics/">google.com/analytics</a>.
 
 The remainder of this tutorial assumes that you are logged in.
+
+## GA blocking
+Note that GA may not be able to track all users.
+There is a growing movement of users who hate being tracked, and pushi back by blocking ads, trackers and GA. 
+<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/">AdBlock Plus</a>
+is the #1 downloaded Firefox add-on. 
+Also, <a target="_blank" href="https://www.ghostery.com/en/faq/">Ghostery</a> 
+blocks over 1,955 known ads, trackers, beacons and widgets, including GA.
+
+Placing a badge/notice on your site announcing that you do not track users’ every move can attract users to come back and read/shop with you. (An edge case, I know, but still a positive one.)
 
 ## Tutorials on GA
 
@@ -74,11 +84,20 @@ Metrics most relevant to site speed include:
   
 ## Industry Benchmarks
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/9973608/547e30c0-5e33-11e5-84c9-e823e70498f1.jpg" height="100" alt="">
-GA provides optional enablement of percentage comparison against benchmarks of over 1600  Industry Vertical categories
-of different traffic size classifications (by daily visits) and 
-geographic locations.
+GA provides optional enablement of percentage comparison against benchmarks of over 
+1600 Industry vertical categories of 
+7 traffic size classifications (by daily visits) at
+1250 geographic market locations.
 A positive value (for example, 67.80%) show how much the property outperforms the benchmark. 
 A negative value (for example, -25.25%) shows how much the property underperforms the benchmark.
+
+http://www.forbes.com/sites/jaysondemers/2014/09/17/what-google-analytics-benchmarking-means-for-businesses/
+
+http://www.searchengineguide.com/jayson-demers/the-definitive-guide-to-google-analytics.php
+The Definitive Guide to Google Analytics for SEO Professionals
+
+15 Google Analytics Tricks to Maximize Your Marketing Campaign
+http://www.forbes.com/sites/jaysondemers/2014/08/20/15-google-analytics-tricks-to-maximize-your-marketing-campaign/
 
 ## Goal related Metrics
 The percentage of users who make it all the way to conversion "goal" concluding screen 
