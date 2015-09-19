@@ -73,7 +73,7 @@ Metrics most relevant to site speed include:
   There is generally a correlation that longer sessions occur because of more screens being viewed by users.
   
 ## Industry Benchmarks
-<img align="right" src="//lh5.ggpht.com/bCXGVVEpUDFH5N3DahNBt1PHqdLOq0FR7GqH8EPlgNv4kIat_0WAbtEslfIc2Qd-LmufDOs=h100" height="100" alt="">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/9973608/547e30c0-5e33-11e5-84c9-e823e70498f1.jpg" height="100" alt="">
 GA provides optional enablement of percentage comparison against benchmarks of over 1600  Industry Vertical categories
 of different traffic size classifications (by daily visits) and 
 geographic locations.
