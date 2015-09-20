@@ -1,9 +1,11 @@
 This page provides a tutorial on the use of Google Analytics (abbreviated to "GA") 
-from the viewpoint of site **speed** to ensure that sites operate 
-quickly enough for customer satistifaction and user productivity.
-Statistics on **user abandonment**  Bounce Rate or % Exit and
+to provide insight into selecting and validating the impact of changes to improve site **speed**.
+
+Statistics on **user abandonment**, Bounce Rate or % Exit and
 <a href="#Crashes">Crashes and Exceptions</a>
-are also relevant here.
+are also relevant 
+because they indicate resulting higher customer satistifaction and user productivity.
+
 
 ## Retention and Revenue impact
 This work is different than the "performance" of AdWords and SEO techniques to yield customers.
