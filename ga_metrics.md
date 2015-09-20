@@ -107,6 +107,7 @@ Additional metrics measure activities **before** pages load:
 
 * Avg. Domain Lookup Time**
  is the time spent in DNS lookup for this page.
+  This should be **<0.01**
 
 * **Avg. Server Connection Time**
   is time spent in establishing TCP connection for this page.
