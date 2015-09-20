@@ -130,6 +130,10 @@ Metrics most relevant to site speed include:
 * **Sessions (count)**
   are the periods of time a user is active on a site (default 30 minutes).
 
+ ```
+ ga(‘create’, ‘UA-XXXX-1’, ‘auto’, {‘siteSpeedSampleRate’: 50});
+ ```
+
 * **Avg. Session duration**
   may be good or bad depending on whether tha app aims to keep users around (to view more ads)
   or aims to make it easier and faster to get work done. 
@@ -141,6 +145,9 @@ Metrics most relevant to site speed include:
 
   There is generally a correlation that longer sessions occur because of more screens being viewed by users.
   
+## Average Document Interactive Time
+This can be found elsewhere.
+
 
 ## Industry Benchmarks
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/9973608/547e30c0-5e33-11e5-84c9-e823e70498f1.jpg" height="100" alt="">
