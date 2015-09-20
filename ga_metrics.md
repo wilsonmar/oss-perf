@@ -65,7 +65,7 @@ Placing a badge/notice on your site announcing that you do not track users’ ev
 
   * http://analytics.blogspot.com/
 
-## Dashboard
+## Dashboard on Site Performance
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9965879/980a5cac-5df6-11e5-9a40-83c7805738e7.png">
 <img align="right" width="200" alt="ga_perf_dashboard_zeros" src="https://cloud.githubusercontent.com/assets/300046/9965879/980a5cac-5df6-11e5-9a40-83c7805738e7.png"></a>
 
@@ -80,9 +80,16 @@ Import the ** Site Performance Dashboard** by Justin Cutroni:
   1. Select the GA account.
   1. Click the blue Create button.
 
+### Time frame of data shown
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9983483/a7cd27b2-5fba-11e5-91b7-8e36f00698dd.png">
+<img align="right width="300" alt="ga_perf_date_range" src="https://cloud.githubusercontent.com/assets/300046/9983483/a7cd27b2-5fba-11e5-91b7-8e36f00698dd.png"></a>
+  1. Click on the date range at the upper-right corner.
+  2. Click
+  
 ### Individual Screen Views
 The ranking of how many **page views** by page name (such as "Home") is useful to know
 for scripting to replicate load within a prod-like test environment.
+
 
 ### Site Speed Metrics
 Metrics most relevant to site speed include:
