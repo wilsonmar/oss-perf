@@ -1,10 +1,12 @@
 This page provides a tutorial on the use of Google Analytics (abbreviated to "GA") 
-to provide insight into selecting and validating the impact of changes to improve site **speed**.
+to provide insight into selecting and validating the impact of changes to improve site **speed**
+and reduce <a href="#Crashes">Crashes and Exceptions</a>.
 
-Statistics on **user abandonment**, Bounce Rate or % Exit and
-<a href="#Crashes">Crashes and Exceptions</a>
+Statistics on **user abandonment**, 
+Bounce Rate and
+% Exit 
 are also relevant 
-because they indicate resulting higher customer satistifaction and user productivity.
+because they indicate change in customer satistifaction and user productivity trends.
 
 
 ## Retention and Revenue impact
