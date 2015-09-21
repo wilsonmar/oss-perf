@@ -26,6 +26,7 @@ Google has an add-in only for its Chrome browser called **In-Page Analytics**
 at https://chrome.google.com/webstore/detail/page-analytics-by-google
 that displays stats on the very page being monitored.
 
+<img alt="Google In-Page Analystics" src="https://cloud.githubusercontent.com/assets/300046/10006808/380e7334-6075-11e5-816c-aa5eb3b3f0ec.png">
 
 ## Go to GA Dashboard URL
 PROTIP: Log out of your Gmail account before logging in if you use a corporate account.
