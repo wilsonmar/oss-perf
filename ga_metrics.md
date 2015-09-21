@@ -9,7 +9,7 @@ are also relevant
 because they indicate change in customer satistifaction and user productivity trends.
 
 
-## Retention and Revenue impact
+## Seek Retention and Revenue impact
 This work is different than the "performance" of AdWords and SEO techniques to yield customers.
 
 Several efforts also improve page speed should yield improvement in user retention and revenue generated from the web property:
@@ -25,7 +25,7 @@ listed under the **Behavior** category:
 https://chrome.google.com/webstore/detail/page-analytics-by-google
 
 
-## GA Dashboard URL
+## Go to GA Dashboard URL
 PROTIP: Log out of your Gmail account before logging in if you use a corporate account.
 
 Google Analytics (abbreviated to "GA" here) is at
@@ -33,7 +33,7 @@ Google Analytics (abbreviated to "GA" here) is at
 
 The remainder of this tutorial assumes that you are logged in.
 
-## GA vs AppDynamics
+### GA vs AppDynamics
 AppDynamics works by listening to what is occuring inside the data center.
 
 GA works by listening to on end-users' browsers.
