@@ -19,6 +19,12 @@ Several efforts also improve page speed should yield improvement in user retenti
  * Promotional offers
  * Purchase of ads Google inserts onto websites
 
+## Use Google Chrome Browser
+Google has written extensions such as **In-Page Analytics** add-in only for its Chrome browser,
+listed under the **Behavior** category:
+https://chrome.google.com/webstore/detail/page-analytics-by-google
+
+
 ## GA Dashboard URL
 PROTIP: Log out of your Gmail account before logging in if you use a corporate account.
 
@@ -61,9 +67,13 @@ blocks over 1,955 known ads, trackers, beacons and widgets, including GA.
 
 Placing a badge/notice on your site announcing that you do not track users’ every move can attract users to come back and read/shop with you. (An edge case, I know, but still a positive one.)
 
-## Tutorials on GA
+## Read/View Tutorials on GA
 
   * http://analytics.blogspot.com/
+
+  * https://www.youtube.com/watch?v=s4R5WWWg2Vk
+    Google Analytics 2015 - Tutorial for Beginners
+   nearly 2 hours from Lynda.com
 
 ## Dashboard on Site Performance
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9965879/980a5cac-5df6-11e5-9a40-83c7805738e7.png">
@@ -80,19 +90,58 @@ Import the ** Site Performance Dashboard** by Justin Cutroni:
   1. Select the GA account.
   1. Click the blue Create button.
 
-### Time frame of data shown
+## Comparison
+PROTIP: Metric values on their own are more valuable when compared against a different time range 
+or other comparison.
+
+### Compare data by Time frame
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9983483/a7cd27b2-5fba-11e5-91b7-8e36f00698dd.png">
 <img align="right width="300" alt="ga_perf_date_range" src="https://cloud.githubusercontent.com/assets/300046/9983483/a7cd27b2-5fba-11e5-91b7-8e36f00698dd.png"></a>
   1. Click on the date range at the upper-right corner.
-  2. Click
-  
-### Individual Screen Views
+  2. For Date Range: select Last 30 days.
+  3. For Compare to: select previous period (Last 30 days).
+  4. Click Apply.
+  5. Click Save so the settings are retained.
+
+PROTIP: View each number as a range of possible values.
+A certain number shown can be the result of pure chance,
+depending on the extent of variability such numbers have shown in the past.
+The more widely a metric varies, the less "reliable" a single number is.
+
+
+## Site Performance Metrics
+PROTIP: GA does not provide 90th percentile numbers as AppD does.
+
+Metrics most relevant to site speed, displayed on the Site Performance Dashboard include:
+
+* **Total Sessions (count)**
+PROTIP: When comparing stats, begin from the total number of **Sessions**.
+
+* **Sessions (count)**
+  are the periods of time a user is active on a site (default 30 minutes).
+
+ ```
+ ga(‘create’, ‘UA-XXXX-1’, ‘auto’, {‘siteSpeedSampleRate’: 50});
+ ```
+
+### Page Load Time
+PROTIP: Mobile Page Load Time is usually higher than (total) Avg. Page Load Time
+because mobile networks (such a 3G and 4G) are generally (in 2015) slower
+than LAN/wi-fi/fiber speeds.
+
+* **Mobile Page Load Time (Secs)**
+
+* **Avg. Page Load Time (Secs)**
+ is the time it takes for pages from the sample set to load, from initiation of the pageview (e.g. click on a page link) to     load completion in the browser. 
+ 
+  The number of resources a page loads vary based on screen design.
+  So page-based metrics are not the best indicator.
+
+
+### Ranking of page view names
 The ranking of how many **page views** by page name (such as "Home") is useful to know
-for scripting to replicate load within a prod-like test environment.
-
-
-### Site Speed Metrics
-Metrics most relevant to site speed include:
+for **load scripting** to replicate load within a prod-like test environment
+so performance and capacity issues can be identified before ever affecting production customers.
 
 * **Avg. Page Download Time**
   is the time to download the page. 
@@ -103,9 +152,6 @@ Metrics most relevant to site speed include:
 * **Avg. Server Response Time**
   is the time the server takes to respond to a user request, including the network time from user’s location to your server.
  
-* **Avg. Page Load Time (Secs)**
- is the time it takes for pages from the sample set to load, from initiation of the pageview (e.g. click on a page link) to    load completion in the browser.
-
 Additional metrics measure activities **before** pages load:
 
 * **Avg. Redirection Time**
@@ -121,7 +167,6 @@ Additional metrics measure activities **before** pages load:
 
 * Page Load Time by Browser 
 
-* Mobile Page Load Time (Secs)
 * Load Time for Popular Pages
 
 * Avg. Server Response Time
@@ -136,13 +181,6 @@ Metrics most relevant to site speed include:
 
 * **New Users** (count)
   have impact on the load on **registration** functionality which involves much database updates.
-
-* **Sessions (count)**
-  are the periods of time a user is active on a site (default 30 minutes).
-
- ```
- ga(‘create’, ‘UA-XXXX-1’, ‘auto’, {‘siteSpeedSampleRate’: 50});
- ```
 
 * **Avg. Session duration**
   may be good or bad depending on whether tha app aims to keep users around (to view more ads)
@@ -237,7 +275,7 @@ such as the number of transactions per minute (TPM),
 the number of transactions per second divided by 60.
 
 
-## Segments of users
+## Setup/use segments of users
 Session statistics for users who share common attributes can be segmented.
 Segments include geographic region.
 
