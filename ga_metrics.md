@@ -38,7 +38,7 @@ AppDynamics works by listening to what is occuring inside the data center.
 
 GA works by listening to on end-users' browsers.
 
-## GA Tags
+## Use GA Tag Manager
 Information displayed in GA is obtained by Google capturing requests to servers from JavaScript 
 snippets embedded in website HTML.
 
