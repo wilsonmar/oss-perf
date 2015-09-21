@@ -19,10 +19,12 @@ Several efforts also improve page speed should yield improvement in user retenti
  * Promotional offers
  * Purchase of ads Google inserts onto websites
 
+
 ## Use Google Chrome Browser
-Google has written extensions such as **In-Page Analytics** add-in only for its Chrome browser,
-listed under the **Behavior** category:
-https://chrome.google.com/webstore/detail/page-analytics-by-google
+Listed under the dashboard **Behavior** category,
+Google has an add-in only for its Chrome browser called **In-Page Analytics**
+at https://chrome.google.com/webstore/detail/page-analytics-by-google
+that displays stats on the very page being monitored.
 
 
 ## Go to GA Dashboard URL
