@@ -33,15 +33,19 @@ Google Analytics (abbreviated to "GA" here) is at
 
 The remainder of this tutorial assumes that you are logged in.
 
+The product home for GA is at <a target="_blank" href="http://www.google.com/analytics/">
+http://www.google.com/analytics</a>
+
+
 ### GA vs AppDynamics
 AppDynamics works by listening to what is occuring inside the data center.
+It can also push a RUM agent to end-user's browsers.
 
-GA works by listening to on end-users' browsers.
+GA works by listening to data captured from end-users' browsers 
+sent from from JavaScript snippets embedded in website HTML.
+
 
 ## Use GA Tag Manager
-Information displayed in GA is obtained by Google capturing requests to servers from JavaScript 
-snippets embedded in website HTML.
-
 The JavaScript snippet can call a specific static tracking tag or call <a target="_blank" href="https://support.google.com/tagmanager/answer/6102821?hl=en">
 Google Tag Manager</a> container code which dynamically sets when and which tags fire
 according to variables and trigger logic.
