@@ -18,7 +18,8 @@ Several efforts also improve page speed should yield improvement in user retenti
  * Emails sent out
  * Promotional offers
  * Purchase of ads Google inserts onto websites
-
+ * Public news about spokesperson
+ 
 
 ## Use Google Chrome Browser
 Listed under the dashboard **Behavior** category,
