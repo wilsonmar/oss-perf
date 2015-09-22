@@ -145,6 +145,12 @@ than LAN/wi-fi/fiber speeds.
   The number of resources a page loads vary based on screen design.
   So page-based metrics are not the best indicator.
 
+ACTION: What can be done about network latancy?
+
+ * Design app 
+ * Optimize size of transmission payloads
+ * Store data locally (but securely using Couchbase Mobile database to sync)
+ * Stage transaction data locally when there is no network
 
 ### Ranking of page view names
 The ranking of how many **page views** by page name (such as "Home") is useful to know
