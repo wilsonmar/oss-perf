@@ -40,7 +40,7 @@ On the left side at the beginning of the run there is some variation in response
 
 On the right side when a large number of users are working all at once, response time increases due to several factors.
 One is the **server** makes some users wait in the queue while it processes other users.
-TODO: Chart separting server vs. network vs. client time.
+TODO: Chart separating server vs. network vs. client time.
 
 It is yet unknown why Firefox is more stressed than Chrome when servers are delayed
 during periods of maximum load.
@@ -55,7 +55,7 @@ This bar chart shows statistics on the range of response times:
 <img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
 
 This chart shows how significantly <strong>JMeter can under-report response times</strong>.
-TODO: Investigate conflicting results between 2 charts (Chrome vs. Firefox).
+TODO: Get same results between 2 charts (Chrome vs. Firefox).
 TODO: Add Microsoft IE and Edge
 TODO: Add HP TruClient?
 
