@@ -27,7 +27,7 @@ ramp up load on servers using less test server resources
 than Selenium scripts because they do not maintain a copy of the DOM
 of each user.
 
-   Because it usually takes several servers to emulate enough load on an application server under test,
+0. Because it usually takes several servers to emulate enough load on an application server under test,
    JMeter is often run within a cloud envrionment such as Amazon.
 
 0. **Selenium WebDriver**
