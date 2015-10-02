@@ -1,6 +1,6 @@
 This github public repo shows how to combine several "totally free" **open-source software** to 
 measure performance, load, and capacity risks by 
-a) creating artificial load in 
+a) creating artificial load on 
 b) a sample web app and 
 c) sending metrics from verious sources into a central repository that 
 d) allows various visualizations over time and various ohter dimensions which 
@@ -13,15 +13,8 @@ edit the file, and send us a pull request.
 Thus, this repo takes a "README driven development" approach, as described in:
 http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 
-The tools we work with here include:
-Selenium, Appium, BrowserMobProxy, JMeter, Logstash, Elastiseach, Kibana, and associated utilities.
-
-A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
-
-Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) continuous integration services.
-
-
-## This repo
+## Toolchain overview
+Here is an overview of the tools we work with.
 
 <img alt="jmeter_with_selenium" src="https://cloud.githubusercontent.com/assets/300046/9837452/2b950fdc-59f4-11e5-9bf1-70521aec0cae.png">
 
@@ -37,13 +30,13 @@ of each user.
 0. **Selenium WebDriver**
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
 
-0. **Appium**
-controls native mobile smart phones as if humans were swiping and tapping the screen.
-
 0. **BrowserMob proxy** 
 captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
 
  <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
+
+0. **Appium**
+controls native mobile smart phones as if humans were swiping and tapping the screen.
 
 0. **Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
 into a common location with a common date format.
@@ -51,6 +44,11 @@ into a common location with a common date format.
 0. **Elasticsearch** combines and indexes logs from several sources.
 
 0. **Kibana** displays dashboards from filtered data indexed on several dimensions.
+
+A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
+
+Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) continuous integration services.
+
 
 <hr size="3">
 ## App Under Test source code
