@@ -1,6 +1,10 @@
 This github public repo shows how to combine several "totally free" **open-source software** to 
-measure performance, load, and capacity risks by creating artificial load in a sample web app
-and sending metrics from verious sources into a central repository that can be "sliced and diced" for insight.
+measure performance, load, and capacity risks by 
+a) creating artificial load in 
+b) a sample web app and 
+c) sending metrics from verious sources into a central repository that 
+d) allows various visualizations which 
+e) can be "sliced and diced" for insight.
 
 "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
@@ -18,7 +22,6 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
 
 
 ## This repo
-The contents of this repo was used to generate statistics for the charts above.
 
 <img alt="jmeter_with_selenium" src="https://cloud.githubusercontent.com/assets/300046/9837452/2b950fdc-59f4-11e5-9bf1-70521aec0cae.png">
 
