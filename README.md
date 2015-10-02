@@ -65,7 +65,7 @@ This bar chart shows statistics on the range of response times:
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
 
-This chart shows how significantly <strong>JMeter can under-report response times</strong>.
+This chart shows how significantly <strong>JMeter can under-report response times</strong> experienced by real users.
 TODO: Get same results between 2 charts (Chrome vs. Firefox).
 TODO: Add Microsoft IE and Edge
 TODO: Add HP TruClient?
