@@ -1,9 +1,20 @@
-An example of how to measure the true response time observed by real users while generating artificial loads using JMeter, Selenium, Appium, BrowserMobProxy, etc.
+This github public repo shows how to combine several "totally free" **open-source software** to 
+measure performance, load, and capacity risks by creating artificial load in a sample web app
+and sending metrics from verious sources into a central repository that can be "sliced and diced" for insight.
 
-This repo has a "README driven development" approach, as described in:
+A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
+
+"Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
+So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
+edit the file, and send us a pull request.
+
+Thus, this repo takes a "README driven development" approach, as described in:
 http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 
-## Introduction
+The tools we work with here include:
+Selenium, Appium, BrowserMobProxy, JMeter, Logstash, Elastiseach, Kibana, and associated utilities.
+
+## Network emulation vs. UI control load test scripts
 There are several types of scripts that pretend to be internet browsers and mobile devices:
 
   * One type of script is created from "sniffing" the pattern of bytes traveling across the network
