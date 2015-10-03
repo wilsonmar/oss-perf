@@ -12,8 +12,8 @@ edit the file, and send us a pull request.
    which enterprises pay for to fund development of this repo.
 
 <a name="Table"> 
-## Table </a>
-The approach described here consists of these capabilities and components:
+## Table of Capabilities and Components </a>
+The capabilities of our approach is described below in one sentence (with associated components):
 
 | Description | Components |
 | ----------- | ---------- |
