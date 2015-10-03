@@ -45,8 +45,8 @@ The capabilities of our approach is described below in one sentence (with associ
 ## Diagram </a>
 Interactions among the varioius components described above are illustred by this diagram:
 
-<a target="_blank" href="oss-perf-v03_wm pptx" href="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png">
-<img alt="oss-perf-v03_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png"></a>
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png">
+<img alt="oss-perf-v04_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png"></a>
 
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
