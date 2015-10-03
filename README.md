@@ -29,7 +29,7 @@ The approach described here consists of these capabilities and components:
 
 <a name="Diagram"> 
 ## Diagram </a>
-Here is an overview of the tools we work with.
+Interactions among the varioius components are described in this diagram:
 
 <a target="_blank" href="oss-perf-v03_wm pptx" href="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png">
 <img alt="oss-perf-v03_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png"></a>
