@@ -16,7 +16,8 @@ http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 ## Toolchain overview
 Here is an overview of the tools we work with.
 
-<img alt="jmeter_with_selenium" src="https://cloud.githubusercontent.com/assets/300046/9837452/2b950fdc-59f4-11e5-9bf1-70521aec0cae.png">
+<a target="_blank" href="oss-perf-v03_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png">
+<img alt="oss-perf-v03_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png"></a>
 
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
