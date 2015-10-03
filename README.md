@@ -2,8 +2,8 @@ This github public repo summarizes the technical approach to combine several "to
 to measure speed and load capacity risks of web and native mobile apps.
 
    "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
-Thus, this repo takes a "README driven development" approach, as described in:
-http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
+Thus, this repo takes a "README driven development" approach, as described 
+<a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. 
 
@@ -15,17 +15,15 @@ edit the file, and send us a pull request.
 ## Table </a>
 The approach described here consists of these capabilities and components:
 
-   a) creating artificial load on 
-
-   b) a sample web app and 
-
-   c) sending measurements from verious sources 
-   
-   d) into a central repository that 
-
-   e) allows various visualizations over time and various ohter dimensions which 
-
-   f) can be "sliced and diced" for insight.
+| Description | Components |
+| ----------- | ---------- |
+| Create artificial load | JMeter |
+| scheduled | Jenkins |
+| on a sample web app and | AUT |
+| sending measurements from verious sources | Logstash |
+| into a central repository | ElastiSearch |
+| that allows various visualizations over time and various ohter dimensions which 
+  can be "sliced and diced" for insight | Kibana |
 
 <a name="Diagram"> 
 ## Diagram </a>
