@@ -19,7 +19,7 @@ edit the file, and send us a pull request.
 Thus, this repo takes a "README driven development" approach, as described in:
 http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 
-<a name="Diagram"> ## Diagram</a>
+<a name="Diagram"> ## Diagram </a>
 Here is an overview of the tools we work with.
 
 <a target="_blank" href="oss-perf-v03_wm pptx" href="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png">
