@@ -7,7 +7,13 @@ http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. 
 
-The approach consists of: 
+   Not covered in this repo are implementation details such as the set of custom communications,
+   project plans, and proprietary tutorial materials
+   which enterprises pay for to fund development of this repo.
+
+<a name="Table"> 
+## Table </a>
+The approach described here consists of these capabilities and components:
 
    a) creating artificial load on 
 
