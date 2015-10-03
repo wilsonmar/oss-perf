@@ -1,5 +1,5 @@
 This github public repo summarizes the technical approach to combine several "totally free" **open-source software** 
-to measure speed and load capacity risks of web and native mobile apps.
+to measure the speed and load capacity risks of high-traffic web and native mobile apps.
 
    "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
 Thus, this repo takes a "README driven development" approach, as described 
@@ -7,26 +7,44 @@ Thus, this repo takes a "README driven development" approach, as described
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. 
 
-   Not covered in this repo are implementation details such as the set of custom communications,
+   Not covered in this repo are implementation details such the customized communications, spreadsheets,
    project plans, and proprietary tutorial materials
-   which enterprises pay for to fund development of this repo.
+   which enterprises pay for (which fund development of this repo).
 
 <a name="Table"> 
 ## Table of Capabilities and Components </a>
 The capabilities of our approach is described below in one sentence (with associated components):
 
-| Description | Components |
+| Capabilities | Components |
 | ----------- | ---------- |
-| Create artificial load | JMeter |
-| scheduled | Jenkins |
-| on a sample web app and | AUT |
-| sending measurements from verious sources | Logstash |
+| Artificial load runs | JMeter Controllers |
+| are scheduled to run | Jenkins |
+| against a sample web app | SUT (Server under test) |
+| running with various experimental tuning configurations. | configs |
+| Logs of load levels imposed during runs, | run logs |
+| log entries issued from within app code and the OS | server Logs |
+| plus measurements obtained by monitoring agents | monitor stream |
+| are collected | Logstash |
 | into a central repository | ElastiSearch |
-| that allows various visualizations over time and various ohter dimensions which can be "sliced and diced" for insight | Kibana |
+| for visualizations over time and various other dimensions which can be "sliced and diced" for insight. | Kibana |
+| The visualizations include static objectives and targets to compare against live data. | ref. data |
+| To measure time on client browsers to execute JavaScript, functional test scripts | Selenium & Appium code |
+| control the UI of browsers | Selenium Web Driver |
+| and native mobile apps | Appium |
+| so that timings are captured | BrowserMob Proxy |
+| into files included in analysis. | HAR files |
+| To reduce the time traditionally need to edit and verify | editor |
+| test scripts to impose load, | JMeter code |
+| we generate JMeter code to call APIs | j-gen |
+| from the repository of API specifications | Swagger |
+| just as app code is generated | codegen |
+| into source code repositories. | git repo. |
+| Optionally, generated code is validated by static source code scanners | SonarQube |
+| in spearate runs than app source code going through. | dev. toolchain |
 
 <a name="Diagram"> 
 ## Diagram </a>
-Interactions among the varioius components are described in this diagram:
+Interactions among the varioius components described above are illustred by this diagram:
 
 <a target="_blank" href="oss-perf-v03_wm pptx" href="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png">
 <img alt="oss-perf-v03_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10260667/9e9492a8-6937-11e5-85be-201d467061fe.png"></a>
