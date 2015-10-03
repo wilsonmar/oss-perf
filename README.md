@@ -5,27 +5,36 @@ to measure the speed and load capacity risks of high-traffic web and native mobi
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. Better yet, join us in refining what is described here.
 
+
 <a name="TypesOfTest">
-## Network emulation vs. UI control load test scripts</a>
-There are several types of scripts that pretend to be internet browsers and mobile devices:
+## Create scripts to impose load using network emulation vs. UI control</a>
+There are several ways automation scripts can pretend to be internet browsers and mobile devices:
 
-  * One type of script is created from "sniffing" the pattern of bytes traveling across the network
-    (JMeter, LoadRunner C-scripts, etc. are in this category)
+  a). By **emulating the network traffic** between client and server
+    (BadBoy to capture traffic, JMeter, LoadRunner C-scripts, etc. are in this category)
+    This includes API (Application Programming Interface) 
+    calls programs send to other "headless" programs without need for human intervention.
 
-  * the other type of script (called UI scripts)
-  is created by pretending to be someone typing and moving the mouse around the screen
+  b). By **controlling the UI** of browsers and native apps,
+     pretending to be someone typing and moving the mouse around the screen
     (Selenium, Appium, QTP/UFT, TruClient, are in this category)
 
-  * a third type of script (called "headless" API scripts)
-  is created by emulating calls programs make to other programs.
 
-The dilemma is that these are different types of scripting efforts, 
-using different programming languages and different tools,
+<a name="TheAnnoyance">
+## The annoyance with existing approaches</a>
+These two different types of scripting efforts may
+use different programming languages and different tools,
 and thus by different people in different groups that don't necessarily talk with each other.
 
-The problem is that because performance testing tools focus on **file transfer time**,
-they cannot report time for JavaScript client-rendering,
+It can be time-consuming to create traffic emulation scripts due to the need to "sniff" traffic
+in order to convert observed patterns to script code.
+
+Traffic emulation scripts focus on **file transfer time**,
+and cannot report time for JavaScript client-rendering,
 which grows more over time as more work is being done client-side.
+
+Codification of API calls into standard patterns makes it now possible to 
+**generate test script code**.
 
 
 
