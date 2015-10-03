@@ -85,18 +85,24 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
    which enterprises pay for (which fund development of this repo).
 
 <a name="Status">
-## Status of component development work</a>
+## Priority and status of component development work</a>
 This repo takes a "README driven development" approach, as described 
 <a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
 
 This list is rearranged differently for each organization's unique set of priorities.
 
-| ID | Category | Action | Component |
-| -: | -------- | ------ | --------- |
-| 01 | AUT | Stand-up | AUT |
+   | ID | Category | Action | Component | Status |
+   | -: | -------- | ------ | --------- | ------ |
+   | 01 | AUT | Stand-up | AUT back-end | - |
+   | 02 | AUT | Stand-up | AUT UI | - |
 
+| 3 | DevOps | Stand-up | LogStash collector | - |
+| 4 | DevOps | Create | HAR file into LogStash | - |
+| 5 | DevOps | Stand-up | ElastiSearch | - |
+| 6 | DevOps | Stand-up | Kibana | - |
+| 7 | DevOps | Stand-up | ref. data in ElastiSearch for Kibana | - |
+| 8 | Monitoring | Stand-up | agents | - |
 
-| 02 | Monitoring | Stand-up | agents | - |
 | - | Tuning | Define | configs | - |
 | - | DevOps | Stand-up | Jenkins | - |
 | - | Web Func Test | Stand-up | Selenium WebDriver | - |
@@ -107,11 +113,6 @@ This list is rearranged differently for each organization's unique set of priori
 | - | Load | Start | JMeter code | - |
 | - | Load | Create | j-gen | - |
 | - | DevOps | Stand-up | SonarQube | - |
-| - | DevOps | Stand-up | LogStash collector | - |
-| - | DevOps | Create | HAR file into LogStash | - |
-| - | DevOps | Stand-up | ElastiSearch | - |
-| - | DevOps | Stand-up | Kibana | - |
-| - | DevOps | Stand-up | ref. data in ElastiSearch for Kibana | - |
 | - | Dev | Stand-up | Swagger | - |
 | - | Dev | Run | codegen from Swagger | - |
 
