@@ -34,15 +34,15 @@ The capabilities of our approach is described below in one sentence (with associ
 | into files included in analysis. | HAR files |
 | To reduce the time traditionally need to edit and verify | editor |
 | test scripts to impose load, | JMeter code |
-| we generate JMeter code to call APIs | j-gen |
-| from the repository of API specifications | Swagger |
-| just as app code is generated | codegen |
+| we generate JMeter code to call APIs based on what is in | j-gen |
+| the repository of API specifications | Swagger |
+| just as app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
 | Optionally, generated code is validated by static source code scanners | SonarQube |
 | in spearate runs than app source code going through. | dev. toolchain |
 
 <a name="Diagram"> 
-## Diagram </a>
+## Diagram of interactions among components</a>
 Interactions among the varioius components described above are illustred by this diagram:
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png">
@@ -84,9 +84,34 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
 
 <hr size="3">
 <a name="Status">
-## Status of component development</a>
+## Status of component development work</a>
 This repo takes a "README driven development" approach, as described 
 <a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
+
+This list of actions is rearranged differently for each organization's unique set of priorities.
+
+| ID | Category | Action | Component | Status |
+| -- | -------- | ------ | --------- | ------ |
+| - | AUT | Stand-up | AUT | - |
+| - | Monitoring | Stand-up | agents | - |
+| - | Tuning | Define | configs | - |
+| - | DevOps | Stand-up | Jenkins | - |
+| - | Web Func Test | Stand-up | Selenium WebDriver | - |
+| - | Web Func Test | Start | Selenium code | - |
+| - | Mobile Func Test | Stand-up | Apium driver | - |
+| - | Mobile Func Test | Start | Apium code | - |
+| - | Load | Stand-up | JMeter controllers | - |
+| - | Load | Start | JMeter code | - |
+| - | Load | Create | j-gen | - |
+| - | DevOps | Stand-up | SonarQube | - |
+| - | DevOps | Stand-up | LogStash collector | - |
+| - | DevOps | Create | HAR file into LogStash | - |
+| - | DevOps | Stand-up | ElastiSearch | - |
+| - | DevOps | Stand-up | Kibana | - |
+| - | DevOps | Stand-up | ref. data in ElastiSearch for Kibana | - |
+| - | Dev | Stand-up | Swagger | - |
+| - | Dev | Run | codegen from Swagger | - |
+
 
 <hr size="3">
 ## App Under Test source code
