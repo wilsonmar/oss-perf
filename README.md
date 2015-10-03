@@ -22,8 +22,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | on a sample web app and | AUT |
 | sending measurements from verious sources | Logstash |
 | into a central repository | ElastiSearch |
-| that allows various visualizations over time and various ohter dimensions which 
-  can be "sliced and diced" for insight | Kibana |
+| that allows various visualizations over time and various ohter dimensions which can be "sliced and diced" for insight | Kibana |
 
 <a name="Diagram"> 
 ## Diagram </a>
