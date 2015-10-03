@@ -24,7 +24,7 @@ There are several ways automation scripts can pretend to be internet browsers an
       OAuth1 which involves mutual exchange of public keys.
 
    Network traffic emulation scripts can call **API (Application Programming Interfaces)**
-   which "headless" programs (with no UI for users) communicate with other servers.
+   which "headless" programs communicate with each other (with no UI for human users).
 
 
 <a name="TheAnnoyance">
