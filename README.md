@@ -23,7 +23,8 @@ There are several ways automation scripts can pretend to be internet browsers an
    Network traffic emulation scripts can call API (Application Programming Interface) 
    which servers provide "headless" programs without need for human intervention.
 
-   Such interfaces authenticate using OAuth2 hand-shaking.
+   Such interfaces authenticate using OAuth2 hand-shaking which involves one-way signing or
+   OAuth1 which involves mutual exchange of public keys.
 
 
 <a name="TheAnnoyance">
