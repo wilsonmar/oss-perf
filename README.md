@@ -13,12 +13,17 @@ There are several ways automation scripts can pretend to be internet browsers an
   a). By **controlling the UI** of browsers and native apps,
      pretending to be someone typing and moving the mouse around the screen
     (Selenium, Appium, QTP/UFT, TruClient, are in this category).
+    
+    These make use of passwords unique to each user
+    or two-factor authentication (2FA) tokens which users type into UI dialogs.
 
   b). By **emulating the network traffic** between client and server
     (BadBoy to capture traffic, JMeter, LoadRunner C-scripts, etc. are in this category).
     
    Network traffic emulation scripts can call API (Application Programming Interface) 
    which servers provide "headless" programs without need for human intervention.
+
+   Such interfaces authenticate using OAuth2 hand-shaking.
 
 
 <a name="TheAnnoyance">
