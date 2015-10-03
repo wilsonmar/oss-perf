@@ -88,11 +88,11 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
 This repo takes a "README driven development" approach, as described 
 <a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
 
-This list of actions is rearranged differently for each organization's unique set of priorities.
+This list is rearranged differently for each organization's unique set of priorities.
 
-| ID | Category | Action | Component | Status |
-| -- | -------- | ------ | --------- | ------ |
-| 01 | AUT | Stand-up | AUT | - |
+| ID | Category | Action | Component |
+| -- | -------- | ------ | --------- |
+| 01 | AUT | Stand-up | AUT |
 
 
 | 02 | Monitoring | Stand-up | agents | - |
