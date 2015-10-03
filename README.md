@@ -5,6 +5,30 @@ to measure the speed and load capacity risks of high-traffic web and native mobi
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. Better yet, join us in refining what is described here.
 
+<a name="TypesOfTest">
+## Network emulation vs. UI control load test scripts</a>
+There are several types of scripts that pretend to be internet browsers and mobile devices:
+
+  * One type of script is created from "sniffing" the pattern of bytes traveling across the network
+    (JMeter, LoadRunner C-scripts, etc. are in this category)
+
+  * the other type of script (called UI scripts)
+  is created by pretending to be someone typing and moving the mouse around the screen
+    (Selenium, Appium, QTP/UFT, TruClient, are in this category)
+
+  * a third type of script (called "headless" API scripts)
+  is created by emulating calls programs make to other programs.
+
+The dilemma is that these are different types of scripting efforts, 
+using different programming languages and different tools,
+and thus by different people in different groups that don't necessarily talk with each other.
+
+The problem is that because performance testing tools focus on **file transfer time**,
+they cannot report time for JavaScript client-rendering,
+which grows more over time as more work is being done client-side.
+
+
+
 
 <a name="Table"> 
 ## Table of Capabilities and Components </a>
@@ -137,28 +161,6 @@ This list is rearranged differently for each organization's unique set of priori
 0. JMeter XML and Java test script code.
 
 <hr /> 
-
-## Network emulation vs. UI control load test scripts
-There are several types of scripts that pretend to be internet browsers and mobile devices:
-
-  * One type of script is created from "sniffing" the pattern of bytes traveling across the network
-    (JMeter, LoadRunner C-scripts, etc. are in this category)
-
-  * the other type of script (called UI scripts)
-  is created by pretending to be someone typing and moving the mouse around the screen
-    (Selenium, Appium, QTP/UFT, TruClient, are in this category)
-
-  * a third type of script (called "headless" API scripts)
-  is created by emulating calls programs make to other programs.
-
-The dilemma is that these are different types of scripting efforts, 
-using different programming languages and different tools,
-and thus by different people in different groups that don't necessarily talk with each other.
-
-The problem is that because performance testing tools focus on **file transfer time**,
-they cannot report time for JavaScript client-rendering,
-which grows more over time as more work is being done client-side.
-
 
 ## Under Load
 
