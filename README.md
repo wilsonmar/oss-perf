@@ -92,8 +92,9 @@ This list of actions is rearranged differently for each organization's unique se
 
 | ID | Category | Action | Component | Status |
 | -- | -------- | ------ | --------- | ------ |
-| - | AUT | Stand-up | AUT | - |
-| - | Monitoring | Stand-up | agents | - |
+| 01 | AUT | Stand-up | AUT | - |
+
+| 02 | Monitoring | Stand-up | agents | - |
 | - | Tuning | Define | configs | - |
 | - | DevOps | Stand-up | Jenkins | - |
 | - | Web Func Test | Stand-up | Selenium WebDriver | - |
