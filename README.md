@@ -3,9 +3,13 @@ measure performance, load, and capacity risks.
 The approach consists of: 
 
    a) creating artificial load on 
+
    b) a sample web app and 
+
    c) sending metrics from verious sources into a central repository that 
+
    d) allows various visualizations over time and various ohter dimensions which 
+
    e) can be "sliced and diced" for insight.
 
 "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
