@@ -2,10 +2,8 @@ This github public repo summarizes the technical approach to combine several "to
 to measure the speed and load capacity risks of high-traffic web and native mobile apps.
 
    "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
-Thus, this repo takes a "README driven development" approach, as described 
-<a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
-edit the file, and send us a pull request. 
+edit the file, and send us a pull request. Better yet, join us in refining what is described here.
 
    Not covered in this repo are implementation details such the customized communications, spreadsheets,
    project plans, and proprietary tutorial materials
@@ -28,9 +26,10 @@ The capabilities of our approach is described below in one sentence (with associ
 | into a central repository | ElastiSearch |
 | for visualizations over time and various other dimensions which can be "sliced and diced" for insight. | Kibana |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
-| To measure time on client browsers to execute JavaScript, functional test scripts | Selenium & Appium code |
-| control the UI of browsers | Selenium Web Driver |
-| and native mobile apps | Appium |
+| To measure time taken by client browsers to execute JavaScript | Selenium code |
+| the UI of browsers are controlled | Selenium Web Driver |
+| just as native mobile apps | Appium code |
+| are controlled | Appium Driver |
 | so that timings are captured | BrowserMob Proxy |
 | into files included in analysis. | HAR files |
 | To reduce the time traditionally need to edit and verify | editor |
@@ -83,6 +82,11 @@ A complete infrastructure also includes test code generation from a repository o
 
 Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) continuous integration services.
 
+<hr size="3">
+<a name="Status">
+## Status of component development</a>
+This repo takes a "README driven development" approach, as described 
+<a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
 
 <hr size="3">
 ## App Under Test source code
