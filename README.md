@@ -20,11 +20,11 @@ There are several ways automation scripts can pretend to be internet browsers an
   b). By **emulating the network traffic** between client and server
     (BadBoy to capture traffic, JMeter, LoadRunner C-scripts, etc. are in this category).
     
-      Such interfaces authenticate using OAuth2 hand-shaking which involves one-way signing or
-      OAuth1 which involves mutual exchange of public keys.
+   Such interfaces authenticate using OAuth2 hand-shaking which involves one-way signing or
+   OAuth1 which involves mutual exchange of public keys.
 
-   Network traffic emulation scripts can call API (Application Programming Interface) 
-   which servers provide "headless" programs without need for human intervention.
+   Network traffic emulation scripts can call **API (Application Programming Interfaces)**
+   which "headless" programs (with no UI for users) communicate with other servers.
 
 
 <a name="TheAnnoyance">
