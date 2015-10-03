@@ -5,9 +5,6 @@ to measure the speed and load capacity risks of high-traffic web and native mobi
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. Better yet, join us in refining what is described here.
 
-   Not covered in this repo are implementation details such the customized communications, spreadsheets,
-   project plans, and proprietary tutorial materials
-   which enterprises pay for (which fund development of this repo).
 
 <a name="Table"> 
 ## Table of Capabilities and Components </a>
@@ -83,6 +80,10 @@ A complete infrastructure also includes test code generation from a repository o
 Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) continuous integration services.
 
 <hr size="3">
+   Not covered in this repo are implementation details such the customized communications, spreadsheets,
+   project plans, and proprietary tutorial materials
+   which enterprises pay for (which fund development of this repo).
+
 <a name="Status">
 ## Status of component development work</a>
 This repo takes a "README driven development" approach, as described 
