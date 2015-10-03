@@ -91,7 +91,7 @@ This repo takes a "README driven development" approach, as described
 This list is rearranged differently for each organization's unique set of priorities.
 
 | ID | Category | Action | Component |
-| -- | -------- | ------ | --------- |
+| -: | -------- | ------ | --------- |
 | 01 | AUT | Stand-up | AUT |
 
 
