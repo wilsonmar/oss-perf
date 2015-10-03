@@ -1,5 +1,12 @@
 This github public repo summarizes the technical approach to combine several "totally free" **open-source software** to 
 measure performance, load, and capacity risks.
+
+"Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
+Thus, this repo takes a "README driven development" approach, as described in:
+http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
+So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
+edit the file, and send us a pull request. 
+
 The approach consists of: 
 
    a) creating artificial load on 
@@ -13,13 +20,6 @@ The approach consists of:
    e) allows various visualizations over time and various ohter dimensions which 
 
    f) can be "sliced and diced" for insight.
-
-"Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
-So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
-edit the file, and send us a pull request.
-
-Thus, this repo takes a "README driven development" approach, as described in:
-http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 
 <a name="Diagram"> 
 ## Diagram </a>
