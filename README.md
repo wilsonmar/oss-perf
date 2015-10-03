@@ -94,6 +94,7 @@ This list of actions is rearranged differently for each organization's unique se
 | -- | -------- | ------ | --------- | ------ |
 | 01 | AUT | Stand-up | AUT | - |
 
+
 | 02 | Monitoring | Stand-up | agents | - |
 | - | Tuning | Define | configs | - |
 | - | DevOps | Stand-up | Jenkins | - |
