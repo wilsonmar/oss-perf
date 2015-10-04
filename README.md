@@ -11,8 +11,8 @@ edit the file, and send us a pull request. Better yet, join us in refining what 
 ## Background</a>
 The approach described here was created in response to the need for 
 
-1. More integrated analysis of all data related to both functional and load testing
-2. Faster, more automatic generation of test automation scripts.
+1. More **integrated** analysis of all data related to both functional and load testing
+2. Faster inclusion of testing through more automatic generation of test automation scripts.
 
 <a name="TypesOfTest">
 ### Create scripts to impose load using network emulation vs. UI control</a>
