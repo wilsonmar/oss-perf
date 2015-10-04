@@ -104,9 +104,8 @@ shown below.
 ## Diagram of interactions among components</a>
 Interactions among the varioius components described above are illustred by this diagram:
 
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png">
-<img alt="oss-perf-v04_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png"></a>
-
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10267662/fbc1ca22-6a59-11e5-85eb-d616c858840f.png">
+<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10267662/fbc1ca22-6a59-11e5-85eb-d616c858840f.png"></a>
 
 <a name="NewComponents">
 ## New components</a>
