@@ -97,8 +97,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 | Functional test automation code are generated in a similar way | func. test gen. |
 
-The above is the narration in a video using an animated PowerPoint diagram
-shown below.
+The above is the narration to the diagram shown below.
 
 <a id="TheVision"></a>
 <a name="Diagram"> 
@@ -107,6 +106,10 @@ Interactions among the varioius components described above are illustred by this
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10267709/4d95829c-6a5c-11e5-8400-2b204d1b5884.png">
 <img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10267709/4d95829c-6a5c-11e5-8400-2b204d1b5884.png"></a>
+
+The animated PowerPoint diagram used to gradually reveal elements in the diagram above is shown in 
+this video.
+
 
 <a name="NewComponents">
 ## New components</a>
