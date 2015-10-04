@@ -57,11 +57,11 @@ The capabilities of our approach is described below in one sentence (with associ
 | ----------- | ---------- |
 | After we clone for testing a sample web server app | SUT (Server under test) |
 | using a specific variation of experimental tuning configurations, | configs |
-| we can run specific selections | run variations |
-| of network load emulation test scripts | JMeter code |
+| we can run specific scenarios (different parameter values) controlling | run variations |
+| network load emulation test scripts | JMeter code |
 | to place artificial loads on the server | JMeter Controllers |
 | by invoking them on a scheduled basis or dynamically | Jenkins |
-| or dynamically such as when the dev toolchain is invoked after | dev. toolchain |
+| such as when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
 | Logs of load levels imposed during runs, | run logs |
 | log entries issued from within app code and the OS | server Logs |
