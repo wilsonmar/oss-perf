@@ -93,6 +93,23 @@ Interactions among the varioius components described above are illustred by this
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png">
 <img alt="oss-perf-v04_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png"></a>
 
+<a name="NewComponents">
+## New components</a>
+These are the new components (repos) created to complete the <a href="#Diagram">vision shown above</a>:
+
+| Action | Component | Assigned | Need |
+| ------ | --------- | -------- | ---- |
+| New | HAR files to LogStash | Kranthi | Design |
+| New | run variations | ? | Design |
+| New | Jenkins invoke various configs | ? | Design |
+| New | ref. data into ElastiSearch | ? | Design |
+| New | j-gen | Wilson | Design |
+
+
+<a name="ExistingComponents">
+## Existing components</a>
+These are the existing repos made use of by the <a href="#Diagram">approach shown above</a>:
+
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
 Selenium and JMeter load generators are slave nodes to Jenkins.
@@ -131,18 +148,6 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
    Not covered in this repo are implementation details such the customized communications, spreadsheets,
    project plans, and proprietary tutorial materials
    which enterprises pay for (which fund development of this repo).
-
-<a name="NewComponents">
-## New components</a>
-
-| Action | Component | Assigned | Need |
-| ------ | --------- | -------- | ---- |
-| New | HAR files to LogStash | Kranthi | Design |
-| New | run variations | ? | Design |
-| New | Jenkins invoke various configs | ? | Design |
-| New | ref. data into ElastiSearch | ? | Design |
-| New | j-gen | ? | Design |
-
 
 <a name="Status">
 ## Priority and status of component development work</a>
