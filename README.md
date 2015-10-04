@@ -7,8 +7,11 @@ So if you see a typo that needs fixing or an idea that should be considered, ple
 edit the file, and send us a pull request. Better yet, join us in refining what is described here.
 
 
+<a name="Background">
+## Background</a>
+
 <a name="TypesOfTest">
-## Create scripts to impose load using network emulation vs. UI control</a>
+### Create scripts to impose load using network emulation vs. UI control</a>
 There are several ways automation scripts can pretend to be internet browsers and mobile devices:
 
 <a name="FuncTestScript"></a>
