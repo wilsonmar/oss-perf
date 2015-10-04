@@ -53,10 +53,15 @@ The capabilities of our approach is described below in one sentence (with associ
 
 | Capabilities | Components |
 | ----------- | ---------- |
-| Artificial load runs | JMeter Controllers |
-| are scheduled to run | Jenkins |
-| against a sample web app | SUT (Server under test) |
-| running with various experimental tuning configurations. | configs |
+| After we clone for testing a sample web server app | SUT (Server under test) |
+| using a specific variation of experimental tuning configurations, | configs |
+| we can run specific selections | run variations |
+| of load testing scripts | JMeter code |
+| to place artificial loads on the server | JMeter Controllers |
+| by invoking them on a scheduled basis or dynamically | Jenkins |
+| or dynamically such as when the dev toolchain is invoked after | dev. toolchain |
+| a commit occurs to a specific branch in a git repo. | github |
+
 | Logs of load levels imposed during runs, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements obtained by monitoring agents | monitor stream |
@@ -66,18 +71,22 @@ The capabilities of our approach is described below in one sentence (with associ
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
 | To measure time taken by client browsers to execute JavaScript | Selenium code |
 | the UI of browsers are controlled | Selenium Web Driver |
-| just as native mobile apps | Appium code |
+| just as native mobile app test automation code | Appium code |
 | are controlled | Appium Driver |
 | so that timings are captured | BrowserMob Proxy |
 | into files included in analysis. | HAR files |
+
 | To reduce the time traditionally need to edit and verify | editor |
 | test scripts to impose load, | JMeter code |
-| we generate JMeter code to call APIs based on what is in | j-gen |
+| we **generate JMeter code** to repeatedly call APIs based on what is in | j-gen |
 | the repository of API specifications | Swagger |
-| just as app code to call APIs are generated | codegen |
+| similar to how app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
-| Optionally, generated code is validated by static source code scanners | SonarQube |
-| in spearate runs than app source code going through. | dev. toolchain |
+
+| Variations in the use of test code created are defined. | run variations |
+
+| Generated test code is validated by static source code scanners | SonarQube |
+| in the same or spearate runs than what app source code go through. | dev. toolchain |
 
 <a name="Diagram"> 
 ## Diagram of interactions among components</a>
