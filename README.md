@@ -135,9 +135,8 @@ This repo takes a "README driven development" approach, as described
 ## Existing components</a>
 These are the existing repos made use of by the [approach shown above](#TheVision):
 
-<a name="configs">
-## Server configurations</a>
-Configurations need to be tuned to obtain the most throughput out of hardware.
+<a name="configs"></a>
+**Configurations** in servers need to be tuned to obtain the most throughput out of hardware.
 Examples of configurations include:
 
    * Maximum virtual memory allocation
