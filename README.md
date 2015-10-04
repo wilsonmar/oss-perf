@@ -53,34 +53,35 @@ The capabilities of our approach is described below in one sentence (with associ
 
 | Capabilities | Components |
 | ----------- | ---------- |
-| After we clone for testing a sample web server app | SUT (Server under test) |
-| using a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
+| On a sample web server app cloned for test use | app server |
+| instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
 | we can run specific scenarios (different parameter values) controlling | run variations |
 | network load emulation test scripts | JMeter code |
 | to place artificial loads on the server | JMeter Controllers |
 | by invoking them on a scheduled basis or dynamically | Jenkins |
 | such as when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
-| Logs of load levels imposed during runs, | run logs |
+| During runs, logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
-| plus measurements obtained by monitoring agents | monitor stream |
-| are collected | Logstash |
+| plus measurements such as garbage collection | monitor stream |
+| obtained by monitoring agents | agents |
+| are collected and normalized | Logstash |
 | into a central repository | ElastiSearch |
 | for visualizations over time and various other dimensions which can be "sliced and diced" for insight. | Kibana |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
-| To measure time taken by client browsers to execute JavaScript | Selenium code |
+| To measure time taken by browsers to execute client application JavaScript, | Selenium code |
 | the UI of browsers are controlled | Selenium Web Driver |
 | just as native mobile app test automation code | Appium code |
 | are controlled | Appium Driver |
 | so that timings are captured | BrowserMob Proxy |
 | into files included in analysis. | HAR files |
 | To reduce the time traditionally need to edit and verify | editor |
-| test scripts to impose load, | JMeter code |
-| we **generate JMeter code** to repeatedly call APIs based on what is in | j-gen |
+| we **generate JMeter code**  | j-gen |
+| and variations in use of test data to repeatedly call APIs based on what is in | run variations |
 | the repository of API specifications | Swagger |
 | similar to how app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
-| Variations in the use of test code created are defined. | run variations |
+|  |  |
 | Generated test code is validated by static source code scanners | SonarQube |
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 
