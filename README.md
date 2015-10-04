@@ -9,11 +9,13 @@ edit the file, and send us a pull request. Better yet, join us in refining what 
 
 <a name="Background">
 ## Background Why</a>
-The approach described here was created in response to the need for 
+The approach described here was created in response to the need for the fastest possible way to achieve load testing:
 
 A. Inclusion of **testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
 
 B. **Automatic alerts** of slow execution speeds during automated functional testing.
+
+The objective here is to reduce the amount of manual effort (and human errors) on the part of "testers".
 
 
 <a name="TypesOfTest">
