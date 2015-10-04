@@ -61,8 +61,8 @@ The capabilities of our approach is described below in one sentence (with associ
 | by invoking them on a scheduled basis or dynamically | Jenkins |
 | such as when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
-|  |  |
-| During runs, logs of load levels imposed, | run logs |
+| During runs: |  |
+| logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
 | obtained by monitoring agents | agents |
