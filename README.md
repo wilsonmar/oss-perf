@@ -11,6 +11,7 @@ edit the file, and send us a pull request. Better yet, join us in refining what 
 ## Create scripts to impose load using network emulation vs. UI control</a>
 There are several ways automation scripts can pretend to be internet browsers and mobile devices:
 
+<a name="FuncTestScript"></a>
   a). By **controlling the UI** of browsers and native apps,
      pretending to be someone typing and moving the mouse around the screen
     (Selenium, Appium, QTP/UFT, TruClient, are in this category).
@@ -18,6 +19,7 @@ There are several ways automation scripts can pretend to be internet browsers an
     These make use of passwords unique to each user
     or two-factor authentication (2FA) tokens which users type into UI dialogs.
 
+<a name="NetworkEmulationTestScript"></a>
   b). By **emulating the network traffic** between client and server
     (BadBoy to capture traffic, JMeter, LoadRunner C-scripts, etc. are in this category).
     
@@ -56,12 +58,11 @@ The capabilities of our approach is described below in one sentence (with associ
 | After we clone for testing a sample web server app | SUT (Server under test) |
 | using a specific variation of experimental tuning configurations, | configs |
 | we can run specific selections | run variations |
-| of load testing scripts | JMeter code |
+| of network load emulation test scripts | JMeter code |
 | to place artificial loads on the server | JMeter Controllers |
 | by invoking them on a scheduled basis or dynamically | Jenkins |
 | or dynamically such as when the dev toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
-
 | Logs of load levels imposed during runs, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements obtained by monitoring agents | monitor stream |
@@ -75,16 +76,13 @@ The capabilities of our approach is described below in one sentence (with associ
 | are controlled | Appium Driver |
 | so that timings are captured | BrowserMob Proxy |
 | into files included in analysis. | HAR files |
-
 | To reduce the time traditionally need to edit and verify | editor |
 | test scripts to impose load, | JMeter code |
 | we **generate JMeter code** to repeatedly call APIs based on what is in | j-gen |
 | the repository of API specifications | Swagger |
 | similar to how app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
-
 | Variations in the use of test code created are defined. | run variations |
-
 | Generated test code is validated by static source code scanners | SonarQube |
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 
