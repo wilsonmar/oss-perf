@@ -96,6 +96,9 @@ The capabilities of our approach is described below in one sentence (with associ
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 | Functional test automation code are generated in a similar way | func. test gen. |
 
+The above is the narration in a video using an animated PowerPoint diagram
+shown below.
+
 <a id="TheVision"></a>
 <a name="Diagram"> 
 ## Diagram of interactions among components</a>
@@ -104,16 +107,17 @@ Interactions among the varioius components described above are illustred by this
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png">
 <img alt="oss-perf-v04_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10262926/95a1ab74-6999-11e5-870e-5c263c5fa6b5.png"></a>
 
+
 <a name="NewComponents">
 ## New components</a>
 These are the new components (repos) created to complete the <a href="#TheVision">vision shown above</a>:
 
 | Action | Component | Assigned | Need |
 | ------ | --------- | -------- | ---- |
-| New | HAR files to LogStash | Kranthi | Design |
-| New | run variations | ? | Design |
-| New | Jenkins invoke various configs | ? | Design |
-| New | ref. data into ElastiSearch | ? | Design |
+| New | HAR files to LogStash | Kranthi? | Design |
+| New | run variations | You? | Design |
+| New | Jenkins invoke various configs | You? | Design |
+| New | ref. data into ElastiSearch | You? | Design |
 | New | j-gen | Wilson | Design |
 | New | configs | Wilson | Design |
 
