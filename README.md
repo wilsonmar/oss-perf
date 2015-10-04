@@ -115,12 +115,13 @@ These are the new components (repos) created to complete the <a href="#TheVision
 | ID | Component | Assigned | Need |
 | ------ | --------- | -------- | ---- |
 | a | HAR files to LogStash | Kranthi? | Design |
-| b | alerts from LogStash | You? | Design |
-| c | run variations | You? | Design |
-| d | Jenkins invoke various configs | You? | Design |
-| e | ref. data into ElastiSearch | You? | Design |
-| f | j-gen | Wilson | Design |
-| g | configs | Wilson | Design |
+| b | capture timings in Selenium Java code | Kranthi? | Design |
+| c | alerts from LogStash | You? | Design |
+| d | run variations | You? | Design |
+| e | Jenkins invoke various configs | You? | Design |
+| f | ref. data into ElastiSearch | You? | Design |
+| g | j-gen | Wilson | Design |
+| h | configs | Wilson | Design |
 
 
 <a name="ExistingComponents">
