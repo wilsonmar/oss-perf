@@ -11,8 +11,8 @@ edit the file, and send us a pull request. Better yet, join us in refining what 
 ## Background</a>
 The approach described here was created in response to the need for 
 
-1. Inclusion of **testing earlier** in the dev. lifecycle through more automatic generation of test automation scripts.
-2. **Alerts** of slow execution speeds observed during automated functional testing.
+1. Inclusion of **testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
+2. **Automatic alerts** of slow execution speeds during automated functional testing.
 
 <a name="TypesOfTest">
 ### Create scripts to impose load using network emulation vs. UI control</a>
@@ -236,6 +236,20 @@ This list is rearranged differently for each organization's unique set of priori
 0. JMeter XML and Java test script code.
 
 <hr /> 
+<a name="Dimensions">
+## Dimensions</a>
+Comparisons based on these dimensions to "slice and dice" performance observations:
+
+a. time (peak)
+b. approach to build server under test
+c. server configuration set
+d. release/version of app
+e. project
+f. sub-systems
+g. sequence flow of functionality being tested
+h. tester
+i. keywords, etc.
+
 
 ## Under Load
 
