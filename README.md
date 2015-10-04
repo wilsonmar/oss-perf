@@ -9,6 +9,10 @@ edit the file, and send us a pull request. Better yet, join us in refining what 
 
 <a name="Background">
 ## Background</a>
+The approach described here was created in response to the need for 
+
+1. More integrated analysis of all data related to both functional and load testing
+2. Faster, more automatic generation of test automation scripts.
 
 <a name="TypesOfTest">
 ### Create scripts to impose load using network emulation vs. UI control</a>
@@ -81,7 +85,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | so that timings are captured | BrowserMob Proxy |
 | into files included in analysis. | HAR files |
 |  |  |
-| To reduce the time traditionally need to edit and verify | editor |
+| To reduce the time traditionally needed to edit and verify | editor |
 | we **generate JMeter code**  | j-gen |
 | and variations in use of test data to repeatedly call APIs based on what is in | run variations |
 | the repository of API specifications | Swagger |
