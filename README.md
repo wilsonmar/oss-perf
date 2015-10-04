@@ -135,6 +135,16 @@ This repo takes a "README driven development" approach, as described
 ## Existing components</a>
 These are the existing repos made use of by the [approach shown above](#TheVision):
 
+<a name="configs">
+## Server configurations</a>
+Configurations need to be tuned to obtain the most throughput out of hardware.
+Examples of configurations include:
+
+   * Maximum virtual memory allocation
+   * Maximum threads
+   * Maximum queue length
+   * etc.
+
 <a name="Jenkins"></a>
 **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
@@ -293,7 +303,7 @@ This bar chart shows statistics on the range of response times:
 This chart shows how significantly <strong>JMeter can under-report response times</strong> experienced by real users.
 TODO: Get same results between 2 charts (Chrome vs. Firefox).
 TODO: Add Microsoft IE and Edge
-TODO: Add HP TruClient?
+TODO: Add HP TruClient for comparison?
 
 
 <hr size=5>
