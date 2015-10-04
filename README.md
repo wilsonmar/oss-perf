@@ -40,9 +40,6 @@ There are several ways automation scripts can pretend to be internet browsers an
    Network traffic emulation scripts can call **API (Application Programming Interfaces)**
    which "headless" programs communicate with each other (with no UI for human users).
 
-
-<a name="TheAnnoyance">
-## The annoyance with existing approaches</a>
 These two different types of scripting efforts may
 use different programming languages and different tools,
 and thus by different people in different groups that don't necessarily talk with each other.
