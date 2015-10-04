@@ -56,7 +56,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | Capabilities | Components |
 | ----------- | ---------- |
 | After we clone for testing a sample web server app | SUT (Server under test) |
-| using a specific variation of experimental tuning configurations, | configs |
+| using a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
 | we can run specific scenarios (different parameter values) controlling | run variations |
 | network load emulation test scripts | JMeter code |
 | to place artificial loads on the server | JMeter Controllers |
@@ -105,16 +105,19 @@ These are the new components (repos) created to complete the <a href="#TheVision
 | New | Jenkins invoke various configs | ? | Design |
 | New | ref. data into ElastiSearch | ? | Design |
 | New | j-gen | Wilson | Design |
+| New | configs | Wilson | Design |
 
 
 <a name="ExistingComponents">
 ## Existing components</a>
 These are the existing repos made use of by the [approach shown above](#TheVision):
 
+<a name="Jenkins"></a>
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
 Selenium and JMeter load generators are slave nodes to Jenkins.
 
+<a name="JMeterScripts"></a>
 0. **JMeter** scripts
 ramp up load on servers using less test server resources
 than Selenium scripts because they do not maintain a copy of the DOM
@@ -123,22 +126,35 @@ of each user.
 0. Because it usually takes several servers to emulate enough load on an application server under test,
    JMeter is often run within a cloud envrionment such as Amazon.
 
+<a name="configs"></a>
+0. **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
+
+<a name="SeleniumWebDriver"></a>
 0. **Selenium WebDriver**
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
 
+<a name="BrowserMob"></a>
 0. **BrowserMob proxy** 
 captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
 
  <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
 
-0. **Appium**
+<a name="AppiumController"></a>
+0. **Appium Controller**
 controls native mobile smart phones as if humans were swiping and tapping the screen.
 
+<a name="AppiumCode"></a>
+0. **Appium Code**
+controls native mobile smart phones as if humans were swiping and tapping the screen.
+
+<a name="LogStash"></a>
 0. **Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
 into a common location with a common date format.
 
+<a name="ElastiSearch"></a>
 0. **Elasticsearch** combines and indexes logs from several sources.
 
+<a name="Kibana"></a>
 0. **Kibana** displays dashboards from filtered data indexed on several dimensions.
 
 A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
