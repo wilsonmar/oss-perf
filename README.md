@@ -47,8 +47,6 @@ Codification of API calls into standard patterns makes it now possible to
 **generate test script code**.
 
 
-
-
 <a name="Table"> 
 ## Table of Capabilities and Components </a>
 The capabilities of our approach is described below in one sentence (with associated components):
@@ -86,6 +84,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | Generated test code is validated by static source code scanners | SonarQube |
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 
+
 <a id="TheVision"></a>
 <a name="Diagram"> 
 ## Diagram of interactions among components</a>
@@ -113,38 +112,40 @@ These are the new components (repos) created to complete the <a href="#TheVision
 These are the existing repos made use of by the [approach shown above](#TheVision):
 
 <a name="Jenkins"></a>
-0. **Jenkins** 
+**Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
 Selenium and JMeter load generators are slave nodes to Jenkins.
 
 <a name="JMeterScripts"></a>
-0. **JMeter** scripts
+**JMeter scripts**
 ramp up load on servers using less test server resources
 than Selenium scripts because they do not maintain a copy of the DOM
 of each user.
 
-0. Because it usually takes several servers to emulate enough load on an application server under test,
+<a name="CloudEnv"></a>
+**Cloud environment.**
+Because it usually takes several servers to emulate enough load on an application server under test,
    JMeter is often run within a cloud envrionment such as Amazon.
 
 <a name="configs"></a>
-0. **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
+**configs** is the set of configuration settings controlling VM memory and other aspects of the server.
 
 <a name="SeleniumWebDriver"></a>
-0. **Selenium WebDriver**
+**Selenium WebDriver**
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
 
 <a name="BrowserMob"></a>
-0. **BrowserMob proxy** 
+**BrowserMob proxy** 
 captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
 
  <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
 
 <a name="AppiumController"></a>
-0. **Appium Controller**
+**Appium Controller**
 controls native mobile smart phones as if humans were swiping and tapping the screen.
 
 <a name="AppiumCode"></a>
-0. **Appium Code**
+**Appium Code**
 controls native mobile smart phones as if humans were swiping and tapping the screen.
 
 <a name="LogStash"></a>
@@ -152,10 +153,10 @@ controls native mobile smart phones as if humans were swiping and tapping the sc
 into a common location with a common date format.
 
 <a name="ElastiSearch"></a>
-0. **Elasticsearch** combines and indexes logs from several sources.
+**Elasticsearch** combines and indexes logs from several sources.
 
 <a name="Kibana"></a>
-0. **Kibana** displays dashboards from filtered data indexed on several dimensions.
+**Kibana** displays dashboards from filtered data indexed on several dimensions.
 
 A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
 
