@@ -109,7 +109,7 @@ These are the new components (repos) created to complete the <a href="#TheVision
 
 <a name="ExistingComponents">
 ## Existing components</a>
-These are the existing repos made use of by the <a href="#TheVision">approach shown above</a>:
+These are the existing repos made use of by the [approach shown above](#TheVision):
 
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
