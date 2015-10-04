@@ -11,8 +11,8 @@ edit the file, and send us a pull request. Better yet, join us in refining what 
 ## Background</a>
 The approach described here was created in response to the need for 
 
-1. More **integrated** analysis of all data related to both functional and load testing
-2. Faster inclusion of testing earlier in the dev. lifecycle through more automatic generation of test automation scripts.
+1. Inclusion of **testing earlier** in the dev. lifecycle through more automatic generation of test automation scripts.
+2. **Alerts** of slow execution speeds observed during automated functional testing.
 
 <a name="TypesOfTest">
 ### Create scripts to impose load using network emulation vs. UI control</a>
@@ -78,6 +78,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | for visualizations over time and "sliced and diced" for insight. | Kibana |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
 | To measure time taken by browsers to execute client application JavaScript: |  |
+| so that performance anomalies are detected during functional testing, | alerts |
 | browser instances are controlled by | Selenium Web Driver |
 | code that manipulate the browser UI like real people do, | Selenium code |
 | just as native mobile app test automation code | Appium code |
@@ -104,21 +105,22 @@ shown below.
 ## Diagram of interactions among components</a>
 Interactions among the varioius components described above are illustred by this diagram:
 
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10267662/fbc1ca22-6a59-11e5-85eb-d616c858840f.png">
-<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10267662/fbc1ca22-6a59-11e5-85eb-d616c858840f.png"></a>
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10267709/4d95829c-6a5c-11e5-8400-2b204d1b5884.png">
+<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10267709/4d95829c-6a5c-11e5-8400-2b204d1b5884.png"></a>
 
 <a name="NewComponents">
 ## New components</a>
 These are the new components (repos) created to complete the <a href="#TheVision">vision shown above</a>:
 
-| Action | Component | Assigned | Need |
+| ID | Component | Assigned | Need |
 | ------ | --------- | -------- | ---- |
-| New | HAR files to LogStash | Kranthi? | Design |
-| New | run variations | You? | Design |
-| New | Jenkins invoke various configs | You? | Design |
-| New | ref. data into ElastiSearch | You? | Design |
-| New | j-gen | Wilson | Design |
-| New | configs | Wilson | Design |
+| a | HAR files to LogStash | Kranthi? | Design |
+| b | alerts from LogStash | You? | Design |
+| c | run variations | You? | Design |
+| d | Jenkins invoke various configs | You? | Design |
+| e | ref. data into ElastiSearch | You? | Design |
+| f | j-gen | Wilson | Design |
+| g | configs | Wilson | Design |
 
 
 <a name="ExistingComponents">
