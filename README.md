@@ -117,7 +117,7 @@ this video.
 ## New components</a>
 These are the new components (repos) created to complete the <a href="#TheVision">vision shown above</a>:
 
-| ID | Component | Assigned | Need |
+| ID | Component | By | Need |
 | ------ | --------- | -------- | ---- |
 | a | HAR files to LogStash | Kranthi? | Design |
 | b | capture timings in Selenium Java code | Kranthi? | Design |
@@ -127,6 +127,9 @@ These are the new components (repos) created to complete the <a href="#TheVision
 | f | ref. data into ElastiSearch | You? | Design |
 | g | j-gen | Wilson | Design |
 | h | configs | Wilson | Design |
+
+This repo takes a "README driven development" approach, as described 
+<a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
 
 
 <a name="ExistingComponents">
@@ -191,9 +194,6 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
 
 <a name="Status">
 ## Priority and status of component development work</a>
-This repo takes a "README driven development" approach, as described 
-<a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
-
 This list is rearranged differently for each organization's unique set of priorities.
 
    | ID | Category | Action | Component | Status |
@@ -293,6 +293,8 @@ TODO: Add HP TruClient?
 
 
 <hr size=5>
+<a name="Authors">
+## Authors </a>
 Contact information for authors of this repop:
 
 Kranthi Paidi, @kkpaidi, 
