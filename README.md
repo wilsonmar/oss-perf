@@ -4,7 +4,8 @@ repos to measure the speed and load capacity risks of high-traffic web and nativ
 
    "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
-edit the file, and send us a pull request. Better yet, join us in refining what is described here.
+edit the file, and send us a pull request. Better yet, 
+<a href="#NewComponents">join us</a> to revolutionalize the industry.
 
 
 <a name="Background">
