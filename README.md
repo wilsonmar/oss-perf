@@ -128,6 +128,11 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
 <a name="NewComponents">
 ## New components</a>
 
+| Capabilities | Components |
+| ----------- | ---------- |
+| Artificial load runs | JMeter Controllers |
+
+
    | Component | Status |
    | --------- | ------ |
    | HAR files to LogStash | New |
