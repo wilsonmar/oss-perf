@@ -297,8 +297,10 @@ TODO: Add HP TruClient?
 ## Authors </a>
 Contact information for authors of this repop:
 
+Wilson Mar, @wilsonmar, wilsonmar at gmail, 310.320-7878
+https://www.linkedin.com/in/wilsonmar
+Skype: wilsonmar4
+
 Kranthi Paidi, @kkpaidi, 
 https://www.linkedin.com/pub/kranthi-paidi/1a/b62/758
 
-Wilson Mar, wilsonmar at gmail, 310.320-7878
-https://www.linkedin.com/in/wilsonmar
