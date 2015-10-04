@@ -55,11 +55,11 @@ The capabilities of our approach is described below in one sentence (with associ
 | ----------- | ---------- |
 | On a sample web server app cloned for test use | app server |
 | instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
-| we can run specific scenarios (different parameter values) controlling | run variations |
-| network load emulation test scripts | JMeter code |
-| to place artificial loads on the server | JMeter Controllers |
-| by invoking them on a scheduled basis or dynamically | Jenkins |
-| such as when the dev. toolchain is invoked after | dev. toolchain |
+| artificial loads are imposed by running | JMeter Controllers |
+| virtual user scripts taking the place of humans on real browsers and mobile devices. | JMeter code |
+| Specific scenarios of different parameter values | run variations |
+| are invoked on a scheduled basis or dynamically | Jenkins |
+| when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
 | logs of load levels imposed, | run logs |
@@ -67,12 +67,12 @@ The capabilities of our approach is described below in one sentence (with associ
 | plus measurements such as garbage collection | monitor stream |
 | obtained by monitoring agents | agents |
 | are collected and normalized | Logstash |
-| into a central repository | ElastiSearch |
-| for visualizations over time and various other dimensions which can be "sliced and diced" for insight. | Kibana |
-|  |  |
+| into a central repository and indexed into various dimensions | ElastiSearch |
+| for visualizations over time and "sliced and diced" for insight. | Kibana |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
-| To measure time taken by browsers to execute client application JavaScript, | Selenium code |
-| the UI of browsers are controlled | Selenium Web Driver |
+| To measure time taken by browsers to execute client application JavaScript: |  |
+| browser instances are controlled by | Selenium Web Driver |
+| code that manipulate the browser UI like real people do, | Selenium code |
 | just as native mobile app test automation code | Appium code |
 | are controlled | Appium Driver |
 | so that timings are captured | BrowserMob Proxy |
@@ -85,9 +85,9 @@ The capabilities of our approach is described below in one sentence (with associ
 | similar to how app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
 |  |  |
-| Generated test code is validated by static source code scanners | SonarQube |
+| Generated test code is validated by static source code scanners. | SonarQube |
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
-
+| Functional test automation code are generated in a similar way | func. test gen. |
 
 <a id="TheVision"></a>
 <a name="Diagram"> 
