@@ -128,13 +128,14 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
 <a name="NewComponents">
 ## New components</a>
 
-| Status | Component |
-| ------ | ---------- |
-| New | HAR files to LogStash |
-| New | run variations |
-| New | Jenkins invoke various configs |
-| New | ref. data into ElastiSearch |
-| New | j-gen |
+| Action | Component | Status |
+| ------ | --------- | ------ |
+| New | HAR files to LogStash | Needs design |
+| New | run variations | Needs design |
+| New | Jenkins invoke various configs | Needs design |
+| New | ref. data into ElastiSearch | Needs design |
+| New | j-gen | Needs design |
+
 
 <a name="Status">
 ## Priority and status of component development work</a>
