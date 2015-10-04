@@ -86,6 +86,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | Generated test code is validated by static source code scanners | SonarQube |
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 
+<a id="TheVision"></a>
 <a name="Diagram"> 
 ## Diagram of interactions among components</a>
 Interactions among the varioius components described above are illustred by this diagram:
@@ -95,7 +96,7 @@ Interactions among the varioius components described above are illustred by this
 
 <a name="NewComponents">
 ## New components</a>
-These are the new components (repos) created to complete the <a href="#Diagram">vision shown above</a>:
+These are the new components (repos) created to complete the <a href="#TheVision">vision shown above</a>:
 
 | Action | Component | Assigned | Need |
 | ------ | --------- | -------- | ---- |
@@ -108,7 +109,7 @@ These are the new components (repos) created to complete the <a href="#Diagram">
 
 <a name="ExistingComponents">
 ## Existing components</a>
-These are the existing repos made use of by the <a href="#Diagram">approach shown above</a>:
+These are the existing repos made use of by the <a href="#TheVision">approach shown above</a>:
 
 0. **Jenkins** 
 initiates the various programs listed below on a schedule or when a build is requested.
