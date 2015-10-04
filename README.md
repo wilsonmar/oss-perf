@@ -142,6 +142,7 @@ Examples of configurations include:
    * Maximum virtual memory allocation
    * Maximum threads
    * Maximum queue length
+   * Maximum cache size
    * etc.
 
 <a name="Jenkins"></a>
