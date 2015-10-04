@@ -85,8 +85,8 @@ The capabilities of our approach is described below in one sentence (with associ
 | code that manipulate the browser UI like real people do, | Selenium code |
 | just as native mobile app test automation code | Appium code |
 | are controlled | Appium Driver |
-| so that timings are captured | BrowserMob Proxy |
-| into files included in analysis. | HAR files |
+| so that timings are captured | <a href="#BrowserMob">BrowserMob Proxy</a> |
+| into files included in analysis. | <a href="#HAR-Files">HAR files</a> |
 |  |  |
 | To reduce the time traditionally needed to edit and verify | editor |
 | we **generate JMeter code**  | j-gen |
@@ -106,8 +106,8 @@ The above is the narration to the diagram shown below.
 ## Diagram of interactions among components</a>
 Interactions among the varioius components described above are illustred by this diagram:
 
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10267709/4d95829c-6a5c-11e5-8400-2b204d1b5884.png">
-<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10267709/4d95829c-6a5c-11e5-8400-2b204d1b5884.png"></a>
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png">
+<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
 
 The animated PowerPoint diagram used to gradually reveal elements in the diagram above is shown in 
 this video.
@@ -160,10 +160,13 @@ Because it usually takes several servers to emulate enough load on an applicatio
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
 
 <a name="BrowserMob"></a>
-**BrowserMob proxy** 
+<a name="HAR_Files"></a>
+**BrowserMob proxy** at http://bmp.lightbody.net/
 captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
 
  <img alt="truperf_selenium_timers" src="https://cloud.githubusercontent.com/assets/300046/9831936/7ae6a9d6-591f-11e5-8f54-29f725c5b6c1.png">
+
+The forum for this is at https://groups.google.com/forum/#!forum/browsermob-proxy
 
 <a name="AppiumController"></a>
 **Appium Controller**
