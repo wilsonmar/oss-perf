@@ -1,5 +1,6 @@
-This github public repo summarizes the technical approach to combine several "totally free" **open-source software** 
-to measure the speed and load capacity risks of high-traffic web and native mobile apps.
+This github public repo summarizes the technical approach to **combine** several <a href="#NewComponents">new</a>
+and existing "totally free" **open-source software** 
+repos to measure the speed and load capacity risks of high-traffic web and native mobile apps.
 
    "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
 So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
@@ -123,6 +124,17 @@ Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) con
    Not covered in this repo are implementation details such the customized communications, spreadsheets,
    project plans, and proprietary tutorial materials
    which enterprises pay for (which fund development of this repo).
+
+<a name="NewComponents">
+## New components</a>
+
+   | Component | Status |
+   | --------- | ------ |
+   | HAR files to LogStash | New |
+   | run variations | New |
+   | Jenkins invoke various configs | New |
+   | ref. data into ElastiSearch | New |
+   | j-gen | New |
 
 <a name="Status">
 ## Priority and status of component development work</a>
