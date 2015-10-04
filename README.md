@@ -61,6 +61,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | by invoking them on a scheduled basis or dynamically | Jenkins |
 | such as when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
+|  |  |
 | During runs, logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
@@ -68,6 +69,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | are collected and normalized | Logstash |
 | into a central repository | ElastiSearch |
 | for visualizations over time and various other dimensions which can be "sliced and diced" for insight. | Kibana |
+|  |  |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
 | To measure time taken by browsers to execute client application JavaScript, | Selenium code |
 | the UI of browsers are controlled | Selenium Web Driver |
@@ -75,6 +77,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | are controlled | Appium Driver |
 | so that timings are captured | BrowserMob Proxy |
 | into files included in analysis. | HAR files |
+|  |  |
 | To reduce the time traditionally need to edit and verify | editor |
 | we **generate JMeter code**  | j-gen |
 | and variations in use of test data to repeatedly call APIs based on what is in | run variations |
