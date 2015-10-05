@@ -18,6 +18,9 @@ B. **Automatic alerts** of slow execution speeds during automated functional tes
 
 The objective here is to reduce the amount of manual effort (and human errors) on the part of "testers".
 
+Centralizing data where various aspects of system behavior under stress (or not) 
+can be analyzed together will provide the basis for "machine learning" to identify trends and deduce insights.
+
 
 <a name="TypesOfTest">
 ### Create scripts to impose load using network emulation vs. UI control</a>
