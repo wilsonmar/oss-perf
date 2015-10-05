@@ -7,7 +7,6 @@ So if you see a typo that needs fixing or an idea that should be considered, ple
 edit the file, and send us a pull request. Better yet, 
 <a href="#NewComponents">join us</a> to revolutionalize the industry.
 
-
 <a name="Background">
 ## Background Why</a>
 The approach described here was created in response to the need for the fastest possible way to achieve load testing:
@@ -78,7 +77,7 @@ Codification of API calls into standard patterns makes it now possible to
 **generate test script code**.
 
 
-<a name="Table"> 
+<a name="Narrative"> 
 ## Table of Capabilities and Components </a>
 The capabilities of our approach is described below in one sentence (with associated components):
 
@@ -133,9 +132,10 @@ Interactions among the varioius components described above are illustred by this
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png">
 <img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
 
-The animated PowerPoint diagram used to gradually reveal elements in the diagram above is shown in 
-the draft-status video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
-http://www.youtube.com/watch?v=wBnt8nDtYz8</a>
+The draft-status video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
+http://www.youtube.com/watch?v=wBnt8nDtYz8</a> gradually reveals interconnected elements explained in the 
+<a href="#Narrative">narrative text</a> and
+<a href="#Diagram">diagram</a> above.
 
 
 <a name="Gantt">
@@ -271,30 +271,6 @@ f. sub-systems
 g. sequence flow of functionality being tested
 h. tester
 i. keywords, etc.
-
-
-## Under Load
-
-Contents of this repo was used to generate statistics such as this:
-
-<img alt="truperf_load" src="https://cloud.githubusercontent.com/assets/300046/9831874/f6a32c6e-591c-11e5-949b-607fcd2ead6b.png">
-
-The top edge of the blue triagle illustrates the ramp-up of 100 users all communicating with the same server.
-TODO: Make User Load axis numbers blue as well.
-
-Virtual users in the run are distributed evenly among different browsers and the JMeter client emulator.
-
-On the left side at the beginning of the run there is some variation in response time.
-
-On the right side when a large number of users are working all at once, response time increases due to several factors.
-One is the **server** makes some users wait in the queue while it processes other users.
-TODO: Chart separating server vs. network vs. client time.
-
-It is yet unknown why Firefox is more stressed than Chrome when servers are delayed
-during periods of maximum load.
-
-(And Chrome takes more memory than Firefox)
-
 
 
 <hr size=5>
