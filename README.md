@@ -139,8 +139,8 @@ this video.
 ### Sequence of adoption</a>
 The technical relationships above provide the basis for the sequence of work necessary to adopt the approach.
 
-   Not covered in this repo are implementation details such the customized communications, spreadsheets,
-   project plans, and proprietary tutorial materials
+   Not covered in this repo are implementation details such as the customized communications, 
+   spreadsheets, project plans, and on-site tutorial materials
    which enterprises pay for (thus fund development of this approach).
 
 
