@@ -7,6 +7,7 @@ So if you see a typo that needs fixing or an idea that should be considered, ple
 edit the file, and send us a pull request. Better yet, 
 <a href="#NewComponents">join us</a> to revolutionalize the industry.
 
+
 <a name="Background">
 ## Background Why</a>
 The approach described here was created in response to the need for the fastest possible way to achieve 
@@ -138,16 +139,25 @@ The above narrates the diagram below.
 
 <a name="Gantt">
 ### Sequence of adoption</a>
-The technical relationships above provide the basis for the sequence of work necessary to adopt the approach.
+The technical relationships described above provide the basis for sequencing the work necessary to adopt the approach.
 
-   Not covered in this repo are implementation details such as the customized communications, 
+
+
+
+   Not covered in this are implementation details such as the customized communications, 
    spreadsheets, project plans, and on-site tutorial materials
    which enterprises pay for (thus fund development of this approach).
+
+There has been a lot written on the benefit of contributing to open-source software,
+especially to enterprises (such as banks, retail, etc.) 
+which are not in the business of creating utility software for testing.
+The hope of open-sourcing software is that others can maintain the software even when the original author moves on.
+And original development of software can receive a level of world-class scrunity and creativity.
 
 
 <a name="NewComponents">
 ## New components</a>
-These are the new components (repos) created to complete the <a href="#TheVision">vision shown above</a>:
+These are the new components created to complete the <a href="#TheVision">vision shown above</a>:
 
 | ID | Component | By | Need |
 | ------ | --------- | -------- | ---- |
