@@ -19,7 +19,8 @@ A. **Testing earlier** in the dev. lifecycle through more automatic **generation
 
 B. **Automatic alerts** of slow execution speeds during automated functional testing.
 
-C. **Cycle though variations** in several configurations during a single manual run initiation.
+C. **Cycle though variations** in <a href="#configs">
+   several configurations</a> during a single manual run initiation.
    This takes functionality beyond merely testing to engineering.
 
 The objective here is to **reduce the amount of manual effort** (and human errors) to conduct tests.
@@ -28,7 +29,16 @@ D. **Centralizing data** from various views of system behavior under stress (or 
    can be analyzed together will provide the basis for identifying trends and other insights
    using both manual and "machine learning" techniques.
 
-E. Measure how much time it takes to execute various aspects of JavaScript and other work within browsers.
+E. Measure how much time it takes to execute various aspects of JavaScript and other work within various browsers.
+   This bar chart shows statistics on the range of response times:
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
+<img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
+
+   This measures differences in response time on different browsers (Chrome vs. Firefox).
+   This also measures the extent JMeter under-reports response times experienced by real users.
+   
+   TODO: Add Microsoft IE and Edge
 
 
 <a name="TypesOfTest">
@@ -306,17 +316,6 @@ during periods of maximum load.
 
 (And Chrome takes more memory than Firefox)
 
-
-## Bar chart
-This bar chart shows statistics on the range of response times:
-
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
-<img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
-
-This chart shows how significantly <strong>JMeter can under-report response times</strong> experienced by real users.
-TODO: Get same results between 2 charts (Chrome vs. Firefox).
-TODO: Add Microsoft IE and Edge
-TODO: Add HP TruClient for comparison?
 
 
 <hr size=5>
