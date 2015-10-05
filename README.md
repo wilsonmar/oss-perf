@@ -94,8 +94,8 @@ Narrative text to this diagram and video is below.
 
 | Capabilities | Components |
 | ----------- | ---------- |
-| On a sample web server app cloned for test use | app server |
-| instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
+| On a sample web server app with multiple interfaces | app server |
+| and instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
 | artificial loads are imposed by running | JMeter Controllers |
 | virtual user scripts taking the place of humans on real browsers and mobile devices. | JMeter code |
 | Specific scenarios of different parameter values | run variations (Taurus) |
