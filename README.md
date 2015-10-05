@@ -9,7 +9,8 @@ edit the file, and send us a pull request. Better yet,
 
 <a name="Background">
 ## Background Why</a>
-The approach described here was created in response to the need for the fastest possible way to achieve load testing:
+The approach described here was created in response to the need for the fastest possible way to achieve 
+<a href="#PerfTesting">"performance testing"</a>:
 
 A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
 
@@ -80,19 +81,16 @@ Codification of API calls into standard patterns makes it now possible to
 <a id="TheVision"></a>
 <a name="Diagram"> 
 ## Diagram of interactions among components</a>
-Interactions among the varioius components described above are illustred by this diagram:
+Interactions among the various components described above are illustred by this diagram.
+Click on it to view the draft-status video based 
+<a href="#Narrative">narrative text</a> below:
 
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png">
-<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
-
-The draft-status video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
-http://www.youtube.com/watch?v=wBnt8nDtYz8</a> gradually reveals interconnected elements explained in the 
-<a href="#Narrative">narrative text</a> and
-<a href="#Diagram">diagram</a> above.
+<a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
+http://www.youtube.com/watch?v=wBnt8nDtYz8</a><img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
 
 
 <a name="Narrative"> 
-## Table of Capabilities and Components </a>
+## Capabilities and Components </a>
 The capabilities of our approach is described below in one sentence (with associated components):
 
 | Capabilities | Components |
@@ -264,13 +262,21 @@ A complete infrastructure also includes test code generation from a repository o
 Comparisons based on these dimensions to "slice and dice" performance observations:
 
 a. time (peak)
+
 b. approach to build server under test
+
 c. server configuration set
+
 d. release/version of app
+
 e. project
+
 f. sub-systems
+
 g. sequence flow of functionality being tested
+
 h. tester
+
 i. keywords, etc.
 
 
