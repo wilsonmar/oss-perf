@@ -12,14 +12,16 @@ edit the file, and send us a pull request. Better yet,
 ## Background Why</a>
 The approach described here was created in response to the need for the fastest possible way to achieve load testing:
 
-A. Inclusion of **testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
+A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
 
 B. **Automatic alerts** of slow execution speeds during automated functional testing.
 
 The objective here is to reduce the amount of manual effort (and human errors) on the part of "testers".
 
-Centralizing data where various aspects of system behavior under stress (or not) 
+C. Centralizing data from various views of system behavior under stress (or not) 
 can be analyzed together will provide the basis for "machine learning" to identify trends and deduce insights.
+
+D. Measure how much time it takes to execute various aspects of JavaScript and other work within browsers.
 
 
 <a name="TypesOfTest">
