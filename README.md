@@ -85,7 +85,8 @@ Interactions among the various components described above are illustred by this 
 Click on the diagram to view the draft-status video.
 
 <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
-<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
+<img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10283730/2b5de876-6b3e-11e5-87ac-501eca8eb123.png">
+
 
 <a name="Narrative"> 
 ## Capabilities and Components </a>
