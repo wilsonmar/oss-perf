@@ -315,7 +315,7 @@ TODO: Add HP TruClient for comparison?
 <hr size=5>
 <a name="Authors">
 ## Authors </a>
-Contact information for authors of this repop:
+Contact information for authors of this repo:
 
 Wilson Mar, @wilsonmar, wilsonmar at gmail, 310.320-7878
 https://www.linkedin.com/in/wilsonmar
