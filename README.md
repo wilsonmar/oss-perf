@@ -14,14 +14,21 @@ The approach described here was created in response to the need for the fastest 
 
 A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
 
+   Although various attempts at generating UI code have not taken hold due to complexity,
+   generation of APIs is less complex of an undertaking.
+
 B. **Automatic alerts** of slow execution speeds during automated functional testing.
 
-The objective here is to reduce the amount of manual effort (and human errors) on the part of "testers".
+C. **Cycle though variations** in several configurations during a single manual run initiation.
+   This takes functionality beyond merely testing to engineering.
 
-C. Centralizing data from various views of system behavior under stress (or not) 
-can be analyzed together will provide the basis for "machine learning" to identify trends and deduce insights.
+The objective here is to **reduce the amount of manual effort** (and human errors) to conduct tests.
 
-D. Measure how much time it takes to execute various aspects of JavaScript and other work within browsers.
+D. **Centralizing data** from various views of system behavior under stress (or not) 
+   can be analyzed together will provide the basis for identifying trends and other insights
+   using both manual and "machine learning" techniques.
+
+E. Measure how much time it takes to execute various aspects of JavaScript and other work within browsers.
 
 
 <a name="TypesOfTest">
@@ -104,7 +111,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 | Functional test automation code are generated in a similar way | func. test gen. |
 
-The above is the narration to the diagram shown below.
+The above narrates the diagram below.
 
 <a id="TheVision"></a>
 <a name="Diagram"> 
