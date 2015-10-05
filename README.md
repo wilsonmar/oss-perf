@@ -82,16 +82,14 @@ Codification of API calls into standard patterns makes it now possible to
 <a name="Diagram"> 
 ## Diagram of interactions among components</a>
 Interactions among the various components described above are illustred by this diagram.
-Click on it to view the draft-status video based 
-<a href="#Narrative">narrative text</a> below:
+Click on the diagram to view the draft-status video.
 
 <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
-http://www.youtube.com/watch?v=wBnt8nDtYz8</a><img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
-
+<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
 
 <a name="Narrative"> 
 ## Capabilities and Components </a>
-The capabilities of our approach is described below in one sentence (with associated components):
+Our approach is described in the narrative text below:
 
 | Capabilities | Components |
 | ----------- | ---------- |
