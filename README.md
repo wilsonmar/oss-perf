@@ -156,7 +156,24 @@ This repo takes a "README driven development" approach, as described
 
 <a name="ExistingComponents">
 ## Existing components</a>
-These are the existing repos made use of by the [approach shown above](#TheVision):
+The remainder of this page describes the existing repos made use of by the [approach shown above](#TheVision).
+
+<a name="AUT">
+## Sample Application Under Test (AUT)</a>
+The ideal sample app would these characteristics:
+
+   0. Be built on code which is open sourced (on github).
+   0. Be built on code which makes use of open sourced libraries and tools (java).
+   0. Be built on code accompanied by tutorials on its construction.
+   0. Be built on code which contain coding that returns errors when optionally switched on (for validating test code).
+
+Apps currently used for tutorials and benchmarking do not meet all the criteria above.
+
+   * WebTours used in most JMeter tutorials to date (within commerical performance testing software LoadRunner)
+     returns errors based on a switch, but its source is not available to the public.
+
+   * PetStore 
+
 
 <a name="configs"></a>
 **Configurations** in servers need to be tuned to obtain the most throughput out of hardware.
