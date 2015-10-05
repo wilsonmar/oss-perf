@@ -88,7 +88,7 @@ The capabilities of our approach is described below in one sentence (with associ
 | instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
 | artificial loads are imposed by running | JMeter Controllers |
 | virtual user scripts taking the place of humans on real browsers and mobile devices. | JMeter code |
-| Specific scenarios of different parameter values | run variations |
+| Specific scenarios of different parameter values | run variations (Taurus) |
 | are invoked on a scheduled basis or dynamically | Jenkins |
 | when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
@@ -135,6 +135,15 @@ The animated PowerPoint diagram used to gradually reveal elements in the diagram
 this video.
 
 
+<a name="Gantt">
+### Sequence of adoption</a>
+The technical relationships above provide the basis for the sequence of work necessary to adopt the approach.
+
+   Not covered in this repo are implementation details such the customized communications, spreadsheets,
+   project plans, and proprietary tutorial materials
+   which enterprises pay for (thus fund development of this approach).
+
+
 <a name="NewComponents">
 ## New components</a>
 These are the new components (repos) created to complete the <a href="#TheVision">vision shown above</a>:
@@ -144,10 +153,10 @@ These are the new components (repos) created to complete the <a href="#TheVision
 | a | HAR files to LogStash | Kranthi? | Design |
 | b | capture timings in Selenium Java code | Kranthi? | Design |
 | c | alerts from LogStash | You? | Design |
-| d | run variations | You? | Design |
+| d | run variations (Taurus) | You? | Design |
 | e | Jenkins invoke various configs | You? | Design |
 | f | ref. data into ElastiSearch | You? | Design |
-| g | j-gen | Wilson | Design |
+| g | j-gen | You? | Design |
 | h | configs | Wilson | Design |
 
 This repo takes a "README driven development" approach, as described 
@@ -157,6 +166,7 @@ This repo takes a "README driven development" approach, as described
 <a name="ExistingComponents">
 ## Existing components</a>
 The remainder of this page describes the existing repos made use of by the [approach shown above](#TheVision).
+
 
 <a name="AUT">
 ## Sample Application Under Test (AUT)</a>
@@ -237,65 +247,12 @@ into a common location with a common date format.
 <a name="Kibana"></a>
 **Kibana** displays dashboards from filtered data indexed on several dimensions.
 
+<a name="Swagger"></a>
+**Swagger gen**
 A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
 
-Execution of test automation scripts are driven by Jenkins (or Bamboo, etc.) continuous integration services.
-
 <hr size="3">
-   Not covered in this repo are implementation details such the customized communications, spreadsheets,
-   project plans, and proprietary tutorial materials
-   which enterprises pay for (which fund development of this repo).
 
-<a name="Status">
-## Priority and status of component development work</a>
-This list is rearranged differently for each organization's unique set of priorities.
-
-   | ID | Category | Action | Component | Status |
-   | -: | -------- | ------ | --------- | ------ |
-   | 01 | AUT | Stand-up | AUT back-end | - |
-   | 02 | AUT | Stand-up | AUT UI | - |
-
-| 3 | DevOps | Stand-up | LogStash collector | - |
-| 4 | DevOps | Create | HAR file into LogStash | - |
-| 5 | DevOps | Stand-up | ElastiSearch | - |
-| 6 | DevOps | Stand-up | Kibana | - |
-| 7 | DevOps | Stand-up | ref. data in ElastiSearch for Kibana | - |
-| 8 | Monitoring | Stand-up | agents | - |
-
-| - | Tuning | Define | configs | - |
-| - | DevOps | Stand-up | Jenkins | - |
-| - | Web Func Test | Stand-up | Selenium WebDriver | - |
-| - | Web Func Test | Start | Selenium code | - |
-| - | Mobile Func Test | Stand-up | Apium driver | - |
-| - | Mobile Func Test | Start | Apium code | - |
-| - | Load | Stand-up | JMeter controllers | - |
-| - | Load | Start | JMeter code | - |
-| - | Load | Create | j-gen | - |
-| - | DevOps | Stand-up | SonarQube | - |
-| - | Dev | Stand-up | Swagger | - |
-| - | Dev | Run | codegen from Swagger | - |
-
-
-<hr size="3">
-## App Under Test source code
-
-0. Source code for building web server supporting apps under test.
-
-0. Source code for building the Andorid mobile app under test.
-
-0. Source code for building the iOS mobile app under test.
-
-## Test script code
-
-0. Appium script code for testing the iOS mobile app under test.
-
-0. Appium script code for testing Andorid mobile app under test.
-
-0. Sellenium script code for testing web app under test.
-
-0. JMeter XML and Java test script code.
-
-<hr /> 
 <a name="Dimensions">
 ## Dimensions</a>
 Comparisons based on these dimensions to "slice and dice" performance observations:
