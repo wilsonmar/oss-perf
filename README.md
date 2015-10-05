@@ -98,17 +98,19 @@ The capabilities of our approach is described below in one sentence (with associ
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
 | obtained by monitoring agents. | agents |
+| As for analysis: |  |
 | The central repository is indexed into various dimensions | ElastiSearch |
 | for visualizations over time and "sliced and diced" for insight. | Kibana |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
 | To measure time taken by browsers to execute client application JavaScript: |  |
-| so that performance anomalies are detected during functional testing, | alerts |
 | browser instances are controlled by | Selenium Web Driver |
 | code that manipulate the browser UI like real people do, | Selenium code |
 | just as native mobile app test automation code | Appium code |
 | are controlled | Appium Driver |
 | so that timings are captured | <a href="#BrowserMob">BrowserMob Proxy</a> |
 | into files included in analysis. | <a href="#HAR-Files">HAR files</a> |
+| All this enables anomalies over performance thresholds to be instantly detected during testing, | levels |
+| so that they can be addressed quickly. | alerts |
 |  |  |
 | To reduce the time traditionally needed to edit and verify | editor |
 | we **generate JMeter code**  | j-gen |
@@ -132,7 +134,7 @@ Interactions among the varioius components described above are illustred by this
 <img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
 
 The animated PowerPoint diagram used to gradually reveal elements in the diagram above is shown in 
-the video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
+the draft-status video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
 http://www.youtube.com/watch?v=wBnt8nDtYz8</a>
 
 
