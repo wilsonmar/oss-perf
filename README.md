@@ -83,9 +83,8 @@ Codification of API calls into standard patterns makes it now possible to
 <a name="Diagram"> 
 ## Interactions among components</a>
 The flow of data and control among the various components is illustred by this diagram and underlying video.
-**Click on the diagram to view the draft-status video.**
-
-<a target="_blank" href="https://youtu.be/wBnt8nDtYz8">
+**Click on the diagram to <a target="_blank" href="https://youtu.be/wBnt8nDtYz8">
+view the draft-status video.**
 <img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10283730/2b5de876-6b3e-11e5-87ac-501eca8eb123.png">
 
 
