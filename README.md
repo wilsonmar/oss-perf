@@ -192,7 +192,7 @@ controls native mobile smart phones as if humans were swiping and tapping the sc
 controls native mobile smart phones as if humans were swiping and tapping the screen.
 
 <a name="LogStash"></a>
-0. **Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
+**Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
 into a common location with a common date format.
 
 <a name="ElastiSearch"></a>
@@ -322,3 +322,4 @@ Skype: wilsonmar4
 Kranthi Paidi, @kkpaidi, 
 https://www.linkedin.com/pub/kranthi-paidi/1a/b62/758
 
+Anil Mainali
