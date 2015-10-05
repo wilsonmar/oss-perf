@@ -85,7 +85,7 @@ Codification of API calls into standard patterns makes it now possible to
 The flow of data and control among the various components is illustred by this diagram and underlying video.
 **Click on the diagram to <a target="_blank" href="https://youtu.be/wBnt8nDtYz8">
 view the draft-status video.**
-<img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10283730/2b5de876-6b3e-11e5-87ac-501eca8eb123.png">
+<img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10285845/e879c39a-6b47-11e5-8af0-687e197e4d98.png"></a>
 
 
 <a name="Narrative"> 
@@ -175,14 +175,13 @@ These are the new components created to complete the <a href="#TheVision">vision
 This repo takes a "README driven development" approach, as described 
 <a target="_blank" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">here</a>.
 
-
 <a name="ExistingComponents">
-## Existing components</a>
-The remainder of this page describes the existing repos made use of by the [approach shown above](#TheVision).
+## Components list</a>
+The remainder of this page describes the components mentioned in the [diagram and narrative above](#TheVision).
 
 
 <a name="AUT">
-## Sample Application Under Test (AUT)</a>
+### Sample Application Under Test (AUT)</a>
 The ideal sample app would these characteristics:
 
    0. Be built on code which provides responsive web, native mobile (iOS and Android), plus APIs.
@@ -198,6 +197,7 @@ Apps currently used for tutorials, benchmarking, and pre-sales do not meet all t
      returns errors based on a switch, but its source is not available to the public.
 
    * PetStore 
+
 
 
 <a name="configs"></a>
