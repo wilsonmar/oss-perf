@@ -11,7 +11,7 @@ edit the file, and send us a pull request. Better yet,
 <a name="Background">
 ## Background Why</a>
 The approach described here was created in response to the need for the fastest possible way to achieve 
-<a href="#PerfTesting">"performance testing"</a>:
+<a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
 A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
 
@@ -148,11 +148,14 @@ The technical relationships described above provide the basis for sequencing the
    spreadsheets, project plans, and on-site tutorial materials
    which enterprises pay for (thus fund development of this approach).
 
-There has been a lot written on the benefit of contributing to open-source software,
-especially to enterprises (such as banks, retail, etc.) 
+There has been a lot written on the benefit of contributing to open-source software.
+
+   * http://www.goldmansachs.com/our-thinking/pages/open-source.html
+
+Open-source is especially to enterprises (such as banks, retail, etc.) 
 which are not in the business of creating utility software for testing.
 The hope of open-sourcing software is that others can maintain the software even when the original author moves on.
-And original development of software can receive a level of world-class scrunity and creativity.
+And original development of software can receive a level of world-class scrunity, creativity, and velocity.
 
 
 <a name="NewComponents">
@@ -261,8 +264,9 @@ into a common location with a common date format.
 **Kibana** displays dashboards from filtered data indexed on several dimensions.
 
 <a name="Swagger"></a>
-**Swagger gen**
-A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
+**Swagger gen** at https://github.com/swagger-api/swagger-codegen
+generates code from a repository of API requirements (Swagger).
+
 
 <hr size="3">
 
