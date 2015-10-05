@@ -87,7 +87,7 @@ The flow of data and control among the various components is illustred by this d
 view the draft-status video.**
 <img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10285845/e879c39a-6b47-11e5-8af0-687e197e4d98.png"></a>
 
-Narrative text to this diagram and video is described below:
+Narrative text to this diagram and video is below.
 
 <a name="Narrative"> 
 ## Capabilities and Components </a>
