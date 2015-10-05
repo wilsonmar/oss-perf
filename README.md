@@ -77,6 +77,20 @@ Codification of API calls into standard patterns makes it now possible to
 **generate test script code**.
 
 
+<a id="TheVision"></a>
+<a name="Diagram"> 
+## Diagram of interactions among components</a>
+Interactions among the varioius components described above are illustred by this diagram:
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png">
+<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
+
+The draft-status video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
+http://www.youtube.com/watch?v=wBnt8nDtYz8</a> gradually reveals interconnected elements explained in the 
+<a href="#Narrative">narrative text</a> and
+<a href="#Diagram">diagram</a> above.
+
+
 <a name="Narrative"> 
 ## Table of Capabilities and Components </a>
 The capabilities of our approach is described below in one sentence (with associated components):
@@ -123,19 +137,6 @@ The capabilities of our approach is described below in one sentence (with associ
 | Functional test automation code are generated in a similar way | func. test gen. |
 
 The above narrates the diagram below.
-
-<a id="TheVision"></a>
-<a name="Diagram"> 
-## Diagram of interactions among components</a>
-Interactions among the varioius components described above are illustred by this diagram:
-
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png">
-<img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
-
-The draft-status video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
-http://www.youtube.com/watch?v=wBnt8nDtYz8</a> gradually reveals interconnected elements explained in the 
-<a href="#Narrative">narrative text</a> and
-<a href="#Diagram">diagram</a> above.
 
 
 <a name="Gantt">
