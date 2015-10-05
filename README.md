@@ -132,7 +132,8 @@ Interactions among the varioius components described above are illustred by this
 <img alt="oss-perf-v05_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10269446/8cd2c436-6a95-11e5-806e-f6bbc41158b5.png"></a>
 
 The animated PowerPoint diagram used to gradually reveal elements in the diagram above is shown in 
-this video.
+the video at <a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
+http://www.youtube.com/watch?v=wBnt8nDtYz8</a>
 
 
 <a name="Gantt">
