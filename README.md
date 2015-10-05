@@ -83,7 +83,7 @@ Codification of API calls into standard patterns makes it now possible to
 <a name="Diagram"> 
 ## Interactions among components</a>
 The flow of data and control among the various components is illustred by this diagram and underlying video.
-**Click on the diagram to <a target="_blank" href="https://youtu.be/wBnt8nDtYz8">
+**Click on the diagram to <a target="_blank" href="http://www.youtube.com/watch?v=NOAuB1E_Q3Q">
 view the draft-status video.**
 <img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10285845/e879c39a-6b47-11e5-8af0-687e197e4d98.png"></a>
 
@@ -103,7 +103,7 @@ Narrative text to this diagram and video is below.
 | when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
-| log collected and normalized include | Logstash |
+| metrics collected and normalized include | Logstash |
 | logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
