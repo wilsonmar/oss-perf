@@ -7,10 +7,11 @@ So if you see a typo that needs fixing or an idea that should be considered, ple
 edit the file, and send us a pull request. Better yet, 
 <a href="#NewComponents">join us</a> to revolutionalize the industry.
 
+
 <a name="Background">
 ## Background Why</a>
 The approach described here was created in response to the need for the fastest possible way to achieve 
-<a href="#PerfTesting">"performance testing"</a>:
+<a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
 A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
 
@@ -82,9 +83,8 @@ Codification of API calls into standard patterns makes it now possible to
 <a name="Diagram"> 
 ## Interactions among components</a>
 The flow of data and control among the various components is illustred by this diagram and underlying video.
-**Click on the diagram to view the draft-status video.**
-
-<a target="_blank" href="https://youtu.be/wBnt8nDtYz8">
+**Click on the diagram to <a target="_blank" href="https://youtu.be/wBnt8nDtYz8">
+view the draft-status video.**
 <img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10283730/2b5de876-6b3e-11e5-87ac-501eca8eb123.png">
 
 
@@ -138,16 +138,28 @@ The above narrates the diagram below.
 
 <a name="Gantt">
 ### Sequence of adoption</a>
-The technical relationships above provide the basis for the sequence of work necessary to adopt the approach.
+The technical relationships described above provide the basis for sequencing the work necessary to adopt the approach.
 
-   Not covered in this repo are implementation details such as the customized communications, 
+
+
+
+   Not covered in this are implementation details such as the customized communications, 
    spreadsheets, project plans, and on-site tutorial materials
    which enterprises pay for (thus fund development of this approach).
+
+There has been a lot written on the benefit of contributing to open-source software.
+
+   * http://www.goldmansachs.com/our-thinking/pages/open-source.html
+
+Open-source is especially to enterprises (such as banks, retail, etc.) 
+which are not in the business of creating utility software for testing.
+The hope of open-sourcing software is that others can maintain the software even when the original author moves on.
+And original development of software can receive a level of world-class scrunity, creativity, and velocity.
 
 
 <a name="NewComponents">
 ## New components</a>
-These are the new components (repos) created to complete the <a href="#TheVision">vision shown above</a>:
+These are the new components created to complete the <a href="#TheVision">vision shown above</a>:
 
 | ID | Component | By | Need |
 | ------ | --------- | -------- | ---- |
@@ -251,8 +263,9 @@ into a common location with a common date format.
 **Kibana** displays dashboards from filtered data indexed on several dimensions.
 
 <a name="Swagger"></a>
-**Swagger gen**
-A complete infrastructure also includes test code generation from a repository of API requirements (Swagger).
+**Swagger gen** at https://github.com/swagger-api/swagger-codegen
+generates code from a repository of API requirements (Swagger).
+
 
 <hr size="3">
 
