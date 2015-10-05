@@ -84,7 +84,7 @@ Codification of API calls into standard patterns makes it now possible to
 Interactions among the various components described above are illustred by this diagram.
 Click on the diagram to view the draft-status video.
 
-<a target="_blank" href="http://www.youtube.com/watch?v=wBnt8nDtYz8">
+<a target="_blank" href="https://youtu.be/wBnt8nDtYz8">
 <img alt="oss-perf-v06_wm pptx" src="https://cloud.githubusercontent.com/assets/300046/10283730/2b5de876-6b3e-11e5-87ac-501eca8eb123.png">
 
 
