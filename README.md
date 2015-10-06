@@ -140,16 +140,17 @@ Narrative text to this diagram and video is below.
 ### Other issues</a>
 The description above does not address several aspects:
 
-   * Development tools (Eclipse, etc.).
+   * Development tools (Eclipse, etc.) to develop sample apps.
    * Profiling of code (Visual reading JMX, etc.)
 
    * Public sample custom configurations.
    * Custom configuration storage separate from public repos.
+   * Tutorials explaining how to do all of this.
 
    * Recruitment of others to contribute to this approach
-   * Tutorials explaining how to do it.
+   * Making the economic case
 
-   * Use of clouds (such as AWS EC2, SauceLabs, Flood.io, etc.).
+   * Use of clouds (such as AWS EC2, Blazemeter, SauceLabs, Flood.io, etc.).
    * Integration of commercial/licensed tools
 
    * Management of screen snapshots
