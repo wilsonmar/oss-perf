@@ -161,6 +161,7 @@ The technical relationships described above provide the basis for sequencing the
 
 There has been a lot written on the benefit of contributing to open-source software.
 
+   * http://www.linuxinsider.com/story/69788.html
    * http://www.goldmansachs.com/our-thinking/pages/open-source.html
 
 Open-source is especially to enterprises (such as banks, retail, etc.) 
