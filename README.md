@@ -156,6 +156,9 @@ The description above does not address several aspects:
    * Localization testing across different browsers
 
    * Archival / purging / restore of data
+   * Construction of test plans (and other services).
+
+The above may be addressed in the sample plan below.
 
 <a name="Gantt">
 ### Sequence of adoption</a>
@@ -247,6 +250,13 @@ of each user.
 **Cloud environment.**
 Because it usually takes several servers to emulate enough load on an application server under test,
    JMeter is often run within a cloud envrionment such as Amazon.
+
+https://github.com/oliverlloyd/jmeter-ec2
+Automates running Apache JMeter on Amazon EC2
+
+https://github.com/flood-io/ruby-jmeter
+is a Ruby based DSL for building JMeter test plans
+
 
 <a name="configs"></a>
 **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
