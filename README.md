@@ -22,13 +22,14 @@ B. **Automatic alerts** of slow execution speeds during automated functional tes
 
 C. **Cycle though variations** in <a href="#configs">
    several configurations</a> during a single manual run initiation.
-   This takes functionality beyond merely testing to engineering.
+   This enables performance analysis to go beyond merely testing to engineering.
 
 The objective here is to **reduce the amount of manual effort** (and human errors) to conduct tests.
 
 D. **Centralizing data** from various views of system behavior under stress (or not) 
    can be analyzed together will provide the basis for identifying trends and other insights
-   using both manual and "machine learning" techniques.
+   using both manual and **"machine learning"** techniques.
+   Machine learning would identify more minute issues more comprehensively.
 
 E. Measure how much time it takes to execute various aspects of JavaScript and other work within various browsers.
    This bar chart shows the difference in response time on different browsers (Chrome vs. Firefox) vs. JMeter.
