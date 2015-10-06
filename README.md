@@ -145,10 +145,17 @@ The description above does not address several aspects:
 
    * Public sample custom configurations.
    * Custom configuration storage separate from public repos.
+
+   * Recruitment of others to contribute to this approach
    * Tutorials explaining how to do it.
 
    * Use of clouds (such as AWS EC2, SauceLabs, Flood.io, etc.).
    * Integration of commercial/licensed tools
+
+   * Management of screen snapshots
+   * Localization testing across different browsers
+
+   * Archival / purging / restore of data
 
 <a name="Gantt">
 ### Sequence of adoption</a>
