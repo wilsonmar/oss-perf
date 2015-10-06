@@ -140,13 +140,15 @@ Narrative text to this diagram and video is below.
 ### Other issues</a>
 The description above does not address several aspects:
 
-   * Development tools
+   * Development tools (Eclipse, etc.).
+   * Profiling of code (Visual reading JMX, etc.)
+
    * Public sample custom configurations.
    * Custom configuration storage separate from public repos.
    * Tutorials explaining how to do it.
-   * Use of clouds (such as AWS EC2, SauceLabs, Flood.io, etc.).
-   * Integration of commercial/licensed tools (such 
 
+   * Use of clouds (such as AWS EC2, SauceLabs, Flood.io, etc.).
+   * Integration of commercial/licensed tools
 
 <a name="Gantt">
 ### Sequence of adoption</a>
