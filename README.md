@@ -192,7 +192,7 @@ These are the new components created to complete the <a href="#TheVision">vision
 | a | HAR files to LogStash | Kranthi? | Design |
 | b | capture timings in Selenium Java code | Kranthi? | Design |
 | c | alerts from LogStash | You? | Design |
-| d | run variations (Taurus) | You? | Design |
+| d | <a href="#run-variations">run variations (Taurus)</a> | You? | Design |
 | e | Jenkins invoke various configs | You? | Design |
 | f | ref. data into ElastiSearch | You? | Design |
 | g | j-gen | You? | Design |
@@ -264,7 +264,7 @@ is a Ruby based DSL for building JMeter test plans
 
 <a name="run-variations"></a>
 **Run variations** is managed by TAURUS (Test Automation Running Smoothly) at
-http://github.com/Blazemeter/taurus
+http://github.com/Blazemeter/taurus, which creates and edits JMeter YAML files that control JMeter slaves.
 
    * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
 
