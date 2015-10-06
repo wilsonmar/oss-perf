@@ -266,6 +266,7 @@ is a Ruby based DSL for building JMeter test plans
 **Run variations** is managed by TAURUS (Test Automation Running Smoothly) at
 http://github.com/Blazemeter/taurus, written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves.
 
+   * http://gettaurus.org/
    * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
    * http://github.com/Blazemeter/taurus/blob/master/docs/Installation.md
 
