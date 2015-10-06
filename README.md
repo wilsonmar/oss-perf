@@ -271,6 +271,11 @@ and receive outputs from Blazemeter.
    * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
    * http://github.com/Blazemeter/taurus
 
+<a name="AgentMonitoring">
+**Monitoring** via agents (or JMX) include innovations from profilers and:
+
+   * https://github.com/GoogleCloudPlatform/PerfKitBenchmarker/issues/513
+
 <a name="SeleniumWebDriver"></a>
 **Selenium WebDriver**
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
