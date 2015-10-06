@@ -274,7 +274,7 @@ and receive outputs from Blazemeter.
 <a name="AgentMonitoring">
 **Monitoring** via agents (or JMX) include innovations from profilers and:
 
-   * https://github.com/GoogleCloudPlatform/PerfKitBenchmarker/issues/513
+   * https://github.com/GoogleCloudPlatform/PerfKitBenchmarker
 
 <a name="SeleniumWebDriver"></a>
 **Selenium WebDriver**
