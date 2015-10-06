@@ -267,7 +267,7 @@ is a Ruby based DSL for building JMeter test plans
 http://github.com/Blazemeter/taurus, written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves.
 
    * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
-   * http://github.com/Blazemeter/taurus/blog/master/docs/Installation.md
+   * http://github.com/Blazemeter/taurus/blob/master/docs/Installation.md
 
 <a name="SeleniumWebDriver"></a>
 **Selenium WebDriver**
