@@ -20,9 +20,10 @@ A. **Testing earlier** in the dev. lifecycle through more automatic **generation
 
 B. **Automatic alerts** of slow execution speeds during automated functional testing.
 
-C. **Cycle though variations** in <a href="#configs">
+C. **Automatically cycle though variations** of <a href="#configs">
    several configurations</a> during a single manual run initiation.
-   This enables performance analysis to go beyond merely testing to engineering.
+   More important than hands-free,
+   this enables performance analysis to go beyond merely testing to engineering.
 
 The objective here is to **reduce the amount of manual effort** (and human errors) to conduct tests.
 
@@ -134,7 +135,17 @@ Narrative text to this diagram and video is below.
 | in the same or spearate runs than what app source code go through. | dev. toolchain |
 | Functional test automation code are generated in a similar way | func. test gen. |
 
-The above narrates the diagram below.
+
+<a name="OtherIssues">
+### Other issues</a>
+The description above does not address several aspects:
+
+   * Development tools
+   * Public sample custom configurations.
+   * Custom configuration storage separate from public repos.
+   * Tutorials explaining how to do it.
+   * Use of clouds (such as AWS EC2, SauceLabs, Flood.io, etc.).
+   * Integration of commercial/licensed tools (such 
 
 
 <a name="Gantt">
