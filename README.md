@@ -237,7 +237,7 @@ Examples of configurations include:
    * etc.
 
 <a name="Jenkins"></a>
-**Jenkins** 
+**Jenkins/CI** 
 initiates the various programs listed below on a schedule or when a build is requested.
 Selenium and JMeter load generators are slave nodes to Jenkins.
 
@@ -261,6 +261,12 @@ is a Ruby based DSL for building JMeter test plans
 
 <a name="configs"></a>
 **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
+
+<a name="run-variations"></a>
+**Run variations** is managed by TAURUS (Test Automation Running Smoothly) at
+http://github.com/Blazemeter/taurus
+
+   * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
 
 <a name="SeleniumWebDriver"></a>
 **Selenium WebDriver**
