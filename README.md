@@ -101,7 +101,7 @@ Narrative text to this diagram and video is below.
 | artificial loads are imposed by running | JMeter Controllers |
 | virtual user scripts taking the place of humans on real browsers and mobile devices. | JMeter code |
 | Specific scenarios of different parameter values | run variations (Taurus) |
-| are invoked on a scheduled basis or dynamically | Jenkins |
+| are invoked on a scheduled basis or dynamically | Jenkins/CircleCI |
 | when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
