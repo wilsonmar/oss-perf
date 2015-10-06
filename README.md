@@ -263,12 +263,13 @@ is a Ruby based DSL for building JMeter test plans
 **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
 
 <a name="run-variations"></a>
-**Run variations** is managed by TAURUS (Test Automation Running Smoothly) at
-http://github.com/Blazemeter/taurus, written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves.
+**Run variations** is managed by TAURUS (Test Automation Running Smoothly) was 
+written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves
+and receive outputs from Blazemeter.
 
    * http://gettaurus.org/
    * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
-   * http://github.com/Blazemeter/taurus/blob/master/docs/Installation.md
+   * http://github.com/Blazemeter/taurus
 
 <a name="SeleniumWebDriver"></a>
 **Selenium WebDriver**
