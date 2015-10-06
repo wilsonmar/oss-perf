@@ -222,7 +222,7 @@ Apps currently used for tutorials, benchmarking, and pre-sales do not meet all t
    * WebTours used in most JMeter tutorials to date (within commerical performance testing software LoadRunner)
      returns errors based on a switch, but its source is not available to the public.
 
-   * PetStore 
+   * From Kranthiz? 
 
 
 
@@ -264,7 +264,7 @@ is a Ruby based DSL for building JMeter test plans
 
 <a name="run-variations"></a>
 **Run variations** is managed by TAURUS (Test Automation Running Smoothly) at
-http://github.com/Blazemeter/taurus, which creates and edits JMeter YAML files that control JMeter slaves.
+http://github.com/Blazemeter/taurus, written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves.
 
    * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
 
