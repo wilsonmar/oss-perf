@@ -587,4 +587,4 @@ A collection of Kibana dashboards from the community
 
 http://www.theagileadmin.com/2010/08/20/logging-for-success
 
-
+https://www.elastic.co/blog/performance-considerations-elasticsearch-indexing
