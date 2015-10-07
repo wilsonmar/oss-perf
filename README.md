@@ -247,6 +247,7 @@ ramp up load on servers using less test server resources
 than Selenium scripts because they do not maintain a copy of the DOM
 of each user.
 
+
 <a name="CloudEnv"></a>
 **Cloud environment.**
 Because it usually takes several servers to emulate enough load on an application server under test,
@@ -302,6 +303,10 @@ controls native mobile smart phones as if humans were swiping and tapping the sc
 <a name="LogStash"></a>
 **Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
 into a common location with a common date format.
+
+Sending JMeter to the ELK stack means that JMeter listeners are not needed:
+From: http://ecmarchitect.com/archives/2014/09/09/3932
+![jmeter-results-kibana](https://cloud.githubusercontent.com/assets/300046/10350929/b14c8136-6cfb-11e5-882a-4f5955ed45e6.png)
 
 <a name="ElastiSearch"></a>
 **Elasticsearch** combines and indexes logs from several sources.
