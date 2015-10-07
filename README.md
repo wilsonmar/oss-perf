@@ -304,15 +304,15 @@ controls native mobile smart phones as if humans were swiping and tapping the sc
 **Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
 into a common location with a common date format.
 
-Sending JMeter to the ELK stack means that JMeter listeners are not needed:
-From: http://ecmarchitect.com/archives/2014/09/09/3932
-![jmeter-results-kibana](https://cloud.githubusercontent.com/assets/300046/10350929/b14c8136-6cfb-11e5-882a-4f5955ed45e6.png)
-
 <a name="ElastiSearch"></a>
 **Elasticsearch** combines and indexes logs from several sources.
 
 <a name="Kibana"></a>
 **Kibana** displays dashboards from filtered data indexed on several dimensions.
+
+Sending JMeter to the ELK stack means that JMeter listeners are not needed:
+From: http://ecmarchitect.com/archives/2014/09/09/3932
+![jmeter-results-kibana](https://cloud.githubusercontent.com/assets/300046/10350929/b14c8136-6cfb-11e5-882a-4f5955ed45e6.png)
 
 <a name="Swagger"></a>
 **Swagger gen** at https://github.com/swagger-api/swagger-codegen
