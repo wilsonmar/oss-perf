@@ -65,6 +65,11 @@ What I’m hoping for is a few graph in Kibana that illustrates test run conclus
 ## <a name="KibanaSetup"> Kibana Setup</a>
 
 
+<a target="_blank" href="https://plus.google.com/114432111742231285408/posts">
+kowalcjZero</a> created a 
+<a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
+series of videos</a> on JMeter in AWS EC2 and Vagrant box.
+
 
 <hr />
 ## <a name="Resources"> Resources specifically about viewing JMeter using the ELK stack</a>
