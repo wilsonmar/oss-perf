@@ -63,12 +63,12 @@ There are several ways automation scripts can pretend to be internet browsers an
       Such interfaces authenticate using OAuth2 hand-shaking which involves one-way signing or
       OAuth1 which involves mutual exchange of public keys.
 
-   Network traffic emulation scripts can call **API (Application Programming Interfaces)**
-   which "headless" programs communicate with each other (with no UI for human users).
-
 These two different types of scripting efforts may
 use different programming languages and different tools,
 and thus by different people in different groups that don't necessarily talk with each other.
+
+   Network traffic emulation scripts can call **API (Application Programming Interfaces)**
+   which "headless" programs communicate with each other (with no UI for human users).
 
 It can be time-consuming to create traffic emulation scripts due to the need to "sniff" traffic
 in order to convert observed patterns to script code.
@@ -247,6 +247,14 @@ ramp up load on servers using less test server resources
 than Selenium scripts because they do not maintain a copy of the DOM
 of each user.
 
+There are different types of performance testing:
+
+   * Ping tests measure variability in reaching the server 
+   * Speed testing involves single users to identify response times from a range of app functionality.
+   * Load testing stops testing at a targeted load level
+   * Stress testing involves increasing users (load) to identify the bottleneck at maximum capacity.
+   * Scalability testing measures how much capacity really improves when additional/less hardware is added/removed.
+   * Endurance testing measures gradual useage of resources (memory, disk space, etc.) over a longer run times.
 
 <a name="CloudEnv"></a>
 **Cloud environment.**
