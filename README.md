@@ -238,8 +238,11 @@ Examples of configurations include:
 
 <a name="Jenkins"></a>
 **Jenkins/CI** 
-initiates the various programs listed below on a schedule or when a build is requested.
+builds / initiates the various programs listed below on a schedule or when a build is requested.
 Selenium and JMeter load generators are slave nodes to Jenkins.
+
+   Alternatives to Jenkins includes https://travis-ci.org/ which many repos use from github.
+   
 
 <a name="JMeterScripts"></a>
 **JMeter scripts**
