@@ -252,7 +252,7 @@ of each user.
 
 There are different types of performance testing to measure various risks:
 
-   * **Ping tests** measure variability in reaching the server 
+   * **Ping tests** measure variability in reaching the server so that spikes in network or server availability will not confound performance test results.
    * **Speed testing** involves single users to identify response times from a range of app functionality.
    * **Concurrency testing** identifies the impact of multiple requests for the same resources at the same time.
    * **Load testing** stops testing at a targeted load level (for certification).
