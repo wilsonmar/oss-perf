@@ -7,10 +7,13 @@ So if you see a typo that needs fixing or an idea that should be considered, ple
 edit the file, and send us a pull request. Better yet, 
 <a href="#NewComponents">join us</a> to revolutionalize the industry.
 
+   The information below is on a public github page rather than a propriatary internal wiki because
+   we want to share both the development cost and benefit of the **next generation platform**.
+   
 
 <a name="Background">
 ## Background Why</a>
-The approach described here was created in response to the need for the fastest possible way to achieve 
+The approach described here was created in response to the need for a faster, more flexble, and lower cost way to achieve 
 <a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
 A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
@@ -239,10 +242,13 @@ Examples of configurations include:
 <a name="Jenkins"></a>
 **Jenkins/CI** 
 builds / initiates the various programs listed below on a schedule or when a build is requested.
-Selenium and JMeter load generators are slave nodes to Jenkins.
 
-   Alternatives to Jenkins includes https://travis-ci.org/ which many repos use from github.
+Selenium and JMeter load generators are "slave nodes" which Jenkins calls to do work.
+
+   Alternatives to Jenkins include https://travis-ci.org/ cloud service which many repos use from github.
+   Travis is free for open source, but imposes a fee ($129/month and up) for private use on their cloud.
    
+   Jenkins is free to install on premises.
 
 <a name="JMeterScripts"></a>
 **JMeter scripts**
@@ -322,10 +328,7 @@ into a common location with a common date format.
 
 <a name="Kibana"></a>
 **Kibana** displays dashboards from filtered data indexed on several dimensions.
-
-Sending JMeter to the ELK stack means that JMeter listeners are not needed:
-From: http://ecmarchitect.com/archives/2014/09/09/3932
-![jmeter-results-kibana](https://cloud.githubusercontent.com/assets/300046/10350929/b14c8136-6cfb-11e5-882a-4f5955ed45e6.png)
+See <a href="#Analysis">Analysis</a> section below.
 
 <a name="Swagger"></a>
 **Swagger gen** at https://github.com/swagger-api/swagger-codegen
@@ -333,9 +336,19 @@ generates code from a repository of API requirements (Swagger).
 
 
 <hr size="3">
+<a name="Analysis">
+### Analysis of run results</a>
+
+Sending JMeter to the ELK stack means that within JMeter listeners are not needed.
+So Kibana would replace what Blazemeter displays.
+
+From: http://ecmarchitect.com/archives/2014/09/09/3932
+![jmeter-results-kibana](https://cloud.githubusercontent.com/assets/300046/10350929/b14c8136-6cfb-11e5-882a-4f5955ed45e6.png)
+
+
 
 <a name="Dimensions">
-## Dimensions</a>
+### Dimensions</a>
 Comparisons based on these dimensions to "slice and dice" performance observations:
 
 a. time (peak)
