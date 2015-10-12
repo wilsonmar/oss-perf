@@ -1,4 +1,6 @@
-Swagger from folks at Wordnik.
+This page describes the different ways to generate API load test code.
+
+First, Swagger from folks at Wordnik.
 
 Alternatives to Swagger include API Blueprint and RAML.
 
