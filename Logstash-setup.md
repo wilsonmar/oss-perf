@@ -11,6 +11,9 @@ Before forwarding, Logstash can parse and normalize varying schema and formats.
 
 To handle additional load ....
 
+## <a name="Puppet"> Puppet Modules</a>
+
+https://forge.puppetlabs.com/modules?q=logstash
 
 
 ## <a name="LogstashConfig"> Logstash Configuration</a>
