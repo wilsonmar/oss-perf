@@ -33,6 +33,7 @@ https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2#
 0. Click on the blue **Get Started** button.
 
 0. PROTIP: When specifying **domain**, keep to lower case characters and perhaps a number at the end for versioning.
+   For example:
  
   ```
   test1
@@ -88,6 +89,10 @@ https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2#
   "tagline" : "You Know, for Search"
 }
   ```
+  
+  Instead of the web UI,
+  <a target="_blank" href="http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-gsg-create-domain.html">
+  use AWS ES CLI</a>.
   
 0. Click on the Kibana link, such as:
  
