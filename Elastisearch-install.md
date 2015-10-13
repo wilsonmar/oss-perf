@@ -67,7 +67,7 @@ https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2#
 0. Confirm and create. It takes several minutes for Domain status to go from Loading to Ready.
    Below is a sample screen after provisioning:
 
-<img alt="screen shot 2015-10-13 at 8 31 10 am" src="https://cloud.githubusercontent.com/assets/300046/10459540/d9dc2a2e-7184-11e5-9cbd-d78ac15fb296.png">
+  <img alt="screen shot 2015-10-13 at 8 31 10 am" src="https://cloud.githubusercontent.com/assets/300046/10459540/d9dc2a2e-7184-11e5-9cbd-d78ac15fb296.png">
 
   These sample links are no longer active, of course.
   But when it was for me, clicking on https://search-test1-da54anmy3esch22sskcuukwf6i.us-west-2.es.amazonaws.com/
