@@ -1,6 +1,12 @@
 Elastisearch can be installed on-premise or in the Amazon cloud.
 
-<a href="AmazonInstall">
+TOC:
+* <a href="#AmazonInstall">
+  Amazon Install</a>
+
+<hr />
+
+<a name="AmazonInstall">
 ## Install Elastisearch on AWS EC2</a>
 
 Amazon announced its ElastiSearch Service offering October 2015. See:
