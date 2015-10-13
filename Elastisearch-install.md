@@ -1,6 +1,11 @@
-Amazon announced its ElastiSearch Service offering October 2015:
+Elastisearch can be installed on-premise or in the Amazon cloud.
 
-https://aws.amazon.com/blogs/aws/new-amazon-elasticsearch-service/
+<a href="AmazonInstall">
+## Install Elastisearch on AWS EC2</a>
+
+Amazon announced its ElastiSearch Service offering October 2015. See:
+<a target="_blank" href="https://aws.amazon.com/blogs/aws/new-amazon-elasticsearch-service/">
+https://aws.amazon.com/blogs/aws/new-amazon-elasticsearch-service/</a>
 
 Below are the steps I took to create a public instance.
 
@@ -46,11 +51,45 @@ https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2#
 0. After clicking Next, for access policy I select "Allow open access to the domain"
    so anyone can upload documents.
 
-  The version is of AWS access code:
+  The version in the file is of AWS access code API version:
   
   ```
   "Version": "2012-10-17",
   ```
   
-0. Next.
+0. Click Next.
 0. Confirm and create. It takes several minutes for Domain status to go from Loading to Ready.
+   Below is a sample screen after provisioning:
+
+<img alt="screen shot 2015-10-13 at 8 31 10 am" src="https://cloud.githubusercontent.com/assets/300046/10459540/d9dc2a2e-7184-11e5-9cbd-d78ac15fb296.png">
+
+  These sample links are no longer active, of course.
+  But when it was for me, clicking on https://search-test1-da54anmy3esch22sskcuukwf6i.us-west-2.es.amazonaws.com/
+  got me this:
+  
+  ```
+  {
+  "status" : 200,
+  "name" : "Ikthalon",
+  "cluster_name" : "495629083449:test1",
+  "version" : {
+    "number" : "1.5.2",
+    "build_hash" : "62ff9868b4c8a0c45860bebb259e21980778ab1c",
+    "build_timestamp" : "2015-04-27T09:21:06Z",
+    "build_snapshot" : false,
+    "lucene_version" : "4.10.4"
+  },
+  "tagline" : "You Know, for Search"
+}
+  ```
+  
+0. To make use of the instance using Python in my Mac terminal window:
+ 
+  ```
+  pip install elasticsearch
+  ```
+  
+0. For more about using Python for Elastisearch, this article (from November 2014):
+  
+  http://bitquabit.com/post/having-fun-python-and-elasticsearch-part-1/
+
