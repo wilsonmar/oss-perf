@@ -89,6 +89,14 @@ https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2#
 }
   ```
   
+0. Click on the Kibana link, such as:
+ 
+  ```
+  https://search-test1-da54anmy3esch22sskcuukwf6i.us-west-2.es.amazonaws.com/_plugin/kibana/
+  ```
+  
+  <img alt="screen shot 2015-10-13 at 9 42 48 am" src="https://cloud.githubusercontent.com/assets/300046/10461630/12096628-718f-11e5-808b-5b3e2eee0751.png">
+  
 0. To make use of the instance using Python in my Mac terminal window:
  
   ```
