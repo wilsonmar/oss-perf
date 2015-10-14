@@ -43,7 +43,8 @@ output {
   ```
 
 
-## Logstash from JMX
+## Streaming into Logstash from JMeter via JMX
+(JMX = Java Management eXtensions)
 
 https://www.elastic.co/guide/en/logstash/current/plugins-inputs-jmx.html
 
