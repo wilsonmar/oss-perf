@@ -41,8 +41,9 @@ output {
   ```
   
 ## Logstash parsing filter
-  
-	```
+From http://stackoverflow.com/questions/26755717/elasticsearch-kibana-dashboard-analysis-for-jmeter-logs
+
+```
   #Load Test data
   if [LogSeverityType] == "LoadTest" {
     if [Message] =~ "^time" {drop {}}
@@ -62,6 +63,6 @@ output {
       timezone => "Etc/UCT"
     }
   }
-  ```
+ ```
   
 
