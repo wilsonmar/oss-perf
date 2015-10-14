@@ -91,7 +91,7 @@ Codification of API calls into standard patterns makes it now possible to
 The flow of data and control among the various components is illustred by this diagram and underlying video.
 **Click on the diagram to <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
 view the draft-status video.**
-<img alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10486008/d821fc3c-7241-11e5-980b-faade7507716.png"></a>
+<img alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10486097/3b31fd4a-7242-11e5-9fe7-626b4a1a937c.png"></a>
 
 Narrative text to this diagram and video is below.
 
