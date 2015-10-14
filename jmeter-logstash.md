@@ -73,5 +73,9 @@ From http://stackoverflow.com/questions/26755717/elasticsearch-kibana-dashboard-
     }
   }
  ```
+ 
+ Public comments about these keywords are gathered into this page:
+ http://www.dahuatu.com/logstash-input-plugins/
+ 
   
 
