@@ -41,7 +41,14 @@ output {
 }
 
   ```
-  
+
+
+## Logstash from JMX
+
+https://www.elastic.co/guide/en/logstash/current/plugins-inputs-jmx.html
+
+
+
 ## Logstash parsing filter
 From http://stackoverflow.com/questions/26755717/elasticsearch-kibana-dashboard-analysis-for-jmeter-logs
 
