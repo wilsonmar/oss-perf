@@ -12,6 +12,8 @@ Search for Logstash in https://groups.google.com/forum/#!forum/jmeter-plugins
 https://github.com/thomasleveil/elk-jmeter
 uses the Logstash **pipe** input plugin
 
+http://blog.sematext.com/2015/06/23/replaying-elasticsearch-slowlogs-logstash-jmeter/
+
 From https://www.snip2code.com/Snippet/143757/Logstash-config-that-can-be-used-to-read:
 
 ```
