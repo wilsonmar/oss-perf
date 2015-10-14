@@ -12,6 +12,8 @@ Search for Logstash in https://groups.google.com/forum/#!forum/jmeter-plugins
 https://github.com/thomasleveil/elk-jmeter
 uses the Logstash **pipe** input plugin
 
+From https://www.snip2code.com/Snippet/143757/Logstash-config-that-can-be-used-to-read:
+
 ```
 input {
   file {
@@ -38,5 +40,28 @@ output {
 
   ```
   
+## Logstash parsing filter
+  
+	```
+  #Load Test data
+  if [LogSeverityType] == "LoadTest" {
+    if [Message] =~ "^time" {drop {}}
+    grok{
+    match => ["Message","%{TIMESTAMP_ISO8601:log_timestamp},%{NUMBER:elapsed},%{DATA:label},%{NUMBER:responseCode},%{DATA:responseMessage},%{DATA:threadName},%{NUMBER:bytes},%{NUMBER:grpThreads},%{NUMBER:allThreads},%{DATA:URL},%{NUMBER:Latency}"]
+    }
+    mutate {
+      convert => [ "Latency", "integer" ]
+      convert => [ "elapsed", "integer" ]
+      convert => [ "grpThreads", "integer" ]
+      convert => [ "allThreads", "integer" ]
+      convert => [ "responseCode", "integer" ]
+      convert => [ "bytes", "integer" ]
+    }
+    date {
+      match => [ "log_timestamp", "YYYY-MM-dd HH:mm:ss", "ISO8601" ]
+      timezone => "Etc/UCT"
+    }
+  }
+  ```
   
 
