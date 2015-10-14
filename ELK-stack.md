@@ -63,6 +63,8 @@ https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html
 The Definitive Guide to Elastisearch you can submit updates at
 https://github.com/elastic/elasticsearch-definitive-guide
 
+http://linoxide.com/tools/configure-elasticsearch-logstash-kibana-ubuntu-15-04/
+
 There is a lighter edition of Logstash.
 
 Kibana & Elasticsearch started as an open source project, built by devops people for devops people.
