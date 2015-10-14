@@ -28,7 +28,8 @@ C. **Automatically cycle though variations** of <a href="#configs">
    More important than hands-free,
    this enables performance analysis to go beyond merely testing to engineering.
 
-The objective here is to **reduce the amount of manual effort** (and human errors) to conduct tests.
+The objective here is to **reduce the amount of manual effort** (and human errors) to conducting tests
+through automation.
 
 D. **Centralizing data** from various views of system behavior under stress (or not) 
    can be analyzed together will provide the basis for identifying trends and other insights
