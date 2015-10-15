@@ -120,7 +120,7 @@ Narrative text to this diagram and video is below.
 | plus measurements such as garbage collection | monitor stream |
 | obtained by monitoring agents. | agents |
 | As for analysis: |  |
-| The central repository is indexed into various dimensions | ElastiSearch |
+| The central repository is indexed into various dimensions | <a href="#ElastiSearch">ElastiSearch</a> |
 | for visualizations over time and "sliced and diced" for insight. | Kibana |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
 | To measure time taken by browsers to execute client application JavaScript: |  |
