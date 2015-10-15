@@ -2,13 +2,15 @@ This page describes the different ways to generate API load test code.
 
 First, Swagger from folks at Wordnik.
 
-Alternatives to Swagger include API Blueprint and RAML.
-
 Swagger Core stores JAX-RS API designs in JSON files from which
 Swagger UI dynamically generates beautiful HTML documentation and
 Swagger CodeGen generates in client code for different languages.
 
 Swagger's focus is currently serving Node.js developers.
+
+Alternatives to Swagger include API Blueprint and RAML.
+
+Swagger makes use of Jackson, a multi-purpose Java library for processing JSON data format.
 
 Requests include an implementation that reuse WADL introspection logic of 
 <a target="_blank" href="http://restlet.com/">Restlet Framework resources</a>
@@ -43,9 +45,38 @@ ALL elements of an API can be evaluated together:
   * data
   * service virtualization
 
+<a name="AuthTestCases">
+## Authorization test cases</a>
+
+ * Authentication ID assignment (on a web page UI)
+ * Password retrieval/reset
+
+<a name="LifeTestCases">
+## Life-cycle test cases</a>
+
+ * Authentication initial request from client and token return to client
+ * Authentication key expiration handling
+ * Authentication token reuse
+ * Authentication token refresh
+
+
+<a name="RESTCases">
+## REST command cases</a>
+
+ * GET
+ * POST
+ * PUT
+ * DELETE
+ * HEAD
+ * OPTIONS
+ * PATCH
+
+<a name="QualitativeTestCases">
+## Qualitative test cases</a>
+
 What automated scripts have not been evaluating are <strong>qualitative</strong> aspects such as:
 
-  * Whether model names reflect good names for java classes.
+  * Whether model names reflect **good names** for classes, methods, fields, static values, etc.
   * Whether the model hierarchy is consistent across various components.
   * Whether attributes formats are appropriate to the data represented.
 
