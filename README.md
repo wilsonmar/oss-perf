@@ -92,12 +92,13 @@ The flow of data and control among the various components is illustred by this d
 **Click on the diagram to <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
 view the draft-status video</a>.**
 
-<img width="795" alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10526007/ea8b2bfe-733c-11e5-9f47-ad255997a861.png">
+<img width="817" alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10528099/09157708-7349-11e5-9a81-5352d9fb568b.png">
 
-The different colors represent "ownership" (who does what) within a particular organization.
+Different colors in the diagram represent "ownership" (who does what) within a particular organization.
 Other organizations have other divisions.
 
-Narrative text to this diagram and video is below.
+Narrative text to the diagram and video is below.
+
 
 <a name="Narrative"> 
 ## Capabilities and Components </a>
@@ -110,7 +111,7 @@ Narrative text to this diagram and video is below.
 | virtual user scripts taking the place of humans on real browsers and mobile devices. |<a href="#JMeter-servers"> JMeter code</a> |
 | Specific scenarios of different parameter values |<a href="# run variations (Taurus)</a> |
 | are invoked on a scheduled basis or dynamically | <a href="#Jenkins/CI">Jenkins CI</a> |
-| when the dev. toolchain is invoked after |<a href="# dev. toolchain">dev. toolchain </a> |
+| when the dev. toolchain is invoked after |<a href="#dev-toolchain">dev. toolchain</a> |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
 | metrics collected and normalized include |<a href="#Logstash"> Logstash</a> |
@@ -140,8 +141,8 @@ Narrative text to this diagram and video is below.
 | into source code repositories. | git repo. |
 |  |  |
 | Generated test code is validated by static source code scanners. | SonarQube |
-| in the same or spearate runs than what app source code go through. | dev. toolchain |
-| Functional test automation code are generated in a similar way | func. test gen. |
+| in the same or spearate runs than what app source code go through. | <a href="#dev-toolchain">devops. toolchain</a> |
+| Developers have benefited from virtualizing services that "mock" real servers responding to API calls | virtual services |
 
 
 <a name="OtherIssues">
