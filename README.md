@@ -126,7 +126,7 @@ Narrative text to this diagram and video is below.
 | To measure time taken by browsers to execute client application JavaScript: |  |
 | browser instances are controlled by | Selenium Web Driver |
 | code that manipulate the browser UI like real people do, | Selenium code |
-| just as native mobile app test automation code | <a href="#Appium code">Appium code</a> |
+| just as native mobile app test automation code | <a href="#Appium code">Appium Code</a> |
 | are controlled | Appium Driver |
 | so that timings are captured | <a href="#BrowserMob">BrowserMob Proxy</a> |
 | into files included in analysis. | <a href="#HAR-Files">HAR files</a> |
