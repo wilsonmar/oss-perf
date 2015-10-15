@@ -105,12 +105,12 @@ Narrative text to this diagram and video is below.
 
 | Capabilities | Components |
 | ----------- | ---------- |
-| On a sample web server app with multiple interfaces | app server |
+| On a sample web server app with multiple interfaces | <a href="#app-server">app server</a> |
 | and instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
-| artificial loads are imposed by running | JMeter Controllers |
+| artificial loads are imposed by running | <a href="#JMeter-servers">JMeter Controllers</a> |
 | virtual user scripts taking the place of humans on real browsers and mobile devices. | JMeter code |
 | Specific scenarios of different parameter values | run variations (Taurus) |
-| are invoked on a scheduled basis or dynamically | Jenkins/CircleCI |
+| are invoked on a scheduled basis or dynamically | <a href="#JenkinsCI">Jenkins CI</a> |
 | when the dev. toolchain is invoked after | dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
@@ -215,6 +215,7 @@ This repo takes a "README driven development" approach, as described
 The remainder of this page describes the components mentioned in the [diagram and narrative above](#TheVision).
 
 
+<a id="app-server"></a>
 <a name="AUT">
 ### Sample Application Under Test (AUT)</a>
 The ideal sample app would these characteristics:
@@ -231,9 +232,6 @@ Apps currently used for tutorials, benchmarking, and pre-sales do not meet all t
    * WebTours used in most JMeter tutorials to date (within commerical performance testing software LoadRunner)
      returns errors based on a switch, but its source is not available to the public.
 
-   * From Kranthiz? 
-
-
 
 <a   id="configs"></a>
 <a name="configs"></a>
@@ -246,6 +244,7 @@ Examples of configurations include:
    * Maximum cache size
    * etc.
 
+<a id="Jenkins"></a>
 <a name="Jenkins"></a>
 **Jenkins/CI** 
 builds / initiates the various programs listed below on a schedule or when a build is requested.
@@ -256,6 +255,9 @@ Selenium and JMeter load generators are "slave nodes" which Jenkins calls to do 
    Travis is free for open source, but imposes a fee ($129/month and up) for private use on their cloud.
    
    Jenkins is free to install on premises.
+
+<a id="JMeter-servers">
+**JMeter Servers**</a>
 
 <a name="JMeterScripts"></a>
 **JMeter scripts**
