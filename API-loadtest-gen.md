@@ -1,5 +1,8 @@
 This page describes the different ways to generate API load test code.
 
+<a id="Swagger">
+### Swagger</a>
+
 First, Swagger from folks at Wordnik.
 
 Swagger Core stores JAX-RS API designs in JSON files from which
@@ -11,6 +14,13 @@ Swagger's focus is currently serving Node.js developers.
 Alternatives to Swagger include API Blueprint and RAML.
 
 Swagger makes use of Jackson, a multi-purpose Java library for processing JSON data format.
+
+https://swaggerhub.com/ provides an instance of swagger on a free platform for teams to collaborate on and coordinate across the entire workflow of an API’s lifecycle. SwaggerHub leverages a centralized definition to allow the whole team to work together to iteratively design, build, document and manage an API.
+
+SwaggerHub includes connectors for GitHub, DockerHub and Ready! API.
+
+http://www.programmableweb.com/news/smartbear-picks-swagger-api-project/2015/03/26
+
 
 Requests include an implementation that reuse WADL introspection logic of 
 <a target="_blank" href="http://restlet.com/">Restlet Framework resources</a>
@@ -30,6 +40,16 @@ to test and debug web APIs
 
 http://swagger.io/swagger-core/
 explains the use of maven.
+
+
+<a name="SwaggerGen">
+## Swagger client code generation</a>
+
+Code to make calls in various programming languages are created by 
+<a target="_blank" href="https://github.com/swagger-api/swagger-codegen">
+swagger-codegen</a>
+
+
 
 
 <a name="SwaggerJMeterGen">
