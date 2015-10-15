@@ -54,6 +54,9 @@ ALL elements of an API can be evaluated together:
 
  * Authentication ID assignment (on a web page UI)
  * Password retrieval/reset
+ * Availability
+ * Allotment selection
+ * Billing
 
 <a name="LifeTestCases">
 ## Life-cycle test cases</a>
@@ -62,7 +65,6 @@ ALL elements of an API can be evaluated together:
  * Authentication key expiration handling
  * Authentication token reuse
  * Authentication token refresh
-
 
 <a name="RESTCases">
 ## REST command cases</a>
@@ -84,6 +86,12 @@ What automated scripts have not been evaluating are <strong>qualitative</strong>
   * Whether the model hierarchy is consistent across various components.
   * Whether attributes formats are appropriate to the data represented.
 
+<a name="Variations">
+## Variations</a>
+
+ * upgrade/version APIs or move between environments, geographies, datacenters, and the cloud.
+ * metering, SLA,  
+ * Allotment exceeded handling
 
 <a name="Resources">
 ## References</a>
