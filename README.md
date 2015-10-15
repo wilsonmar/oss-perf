@@ -124,7 +124,7 @@ Narrative text to this diagram and video is below.
 | for visualizations over time and "sliced and diced" for insight. | <a href="#Kibana">Kibana</a> |
 | The visualizations include static objectives and targets to compare against live data. | ref. data |
 | To measure time taken by browsers to execute client application JavaScript: |  |
-| browser instances are controlled by | Selenium Web Driver |
+| browser instances are controlled by | <a href="#Selenium Web Driver">Selenium Web Driver</a> |
 | code that manipulate the browser UI like real people do, | Selenium code |
 | just as native mobile app test automation code | <a href="#Appium Code">Appium Code</a> |
 | are controlled | Appium Driver |
