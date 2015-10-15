@@ -18,7 +18,11 @@ developed by Java (SE/EE, Google AppEngine, OSGi, GWT, Android)
 REST API developers using the Restlet Studio and the APISpark cloud managed by
 Reslet based in France with an office in Palo Alto.
 
-Reslet (in Oct. 2015) bought Czech Filip Kolařík's DHC which test and debug web APIs.
+Reslet (in Oct. 2015) bought Czech Filip Kolařík's 
+<a target="_blank" href="https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm">
+DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
+to test and debug web APIs
+
 
 
 <a name="SwaggerCoreBuild">
