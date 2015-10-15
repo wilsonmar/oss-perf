@@ -91,12 +91,9 @@ Codification of API calls into standard patterns makes it now possible to
 The flow of data and control among the various components is illustred by this diagram and underlying video.
 **Click on the diagram to <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
 view the draft-status video</a>.**
-<img id="Image-Maps-Com-image-maps-2015-10-14-203758" src="https://cloud.githubusercontent.com/assets/300046/10486097/3b31fd4a-7242-11e5-9fe7-626b4a1a937c.png" border="0" width="1516" height="746" orgWidth="1516" orgHeight="746" usemap="#image-maps-2015-10-14-203758" alt="" />
-<map name="image-maps-2015-10-14-203758" id="ImageMapsCom-image-maps-2015-10-14-203758">
-<area id="dev-toolchain" alt="dev-toolchain" title="dev-toolchain" href="http://www.image-maps.com/" shape="rect" coords="693,28,879,125" style="outline:none;" target="_self"     />
-<area id="configs" alt="configs" title="configs" href="http://www.image-maps.com/" shape="rect" coords="821,141,1007,223" style="outline:none;" target="_self"     />
-<area shape="rect" coords="1514,744,1516,746" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
-</map>
+
+<img width="790" alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10516945/72b43918-730f-11e5-8722-b730e2123a68.png">
+
 
 Narrative text to this diagram and video is below.
 
