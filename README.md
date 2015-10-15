@@ -108,7 +108,7 @@ Narrative text to this diagram and video is below.
 | On a sample web server app with multiple interfaces | <a href="#app-server">app server</a> |
 | and instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
 | artificial loads are imposed by running | <a href="#JMeter-servers">JMeter Controllers</a> |
-| virtual user scripts taking the place of humans on real browsers and mobile devices. | JMeter code |
+| virtual user scripts taking the place of humans on real browsers and mobile devices. |<a href="#JMeter-servers"> JMeter code</a> |
 | Specific scenarios of different parameter values | run variations (Taurus) |
 | are invoked on a scheduled basis or dynamically | <a href="#JenkinsCI">Jenkins CI</a> |
 | when the dev. toolchain is invoked after | dev. toolchain |
