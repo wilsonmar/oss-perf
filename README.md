@@ -92,7 +92,7 @@ The flow of data and control among the various components is illustred by this d
 **Click on the diagram to <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
 view the draft-status video</a>.**
 
-<img width="790" alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10516945/72b43918-730f-11e5-8722-b730e2123a68.png">
+<img width="795" alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10526007/ea8b2bfe-733c-11e5-9f47-ad255997a861.png">
 
 The different colors represent "ownership" (who does what) within a particular organization.
 Other organizations have other divisions.
