@@ -94,6 +94,8 @@ view the draft-status video</a>.**
 
 <img width="790" alt="oss-perf-v07_wm" src="https://cloud.githubusercontent.com/assets/300046/10516945/72b43918-730f-11e5-8722-b730e2123a68.png">
 
+The different colors represent "ownership" (who does what) within a particular organization.
+Other organizations have other divisions.
 
 Narrative text to this diagram and video is below.
 
