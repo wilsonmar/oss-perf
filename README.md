@@ -114,7 +114,7 @@ Narrative text to this diagram and video is below.
 | when the dev. toolchain is invoked after |<a href="# dev. toolchain">dev. toolchain </a> |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
-| metrics collected and normalized include |<a href="#Logstash">Logstash</a> |
+| metrics collected and normalized include |<a href="#Logstash"> Logstash</a> |
 | logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
