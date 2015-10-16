@@ -30,18 +30,40 @@ value of tests decreases rapidly as their execution time increases</a>.
  For example, a virtualized service emulating the airline industry GDS (Glbal Data Service) 
  would create valid origins and destinations based on codes defined by the IATA.
 
-## Don't do 
 
-<a thttp://www.mockobjects.com/2007/04/test-smell-everything-is-mocked.html">
+<a name="Controversy">
+## Controversy</a>
 
-on't mock third-party libraries
-There are two problems when mocking a third-party library. First, you can't use the tests to drive the design, the API belongs to someone else. Mock-based tests for external libraries often end up contorted and messy to get through to the functionality that you want to exercise. These tests are giving off smells that highlight designs that are inappropriate for your system but, instead of fixing the problem and simplifying the code, you end up carrying the weight of the test complexity. The second issue is that you have to be sure that the behaviour you implement in a mock (or stub) matches the external library. How difficult this is depends on the API, which has to be specified (and implemented) well enough for you to be certain that the tests are meaningful.
+The effort to mock enables a development team to 
+"catch changes in the implementation that would have broken our code".
+
+"You might use mocks to simulate behaviour that is hard to trigger with the real library, such as throwing exceptions."
+
+"Similarly, you might use mocks to test a sequence of calls, for example making sure that a transaction is rolled back if there's a failure."
+
+There should not be many of these in a test suite.
+
+The above comments are in the 2007 page
+<a http://www.mockobjects.com/2007/04/test-smell-everything-is-mocked.html">
+http://www.mockobjects.com/2007/04/test-smell-everything-is-mocked.html</a>
+titled Don't mock third-party libraries.
+
+Steve Freeman also writes:
+
+"There are two problems when mocking a third-party library. First, you can't use the tests to drive the design, the API belongs to someone else. Mock-based tests for external libraries often end up contorted and messy to get through to the functionality that you want to exercise. These tests are giving off smells that highlight designs that are inappropriate for your system but, instead of fixing the problem and simplifying the code, you end up carrying the weight of the test complexity. 
+
+The second issue is that you have to be sure that the behaviour you implement in a mock (or stub) matches the external library. How difficult this is depends on the API, which has to be specified (and implemented) well enough for you to be certain that the tests are meaningful.
+
+To develop against an external API, first TDD your code to define interfaces for the services that your application needs in terms of your domain. Then write a thin layer using the library to implement these interfaces, with focussed integration tests to confirm your assumptions about how it works. 
+
+How to make integration tests work effectively will depend on your environment, but you will need to do it anyway so you might as well start early and get the benefit. There will be relatively few integration tests, compared to the number of unit tests, so they should not get in the way of the build even if they're not as fast as the in-memory tests."
 
 
-To develop against an external API, first TDD your code to define interfaces for the services that your application needs in terms of your domain. Then write a thin layer using the library to implement these interfaces, with focussed integration tests to confirm your assumptions about how it works. How to make integration tests work effectively will depend on your environment, but you will need to do it anyway so you might as well start early and get the benefit. There will be relatively few integration tests, compared to the number of unit tests, so they should not get in the way of the build even if they're not as fast as the in-memory tests.
+<a name="Rescue">
+## Open Source to the Rescue</a>
 
-There are some exceptions when mocking third-party libraries can be helpful. You might use mocks to simulate behaviour that is hard to trigger with the real library, such as throwing exceptions. Similarly, you might use mocks to test a sequence of calls, for example making sure that a transaction is rolled back if there's a failure. There should not be many of these in a test suite.
+Let's address this together.
 
+I think we can cover more ground, faster by working together.
 
-Resources:
-
+The community of users of an service need to work together, independently of the provider of that service.
