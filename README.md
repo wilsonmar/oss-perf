@@ -145,7 +145,7 @@ Narrative text to the diagram and video is below.
 |  |  |
 | Generated test code is validated by a static source code scanner | SonarQube |
 | by applying rules defined during team code walthroughs | Rules |
-| in the same or separate runs than what app source code go through. | <a href="#dev-toolchain">devops. toolchain</a> |
+| in the same or separate runs than what app source code go through. | dev. toolchain |
 | Developers have benefitted from virtualizing services that "mock" real servers responding to API calls | virtual services |
 
 
