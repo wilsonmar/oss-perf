@@ -129,8 +129,8 @@ Narrative text to the diagram and video is below.
 | browser instances are controlled by | <a href="#Selenium-Web-Driver">Selenium Web Driver</a> |
 | code that manipulate the browser UI like real people do, | Selenium code |
 | just as native mobile app test automation code | <a href="#Appium-Code">Appium Code</a> |
-| are controlled | <a href="#Appium Driver">Appium Driver</a> |
-| so that timings are captured | <a href="#BrowserMob Proxy">BrowserMob Proxy</a> |
+| are controlled | <a href="#Appium-Driver">Appium Driver</a> |
+| so that timings are captured | <a href="#BrowserMob-Proxy">BrowserMob Proxy</a> |
 | into files included in analysis. | <a href="#HAR files">HAR files</a> | 
 |  |  |
 | "Machine learning" Programs scan the Elastisearch server to | <a href="#Python">Python</a> |
@@ -340,7 +340,7 @@ Files are sent to <a href="#LogStash">LogStash</a>.
 <a name="Python"></a>
 **Python**
 
-<a id="Appium Driver"></a>
+<a id="Appium-Driver"></a>
 <a name="AppiumController"></a>
 **Appium Controller**
 controls native mobile smart phones as if humans were swiping and tapping the screen.
