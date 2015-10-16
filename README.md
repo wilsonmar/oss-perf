@@ -315,8 +315,8 @@ and receive outputs from Blazemeter.
 **Selenium WebDriver**
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
 
-<a id="BrowserMob proxy"></a>
-<a name="BrowserMob"></a>
+<a id="BrowserMob Proxy"></a>
+<a name="BrowserMob Proxy"></a>
 **BrowserMob proxy** at http://bmp.lightbody.net/
 captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
 
