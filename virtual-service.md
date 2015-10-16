@@ -2,7 +2,7 @@ This page is about using the open-source Wiremock Java program to provide a real
 (rather than stubbing or mocking HTTP code in client code that later must be removed).
 
 <a name="Why">
-## Why</a>
+## Why Service Virtualization</a>
 
 Developers can use it to continue working on their programs without need to be constantly connected to dependent APIs mocked.
 
@@ -12,20 +12,6 @@ situations when a real API is so slow that it causes performance programs in the
 Dan Bodart explains (back in 2012) that the <a target="_blank" href="http://dan.bodar.com/2012/02/28/crazy-fast-build-times-or-when-10-seconds-starts-to-make-you-nervous/">
 value of tests decreases rapidly as their execution time increases</a>.
 
-0. Read the latest posts at https://groups.google.com/forum/#!forum/wiremock-user
-
-0. OPTION A: Download the stand-alone jar from http://wiremock.org/running-standalone.html
-
-  NOTE: This is based on code at https://github.com/tomakehurst/wiremock
-  which configures Gradle, Travis, etc.
-
- Feature **Stateful behaviour simulation** means ...
-  
-0. May need to have a proxy to act like the API, or not.
-
-0. You may need to extend wiremock:
-
-  * http://wiremock.org/extending-wiremock.html
 
  For example, a virtualized service emulating the airline industry GDS (Glbal Data Service) 
  would create valid origins and destinations based on codes defined by the IATA.
@@ -67,3 +53,31 @@ Let's address this together.
 I think we can cover more ground, faster by working together.
 
 The community of users of an service need to work together, independently of the provider of that service.
+
+
+<a name="SV-Tools">
+## Service Virtualization Tools</a>
+
+  * HP Service Virtualization
+  * CA LISA
+  * Parasoft
+
+<a name="WireMock">
+## WireMock</a>
+
+WireMock is an open-source tool.
+
+0. Read the latest posts at https://groups.google.com/forum/#!forum/wiremock-user
+
+0. OPTION A: Download the stand-alone jar from http://wiremock.org/running-standalone.html
+
+  NOTE: This is based on code at https://github.com/tomakehurst/wiremock
+  which configures Gradle, Travis, etc.
+
+ Feature **Stateful behaviour simulation** means ...
+  
+0. May need to have a proxy to act like the API, or not.
+
+0. You may need to extend wiremock:
+
+  * http://wiremock.org/extending-wiremock.html
