@@ -123,7 +123,7 @@ Narrative text to the diagram and video is below.
 | As for analysis: |  |
 | The central repository is indexed into various dimensions | <a href="#ElastiSearch">ElastiSearch</a> |
 | for visualizations over time and "sliced and diced" for insight. | <a href="#Kibana">Kibana</a> |
-| The visualizations include static objectives and targets to compare against live data. | ref. data |
+| The visualizations include static objectives and targets to compare against live data. | <a href="ref. data">ref. data</a> |
 | To measure time taken by browsers to execute client application JavaScript: |  |
 | browser instances are controlled by | <a href="#Selenium Web Driver">Selenium Web Driver</a> |
 | code that manipulate the browser UI like real people do, | Selenium code |
@@ -356,6 +356,11 @@ into a common location with a common date format.
 <a name="Kibana"></a>
 **Kibana** displays dashboards from filtered data indexed on several dimensions.
 See <a href="#Analysis">Analysis</a> section below.
+
+<a id="ref. data"></a>
+<a name="ref. data"></a>
+**ref. data**
+
 
 <a id="Swagger"></a>
 <a name="Swagger"></a>
