@@ -129,7 +129,7 @@ Narrative text to the diagram and video is below.
 | code that manipulate the browser UI like real people do, | Selenium code |
 | just as native mobile app test automation code | <a href="#Appium Code">Appium Code</a> |
 | are controlled | <a href="#Appium Driver">Appium Driver</a> |
-| so that timings are captured | <a href="#BrowserMob">BrowserMob Proxy</a> |
+| so that timings are captured | <a href="#BrowserMob Proxy">BrowserMob Proxy</a> |
 | into files included in analysis. | <a href="#HAR files">HAR files</a> | 
 |  |  |
 | "Machine learning" Programs scan the Elastisearch server to | <a href="#Python">Python</a> |
