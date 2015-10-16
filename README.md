@@ -139,7 +139,7 @@ Narrative text to the diagram and video is below.
 | To reduce the time traditionally needed to edit and verify | editor |
 | we **generate JMeter code**  | j-gen |
 | and variations in use of test data to repeatedly call APIs based on what is in | run variations |
-| the repository of API specifications | Swagger |
+| the repository of API specifications | <a href="#Swagger">Swagger</a> |
 | similar to how app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
 |  |  |
@@ -329,6 +329,7 @@ Files are sent to <a href="#LogStash">LogStash</a>.
 **Appium Controller**
 controls native mobile smart phones as if humans were swiping and tapping the screen.
 
+<a id="Appium Code"></a>
 <a name="AppiumCode"></a>
 **Appium Code**
 controls native mobile smart phones as if humans were swiping and tapping the screen.
@@ -347,6 +348,7 @@ into a common location with a common date format.
 **Kibana** displays dashboards from filtered data indexed on several dimensions.
 See <a href="#Analysis">Analysis</a> section below.
 
+<a id="Swagger"></a>
 <a name="Swagger"></a>
 **Swagger gen** at https://github.com/swagger-api/swagger-codegen
 generates code from a repository of API requirements (Swagger).
