@@ -130,7 +130,7 @@ Narrative text to the diagram and video is below.
 | just as native mobile app test automation code | <a href="#Appium Code">Appium Code</a> |
 | are controlled | Appium Driver |
 | so that timings are captured | <a href="#BrowserMob">BrowserMob Proxy</a> |
-| into files included in analysis. | <a href="#HAR-Files">HAR files</a> |
+| into files included in analysis. | <a href="#HAR files">HAR files</a> |
 |  |  |
 | "Machine learning" Programs scan the Elastisearch server to | Python |
 | identify the levels where | thresholds |
@@ -314,8 +314,8 @@ and receive outputs from Blazemeter.
 **Selenium WebDriver**
 controls desktop browsers as if humans were tapping on the keyboard and moving the mouse around a browser.
 
+<a id="Browser Mob proxy"></a>
 <a name="BrowserMob"></a>
-<a name="HAR_Files"></a>
 **BrowserMob proxy** at http://bmp.lightbody.net/
 captures network traffic into HTTP Archive Report (HAR) files containing measurements of time to load elements on the page. There are several **precise** points in time that can be measured:
 
@@ -324,6 +324,10 @@ captures network traffic into HTTP Archive Report (HAR) files containing measure
 The forum for this is at https://groups.google.com/forum/#!forum/browsermob-proxy
 
 Files are sent to <a href="#LogStash">LogStash</a>.
+
+<a name="HAR_Files"></a>
+<a name="HAR_Files"></a>
+**HAR files**
 
 <a name="AppiumController"></a>
 **Appium Controller**
