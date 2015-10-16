@@ -118,7 +118,8 @@ Narrative text to the diagram and video is below.
 | include logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
-| obtained by monitoring agents. | agents |
+| obtained by monitoring agents | agents |
+| and network packets where applicable. | <a href="#NetworkMon">Network mon</a> |
 | For scalability, intermediate servers (such as RabbitMQ) may be added.  |<a href="#Logstash"> Logstash</a> |
 | As for analysis: |  |
 | The central repository is indexed into various dimensions | <a href="#ElastiSearch">ElastiSearch</a> |
@@ -309,6 +310,11 @@ and receive outputs from Blazemeter.
 **Monitoring** via agents (or JMX) include innovations from profilers and:
 
    * https://github.com/GoogleCloudPlatform/PerfKitBenchmarker
+
+<a name="NetworkMon">
+**Network monintoring**</a>
+
+   * https://www.elastic.co/products/beats
 
 <a id="Selenium Web Driver"></a>
 <a name="Selenium Web Driver"></a>
