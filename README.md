@@ -332,7 +332,8 @@ controls native mobile smart phones as if humans were swiping and tapping the sc
 **Appium Code**
 controls native mobile smart phones as if humans were swiping and tapping the screen.
 
-<a name="LogStash"></a>
+<a id="Logstash"></a>
+<a name="Logstash"></a>
 **Logstash** collects data from JMeter, HAR files, web server logs, web app logs, etc. 
 into a common location with a common date format.
 
