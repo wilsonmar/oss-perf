@@ -131,7 +131,7 @@ Narrative text to the diagram and video is below.
 | just as native mobile app test automation code | <a href="#Appium-Code">Appium Code</a> |
 | are controlled | <a href="#Appium-Driver">Appium Driver</a> |
 | so that timings are captured | <a href="#BrowserMob-Proxy">BrowserMob Proxy</a> |
-| into files included in analysis. | <a href="#HAR files">HAR files</a> | 
+| into files included in analysis. | <a href="#HAR-files">HAR files</a> | 
 |  |  |
 | "Machine learning" Programs scan the Elastisearch server to | <a href="#Python">Python</a> |
 | identify the levels where | thresholds |
@@ -332,8 +332,8 @@ The forum for this is at https://groups.google.com/forum/#!forum/browsermob-prox
 
 Files are sent to <a href="#LogStash">LogStash</a>.
 
-<a id="HAR files"></a>
-<a name="HAR_Files"></a>
+<a id="HAR-files"></a>
+<a name="HAR-Files"></a>
 **HAR files**
 
 <a id="Python"></a>
