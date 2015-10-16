@@ -114,11 +114,12 @@ Narrative text to the diagram and video is below.
 | when the dev. toolchain is invoked after |<a href="#dev-toolchain">dev. toolchain</a> |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
-| metrics collected and normalized include |<a href="#Logstash"> Logstash</a> |
-| logs of load levels imposed, | run logs |
+| metrics collected and normalized |<a href="#Logstash"> Logstash</a> |
+| include logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
 | obtained by monitoring agents. | agents |
+| For scalability, intermediate servers (such as RabbitMQ) may be added.  |<a href="#Logstash"> Logstash</a> |
 | As for analysis: |  |
 | The central repository is indexed into various dimensions | <a href="#ElastiSearch">ElastiSearch</a> |
 | for visualizations over time and "sliced and diced" for insight. | <a href="#Kibana">Kibana</a> |
@@ -130,8 +131,10 @@ Narrative text to the diagram and video is below.
 | are controlled | Appium Driver |
 | so that timings are captured | <a href="#BrowserMob">BrowserMob Proxy</a> |
 | into files included in analysis. | <a href="#HAR-Files">HAR files</a> |
-| All this enables anomalies over performance thresholds to be instantly detected during testing, | levels |
-| so that they can be addressed quickly. | alerts |
+|  |  |
+| "Machine learning" Programs scan the Elastisearch server to | Python |
+| identify the levels where | thresholds |
+| alerts are sent out for human review. | alerts |
 |  |  |
 | To reduce the time traditionally needed to edit and verify | editor |
 | we **generate JMeter code**  | j-gen |
@@ -140,9 +143,10 @@ Narrative text to the diagram and video is below.
 | similar to how app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
 |  |  |
-| Generated test code is validated by static source code scanners. | SonarQube |
-| in the same or spearate runs than what app source code go through. | <a href="#dev-toolchain">devops. toolchain</a> |
-| Developers have benefited from virtualizing services that "mock" real servers responding to API calls | virtual services |
+| Generated test code is validated by a static source code scanner | SonarQube |
+| by applying rules defined during team code walthroughs | Rules |
+| in the same or separate runs than what app source code go through. | <a href="#dev-toolchain">devops. toolchain</a> |
+| Developers have benefitted from virtualizing services that "mock" real servers responding to API calls | virtual services |
 
 
 <a name="OtherIssues">
