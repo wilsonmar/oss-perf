@@ -124,7 +124,6 @@ Narrative text to the diagram and video is below.
 | The central repository is indexed into various dimensions | <a href="#ElastiSearch">ElastiSearch</a> |
 | for visualizations over time and "sliced and diced" for insight. | <a href="#Kibana">Kibana</a> |
 | The visualizations include static objectives and targets to compare against live data. | <a href="ref data">ref data</a> | 
-
 | To measure time taken by browsers to execute client application JavaScript: |  |
 | browser instances are controlled by | <a href="#Selenium Web Driver">Selenium Web Driver</a> |
 | code that manipulate the browser UI like real people do, | Selenium code |
