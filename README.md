@@ -139,7 +139,7 @@ Narrative text to the diagram and video is below.
 |  |  |
 | To reduce the time traditionally needed to edit and verify | editor |
 | we **generate JMeter code**  | j-gen |
-| and variations in use of test data to repeatedly call APIs based on what is in | run variations |
+| and variations in use of test data to repeatedly call APIs based on what is in | <a href="#run-variations">run variations</a> |
 | the repository of API specifications | <a href="#Swagger">Swagger</a> |
 | similar to how app code to call APIs are generated | codegen |
 | into source code repositories. | git repo. |
@@ -298,6 +298,7 @@ is a Ruby based DSL for building JMeter test plans
 <a name="configs"></a>
 **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
 
+<a id="run-variations"></a>
 <a id="run-variations(Taurus)"></a>
 <a name="runvariations"></a>
 **Run variations** is managed by TAURUS (Test Automation Running Smoothly) was 
