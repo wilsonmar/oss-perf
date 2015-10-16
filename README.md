@@ -109,7 +109,7 @@ Narrative text to the diagram and video is below.
 | and instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
 | artificial loads are imposed by running | <a href="#JMeter-servers">JMeter Controllers</a> |
 | virtual user scripts taking the place of humans on real browsers and mobile devices. |<a href="#JMeter-Scripts"> JMeter code</a> |
-| Specific scenarios of different parameter values | <a href="#run-variations(Taurus)">runvariations(Taurus)</a> |
+| Specific scenarios of different parameter values | <a href="#run-variations(Taurus)">run variations(Taurus)</a> |
 | are invoked on a scheduled basis or dynamically | <a href="#Jenkins-CI">Jenkins CI</a> |
 | when the dev. toolchain is invoked after |dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
