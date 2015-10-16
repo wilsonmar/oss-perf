@@ -109,8 +109,8 @@ Narrative text to the diagram and video is below.
 | and instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
 | artificial loads are imposed by running | <a href="#JMeter-servers">JMeter Controllers</a> |
 | virtual user scripts taking the place of humans on real browsers and mobile devices. |<a href="#JMeter-servers"> JMeter code</a> |
-| Specific scenarios of different parameter values | <a href="#run variations (Taurus)">run variations (Taurus)</a> |
-| are invoked on a scheduled basis or dynamically | <a href="#Jenkins CI">Jenkins CI</a> |
+| Specific scenarios of different parameter values | <a href="#run-variations(Taurus)">runvariations(Taurus)</a> |
+| are invoked on a scheduled basis or dynamically | <a href="#Jenkins-CI">JenkinsCI</a> |
 | when the dev. toolchain is invoked after |dev. toolchain |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
@@ -249,8 +249,8 @@ Examples of configurations include:
    * Maximum cache size
    * etc.
 
-<a id="Jenkins CI"></a>
-<a name="Jenkins CI"></a>
+<a id="Jenkins-CI"></a>
+<a name="JenkinsCI"></a>
 **Jenkins/CI** 
 builds / initiates the various programs listed below on a schedule or when a build is requested.
 
@@ -296,8 +296,8 @@ is a Ruby based DSL for building JMeter test plans
 <a name="configs"></a>
 **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
 
-<a id="run variations (Taurus)"></a>
-<a name="run-variations"></a>
+<a id="run-variations(Taurus)"></a>
+<a name="runvariations"></a>
 **Run variations** is managed by TAURUS (Test Automation Running Smoothly) was 
 written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves
 and receive outputs from Blazemeter.
