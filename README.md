@@ -110,7 +110,7 @@ Narrative text to the diagram and video is below.
 | artificial loads are imposed by running | <a href="#JMeter-servers">JMeter Controllers</a> |
 | virtual user scripts taking the place of humans on real browsers and mobile devices. |<a href="#JMeter-servers"> JMeter code</a> |
 | Specific scenarios of different parameter values | <a href="#run variations (Taurus)">run variations (Taurus)</a> |
-| are invoked on a scheduled basis or dynamically | <a href="#Jenkins/CI">Jenkins CI</a> |
+| are invoked on a scheduled basis or dynamically | <a href="#Jenkins CI">Jenkins CI</a> |
 | when the dev. toolchain is invoked after |<a href="#dev-toolchain">dev. toolchain</a> |
 | a commit occurs to a specific branch in a git repo. | github |
 | During runs: |  |
@@ -248,8 +248,8 @@ Examples of configurations include:
    * Maximum cache size
    * etc.
 
-<a id="Jenkins"></a>
-<a name="Jenkins"></a>
+<a id="Jenkins CI"></a>
+<a name="Jenkins CI"></a>
 **Jenkins/CI** 
 builds / initiates the various programs listed below on a schedule or when a build is requested.
 
