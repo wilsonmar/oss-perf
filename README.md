@@ -4,10 +4,10 @@ This diagram <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY
 is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
 <img name="usaMap" src="https://cloud.githubusercontent.com/assets/300046/10548009/afd00858-73ec-11e5-9de8-8c9058b8c826.png" usemap="#m_usaMap" border="0" width="100%">
-<map name="m_usaMap"><area shape="rect" coords="529,160,547,175" href="http://en.wikipedia.org/wiki/Maryland" title="Maryland">
+<map name="m_usaMap">
+<area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
 </map>
 
-<img width="810" alt="oss-perf-v08_wm" 
 This is the **next generation** approach which uses **only open-source software** and developers for a
 **faster, more flexble, and lower cost** approach
 to measure the speed and load capacity risks of high-traffic web and native mobile apps.
@@ -370,6 +370,9 @@ See <a href="#Analysis">Analysis</a> section below.
 
 <a id="Swagger"></a>
 <a name="Swagger"></a>
+
+<a id="Swagger-codegen"></a>
+<a name="Swagger-codegen"></a>
 **Swagger gen** at https://github.com/swagger-api/swagger-codegen
 generates code from a repository of API requirements (Swagger).
 
