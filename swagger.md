@@ -24,10 +24,10 @@ Swagger's focus is currently serving Node.js developers.
 <a id="Alternatives">
 ### Alternatives to Swagger</a>
 
-|   | Swagger | RAML | API-Blueprint |
+|   | Swagger | <a href="#RAML">RAML</a> | API-Blueprint |
 | --- | --- | --- | --- |
 | Format:  | JSON | YAML | Markdown |
-| Sponsor: | Reverb | Mulesoft | Apiary |
+| Sponsor: | <a href="#Who">Reverb</a> | Mulesoft | Apiary |
 | Initial: | July, 2011 | Sep, 2013 | April, 2013 |
 | Approach: | Bottom-up | Top-down | Top-down |
 
@@ -41,7 +41,8 @@ WSDL and WADL generated to describe SOAP
 are not viable for REST API because they do not include enough information.
 
 <a id="RAML"></a>
-RAML include an implementation that reuse WADL (pronounced "waddle") 
+RAML (at <a target="_blank" href="http://raml.org/"> RAML</a>)
+can reuse WADL (pronounced "waddle") 
 introspection logic of 
 <a target="_blank" href="http://restlet.com/">Restlet Framework resources</a>
 developed by Java (SE/EE, Google AppEngine, OSGi, GWT, Android) 
@@ -63,11 +64,19 @@ Aug. 15, 2014 by Laura Heritage at SOA Software
 
 Swagger originated from folks at Wordnik (the on-line English dictionary).
 
+Reverb.
+
+<a target="_blank" href="https://github.com/swagger-api">
+https://github.com/swagger-api</a> is the group.
+
 The testing company SmartBear now manages the <a target="_blank" href="http://swagger.io/">
 swagger.io</a> website
 and https://swaggerhub.com/ provides an instance of swagger on a free platform for teams to collaborate on and coordinate across the entire workflow of an API’s lifecycle. SwaggerHub leverages a centralized definition to allow the whole team to work together to iteratively design, build, document and manage an API.
 
 SwaggerHub includes connectors for GitHub, DockerHub and Ready! API.
+
+To validate requests and responses at run-time: 
+swagger-node-express, swagger-play, Osprey 
 
 http://www.programmableweb.com/news/smartbear-picks-swagger-api-project/2015/03/26
 
