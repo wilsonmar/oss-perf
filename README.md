@@ -1,10 +1,12 @@
 <a id="TheVision"></a>
 <a name="Diagram"> 
+<a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
+This video</a> gives voice to <a href="#Narrative">narrative text</a> to this diagram:
+
 <img width="810" alt="oss-perf-v08_wm" src="https://cloud.githubusercontent.com/assets/300046/10548009/afd00858-73ec-11e5-9de8-8c9058b8c826.png">
 
-<a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
-This video</a> gives voice to <a href="#Narrative">narrative text</a>
-about the **next generation** approach that uses **only open-source software**
+This is the **next generation** approach which uses **only open-source software** and developers for a
+**faster, more flexble, and lower cost** approach
 to measure the speed and load capacity risks of high-traffic web and native mobile apps.
 
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
@@ -18,8 +20,8 @@ edit the file, and send us a pull request. Better yet,
 <a name="Background">
 ## Background Why</a>
 The approach described here was created in response to the need for a 
-**faster, more flexble, and lower cost** way to achieve 
-<a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
+**faster, more flexble, and lower cost** approach
+to <a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
 A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
 
