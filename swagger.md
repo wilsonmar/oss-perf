@@ -8,7 +8,8 @@ Swagger's objective is to be a complete framework for
 describing, producing, consuming, and visualizing RESTful web services
 for developers to fully program clients calling them.
 
-Thus, Swagger CodeGen generates in client code for different languages.
+This enables <a href="swagger-codegen.md">Swagger CodeGen</a>
+to generate client code for different programming languages.
 
 
 <a id="Who">
@@ -60,14 +61,6 @@ Reslet (in Oct. 2015) bought Czech Filip Kolařík's
 <a target="_blank" href="https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm">
 DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
 to test and debug web APIs
-
-
-<a name="SwaggerGen">
-## Swagger client code generation</a>
-
-Code to make calls in various programming languages are created by 
-<a target="_blank" href="https://github.com/swagger-api/swagger-codegen">
-swagger-codegen</a>
 
 
 <a name="Videos">
