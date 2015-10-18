@@ -51,6 +51,9 @@ Reslet (in Oct. 2015) bought Czech Filip Kolařík's
 DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
 to test and debug web APIs
 
+Swagger2RAML converts Swagger JSON to RAML YAML.
+
+
 <a id="[1]"></a>
 https://www.youtube.com/watch?v=vu8_QLkW1mg
 API Description Languages: Which One Is Right For Me?
@@ -71,9 +74,6 @@ swagger.io</a> website
 and https://swaggerhub.com/ provides an instance of swagger on a free platform for teams to collaborate on and coordinate across the entire workflow of an API’s lifecycle. SwaggerHub leverages a centralized definition to allow the whole team to work together to iteratively design, build, document and manage an API.
 
 SwaggerHub includes connectors for GitHub, DockerHub and Ready! API.
-
-To validate requests and responses at run-time: 
-swagger-node-express, swagger-play, Osprey 
 
 http://www.programmableweb.com/news/smartbear-picks-swagger-api-project/2015/03/26
 
