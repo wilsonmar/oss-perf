@@ -24,16 +24,15 @@ Swagger's focus is currently serving Node.js developers.
 <a id="Alternatives">
 ### Alternatives to Swagger</a>
 
-| API DL: | Swagger | RAML | API-Blueprint |
+|   | Swagger | RAML | API-Blueprint |
 | --- | --- | --- | --- |
-| Format  | JSON | YAML | Markdown |
-| Sponsor | Reverb | Mulesoft | Apiary |
+| Format:  | JSON | YAML | Markdown |
+| Sponsor: | Reverb | Mulesoft | Apiary |
+| Initial: | July, 2011 | Sep, 2013 | April, 2013 |
+| Approach: | Bottom-up | Top-down | Top-down |
 
+Other alternatives to Swagger Core include:
 
-Viable alternatives to Swagger Core include:
-
-  * RAML
-  * API Blueprint 
   * ioDocs
   * JASONDoc
 
