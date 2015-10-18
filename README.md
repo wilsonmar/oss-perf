@@ -1,7 +1,7 @@
 <a id="TheVision"></a>
 <a name="Diagram"> 
-<a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
-This video</a> gives voice to <a href="#Narrative">narrative text</a> to this diagram:
+This diagram <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
+is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
 <img width="810" alt="oss-perf-v08_wm" src="https://cloud.githubusercontent.com/assets/300046/10548009/afd00858-73ec-11e5-9de8-8c9058b8c826.png">
 
