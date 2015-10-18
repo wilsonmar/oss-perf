@@ -1,8 +1,12 @@
 <a id="Swagger">
 ## What is Swagger?</a>
 
-Swagger Core stores JAX-RS API designs in JSON files from which
-Swagger UI dynamically generates beautiful HTML documentation.
+Swagger Core is an **API Description Language (DL)** for REST APIs that provides:
+
+  * a blueprint of layout,
+  * a contract, 
+  * metadata, and 
+  * human-readable documentation.
 
 Swagger's objective is to be a complete framework for 
 describing, producing, consuming, and visualizing RESTful web services
@@ -11,6 +15,49 @@ for developers to fully program clients calling them.
 This enables <a href="swagger-codegen.md">Swagger CodeGen</a>
 to generate client code for different programming languages.
 
+API DL removes a barrier to enterprise adoption of REST API
+by making a lagre number of REST APIs governable, shareable, and human-readeable.<a href="#[1]">[1]</a>
+
+Swagger's focus is currently serving Node.js developers.
+
+
+<a id="Alternatives">
+### Alternatives to Swagger</a>
+
+| API DL: | Swagger | RAML | API-Blueprint |
+| --- | --- | --- | --- |
+| Format  | JSON | YAML | Markdown |
+| Sponsor | Reverb | Mulesoft | Apiary |
+
+
+Viable alternatives to Swagger Core include:
+
+  * RAML
+  * API Blueprint 
+  * ioDocs
+  * JASONDoc
+
+<a id="WADL"></a>
+WSDL and WADL generated to describe SOAP 
+are not viable for REST API because they do not include enough information.
+
+<a id="RAML"></a>
+RAML include an implementation that reuse WADL (pronounced "waddle") 
+introspection logic of 
+<a target="_blank" href="http://restlet.com/">Restlet Framework resources</a>
+developed by Java (SE/EE, Google AppEngine, OSGi, GWT, Android) 
+REST API developers using the Restlet Studio and the APISpark cloud managed by
+Reslet based in France with an office in Palo Alto.
+
+Reslet (in Oct. 2015) bought Czech Filip Kolařík's 
+<a target="_blank" href="https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm">
+DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
+to test and debug web APIs
+
+<a id="[1]"></a>
+https://www.youtube.com/watch?v=vu8_QLkW1mg
+API Description Languages: Which One Is Right For Me?
+Aug. 15, 2014 by Laura Heritage at SOA Software
 
 <a id="Who">
 ### Who built Swagger?</a>
@@ -29,11 +76,14 @@ http://www.programmableweb.com/news/smartbear-picks-swagger-api-project/2015/03/
 <a id="Dependencies">
 ## Dependencies</a>
 
-http://swagger.io/swagger-core/
-explains the use of maven build.
+Swagger Core stores JAX-RS API designs in JSON files from which
+Swagger UI dynamically generates beautiful HTML documentation.
 
 Swagger makes use of Jackson, 
 the multi-purpose Java library for processing JSON data format.
+
+http://swagger.io/swagger-core/
+explains the use of maven build.
 
 
 <a id="Endpoints">
@@ -43,24 +93,6 @@ http://petstore.swagger.io/
 is provided for experimentation.
 
 
-
-<a id="Alternatives">
-### Alternatives</a>
-
-Swagger's focus is currently serving Node.js developers.
-
-Alternatives to Swagger include API Blueprint and RAML.
-
-Requests include an implementation that reuse WADL introspection logic of 
-<a target="_blank" href="http://restlet.com/">Restlet Framework resources</a>
-developed by Java (SE/EE, Google AppEngine, OSGi, GWT, Android) 
-REST API developers using the Restlet Studio and the APISpark cloud managed by
-Reslet based in France with an office in Palo Alto.
-
-Reslet (in Oct. 2015) bought Czech Filip Kolařík's 
-<a target="_blank" href="https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm">
-DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
-to test and debug web APIs
 
 
 <a name="Videos">
@@ -87,3 +119,6 @@ https://developers.helloreverb.com/swagger/
 <a target="_blank" href="http://swagger.io/irc/">
 http://swagger.io/irc</a> is provided (instead of a client),
 Swagger is on freenode.net in the #swagger channel.
+
+
+https://www.youtube.com/watch?v=mZ8_QgJ5mbs
