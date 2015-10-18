@@ -1,19 +1,26 @@
-This github public repo summarizes the technical approach to **combine** several <a href="#NewComponents">new</a>
-and existing "totally free" **open-source software** 
-repos to measure the speed and load capacity risks of high-traffic web and native mobile apps.
+<a id="TheVision"></a>
+<a name="Diagram"> 
+## Interactions among components</a>
 
-   "Totally free" is in quotes because the spirit of free software is that the community which uses them contributes back.
-So if you see a typo that needs fixing or an idea that should be considered, please fork this repo,
+<img width="810" alt="oss-perf-v08_wm" src="https://cloud.githubusercontent.com/assets/300046/10548009/afd00858-73ec-11e5-9de8-8c9058b8c826.png">
+
+<a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
+This video</a> gives voice to <a href="#Narrative">narrative text</a>
+about the **next generation** approach that uses **only open-source software**
+to measure the speed and load capacity risks of high-traffic web and native mobile apps.
+
+   Different colors in the diagram represent "ownership" (who does what) within a particular organization.
+   Other organizations have other divisions.
+
+If you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. Better yet, 
 <a href="#NewComponents">join us</a> to revolutionalize the industry.
 
-   The information below is on a public github page rather than a propriatary internal wiki because
-   we want to share both the development cost and benefit of the **next generation platform**.
-   
 
 <a name="Background">
 ## Background Why</a>
-The approach described here was created in response to the need for a faster, more flexble, and lower cost way to achieve 
+The approach described here was created in response to the need for a 
+**faster, more flexble, and lower cost** way to achieve 
 <a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
 A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
@@ -46,6 +53,9 @@ E. Measure how much time it takes to execute various aspects of JavaScript and o
 
 JMeter under-reports the total response times experienced by real users because it focuses on the 
 **transfer of files** between client and server.
+
+F. **Develop in open source** on a public github repos rather than propriatary internal wikis
+to not just share benefits as well as development costs, but to ensure continuity of skills and effort.
 
 
 <a name="TypesOfTest">
@@ -84,20 +94,6 @@ which grows more over time as more work is being done client-side.
 Codification of API calls into standard patterns makes it now possible to 
 **generate test script code**.
 
-
-<a id="TheVision"></a>
-<a name="Diagram"> 
-## Interactions among components</a>
-The flow of data and control among the various components is illustred by this diagram and underlying video.
-**Click on the diagram to <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
-view the draft-status video</a>.**
-
-<img width="810" alt="oss-perf-v08_wm" src="https://cloud.githubusercontent.com/assets/300046/10548009/afd00858-73ec-11e5-9de8-8c9058b8c826.png">
-
-Different colors in the diagram represent "ownership" (who does what) within a particular organization.
-Other organizations have other divisions.
-
-Narrative text to the diagram and video is below.
 
 
 <a name="Narrative"> 
