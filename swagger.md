@@ -24,8 +24,12 @@ SwaggerHub includes connectors for GitHub, DockerHub and Ready! API.
 
 http://www.programmableweb.com/news/smartbear-picks-swagger-api-project/2015/03/26
 
+
 <a id="Dependencies">
 ## Dependencies</a>
+
+http://swagger.io/swagger-core/
+explains the use of maven build.
 
 Swagger makes use of Jackson, 
 the multi-purpose Java library for processing JSON data format.
@@ -58,13 +62,6 @@ DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
 to test and debug web APIs
 
 
-<a name="SwaggerCoreBuild">
-## Swagger core server build</a>
-
-http://swagger.io/swagger-core/
-explains the use of maven.
-
-
 <a name="SwaggerGen">
 ## Swagger client code generation</a>
 
@@ -86,6 +83,10 @@ https://www.youtube.com/watch?v=8Z9qva1nv1c
 Exposing Salesforce REST Services Using Swagger
 by Thys Michels (@thysmichels), Software Engineer at Lending Club
 describes REST app in Java Spring MVC annotations.
+
+http://www.helloreverb.com
+
+https://developers.helloreverb.com/swagger/
 
 
 <a id="IRC">
