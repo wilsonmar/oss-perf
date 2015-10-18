@@ -27,7 +27,7 @@ Swagger's focus is currently serving Node.js developers.
 |   | Swagger | <a href="#RAML">RAML</a> | API-Blueprint |
 | --- | --- | --- | --- |
 | Format:  | JSON | YAML | Markdown |
-| Sponsor: | <a href="#Who">Reverb</a> | Mulesoft | Apiary |
+| Sponsor: | <a href="#Who">Reverb</a> | <a target="_blank" href="http://mulesoft.com/">Mulesoft</a> | Apiary |
 | Initial: | July, 2011 | Sep, 2013 | April, 2013 |
 | Approach: | Bottom-up | Top-down | Top-down |
 
