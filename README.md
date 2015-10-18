@@ -4,8 +4,7 @@ This diagram <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY
 is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
 <img name="usaMap" src="https://cloud.githubusercontent.com/assets/300046/10548009/afd00858-73ec-11e5-9de8-8c9058b8c826.png" usemap="#m_usaMap" border="0" width="100%">
-<map name="m_usaMap">
-<area shape="rect" coords="529,160,547,175" href="http://en.wikipedia.org/wiki/Maryland" title="Maryland">
+<map name="m_usaMap"><area shape="rect" coords="529,160,547,175" href="http://en.wikipedia.org/wiki/Maryland" title="Maryland">
 </map>
 
 <img width="810" alt="oss-perf-v08_wm" 
