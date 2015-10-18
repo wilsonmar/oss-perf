@@ -2,8 +2,13 @@
 ## What is Swagger?</a>
 
 Swagger Core stores JAX-RS API designs in JSON files from which
-Swagger UI dynamically generates beautiful HTML documentation and
-Swagger CodeGen generates in client code for different languages.
+Swagger UI dynamically generates beautiful HTML documentation.
+
+Swagger's objective is to be a complete framework for 
+describing, producing, consuming, and visualizing RESTful web services
+for developers to fully program clients calling them.
+
+Thus, Swagger CodeGen generates in client code for different languages.
 
 
 <a id="Who">
@@ -80,6 +85,8 @@ https://www.youtube.com/watch?v=U_lCrFpvXyY
 https://www.youtube.com/watch?v=8Z9qva1nv1c
 Exposing Salesforce REST Services Using Swagger
 by Thys Michels (@thysmichels), Software Engineer at Lending Club
+describes REST app in Java Spring MVC annotations.
+
 
 <a id="IRC">
 ## IRC Chat channel</a>
