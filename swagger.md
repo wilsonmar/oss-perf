@@ -35,10 +35,7 @@ Other alternatives to Swagger Core include:
 
   * ioDocs
   * JASONDoc
-
-<a id="WADL"></a>
-WSDL and WADL generated to describe SOAP 
-are not viable for REST API because they do not include enough information.
+  * WSDL and WADL generated to describe SOAP are not viable for REST API because they do not include enough information.
 
 <a id="RAML"></a>
 RAML (at <a target="_blank" href="http://raml.org/"> RAML</a>)
