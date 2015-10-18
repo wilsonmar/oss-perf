@@ -23,7 +23,8 @@ The approach described here was created in response to the need for a
 **faster, more flexble, and lower cost** approach
 to <a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
-A. **Testing earlier** in the dev. lifecycle through more automatic **generation** of test automation scripts.
+A. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
+   and API mock scripts.
 
    Although various attempts at generating UI code have not taken hold due to complexity,
    generation of APIs is less complex of an undertaking.
