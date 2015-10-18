@@ -26,7 +26,8 @@ A. **Testing earlier** in the dev. lifecycle through more automatic **generation
    Although various attempts at generating UI code have not taken hold due to complexity,
    generation of APIs is less complex of an undertaking.
 
-B. **Automatic alerts** of slow execution speeds during automated functional testing.
+B. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
+   by **machine learning** robots rather than tedious manual examination of logs.
 
 C. **Automatically cycle though variations** of <a href="#configs">
    several configurations</a> during a single manual run initiation.
