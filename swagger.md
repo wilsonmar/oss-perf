@@ -17,6 +17,15 @@ and https://swaggerhub.com/ provides an instance of swagger on a free platform f
 
 SwaggerHub includes connectors for GitHub, DockerHub and Ready! API.
 
+http://www.programmableweb.com/news/smartbear-picks-swagger-api-project/2015/03/26
+
+<a id="Dependencies">
+## Dependencies</a>
+
+Swagger makes use of Jackson, 
+the multi-purpose Java library for processing JSON data format.
+
+
 <a id="Endpoints">
 ### Sample endpoint</a>
 
@@ -32,12 +41,6 @@ Swagger's focus is currently serving Node.js developers.
 
 Alternatives to Swagger include API Blueprint and RAML.
 
-Swagger makes use of Jackson, 
-a multi-purpose Java library for processing JSON data format.
-
-http://www.programmableweb.com/news/smartbear-picks-swagger-api-project/2015/03/26
-
-
 Requests include an implementation that reuse WADL introspection logic of 
 <a target="_blank" href="http://restlet.com/">Restlet Framework resources</a>
 developed by Java (SE/EE, Google AppEngine, OSGi, GWT, Android) 
@@ -48,7 +51,6 @@ Reslet (in Oct. 2015) bought Czech Filip Kolařík's
 <a target="_blank" href="https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm">
 DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
 to test and debug web APIs
-
 
 
 <a name="SwaggerCoreBuild">
