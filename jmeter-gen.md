@@ -1,6 +1,6 @@
 This page describes what JMeter scripts tests:
 
-1). <a href="#HappyPath">Happy path: Valid atomic calls with valid response codes</a>.
+1). <a href="#HappyPath">Happy paths: Valid atomic calls with valid response codes</a>.
 
 2). <a href="#BadResponseCodes">Valid atomic calls with bad response codes</a>.
 
@@ -12,13 +12,29 @@ This page describes what JMeter scripts tests:
 
 <hr />
 
-<a id="HappyPath">
-## 1). Happy path</a>
+<a id="CleanHappyPath">
+## 1). Clean Happy paths</a>
 Valid atomic calls with valid response codes
 
- 1.1). PUT 
+ 1.1). POST new (user registration)
 
- 1.2). GET
+ 1.2). GET new (list)
+ 
+ 1.3). PUT change
+ 
+ 1.4). DELETE newly created, which keeps database empty.
+
+<a id="AtomicRunTypes">
+### Atomic run types</a>
+A "run-type" parameter defines repeating processing strategies.
+
+ 1.1) Repeat POST new to populate the database and identify how many can register all at once.
+
+ 1.2) Repeat GETs to stress reads.
+ 
+ 1.3) Repeat PUTs 
+ 
+ 1.4) Impact of database replicate (log shipping).
 
 2). <a id="BadResponseCodes">
 ## Bad response codes</a>
