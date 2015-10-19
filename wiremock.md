@@ -1,3 +1,17 @@
+
+0. <a href="#AboutWiremock"> About WireMock</a>
+0. <a href="#UserForums"> User Forums</a>
+0. <a href="#Videos"> Videos</a>
+0. <a href="#StandaloneServer"> Stand-alone server setup</a>
+0. <a href="#CLISample"> Command-line samples</a>
+
+0. <a href="#ExtendWireMock"> Extend WireMock</a>
+
+<hr />
+
+<a id="AboutWiremock">
+## About WireMock</a>
+
 <a target="_blank" href="https://github.com/tomakehurst/wiremock"> Wiremock at https://github.com/tomakehurst/wiremock</a>
 is an open-source Java-language library for stubbing and mocking (proxying) web services 
 to replace dependency servers.
@@ -14,19 +28,41 @@ http://www.tomakehurst.com/introducing-wiremock-an-http-service-stubbing-library
 It supports HTTP response stubbing, request verification, proxy/intercept, record/playback of stubs and fault injection, 
 and can be used from within a unit test or deployed into a test environment.
 
-Wiremock can be used directly from within JUnit (or your weapon of choice), 
-run as a standalone process or deployed into a container with the aim of covering off a wide range of testing scenarios. 
+Wiremock can be used 
+
+	* run as a standalone process, or 
+	* directly from within JUnit,
+	* deployed into a container with the aim of covering off a wide range of testing scenarios. 
 
 Although it’s written in Java, and there is a fluent Java API,
 there’s also a **JSON API** for use with pretty much any language out there.
 
   * Stubbing returns canned resources (request A always returns reponse B).
   * Fault injection (returns error or blanks) for resiliancy testing.
-  * Easy setup
-  * Easy on-boarding
 
-<a id="Server">
-## Server setup</a>
+<a id="UserForums">
+### User Forums ::</a>
+
+0. Read the latest posts at <a target="_blank" href="https://groups.google.com/forum/#!forum/wiremock-user">
+	https://groups.google.com/forum/#!forum/wiremock-use</a>
+	(Registration with gmail account is necessary).
+
+
+<a id="Videos">
+### Videos ::</a>
+
+Changes to the Github from 2011 visualized in a video:
+https://www.youtube.com/watch?v=fPMJu6i1XDE
+
+https://www.youtube.com/watch?v=sUsh3EnzKKk
+Lucy Chang explains how at Intuit she uses WireMock to do resiliency testing dependencies.
+
+https://www.youtube.com/watch?v=sUsh3EnzKKk
+
+
+
+<a id="StandaloneServer">
+## Stand-alone server setup</a>
 0. Download **wiremock-1.53-standalone.jar** from 
    <a target="_blank" href="http://wiremock.org/">http://wiremock.org</a>
 
@@ -40,28 +76,26 @@ there’s also a **JSON API** for use with pretty much any language out there.
 	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
 	```
 
+<a id="CLISample">
+### Command-line samples</a>
+The Wiremock page suggests these commands emulating an internet browser:
+
+0. Establish:
+
+	```
+	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
+	```
+
+0. Retrieve:
+
+	```
+	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
+	```
 
 <a id="ConditionalForwarding">
 ## Conditional Forwarding</a>
 Other handy stuff it’ll do includes conditional forwarding of requests to other services (enabling proxy/intercept), record/playback of stubs, fault injection, stateful behaviour and response delays.
 
-
-<a id="UserForums">
-## User Forums ::</a>
-
-<a target="_blank" href="https://groups.google.com/forum/#!forum/wiremock-user">
-https://groups.google.com/forum/#!forum/wiremock-user</a>
-
-
-## Videos ::
-
-Changes to the Github from 2011 visualized in a video:
-https://www.youtube.com/watch?v=fPMJu6i1XDE
-
-https://www.youtube.com/watch?v=sUsh3EnzKKk
-Lucy Chang explains how at Intuit she uses WireMock to do resiliency testing dependencies.
-
-https://www.youtube.com/watch?v=sUsh3EnzKKk
 
 
 <a id="JSON">
@@ -160,3 +194,22 @@ stubFor(post(urlEqualTo("/pay"))
            .willReturn(aResponse()
                            .withFixedDelay(500)));
   ```
+
+WireMock is an open-source tool.
+
+0. OPTION A: Download the stand-alone jar from http://wiremock.org/running-standalone.html
+
+  NOTE: This is based on code at https://github.com/tomakehurst/wiremock
+  which configures Gradle, Travis, etc.
+
+ Feature **Stateful behaviour simulation** means ...
+  
+0. May need to have a proxy to act like the API, or not.
+
+
+<a name="ExtendWireMock">
+## Extend WireMock</a>
+
+See:
+
+  * http://wiremock.org/extending-wiremock.html
