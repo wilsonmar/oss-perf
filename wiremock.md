@@ -27,6 +27,7 @@ there’s also a **JSON API** for use with pretty much any language out there.
 
 <a target="_blank" href="http://wiremock.org/">http://wiremock.org</a>
 
+http://mvnrepository.com/artifact/com.github.tomakehurst/wiremock/1.23
 
 <a id="ConditionalForwarding">
 ## Conditional Forwarding</a>
@@ -50,3 +51,30 @@ Lucy Chang explains how at Intuit she uses WireMock to do resiliency testing dep
 
 https://www.youtube.com/watch?v=sUsh3EnzKKk
 
+
+Stateful
+
+  ```
+stubFor(post(urlEqualTo("/pay")).inScenario("MAKE PAYMENT")
+  .whenScenarioStateIs("PAYMENT DUE")                                     
+  .willSetStateTo("PAYMENT")
+  .willReturn(aResponse()
+                .withStatus(200)
+                .withBody("Thank you.")));
+  ```
+  
+Errors
+
+```
+   stubFor(post(urlEqualTo("/pay"))
+               .willReturn(aResponse()
+               .withFault(MALFORMED_RESPONSE_CHUNK)));
+  ```
+  
+Delays
+
+  ```
+stubFor(post(urlEqualTo("/pay"))
+           .willReturn(aResponse()
+                           .withFixedDelay(500)));
+  ```
