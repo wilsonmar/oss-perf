@@ -217,4 +217,5 @@ WireMock is an open-source tool.
 
 See:
 
-  * http://wiremock.org/extending-wiremock.html
+  * <a target="_blank" href="http://wiremock.org/extending-wiremock.html">
+    http://wiremock.org/extending-wiremock.html</a>
