@@ -132,20 +132,8 @@ The Wiremock page suggests these commands emulating an internet browser:
 
 	The response should be "Here it is!" as defined above.
 	
-	Clients can now access 
+	Clients can now access.
 	
-<a id="Maven">
-## Maven</a>
-
-  http://mvnrepository.com/artifact/com.github.tomakehurst/wiremock/1.23
-
-
-
-<a id="ConditionalForwarding">
-## Conditional Forwarding</a>
-Other handy stuff it’ll do includes conditional forwarding of requests to other services (enabling proxy/intercept), record/playback of stubs, fault injection, stateful behaviour and response delays.
-
-
 
 <a id="JSON">
 ## JSON sample</a>
@@ -167,6 +155,19 @@ POST  __admin/mappings/new
 Regular expression: `/?q=\w+`
 
 
+<a id="Maven">
+## Maven</a>
+
+  http://mvnrepository.com/artifact/com.github.tomakehurst/wiremock/1.23
+
+
+
+<a id="ConditionalForwarding">
+## Conditional Forwarding</a>
+Other handy stuff it’ll do includes conditional forwarding of requests to other services (enabling proxy/intercept), record/playback of stubs, fault injection, stateful behaviour and response delays.
+
+
+
 <a id="Coding">
 ## Sample Coding</a>
 
@@ -183,7 +184,7 @@ Fluent Java API stubFor
            ));
   ```
 
-Error response:
+Error response in HTTP return code:
 
   ```
   stubFor(post(urlMatching("/?q=\\w+"))
@@ -192,7 +193,7 @@ Error response:
                            .withBody("<html>Whoops!</html>")));
   ```
 
-Error response:
+Error response in data:
 
   ```
   stubFor(post(urlMatching("/?q=\\w+"))
