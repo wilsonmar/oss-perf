@@ -59,17 +59,21 @@ Swagger2RAML converts Swagger JSON to RAML YAML.
 <a id="[1]"></a>
 https://www.youtube.com/watch?v=vu8_QLkW1mg
 API Description Languages: Which One Is Right For Me?
-Aug. 15, 2014 by Laura Heritage at SOA Software
+Aug. 15, 2014 by Laura dot Heritage at soa.com (Akana, formerly SOA Software).
 
 <a id="Who">
 ### Who built Swagger?</a>
 
-Swagger originated from folks at Wordnik (the on-line English dictionary).
+Swagger originated from folks at Wordnik.com (the on-line English dictionary)
+by Reverb Technologies (helloreverb.com)
+which was absorbed by https://inform.com/company.html.
 
-Reverb.
+https://www.mongodb.com/customers/reverb-technologies
 
 <a target="_blank" href="https://github.com/swagger-api">
-https://github.com/swagger-api</a> is the group.
+https://github.com/swagger-api</a> is the group maintaining
+Swagger core.
+swagger-spec.
 
 The testing company SmartBear now manages the <a target="_blank" href="http://swagger.io/">
 swagger.io</a> website
