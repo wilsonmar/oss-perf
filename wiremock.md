@@ -51,6 +51,27 @@ Lucy Chang explains how at Intuit she uses WireMock to do resiliency testing dep
 
 https://www.youtube.com/watch?v=sUsh3EnzKKk
 
+
+<a id="JSON">
+## JSON sample</a>
+
+  ```
+POST  __admin/mappings/new
+{ 
+	“request”: {
+					“method”: “POST”,
+					“urlMatching”: “/?q=\w+”
+},
+“response”: {
+				“status”: 404
+				“body”: “<html>Whoops</html>”
+}
+}
+  ```
+
+<a id="Coding">
+## Sample Coding</a>
+
 Fluent Java API
 
   ```
