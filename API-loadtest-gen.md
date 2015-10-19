@@ -35,13 +35,17 @@ ALL elements of an API can be evaluated together:
  * Authentication token reuse
  * Authentication token refresh
 
-<a name="RESTCases">
-## REST command cases</a>
+<a name="AtomicRESTCases">
+## Atomic data command cases</a>
+The basic processing of data consists of:
 
- * GET
- * POST
- * PUT
- * DELETE
+ 1. POST a new item
+ 2. GET that same item (while it's in cache)
+ 3. PUT change to the item
+ 4. DELETE
+
+Other REST commands:
+
  * HEAD
  * OPTIONS
  * PATCH
