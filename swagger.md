@@ -74,7 +74,7 @@ which was absorbed by https://inform.com/company.html.
 
 The old URL <a target="_blank" ref="nofollow" href="http://github.com/wordnik/swagger-core/wiki">
 http://github.com/wordnik/swagger-core/wiki</a>
-now redirects to <a target="_blank" href="http://github.com/wordnik/swagger-core/wiki">
+now redirects to <a target="_blank" href="https://github.com/swagger-api/swagger-core/wiki">
 http://github.com/wordnik/swagger-core/wiki</a>
 
 <a target="_blank" href="https://github.com/swagger-api">
