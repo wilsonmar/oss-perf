@@ -7,11 +7,14 @@ http://www.tomakehurst.com/introducing-wiremock-an-http-service-stubbing-library
 
   "Wiremock allows HTTP exchanges to be stubbed and verified. 
   It does this by creating an actual HTTP endpoint, 
-  rather than by stubbing or mocking the HTTP client class."
-  
-It supports HTTP response stubbing, request verification, proxy/intercept, record/playback of stubs and fault injection, and can be used from within a unit test or deployed into a test environment.
+  rather than by stubbing or mocking the HTTP client class"
+  (like JMock or Mockito)
 
-Wiremock can be used directly from within JUnit (or your weapon of choice), run as a standalone process or deployed into a container with the aim of covering off a wide range of testing scenarios. 
+It supports HTTP response stubbing, request verification, proxy/intercept, record/playback of stubs and fault injection, 
+and can be used from within a unit test or deployed into a test environment.
+
+Wiremock can be used directly from within JUnit (or your weapon of choice), 
+run as a standalone process or deployed into a container with the aim of covering off a wide range of testing scenarios. 
 
 Although it’s written in Java, and there is a fluent Java API,
 there’s also a **JSON API** for use with pretty much any language out there.
