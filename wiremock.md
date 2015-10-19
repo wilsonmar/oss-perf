@@ -2,7 +2,8 @@
 is an open-source Java-language library for stubbing and mocking (proxying) web services 
 to replace dependency servers.
 
-On August 18, 2013, Wiremock author Tom Akehurst (@Akehurst) writes in his blog:
+On August 18, 2012, Wiremock author Tom Akehurst (@Akehurst work in UK consultancy EnergizedWork) 
+wrote in his blog:
 http://www.tomakehurst.com/introducing-wiremock-an-http-service-stubbing-library/
 
   "Wiremock allows HTTP exchanges to be stubbed and verified. 
