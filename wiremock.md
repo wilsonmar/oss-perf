@@ -51,6 +51,30 @@ Lucy Chang explains how at Intuit she uses WireMock to do resiliency testing dep
 
 https://www.youtube.com/watch?v=sUsh3EnzKKk
 
+Fluent Java API
+
+  ```
+  stubFor(post(urlMatching("/?q=\\w+"))
+           .willReturn(aResponse()
+                           .withStatus(404)
+                           .withBody("<html>Whoops!</html>")));
+  ```
+
+Test
+
+  ```
+  public void testFoo() {
+   // point your app at http://localhost/10.0.2.2:3456
+   stubFor(post(urlMatching("/?q=\\s+"))
+               .willReturn(aResponse()
+                      .withStatus(404)
+                      .withBody("<html>Whoops!</html>")));
+   getActivity();
+   onView(withId(R.id.foo_button)).perform(click());
+   onView(withText("Whoops!")).check(matches(isDisplayed()));
+   verify(1, postRequestedFor(urlEqualTo("/?q=foo")));
+}
+  ```
 
 Stateful
 
