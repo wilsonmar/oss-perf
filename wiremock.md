@@ -27,18 +27,19 @@ about his repo <a target="_blank" href="https://github.com/tomakehurst/wiremock"
 
 Wiremock can be used different ways:
 
-	* run as a standalone process, or 
-	* directly from within **JUnit**,
-	* deployed into a container with the aim of covering off a wide range of testing scenarios. 
-
-Although it’s written in Java, and there is a fluent Java API,
-there’s also a **JSON API** for use with pretty much any language out there.
+  * run as a standalone process, or 
+  * directly from within **JUnit**,
+  * deployed into a container with the aim of covering off a wide range of testing scenarios. 
 
 Wiremock supports HTTP response stubbing, request verification, proxy/intercept, record/playback of stubs and fault injection, 
 
   * Stubbing returns canned resources (request A always returns reponse B).
   * <a href="#FaultInjection">Fault injection</a>, such as returns HTTP 503 error or blanks,
     is done for **resiliancy testing** of server code.
+
+Although it’s written in Java, and there is a fluent Java API,
+there’s also a **JSON API** for use with pretty much any language out there.
+
 
 <a id="UserForums">
 ### User Forums ::</a>
