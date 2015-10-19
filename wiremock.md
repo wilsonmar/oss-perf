@@ -273,3 +273,5 @@ See:
 
   * <a target="_blank" href="http://wiremock.org/extending-wiremock.html">
     http://wiremock.org/extending-wiremock.html</a>
+
+* http://www.pnsqc.org/the-journey-of-mocking-in-aws/
