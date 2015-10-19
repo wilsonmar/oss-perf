@@ -61,6 +61,7 @@ There are different invalid values for each data type.
 There are different invalid values for each data type.
 
   * Zip code out of state specified
+  * Content-Type header doesn’t match the body
 
 ## Resources:
 Sources:
