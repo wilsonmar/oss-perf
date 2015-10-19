@@ -84,11 +84,6 @@ https://www.youtube.com/watch?v=sUsh3EnzKKk
 	java -jar wiremock-1.57-standalone.jar --verbose 
 	```
 
-	The default port is 8080.
-
-	All its parameters are described in <a target="_blank" href="http://wiremock.org/running-standalone.html#running-standalone">
-	http://wiremock.org/running-standalone.html#running-standalone</a>
-
 	The response:
 	
 	```
@@ -110,16 +105,22 @@ no-request-journal:           false
 verbose:                      true
 	```
 	
-	
+	NOTE: The default port is 8080, but that can be changed.
+	Additional parameters are described in <a target="_blank" href="http://wiremock.org/running-standalone.html#running-standalone">
+	http://wiremock.org/running-standalone.html#running-standalone</a>
+
+
 <a id="CLISample">
 ### Command-line samples</a>
 The Wiremock page suggests these commands emulating an internet browser:
 
-0. Establish a response by a POST of JSON:
+0. Establish a response by a POST of JSON to built-in end-point code:
 
 	```
 	curl -X POST --data '{ "request": { "url": "/get/this", "method": "GET" }, "response": { "status": 200, "body": "Here it is!\n" }}' http://localhost:8080/__admin/mappings/new
 	```
+
+	The end-point is `http://localhost:8080/__admin/mappings/new`.
 
 	No response is returned to the UI if successful.
 	
