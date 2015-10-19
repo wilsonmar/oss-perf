@@ -70,12 +70,21 @@ Swagger originated from folks at Wordnik.com (the on-line English dictionary)
 by Reverb Technologies (helloreverb.com)
 which was absorbed by https://inform.com/company.html.
 
-https://www.mongodb.com/customers/reverb-technologies
+ * https://www.mongodb.com/customers/reverb-technologies
+
+The old URL <a target="_blank" ref="nofollow" href="http://github.com/wordnik/swagger-core/wiki">
+http://github.com/wordnik/swagger-core/wiki</a>
+now redirects to <a target="_blank" href="http://github.com/wordnik/swagger-core/wiki">
+http://github.com/wordnik/swagger-core/wiki</a>
 
 <a target="_blank" href="https://github.com/swagger-api">
 https://github.com/swagger-api</a> is the group maintaining
-Swagger core.
-swagger-spec.
+
+ * swagger-core
+ * swagger-spec
+ * swagger-ui
+ * swagger-codegen
+
 
 The testing company SmartBear now manages the <a target="_blank" href="http://swagger.io/">
 swagger.io</a> website
