@@ -26,16 +26,19 @@ The approach described here was created in response to the need for a
 **faster, more flexble, and lower cost** approach
 to <a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
-A. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
-   and API mock scripts.
+A. **Eliminate errors** in program coding source by **automatic generation of programming code** 
+    based on specs.
 
    Although various attempts at generating UI code have not taken hold due to complexity,
    generation of APIs is less complex of an undertaking.
 
-B. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
+B. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
+   and API mock scripts.
+
+C. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
    by **machine learning** robots rather than tedious manual examination of logs.
 
-C. **Automatically cycle though variations** of <a href="#configs">
+D. **Automatically cycle though variations** of <a href="#configs">
    several configurations</a> during a single manual run initiation.
    More important than hands-free,
    this enables performance analysis to go beyond merely testing to engineering.
@@ -43,12 +46,12 @@ C. **Automatically cycle though variations** of <a href="#configs">
 The objective here is to **reduce the amount of manual effort** (and human errors) to conducting tests
 through automation.
 
-D. **Centralizing data** from various views of system behavior under stress (or not) 
+E. **Centralizing data** from various views of system behavior under stress (or not) 
    can be analyzed together will provide the basis for identifying trends and other insights
    using both manual and **"machine learning"** techniques.
    Machine learning would identify more minute issues more comprehensively.
 
-E. Measure how much time it takes to execute various aspects of JavaScript and other work within various browsers.
+F. Measure how much time it takes to execute various aspects of JavaScript and other work within various browsers.
    This bar chart shows the difference in response time on different browsers (Chrome vs. Firefox) vs. JMeter.
    
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
@@ -59,7 +62,7 @@ E. Measure how much time it takes to execute various aspects of JavaScript and o
 JMeter under-reports the total response times experienced by real users because it focuses on the 
 **transfer of files** between client and server.
 
-F. **Develop in open source** on a public github repos rather than propriatary internal wikis
+G. **Develop in open source** on a public github repos rather than propriatary internal wikis
 to not just share benefits as well as development costs, but to ensure continuity of skills and effort.
 
 
