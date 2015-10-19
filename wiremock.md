@@ -66,7 +66,8 @@ https://www.youtube.com/watch?v=sUsh3EnzKKk
 ## Stand-alone server setup</a>
 
 0. Download **wiremock-1.53-standalone.jar** from 
-   <a target="_blank" href="http://wiremock.org/">http://wiremock.org</a>
+   <a target="_blank" href="http://wiremock.org/getting-started.html#running-standalone">
+	http://wiremock.org/getting-started.html#running-standalone</a>
 
 0. Open a terminal to accept command line input.
 0. Navigate to where the jar file was downloaded. On a Mac, it is typically:
@@ -132,8 +133,13 @@ The Wiremock page suggests these commands emulating an internet browser:
 
 	The response should be "Here it is!" as defined above.
 	
-	Clients can now access.
+	Clients can now access the server. See below.
 	
+0. To shutdown the server, from a browser post a request like this with an empty body:
+
+	```
+	http://localhost:8080/__admin/shutdown
+	```
 
 <a id="JSON">
 ## JSON sample</a>
