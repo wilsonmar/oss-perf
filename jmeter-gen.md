@@ -18,3 +18,6 @@ Nov 16, 2011 by Ferenc Milhaly
 
 https://www.youtube.com/watch?v=QlQm786MClE
 Secrets of Awesome API Design
+
+https://www.youtube.com/watch?v=mZ8_QgJ5mbs
+Beautiful REST & JSON APIs
