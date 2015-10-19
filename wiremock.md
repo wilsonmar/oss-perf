@@ -68,20 +68,53 @@ https://www.youtube.com/watch?v=sUsh3EnzKKk
 0. Download **wiremock-1.53-standalone.jar** from 
    <a target="_blank" href="http://wiremock.org/">http://wiremock.org</a>
 
-0. Start stand-alone server:
+0. Open a terminal to accept command line input.
+0. Navigate to where the jar file was downloaded. On a Mac, it is typically:
 
 	```
-	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
+	cd ~/Downloads
 	```
 
-	All its parameters are described in http://wiremock.org/running-standalone.html#running-standalone
+0. Identify the version downloaded. As of this writing, it was 1.57.
+   Change the command in the java command below as needed.
 
+0. Change the Start stand-alone server:
 
+	```
+	java -jar wiremock-1.57-standalone.jar --verbose 
+	```
+
+	The default port is 8080.
+
+	All its parameters are described in <a target="_blank" href="http://wiremock.org/running-standalone.html#running-standalone">
+	http://wiremock.org/running-standalone.html#running-standalone</a>
+
+	The response:
+	
+	```
+	2015-10-19 08:55:18.93 Verbose logging enabled
+2015-10-19 08:55:18.616:INFO::Logging to STDERR via wiremock.org.mortbay.log.StdErrLog
+2015-10-19 08:55:18.621 Verbose logging enabled
+ /$$      /$$ /$$                     /$$      /$$                     /$$      
+| $$  /$ | $$|__/                    | $$$    /$$$                    | $$      
+| $$ /$$$| $$ /$$  /$$$$$$   /$$$$$$ | $$$$  /$$$$  /$$$$$$   /$$$$$$$| $$   /$$
+| $$/$$ $$ $$| $$ /$$__  $$ /$$__  $$| $$ $$/$$ $$ /$$__  $$ /$$_____/| $$  /$$/
+| $$$$_  $$$$| $$| $$  \__/| $$$$$$$$| $$  $$$| $$| $$  \ $$| $$      | $$$$$$/ 
+| $$$/ \  $$$| $$| $$      | $$_____/| $$\  $ | $$| $$  | $$| $$      | $$_  $$ 
+| $$/   \  $$| $$| $$      |  $$$$$$$| $$ \/  | $$|  $$$$$$/|  $$$$$$$| $$ \  $$
+|__/     \__/|__/|__/       \_______/|__/     |__/ \______/  \_______/|__/  \__/
+
+port:                         8080
+enable-browser-proxying:      false
+no-request-journal:           false
+verbose:                      true
+	```
+	
+	
 <a id="CLISample">
 ### Command-line samples</a>
 The Wiremock page suggests these commands emulating an internet browser:
 
-0. Open a terminal to accept command line input.
 0. Establish a response by a POST of JSON:
 
 	```
