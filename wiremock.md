@@ -69,6 +69,9 @@ POST  __admin/mappings/new
 }
   ```
 
+Regular expression: `/?q=\w+`
+
+
 <a id="Coding">
 ## Sample Coding</a>
 
