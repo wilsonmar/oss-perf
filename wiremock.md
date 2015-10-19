@@ -25,9 +25,21 @@ there’s also a **JSON API** for use with pretty much any language out there.
   * Easy setup
   * Easy on-boarding
 
-<a target="_blank" href="http://wiremock.org/">http://wiremock.org</a>
+<a id="Server">
+## Server setup</a>
+0. Download **wiremock-1.53-standalone.jar** from 
+   <a target="_blank" href="http://wiremock.org/">http://wiremock.org</a>
 
-http://mvnrepository.com/artifact/com.github.tomakehurst/wiremock/1.23
+	or 
+
+  http://mvnrepository.com/artifact/com.github.tomakehurst/wiremock/1.23
+
+0. Start stand-alone server:
+
+	```
+	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
+	```
+
 
 <a id="ConditionalForwarding">
 ## Conditional Forwarding</a>
@@ -75,13 +87,35 @@ Regular expression: `/?q=\w+`
 <a id="Coding">
 ## Sample Coding</a>
 
-Fluent Java API
+Fluent Java API stubFor
+
+  ```
+  stubFor(get(urlEqualTo("/from/where"))
+           .willReturn(aResponse()
+                           .withStatus(200)
+                           .withBody("<html>Whoops!</html>")
+                           .withHeader("Cache-Control","no-cache")
+                           .withHeader("Content-Type","text/plain")
+                           .withBody("Hello world")
+           ));
+  ```
+
+Error response:
 
   ```
   stubFor(post(urlMatching("/?q=\\w+"))
            .willReturn(aResponse()
                            .withStatus(404)
                            .withBody("<html>Whoops!</html>")));
+  ```
+
+Error response:
+
+  ```
+  stubFor(post(urlMatching("/?q=\\w+"))
+           .willReturn(aResponse()
+           .withFault(Fault.EMPTY_RESPONSE)
+          ));
   ```
 
 Test
