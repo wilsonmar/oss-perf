@@ -114,8 +114,9 @@ is provided for experimentation.
 Exposing Salesforce REST Services Using Swagger:
 https://www.youtube.com/watch?v=8Z9qva1nv1c
 
-Swagger make your REST APIs accessible: Victor Trakhtenberg at DevconTLV October
 https://www.youtube.com/watch?v=U_lCrFpvXyY
+Swagger make your REST APIs accessible
+Victor Trakhtenberg at DevconTLV October, 2013
 
 https://www.youtube.com/watch?v=8Z9qva1nv1c
 Exposing Salesforce REST Services Using Swagger
