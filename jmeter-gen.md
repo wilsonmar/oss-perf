@@ -1,44 +1,20 @@
 This page describes what JMeter scripts tests:
 
-1). <a href="#HappyPath">Happy paths: Valid atomic calls with valid response codes</a>.
+1). <a href="#BadResponseCodes">Valid atomic calls with bad response codes</a>.
 
-1). <a href="#AtomicRunTypes">Atomic run types</a>.
+2). <a href="#HappyPath">Happy paths: Valid atomic calls with valid response codes</a>.
 
-2). <a href="#BadResponseCodes">Valid atomic calls with bad response codes</a>.
+3). <a href="#AtomicRunTypes">Atomic run types</a>.
 
-3). <a href="#InvalidFieldValues">Invalid field values</a>.
+4). <a href="#InvalidFieldValues">Invalid field values</a>.
 
-4). <a href="#CrossFieldEdits">Cross-field edits</a>.
+5). <a href="#CrossFieldEdits">Cross-field edits</a>.
 
 <a href="#Resources">Videos</a>
 
 <hr />
 
-<a id="CleanHappyPath">
-## 1). Clean Happy paths</a>
-Valid atomic calls with valid response codes
-
- 1.1). POST new (user registration)
-
- 1.2). GET new (lists)
- 
- 1.3). PUT change
- 
- 1.4). DELETE newly created, which keeps database empty.
-
-<a id="AtomicRunTypes">
-### Atomic run types</a>
-1). "run-type" parameter defines repeating processing strategies.
-
- 1.1) Repeat POST new to populate the database and identify how many can register all at once.
-
- 1.2) Repeat GETs to identify cache hits and impact of caching.
- 
- 1.3) Repeat PUTs 
- 
- 1.4) Impact of database replication (log shipping).
-
-2). <a id="BadResponseCodes">
+1). <a id="BadResponseCodes">
 ## Bad response codes</a>
 
  0. 400 (not found)
@@ -46,8 +22,32 @@ Valid atomic calls with valid response codes
  0. etc.
 
 
+<a id="CleanHappyPath">
+## 2). Clean Happy paths</a>
+Valid atomic calls with valid response codes
+
+ 2.1). POST new (user registration)
+
+ 2.2). GET new (lists)
+ 
+ 2.3). PUT change
+ 
+ 2.4). DELETE newly created, which keeps database empty.
+
+<a id="AtomicRunTypes">
+### 3). Atomic run types (perftest)</a>
+3). "run-type" parameter defines repeating processing strategies.
+
+ 3.1) Repeat POST new to populate the database and identify how many can register all at once.
+
+ 3.2) Repeat GETs to identify cache hits and impact of caching.
+ 
+ 3.3) Repeat PUTs 
+ 
+ 3.4) Impact of database replication (log shipping).
+
 <a id="InvalidFieldValues">
-## Invalid field values</a>
+## 4). Invalid field values</a>
 There are different invalid values for each data type.
 
   * Currency number has negative
