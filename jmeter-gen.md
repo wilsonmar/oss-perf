@@ -1,8 +1,9 @@
 This page describes what JMeter scripts tests:
 
-0. Valid atomic calls
-0. <a href="#InvalidFieldValues">Invalid field values</a>
-0. <a href="#CrossFieldEdits">Cross-field edits</a>
+0. Happy path: Valid atomic calls with valid response codes.
+0. Valid atomic calls with bad response codes.
+0. <a href="#InvalidFieldValues">Invalid field values</a>.
+0. <a href="#CrossFieldEdits">Cross-field edits</a>.
 
 <a href="#Resources">Videos</a>
 
