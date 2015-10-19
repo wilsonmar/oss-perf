@@ -64,12 +64,9 @@ https://www.youtube.com/watch?v=sUsh3EnzKKk
 
 <a id="StandaloneServer">
 ## Stand-alone server setup</a>
+
 0. Download **wiremock-1.53-standalone.jar** from 
    <a target="_blank" href="http://wiremock.org/">http://wiremock.org</a>
-
-	or 
-
-  http://mvnrepository.com/artifact/com.github.tomakehurst/wiremock/1.23
 
 0. Start stand-alone server:
 
@@ -77,22 +74,38 @@ https://www.youtube.com/watch?v=sUsh3EnzKKk
 	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
 	```
 
+	All its parameters are described in http://wiremock.org/running-standalone.html#running-standalone
+
+
 <a id="CLISample">
 ### Command-line samples</a>
 The Wiremock page suggests these commands emulating an internet browser:
 
 0. Open a terminal to accept command line input.
-0. Establish:
+0. Establish a response by a POST of JSON:
 
 	```
-	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
+	curl -X POST --data '{ "request": { "url": "/get/this", "method": "GET" }, "response": { "status": 200, "body": "Here it is!\n" }}' http://localhost:8080/__admin/mappings/new
 	```
 
+	No response is returned to the UI if successful.
+	
 0. Retrieve:
 
 	```
-	java -jar wiremock-1.53-standalone.jar --verbose --port 8080 --proxy-all=[Dependency Server DNS Name]
+	curl http://localhost:8080/get/this
 	```
+
+	The response should be "Here it is!" as defined above.
+	
+	Clients can now access 
+	
+<a id="Maven">
+## Maven</a>
+
+  http://mvnrepository.com/artifact/com.github.tomakehurst/wiremock/1.23
+
+
 
 <a id="ConditionalForwarding">
 ## Conditional Forwarding</a>
