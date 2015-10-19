@@ -35,6 +35,8 @@ A. **Eliminate errors** in program coding source by **automatic generation of pr
 B. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
    and API mock scripts.
 
+   Making changes easy, fast, and safe enables changes more frequently and more correct -- more agile.
+
 C. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
    by **machine learning** robots rather than tedious manual examination of logs.
 
