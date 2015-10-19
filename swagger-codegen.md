@@ -20,7 +20,17 @@ To generate Swagger JSON specs,
 <a target="_blank" href="https://github.com/swagger-api/swagger-codegen">
 swagger-codegen</a>
 
+It uses {{moustache}} templates for all major programming languages:
+for Java, Scala, Goovy, Python, Ruby, Clojur, ObjectiveC, C#, PHP, JavaScript.
+Custom ones can also be created.
+
 But what about round-trip?
+
+<a name="SwaggerUITestNow">
+## Swagger-UI Test Now button</a>
+
+Swagger-UI has a "test it now" button.
+
 
 <a name="SwaggerCoding">
 ## Client coding by hand</a>
