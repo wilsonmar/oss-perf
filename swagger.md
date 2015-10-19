@@ -35,9 +35,10 @@ Swagger's focus is currently serving Node.js developers.
 
 Other alternatives to Swagger Core include:
 
-  * ioDocs
+  * <a target="_blank" href="http://github.com/mashery/iodocs"> IO-Docs</a> from <a target="_blank" href="http://mashery.com/product/io-docs">Mashery</a>.
   * JASONDoc
-  * WSDL and WADL generated to describe SOAP are not viable for REST API because they do not include enough information.
+  * <a target="_blank" href="http://www.w3.org/TR/wsdl/">WSDL</a> 
+  * <a target="_blank" href="http://en.wikipedia.org/wiki/Web_Application_Description_Language">WADL (Web Application Description Language) generated to describe SOAP are not viable for REST API because they do not include enough information.
 
 <a id="RAML"></a>
 RAML (at <a target="_blank" href="http://raml.org/"> RAML</a>)
