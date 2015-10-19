@@ -28,14 +28,12 @@ to <a href="#PerfTesting">"performance testing"</a> (which even commercial vendo
 
 A. **Eliminate errors** in program coding source by **automatic generation of programming code** 
     based on specs.
-
    Although various attempts at generating UI code have not taken hold due to complexity,
    generation of APIs is less complex of an undertaking.
 
 B. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
    and API mock scripts.
-
-   Making changes easy, fast, and safe enables changes more frequently and more correct -- more agile.
+   Making changes easy, fast, and safe enables fix-fast which makes systems more "correct" than monolithic design.
 
 C. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
    by **machine learning** robots rather than tedious manual examination of logs.
