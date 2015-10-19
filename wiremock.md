@@ -12,33 +12,33 @@
 <a id="AboutWiremock">
 ## About WireMock</a>
 
-<a target="_blank" href="https://github.com/tomakehurst/wiremock"> Wiremock at https://github.com/tomakehurst/wiremock</a>
-is an open-source Java-language library for stubbing and mocking (proxying) web services 
+Wiremock is an open-source Java-language library for stubbing and mocking (proxying) web services 
 to replace dependency servers.
 
 On August 18, 2012, Wiremock author Tom Akehurst (@Akehurst work in UK consultancy EnergizedWork) 
 wrote in his blog:
 http://www.tomakehurst.com/introducing-wiremock-an-http-service-stubbing-library/
+about his repo <a target="_blank" href="https://github.com/tomakehurst/wiremock">  https://github.com/tomakehurst/wiremock</a>
 
   "Wiremock allows HTTP exchanges to be stubbed and verified. 
   It does this by creating an actual HTTP endpoint, 
   rather than by stubbing or mocking the HTTP client class"
   (like JMock or Mockito)
 
-It supports HTTP response stubbing, request verification, proxy/intercept, record/playback of stubs and fault injection, 
-and can be used from within a unit test or deployed into a test environment.
-
-Wiremock can be used 
+Wiremock can be used different ways:
 
 	* run as a standalone process, or 
-	* directly from within JUnit,
+	* directly from within **JUnit**,
 	* deployed into a container with the aim of covering off a wide range of testing scenarios. 
 
 Although it’s written in Java, and there is a fluent Java API,
 there’s also a **JSON API** for use with pretty much any language out there.
 
+Wiremock supports HTTP response stubbing, request verification, proxy/intercept, record/playback of stubs and fault injection, 
+
   * Stubbing returns canned resources (request A always returns reponse B).
-  * Fault injection (returns error or blanks) for resiliancy testing.
+  * <a href="#FaultInjection">Fault injection</a>, such as returns HTTP 503 error or blanks,
+    is done for **resiliancy testing** of server code.
 
 <a id="UserForums">
 ### User Forums ::</a>
@@ -80,6 +80,7 @@ https://www.youtube.com/watch?v=sUsh3EnzKKk
 ### Command-line samples</a>
 The Wiremock page suggests these commands emulating an internet browser:
 
+0. Open a terminal to accept command line input.
 0. Establish:
 
 	```
@@ -179,7 +180,10 @@ stubFor(post(urlEqualTo("/pay")).inScenario("MAKE PAYMENT")
                 .withBody("Thank you.")));
   ```
   
-Errors
+<a id="FaultInjection">
+### Fault Injection</a>
+
+Errors:
 
 ```
    stubFor(post(urlEqualTo("/pay"))
@@ -187,7 +191,7 @@ Errors
                .withFault(MALFORMED_RESPONSE_CHUNK)));
   ```
   
-Delays
+Delays:
 
   ```
 stubFor(post(urlEqualTo("/pay"))
