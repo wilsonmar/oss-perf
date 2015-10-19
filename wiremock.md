@@ -6,6 +6,11 @@ to replace dependency servers.
   * Easy setup
   * Easy on-boarding
 
+<a id="UserForums">
+## User Forums ::</a>
+
+<a target="_blank" href="https://groups.google.com/forum/#!forum/wiremock-user">
+https://groups.google.com/forum/#!forum/wiremock-user</a>
 
 
 ## Videos ::
@@ -17,3 +22,4 @@ https://www.youtube.com/watch?v=sUsh3EnzKKk
 Lucy Chang explains how at Intuit she uses WireMock to do resiliency testing dependencies.
 
 https://www.youtube.com/watch?v=sUsh3EnzKKk
+
