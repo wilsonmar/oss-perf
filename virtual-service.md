@@ -62,22 +62,3 @@ The community of users of an service need to work together, independently of the
   * CA LISA
   * Parasoft
 
-<a name="WireMock">
-## WireMock</a>
-
-WireMock is an open-source tool.
-
-0. Read the latest posts at https://groups.google.com/forum/#!forum/wiremock-user
-
-0. OPTION A: Download the stand-alone jar from http://wiremock.org/running-standalone.html
-
-  NOTE: This is based on code at https://github.com/tomakehurst/wiremock
-  which configures Gradle, Travis, etc.
-
- Feature **Stateful behaviour simulation** means ...
-  
-0. May need to have a proxy to act like the API, or not.
-
-0. You may need to extend wiremock:
-
-  * http://wiremock.org/extending-wiremock.html
