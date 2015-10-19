@@ -2,10 +2,6 @@
 
 0. <a href="#KibanaGraphsJMeter"> Kibana Graphs</a> - the objective of prepatory steps below:
 0. <a href="#AUTSetup"> Application Under Test Setup</a>
-0. <a href="#JMeterSetup"> JMeter Setup</a>
-0. <a href="#LogstashSetup"> Logstash Setup</a>
-0. <a href="#ElasticsearchSetup"> Elasticsearch Setup</a>
-0. <a href="#KibanaSetup"> Kibana Setup</a>
 0. <a href="#Resources"> Resources</a>
 
 We may break contents of each into separate files in Github.
@@ -51,19 +47,6 @@ What I’m hoping for is a few graph in Kibana that illustrates test run conclus
 
 
 <hr />
-## <a name="AUTSetup"> Application Under Test Setup</a>
-
-## <a name="JMeterSetup"> JMeter Setup</a>
-
-
-## <a name="LogstashSetup"> Logstash Setup</a>
-
-
-## <a name="ElasticsearchSetup"> Elasticsearch Setup</a>
-
-
-## <a name="KibanaSetup"> Kibana Setup</a>
-
 
 <a target="_blank" href="https://plus.google.com/114432111742231285408/posts">
 kowalcjZero</a> created a 
