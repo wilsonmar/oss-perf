@@ -57,7 +57,7 @@ There are different invalid values for each data type.
   * Credit card number has invalid checksum
 
 <a id="CrossFieldEdits">
-## Cross-field edits</a>
+## 5) Cross-field edits</a>
 There are different invalid values for each data type.
 
   * Zip code out of state specified
