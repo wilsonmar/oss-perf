@@ -1,6 +1,36 @@
-Chef
+The devops toolchain **provisions** servers in a cloud such as AWS EC2.
+This may occur using binary images (from Artifactory repository) that already contains deployed apps.
+Or, applications are **deployed** on an empty servers.
 
-## Chef snippit to start wiremock server
+<a id="DockerRuns">
+## Docker runs</a>
+To reduce redunancy, we use
+**Docker**.
+  virtualization
+from dockerhub.
+
+Cloudgenius 
+https://be.a.cloudgeni.us/workstation/
+
+
+
+
+
+<a id="Continuous">
+## Continuous </a>
+
+
+Alternatives include Puppet or Chef or Ansible (Red Hat) or Salt.
+
+<a id="Puppet">
+## Puppet </a>
+
+
+
+<a id="Chef">
+## Chef </a>
+
+### Chef snippit to start wiremock server
 
   ```
   function start {
@@ -14,7 +44,7 @@ Chef
   }
   ```
   
-## Call Chef from AWS Cloud Formation
+### Call Chef from AWS Cloud Formation
 
   ```
   "5_run_chef": {
