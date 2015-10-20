@@ -8,6 +8,14 @@ We may break contents of each into separate files in Github.
 
 <hr />
 
+<a id="Setup">
+## Setup</a>
+
+https://hub.docker.com/r/cirit/jmeter/
+based on 
+https://github.com/cagdascirit/docker-jmeter
+
+
 ## <a name="KibanaGraphsJMeter"> Kibana Graphs from JMeter Runs</a>
 What I’m hoping for is a few graph in Kibana that illustrates test run conclusions:
 
