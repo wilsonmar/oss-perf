@@ -2,15 +2,33 @@ The devops toolchain **provisions** servers in a cloud such as AWS EC2.
 This may occur using binary images (from Artifactory repository) that already contains deployed apps.
 Or, applications are **deployed** on an empty servers.
 
-<a id="DockerRuns">
-## Docker runs</a>
+<a id="DockerImages">
+## Docker images</a>
 To reduce redunancy, we use
-**Docker**.
-  virtualization
-from dockerhub.
+**Docker** to "spin up" images into real servers (virtualized).
 
-Cloudgenius 
-https://be.a.cloudgeni.us/workstation/
+Images created by others are available from dockerhub.com.
+In are Virtualbox images for:
+
+  * web UI server (Tomcat, Jetty, etc.)
+  * database server (MongoDB, MySQL, Postgres, etc.)
+  * etc.
+
+The <a target="_blank" href="https://be.a.cloudgeni.us/workstation/">
+OVA Cloudgenius workstation</a>
+
+  ```
+  md5 cloudgenius-2015-09-10.ova 
+  MD5 (cloudgenius-2015-09-10.ova) = c203e546b82998434ca67425b5be3054
+  ```
+  
+https://www.getsync.com/
+to get BitTorrent-Sync.dmg
+
+https://www.virtualbox.org/wiki/Downloads
+
+ 
+bundle exec knife ec2 server list
 
 
 
