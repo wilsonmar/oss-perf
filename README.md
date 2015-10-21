@@ -148,8 +148,8 @@ Codification of API calls into standard patterns makes it now possible to
 | **alerts** should be sent out to prioritize human review and action. | alerts |
 
 
-<a name="OtherIssues">
-### Other issues</a>
+<a name="OtherAspects">
+### Other aspects</a>
 The description above does not address several aspects:
 
    * Development tools (Eclipse, etc.) to develop sample apps.
