@@ -119,8 +119,9 @@ Codification of API calls into standard patterns makes it now possible to
 | Our system depends on several vendor APIs being available all the time, | Vendor APIs |
 |  so we mock (or virtualize) those services to ensure constant access during testing. | Wiremock |
 | One of the benefits of a microservice architecture is it simplifies API calls enough to be defined in a database | Swagger |
-| from which code can be generated automatically. | codegen |
-| During runs: |  |
+| from which client code can be generated automatically. | codegen |
+| Generation of Jmeter code enables us to create micro-benchmarks during development rather than as an after-thought. Static code scanning ensure quality coding practices. 
+| <strong>During runs:</strong> |  |
 | metrics collected and normalized |<a href="#Logstash"> Logstash</a> |
 | include logs of load levels imposed, | run logs |
 | log entries issued from within app code and the OS | server Logs |
