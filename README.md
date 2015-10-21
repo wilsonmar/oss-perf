@@ -3,42 +3,42 @@
 This diagram <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
 is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
-<img name="usaMap" src="https://cloud.githubusercontent.com/assets/300046/10606375/4a30beb8-76e7-11e5-9c72-3c447b35ba77.png" usemap="#m_usaMap" border="0" width="100%">
+<img name="usaMap" src="https://cloud.githubusercontent.com/assets/300046/10639001/b5036ca0-77c2-11e5-90de-1b53e56fea16.png" usemap="#m_usaMap" border="0" width="100%">
 <map name="m_usaMap">
 <area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
 </map>
 
-This is the **next generation** approach which uses **only open-source software** and developers for a
-**faster, more flexble, and lower cost** approach
-to measure the speed and load capacity risks of high-traffic web and native mobile apps.
+This was created in response to the need for a **faster, more flexble, and lower cost** approach to
+measure and thus improve the speed, capacity, and reliability of high-traffic web and native mobile apps. 
 
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
    Other organizations have other divisions.
 
-If you see a typo that needs fixing or an idea that should be considered, please fork this repo,
+BTW, If you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. Better yet, 
 <a href="#NewComponents">join us</a> to revolutionalize the industry.
 
 
 <a name="Background">
 ## Background Why</a>
-The approach described here was created in response to the need for a 
-**faster, more flexble, and lower cost** approach
+This was created in response to the need for a **faster, more flexble, and lower cost** approach
 to <a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
-A. **Eliminate errors** in program coding source by **automatic generation of programming code** 
+A. Because we’re not in the business of selling performance testing software to the public, it’s natural for us to also develop our framework as open source on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
+
+B. **Eliminate errors** in program coding source by **automatic generation of programming code** 
     based on specs.
    Although various attempts at generating UI code have not taken hold due to complexity,
    generation of APIs is less complex of an undertaking.
 
-B. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
+C. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
    and API mock scripts.
    Making changes easy, fast, and safe enables fix-fast which makes systems more "correct" than monolithic design.
 
-C. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
+D. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
    by **machine learning** robots rather than tedious manual examination of logs.
 
-D. **Automatically cycle though variations** of <a href="#configs">
+E. **Automatically cycle though variations** of <a href="#configs">
    several configurations</a> during a single manual run initiation.
    More important than hands-free,
    this enables performance analysis to go beyond merely testing to engineering.
@@ -46,12 +46,12 @@ D. **Automatically cycle though variations** of <a href="#configs">
 The objective here is to **reduce the amount of manual effort** (and human errors) to conducting tests
 through automation.
 
-E. **Centralizing data** from various views of system behavior under stress (or not) 
+F. **Centralizing data** from various views of system behavior under stress (or not) 
    can be analyzed together will provide the basis for identifying trends and other insights
    using both manual and **"machine learning"** techniques.
    Machine learning would identify more minute issues more comprehensively.
 
-F. Measure how much time it takes to execute various aspects of JavaScript and other work within various browsers.
+G. Measure how much time it takes to execute various aspects of JavaScript and other work within various browsers.
    This bar chart shows the difference in response time on different browsers (Chrome vs. Firefox) vs. JMeter.
    
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
@@ -61,9 +61,6 @@ F. Measure how much time it takes to execute various aspects of JavaScript and o
 
 JMeter under-reports the total response times experienced by real users because it focuses on the 
 **transfer of files** between client and server.
-
-G. **Develop in open source** on a public github repos rather than propriatary internal wikis
-to not just share benefits as well as development costs, but to ensure continuity of skills and effort.
 
 
 <a name="TypesOfTest">
@@ -109,14 +106,20 @@ Codification of API calls into standard patterns makes it now possible to
 
 | Capabilities | Components |
 | ----------- | ---------- |
-| On a sample web server app with multiple interfaces | <a href="#app-server">app server</a> |
-| and instantiated with a specific variation of experimental tuning configurations, | <a href="#configs">configs</a> |
-| artificial loads are imposed by running | <a href="#JMeter-servers">JMeter Controllers</a> |
-| virtual user scripts taking the place of humans on real browsers and mobile devices. |<a href="#JMeter-Scripts"> JMeter code</a> |
-| Specific scenarios of different parameter values | <a href="#run-variations(Taurus)">run variations (Taurus)</a> |
-| are invoked on a scheduled basis or dynamically | <a href="#Jenkins-CI">Jenkins CI</a> |
-| when the dev. toolchain is invoked after |dev. toolchain |
-| a commit occurs to a specific branch in a git repo. | github |
+| We have a typical web server responding to both native mobile and desktop browser traffic. | <a href="#app-server">app server</a> |
+| To provision servers and deploy apps we use open-source software | Docker & Puppet |
+| Having a quick way to bring up servers with different configurations | <a href="#configs">configs</a> |
+| enable us to tune settings (such as max threads) for the most throughput at the least cost. | <a href="#run-variations(Taurus)">run variations (Taurus)</a> |
+| virtual user scripts that |<a href="#JMeter-Scripts"> JMeter code</a> |
+| run on servers which take the place of humans on real browsers and mobile devices. | <a href="#JMeter-servers">JMeter Controllers</a> |
+| These scripts reference sample (or sham) data. | Data |
+| generated for testing.  | sham data-gen |
+| We want runs to kick off automatically  | <a href="#Jenkins-CI">Jenkins CI</a> |
+| when code is committed to a specific branch in a git repo. | Github |
+| Our system depends on several vendor APIs being available all the time, | Vendor APIs |
+|  so we mock (or virtualize) those services to ensure constant access during testing. | Wiremock |
+| One of the benefits of a microservice architecture is it simplifies API calls enough to be defined in a database | Swagger |
+| from which code can be generated automatically. | codegen |
 | During runs: |  |
 | metrics collected and normalized |<a href="#Logstash"> Logstash</a> |
 | include logs of load levels imposed, | run logs |
