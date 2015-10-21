@@ -102,16 +102,16 @@ Codification of API calls into standard patterns makes it now possible to
 
 
 <a name="Narrative"> 
-## Capabilities and Components </a>
+## Narrative of diagram</a>
 
 | Capabilities | Components |
 | ----------- | ---------- |
-| We have a typical web server responding to both native mobile and desktop browser traffic. | <a href="#app-server">app server</a> |
+| We have a typical web server responding to both native mobile and desktop browser traffic over the public internet. | <a href="#app-server">app server</a> |
 | To provision servers and deploy apps we use open-source software | Docker & Puppet |
 | Having a quick way to bring up servers with different configurations | <a href="#configs">configs</a> |
 | enable us to tune settings (such as max threads) for the most throughput at the least cost. | <a href="#run-variations(Taurus)">run variations (Taurus)</a> |
 | virtual user scripts that |<a href="#JMeter-Scripts"> JMeter code</a> |
-| run on servers which take the place of humans on real browsers and mobile devices. | <a href="#JMeter-servers">JMeter Controllers</a> |
+| run on servers which take the place of humans on real browsers and mobile devices. | <a href="#JMeter-servers">master & slaves</a> |
 | These scripts reference sample (or sham) data. | Data |
 | generated for testing.  | sham data-gen |
 | We want runs to kick off automatically  | <a href="#Jenkins-CI">Jenkins CI</a> |
@@ -120,16 +120,18 @@ Codification of API calls into standard patterns makes it now possible to
 |  so we mock (or virtualize) those services to ensure constant access during testing. | Wiremock |
 | One of the benefits of a microservice architecture is it simplifies API calls enough to be defined in a database | Swagger |
 | from which client code can be generated automatically. | codegen |
-| Generation of Jmeter code enables us to create micro-benchmarks during development rather than as an after-thought. Static code scanning ensure quality coding practices. 
+| Generation of Jmeter code enables us to create micro-benchmarking code **DURING** development | JMeter-gen |
+| rather than **manually** coding load emulation scripts in some editor. | editor |
+| Scanning code (using SonarQube) according to **coding rules** defined by the team ensures quality code rather than trying to test quality into code. | SonarQube |
 | <strong>During runs:</strong> |  |
-| metrics collected and normalized |<a href="#Logstash"> Logstash</a> |
-| include logs of load levels imposed, | run logs |
+| by centralizing and normalizing several sources of metrics, we can better correlate where **bottlenecks** occur across the landscape. |<a href="#Logstash"> Logstash</a> |
+| Data collected include logs of how many virual users are necessary to impose certain load levels, | run logs |
 | log entries issued from within app code and the OS | server Logs |
 | plus measurements such as garbage collection | monitor stream |
 | obtained by monitoring agents | agents |
-| and network packets where applicable. | <a href="#NetworkMon">Network mon</a> |
-| For scalability, intermediate servers (such as RabbitMQ) may be added.  |<a href="#Logstash"> Logstash</a> |
-| As for analysis: |  |
+| and pattern of network packets where applicable. | <a href="#NetworkMon">Network mon</a> |
+| To collect a large number of logs, intermediate servers (such as RabbitMQ) may be added.  |<a href="#Logstash-scale"> Logstash scale</a> |
+| <strong>As for analysis of run results:</strong> |  |
 | The central repository is indexed into various dimensions | <a href="#ElastiSearch">ElastiSearch</a> |
 | for visualizations over time and "sliced and diced" for insight. | <a href="#Kibana">Kibana</a> |
 | The visualizations include static objectives and targets to compare against live data. | ref. data | 
@@ -139,23 +141,11 @@ Codification of API calls into standard patterns makes it now possible to
 | just as native mobile app test automation code | <a href="#Appium-Code">Appium Code</a> |
 | are controlled | <a href="#Appium-Driver">Appium Driver</a> |
 | so that timings are captured | <a href="#BrowserMob-Proxy">BrowserMob Proxy</a> |
-| into files included in analysis. | <a href="#HAR-files">HAR files</a> | 
+| into files of specific resources by each user monitored. | <a href="#HAR-files">HAR files</a> | 
 |  |  |
 | "Machine learning" Programs scan the Elastisearch server to | <a href="#Python">Python</a> |
 | identify the levels where | thresholds |
-| alerts are sent out for human review. | alerts |
-|  |  |
-| To reduce the time traditionally needed to edit and verify | editor |
-| we **generate JMeter code**  | j-gen |
-| and variations in use of test data to repeatedly call APIs based on what is in | <a href="#run-variations">run variations</a> |
-| the repository of API specifications | <a href="#Swagger">Swagger</a> |
-| similar to how app code to call APIs are generated | codegen |
-| into source code repositories. | git repo. |
-|  |  |
-| Generated test code is validated by a static source code scanner | SonarQube |
-| by applying rules defined during team code walthroughs | Rules |
-| in the same or separate runs than what app source code go through. | dev. toolchain |
-| Developers have benefitted from virtualizing services that "mock" real servers responding to API calls | virtual services |
+| **alerts** should be sent out to prioritize human review and action. | alerts |
 
 
 <a name="OtherIssues">
