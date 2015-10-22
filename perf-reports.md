@@ -1,8 +1,24 @@
 This page records the discussion about designing visualizations most appropriate for each performance-related risk
 and the <a href="perf-test-types.md"> tests to measure exposure to each type of risk</a>.
 
-Generally, several dimensions are shown on each graph so that 
+Generally, several dimensions are compared on each graph so that 
 (ideally) a **conclusion for action** can be reached based on what is shown.
+
+<a id="BasicDimensions">
+## Basic Dimensions</a>
+
+* Response time (speed).
+* Rate of processing (hits per second, business transactions per hour, etc.).
+* Garbage collection events (major or minor).
+* Queue length. This is transient.
+* Average time in queue
+* Memory used and memory free.
+* CPU percent used.
+* Megahertz used (in VM).
+* etc.
+
+<a id="ComparativeDimensions">
+## Comparative Dimensions</a>
 
 ### Response times of different transactions across releases
 Below is an example of a line chart of response times over time (various releases) 
