@@ -273,30 +273,7 @@ See <a href="#Analysis">Analysis</a> section below.
 generates code from a repository of API requirements (Swagger).
 
 
-<hr size="3">
-
-
-<a name="Dimensions">
-### Dimensions</a>
-Comparisons based on these dimensions to "slice and dice" performance observations:
-
-a. time (peak)
-
-b. approach to build server under test
-
-c. server configuration set
-
-d. release/version of app
-
-e. project
-
-f. sub-systems
-
-g. sequence flow of functionality being tested
-
-h. tester
-
-i. keywords, etc.
+<hr size="3" />
 
 
 <hr size=5>
