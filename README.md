@@ -51,6 +51,9 @@ F. **Centralizing data** from various views of system behavior under stress (or 
    using both manual and **"machine learning"** techniques.
    Machine learning would identify more minute issues more comprehensively.
 
+Sending JMeter to the ELK stack means that within JMeter listeners are not needed.
+So Kibana would replace what Blazemeter displays.
+
 
 <a name="TypesOfTest">
 ### Create scripts to impose load using network emulation vs. UI control</a>
