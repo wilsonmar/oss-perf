@@ -1,10 +1,33 @@
 Unlike procedural shell scripits, 
-Puppet achieves what is defined in **declarative XML** submitted to it.
+Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it.
 
-Puppet resolves differences among various operating systems and its package managers 
+Puppet declarations specify **generic** resources,
+so Puppet resolves differences among various operating systems and its package managers 
 when implementing Puppet XML specs.
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
+
+Puppet is written in the Ruby on Rails.
+
+<a id="ResourceDeclarations">
+## Resource Declarations</a>
+The resource declaration:
+
+  ```
+  node 'injector01' {
+    package { 'jmeter':
+    }
+  }
+  ```
+
+Each resource declaration consists of
+
+  * Type (Package, File, Servie)
+  * Title
+  * Attributes/parameter
+  * Provider
+
+## Infrastructure
 
 AWS Cloud Formation manages infrastructure.
 
