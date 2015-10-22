@@ -3,7 +3,7 @@ This page records the discussion about the different visualizations needed for e
 Generally, several dimensions are shown on each graph so that 
 (ideally) a **conclusion for action** can be reached based on what is shown.
 
-### Response time 
+### Response times of different transactions across releases
 Below is an example of a line chart of response times over time (various releases) 
 for various **transactions** (not noted to maintain privacy)
 
