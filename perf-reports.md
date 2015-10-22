@@ -27,14 +27,19 @@ Among the dozens are these most referenced:
 
 * etc.
 
-<a id="ComparativeDimensions">
-## Comparative Dimensions</a>
+<a id="StatisticalDimensions">
+## Statistical Dimensions</a>
 
   * Average (Mean)
   * Median
   * 90th percentile.
   * Standard deviation
   * Coefficient of variation
+
+<a id="ComparativeDimensions">
+## Comparative Dimensions</a>
+
+ * Timing of garbage collection vs. response time.
 
 ### Response times of different transactions across releases
 Below is an example of a line chart of response times over time (various releases) 
