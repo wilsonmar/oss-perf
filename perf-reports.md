@@ -8,13 +8,19 @@ Generally, several dimensions are compared on each graph so that
 ## Basic Dimensions</a>
 
 * Response time (speed).
-* Rate of processing (hits per second, business transactions per hour, etc.).
-* Garbage collection events (major or minor).
-* Queue length. This is transient.
 * Average time in queue
+
+* Rate of processing (hits per second, business transactions per hour, etc.).
+
+* Queue length. This is transient.
+* Threads, Processed used.
+
 * Memory used and memory free.
 * CPU percent used.
 * Megahertz used (in VM).
+
+* Garbage collection events (major or minor).
+
 * etc.
 
 <a id="ComparativeDimensions">
