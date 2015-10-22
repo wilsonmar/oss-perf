@@ -11,21 +11,41 @@ Puppet is written in the Ruby on Rails.
 
 <a id="ResourceDeclarations">
 ## Resource Declarations</a>
-The resource declaration:
+Puppet handles different type of resources (Package, File, Service).
 
   ```
   node 'injector01' {
     package { 'jmeter':
+      ensure => 'installed',
     }
+  }
+  file { '/readme.txt':
+    ensure => 'present',
+    content => "This file was created by Puppet",
+  }
+  service { 'ntpd':
+    ensure => 'running',
+    enable => true,
   }
   ```
 
-Each resource declaration consists of
+The first line specifies the title.
+The second line contains the type.
 
-  * Type (Package, File, Servie)
-  * Title
+| Type | ensures |
+| ---- | ------- |
+| package | installed |
+| file | present |
+| service | running |
+
+note each resource declaration consists of:
+
   * Attributes/parameter
   * Provider
+
+The last line can contain a comma.
+
+Puppet does not run resourses in top-down sequence.
 
 ## Infrastructure
 
