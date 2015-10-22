@@ -12,8 +12,11 @@ for various **transactions** (not noted to maintain privacy)
 The assumption is that only a single user, that the system was not under stress during any of the tests.
 PROTIP: The stress level (number of vusers or rate of processing) should be noted on such graphs.
 
-CONCLUSION: All transactions take about the same time. Variations in response time can be purely random
-since significant changes did not occur on for a specific transaction on a specific release.
+CONCLUSION 1: Normally, all transactions take about the same time. 
 
+CONCLUSION 2: The transaction represented by the **blue line** is consistently among the slowest (highest) among all transactions.
+
+CONCLUSION 3: The **average of all transactions** increased significantly with the release on 7/8/2015,
+and stayed at that new level - from around 2000 ms to around 3500 ms.
 
 ### Stress
