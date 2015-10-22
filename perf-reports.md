@@ -50,6 +50,7 @@ for various **transactions** (not noted to maintain privacy)
 
 PROTIP: The stress level (number of vusers or rate of processing) should be noted on such graphs.
 The assumption is that only a **single user** -- that the system was not under stress during any of the tests.
+That would make this a <a href="perf-test-types.md">"Speed Test"</a>.
 
 CONCLUSION 1: Normally, all transactions take about the same time, as the slowest and fastest transactions
 are about one second apart on most releases.
