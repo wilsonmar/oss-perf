@@ -26,6 +26,7 @@ Among the dozens are these most referenced:
 
 <a id="StatisticalDimensions">
 ## Statistical Dimensions</a>
+For each of the above:
 
   * Average (Mean)
   * Median
