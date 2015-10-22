@@ -37,7 +37,9 @@ The bar chart shows the difference in response time on different browsers (Chrom
 
    TODO: Add Microsoft IE and Edge.
 
-CONCLUSION 1: **JMeter under-reports** the total response times experienced by real users because it focuses on the 
+CONCLUSION 1: Chrome is significantly slower than Firefox.
+
+CONCLUSION 2: **JMeter under-reports** the total response times experienced by real users because it focuses on the 
 **transfer of files** between client and server.
 
 
