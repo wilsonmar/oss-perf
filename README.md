@@ -98,7 +98,7 @@ Codification of API calls into standard patterns makes it now possible to
 
 | Capabilities | Components |
 | ----------- | ---------- |
-| We have a typical web server responding to both native mobile and desktop browser traffic over the public internet. | <a href="#app-server">app server</a> |
+| We have a typical web server responding to both native mobile and desktop browser traffic over the public internet. | <a href="app-under-test.md">app server</a> |
 | To provision servers and deploy apps we use open-source software | Docker & Puppet |
 | Having a quick way to bring up servers with different configurations | <a href="#configs">configs</a> |
 | enable us to tune settings (such as max threads) for the most throughput at the least cost. | <a href="#run-variations(Taurus)">run variations (Taurus)</a> |
