@@ -1,3 +1,11 @@
+AWS Cloud Formation manages infrastructure.
+
+Pulp is a centralized repository to manage Puppet revisions.
+
+Puppet manifests, hierdata, and modules distributed to all machines via RPM.
+
+Machines boot with a common, blank image and get configured at first boot
+rather than different images with software already installed.
 
 https://www.youtube.com/watch?v=TdAmAj3eaFI
 Getting Started with Puppet - PuppetConf 2013
