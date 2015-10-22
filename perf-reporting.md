@@ -3,7 +3,25 @@ Generally, several dimensions are compared on each graph so that
 
 <a id="ScopeDimensions">
 ## Scope Dimensions</a>
-Among the hierarchies are these most referenced:
+Among the hierarchies referenced to "slice and dice" performance observations:
+
+ a. time (peak)
+
+ b. approach to build server under test
+
+ c. server configuration set
+
+ d. release/version of app
+
+ e. project
+
+ f. sub-systems
+
+ g. sequence flow of functionality being tested
+
+ h. tester
+
+ i. keywords, etc.
 
 
 <a id="MetricDimensions">
