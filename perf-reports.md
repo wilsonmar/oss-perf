@@ -1,5 +1,5 @@
 This page records the discussion about designing visualizations most appropriate for each performance-related risk
-and the tests to measure exposure to each type of risk.
+and the <a href="perf-test-types.md"> tests to measure exposure to each type of risk</a>.
 
 Generally, several dimensions are shown on each graph so that 
 (ideally) a **conclusion for action** can be reached based on what is shown.
