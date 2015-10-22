@@ -1,4 +1,5 @@
-This page records the discussion about the different visualizations needed for each performance-related issue.
+This page records the discussion about designing visualizations most appropriate for each performance-related risk
+and the tests to measure exposure to each type of risk.
 
 Generally, several dimensions are shown on each graph so that 
 (ideally) a **conclusion for action** can be reached based on what is shown.
