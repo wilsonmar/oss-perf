@@ -335,18 +335,6 @@ generates code from a repository of API requirements (Swagger).
 
 
 <hr size="3">
-<a name="Analysis">
-### Analysis of run results</a>
-
-Sending JMeter to the ELK stack means that within JMeter listeners are not needed.
-So Kibana would replace what Blazemeter displays.
-
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/10390190/e61b57c6-6e2b-11e5-8e27-e3eee55257a9.jpg">
-<img alt="Blazemeter demo screen" src="https://cloud.githubusercontent.com/assets/300046/10390190/e61b57c6-6e2b-11e5-8e27-e3eee55257a9.jpg"></a>
-
-http://ecmarchitect.com/archives/2014/09/09/3932 also
-![jmeter-results-kibana](https://cloud.githubusercontent.com/assets/300046/10350929/b14c8136-6cfb-11e5-882a-4f5955ed45e6.png)
-
 
 
 <a name="Dimensions">
