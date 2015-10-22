@@ -6,6 +6,7 @@ Generally, several dimensions are shown on each graph so that
 ### Response time 
 Below is an example of a line chart of response times over time (various releases) 
 for various **transactions** (not noted to maintain privacy)
+
 ![oss-perf-rt-by-trans-across-release](https://cloud.githubusercontent.com/assets/300046/10653990/b87f9e24-7819-11e5-8d5a-8451c15dea38.png)
 
 The assumption is that only a single user, that the system was not under stress during any of the tests.
