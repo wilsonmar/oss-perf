@@ -1,11 +1,21 @@
+Unlike procedural shell scripits, 
+Puppet achieves the results defined in **declarative XML** submitted to it.
+
+Puppet resolves differences among various operating systems and its package managers 
+when implementing Puppet XML specs.
+
+Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
+
 AWS Cloud Formation manages infrastructure.
 
-Pulp is a centralized repository to manage Puppet revisions.
+http://www.pulpproject.org/ is a centralized repository to manage revisions of specs in Puppet.
 
-Puppet manifests, hierdata, and modules distributed to all machines via RPM.
+Puppet manifests, hierdata, and modules are distributed to all machines via RPM.
 
 Machines boot with a common, blank image and get configured at first boot
 rather than different images with software already installed.
+
+## Resources: videos
 
 https://www.youtube.com/watch?v=TdAmAj3eaFI
 Getting Started with Puppet - PuppetConf 2013
@@ -30,3 +40,5 @@ https://www.youtube.com/watch?v=H-QYYhIUclQ
 Continuously Integrated Puppet in a Dynamic Environment - PuppetConf 2013
 (Masterless Puppet on EC2 using Centos) by Sam Bashton
 
+http://www.pluralsight.com/courses/puppet-system-administrators-fundamentals
+by Ben Piper (@_benpiper, <a target="_blank" href="http://benpiper.com/">benpiper.com</a>)
