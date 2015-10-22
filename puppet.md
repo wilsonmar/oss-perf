@@ -1,5 +1,5 @@
 Unlike procedural shell scripits, 
-Puppet achieves the results defined in **declarative XML** submitted to it.
+Puppet achieves what is defined in **declarative XML** submitted to it.
 
 Puppet resolves differences among various operating systems and its package managers 
 when implementing Puppet XML specs.
