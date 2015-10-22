@@ -6,15 +6,19 @@ Generally, several dimensions are compared on each graph so that
 
 <a id="BasicDimensions">
 ## Basic Dimensions</a>
+Among the dozens are these most referenced:
 
 * Response time (speed).
 * Average time in queue
 
 * Rate of processing (hits per second, business transactions per hour, etc.).
+* Megabytes/Gigabytes transferred per second.
+* Count of files transferred.
 
 * Queue length. This is transient.
 * Threads, Processed used.
 
+* Megabytes/Gigabytes transferred per second.
 * Memory used and memory free.
 * CPU percent used.
 * Megahertz used (in VM).
@@ -25,6 +29,12 @@ Generally, several dimensions are compared on each graph so that
 
 <a id="ComparativeDimensions">
 ## Comparative Dimensions</a>
+
+  * Average (Mean)
+  * Median
+  * 90th percentile.
+  * Standard deviation
+  * Coefficient of variation
 
 ### Response times of different transactions across releases
 Below is an example of a line chart of response times over time (various releases) 
