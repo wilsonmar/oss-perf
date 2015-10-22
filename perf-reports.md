@@ -38,6 +38,7 @@ Among the dozens are these most referenced:
 
 <a id="ComparativeDimensions">
 ## Comparative Dimensions</a>
+Examples:
 
  * Timing of garbage collection vs. response time.
 
