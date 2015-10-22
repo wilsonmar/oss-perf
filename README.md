@@ -51,17 +51,6 @@ F. **Centralizing data** from various views of system behavior under stress (or 
    using both manual and **"machine learning"** techniques.
    Machine learning would identify more minute issues more comprehensively.
 
-G. Measure how much time it takes to execute various aspects of JavaScript and other work within various browsers.
-   This bar chart shows the difference in response time on different browsers (Chrome vs. Firefox) vs. JMeter.
-   
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
-<img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
-
-   TODO: Add Microsoft IE and Edge.
-
-JMeter under-reports the total response times experienced by real users because it focuses on the 
-**transfer of files** between client and server.
-
 
 <a name="TypesOfTest">
 ### Create scripts to impose load using network emulation vs. UI control</a>
