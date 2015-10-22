@@ -10,16 +10,18 @@ for various **transactions** (not noted to maintain privacy)
 
 ![oss-perf-rt-by-trans-across-release](https://cloud.githubusercontent.com/assets/300046/10653990/b87f9e24-7819-11e5-8d5a-8451c15dea38.png)
 
-The assumption is that only a single user, that the system was not under stress during any of the tests.
-
 PROTIP: The stress level (number of vusers or rate of processing) should be noted on such graphs.
+The assumption is that only a **single user** -- that the system was not under stress during any of the tests.
 
 CONCLUSION 1: Normally, all transactions take about the same time, as the slowest and fastest transactions
-are about one second apart.
+are about one second apart on most releases.
 
 CONCLUSION 2: The transaction represented by the **blue line** is consistently among the slowest (highest) among all transactions. It was significantly slower on the initial release.
 
 CONCLUSION 3: The **average of all transactions** increased significantly with the release on 7/8/2015,
 and stayed at that new level - from around 2000 ms to around 3500 ms.
+
+Is this the **threshold** for investigation?
+Not if there are other transactions or other sub-systems with higher variability.
 
 ### Stress
