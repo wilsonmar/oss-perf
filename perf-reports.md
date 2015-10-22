@@ -2,7 +2,8 @@ This page records the discussion about designing visualizations most appropriate
 and the <a href="perf-test-types.md"> tests to measure exposure to each type of risk</a>.
 
 
-### Response times of different transactions across releases
+<a id="SpeedTestReport">
+### Response times of different transactions across releases</a>
 Below is an example of a line chart of response times over time (various releases) 
 for various **transactions** (not noted to maintain privacy)
 
@@ -23,4 +24,21 @@ and stayed at that new level - from around 2000 ms to around 3500 ms.
 Is this the **threshold** for investigation?
 Not if there are other transactions or other sub-systems with higher variability.
 
-### Stress
+<a id="DifferenceComparison">
+## Difference Comparison</a>
+Below is an example of how to visualize the difference among methods of data collection.
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png">
+<img src="https://cloud.githubusercontent.com/assets/300046/9830052/ed39d31e-58d4-11e5-8ba3-92a536fb1e48.png"></a>
+
+Each vertical line display how much time it takes to execute various aspects of the same activity.
+
+The bar chart shows the difference in response time on different browsers (Chrome vs. Firefox) vs. JMeter.
+
+   TODO: Add Microsoft IE and Edge.
+
+CONCLUSION 1: **JMeter under-reports** the total response times experienced by real users because it focuses on the 
+**transfer of files** between client and server.
+
+
+
