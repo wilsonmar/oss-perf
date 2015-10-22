@@ -1,9 +1,14 @@
 Generally, several dimensions are compared on each graph so that 
 (ideally) a **conclusion for action** can be reached based on what is shown.
 
-<a id="BasicDimensions">
-## Basic Dimensions</a>
-Among the dozens are these most referenced:
+<a id="ScopeDimensions">
+## Scope Dimensions</a>
+Among the hierarchies are these most referenced:
+
+
+<a id="MetricDimensions">
+## Metric Dimensions</a>
+Among the dozens of what is measured are these most referenced:
 
 * Response time (speed).
 * Average time in queue
