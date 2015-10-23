@@ -1,3 +1,8 @@
+Data for testing:
+
+  * Application master data such as list of accounts which new transactions reference.
+  * Application transaction input data such as input by users and customers during registration.
+
 Sham, at <a target="_blank" href="http://github.com/tomdcc/sham">http://github.com/tomdcc/sham</a>,
 generates test data for Java and JVM-based projects
 for serendipitous bug discovery during exploratory testing.
