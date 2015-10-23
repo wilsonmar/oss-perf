@@ -6,6 +6,8 @@ A summary of what it finds estimates <a target="_blank" href="http://docs.sonarq
 Technical Debt</a>, 
 which SonarQube tracks over time.
 
+![sonarqube rules fromdoc](https://cloud.githubusercontent.com/assets/300046/10703581/d9dfdce2-7985-11e5-894d-40f0dde41c14.jpeg)
+
 Sonar scans different **facets** (such as security).
 
 Sonar calculates a **SQALE Rating** based on the open-source
@@ -27,7 +29,9 @@ SonarQube **Analyzers** scan code organized into projects.
 
 ![sonarqube rules fromdoc](https://cloud.githubusercontent.com/assets/300046/10703031/0e192d50-7982-11e5-9a35-30cbeab3c69d.jpeg)
 
-Customizable **Tags** provide a way to categorize and filter.
+<a id="Tags">
+## Tags</a>
+Customizable **Tags** provide a way to categorize and filter rules.
 
 
 <a id="Installation">
