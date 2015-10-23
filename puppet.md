@@ -12,6 +12,13 @@ Unlike procedural shell scripits,
 Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it,
 a less time-consuming and error-prone approach.
 
+| Type | ensures |
+| ---- | ------- |
+| package | installed |
+| file | present |
+| service | running |
+
+
 Puppet declarations specify **generic** resources,
 so Puppet's Resource Abstraction Layer resolves differences among various operating systems and its package managers 
 when implementing Puppet XML specs.
@@ -41,12 +48,6 @@ Puppet handles different type of resources (Package, File, Service).
 The first line specifies the title.
 The second line contains the type.
 
-| Type | ensures |
-| ---- | ------- |
-| package | installed |
-| file | present |
-| service | running |
-
 note each resource declaration consists of:
 
   * Attributes/parameter
@@ -65,6 +66,26 @@ Each node **pulls** its configuration over TCP port 8140 from the Puppet Master 
 
 Puppet is written in Ruby on Rails for Linux (no Windows version).
 
+ <a id="NoMaster"> 
+ ## No Master</a>
+
+Sam Bashton, on https://www.youtube.com/watch?v=H-QYYhIUclQ
+"Continuously Integrated Puppet in a Dynamic Environment" at PuppetConf 2013
+with slides at http://www.slideshare.net/PuppetLabs/bashton-masterless-puppet
+advocates a master-less Puppet within EC2 using Centos machines.
+
+Sam likes use of a master like herding "pets".
+
+He prefers to manage servers like a herd (of cattle).
+
+
+wheras
+
+His machines boot with a common, blank image and get configured at first boot
+rather than different images with software already installed.
+
+
+
  <a id="Pulp"> 
  ## Pulp Version Control</a>
 
@@ -76,9 +97,6 @@ is a centralized repository to manage revisions of specs in Puppet.
 ## Infrastructure</a>
 
 AWS Cloud Formation manages infrastructure.
-
-Machines boot with a common, blank image and get configured at first boot
-rather than different images with software already installed.
 
 <a id="Videos">
 ## Resources: videos</a>
@@ -101,11 +119,6 @@ Demo of Puppet Enterprise
 
 https://www.youtube.com/watch?v=gwUEnkRKABU
 Setting up a Git Commit Workflow with Puppet Enterprise
-
-https://www.youtube.com/watch?v=H-QYYhIUclQ
-Continuously Integrated Puppet in a Dynamic Environment - PuppetConf 2013
-(Masterless Puppet on EC2 using Centos) by Sam Bashton.
-Slides at http://www.slideshare.net/PuppetLabs/bashton-masterless-puppet
 
 http://www.pluralsight.com/courses/puppet-system-administrators-fundamentals
 by Ben Piper (@_benpiper, <a target="_blank" href="http://benpiper.com/">benpiper.com</a>)
