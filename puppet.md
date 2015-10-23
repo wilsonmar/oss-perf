@@ -1,13 +1,20 @@
+Contents:
+
+  * <a href="#ResourceDeclarations"> Resource Declarations</a>
+  * <a href="#PuppetMaster"> Puppet Master</a>
+  * <a href="#Infrastructure"> Infrastructure</a>
+  * <a href="#Videos"> Resources: videos</a>
+
+<hr />
+
 Unlike procedural shell scripits, 
 Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it.
 
 Puppet declarations specify **generic** resources,
-so Puppet resolves differences among various operating systems and its package managers 
+so Puppet's Resource Abstraction Layer resolves differences among various operating systems and its package managers 
 when implementing Puppet XML specs.
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
-
-Puppet is written in the Ruby on Rails.
 
 <a id="ResourceDeclarations">
 ## Resource Declarations</a>
@@ -47,18 +54,28 @@ The last line can contain a comma.
 
 Puppet does not run resourses in top-down sequence.
 
-## Infrastructure
+<a id="PuppetMaster">
+## PuppetMaster</a>
+Puppet manifests, hierdata, and modules 
+can be stored in a central **Puppet Master** server for distribution to all Puppet **nodes**.
+
+Each node **pulls** its configuration over TCP port 8140 from the Puppet Master via RPM.
+
+Puppet is written in Ruby on Rails for Linux (no Windows version).
+
+
+<a id="Infrastructure">
+## Infrastructure</a>
 
 AWS Cloud Formation manages infrastructure.
 
 http://www.pulpproject.org/ is a centralized repository to manage revisions of specs in Puppet.
 
-Puppet manifests, hierdata, and modules are distributed to all machines via RPM.
-
 Machines boot with a common, blank image and get configured at first boot
 rather than different images with software already installed.
 
-## Resources: videos
+<a id="Videos">
+## Resources: videos</a>
 
 https://www.youtube.com/watch?v=TdAmAj3eaFI
 Getting Started with Puppet - PuppetConf 2013
@@ -85,3 +102,4 @@ Continuously Integrated Puppet in a Dynamic Environment - PuppetConf 2013
 
 http://www.pluralsight.com/courses/puppet-system-administrators-fundamentals
 by Ben Piper (@_benpiper, <a target="_blank" href="http://benpiper.com/">benpiper.com</a>)
+explains in 5.5 hours how to setup a MediaWiki web server that runs Apache, PHP & MySQL on CentOS 6.5.
