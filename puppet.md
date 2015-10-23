@@ -79,7 +79,7 @@ sent to a node to enforce.
 A manifest .pp file can be applied to a Puppet node locally by a command such as:
 
  ```
- puppet apply --_modulepath_/etc/puppet/modules example.pp
+ puppet apply --_modulepath_/etc/puppet/modules ${HOSTTYPE}.pp
  ```
 
 This references modules sent to nodes via RPM.
@@ -101,8 +101,8 @@ His machines boot with a common, blank image on AWS and get configured at first 
 And manifests can be set to be read only by root.
 
 
- <a id="Pulp"> 
- ## Pulp Version Control</a>
+<a id="Pulp"> 
+## Pulp Version Control</a>
 <a target="_blank" href="http://www.pulpproject.org/">http://www.pulpproject.org/</a>
 is a centralized repository to manage revisions of specs in Puppet.
 
@@ -122,10 +122,31 @@ Jenkins:
  3. if tests are successful, are 
  4. added to a Pulp repo and installed on target machines (using Jenkins Promoted build plugin)
 
+
 <a id="Infrastructure">
 ## Infrastructure</a>
 
-AWS Cloud Formation manages infrastructure.
+AWS CloudFormation manages infrastructure.
+
+Extra facts from CloudFormation templates:
+
+ ```
+ FACTER_HOSTENVIRONMENT=live
+ FACTER_STACKNAME=customer-web-live
+ ```
+ 
+Keep database password to only machines which need them in:
+
+ ```
+ FACTER_DBHOST=xyz
+ ```
+
+Discover other information using EC2 API.
+
+
+Look into:
+http://github.com/fanduel/hiera-cloudformation
+
 
 <a id="Videos">
 ## Resources: videos</a>
