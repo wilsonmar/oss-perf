@@ -6,7 +6,7 @@ A summary of what it finds estimates <a target="_blank" href="http://docs.sonarq
 Technical Debt</a>, 
 which SonarQube tracks over time.
 
-![sonarqube rules fromdoc](https://cloud.githubusercontent.com/assets/300046/10703581/d9dfdce2-7985-11e5-894d-40f0dde41c14.jpeg)
+![sonarqube-tech-debt-pyramid](https://cloud.githubusercontent.com/assets/300046/10703589/eacf50be-7985-11e5-9f2f-70fc2f6f1986.jpeg)
 
 Sonar scans different **facets** (such as security).
 
