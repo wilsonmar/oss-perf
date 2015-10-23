@@ -71,6 +71,7 @@ sent to a node to enforce.
 
 The Puppet Master is written in Ruby on Rails for Linux (no Windows version).
 
+The Puppet Master requires manual creation of a SSH certificate to each note.
 
 
  <a id="NoMaster"> 
@@ -84,7 +85,6 @@ advocates a master-less Puppet within EC2 using Centos machines.
 Sam likes use of a master like herding "pets".
 
 He prefers to manage servers like a herd (of cattle).
-
 
 wheras
 
@@ -130,3 +130,6 @@ Setting up a Git Commit Workflow with Puppet Enterprise
 http://www.pluralsight.com/courses/puppet-system-administrators-fundamentals
 by Ben Piper (@_benpiper, <a target="_blank" href="http://benpiper.com/">benpiper.com</a>)
 explains in 5.5 hours how to setup a MediaWiki web server that runs Apache, PHP & MySQL on CentOS 6.5.
+
+https://www.youtube.com/watch?v=HoklH_ohfDA
+Puppet Module Best Practices - Puppet Camp SIlicon Valley 2014
