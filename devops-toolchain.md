@@ -14,6 +14,14 @@ In are Virtualbox images for:
   * database server (MongoDB, MySQL, Postgres, etc.)
   * etc.
 
+docker machine creates daemons.
+
+ ```
+ create virtualbox
+ ```
+
+Docker Tutum provisions on AWS and other clouds.
+
 The <a target="_blank" href="https://be.a.cloudgeni.us/workstation/">
 OVA Cloudgenius workstation</a>
 
