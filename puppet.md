@@ -68,7 +68,7 @@ Each node **pulls** its configuration over its TCP port 8140 from the Puppet Mas
 The node sends information about itself like its OS, CPU, block devices, network
 collected by a facter on the node.
 
-The Puppet Master requires manual creation of a SSH certificate to each note.
+The Puppet Master requires manual creation of a SSH certificate to each node.
 
 The master classifies node information and defines a catalog containing dependencies in a **manifest**
 sent to a node to enforce.
@@ -106,10 +106,10 @@ And manifests can be set to be read only by root.
 <a target="_blank" href="http://www.pulpproject.org/">http://www.pulpproject.org/</a>
 is a centralized repository to manage revisions of specs in Puppet.
 
-Pulp can scan all manifests to list which **version** of software is installed across all machines.
+Pulp can scan all manifests to get lists such as which **version** of software is installed across all machines.
 
 Pulp replicates its manifest repository across availability zones, which Puppet Masster does not do,
-which makes the Puppet Masters a single point of failure.
+which makes the Puppet Masters a single location point of failure.
 
 From github, Pulp **clones** and copies repos from qa to stage to live.
 
