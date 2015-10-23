@@ -2,7 +2,9 @@ SonarQube (abbreviated to Sonar)
 improves code quality by scanning source code of various languages 
 to identify **issues** from **meaures** it calculates.
 
-A summary of what it finds estimates "Technical Debt", which SonarQube tracks over time.
+A summary of what it finds estimates <a target="_blank" href="http://docs.sonarqube.org/display/SONAR/Technical+Debt">
+Technical Debt</a>, 
+which SonarQube tracks over time.
 
 Sonar scans different **facets** (such as security).
 
