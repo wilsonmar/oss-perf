@@ -103,7 +103,8 @@ Setting up a Git Commit Workflow with Puppet Enterprise
 
 https://www.youtube.com/watch?v=H-QYYhIUclQ
 Continuously Integrated Puppet in a Dynamic Environment - PuppetConf 2013
-(Masterless Puppet on EC2 using Centos) by Sam Bashton
+(Masterless Puppet on EC2 using Centos) by Sam Bashton.
+Slides at http://www.slideshare.net/PuppetLabs/bashton-masterless-puppet
 
 http://www.pluralsight.com/courses/puppet-system-administrators-fundamentals
 by Ben Piper (@_benpiper, <a target="_blank" href="http://benpiper.com/">benpiper.com</a>)
