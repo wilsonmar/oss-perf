@@ -8,9 +8,7 @@ Contents:
 
 <hr />
 
-Unlike procedural shell scripits, 
-Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it,
-a less time-consuming and error-prone approach.
+Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it.
 
 | Type | ensures |
 | ---- | ------- |
@@ -18,10 +16,18 @@ a less time-consuming and error-prone approach.
 | file | present |
 | service | running |
 
+This is a less time-consuming and error-prone approach than procedural shell scripits.
 
 Puppet declarations specify **generic** resources,
-so Puppet's Resource Abstraction Layer resolves differences among various operating systems and its package managers 
+so providers in Puppet's Resource Abstraction Layer resolves differences 
+among various operating systems and its package managers 
 when implementing Puppet XML specs.
+
+| OS | package provider |
+| ---- | ------- |
+| Red Hat | yum |
+| Ubuntu | apt |
+| Windows | Windows |
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
 
@@ -56,9 +62,16 @@ Puppet does not run resourses in top-down sequence.
 Puppet manifests, hierdata, and modules 
 can be stored in a central **Puppet Master** server for distribution to all Puppet **nodes**.
 
-Each node **pulls** its configuration over TCP port 8140 from the Puppet Master via RPM.
+Each node **pulls** its configuration over its TCP port 8140 from the Puppet Master via RPM.
+The node sends information about itself like its OS, CPU, block devices, network
+collected by a facter on the node.
 
-Puppet is written in Ruby on Rails for Linux (no Windows version).
+The master classifies node information and defines a catalog containing dependencies in a manifest
+sent to a node to enforce.
+
+The Puppet Master is written in Ruby on Rails for Linux (no Windows version).
+
+
 
  <a id="NoMaster"> 
  ## No Master</a>
