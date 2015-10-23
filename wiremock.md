@@ -275,3 +275,8 @@ See:
     http://wiremock.org/extending-wiremock.html</a>
 
 * http://www.pnsqc.org/the-journey-of-mocking-in-aws/
+
+
+## GDS (Global Data Service) of the travel industry
+
+https://en.wikipedia.org/wiki/Global_Distribution_System
