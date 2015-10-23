@@ -9,7 +9,8 @@ Contents:
 <hr />
 
 Unlike procedural shell scripits, 
-Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it.
+Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it,
+a less time-consuming and error-prone approach.
 
 Puppet declarations specify **generic** resources,
 so Puppet's Resource Abstraction Layer resolves differences among various operating systems and its package managers 
