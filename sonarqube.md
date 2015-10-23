@@ -8,8 +8,18 @@ which SonarQube tracks over time.
 
 Sonar scans different **facets** (such as security).
 
-Sonar calculates a **SQALE Rating** based on rules defined.
+Sonar calculates a **SQALE Rating** based on the open-source
+SQALE (Software Quality Assessment based on Lifecycle Expectations) methodology defined by industry group 
+http://www.sqale.org/. The caluculation is based on inclusion of rules set in the Common SonarQube repository:
 
+ * Duplicated blocks
+ * Failed unit tests
+ * Insufficient branch coverage by unit tests
+ * Insufficient comment density
+ * Insufficient line coverage by unit tests
+ * Skipped unit tests
+
+Change SQUALE calculations in the plug-in http://www.sonarsource.com/products/plugins/governance/sqale/
 
 <a id="Rules">
 ## Rules</a>
