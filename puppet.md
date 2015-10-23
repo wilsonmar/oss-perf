@@ -2,6 +2,7 @@ Contents:
 
   * <a href="#ResourceDeclarations"> Resource Declarations</a>
   * <a href="#PuppetMaster"> Puppet Master</a>
+  * <a href="#Pulp"> Pulp Version Control</a>
   * <a href="#Infrastructure"> Infrastructure</a>
   * <a href="#Videos"> Resources: videos</a>
 
@@ -63,13 +64,17 @@ Each node **pulls** its configuration over TCP port 8140 from the Puppet Master 
 
 Puppet is written in Ruby on Rails for Linux (no Windows version).
 
+ <a id="Pulp"> 
+ ## Pulp Version Control</a>
+
+<a target="_blank" href="http://www.pulpproject.org/">http://www.pulpproject.org/</a>
+is a centralized repository to manage revisions of specs in Puppet.
+
 
 <a id="Infrastructure">
 ## Infrastructure</a>
 
 AWS Cloud Formation manages infrastructure.
-
-http://www.pulpproject.org/ is a centralized repository to manage revisions of specs in Puppet.
 
 Machines boot with a common, blank image and get configured at first boot
 rather than different images with software already installed.
