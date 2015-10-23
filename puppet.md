@@ -31,6 +31,8 @@ when implementing Puppet XML specs.
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
 
+The Puppet Master is written in Ruby on Rails for Linux (no Windows version).
+
 <a id="ResourceDeclarations">
 ## Resource Declarations</a>
 Puppet handles different type of resources (Package, File, Service).
@@ -66,18 +68,25 @@ Each node **pulls** its configuration over its TCP port 8140 from the Puppet Mas
 The node sends information about itself like its OS, CPU, block devices, network
 collected by a facter on the node.
 
-The master classifies node information and defines a catalog containing dependencies in a manifest
-sent to a node to enforce.
-
-The Puppet Master is written in Ruby on Rails for Linux (no Windows version).
-
 The Puppet Master requires manual creation of a SSH certificate to each note.
 
+The master classifies node information and defines a catalog containing dependencies in a **manifest**
+sent to a node to enforce.
 
- <a id="NoMaster"> 
- ## No Master</a>
 
-Sam Bashton, on https://www.youtube.com/watch?v=H-QYYhIUclQ
+<a id="NoMaster"> 
+## No Master</a>
+A manifest .pp file can be applied to a Puppet node locally by a command such as:
+
+ ```
+ puppet apply --_modulepath_/etc/puppet/modules example.pp
+ ```
+
+This references modules sent to nodes via RPM.
+
+After yum finishes installing puppet, an "at" script runs a RPM %postinst command to apply the Puppet config.
+
+The above is advocated by Sam Bashton on https://www.youtube.com/watch?v=H-QYYhIUclQ
 "Continuously Integrated Puppet in a Dynamic Environment" at PuppetConf 2013
 with slides at http://www.slideshare.net/PuppetLabs/bashton-masterless-puppet
 advocates a master-less Puppet within EC2 using Centos machines.
@@ -86,19 +95,32 @@ Sam likes use of a master like herding "pets".
 
 He prefers to manage servers like a herd (of cattle).
 
-wheras
+His machines boot with a common, blank image on AWS and get configured at first boot
+(rather than different images with software already installed).
 
-His machines boot with a common, blank image and get configured at first boot
-rather than different images with software already installed.
-
+And manifests can be set to be read only by root.
 
 
  <a id="Pulp"> 
  ## Pulp Version Control</a>
-
 <a target="_blank" href="http://www.pulpproject.org/">http://www.pulpproject.org/</a>
 is a centralized repository to manage revisions of specs in Puppet.
 
+Pulp can scan all manifests to list which **version** of software is installed across all machines.
+
+Pulp replicates its manifest repository across availability zones, which Puppet Masster does not do,
+which makes the Puppet Masters a single point of failure.
+
+From github, Pulp **clones** and copies repos from qa to stage to live.
+
+Jenkins:
+
+ 0. fetches code from git, 
+ 1. runs lint test (using the Jenkins Warnings plugin)
+ 2. pull in modules (using librarian-puppet),
+ 3. builds a RPM which, 
+ 3. if tests are successful, are 
+ 4. added to a Pulp repo and installed on target machines (using Jenkins Promoted build plugin)
 
 <a id="Infrastructure">
 ## Infrastructure</a>
