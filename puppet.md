@@ -45,15 +45,9 @@ Puppet handles different type of resources (Package, File, Service).
   }
   ```
 
-The first line specifies the title.
-The second line contains the type.
-
-note each resource declaration consists of:
-
-  * Attributes/parameter
-  * Provider
-
-The last line can contain a comma.
+The first line specifies the type and title of the program.
+The => in attribute definitions is called a "fat commaa".
+Note the last line can contain a comma. Very cool.
 
 Puppet does not run resourses in top-down sequence.
 
