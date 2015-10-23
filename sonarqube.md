@@ -1,5 +1,6 @@
 SonarQube (abbreviated to Sonar)
-improves code quality by scanning source code to identify **issues** from **meaures** it calculates.
+improves code quality by scanning source code of various languages 
+to identify **issues** from **meaures** it calculates.
 
 A summary of what it finds estimates "Technical Debt", which SonarQube tracks over time.
 
@@ -14,6 +15,7 @@ SonarQube **Analyzers** scan code organized into projects.
 
 ![sonarqube rules fromdoc](https://cloud.githubusercontent.com/assets/300046/10703031/0e192d50-7982-11e5-9a35-30cbeab3c69d.jpeg)
 
+Customizable **Tags** provide a way to categorize and filter.
 
 
 <a id="Installation">
