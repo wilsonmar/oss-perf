@@ -1,13 +1,18 @@
 SonarQube (abbreviated to Sonar)
-improves code quality by scanning source code to identify issues.
+improves code quality by scanning source code to identify **issues** from **meaures** it calculates.
+
 A summary of what it finds estimates "Technical Debt", which SonarQube tracks over time.
 
-Sonar also calculates a **SQALE Rating** based on rules defined.
+Sonar scans different **facets** (such as security).
+
+Sonar calculates a **SQALE Rating** based on rules defined.
 
 
 <a id="Rules">
 ## Rules</a>
 SonarQube **Analyzers** scan code organized into projects.
+
+![sonarqube rules fromdoc](https://cloud.githubusercontent.com/assets/300046/10703031/0e192d50-7982-11e5-9a35-30cbeab3c69d.jpeg)
 
 
 
