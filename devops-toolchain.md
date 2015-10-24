@@ -22,6 +22,10 @@ docker machine creates daemons.
 
 Docker Tutum provisions on AWS and other clouds.
 
+http://www.virtualbox.org/wiki/Downloads
+
+https://www.vagrantup.com/downloads.html
+
 The <a target="_blank" href="https://be.a.cloudgeni.us/workstation/">
 OVA Cloudgenius workstation</a>
 
