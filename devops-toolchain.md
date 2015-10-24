@@ -1,4 +1,5 @@
-The devops toolchain **provisions** servers in a cloud such as AWS EC2.
+The devops toolchain **provisions** servers locally and in a cloud such as AWS EC2.
+
 This may occur using binary images (from Artifactory repository) that already contains deployed apps.
 Or, applications are **deployed** on an empty servers.
 
@@ -16,13 +17,18 @@ In are Virtualbox images for:
 
 docker machine creates daemons.
 
+<a id="Virtualbox">
+## Virtualbox</a>
+http://www.virtualbox.org/wiki/Downloads
+
+
  ```
  create virtualbox
  ```
 
+<a id="Tutum">
+## Tutum</a>
 Docker Tutum provisions on AWS and other clouds.
-
-http://www.virtualbox.org/wiki/Downloads
 
 https://www.vagrantup.com/downloads.html
 
