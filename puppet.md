@@ -5,6 +5,7 @@ Contents:
   * <a href="#Pulp"> Pulp Version Control</a>
   * <a href="#Infrastructure"> Infrastructure</a>
   * <a href="#Videos"> Resources: videos</a>
+  * <a href="#Alternatives"> Alternatives (Chef)</a>
 
 <hr />
 
@@ -180,10 +181,10 @@ Puppet Module Best Practices - Puppet Camp SIlicon Valley 2014
 
 
 
+<a id="Alternatives">
+## Alternatives: Chef </a>
 Alternatives to Puppet include Chef or Ansible (Red Hat) or Salt.
 
-<a id="Chef">
-## Chef </a>
 
 ### Chef snippit to start wiremock server
 
