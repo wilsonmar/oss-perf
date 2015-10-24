@@ -22,7 +22,7 @@ edit the file, and send us a pull request. Better yet,
 <a name="Background">
 ## Background Why</a>
 This was created in response to the need for a **faster, more flexble, and lower cost** approach
-to <a href="#PerfTesting">"performance testing"</a> (which even commercial vendors have not been able to deliver):
+to <a href="perf-test-types.md">"performance testing"</a> (which even commercial vendors have not been able to deliver):
 
 A. Because we’re not in the business of selling performance testing software to the public, it’s natural for us to also develop our framework as open source on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
 
