@@ -49,13 +49,7 @@ bundle exec knife ec2 server list
 <a id="Continuous">
 ## Continuous </a>
 
-
 Alternatives include Puppet or Chef or Ansible (Red Hat) or Salt.
-
-<a id="Puppet">
-## Puppet </a>
-
-
 
 <a id="Chef">
 ## Chef </a>
@@ -86,3 +80,11 @@ Alternatives include Puppet or Chef or Ansible (Red Hat) or Salt.
       ]
   }
   ```
+
+<a id="Videos">
+## Videos</a>
+Nigel Poulton (@NigelPoulton, NigelPoulton.com)
+ * http://www.pluralsight.com/courses/docker-deep-dive
+   5 hour 36 minute Jan 2015
+   shows how a simple Node app on github is tested using mocha and built on Circle-CI,
+   then docker and tutum provisions and deploys to AWS.
