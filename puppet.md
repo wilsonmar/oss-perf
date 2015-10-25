@@ -19,6 +19,8 @@ Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource d
 
 This is a less time-consuming and error-prone approach than procedural shell scripits.
 
+Thus, Puppet automates repetitive tasks to ensure consistency among servers.
+
 Puppet declarations specify **generic** resources,
 so providers in Puppet's Resource Abstraction Layer resolves differences 
 among various operating systems and its package managers 
@@ -31,8 +33,6 @@ when implementing Puppet XML specs.
 | Windows | Windows |
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
-
-The Puppet Master is written in Ruby on Rails for Linux (no Windows version).
 
 <a id="ResourceDeclarations">
 ## Resource Declarations</a>
@@ -60,10 +60,16 @@ Note the last line can contain a comma. Very cool.
 
 Puppet does not run resourses in top-down sequence.
 
+<a id="PuppetForge">
+## Puppet Forge</a>
+https://www.youtube.com/watch?v=eT2TtqvqSSg
+
 <a id="PuppetMaster">
 ## PuppetMaster</a>
 Puppet manifests, hierdata, and modules 
 can be stored in a central **Puppet Master** server for distribution to all Puppet **nodes**.
+
+The Puppet Master is written in Ruby on Rails for Linux (no Windows version).
 
 Each node **pulls** its configuration over its TCP port 8140 from the Puppet Master via RPM.
 The node sends information about itself like its OS, CPU, block devices, network
