@@ -15,6 +15,7 @@ Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource d
 | ---- | ------- |
 | package | installed |
 | file | present |
+| user | present |
 | service | running |
 
 This is a less time-consuming and error-prone approach than procedural shell scripits.
@@ -28,9 +29,10 @@ when implementing Puppet XML specs.
 
 | OS | package provider |
 | ---- | ------- |
-| Red Hat | yum |
-| Ubuntu | apt |
+| Red Hat | yum install |
+| Ubuntu | apt install|
 | Windows | Windows |
+| Mac OSX | brew install |
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
 
@@ -48,6 +50,11 @@ Puppet handles different type of resources (Package, File, Service).
     ensure => 'present',
     content => "This file was created by Puppet",
   }
+  user { 'larry':
+    ensure => 'present',
+    gid => sysadmin,
+    home => /mnt/home/larry,
+  }
   service { 'ntpd':
     ensure => 'running',
     enable => true,
@@ -59,6 +66,15 @@ The => in attribute definitions is called a "fat commaa".
 Note the last line can contain a comma. Very cool.
 
 Puppet does not run resourses in top-down sequence.
+
+<a id="Commands">
+## Commands</a>
+0. Get a list of users in puppet:
+
+ ```
+ puppet resource user
+ ```
+
 
 <a id="PuppetForge">
 ## Puppet Forge</a>
