@@ -57,8 +57,11 @@ bundle exec knife ec2 server list
 
 <a id="Videos">
 ## Videos</a>
-Nigel Poulton (@NigelPoulton, NigelPoulton.com)
- * http://www.pluralsight.com/courses/docker-deep-dive
-   5 hour 36 minute Jan 2015
+https://www.youtube.com/watch?v=Q5POuMHxW-0
+47:14 by Twitter University
+
+http://www.pluralsight.com/courses/docker-deep-dive
+5 hour 36 minute Jan 2015
+by Nigel Poulton (@NigelPoulton, NigelPoulton.com)
    shows how a simple Node app on github is tested using mocha and built on Circle-CI,
    then docker and tutum provisions and deploys to AWS.
