@@ -9,7 +9,8 @@ Contents:
 
 <hr />
 
-Puppet achieves what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it.
+Puppet achieves the desired state of 
+what is declared in **<a href="#ResourceDeclarations">resource declarations</a>** submitted to it.
 
 | Type | ensures |
 | ---- | ------- |
@@ -36,6 +37,19 @@ when implementing Puppet XML specs.
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
 
+<a id="Commands">
+## Commands</a>
+0. Get a list of users and their properties:
+
+ ```
+ puppet resource user >users.pp
+ ```
+
+Note the output is JSON format.
+
+**Facter** discovers current inventory data every time puppet runs.
+
+
 <a id="ResourceDeclarations">
 ## Resource Declarations</a>
 Puppet handles different type of resources (Package, File, Service).
@@ -58,23 +72,15 @@ Puppet handles different type of resources (Package, File, Service).
   service { 'ntpd':
     ensure => 'running',
     enable => true,
+    subscribe => Package['ntp'],
   }
   ```
 
-The first line specifies the type and title of the program.
+The first line specifies the resource type and title of the program.
 The => in attribute definitions is called a "fat commaa".
 Note the last line can contain a comma. Very cool.
 
-Puppet does not run resourses in top-down sequence.
-
-<a id="Commands">
-## Commands</a>
-0. Get a list of users in puppet:
-
- ```
- puppet resource user
- ```
-
+Puppet does not run resources in top-down sequence.
 
 <a id="PuppetForge">
 ## Puppet Forge</a>
