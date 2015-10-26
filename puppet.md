@@ -93,11 +93,16 @@ Puppet does not run resources in top-down sequence.
 
  ```
  Facter.add( computername ) do
-   confine :kernel => :darwin
-   setcode( scutil --get computername )
+    confine :kernel => :darwin
+    setcode( scutil --get ComputerName )
+ end
+ Facter.add( printerlist ) do
+    setcode( scutil --get ComputerName )
+       $x( lpstat -a | cut -d ' ' -f 1).split("\n").join(",")
+    end
  end
  ```
-
+ 
 <a id="PuppetForge">
 ## Puppet Forge</a>
 https://www.youtube.com/watch?v=eT2TtqvqSSg
