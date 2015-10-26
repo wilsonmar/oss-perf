@@ -37,17 +37,6 @@ when implementing Puppet XML specs.
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
 
-<a id="Commands">
-## Commands</a>
-0. Get a list of users and their properties:
-
- ```
- puppet resource user >users.pp
- ```
-
-Note the output is JSON format.
-
-**Facter** discovers current inventory data every time puppet runs.
 
 
 <a id="ResourceDeclarations">
@@ -81,6 +70,33 @@ The => in attribute definitions is called a "fat commaa".
 Note the last line can contain a comma. Very cool.
 
 Puppet does not run resources in top-down sequence.
+
+<a id="Commands">
+## Commands</a>
+0. Get a list of users and their properties:
+
+ ```
+ puppet resource user >users.pp
+ ```
+
+Note the output is JSON format.
+
+**Facter** discovers current inventory data every time puppet runs.
+The facts are written to operating system variables,
+so conditional logic can be performed.
+
+ ```
+ echo $operatingsystem
+ ```
+
+0. Facter facts are in pure Ruby.
+
+ ```
+ Facter.add( computername ) do
+  confine :kernel => :darwin
+  setcode( scutil --get computername )
+ end
+ ```
 
 <a id="PuppetForge">
 ## Puppet Forge</a>
