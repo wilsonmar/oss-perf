@@ -133,6 +133,7 @@ A manifest .pp file can be applied to a Puppet node locally by a command such as
  ```
 
 This references modules sent to nodes via RPM.
+(Instead of RPM, use <a target="_blank" href="https://github.com/jordansissel/fpm">FPM</a>?)
 
 After yum finishes installing puppet, an "at" script runs a RPM %postinst command to apply the Puppet config.
 
