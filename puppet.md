@@ -93,8 +93,8 @@ Puppet does not run resources in top-down sequence.
 
  ```
  Facter.add( computername ) do
-  confine :kernel => :darwin
-  setcode( scutil --get computername )
+   confine :kernel => :darwin
+   setcode( scutil --get computername )
  end
  ```
 
