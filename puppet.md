@@ -79,11 +79,11 @@ Puppet does not run resources in top-down sequence.
  puppet resource user >users.pp
  ```
 
-Note the output is JSON format.
+ Note the output is JSON format.
 
-**Facter** discovers current inventory data every time puppet runs.
-The facts are written to operating system variables,
-so conditional logic can be performed.
+ **Facter** discovers current inventory data every time puppet runs.
+ The facts are written to operating system variables,
+ so conditional logic can be performed.
 
  ```
  echo $operatingsystem
