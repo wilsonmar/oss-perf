@@ -1,3 +1,11 @@
+The objective is to augment time-consuming manual scanning with a program that recognizes patterns and raises alerts.
+
+For example, as Selenium runs, have it output timings for each transaction.
+When a transaction takes a sudden jump, raise an alert.
+This means a constant scan comparing previous history for each transaction.
+The trick is to avoid inundating reviewers with more alerts than they can handle.
+So the program needs to **prioritize**.
+
 "Machine Learning" refers to the use of computers to <strong>recognize patterns</strong> and <strong>make predictions</strong>.
 
 According to https://en.wikipedia.org/wiki/Machine_learning,
@@ -5,3 +13,4 @@ In 1959, Arthur Samuel defined machine learning as a
 "Field of study that gives computers the ability to learn without being explicitly programmed".
 There is a continuum of how much human supervision is provided the programs.
 
+http://colah.github.io/
