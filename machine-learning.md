@@ -1,10 +1,14 @@
 The objective is to augment time-consuming manual scanning with a program that recognizes patterns and raises alerts.
 
+As performance tests run, identify when a blocking condition has been reached,
+when a **threshold** for action is reached in response time degrading, out of memory, CPU, out of disk space, etc.
+
 As Selenium runs, have it output **timings for each transaction**.
 When a transaction takes a sudden jump, raise an alert.
 This means a constant scan comparing previous history for each transaction.
+
 The trick is to avoid inundating reviewers with more alerts than they can handle.
-So the program needs to **prioritize**.
+So the program also needs to **prioritize**.
 
 "Machine Learning" refers to the use of computers to <strong>recognize patterns</strong> and <strong>make predictions</strong>.
 
