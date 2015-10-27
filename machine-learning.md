@@ -7,7 +7,7 @@ But in 2015, machine learning was a nacent category of software (as <a target="_
 But we know what we want.
 
   * As performance tests run, identify when a blocking condition has been reached among the various metrics being monitored,
-when a **threshold** for action is reached in response time degrading, out of memory, CPU, out of disk space, etc.
+when a **threshold** for action is recognized in response time degrading, out of memory, CPU, out of disk space, etc.
 
   * As Selenium runs, have it output **timings for each transaction**.
 When a transaction takes a sudden jump, raise an alert.
