@@ -14,7 +14,7 @@ when a **threshold** for action is recognized in response time degrading, out of
 When a transaction takes a sudden jump, raise an alert.
 This means a constant scan comparing previous history for each transaction.
 
-Also, we want to avoid innundating human reviewers with more alerts than they can handle.
+  * Also, we want to avoid innundating human reviewers with more alerts than they can handle.
 So the program also needs to **prioritize**.
 
 According to https://en.wikipedia.org/wiki/Machine_learning,
