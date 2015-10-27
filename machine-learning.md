@@ -17,4 +17,4 @@ In 1959, Arthur Samuel defined machine learning as a
 "Field of study that gives computers the ability to learn without being explicitly programmed".
 There is a continuum of how much human supervision is provided the programs.
 
-http://colah.github.io/
+http://colah.github.io/ at http://googleresearch.blogspot.com/
