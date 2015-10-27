@@ -1,6 +1,6 @@
 The objective is to augment time-consuming manual scanning with a program that recognizes patterns and raises alerts.
 
-As performance tests run, identify when a blocking condition has been reached,
+As performance tests run, identify when a blocking condition has been reached among the various metrics being monitored,
 when a **threshold** for action is reached in response time degrading, out of memory, CPU, out of disk space, etc.
 
 As Selenium runs, have it output **timings for each transaction**.
