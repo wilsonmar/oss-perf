@@ -1,6 +1,6 @@
 The objective is to augment time-consuming manual scanning with a program that recognizes patterns and raises alerts.
 
-For example, as Selenium runs, have it output timings for each transaction.
+As Selenium runs, have it output **timings for each transaction**.
 When a transaction takes a sudden jump, raise an alert.
 This means a constant scan comparing previous history for each transaction.
 The trick is to avoid inundating reviewers with more alerts than they can handle.
