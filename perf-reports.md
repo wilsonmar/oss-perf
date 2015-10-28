@@ -11,7 +11,7 @@ There are different types of performance testing to measure various risks:
    
    * **Load tests** stop testing at a targeted load level (for certification).
    
-   * **Stress tests** increase users (load) to identify the **bottleneck** limiting further capacity.
+   * <a href="#StressTestReports">**Stress tests**</a> increase users (load) to identify the **bottleneck** limiting further capacity.
    
    * **Scalability tests** measure how much capacity really improves when additional/less hardware is added/removed.
    
@@ -79,6 +79,11 @@ and stayed at that new level - from around 2000 ms to around 3500 ms.
 
 Is this the **threshold** for investigation?
 Not if there are other transactions or other sub-systems with higher variability.
+
+<a id="StressTestReports">
+### Stress tests</a>
+
+
 
 <a id="DifferenceComparison">
 ## Difference Comparison</a>
