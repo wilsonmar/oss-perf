@@ -74,6 +74,7 @@ To **train** predictive models ...
 <img alt="predictive io training" src="https://cloud.githubusercontent.com/assets/300046/10792695/0055f640-7d4b-11e5-8910-128ae545ffac.png">
 
 https://docs.prediction.io/support/
+
 <a id="Alternatives">
 ## Alternative software</a>
 http://jmlr.org/mloss/ provides a list of open-source software for machine learning.
@@ -83,3 +84,7 @@ Among commercial tools, <a target="_blank" href="http://skytree.net/">Skytree</a
 ENCOG for Java and C# is maintained by <a target="_blank" href="http://heatonresearch.com/">Heaton Research</a>
 in St. Louse, Missouri. Samples are at https://github.com/encog 
 
+<a id="Resources">
+## Additional resources</a>
+
+ * http://guidetodatamining.com/
