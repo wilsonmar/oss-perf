@@ -1,5 +1,12 @@
 This page records the discussion about designing visualizations most appropriate for each performance-related risk
-and the <a href="perf-test-types.md"> tests to measure exposure to each type of risk</a>.
+and the <a href="perf-test-types.md"> types of performance tests to measure exposure to each type of risk</a>.
+
+
+<a id="Ping">
+### Ping tests</a>
+The 2 minute video http://youtu.be/6VmAX3DM78s describes how Agile teams
+
+
 
 
 <a id="SpeedTestReport">
