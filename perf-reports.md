@@ -100,6 +100,29 @@ Usually this is also the point where **resources** such as CPU and memory become
 
 <img alt="load-test-report" src="https://cloud.githubusercontent.com/assets/300046/10779232/093404d8-7ceb-11e5-8548-9366d9537522.png">
 
+Here are the most typical issues quantified by performance test runs.
+
+a) If the first transaction of a run is slow, and the rest good, it usually is because components have not been loaded on the server or the client cache. To detect slow first transactions, I usually have a scenario group with a single VUser that starts before all the others.
+Many LoadRunner users make the mistake of coding for first transactions over and over again rather than recording two iterations and using code from the second for all subsequent iterations.
+
+It is useful to run load tests just doing login and logout repeatedly. Logins are usually the single most expensive transaction apps have. For office workers, does everyone jump on the system if they all arrive the same time every day? For mobile users, maybe when everyone gets off-work or when a plane lands?
+
+b) Monitoring the number of threads each application process spins up during ramp-up can help to identify settings which limit how many threads can be spun up. Finding the most appropriate maximum threads settings is one of the possible outcomes of perf. testing. The default of only 5 on some software out-of-the-box was meant for development work, but is too low for production use. 
+
+c) If the number of database connections is monitored over time, seeing the same number of connections increase as the number of Vusers increase may be an indication of an issue with the app’s use of database connection pooling. 
+
+This is especially good to do during ramp-up because there may be a maximum to the number of connections allowed since each connection takes a certain amount of memory. Some data centers reconfigure their database server each night to shift memory from on-line connections to batch use. 
+
+d) When max. threads on application servers are set high, if bottlenecks still occur at a low number of threads anyway, it can be due to coding for thread pooling.
+
+e) During the stead-state portion of a run, memory usage and response time should remain constant, unless there is a problem with automated memory management. The flat line in Vusers should not represent the same Vusers, but two groups: a certain percentage of Vusers who drop off while another group adds new users over time. 
+ 
+e) It’s difficult to identify high network usage unless loads are emulated by LoadRunner. But we can measure what each transaction requires in terms of number of files and the size of each file. Mimification to remove white space ignored by programs help. To improve performance, some mobile developers now put JavaScript and CSS code in-line to minimize the number of files downloaded. 
+
+f) We know that full garbage collection in Java causes random spikes in response time. Some find it helpful to run longevity load tests to see if incremental garbage collection can manage over several days, to see if server operators have to hassle with bringing servers on and off line just to reset memory. 
+
+g) If you find that during ramp-down, memory does not get freed up in proportion to Vusers leaving, then you have a slow clean-up recovery problem. When time-out settings are too long, sessions remain in memory longer than they should. On the other hand, when time-outs are set too quickly, users find it annoying to lose sessions. So finding a balance is another good reason for doing load testing.
+
 
 <a id="DifferenceComparison">
 ## Difference Comparison</a>
