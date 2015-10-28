@@ -14,7 +14,7 @@ when a **threshold** for action is recognized in response time degrading, out of
 When a transaction takes a sudden jump, raise an alert.
 This means a constant scan comparing previous history for each transaction.
 
-  * Also, we want to avoid innundating human reviewers with more alerts than they can handle.
+  * Also, we want to avoid innundatinyg human reviewers with more alerts than they can handle.
 So the program also needs to **prioritize**.
 
 According to https://en.wikipedia.org/wiki/Machine_learning,
@@ -22,4 +22,13 @@ In 1959, Arthur Samuel defined machine learning as a
 "Field of study that gives computers the ability to learn without being explicitly programmed".
 There is a continuum of how much human supervision is provided the programs.
 
+However, an algorithm such as 
+Gradient Boosting Trees (GBT) has a dozen parameter settings to tweek, 
+such as how to control tree size, the learning rate, the sampling methodology for rows or columns, the loss function, the regularization options, and more. 
+ 
+The data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
+
+The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
+
 http://colah.github.io/ at http://googleresearch.blogspot.com/
+
