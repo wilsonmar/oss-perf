@@ -35,7 +35,6 @@ such as how to control tree size, the learning rate, the sampling methodology fo
  
 The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
-https://github.com/nathanlubchenco/bsw-prediction-io
 
 <a id="Prediction">
 ## Prediction.io software</a>
