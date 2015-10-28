@@ -4,7 +4,7 @@ The objective is to augment time-consuming manual scanning with a program that r
 
 But in 2015, machine learning was a nacent category of software (as <a target="_blank" href="http://how-old.net/">http://how-old.net</a>, Microsoft's age-detecting robot proves).
 
-"Machine Learning" refers to the use of computers to <strong>recognize patterns</strong> and <strong>make predictions</strong>,
+"Machine Learning" refers to the use of computers to <strong>recognize patterns (anomalies)</strong> and <strong>make predictions</strong>,
 which is what we want:
 
   * As performance tests run, identify when a blocking condition has been reached among the various metrics being monitored,
