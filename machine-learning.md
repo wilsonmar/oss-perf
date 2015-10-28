@@ -34,7 +34,7 @@ http://colah.github.io/ at http://googleresearch.blogspot.com/
 
 <a id="Prediction">
 ## Prediction.io software</a>
-<a target="_blank" href="https://prediction.io/">PredictionIO</a> is a Machine Learning server for
+<a target="_blank" href="https://prediction.io/">PredictionIO</a> (by Simon Chan) is a Machine Learning server for
 building and deploying predictive engines. It is open sourced at https://github.com/PredictionIO/PredictionIO/.
 It is made of these parts:
 
