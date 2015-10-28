@@ -1,4 +1,4 @@
-It's time-consuming and error-prone process to sift through the large amounts of test data generated for enterprise apps.
+It's time-consuming and error-prone process to sift through the large amounts of data generated during testing of apps.
 
 The objective is to augment time-consuming manual scanning with a program that recognizes patterns and raises alerts.
 
