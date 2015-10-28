@@ -32,6 +32,12 @@ The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
 http://colah.github.io/ at http://googleresearch.blogspot.com/
 
+<a id="Prediction">
+## Prediction.io software</a>
+<a target="_blank" href="https://prediction.io/">PredictionIO</a> is an open-source Machine Learning server.
+PredictionIO template gallery offers a wide range of predictive engine templates for download, developers can customize them easily. The DASE architecture of engine is the "MVC for Machine Learning". It enables developers to build predictive engine components with separation-of-concerns. Data scientists can also swap and evaluate algorithms as they wish. The core part of PredictionIO is an engine deployment platform built on top of Apache Spark. Predictive engines are deployed as distributed web services. In addition, there is an Event Server. It is a scalable data collection and analytics layer built on top of Apache HBase. PredictionIO eliminates the friction between software development, data science and production deployment. 
+It takes care of the data infrastructure routine so that your data science team can focus on what matters most.
+
 <a id="Alternatives">
 ## Alternative software</a>
 http://jmlr.org/mloss/ provides a list of open-source software for machine learning.
@@ -41,4 +47,3 @@ Among commercial tools, <a target="_blank" href="http://skytree.net/">Skytree</a
 ENCOG for Java and C# is maintained by <a target="_blank" href="http://heatonresearch.com/">Heaton Research</a>
 in St. Louse, Missouri. Samples are at https://github.com/encog 
 
-https://prediction.io/
