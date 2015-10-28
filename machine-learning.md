@@ -34,9 +34,19 @@ http://colah.github.io/ at http://googleresearch.blogspot.com/
 
 <a id="Prediction">
 ## Prediction.io software</a>
-<a target="_blank" href="https://prediction.io/">PredictionIO</a> is an open-source Machine Learning server.
-PredictionIO template gallery offers a wide range of predictive engine templates for download, developers can customize them easily. The DASE architecture of engine is the "MVC for Machine Learning". It enables developers to build predictive engine components with separation-of-concerns. Data scientists can also swap and evaluate algorithms as they wish. The core part of PredictionIO is an engine deployment platform built on top of Apache Spark. Predictive engines are deployed as distributed web services. In addition, there is an Event Server. It is a scalable data collection and analytics layer built on top of Apache HBase. PredictionIO eliminates the friction between software development, data science and production deployment. 
-It takes care of the data infrastructure routine so that your data science team can focus on what matters most.
+<a target="_blank" href="https://prediction.io/">PredictionIO</a> is an open-source Machine Learning server for
+building and deploying predictive engines.
+It is made of these parts:
+
+ * A processing framework written in Scala built on top of Apache Spark with a scalable data collection and analytics layer
+ * Data storage on top of Apache HBase and Cassandra
+ * Template gallery of algorithms for customization (Spark MLib, Mahout, etc.)
+
+Their DASE (Data Source and Dat Preparer) architecture is the "MVC for Machine Learning" in that it provides web services and an Event Server so predictive engine components can be built with separation-of-concerns. 
+
+To **train** predictive models ...
+
+
 
 <a id="Alternatives">
 ## Alternative software</a>
