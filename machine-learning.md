@@ -30,7 +30,7 @@ The data output from a load test run may be filtered so just the "steady state" 
 
 The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
-http://colah.github.io/ at http://googleresearch.blogspot.com/
+https://github.com/nathanlubchenco/bsw-prediction-io
 
 <a id="Prediction">
 ## Prediction.io software</a>
@@ -91,6 +91,7 @@ ENCOG for Java and C# is maintained by <a target="_blank" href="http://heatonres
 in St. Louse, Missouri. Samples are at https://github.com/encog 
 
 <a id="Resources">
-## Additional resources</a>
+## Additional resources on machien learning</a>
 
  * http://guidetodatamining.com/
+ * http://colah.github.io/ at http://googleresearch.blogspot.com/
