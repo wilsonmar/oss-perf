@@ -36,7 +36,18 @@ Python has become a go-to programming language for math, science, and statistics
 <a target="_blank" href="http://scikit-learn.org/stable/">Scikit-learn</a> 
 builds on top of existing Python packages NumPy, SciPy, and matplotlib. 
 It can be used either for interactive “workbench” applications or embedded into other software and reused. 
+Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.html#supervised-learning">
+Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
 
+Its Dimensionality reduction 
+reduces the number of random variables to consider.
+
+https://spark.apache.org/mllib/
+is Apache Spark's scalable machine learning library for Java, plus Python and Scala (via NumPy).
+Faster than Hadoop map-reduce programs.
+It works in EC2 or on Mesos.
+http://www.mlbase.org/ 
+enables users to obtain results by make queries using a declarative language like SQL.
 
 <a id="AlgorithmChoices">
 ## Choice of algorithms</a>
@@ -47,6 +58,8 @@ Gradient Boosting Trees (GBT) has a dozen parameter settings to tweek,
 such as how to control tree size, the learning rate, the sampling methodology for rows or columns, the loss function, the regularization options, and more. 
  
 The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
+
+Signal processing
 
 
 <a id="Prediction">
