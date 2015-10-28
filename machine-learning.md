@@ -40,3 +40,5 @@ Among commercial tools, <a target="_blank" href="http://skytree.net/">Skytree</a
 
 ENCOG for Java and C# is maintained by <a target="_blank" href="http://heatonresearch.com/">Heaton Research</a>
 in St. Louse, Missouri. Samples are at https://github.com/encog 
+
+https://prediction.io/
