@@ -97,12 +97,16 @@ Usually this is also the point where **resources** such as CPU and memory become
 
 <a id="LoadTestReports">
 ## Load tests</a>
+Load tests ramp-up to a specific load (below the capacity level) for a while (in "steady state") before ramping down.
+They are designed to identify risks such as these:
 
-<img alt="load-test-report" src="https://cloud.githubusercontent.com/assets/300046/10779232/093404d8-7ceb-11e5-8548-9366d9537522.png">
+<img alt="perf-load-test-issues" src="https://cloud.githubusercontent.com/assets/300046/10779827/4d247076-7cf3-11e5-86c9-556746df5805.png">
 
-Here are the most typical issues quantified by performance test runs.
+Examples of changes to mitigate limitations identified in a load run include:
 
-a) If the first transaction of a run is slow, and the rest good, it usually is because components have not been loaded on the server or the client cache. To detect slow first transactions, I usually have a scenario group with a single VUser that starts before all the others.
+<img alt="perf-load-test-actions" src="https://cloud.githubusercontent.com/assets/300046/10779232/093404d8-7ceb-11e5-8548-9366d9537522.png">
+
+a) If the **first transaction** of a run is slow, and the rest good, it usually is because components have not been loaded on the server or the client cache. To detect slow first transactions, I usually have a scenario group with a single VUser that starts before all the others.
 Many LoadRunner users make the mistake of coding for first transactions over and over again rather than recording two iterations and using code from the second for all subsequent iterations.
 
 It is useful to run load tests just doing login and logout repeatedly. Logins are usually the single most expensive transaction apps have. For office workers, does everyone jump on the system if they all arrive the same time every day? For mobile users, maybe when everyone gets off-work or when a plane lands?
