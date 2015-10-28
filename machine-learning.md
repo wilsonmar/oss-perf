@@ -60,7 +60,7 @@ recognizing runs starting and completing.
 
 
 <a id="Training">
-## Training</a>
+## Training to develop algorithm model</a>
 To be able to identify anomalies, machine learning algorithms reference its learning from training activities,
 such as identifying the expected line (shown as a red line) based on several trails (gray lines).
 
