@@ -98,6 +98,7 @@ Usually this is also the point where **resources** such as CPU and memory become
 <a id="LoadTestReports">
 ## Load tests</a>
 
+<img alt="load-test-report" src="https://cloud.githubusercontent.com/assets/300046/10779232/093404d8-7ceb-11e5-8548-9366d9537522.png">
 
 
 <a id="DifferenceComparison">
