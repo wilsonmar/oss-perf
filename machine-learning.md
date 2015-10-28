@@ -32,5 +32,11 @@ The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
 http://colah.github.io/ at http://googleresearch.blogspot.com/
 
+<a id="Alternatives">
+## Alternative software</a>
+http://jmlr.org/mloss/ provides a list of open-source software for machine learning.
+
 Among commercial tools, <a target="_blank" href="http://skytree.net/">Skytree</a>’s AutoModel automatically determines optimal parameters and algorithms for maximum model accuracy via their easy-to-use interface to guide program training, tuning, and testing models, while preventing statistical mistakes.
 
+ENCOG for Java and C# is maintained by <a target="_blank" href="http://heatonresearch.com/">Heaton Research</a>
+in St. Louse, Missouri. Samples are at https://github.com/encog 
