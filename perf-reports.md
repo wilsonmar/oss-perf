@@ -83,6 +83,16 @@ Not if there are other transactions or other sub-systems with higher variability
 <a id="StressTestReports">
 ### Stress tests</a>
 
+<img alt="stress-test-report" src="https://cloud.githubusercontent.com/assets/300046/10779150/129271be-7cea-11e5-821c-bf9143a71690.png">
+
+In this more stylized diagram, we have an increasing number of scripted vUsers imposing load at the same time.
+
+Starting from a [_] light load, we ramp up load until the [_] Transactions per second and other processing rates peak before dropping off with increasing load.
+We know that we’ve reached the point of 
+[_] capacity, when heavy load becomes overload as additional load is imposed.
+[_] Response times begin to increase due to transactions [_] waiting for others to finish.
+Usually this is also the point where [_] resources such as CPU and memory becomes fully used.
+
 
 
 <a id="DifferenceComparison">
