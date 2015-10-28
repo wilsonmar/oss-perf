@@ -18,7 +18,7 @@ This means a constant scan comparing previous history for each transaction.
 So the program also needs to **prioritize**.
 
 According to https://en.wikipedia.org/wiki/Machine_learning,
-In 1959, Arthur Samuel defined machine learning as a 
+in 1959, Arthur Samuel defined machine learning as a 
 "Field of study that gives computers the ability to learn without being explicitly programmed".
 There is a continuum of how much human supervision is provided the programs.
 
