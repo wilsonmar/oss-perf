@@ -44,9 +44,11 @@ It is made of these parts:
 
 Their DASE (Data Source and Dat Preparer) architecture is the "MVC for Machine Learning" in that it provides web services and an Event Server so predictive engine components can be built with separation-of-concerns. 
 
+<a id="Training">
+## Training</a>
 To **train** predictive models ...
 
-
+<img alt="predictive io training" src="https://cloud.githubusercontent.com/assets/300046/10792695/0055f640-7d4b-11e5-8910-128ae545ffac.png">
 
 <a id="Alternatives">
 ## Alternative software</a>
