@@ -1,4 +1,6 @@
-This repo contains notes, configuration, and source files on creating a way to analyze
+This page discusses scaling of the ELK stack.
+
+contains notes, configuration, and source files on creating a way to analyze
 with <strong>only free/open source software</strong>. The components include the 
 "ELK" stack, where "ELK" stands for Elasticsearch Logstash Kibana:
 
