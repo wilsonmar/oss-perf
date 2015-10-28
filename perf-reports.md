@@ -9,9 +9,9 @@ There are different types of performance testing to measure various risks:
    
    * **Concurrency tests** identify the impact of multiple requests for the same resources at the same time.
    
-   * **Load tests** stop testing at a targeted load level (for certification).
-   
    * <a href="#StressTestReports">**Stress tests**</a> increase users (load) to identify the **bottleneck** limiting further capacity.
+   
+   * <a href="#LoadTestReports">**Load tests**</a> stop testing at a targeted load level (for certification).
    
    * **Scalability tests** measure how much capacity really improves when additional/less hardware is added/removed.
    
@@ -93,6 +93,11 @@ We know that we’ve reached the point of
 **capacity**, when heavy load becomes overload as additional load is imposed.
 **Response times** begin to increase due to transactions waiting for others to finish.
 Usually this is also the point where **resources** such as CPU and memory becomes fully used.
+
+
+<a id="LoadTestReports">
+## Load tests</a>
+
 
 
 <a id="DifferenceComparison">
