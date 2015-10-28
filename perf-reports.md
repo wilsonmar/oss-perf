@@ -83,6 +83,8 @@ Not if there are other transactions or other sub-systems with higher variability
 <a id="StressTestReports">
 ### Stress tests</a>
 
+Visualization of stress test results involve several dimensions:
+
 <img alt="stress-test-report" src="https://cloud.githubusercontent.com/assets/300046/10779150/129271be-7cea-11e5-821c-bf9143a71690.png">
 
 In this more stylized diagram, we have an increasing number of scripted vUsers imposing load at the same time.
