@@ -22,12 +22,17 @@ in 1959, Arthur Samuel defined machine learning as a
 "Field of study that gives computers the ability to learn without being explicitly programmed".
 There is a continuum of how much human supervision is provided the programs.
 
-However, an algorithm such as 
+PROTIP: Data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
+
+
+<a id="Choices">
+## Choice of algorithms</a>
+Not all machine learning algorithms are approapriate for use with the use case defined here.
+
+An algorithm such as 
 Gradient Boosting Trees (GBT) has a dozen parameter settings to tweek, 
 such as how to control tree size, the learning rate, the sampling methodology for rows or columns, the loss function, the regularization options, and more. 
  
-The data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
-
 The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
 https://github.com/nathanlubchenco/bsw-prediction-io
@@ -98,3 +103,5 @@ in St. Louse, Missouri. Samples are at https://github.com/encog
 
  * http://guidetodatamining.com/
  * http://colah.github.io/ at http://googleresearch.blogspot.com/
+
+ * http://www.infoworld.com/article/2853707/machine-learning/11-open-source-tools-machine-learning.html
