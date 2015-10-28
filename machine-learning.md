@@ -25,7 +25,20 @@ There is a continuum of how much human supervision is provided the programs.
 PROTIP: Data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
 
 
-<a id="Choices">
+<a id="ToolChoices">
+## Choice of tools</a>
+The crazy popularity of ML is due not only to hardware growing cheaper and more powerful, 
+but also the proliferation of free software that makes machine learning easier to implement 
+(both on single machines and at scale).
+
+Python has become a go-to programming language for math, science, and statistics due to its ease of adoption and the breadth of libraries available for nearly any application. 
+
+<a target="_blank" href="http://scikit-learn.org/stable/">Scikit-learn</a> 
+builds on top of existing Python packages NumPy, SciPy, and matplotlib. 
+It can be used either for interactive “workbench” applications or embedded into other software and reused. 
+
+
+<a id="AlgorithmChoices">
 ## Choice of algorithms</a>
 Not all machine learning algorithms are approapriate for use with the use case defined here.
 
