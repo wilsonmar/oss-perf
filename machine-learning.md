@@ -80,8 +80,9 @@ To **train** predictive models ...
 
 <img alt="predictive io training" src="https://cloud.githubusercontent.com/assets/300046/10792695/0055f640-7d4b-11e5-8910-128ae545ffac.png">
 
-
-https://docs.prediction.io/support/
+ * https://docs.prediction.io/support/
+ * https://github.com/nathanlubchenco/bsw-prediction-io uses data from:
+ * https://www.kaggle.com/c/otto-group-product-classification-challenge/data
 
 <a id="Alternatives">
 ## Alternative software</a>
