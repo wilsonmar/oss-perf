@@ -32,3 +32,5 @@ The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
 http://colah.github.io/ at http://googleresearch.blogspot.com/
 
+Among commercial tools, <a target="_blank" href="http://skytree.net/">Skytree</a>’s AutoModel automatically determines optimal parameters and algorithms for maximum model accuracy via their easy-to-use interface to guide program training, tuning, and testing models, while preventing statistical mistakes.
+
