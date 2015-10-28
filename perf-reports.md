@@ -6,7 +6,7 @@ and the <a href="perf-test-types.md"> types of performance tests to measure expo
 ### Ping tests</a>
 The 2 minute video http://youtu.be/6VmAX3DM78s describes how Agile teams
 
-
+<img width="654" alt="Ping test results" src="https://cloud.githubusercontent.com/assets/300046/10778319/0e67d938-7ce2-11e5-965d-cafb7be92a67.png">
 
 
 <a id="SpeedTestReport">
