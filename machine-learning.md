@@ -61,9 +61,6 @@ A sample call to a **rating service** is:
  } extends Serializable
  ```
 
-However, analysis of test run outputs can be triggered from the prediction.io Event Server 
-recognizing runs starting and completing.
-
 
 <a id="Training">
 ## Training to develop algorithm model</a>
@@ -71,13 +68,18 @@ To be able to identify anomalies, machine learning algorithms reference its lear
 such as identifying the expected line (shown as a red line) based on several trails (gray lines).
 
 ![machinelearningmastery com-ensemble](https://cloud.githubusercontent.com/assets/300046/10793313/915b79a6-7d4d-11e5-95b2-b7c071dd1a5f.png)
+
 Graphic from http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
 
+Thus, there are two sets of data: training and test data.
 
+Making conclusions and recommendations from test run outputs can be triggered from the prediction.io 
+Event Server recognizing runs starting and completing.
 
 To **train** predictive models ...
 
 <img alt="predictive io training" src="https://cloud.githubusercontent.com/assets/300046/10792695/0055f640-7d4b-11e5-8910-128ae545ffac.png">
+
 
 https://docs.prediction.io/support/
 
