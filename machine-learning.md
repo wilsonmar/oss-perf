@@ -36,8 +36,12 @@ http://colah.github.io/ at http://googleresearch.blogspot.com/
 ## Prediction.io software</a>
 STATUS: We are starting to look into
 
-<a target="_blank" href="https://prediction.io/">Prediction.IO</a> (by CEO <a target="_blank" href="https://www.linkedin.com/in/simonmhchan">Simon Chan</a>, <a target="_blank" href="https://twitter.com/simonchannet">@simonchannet</a>) is a Machine Learning server for
-building and deploying predictive engines. It is open sourced at https://github.com/PredictionIO/PredictionIO/.
+the Machine Learning server and predictive engine from
+<a target="_blank" href="https://prediction.io/">Prediction.IO</a> (by CEO <a target="_blank" href="https://www.linkedin.com/in/simonmhchan">Simon Chan</a>, <a target="_blank" href="https://twitter.com/simonchannet">@simonchannet</a>).
+
+It is open sourced at <a target="_blank" href="https://github.com/PredictionIO/PredictionIO/">https://github.com/PredictionIO/PredictionIO</a>, 
+with enterprise support.
+
 It is made of these parts:
 
  * A processing framework written in Scala built on top of Apache Spark with a scalable data collection and analytics layer
