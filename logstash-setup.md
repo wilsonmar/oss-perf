@@ -235,7 +235,7 @@ output {
    ```
 
 ### <a name="LogstashFilters"> Logstash Filters</a>
-labls instead of regex patterns.
+labels instead of regex patterns.
 
 * <strong>grok</strong> uses patterns to extract data into fields.
 * <strong>date</strong> parses timestamps from fields to standardize into a "canonical" date format
