@@ -34,22 +34,46 @@ http://colah.github.io/ at http://googleresearch.blogspot.com/
 
 <a id="Prediction">
 ## Prediction.io software</a>
-<a target="_blank" href="https://prediction.io/">PredictionIO</a> is an open-source Machine Learning server for
-building and deploying predictive engines.
+<a target="_blank" href="https://prediction.io/">PredictionIO</a> is a Machine Learning server for
+building and deploying predictive engines. It is open sourced at https://github.com/PredictionIO/PredictionIO/.
 It is made of these parts:
 
  * A processing framework written in Scala built on top of Apache Spark with a scalable data collection and analytics layer
  * Data storage on top of Apache HBase and Cassandra
  * Template gallery of algorithms for customization (Spark MLib, Mahout, etc.)
+ * Event engine
 
-Their DASE (Data Source and Dat Preparer) architecture is the "MVC for Machine Learning" in that it provides web services and an Event Server so predictive engine components can be built with separation-of-concerns. 
+Their DASE (Data Source and Dat Preparer) architecture is the "MVC for Machine Learning" in that it provides web services so predictive engine components can be built with separation-of-concerns. 
+
+A sample call to a **rating service** is:
+
+ ```
+ curl -H "Content-Type: application/json" -d '{ "user": 1, "num": 4 }' http://localhost:8000/queries.json
+ case class Query {
+  val user: String,
+  val num: Int
+ } extends Serializable
+ ```
+
+However, analysis of test run outputs can be triggered from the prediction.io Event Server 
+recognizing runs starting and completing.
+
 
 <a id="Training">
 ## Training</a>
+To be able to identify anomalies, machine learning algorithms reference its learning from training activities,
+such as identifying the expected line (shown as a red line) based on several trails (gray lines).
+
+![machinelearningmastery com-ensemble](https://cloud.githubusercontent.com/assets/300046/10793313/915b79a6-7d4d-11e5-95b2-b7c071dd1a5f.png)
+Graphic from http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
+
+
+
 To **train** predictive models ...
 
 <img alt="predictive io training" src="https://cloud.githubusercontent.com/assets/300046/10792695/0055f640-7d4b-11e5-8910-128ae545ffac.png">
 
+https://docs.prediction.io/support/
 <a id="Alternatives">
 ## Alternative software</a>
 http://jmlr.org/mloss/ provides a list of open-source software for machine learning.
