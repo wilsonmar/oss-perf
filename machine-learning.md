@@ -15,32 +15,30 @@ This means a constant scan comparing previous history for each transaction.
 
 Data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
 
-<a id="MachineLearning">
-## Machine Learning</a>
-We are looking to leverage "Machine Learning" (ML) technologies.
-The term refers to the use of computers to <strong>recognize patterns (anomalies)</strong> and <strong>make predictions</strong>.
-
-According to https://en.wikipedia.org/wiki/Machine_learning,
-in 1959, Arthur Samuel defined machine learning as a 
-"Field of study that gives computers the ability to learn without being explicitly programmed".
-There is a continuum of how much human supervision is provided the programs.
-
-But in 2015, machine learning was a nacent category of software (as <a target="_blank" href="http://how-old.net/">http://how-old.net</a>, Microsoft's age-detecting robot proves).
-
 
 <a id="ToolChoices">
-## Choice of tools</a>
-The crazy popularity of ML is due not only to hardware growing cheaper and more powerful, 
-but also the proliferation of free software that makes machine learning easier to implement 
-(both on single machines and at scale).
-
-Python has become a go-to programming language for math, science, and statistics due to its ease of adoption and the breadth of libraries available for nearly any application. 
+## Choice of tools: Python</a>
+Python has become a go-to programming language for math, science, and statistics 
+due to its ease of adoption and the breadth of libraries available for nearly any application. 
 
 <a target="_blank" href="http://scikit-learn.org/stable/">Scikit-learn</a> 
 builds on top of existing Python packages NumPy, SciPy, and matplotlib. 
 It can be used either for interactive “workbench” applications or embedded into other software and reused. 
 Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.html#supervised-learning">
 Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
+
+
+<a id="MachineLearning">
+## Machine Learning</a>
+Python is We are looking to leverage "Machine Learning" (ML) technologies.
+
+According to https://en.wikipedia.org/wiki/Machine_learning,
+in 1959, Arthur Samuel defined machine learning as a 
+"Field of study that gives computers the ability to learn without being explicitly programmed".
+
+The term refers to the use of computers to <strong>recognize patterns (anomalies)</strong> and <strong>make predictions</strong>.
+
+<a target="_blank" href="http://how-old.net/">http://how-old.net</a>, Microsoft's age-detecting robot proves).
 
 
 <a id="Prediction">
