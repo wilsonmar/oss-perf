@@ -247,3 +247,9 @@ labels instead of regex patterns.
 * alter
 * multiline
 * <strong>ruby</strong> to run arbitrary Ruby-language code.
+
+
+<a id="Alternatives">
+## Integration with Alternatives</a>
+Logstash can work in sync with commercial products:
+https://github.com/IBM-ITOAdev/logstash-input-appdynamics
