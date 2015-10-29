@@ -50,8 +50,8 @@ It is open sourced at <a target="_blank" href="https://github.com/PredictionIO/P
 with enterprise support.
 
 <a id="Installation">
-### Installation</a>
-PredictionIO offers a one-command installer for Mac:
+### Install on Mac</a>
+0. Run the one-command installer for Mac:
 
  ```
  bash -c "$(curl -s https://install.prediction.io/install.sh)
@@ -69,7 +69,6 @@ PredictionIO offers a one-command installer for Mac:
  Elasticsearch is the default metadata store for PredictionIO, but PostgreSQL and MySQL are offered too. 
  HBase
 
- PredictionIO setup in: /Users/wmar/PredictionIO
 
  ```
  Creating default site in: /Users/wmar/PredictionIO/vendors/hbase-1.0.0/conf/hbase-site.xml
@@ -90,8 +89,11 @@ To stop PredictionIO and dependencies, run: **pio-stop-all**
 
 Please report any problems to: support@prediction.io
  ```
+ 
+0. Use a text editor to add `/Users/wmar/PredictionIO/bin` to the path.
+   This can be done several ways, such as 'sudo /etc/path`.
 
- To check the status of dependencies:
+0. Check status of dependencies:
  
  ```
  cd /PredictionIO-0.9.5/bin/pio 
