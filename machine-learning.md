@@ -1,28 +1,31 @@
-It's time-consuming and error-prone process to sift through the large amounts of data generated during testing of apps.
+There is a large amount of data generated during testing of apps.
 
-The objective is to augment time-consuming manual scanning with a program that recognizes patterns and raises alerts.
+The objective is to augment time-consuming and error-prone **manual scanning** of metrics
+with a program that recognizes patterns and raises alerts.
 
-But in 2015, machine learning was a nacent category of software (as <a target="_blank" href="http://how-old.net/">http://how-old.net</a>, Microsoft's age-detecting robot proves).
-
-"Machine Learning" refers to the use of computers to <strong>recognize patterns (anomalies)</strong> and <strong>make predictions</strong>,
-which is what we want:
-
-  * As performance tests run, identify when a blocking condition has been reached among the various metrics being monitored,
+ 1. As performance tests run, identify when a blocking condition has been reached among the various metrics being monitored,
 when a **threshold** for action is recognized in response time degrading, out of memory, CPU, out of disk space, etc.
 
-  * As Selenium runs, have it output **timings for each transaction**.
+ 2. As Selenium runs, have it output **timings for each transaction**.
 When a transaction takes a sudden jump, raise an alert.
 This means a constant scan comparing previous history for each transaction.
 
-  * Also, we want to avoid innundatinyg human reviewers with more alerts than they can handle.
-So the program also needs to **prioritize**.
+ 3. Also, we want to avoid innundating human reviewers with more alerts than they can handle.
+ So the program also needs to **prioritize**.
+
+Data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
+
+<a id="MachineLearning">
+## Machine Learning</a>
+We are looking to leverage "Machine Learning" (ML) technologies.
+The term refers to the use of computers to <strong>recognize patterns (anomalies)</strong> and <strong>make predictions</strong>.
 
 According to https://en.wikipedia.org/wiki/Machine_learning,
 in 1959, Arthur Samuel defined machine learning as a 
 "Field of study that gives computers the ability to learn without being explicitly programmed".
 There is a continuum of how much human supervision is provided the programs.
 
-PROTIP: Data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
+But in 2015, machine learning was a nacent category of software (as <a target="_blank" href="http://how-old.net/">http://how-old.net</a>, Microsoft's age-detecting robot proves).
 
 
 <a id="ToolChoices">
@@ -39,15 +42,63 @@ It can be used either for interactive “workbench” applications or embedded i
 Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.html#supervised-learning">
 Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
 
-Its Dimensionality reduction 
-reduces the number of random variables to consider.
 
-https://spark.apache.org/mllib/
-is Apache Spark's scalable machine learning library for Java, plus Python and Scala (via NumPy).
-Faster than Hadoop map-reduce programs.
-It works in EC2 or on Mesos.
-http://www.mlbase.org/ 
-enables users to obtain results by make queries using a declarative language like SQL.
+<a id="Prediction">
+## Prediction.io software</a>
+Let's look into the Machine Learning server and predictive engine from
+<a target="_blank" href="https://prediction.io/">Prediction.IO</a> (by CEO <a target="_blank" href="https://www.linkedin.com/in/simonmhchan">Simon Chan</a>, <a target="_blank" href="https://twitter.com/simonchannet">@simonchannet</a>).
+
+It is open sourced at <a target="_blank" href="https://github.com/PredictionIO/PredictionIO/">https://github.com/PredictionIO/PredictionIO</a>, 
+with enterprise support.
+
+<a id="Installation">
+### Installation</a>
+PredictionIO offers a one-command installer for Mac:
+
+ ```
+ bash -c "$(curl -s https://install.prediction.io/install.sh)
+ ```
+
+ The installer locates Java:
+ * Found: /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
+ 
+ The installer adds:
+ * Spark: /Users/wmar/PredictionIO/vendors/spark-1.5.1
+ * Elasticsearch: /Users/wmar/PredictionIO/vendors/elasticsearch-1.4.4
+ * HBase: /Users/wmar/PredictionIO/vendors/hbase-1.0.0
+ * ZooKeeper: /Users/wmar/PredictionIO/vendors/zookeeper
+
+ Elasticsearch is the default metadata store for PredictionIO, but PostgreSQL and MySQL are offered too. 
+ HBase
+
+ PredictionIO setup in: /Users/wmar/PredictionIO
+
+ ```
+ Creating default site in: /Users/wmar/PredictionIO/vendors/hbase-1.0.0/conf/hbase-site.xml
+Updating: /Users/wmar/PredictionIO/vendors/hbase-1.0.0/conf/hbase-env.sh to include /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
+Updating: /Users/wmar/PredictionIO/conf/pio-env.sh
+HBase setup done!
+Updating permissions on: /Users/wmar/PredictionIO/vendors
+Installation done!
+--------------------------------------------------------------------------------
+Installation of PredictionIO 0.9.5 complete!
+Please follow documentation at http://docs.prediction.io/start/download/ to download the engine template based on your needs
+
+Command Line Usage Notes:
+To start PredictionIO and dependencies, run: **pio-start-all**
+To check the PredictionIO status, run: **pio status**
+To train/deploy engine, run: **pio [train|deploy|...]** commands
+To stop PredictionIO and dependencies, run: **pio-stop-all**
+
+Please report any problems to: support@prediction.io
+ ```
+
+ To check the status of dependencies:
+ 
+ ```
+ cd /PredictionIO-0.9.5/bin/pio 
+ status
+ ```
 
 <a id="AlgorithmChoices">
 ## Choice of algorithms</a>
@@ -59,18 +110,16 @@ such as how to control tree size, the learning rate, the sampling methodology fo
  
 The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
+Its **Dimensionality reduction** reduces the number of random variables to consider.
+
 Signal processing
 
-
-<a id="Prediction">
-## Prediction.io software</a>
-STATUS: We are starting to look into
-
-the Machine Learning server and predictive engine from
-<a target="_blank" href="https://prediction.io/">Prediction.IO</a> (by CEO <a target="_blank" href="https://www.linkedin.com/in/simonmhchan">Simon Chan</a>, <a target="_blank" href="https://twitter.com/simonchannet">@simonchannet</a>).
-
-It is open sourced at <a target="_blank" href="https://github.com/PredictionIO/PredictionIO/">https://github.com/PredictionIO/PredictionIO</a>, 
-with enterprise support.
+https://spark.apache.org/mllib/
+is Apache Spark's scalable machine learning library for Java, plus Python and Scala (via NumPy).
+Faster than Hadoop map-reduce programs.
+It works in EC2 or on Mesos.
+http://www.mlbase.org/ 
+enables users to obtain results by make queries using a declarative language like SQL.
 
 It is made of these parts:
 
@@ -79,7 +128,7 @@ It is made of these parts:
  * Template gallery of algorithms for customization (Spark MLib, Mahout, etc.)
  * Event engine
 
-Their DASE (Data Source and Dat Preparer) architecture is the "MVC for Machine Learning" in that it provides web services so predictive engine components can be built with separation-of-concerns. 
+PredictionIO's DASE (Data Source and Dat Preparer) architecture is the "MVC for Machine Learning" in that it provides web services so predictive engine components can be built with separation-of-concerns. 
 
 A sample call to a **rating service** is:
 
@@ -113,6 +162,12 @@ To **train** predictive models ...
  * https://docs.prediction.io/support/
  * https://github.com/nathanlubchenco/bsw-prediction-io uses data from:
  * https://www.kaggle.com/c/otto-group-product-classification-challenge/data
+
+The defaults are:
+
+ * Installation path (/Users/wmar/PredictionIO): 
+ * Vendor path (/Users/wmar/PredictionIO/vendors): 
+
 
 <a id="Alternatives">
 ## Alternative software</a>
