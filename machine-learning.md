@@ -156,6 +156,23 @@ See 'pio help <command>' to read about a specific subcommand.
  pio status
  ```
 
+ The response I'm getting:
+ 
+ ```
+ [INFO] [Console$] Inspecting PredictionIO...
+[INFO] [Console$] PredictionIO 0.9.5 is installed at /Users/wmar/PredictionIO
+[INFO] [Console$] Inspecting Apache Spark...
+[INFO] [Console$] Apache Spark is installed at /Users/wmar/PredictionIO/vendors/spark-1.5.1
+[INFO] [Console$] Apache Spark 1.5.1 detected (meets minimum requirement of 1.3.0)
+[INFO] [Console$] Inspecting storage backend connections...
+[INFO] [Storage$] Verifying Meta Data Backend (Source: ELASTICSEARCH)...
+[ERROR] [Console$] Unable to connect to all storage backends successfully. The following shows the error message from the storage backend.
+[ERROR] [Console$] None of the configured nodes are available: [] (org.elasticsearch.client.transport.NoNodeAvailableException)
+[ERROR] [Console$] Dumping configuration of initialized storage backend sources. Please make sure they are correct.
+[ERROR] [Console$] Source Name: ELASTICSEARCH; Type: elasticsearch; Configuration: TYPE -> elasticsearch, HOME -> /Users/wmar/PredictionIO/vendors/elasticsearch-1.4.4
+ ```
+
+
 <a id="AlgorithmChoices">
 ## Choice of algorithms</a>
 Not all machine learning algorithms are approapriate for use with the use case defined here.
