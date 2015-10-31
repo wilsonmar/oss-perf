@@ -9,11 +9,12 @@ usemap="#m_Map" border="0" width="100%">
 <area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
 </map>
 
-This was created in response to the need for a **faster, more flexble, and lower cost** approach to
-measure and thus improve the speed, capacity, and reliability of high-traffic web and native mobile apps. 
-
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
-   Other organizations have other divisions.
+   Other organizations have other divisions. Other diagrams use different colors to indicate status.
+
+This was created in response to the need for a **more nimble, flexble, and lower cost** approach to
+measure and thus improve the speed, capacity, and reliability of high-traffic web and native mobile apps,
+what many call <a href="perf-test-types.md">"performance engineering"</a>.
 
 BTW, If you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. Better yet, 
@@ -22,8 +23,7 @@ edit the file, and send us a pull request. Better yet,
 
 <a name="Background">
 ## Background Why</a>
-This was created in response to the need for a **faster, more flexble, and lower cost** approach
-to <a href="perf-test-types.md">"performance testing"</a> (which even commercial vendors have not been able to deliver):
+Here is what even commercial vendors have not yet delivered:
 
 A. Because we’re not in the business of selling performance testing software to the public, it’s natural for us to also develop our framework as open source on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
 
