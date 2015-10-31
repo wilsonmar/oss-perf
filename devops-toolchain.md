@@ -17,6 +17,17 @@ In are Virtualbox images for:
 
 docker machine creates daemons.
 
+Docker maintains official images at
+https://github.com/docker-library/official-images/tree/master/library
+for Jenkins, etc.
+
+JMeter and TestNG are not in among them.
+
+Docker also provides
+<a target="_blank" href="http://dockerhub.com/"> dockerhub.com</a>
+for anyone.
+
+
 <a id="Virtualbox">
 ## Virtualbox</a>
 http://www.virtualbox.org/wiki/Downloads
