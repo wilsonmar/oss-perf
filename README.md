@@ -25,7 +25,8 @@ edit the file, and send us a pull request. Better yet,
 ## Background Why</a>
 Here is what even commercial vendors have not yet delivered:
 
-A. Because we’re not in the business of selling performance testing software to the public, it’s natural for us to also develop our framework as open source on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
+A. Organizations not in the business of selling performance engineering software and services to the public, 
+it’s natural for us to develop framework as **open source** on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
 
 B. **Eliminate errors** in program coding source by **automatic generation of programming code** 
     based on specs.
