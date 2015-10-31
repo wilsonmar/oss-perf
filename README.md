@@ -12,7 +12,7 @@ usemap="#m_Map" border="0" width="100%">
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
    Other organizations have other divisions. Other diagrams use different colors to indicate status.
 
-This was created in response to the need for a **more nimble, flexble, and lower cost** approach to
+This was created in response to the need for a **more nimble, comprehensive, yet lower cost** approach to
 measure and thus improve the speed, capacity, and reliability of high-traffic web and native mobile apps,
 what many call <a href="perf-test-types.md">"performance engineering"</a>.
 
