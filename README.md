@@ -3,8 +3,9 @@
 This diagram <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
 is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
-<img name="usaMap" src="https://cloud.githubusercontent.com/assets/300046/10639827/ed39ba1c-77c6-11e5-957c-9e827471df78.png" usemap="#m_usaMap" border="0" width="100%">
-<map name="m_usaMap">
+<img name="Map" src="https://cloud.githubusercontent.com/assets/300046/10863861/d8184006-7f9e-11e5-89a3-2420c49276a2.png"
+usemap="#m_Map" border="0" width="100%">
+<map name="m_Map">
 <area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
 </map>
 
