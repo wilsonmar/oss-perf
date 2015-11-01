@@ -150,13 +150,36 @@ The following are experimental development commands:
 See 'pio help <command>' to read about a specific subcommand.
  ```
 
+<a id="StartStop">
+### Start and Stop Services</a>
+
+0. Start hdfs 
+
+0. Start spark 
+
+0. Start all services
+
+ ```
+ pio-start-all
+ ```
+
+ This takes several minutes.
+
+0. Stop all services
+
+ ```
+ pio-stop-all
+ ```
+
+ This takes several minutes.
+
 0. Check status of dependencies:
  
  ```
  pio status
  ```
 
- The response I'm getting:
+ If servers have not been started, the response is likely this:
  
  ```
  [INFO] [Console$] Inspecting PredictionIO...
