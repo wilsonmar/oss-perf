@@ -1,11 +1,12 @@
 Our objective here is to identify the most throughput of work at the least cost.
 
-Experimentation is needed because there are interactions among the various configurations:
+Experimentation is needed because there are interactions among the various <a href="configs.md">configurations:
 
   * Number and size of machines provisioned (such as RAM, use of solid-state drives, etc.).
   * OS selection (such as Debian vs. Windows, etc).
   * VM
   * App Configuration settings (such as maximum threads).
+</a>
 
 The approach here is to completely <strong>automate</strong> test runs so that
 servers can be provisioned, all software deployed, and results obtained and analyzed
