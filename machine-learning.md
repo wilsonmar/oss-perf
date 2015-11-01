@@ -212,6 +212,21 @@ Starting PredictionIO Event Server...
 [ERROR] [Console$] Source Name: ELASTICSEARCH; Type: elasticsearch; Configuration: TYPE -> elasticsearch, HOME -> /Users/wmar/PredictionIO/vendors/elasticsearch-1.4.4
  ```
 
+ More errors:
+ 
+ ```
+ [ERROR] [RecoverableZooKeeper] ZooKeeper exists failed after 1 attempts
+[ERROR] [ZooKeeperWatcher] hconnection-0x4a23350, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+[WARN] [ZooKeeperRegistry] Can't retrieve clusterId from Zookeeper
+[ERROR] [StorageClient] Cannot connect to ZooKeeper (ZooKeeper ensemble: localhost). Please make sure that the configuration is pointing at the correct ZooKeeper ensemble. By default, HBase manages its own ZooKeeper, so if you have not configured HBase to use an external ZooKeeper, that means your HBase is not started or configured properly.
+[ERROR] [Storage$] Error initializing storage client for source HBASE
+[ERROR] [Console$] Unable to connect to all storage backends successfully. The following shows the error message from the storage backend.
+[ERROR] [Console$] Data source HBASE was not properly initialized. (io.prediction.data.storage.StorageClientException)
+[ERROR] [Console$] Dumping configuration of initialized storage backend sources. Please make sure they are correct.
+[ERROR] [Console$] Source Name: ELASTICSEARCH; Type: elasticsearch; Configuration: TYPE -> elasticsearch, HOME -> /Users/wmar/PredictionIO/vendors/elasticsearch-1.4.4
+[ERROR] [Console$] Source Name: LOCALFS; Type: localfs; Configuration: PATH -> /Users/wmar/.pio_store/models, TYPE -> localfs
+[ERROR] [Console$] Source Name: HBASE; Type: (error); Configuration: (error)
+ ```
 
 <a id="AlgorithmChoices">
 ## Choice of algorithms</a>
