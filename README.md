@@ -102,7 +102,7 @@ Codification of API calls into standard patterns makes it now possible to
 | ----------- | ---------- |
 | We have a typical web server responding to both native mobile and desktop browser traffic over the public internet. | <a href="app-under-test.md">app server</a> |
 | To provision servers and deploy apps we use open-source software | <a href="devops-toolchain.md">Docker & Puppet</a> |
-| Having a quick way to bring up servers with different configurations | <a href="#configs">configs</a> |
+| Having a quick way to bring up servers with different configurations | <a href="configs.md">configs</a> |
 | enable us to tune settings (such as max threads) for the most throughput at the least cost. | <a href="run-variations.md">run variations</a> |
 | virtual user scripts that |<a href="#JMeter-Scripts"> JMeter code</a> |
 | run on servers which take the place of humans on real browsers and mobile devices. | <a href="#JMeter-servers">master & slaves</a> |
@@ -148,16 +148,6 @@ Codification of API calls into standard patterns makes it now possible to
 The remainder of this page describes the components mentioned in the [diagram and narrative above](#TheVision).
 
 
-<a   id="configs"></a>
-<a name="configs"></a>
-**Configurations** in servers need to be tuned to obtain the most throughput out of hardware.
-Examples of configurations include:
-
-   * Maximum virtual memory allocation
-   * Maximum threads
-   * Maximum queue length
-   * Maximum cache size
-   * etc.
 
 <a id="Jenkins-CI"></a>
 <a name="JenkinsCI"></a>
