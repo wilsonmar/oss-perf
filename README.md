@@ -103,7 +103,7 @@ Codification of API calls into standard patterns makes it now possible to
 | We have a typical web server responding to both native mobile and desktop browser traffic over the public internet. | <a href="app-under-test.md">app server</a> |
 | To provision servers and deploy apps we use open-source software | <a href="devops-toolchain.md">Docker & Puppet</a> |
 | Having a quick way to bring up servers with different configurations | <a href="#configs">configs</a> |
-| enable us to tune settings (such as max threads) for the most throughput at the least cost. | <a href="#run-variations(Taurus)">run variations (Taurus)</a> |
+| enable us to tune settings (such as max threads) for the most throughput at the least cost. | <a href="run-variations.md">run variations</a> |
 | virtual user scripts that |<a href="#JMeter-Scripts"> JMeter code</a> |
 | run on servers which take the place of humans on real browsers and mobile devices. | <a href="#JMeter-servers">master & slaves</a> |
 | These scripts reference sample (or sham) data. | Data |
@@ -197,16 +197,6 @@ is a Ruby based DSL for building JMeter test plans
 <a name="configs"></a>
 **configs** is the set of configuration settings controlling VM memory and other aspects of the server.
 
-<a id="run-variations"></a>
-<a id="run-variations(Taurus)"></a>
-<a name="runvariations"></a>
-**Run variations** is managed by TAURUS (Test Automation Running Smoothly) was 
-written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves
-and receive outputs from Blazemeter.
-
-   * http://gettaurus.org/
-   * https://www.youtube.com/watch?v=rwccqwaHT9U explains TAURUS as used with Blazemeter.
-   * http://github.com/Blazemeter/taurus
 
 <a name="AgentMonitoring">
 **Monitoring** via agents (or JMX) include innovations from profilers and:
