@@ -33,5 +33,10 @@ and receive outputs from Blazemeter:
    * http://github.com/Blazemeter/taurus
 
 XebiaLabs Software (in Boston)
-provides a way to manage variations for functional testing (not performance).
+provides a way to manage variations for functional testing (not performance)
+within Continuous Delivery.
+Its <a target="_blank" href="http://blog.xebialabs.com/author/dfarley/">
+Company blog</a> is by
+David Farley (@davidfarley, <a target="_blank" href="http://www.davefarley.net">http://www.davefarley.net</a>)
+
 
