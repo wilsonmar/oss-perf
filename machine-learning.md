@@ -163,7 +163,16 @@ See 'pio help <command>' to read about a specific subcommand.
  pio-start-all
  ```
 
- This takes several minutes.
+ This takes several minutes for response such as:
+ 
+ ```
+Starting Elasticsearch...
+Starting HBase...
+starting master, logging to /Users/wmar/PredictionIO/vendors/hbase-1.0.0/bin/../logs/hbase-wmar-master-15mbp-10681.out
+Waiting 10 seconds for HBase to fully initialize...
+Starting PredictionIO Event Server...
+ ```
+ 
 
 0. Stop all services
 
