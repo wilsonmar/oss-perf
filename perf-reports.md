@@ -160,14 +160,17 @@ and **processing throughput** (such as the number of requests processed per seco
 The line chart below plots points both the throughput rate and a characteristic of the workload 
 (the percentage of requests that are read vs. write):
 
-![scability-rps vs reads](https://cloud.githubusercontent.com/assets/300046/10894105/bf5bfa86-8169-11e5-83d3-727469c7d516.jpg)
+<a target="_blank" title="XY chart with curve-fit of throughput" 
+href="https://zookeeper.apache.org/doc/trunk/zookeeperOver.html#fg_zkPerfRW">
+<a img src="https://cloud.githubusercontent.com/assets/300046/10894105/bf5bfa86-8169-11e5-83d3-727469c7d516.jpg">
 
-Surprisingly, the solid red line shows the highest (fastest) processing rate, for use of 3 servers.
+The solid red line shows the fastest processing rate, when 3 servers are being used.
 This is from <a target="_blank" href="https://zookeeper.apache.org/doc/trunk/zookeeperOver.html#fg_zkPerfRW">
 measurements of a ZooKeeper</a> cluster which coordinates status from leader to followers.
 
 CONCLUSION 1: When only writes to the database are processed, 
-adding more servers generally **decreases** the total rate of requests processed per second.
+adding more servers generally **decreases** the total rate of requests processed per second
+due to the overhead of communication among servers.
 
 CONCLUSION 2: When a system processes more than 75% reads,
 more than 3 servers are needed
