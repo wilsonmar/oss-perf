@@ -159,6 +159,7 @@ and **processing throughput** (such as the number of requests processed per seco
 
 The line chart below plots points both the throughput rate and a characteristic of the workload 
 (the percentage of requests that are read vs. write):
+
 ![scability-rps vs reads](https://cloud.githubusercontent.com/assets/300046/10894105/bf5bfa86-8169-11e5-83d3-727469c7d516.jpg)
 
 Surprisingly, the solid red line shows the highest (fastest) processing rate, for use of 3 servers.
