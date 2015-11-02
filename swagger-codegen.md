@@ -20,9 +20,6 @@ Its objective is to eliminate delays between coding and full testing, just as
 the overarching goal of Swagger is to update client code at the same pace as the server
 by means of code generation.
  
-We begin with generating 
-http://petstore.swagger.io
-
 <a id="Resources">
 ## Resources</a>
 
