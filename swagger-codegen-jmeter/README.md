@@ -11,12 +11,17 @@ The major steps:
  
  <a href="#SwaggerJMeter"> 3). Edit the template to produce basic JMeter code.</a>
 
- <a href="#JMeterTricks"> 4). Edit the template to do more edits.</a>
+ <a href="#JMeterTricks"> 4). Edit the template to address more risks.</a>
 
 <hr />
 
 <a id="UsualJMeter">
 ### 1). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
+
+The example script is from ____, a leading authority on JMeter performance testing (@twitter, website).
+
+The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a> to address potential risks.
+
 
 <a id="SampleSwagger"> 
 ### 2). Setup swagger-codegen to create code for a Java client program.</a>
@@ -45,7 +50,7 @@ The run-time for JMeter is run like other languages generated:
  ```
 
 <a id="JMeterTricks"> 
-### 4). Edit the template to do more edits.</a>
+### 4). Edit the template to address more risks.</a>
 
 1). <a href="#BadResponseCodes">Valid atomic calls with bad response codes</a>.
 
@@ -69,6 +74,8 @@ The run-time for JMeter is run like other languages generated:
  0. etc.
 
 
+<hr />
+
 <a id="CleanHappyPath">
 ## 2). Clean Happy paths</a>
 Valid atomic calls with valid response codes
@@ -81,9 +88,10 @@ Valid atomic calls with valid response codes
  
  2.4). DELETE newly created, which keeps database empty.
 
+<hr />
+
 <a id="AtomicRunTypes">
-### 3). Atomic run types (perftest)</a>
-3). "run-type" parameter defines repeating processing strategies.
+### 3). "run-type" parameter defines repeating processing strategies</a>
 
  3.1) Repeat POST new to populate the database and identify how many can register all at once.
 
@@ -91,7 +99,8 @@ Valid atomic calls with valid response codes
  
  3.3) Repeat PUTs 
  
- 3.4) Impact of database replication (log shipping).
+ 3.4) Mix, to measure impact of database replication (log shipping).
+
 
 <a id="InvalidFieldValues">
 ## 4). Invalid field values</a>
