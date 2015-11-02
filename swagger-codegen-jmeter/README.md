@@ -19,7 +19,7 @@ The major steps:
 ### 1). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
 
 <a id="SampleSwagger"> 
-2). Setup swagger-codegen to create code for a Java client program.</a>
+### 2). Setup swagger-codegen to create code for a Java client program.</a>
  
 As described in <a href="swagger-codegen.md">
 swagger-codegen</a>,
