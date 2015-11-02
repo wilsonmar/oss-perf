@@ -1,5 +1,7 @@
 This section describes how to generate what JMeter needs to emulate a lot of clients calling REST APIs defined in Swagger.
 
+The 
+
 This page describes what JMeter scripts tests:
 
 1). <a href="#BadResponseCodes">Valid atomic calls with bad response codes</a>.
@@ -16,8 +18,8 @@ This page describes what JMeter scripts tests:
 
 <hr />
 
-1). <a id="BadResponseCodes">
-## Bad response codes</a>
+<a id="BadResponseCodes"></a>
+1). Recognize and handle problem HTTP response codes
 
  0. 400 (not found)
  0. 500 (server issues)
