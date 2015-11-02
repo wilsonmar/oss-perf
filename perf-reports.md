@@ -153,6 +153,7 @@ CONCLUSION 2: **JMeter under-reports** the total response times experienced by r
 ### Scalability Reports</a>
 Scalability runs identify the impact of changing the number of machines or other capacity.
 The entire set of metrics can be collected with each run.
+
 However, the usual metrics measured is **response time** (in seconds or milliseconds) 
 and **processing throughput** (such as the number of requests processed per second).
 
