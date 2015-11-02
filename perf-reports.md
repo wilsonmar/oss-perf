@@ -13,7 +13,7 @@ There are different types of performance testing to measure various risks:
    
    * <a href="#LoadTestReports">**Load tests**</a> stop testing at a targeted load level (for certification).
    
-   * **Scalability tests** measure how much capacity really improves when additional/less hardware is added/removed.
+   * <a href="#ScalabilityReports">**Scalability tests**</a> measure how much capacity really improves when additional/less hardware is added/removed.
    
    * **Endurance tests** measure gradual useage of resources (memory, disk space, etc.) over a longer run times.
    
@@ -147,6 +147,28 @@ CONCLUSION 1: Chrome is significantly slower than Firefox.
 
 CONCLUSION 2: **JMeter under-reports** the total response times experienced by real users because it focuses on the 
 **transfer of files** between client and server.
+
+
+<a id="ScalabilityReports">
+### Scalability Reports</a>
+Scalability runs identify the impact of changing the number of machines or other capacity.
+The entire set of metrics can be collected with each run.
+However, the usual metrics measured is **response time** (in seconds or milliseconds) 
+and **processing throughput** (such as the number of requests processed per second).
+
+The line chart below plots points both the throughput rate and a characteristic of the workload 
+(the percentage of requests that are read vs. write):
+![scability-rps vs reads](https://cloud.githubusercontent.com/assets/300046/10894105/bf5bfa86-8169-11e5-83d3-727469c7d516.jpg)
+
+Surprisingly, the solid red line shows the highest (fastest) processing rate, for use of 3 servers.
+This is from <a target="_blank" href="https://zookeeper.apache.org/doc/trunk/zookeeperOver.html#fg_zkPerfRW">
+measurements of a ZooKeeper</a> cluster which coordinates status from leader to followers.
+
+CONCLUSION 1: When only writes to the database are processed, 
+adding more servers generally **decreases** the total rate of requests processed per second.
+
+CONCLUSION 2: When a system processes more than 75% reads,
+more than 3 servers are needed
 
 
 <a name="Analysis">
