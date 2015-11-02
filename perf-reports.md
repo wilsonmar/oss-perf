@@ -162,7 +162,7 @@ The line chart below plots points both the throughput rate and a characteristic 
 
 <a target="_blank" title="XY chart with curve-fit of throughput" 
 href="https://zookeeper.apache.org/doc/trunk/zookeeperOver.html#fg_zkPerfRW">
-<a img src="https://cloud.githubusercontent.com/assets/300046/10894105/bf5bfa86-8169-11e5-83d3-727469c7d516.jpg">
+<a img src="https://cloud.githubusercontent.com/assets/300046/10894105/bf5bfa86-8169-11e5-83d3-727469c7d516.jpg"></a>
 
 The solid red line shows the fastest processing rate, when 3 servers are being used.
 This is from <a target="_blank" href="https://zookeeper.apache.org/doc/trunk/zookeeperOver.html#fg_zkPerfRW">
