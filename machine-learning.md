@@ -60,11 +60,11 @@ with enterprise support.
  The installer locates Java:
  * Found: /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
  
- The installer adds:
- * Spark: /Users/wmar/PredictionIO/vendors/spark-1.5.1
- * Elasticsearch: /Users/wmar/PredictionIO/vendors/elasticsearch-1.4.4
- * HBase: /Users/wmar/PredictionIO/vendors/hbase-1.0.0
- * ZooKeeper: /Users/wmar/PredictionIO/vendors/zookeeper
+ The installer adds in folder **/Users/$USERID/PredictionIO/vendors**:
+ * spark-1.5.1
+ * elasticsearch-1.4.4
+ * hbase-1.0.0
+ * <a href="#Zookeeper">zookeeper</a>
 
  Elasticsearch is the default metadata store for PredictionIO, but PostgreSQL and MySQL are offered too. 
  HBase
@@ -297,6 +297,20 @@ The defaults are:
  * Vendor path (/Users/wmar/PredictionIO/vendors): 
 
 
+<a id="Zookeeper">
+### Zookeeper</a>
+Zookeeper keeps in memory a hierarchy of znodes containing the state of the configuration of a distributed system.
+Its data is replicated among an ensemble.
+It sends heartbeats and watch events using a custom atomic messaging protocol.
+Changes to znodes (write requests from clients) are forwarded to a single leader server which broadcast to follower servers.
+, receive message proposals from the leader and agree upon message delivery. The messaging layer takes care of replacing leaders on failures and syncing followers with leaders.
+Developed at Yahoo! Research.
+to synch itself, including ACL changes.
+
+from https://zookeeper.apache.org/doc/trunk/zookeeperOver.html 
+ for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
+ 
+ 
 <a id="Alternatives">
 ## Alternative software</a>
 http://jmlr.org/mloss/ provides a list of open-source software for machine learning.
