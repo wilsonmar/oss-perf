@@ -13,9 +13,11 @@ The major steps:
 
  <a href="#JMeterTricks"> 4). Edit the template to address more risks.</a>
  
- <a href="#JMeterGenSvc"> 5). Make custom JMeter generator web service template.</a>
+ <a href="#JMeterGenSvc"> 5). Make custom JMeter generator web service.</a>
 
  <a href="#JMeterGenWebsite"> 6). Make generator available from a website.</a>
+
+ <a href="#JMeterGenRefine"> 7). Refine generator code.</a>
 
 <hr />
 
@@ -174,9 +176,10 @@ There are different invalid values for each data type.
 <hr />
 
 <a id="JMeterGenSvc"> 
-## 5). Make custom JMeter generator web service template</a>
+## 5). Make custom JMeter generator web service</a>
 
-
+0. Test
+1. Pull request to incorporate into swagger-codegen.
 
 
 <a id="JMeterGenWebsite"> 
@@ -186,6 +189,10 @@ Once done, create a UI front-end online generator web page like
 <a target="_blank" href="https://generator.swagger.io/"> https://generator.swagger.io</a>
 
 <img width="142" alt="swagger online-generator" src="https://cloud.githubusercontent.com/assets/300046/10910089/32f5c4d0-81f2-11e5-9c9e-97f74c46aa5b.png">
+
+
+<a id="JMeterGenRefine"> 
+## 7). Refine generator code.</a>
 
 
 
