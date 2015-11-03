@@ -33,9 +33,7 @@ The major steps:
 
  The response:
 
- ```
- ["android","async-scala","csharp","dart","flash","java","objc","perl","php","python","qt5cpp","ruby","scala","dynamic-html","html","swagger","swagger-yaml","swift","tizen","typescript-angular","typescript-node","akka-scala","CsharpDotNet2"]
- ```
+ `["android","async-scala","csharp","dart","flash","java","objc","perl","php","python","qt5cpp","ruby","scala","dynamic-html","html","swagger","swagger-yaml","swift","tizen","typescript-angular","typescript-node","akka-scala","CsharpDotNet2"]`
 
  Internally, the service makes use of <a href="swagger-codegen.md">
  swagger-codegen</a>,
