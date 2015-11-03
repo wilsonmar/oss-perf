@@ -144,10 +144,16 @@ Setup a JMeter code generator like the Ruby API client generator web service rea
  https://generator.swagger.io/api/gen/clients/java
  ```
 
- In the JSON response is a link to a zip file containing the ruby client specified:
+ In the JSON response is a link to a zip file containing the ruby client specified, like this one:
 
  ```
  {"code":"1446559952387","link":"https://generator.swagger.io/api/gen/download/1446559952387"}
+ ```
+
+ Copy the link and paste it in the address of an internet browser:
+
+ ```
+ https://generator.swagger.io/api/gen/download/1446559952387
  ```
 
 <a id="JMeterGenWebsite"> 
