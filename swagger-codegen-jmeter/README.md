@@ -79,9 +79,9 @@ That can be quite complicated, with calls to databases, etc.
  folder src/main/java/io/swagger/client
  ```
 
-0. Open another terminal to execute the client program.
+0. Use gradle (instead of maven) to build the client project run-time binary file.
 
-0. Use maven to build the client project run-time binary file.
+0. Open another terminal to execute the client program.
 
 swagger-codegen references a custom template defined in this repo.
 
