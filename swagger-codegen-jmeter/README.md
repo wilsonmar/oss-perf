@@ -5,9 +5,9 @@ beginning with the example at
 
 The major steps:
 
- <a href="#UsualJMeter"> 1). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
+ <a href="#SampleSwagger"> 1). Use swagger-codegen to create code for a Java client program.</a>
  
- <a href="#SampleSwagger"> 2). Use swagger-codegen to create code for a Java client program.</a>
+ <a href="#UsualJMeter"> 2). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
  
  <a href="#SwaggerJMeter"> 3). Edit the template to produce basic JMeter code.</a>
 
@@ -19,16 +19,9 @@ The major steps:
 
 <hr />
 
-<a id="UsualJMeter">
-### 1). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
-
-The example script is from ____, a leading authority on JMeter performance testing (@twitter, website).
-
-The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a> to address potential risks.
-
 
 <a id="SampleSwagger"> 
-### 2). Use swagger-codegen to create code for a Java client program.</a>
+### 1). Use swagger-codegen to create code for a Java client program.</a>
 
 0. Open a command-line terminal window.
 
@@ -90,6 +83,14 @@ The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a>
 0. Use maven to build the client project run-time binary file.
 
 swagger-codegen references a custom template defined in this repo.
+
+<a id="UsualJMeter">
+### 2). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
+
+The example script is from ____, a leading authority on JMeter performance testing (@twitter, website).
+
+The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a> to address potential risks.
+
 
 <a id="SwaggerJMeter"> 
 ### 3). Edit the template to produce basic JMeter code.</a>
