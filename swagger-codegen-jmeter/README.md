@@ -69,7 +69,7 @@ The run-time for JMeter is run like other languages generated:
 <hr />
 
 <a id="BadResponseCodes"></a>
-1). Recognize and handle problem HTTP response codes
+### 4.1). Recognize and handle problem HTTP response codes
 
  0. 400 (not found)
  0. 500 (server issues)
@@ -79,7 +79,7 @@ The run-time for JMeter is run like other languages generated:
 <hr />
 
 <a id="CleanHappyPath">
-## 2). Clean Happy paths</a>
+### 4.2). Clean Happy paths</a>
 Valid atomic calls with valid response codes
 
  2.1). POST new (user registration)
@@ -93,7 +93,7 @@ Valid atomic calls with valid response codes
 <hr />
 
 <a id="AtomicRunTypes">
-### 3). "run-type" parameter defines repeating processing strategies</a>
+### 4.3). "run-type" parameter defines repeating processing strategies</a>
 
  3.1) Repeat POST new to populate the database and identify how many can register all at once.
 
@@ -105,7 +105,7 @@ Valid atomic calls with valid response codes
 
 
 <a id="InvalidFieldValues">
-## 4). Invalid field values</a>
+### 4.4). Invalid field values</a>
 There are different invalid values for each data type.
 
   * Currency number has negative
@@ -115,7 +115,7 @@ There are different invalid values for each data type.
   * Credit card number has invalid checksum
 
 <a id="CrossFieldEdits">
-## 5) Cross-field edits</a>
+### 4.5) Cross-field edits</a>
 There are different invalid values for each data type.
 
   * Zip code out of state specified
@@ -123,7 +123,7 @@ There are different invalid values for each data type.
 
 <hr />
 <a id="JMeterWebsite"> 
-5). Make generator web service</a>
+## 5). Make generator web service</a>
 
 Setup a JMeter code generator like the Ruby API client generator web service reached by this code from a terminal:
 
