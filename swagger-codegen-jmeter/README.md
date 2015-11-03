@@ -3,7 +3,8 @@ emulate a lot of clients calling a REST API service defined in Swagger,
 beginning with the example at 
 <a target="_blank" href="http://petstore.swagger.io/"> http://petstore.swagger.io</a>
 
-The major steps:
+Bear in mind that we are not generating server code to respond to request from clients.
+That can be quite complicated, with calls to databases, etc.
 
  <a href="#SampleSwagger"> 1). Use swagger-codegen to create code for a Java client program.</a>
  
@@ -196,8 +197,13 @@ Once done, create a UI front-end online generator web page like
 
 
 <a id="Resources">
-## Resources</a>
-Sources:
+## API design tutorials</a>
+
+http://www.lynda.com/API-tutorials/Effective-Design-RESTful-APIs/166777-2.html
+44m Lynda video course by Keith Casey
+
+http://www.lynda.com/API-tutorials/Up-Running-Cloud-Service-APIs/151707-2.html
+1h 25m Lynda video course by Joseph Lowery
 
 https://www.youtube.com/watch?v=UuxKpmIrK4w
 API Testing and Debugging @ APIStrat SF
@@ -227,3 +233,6 @@ by Stormpath
 https://www.youtube.com/watch?v=qCdpTji8nxo
 How to create great APIs
 (at Facebook Developer Day 2013)
+
+http://www.lynda.com/Developer-Programming-Languages-tutorials/Building-Web-Services-Java-EE/149837-2.html
+
