@@ -168,7 +168,7 @@ The solid red line shows the fastest processing rate, when 3 servers are being u
 This is from <a target="_blank" href="https://zookeeper.apache.org/doc/trunk/zookeeperOver.html#fg_zkPerfRW">
 measurements of a ZooKeeper</a> cluster which coordinates status from leader to followers.
 
-CONCLUSION 1: When only writes to the database are processed, 
+CONCLUSION 1: When only writes to the database (0% reads) are processed, 
 adding more servers generally **decreases** the total rate of requests processed per second
 due to the overhead of communication among servers.
 
