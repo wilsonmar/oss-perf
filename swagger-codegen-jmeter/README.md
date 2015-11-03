@@ -125,13 +125,26 @@ There are different invalid values for each data type.
 <a id="JMeterWebsite"> 
 5). Make generator web service</a>
 
-Setup a JMeter code generator which responds to requests like the
-Ruby API client generator web service
-which responds with the URL to download the zipped code in the JSON response.
+Setup a JMeter code generator like the Ruby API client generator web service reached by this code from a terminal:
 
  ```
  curl -X POST -H "content-type:application/json" \
- -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' https://generator.swagger.io/api/gen/clients/ruby
+ -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' \
+ https://generator.swagger.io/api/gen/clients/ruby
+ ```
+
+ The code generated can be varied to java:
+ 
+ ```
+ curl -X POST -H "content-type:application/json" \
+ -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' \
+ https://generator.swagger.io/api/gen/clients/java
+ ```
+
+ In the JSON response is a link to a zip file containing the ruby client specified:
+
+ ```
+ {"code":"1446559952387","link":"https://generator.swagger.io/api/gen/download/1446559952387"}
  ```
 
 Once done, create a UI front-end online generator web page like 
