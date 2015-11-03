@@ -3,7 +3,7 @@
 This diagram <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
 is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
-<img name="Map" src="https://cloud.githubusercontent.com/assets/300046/10864229/0a6a00b8-7fad-11e5-9ddc-455c819b47d7.png"
+<img name="Map" src="https://cloud.githubusercontent.com/assets/300046/10912465/77d5fb18-81fe-11e5-96b4-552d608c7c79.png"
 usemap="#m_Map" border="0" width="100%">
 <map name="m_Map">
 <area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
