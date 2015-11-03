@@ -142,8 +142,6 @@ Valid atomic calls with valid response codes
  
  2.4). DELETE newly created, which keeps database empty.
 
-<hr />
-
 <a id="AtomicRunTypes">
 ### 4.3). "run-type" parameter defines repeating processing strategies</a>
 
