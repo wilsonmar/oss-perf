@@ -12,6 +12,8 @@ The major steps:
  <a href="#SwaggerJMeter"> 3). Edit the template to produce basic JMeter code.</a>
 
  <a href="#JMeterTricks"> 4). Edit the template to address more risks.</a>
+ 
+ <a href="#JMeterWebsite"> 5). Make generator available from a website.</a>
 
 <hr />
 
@@ -119,7 +121,26 @@ There are different invalid values for each data type.
   * Zip code out of state specified
   * Content-Type header doesn’t match the body
 
-## Resources:
+<hr />
+<a id="JMeterWebsite"> 
+5). Make generator web service</a>
+
+Setup a JMeter code generator which responds to requests like the
+Ruby API client generator web service
+which responds with the URL to download the zipped code in the JSON response.
+
+ ```
+ curl -X POST -H "content-type:application/json" \
+ -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' https://generator.swagger.io/api/gen/clients/ruby
+ ```
+
+Once done, create a UI front-end online generator web page like 
+<a target="_blank" href="https://generator.swagger.io/"> https://generator.swagger.io</a>
+
+
+
+<a id="Resources">
+## Resources</a>
 Sources:
 
 https://www.youtube.com/watch?v=UuxKpmIrK4w
