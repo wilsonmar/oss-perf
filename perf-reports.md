@@ -169,8 +169,9 @@ This is from <a target="_blank" href="https://zookeeper.apache.org/doc/trunk/zoo
 measurements of a ZooKeeper</a> cluster which coordinates status from leader to followers.
 
 CONCLUSION 1: When only writes to the database (0% reads) are processed, 
-adding more servers generally **decreases** the total rate of requests processed per second
-due to the overhead of communication among servers.
+adding more servers generally **decreases** the total rate of requests processed per second.
+This is understandable due to the **overhead of communication** occuring among servers to keey each other sync'd.
+The more servers, the more communication occurs.
 
 CONCLUSION 2: When a system processes more than 75% reads,
 more than 3 servers are needed
