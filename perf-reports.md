@@ -3,7 +3,7 @@ and the <a href="perf-test-types.md"> types of performance tests to measure expo
 
 There are different types of performance testing to measure various risks:
 
-   * <a href="#PingTest">**Ping tests**</a> measure variability in reaching the server so that spikes in network or server availability will not confound performance test results.
+   * <a href="#PingTest">**Ping runs**</a> measure variability in reaching the server so that spikes in network or server availability will not confound performance test results.
    
    * <a href="#SpeedTestReport">**Speed tests**</a> involve single users to identify response times from a range of app functionality.
    
@@ -150,7 +150,7 @@ CONCLUSION 2: **JMeter under-reports** the total response times experienced by r
 
 
 <a id="ScalabilityReports">
-### Scalability Reports</a>
+### Scalability test reports</a>
 Scalability runs identify the impact of changing the number of machines or other capacity.
 The entire set of metrics can be collected with each run.
 
