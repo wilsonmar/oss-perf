@@ -13,7 +13,7 @@ The major steps:
 
  <a href="#JMeterTricks"> 4). Edit the template to address more risks.</a>
  
- <a href="#JMeterGenSvc"> 5). Make generator web service.</a>
+ <a href="#JMeterGenSvc"> 5). Make custom JMeter generator web service template.</a>
 
  <a href="#JMeterGenWebsite"> 6). Make generator available from a website.</a>
 
@@ -174,51 +174,9 @@ There are different invalid values for each data type.
 <hr />
 
 <a id="JMeterGenSvc"> 
-## 5). Make generator web service</a>
+## 5). Make custom JMeter generator web service template</a>
 
-Setup a JMeter code generator like the Ruby API client generator web service reached by this code from a terminal:
 
- ```
- curl -X POST -H "content-type:application/json" \
- -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' \
- https://generator.swagger.io/api/gen/clients/ruby
- ```
-
-0. The code generated can be varied to produce java client code:
- 
- ```
- curl -X POST -H "content-type:application/json" \
- -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' \
- https://generator.swagger.io/api/gen/clients/java
- ```
-
-0. In the JSON response is a link to a zip file containing the ruby client specified, like this one:
-
- ```
- {"code":"1446559952387","link":"https://generator.swagger.io/api/gen/download/1446559952387"}
- ```
-
-0. Copy the link and paste it in the address of an internet browser:
-
- ```
- https://generator.swagger.io/api/gen/download/1446559952387
- ```
-
-0. Use the Mac Finder or Windows Explorer to locate the download.
-
-0. Unzip to produce the **java-client** folder.
-
-0. Open the folder to examine the files
- 
- ```
- build.gradle
- gradle.properties
- pom.xml
- settings.gradle
- folder src/main/java/io/swagger/client
- ```
-
- 2. Open the folder to examine the files
 
 
 <a id="JMeterGenWebsite"> 
