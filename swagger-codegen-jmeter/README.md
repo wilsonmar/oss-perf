@@ -177,6 +177,9 @@ There are different invalid values for each data type.
 <a id="JMeterGenSvc"> 
 ## 5). Make custom JMeter generator web service</a>
 
+http://www.lynda.com/JavaScript-tutorials/JavaScript-JSON/114901-2.html
+1h 12m video course
+
 0. Test
 1. Pull request to incorporate into swagger-codegen.
 
