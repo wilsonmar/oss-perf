@@ -187,6 +187,7 @@ There are different invalid values for each data type.
 
 Once done, create a UI front-end online generator web page like 
 <a target="_blank" href="https://generator.swagger.io/"> https://generator.swagger.io</a>
+
 <a target="_blank" href="https://generator.swagger.io/">
 <img width="142" alt="swagger online-generator" src="https://cloud.githubusercontent.com/assets/300046/10910089/32f5c4d0-81f2-11e5-9c9e-97f74c46aa5b.png"></a>
 
