@@ -128,8 +128,6 @@ The run-time for JMeter is run like other languages generated:
  0. etc.
 
 
-<hr />
-
 <a id="CleanHappyPath">
 ### 4.2). Clean Happy paths</a>
 Valid atomic calls with valid response codes
