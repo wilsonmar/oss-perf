@@ -7,7 +7,7 @@ The major steps:
 
  <a href="#SampleSwagger"> 1). Use swagger-codegen to create code for a Java client program.</a>
  
- <a href="#UsualJMeter"> 2). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
+ <a href="#UsualJMeter"> 2). Create JMeter resources for the sample API, manually.</a>
  
  <a href="#SwaggerJMeter"> 3). Edit the template to produce basic JMeter code.</a>
 
@@ -85,7 +85,7 @@ The major steps:
 swagger-codegen references a custom template defined in this repo.
 
 <a id="UsualJMeter">
-### 2). Create JMeter resources for the sample API using conventional approaches (Badboy, etc.).</a>
+### 2). Create JMeter resources for the sample API, manually.</a>
 
 The example script is from ____, a leading authority on JMeter performance testing (@twitter, website).
 
