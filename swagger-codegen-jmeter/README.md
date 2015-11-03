@@ -136,7 +136,7 @@ Setup a JMeter code generator like the Ruby API client generator web service rea
  https://generator.swagger.io/api/gen/clients/ruby
  ```
 
- The code generated can be varied to java:
+0. The code generated can be varied to produce java client code:
  
  ```
  curl -X POST -H "content-type:application/json" \
@@ -144,17 +144,32 @@ Setup a JMeter code generator like the Ruby API client generator web service rea
  https://generator.swagger.io/api/gen/clients/java
  ```
 
- In the JSON response is a link to a zip file containing the ruby client specified, like this one:
+0. In the JSON response is a link to a zip file containing the ruby client specified, like this one:
 
  ```
  {"code":"1446559952387","link":"https://generator.swagger.io/api/gen/download/1446559952387"}
  ```
 
- Copy the link and paste it in the address of an internet browser:
+0. Copy the link and paste it in the address of an internet browser:
 
  ```
  https://generator.swagger.io/api/gen/download/1446559952387
  ```
+
+ 0. Use the Mac Finder or Windows Explorer to locate the download.
+ 1. Unzip to produce the **java-client** folder.
+ 2. Open the folder to examine the files
+ 
+ ```
+ build.gradle
+ gradle.properties
+ pom.xml
+ settings.gradle
+ folder src/main/java/io/swagger/client
+ ```
+
+ 2. Open the folder to examine the files
+
 
 <a id="JMeterGenWebsite"> 
 ## 6). Make generator available from a website.</a>
