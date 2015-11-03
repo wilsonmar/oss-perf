@@ -176,6 +176,12 @@ The more servers, the more communication occurs.
 CONCLUSION 2: When a system processes more than 75% reads,
 more than 3 servers are needed
 
+Another line chart (from the 2012 VLDB conference) shown in <a target="_blank" href="https://www.youtube.com/watch?v=-N9i-YXoQBE&t=24m03s">this video</a>
+from Feb 2014 by Eddie Satterly (@eddie_satterly), Chief Big Data Evangelist shows how Cassandra databases 
+processes higher rate when additional servers are added.
+
+<img alt="VLDB processing rate 2012" src="https://cloud.githubusercontent.com/assets/300046/10899165/50a2cb08-818f-11e5-98d4-78becd9909eb.png">
+
 
 <a name="Analysis">
 ### Analysis of run results</a>
