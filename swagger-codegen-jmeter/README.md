@@ -13,7 +13,9 @@ The major steps:
 
  <a href="#JMeterTricks"> 4). Edit the template to address more risks.</a>
  
- <a href="#JMeterWebsite"> 5). Make generator available from a website.</a>
+ <a href="#JMeterGenSvc"> 5). Make generator web service.</a>
+
+ <a href="#JMeterGenWebsite"> 6). Make generator available from a website.</a>
 
 <hr />
 
@@ -122,7 +124,8 @@ There are different invalid values for each data type.
   * Content-Type header doesn’t match the body
 
 <hr />
-<a id="JMeterWebsite"> 
+
+<a id="JMeterGenSvc"> 
 ## 5). Make generator web service</a>
 
 Setup a JMeter code generator like the Ruby API client generator web service reached by this code from a terminal:
@@ -146,6 +149,9 @@ Setup a JMeter code generator like the Ruby API client generator web service rea
  ```
  {"code":"1446559952387","link":"https://generator.swagger.io/api/gen/download/1446559952387"}
  ```
+
+<a id="JMeterGenWebsite"> 
+## 6). Make generator available from a website.</a>
 
 Once done, create a UI front-end online generator web page like 
 <a target="_blank" href="https://generator.swagger.io/"> https://generator.swagger.io</a>
