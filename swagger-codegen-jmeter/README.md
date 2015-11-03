@@ -156,9 +156,11 @@ Setup a JMeter code generator like the Ruby API client generator web service rea
  https://generator.swagger.io/api/gen/download/1446559952387
  ```
 
- 0. Use the Mac Finder or Windows Explorer to locate the download.
- 1. Unzip to produce the **java-client** folder.
- 2. Open the folder to examine the files
+0. Use the Mac Finder or Windows Explorer to locate the download.
+
+0. Unzip to produce the **java-client** folder.
+
+0. Open the folder to examine the files
  
  ```
  build.gradle
