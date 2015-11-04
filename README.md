@@ -1,10 +1,9 @@
 <a id="TheVision"></a>
 <a name="Diagram"> 
-This diagram <a target="_blank" href="http://www.youtube.com/watch?v=GSSBg7VefqY">
+This diagram <a target="_blank" href="">
 is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
-<img name="Map" lt="oss-perf-10-components"
-src="https://cloud.githubusercontent.com/assets/300046/10922653/26ae64e0-8231-11e5-8847-9be4ead63a14.png"
+<img name="Map" alt="oss-perf-10-components" src="https://cloud.githubusercontent.com/assets/300046/10928089/5d2426bc-825a-11e5-8329-39e13d49ca9e.png"
 usemap="#m_Map" border="0" width="100%">
 <map name="m_Map">
 <area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
