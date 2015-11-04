@@ -28,7 +28,7 @@ That can be quite complicated, with calls to databases, etc.
 
 0. Open a command-line terminal window.
 
-0. Obtain a list of languages that the Swagger client generation web service can create.
+0. In a browser, obtain a list of languages that the Swagger client generation web service can create.
 
  ```
  https://generator.swagger.io/api/gen/clients
@@ -38,12 +38,7 @@ That can be quite complicated, with calls to databases, etc.
 
  `["android","async-scala","csharp","dart","flash","java","objc","perl","php","python","qt5cpp","ruby","scala","dynamic-html","html","swagger","swagger-yaml","swift","tizen","typescript-angular","typescript-node","akka-scala","CsharpDotNet2"]`
 
- Internally, the service makes use of <a href="swagger-codegen.md">
- swagger-codegen</a>,
- which runs Java 7 called from within a node.js 
- server created within Docker.
-
-0. Copy this web service request to your clipboard and paste into a terminal command line, but don't execute yet.
+0. Copy a web service (such as "java") to your clipboard and paste into a terminal command line, but don't execute yet.
  
  ```
  curl -X POST -H "content-type:application/json" \
@@ -51,7 +46,7 @@ That can be quite complicated, with calls to databases, etc.
  https://generator.swagger.io/api/gen/clients/java
  ```
 
-0. Change the language specification (instead of "java" in the example), then press Enter to execute.
+0. If you want to generate for a different language than java, backspace to change the language specification (instead of "java" in the sample request above), then press Enter to execute.
 
 0. In the JSON response is a link to a zip file containing the ruby client specified, like this one:
 
