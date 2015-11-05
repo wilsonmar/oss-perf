@@ -77,7 +77,6 @@ referencing the build.gradle file (containing Groovy program) declarative code.
 
 0. Open another terminal to execute the client program.
 
-swagger-codegen references a custom template defined in this repo.
 
 <a id="UsualJMeter">
 ### 2). Create JMeter resources for the sample API, manually.</a>
@@ -90,6 +89,8 @@ The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a>
 <a id="SwaggerJMeter"> 
 ### 3). Edit the template to produce basic JMeter code.</a>
 The sample client generated was from a **template**.
+
+swagger-codegen references a custom template defined in this repo.
 
 The run-time for JMeter is run like other languages generated:
 
