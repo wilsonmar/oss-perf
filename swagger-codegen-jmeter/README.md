@@ -26,55 +26,33 @@ That can be quite complicated, with calls to databases, etc.
 
 
 <a id="SampleSwagger"> 
-### 1). Use swagger-codegen to create code for a Java client program.</a>
+### 1). Use swagger-codegen to manually generate code for a Java client program.</a>
 
-0. Open a command-line terminal window.
+0. Open <a target="_blank" href="http://editor.swagger.io/#/"> http://editor.swagger.io/#</a>
 
-0. In a browser, obtain a list of languages that the Swagger client generation web service can create.
-
- ```
- https://generator.swagger.io/api/gen/clients
- ```
-
- The response:
-
- `["android","async-scala","csharp","dart","flash","java","objc","perl","php","python","qt5cpp","ruby","scala","dynamic-html","html","swagger","swagger-yaml","swift","tizen","typescript-angular","typescript-node","akka-scala","CsharpDotNet2"]`
-
-0. Copy a web service (such as "java") to your clipboard and paste into a terminal command line, but don't execute yet.
- 
- ```
- curl -X POST -H "content-type:application/json" \
- -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' \
- https://generator.swagger.io/api/gen/clients/java
- ```
-
-0. If you want to generate for a different language than java, backspace to change the language specification (instead of "java" in the sample request above), then press Enter to execute.
-
-0. In the JSON response is a link to a zip file containing the ruby client specified, like this one:
-
- ```
- {"code":"1446559952387","link":"https://generator.swagger.io/api/gen/download/1446559952387"}
- ```
-
-0. Copy the link returned and paste it in the address of an internet browser:
-
- ```
- https://generator.swagger.io/api/gen/download/1446559952387
- ```
+0. Copy the Swagger-spec JSON file for your project to your invisible clipboard. 
+0. Click on the text page at the left of the swagger editor.
+0. Select **Generate Client**, then Java to follow this tutorial (or JMeter when it's ready). 
+The file should be downloaded to your browser Downloads folder.
 
 0. Use the Mac Finder or Windows Explorer to locate the download.
 
 0. Unzip to produce the **java-client** folder.
 
-0. Open the folder to examine the files. Drill into the src folder.
+0. Open the folder to examine the files.
  
  ```
  build.gradle
  gradle.properties
  pom.xml
  settings.gradle
- folder src/main/java/io/swagger/client
+ src
  ```
+
+0. Double-click to drill into the src folder: src/main/java/io/swagger/client
+
+ Notice that ASTW, the source code is not internationalized. 
+ English text is embedded into the programming source text rather than references to translations in a resource file.
 
 0. Install Gradle if you haven't already.
 On a Mac:
@@ -217,6 +195,41 @@ Once done, create a UI front-end online generator web page like
 
 This is covered in the <a href="../run-variations.md/">Run variations</a> page.
 
+This approach would require interaction with a web service interface to Swagger.
+
+0. Open a command-line terminal window.
+
+0. In a browser, obtain a list of languages that the Swagger client generation web service can create.
+
+ ```
+ https://generator.swagger.io/api/gen/clients
+ ```
+
+ The response:
+
+ `["android","async-scala","csharp","dart","flash","java","objc","perl","php","python","qt5cpp","ruby","scala","dynamic-html","html","swagger","swagger-yaml","swift","tizen","typescript-angular","typescript-node","akka-scala","CsharpDotNet2"]`
+
+0. Copy a web service (such as "java") to your clipboard and paste into a terminal command line, but don't execute yet.
+ 
+ ```
+ curl -X POST -H "content-type:application/json" \
+ -d '{"swaggerUrl":"http://petstore.swagger.io/v2/swagger.json"}' \
+ https://generator.swagger.io/api/gen/clients/java
+ ```
+
+0. If you want to generate for a different language than java, backspace to change the language specification (instead of "java" in the sample request above), then press Enter to execute.
+
+0. In the JSON response is a link to a zip file containing the ruby client specified, like this one:
+
+ ```
+ {"code":"1446559952387","link":"https://generator.swagger.io/api/gen/download/1446559952387"}
+ ```
+
+0. Copy the link returned and paste it in the address of an internet browser:
+
+ ```
+ https://generator.swagger.io/api/gen/download/1446559952387
+ ```
 
 <a id="Resources">
 ## API design tutorials</a>
