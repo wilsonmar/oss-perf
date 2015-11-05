@@ -79,13 +79,13 @@ referencing the build.gradle file (containing Groovy program) declarative code.
  ```
 
 0. A **build** folder should now appear.
-0. cd into the build/libs folder which contains file swagger-java-client-1.0.0.jar.
-0. If you don't want temp and the other files generated:
+0. Just to look, cd into the build/libs folder which contains file swagger-java-client-1.0.0.jar.
+0. Because a manifest is not generated:
 
  ```
- gradle clean
+ jar cmvf META-INF/MANIFEST.MF <new-jar-filename>.jar <files to include>
  ```
- 
+
 0. Use tab key to auto-complete command to **execute** the client program generated:
 
  ```
@@ -94,6 +94,11 @@ referencing the build.gradle file (containing Groovy program) declarative code.
  
  NOTE: "swagger-java-client" was specified in the settings.gradle file rootProject.name property value.
  
+0. If you don't want temp and the other files generated:
+
+ ```
+ gradle clean
+ ```
  
 <a id="UsualJMeter">
 ### 2). Create JMeter resources for the sample API, manually.</a>
