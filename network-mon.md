@@ -11,10 +11,18 @@ developed by Monica Sarbu and Tudor Golubenco.
 0. Its home page is now at https://www.elastic.co/products/beats/packetbeat under https://www.elastic.co/products/beats
    with https://github.com/elastic/packetbeat
 
-0. View https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html
-
 0. Click Download. The Mac version I got is packetbeat-1.0.0-beta4-darwin.tgz
-1. Unzip the gunzip file to folder packetbeat-1.0.0-beta4-darwin. It contains 3 files:
+
+   Or use commands from https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html
+
+   ```
+   curl -L -O https://download.elastic.co/beats/packetbeat/packetbeat-1.0.0-rc1-darwin.tgz
+tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
+   ```
+
+   QUESTION: Which is newer?
+
+0. Unzip the gunzip file to folder packetbeat-1.0.0-beta4-darwin. It contains 3 files:
 
   * packetbeat (no file extension).
   * packetbeat.template.json (containing refresh interval, etc.) 
@@ -23,7 +31,23 @@ developed by Monica Sarbu and Tudor Golubenco.
  NOTE: The yml file says to consult docs at https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html
    but a 404 results.
 
-0. Install on application server under test to sniff the network promiscuously.
+0. Setup Logstash per https://www.elastic.co/guide/en/beats/libbeat/1.0.0-rc1/getting-started.html#logstash-setup
+
+0. Open the yml file using a text editor (such as Sublime).
+1. 
+
+0. Install on application server under test to sniff the network.
+
+   On Mac: ???
+   ```
+   sudo /usr/sbin/installer -pkg packetbeat-1.0.0-beta4-darwin.pkg -target / 
+    ```
+
+   On Debian, its:
+   ```
+   sudo dpkg -i packetbeat-1.0.0\rc1_amd64.deb
+   ```
+
 It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL, Redis, Thrift-RPC.
 
 0. The Packetbeat agent ships to Elastisearch a JSON object for each transaction
