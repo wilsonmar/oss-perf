@@ -9,8 +9,9 @@ In 2015, Elatic.io acquired Packetbeats after acquired it from Berlin, German st
 developed by Monica Sarbu and Tudor Golubenco.
 
 0. Its home page is now at https://www.elastic.co/products/beats/packetbeat under https://www.elastic.co/products/beats
+   with https://github.com/elastic/packetbeat
 
-0. View https://github.com/elastic/packetbeat
+0. View https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html
 
 0. Click Download. The Mac version I got is packetbeat-1.0.0-beta4-darwin.tgz
 1. Unzip the gunzip file to folder packetbeat-1.0.0-beta4-darwin. It contains 3 files:
@@ -21,6 +22,22 @@ developed by Monica Sarbu and Tudor Golubenco.
 
  NOTE: The yml file says to consult docs at https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html
    but a 404 results.
+
+0. Install on application server under test to sniff the network promiscuously.
+It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL, Redis, Thrift-RPC.
+
+0. The Packetbeat agent creates a JSON object for each transaction
+   after correlating requests and responses. This is a hugh time saving vs. Wireshark.
+   The transactions are shipped to Elastisearch by <a href="#Libbeat">Libbeat</a>.
+
+![packetbeat-packetinfo](https://cloud.githubusercontent.com/assets/300046/10984545/fb9e0144-83ce-11e5-8eb1-0d35e626594e.png)
+
+0. In Kibana, select a pre-defined dashboard.
+
+* Get real-time logical topology view
+* Identify slow queries in DB
+* Zoom in on transactions that causes peak 
+
 
 
 <a id="Social">
