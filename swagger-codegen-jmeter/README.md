@@ -20,6 +20,8 @@ That can be quite complicated, with calls to databases, etc.
 
  <a href="#JMeterGenRefine"> 7). Refine generator code.</a>
 
+ <a href="#SwaggerJMeterGroup"> 8). Run several at a time.</a>
+
 <hr />
 
 
@@ -210,6 +212,10 @@ Once done, create a UI front-end online generator web page like
 <a id="JMeterGenRefine"> 
 ## 7). Refine generator code.</a>
 
+<a id="SwaggerJMeterGroup"> 
+## 8). Run several at a time.</a>
+
+This is covered in the <a href="../runvariations.md/">Run variations</a> page.
 
 
 <a id="Resources">
