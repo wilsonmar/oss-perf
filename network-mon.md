@@ -32,13 +32,27 @@ It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL
 
    ![packetbeat-packetinfo](https://cloud.githubusercontent.com/assets/300046/10984545/fb9e0144-83ce-11e5-8eb1-0d35e626594e.png)
 
+   Each shipper has a **service tag**.
+
 0. In Kibana, select a pre-defined dashboard.
 
-* Get real-time logical topology view
-* Identify slow queries in DB
-* Zoom in on transactions that causes peak 
+   * Get real-time logical topology view
+   * Identify slow queries in DB
+   * Zoom in on transactions that causes peak 
 
+   Widgets:
+   
+   * Requests per second
+   * HTTP codes by URL
+   * Evolution of error codes
+   * Top 10 most frequent HTTP requests
+   * Top 10 slowest HTTP requests by 99p
 
+0. Alerts based on real-time monitoring, such as:
+
+   *  responsetime 99p > 100 ms
+   *  error rate > 5%
+   *  number of 5xx HTTP response per minute > 10
 
 <a id="Social">
 ## Social</a>
