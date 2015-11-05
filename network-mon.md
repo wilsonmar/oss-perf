@@ -16,8 +16,12 @@ developed by Monica Sarbu and Tudor Golubenco.
   * packetbeat.template.json (containing refresh interval, etc.) 
   * packetbeat.yml (configuration)
 
-0. Consult docs at https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html
+0. The yml file says to consult docs at https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html
+   but a 404 results.
 
+<a id="Libbeat">
+## Libbeat</a>
+Packetbeat makes use of
  libbeat, the open source framework for building Elasticsearch data shippers. 
  at https://github.com/elastic/libbeat
  
