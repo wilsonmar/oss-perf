@@ -84,8 +84,12 @@ referencing the build.gradle file (containing Groovy program) declarative code.
  gradle clean
  ```
  
-0. Open another terminal to execute the client program.
+0. Use tab key to auto-complete command to execute the client program generated:
 
+ ```
+ javac swagger-java-client-1.0.0.jar 
+ ```
+ 
 
 <a id="UsualJMeter">
 ### 2). Create JMeter resources for the sample API, manually.</a>
