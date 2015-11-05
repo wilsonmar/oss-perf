@@ -28,7 +28,8 @@ That can be quite complicated, with calls to databases, etc.
 <a id="SampleSwagger"> 
 ### 1). Use swagger-codegen to manually generate code for a Java client program.</a>
 
-0. Open <a target="_blank" href="http://editor.swagger.io/#/"> http://editor.swagger.io/#</a>
+0. Open <a target="_blank" href="http://editor.swagger.io/#/"> http://editor.swagger.io/#</a>. 
+1. Click "Got it" if it's your first time at the site.
 
 0. Copy the Swagger-spec JSON file for your project to your invisible clipboard. 
 0. Click on the text page at the left of the swagger editor.
