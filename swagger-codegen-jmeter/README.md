@@ -141,7 +141,6 @@ QUESTION: Is there a tutorial on this?
 
 <a href="#Resources">Videos</a>
 
-<hr />
 
 <a id="BadResponseCodes"></a>
 ### 4.1). Recognize and handle problem HTTP response codes
