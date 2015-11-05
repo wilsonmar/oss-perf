@@ -39,7 +39,7 @@ The file should be downloaded to your browser Downloads folder.
 0. Use the Mac Finder or Windows Explorer to locate the download.
 
 0. Unzip to produce the **java-client** folder.
-
+0. Copy the folder to your workspace folder.
 0. Open the folder to examine the files.
  
  ```
@@ -61,6 +61,8 @@ On a Mac:
  ```
  brew update
  brew install gradle
+ gradle --help
+ gradle tasks
  ```
  
  More info on Gradle:
@@ -71,10 +73,17 @@ On a Mac:
 referencing the build.gradle file (containing Groovy program) declarative code.
 
  ```
- gradle --help
- gradle tasks
+ gradle build
  ```
 
+0. A **build** folder should now appear.
+0. cd into the build/libs folder which contains file swagger-java-client-1.0.0.jar.
+0. If you don't want temp and the other files generated:
+
+ ```
+ gradle clean
+ ```
+ 
 0. Open another terminal to execute the client program.
 
 
