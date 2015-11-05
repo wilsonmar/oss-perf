@@ -1,4 +1,6 @@
-Our objective here is to identify the most throughput of work at the least cost.
+The approach here is to completely <strong>automate</strong> test runs so that
+servers can be provisioned, all software deployed, and results obtained and analyzed
+without human attention.
 
 Experimentation is needed because there are interactions among the various <a href="configs.md">configurations:
 
@@ -6,16 +8,16 @@ Experimentation is needed because there are interactions among the various <a hr
   * OS selection (such as Debian vs. Windows, etc).
   * VM
   * App Configuration settings (such as maximum threads).
+  * Various "headless" APIs
+  * Various UI
 </a>
 
-The approach here is to completely <strong>automate</strong> test runs so that
-servers can be provisioned, all software deployed, and results obtained and analyzed
-without human attention.
-
+Our objective here is to identify the most throughput of work at the least cost.
 This requires:
 
   * Server configuration settings and logic be specified as code rather than within shell scripts.
   * Applications look externally in parameter files rather than having it hard-coded in the source code.
+  * A way to select what to test, how often, using what data, etc.
 
 There are methematical techniques (such as "Design of Experiments") that can reduce the number of runs
 necessary to obtain a statistically valid results.
