@@ -26,7 +26,7 @@ developed by Monica Sarbu and Tudor Golubenco.
 0. Install on application server under test to sniff the network promiscuously.
 It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL, Redis, Thrift-RPC.
 
-0. The Packetbeat agent creates a JSON object for each transaction
+0. The Packetbeat agent ships to Elastisearch a JSON object for each transaction
    after correlating requests and responses. This is a hugh time saving vs. Wireshark.
    The transactions are shipped to Elastisearch by <a href="#Libbeat">Libbeat</a>.
 
