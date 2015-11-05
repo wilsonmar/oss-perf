@@ -215,7 +215,7 @@ Once done, create a UI front-end online generator web page like
 <a id="SwaggerJMeterGroup"> 
 ## 8). Run several at a time.</a>
 
-This is covered in the <a href="../runvariations.md/">Run variations</a> page.
+This is covered in the <a href="../run-variations.md/">Run variations</a> page.
 
 
 <a id="Resources">
