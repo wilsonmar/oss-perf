@@ -30,7 +30,7 @@ It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL
    after correlating requests and responses. This is a hugh time saving vs. Wireshark.
    The transactions are shipped to Elastisearch by <a href="#Libbeat">Libbeat</a>.
 
-![packetbeat-packetinfo](https://cloud.githubusercontent.com/assets/300046/10984545/fb9e0144-83ce-11e5-8eb1-0d35e626594e.png)
+   ![packetbeat-packetinfo](https://cloud.githubusercontent.com/assets/300046/10984545/fb9e0144-83ce-11e5-8eb1-0d35e626594e.png)
 
 0. In Kibana, select a pre-defined dashboard.
 
