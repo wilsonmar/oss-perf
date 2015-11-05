@@ -16,6 +16,22 @@ This means a constant scan comparing previous history for each transaction.
 Data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
 
 
+<a id="Why">
+## Why this</a>
+If our objective is to take action to resolve anomalies the quickest possible time,
+we know that simply calculating averages and standard deviation statistics is not enough
+because it's time-consuming even for an expert to figure out what is wrong
+among the mass of data being churned out.
+
+There is so much going on that it's difficult to understand the **relationships among the data**,
+to correlate cause vs. effect, 
+and the cascade of events when a choke-point restricts capacity and cause performance bottlenecks.
+
+
+<a id="Statistics">
+## Statistics</a>
+The first step is 
+
 <a id="ToolChoices">
 ## Choice of tools: Python</a>
 Python has become a go-to programming language for math, science, and statistics 
