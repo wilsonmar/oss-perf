@@ -86,21 +86,15 @@ referencing the build.gradle file (containing Groovy program) declarative code.
  gradle clean
  ```
  
-0. Use tab key to auto-complete command to execute the client program generated
-since no manifest file was generated:
+0. Use tab key to auto-complete command to **execute** the client program generated:
 
  ```
- java -cp swagger-java-client-1.0.0.jar swagger-java-client.ClassName
+ java -jar build/libs/swagger-java-client-1.0.0.jar
  ```
  
  NOTE: "swagger-java-client" was specified in the settings.gradle file rootProject.name property value.
  
- If a manifest file was generated:
-
- ```
- java -jar swagger-java-client-1.0.0.jar
- ```
-
+ 
 <a id="UsualJMeter">
 ### 2). Create JMeter resources for the sample API, manually.</a>
 
