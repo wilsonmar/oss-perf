@@ -31,7 +31,9 @@ That can be quite complicated, with calls to databases, etc.
 0. Open <a target="_blank" href="http://editor.swagger.io/#/"> http://editor.swagger.io/#</a>. 
 1. Click "Got it" if it's your first time at the site.
 
-0. Copy the Swagger-spec JSON file for your project to your invisible clipboard. 
+0. Copy to your invisible clipboard a Swagger-spec JSON file for your project or the sample file at
+<a target="_blank" href="http://petstore.swagger.io/v2/swagger.json">http://petstore.swagger.io/v2/swagger.json</a>.
+
 0. Click on the text page at the left of the swagger editor.
 0. Select **Generate Client**, then Java to follow this tutorial (or JMeter when it's ready). 
 The file should be downloaded to your browser Downloads folder.
