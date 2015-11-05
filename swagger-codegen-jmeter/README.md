@@ -112,8 +112,28 @@ The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a>
 ### 3). Edit the template to produce basic JMeter code.</a>
 The sample clients are generated from a **template**.
 
-This activity involves https://github.com/swagger-api/swagger-codegen
-swagger-codegen references a custom template defined in this repo.
+0. Define a folder to hold git repos locally, such as ~/gits.
+
+ ```
+ mkdir gits
+ ```
+ 
+0. Optionally, define a folder for a git repo user.
+ 
+ ```
+ mkdir swagger-api
+ ```
+ 
+0. At the user folder, download one of its git repos from the internet.
+
+ ```
+ git clone https://github.com/swagger-api/swagger-codegen.git
+ ```
+ 
+0. Press and type `cd` then tab to autocomplete `swagger-codegen`. Press Enter.
+1. `cd modules/swagger-codegen/src/main/resources`
+2. `cd Java` (with the capital J)
+
 
 The run-time for JMeter is run like other languages generated:
 
