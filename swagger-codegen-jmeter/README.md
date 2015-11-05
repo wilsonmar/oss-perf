@@ -88,8 +88,10 @@ referencing the build.gradle file (containing Groovy program) declarative code.
 since no manifest file was generated:
 
  ```
- java -cp swagger-java-client-1.0.0.jar swagger-java-client-1.0.0.ClassName
+ java -cp swagger-java-client-1.0.0.jar swagger-java-client.ClassName
  ```
+ 
+ NOTE: "swagger-java-client" was specified in the settings.gradle file rootProject.name property value.
  
  If a manifest file was generated:
 
