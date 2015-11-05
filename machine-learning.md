@@ -30,7 +30,19 @@ and the cascade of events when a choke-point restricts capacity and cause perfor
 
 <a id="Statistics">
 ## Statistics</a>
-The first step is 
+We start with traditional statistics by calculating the **95th percentile** not by selecting some data point value
+that can vary wildly from run to run,
+but by derviving a statistical focrmula so that we can compare results in a statistically valid way.
+For example, when we report a response time of 14 seconds at the 95th percentile, 
+we can provide the percentage confidence,
+and what reduction needs to be for chance alone to have impacted the results.
+
+This is done by using a **Linear Regression** calculation such as
+http://templates.prediction.io/RAditi/PredictionIO-MLLib-LinReg-Template
+
+BTW, data into these calculations is only the middle "steady state" portion of runs,
+which excludes ramp-up and ramp-down.
+
 
 <a id="ToolChoices">
 ## Choice of tools: Python</a>
