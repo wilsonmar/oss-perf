@@ -109,8 +109,9 @@ The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a>
 
 <a id="SwaggerJMeter"> 
 ### 3). Edit the template to produce basic JMeter code.</a>
-The sample client generated was from a **template**.
+The sample clients are generated from a **template**.
 
+This activity involves https://github.com/swagger-api/swagger-codegen
 swagger-codegen references a custom template defined in this repo.
 
 The run-time for JMeter is run like other languages generated:
