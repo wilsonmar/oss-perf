@@ -5,7 +5,8 @@ Normal is **300ms** (a third of a second).
 
 <a id="PacketBeats">
 ## PacketBeats</a>
-PacketBeats was acquired by Elastic.io in 2015.
+In 2015, Elatic.io acquired Packetbeats after acquired it from German start-up IPTEGO 
+developed by Monica Sarbu and Tudor Golubenco.
 
 0. Its home page is now at https://www.elastic.co/products/beats
 0. Click Download. The Mac version I got is packetbeat-1.0.0-beta4-darwin.tgz
@@ -17,6 +18,12 @@ PacketBeats was acquired by Elastic.io in 2015.
 
 0. Consult docs at https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html
 
+ libbeat, the open source framework for building Elasticsearch data shippers. 
+ at https://github.com/elastic/libbeat
+ 
+ https://www.elastic.co/downloads/beats/topbeat
+ 
+ 
 <a id="Alternatives">
 ## Alternatives</a>
 Wireshark is an open source program that comes with its own UI.
