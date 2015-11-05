@@ -74,18 +74,25 @@ That can be quite complicated, with calls to databases, etc.
  folder src/main/java/io/swagger/client
  ```
 
-0. Use gradle (instead of ant, maven) to build the client project run-time binary file.
+0. Install Gradle if you haven't already.
 On a Mac:
 
  ```
+ brew update
  brew install gradle
- gradle --help
- gradle tasks
  ```
  
  More info on Gradle:
 
  * https://www.youtube.com/watch?v=OFUEb7pLLXw from July 18, 2012 by Tim Berglund (of Github fame).
+
+0. use gradle (instead of ant, maven) to build the client project run-time binary file
+referencing the build.gradle file (containing Groovy program) declarative code.
+
+ ```
+ gradle --help
+ gradle tasks
+ ```
 
 0. Open another terminal to execute the client program.
 
