@@ -87,7 +87,7 @@ referencing the build.gradle file (containing Groovy program) declarative code.
 0. Use tab key to auto-complete command to execute the client program generated:
 
  ```
- javac swagger-java-client-1.0.0.jar 
+ java -jar swagger-java-client-1.0.0.jar 
  ```
  
 
