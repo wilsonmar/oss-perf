@@ -1,6 +1,7 @@
 Alerts
 
 Use product Watcher licensed from elastic.io
+https://www.elastic.co/webinars/watcher-practical-alerting-for-elasticsearch-deutsch
 
 It creates watchers.
 
