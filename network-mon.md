@@ -87,16 +87,17 @@ tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
    ./packetbeat -version
     ```
 
-   NOTE: On Debian, its: ???
+0. Start by routing transactions to the console:
    
    ```
-   sudo dpkg -i packetbeat-1.0.0\rc1_amd64.deb
+   sudo ./packetbeat -e -c packetbeat.yml -d "publish"
    ```
 
-0. Verify:
+0. Filter out ???
 
    ```
-   sudo /etc/init.d/packetbeat start
+   -google-analytics.l.google.com
+   github.map.fastly.net, assets-cdn.github.com
    ```
 
 0. The Packetbeat agent ships to Elastisearch a JSON object for each transaction
