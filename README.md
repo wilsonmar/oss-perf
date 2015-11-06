@@ -3,7 +3,7 @@
 This diagram <a target="_blank" href="">
 is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
 
-<img name="Map" alt="oss-perf-11-components" src="https://cloud.githubusercontent.com/assets/300046/10974952/42777db0-8399-11e5-8b74-71e127ee7d2e.png"
+<img name="Map" alt="oss-perf-12-components" src="https://cloud.githubusercontent.com/assets/300046/11008399/16ab053e-8485-11e5-8759-c021294dc19e.png"
 usemap="#m_Map" border="0" width="100%">
 <map name="m_Map">
 <area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
