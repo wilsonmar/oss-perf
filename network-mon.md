@@ -9,10 +9,9 @@ In 2015, Elatic.io acquired Packetbeats after acquired it from Berlin, German st
 developed by Monica Sarbu and Tudor Golubenco.
 
 0. Its home page is now at https://www.elastic.co/products/beats/packetbeat under https://www.elastic.co/products/beats
-   with https://github.com/elastic/packetbeat
 
 0. To get the installer, click Download from https://www.elastic.co/downloads/beats/packetbeat. 
-   The Mac version I got is packetbeat-1.0.0-beta4-darwin.tgz
+   The Mac version I got is packetbeat-1.0.0-rc1-darwin.tgz
 
    Or use commands from https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html
 
@@ -29,25 +28,37 @@ tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
 
  NOTE: The yml file says to consult docs at https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html
    but a 404 results.
+   
+   NOTE: There are newer branches on https://github.com/elastic/packetbeat.
 
 0. Setup Logstash per https://www.elastic.co/guide/en/beats/libbeat/1.0.0-rc1/getting-started.html#logstash-setup
 
 0. Open the yml file using a text editor (such as Sublime).
-1. 
+
+   NOTE: Issue 361 was filed for https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html not resolving.
+   The correct URL is https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-configuration.html
+
+0. On OS X, capturing from the any device doesn’t work. You would typically use either lo0 or en0 depending on which traffic you want to capture.
+
+
 
 0. Install on application server under test to sniff the network.
 
    On Mac: ???
    ```
-   sudo /usr/sbin/installer -pkg packetbeat-1.0.0-beta4-darwin.pkg -target / 
+   sudo /usr/sbin/installer -pkg packetbeat.pkg -target / 
     ```
 
-   On Debian, its:
+   On Debian, its: ???
    ```
    sudo dpkg -i packetbeat-1.0.0\rc1_amd64.deb
    ```
 
-It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL, Redis, Thrift-RPC.
+0. Verify:
+
+   ```
+   sudo /etc/init.d/packetbeat start
+   ```
 
 0. The Packetbeat agent ships to Elastisearch a JSON object for each transaction
    after correlating requests and responses. This is a hugh time saving vs. Wireshark.
@@ -98,11 +109,14 @@ Packetbeat makes use of
 Wireshark is an open source program that comes with its own UI.
 It analyzes more application layer protocols than Packetbeat.
 
+Packetbeat follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL, Redis, Thrift-RPC.
+
 [7:03] into the intro video: a table sumarizes what Packetbeat does that WireShark and Tcpdump does not:
 
  * Real-time analytics
  * Correlate request-response
  * controlled storage & web UI
- 
+
+
 The offering from  Dyn.com.
 
