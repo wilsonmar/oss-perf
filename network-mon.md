@@ -21,8 +21,6 @@ developed by Monica Sarbu and Tudor Golubenco.
 tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
    ```
 
-   QUESTION: Which is newer?
-
 0. Unzip the gunzip file to folder packetbeat-1.0.0-beta4-darwin. It contains 3 files:
 
   * packetbeat (no file extension).
@@ -59,6 +57,8 @@ It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL
 
    Each shipper has a **service tag**.
 
+0. See the demo at http://demo.elastic.co/packetbeat/#/dashboard/Packetbeat-Dashboard?_g=%28%29
+
 0. In Kibana, select a pre-defined dashboard.
 
    * Get real-time logical topology view
@@ -78,6 +78,7 @@ It follows TCP streams, decodes app layer protocols like HTTP, MySQL, ProstgreSL
    *  responsetime 99p > 100 ms
    *  error rate > 5%
    *  number of 5xx HTTP response per minute > 10
+
 
 <a id="Social">
 ## Social</a>
