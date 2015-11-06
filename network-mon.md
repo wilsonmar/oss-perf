@@ -38,9 +38,9 @@ tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
    NOTE: Issue 361 was filed for https://www.elastic.co/guide/en/beats/packetbeat/current/configuration.html not resolving.
    The correct URL is https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-configuration.html
 
-0. On OS X, capturing from the any device doesn’t work. You would typically use either lo0 or en0 depending on which traffic you want to capture.
+0. On Mac OS X, instead of "any" for `Interfaces: device:`, use either lo0 or en0, depending on which traffic you want to capture. en0 is normally Ethernet, en1 normally Airport.
 
-
+   * http://www.macosxhints.com/article.php?story=20051020014120761
 
 0. Install on application server under test to sniff the network.
 
