@@ -25,40 +25,22 @@ In it are Virtualbox images for:
   * database server (MongoDB, MySQL, Postgres, etc.)
   * Jenkins
 
-docker machine creates daemons.
-
 <a id="#LR-Docker">
 ## Load Generator Docker</a>
-<a target="_blank" href="http://community.hpe.com/t5/LoadRunner-and-Performance/The-fastest-way-to-deploy-a-Load-Generator-using-Docker-with/ba-p/6807868">This blog</a> describes how to deploy a Docker-based Load Generator (LG) using a prebuilt LG Docker image from HP R&D's Docker hub, based on Linux Load Generator 12.50 and its prerequisites. 
+<a target="_blank" href="http://community.hpe.com/t5/LoadRunner-and-Performance/The-fastest-way-to-deploy-a-Load-Generator-using-Docker-with/ba-p/6807868">This blog</a> describes how to deploy a Docker-based Load Generator (LG) using a prebuilt LG Docker image  based on Linux Load Generator 12.50 and its prerequisites. 
 
-(1) To import the image:
+(1) Download and install Docker (if you haven't already).
+
+(2) Download the Load Generator image from HP R&D's Docker hub at
+<a target="_blank" href="https://hub.docker.com/r/hpsoftware/load_generator/">https://hub.docker.com/r/hpsoftware/load_generator</a>
+
+(3) Import the image:
 
  ```
  docker load < load_generator.tar
  ```
 
-(2) Define the host port. The default is 54345.
-
-(3) Launch the LG:
-
- ```
- docker run –d -i –p <host_port>:54345 --net=host load_generator
- ```
-
- **-d** specifies **detached mode** running inside a container at the background (not attached to it).
-
- **-i** parameter, otherwise the container will cause a high CPU usage.
- 
- **--net=host** enables heavy network I/O by directly use the eth0 host rather than through **docker0**, a virtual Ethernet bridge that automatically forwards packets between any other network interfaces attached to it.
- By default, containers communicate with each other or with the host.
- 
-(4) To stop the LG service:
-
- ```
- docker stop <container>
- ```
- 
- A sample file:
+(4) Defin a sample file:
  
  ```
  # Usage:
@@ -94,3 +76,30 @@ RUN rm -R /opt/tmp_lg
 
 ENTRYPOINT ["/bin/bash","-c","cd /opt/HP/HP_LoadGenerator/; source env.sh; cd bin/; ./m_daemon_setup -install; while true; do cat; done"]
  ```
+
+(5) Define the host port. The default is 54345.
+
+(6) Launch the LG:
+
+ ```
+ docker run –d -i –p <host_port>:54345 --net=host load_generator
+ ```
+
+ **-d** specifies **detached mode** running inside a container at the background (not attached to it).
+
+ **-i** parameter, otherwise the container will cause a high CPU usage.
+ 
+ **--net=host** enables heavy network I/O by directly use the eth0 host rather than through **docker0**, a virtual Ethernet bridge that automatically forwards packets between any other network interfaces attached to it.
+ By default, containers communicate with each other or with the host.
+ 
+(7) To stop the LG service:
+
+ ```
+ docker stop <container>
+ ```
+ 
+
+<a id="Resources">
+## Resources</a>
+docker machine creates daemons.
+
