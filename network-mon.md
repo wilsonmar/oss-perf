@@ -93,13 +93,6 @@ tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
    sudo ./packetbeat -e -c packetbeat.yml -d "publish"
    ```
 
-0. Filter out ???
-
-   ```
-   -google-analytics.l.google.com
-   github.map.fastly.net, assets-cdn.github.com
-   ```
-
 0. The Packetbeat agent ships to Elastisearch a JSON object for each transaction
    after correlating requests and responses. This is a hugh time saving vs. Wireshark.
    The transactions are shipped to Elastisearch by <a href="#Libbeat">Libbeat</a>.
@@ -108,7 +101,13 @@ tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
 
    Each shipper has a **service tag**.
 
-0. See the demo at http://demo.elastic.co/packetbeat/#/dashboard/Packetbeat-Dashboard?_g=%28%29
+0. Filter out ???
+
+   * google-analytics.l.google.com
+   * github.map.fastly.net, assets-cdn.github.com
+
+0. See the demo dashboard at 
+   http://demo.elastic.co/packetbeat/#/dashboard/Packetbeat-Dashboard?_g=%28%29
 
 0. In Kibana, select a pre-defined dashboard.
 
