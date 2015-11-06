@@ -42,14 +42,53 @@ tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
 
    * http://www.macosxhints.com/article.php?story=20051020014120761
 
-0. Install on application server under test to sniff the network.
+0. Run to get help on command parameters:
 
-   On Mac: ???
    ```
-   sudo /usr/sbin/installer -pkg packetbeat.pkg -target / 
+   ./packetbeat -h
+    ```
+    
+    The response:
+    
+    ```
+    Usage of ./packetbeat:
+  -I string
+    	file
+  -N	Disable actual publishing for testing
+  -O	Read packets one at a time (press Enter)
+  -c string
+    	Configuration file (default "/etc/packetbeat/packetbeat.yml")
+  -cpuprofile string
+    	Write cpu profile to file
+  -d string
+    	Enable certain debug selectors
+  -devices
+    	Print the list of devices and exit
+  -dump string
+    	Write all captured packets to this libpcap file
+  -e	Log to stderr and disable syslog/file output
+  -l int
+    	Loop file. 0 - loop forever (default 1)
+  -memprofile string
+    	Write memory profile to this file
+  -t	Read packets as fast as possible, without sleeping
+  -test
+    	Test configuration and exit.
+  -v	Log at INFO level
+  -version
+    	Print version and exit
+  -waitstop int
+    	Additional seconds to wait befor shutting down
     ```
 
-   On Debian, its: ???
+0. Run to get version number 
+
+   ```
+   ./packetbeat -version
+    ```
+
+   NOTE: On Debian, its: ???
+   
    ```
    sudo dpkg -i packetbeat-1.0.0\rc1_amd64.deb
    ```
