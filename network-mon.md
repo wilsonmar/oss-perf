@@ -11,7 +11,8 @@ developed by Monica Sarbu and Tudor Golubenco.
 0. Its home page is now at https://www.elastic.co/products/beats/packetbeat under https://www.elastic.co/products/beats
    with https://github.com/elastic/packetbeat
 
-0. Click Download. The Mac version I got is packetbeat-1.0.0-beta4-darwin.tgz
+0. To get the installer, click Download from https://www.elastic.co/downloads/beats/packetbeat. 
+   The Mac version I got is packetbeat-1.0.0-beta4-darwin.tgz
 
    Or use commands from https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html
 
