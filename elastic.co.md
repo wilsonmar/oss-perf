@@ -55,12 +55,13 @@ Oct. 14, 2014
 <a id="Logstash"> 
 ## Logstash</a>
 
-Logstash was originally developed by Jordan Sissel when he was a system administrator at Dreamhost. 
+Logstash was originally developed by **Jordan Sissel** when he was a system administrator at Dreamhost. 
 
   * https://github.com/jordansissel/
   * https://twitter.com/jordansissel
   * http://semicomplete.com (latest post in 2012)
   * https://www.youtube.com/watch?v=fwMnb4-t8vo More Logstash Awesome - Jordan Sissel - PuppetConf 2013
+  * https://www.youtube.com/watch?v=RuUFnog29M4 
 
 
 <a id="RockStars"> 
@@ -114,6 +115,19 @@ What is ELK and how can it help you discover, visualize and analyze your data?
   Elasticsearch in Action Paperback – August 31, 2015
   http://www.amazon.com/Elasticsearch-Action-Radu-Gheorghe/dp/1617291625/
 
+* https://www.youtube.com/watch?v=RuUFnog29M4
+ ELK: Elasticsearch, Logstash and Kibana at Wikimedia
+
+* https://www.youtube.com/watch?v=bMi2g3uEAxU
+ ElasticSearch in Production: lessons learned
+ by LuceneSolrRevolution
+
+
+* https://www.youtube.com/watch?v=60UsHHsKyN4
+ Getting started with ElasticSearch
+ by Alex Botovich via c0deporn
+
+* https://www.youtube.com/watch?v=PpX7J-G2PEo Elasticsearch from the bottom up
 
 <a id="Jobs"> 
 ## Jobs</a>
