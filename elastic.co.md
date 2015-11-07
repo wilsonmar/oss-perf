@@ -1,5 +1,8 @@
 This page lists links about people within the ELK ecosystem.
 
+<a target="_blank" href="https://www.elastic.co/community">
+https://www.elastic.co/community</a> lists a lot of them.
+
 <a id="Discussion"> 
 ## Discussion Group</a>
 
