@@ -44,8 +44,12 @@ bundle exec knife ec2 server list
 
 <a id="Videos">
 ## Videos</a>
-https://www.youtube.com/watch?v=Q5POuMHxW-0
-47:14 by Twitter University
+
+* https://www.youtube.com/watch?v=Q5POuMHxW-0
+  47:14 by Twitter University
+
+* https://puppetlabs.com/presentations/are-you-sure-works-test-your-modules-pe-and-puppet-using-beaker-docker-and-more
+  
 
 http://www.pluralsight.com/courses/docker-deep-dive
 5 hour 36 minute Jan 2015
