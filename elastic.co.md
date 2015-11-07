@@ -27,12 +27,13 @@ This page also has company announcements.
 
 The <a target="_blank" href="
 https://www.linkedin.com/grps?gid=3393294&trk=vsrp_groups_res_name&trkInfo=VSRPsearchId%3A40173581446906999171%2CVSRPtargetId%3A3393294%2CVSRPcmpt%3Aprimary">
-Elasticsearch LinkedIn Group</a> was started in 2010 by Shay Banon (Elastic.co CEO)
+Elasticsearch LinkedIn Group</a> was started in 2010 by **Shay Banon** (Elastic.co CEO)
 
- * <a target="_blank" href="https://www.youtube.com/watch?v=fEsmydn747c"> VIDEO: Why we built ElasticSearch</a> Aug 27, 2013
+ * <a target="_blank" href="https://www.youtube.com/watch?v=fEsmydn747c"> VIDEO: Why we built ElasticSearch</a> June 7, 2013
  * <a target="_blank" href="http://twitter.com/kimchy">@kimchy</a>
  * https://www.linkedin.com/in/shaybanon
  * http://thedudeabides.com/articles/
+ * http://stackoverflow.com/questions/2271600/elasticsearch-sphinx-lucene-solr-xapian-which-fits-for-which-usage/2288211#2288211
 
 The group is managed by Elastic.co Daniel Palay.
 
@@ -64,6 +65,12 @@ Logstash was originally developed by Jordan Sissel when he was a system administ
 
 <a id="RockStars"> 
 ## ELK Rock Stars</a>
+
+* Clinton Gormley and Zachary Tong
+  Elasticsearch: The Definitive Guide Feb 7, 2015 $22.55
+  http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/
+
+ * https://twitter.com/ZacharyTong
 
 * at Elasticsearch
   https://www.youtube.com/watch?v=Epe63Uu-IO0&spfreload=1
@@ -103,10 +110,6 @@ What is ELK and how can it help you discover, visualize and analyze your data?
    ElasticSearch Cookbook $20.44
    http://www.amazon.com/ElasticSearch-Cookbook-Alberto-Paro/dp/1782166629
    
-* Clinton Gormley and Zachary Tong
-  Elasticsearch: The Definitive Guide Feb 7, 2015 $22.55
-  http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/
-
 * Radu Gheorghe (Author), Matthew Lee Hinman  (Author), & 1 more
   Elasticsearch in Action Paperback – August 31, 2015
   http://www.amazon.com/Elasticsearch-Action-Radu-Gheorghe/dp/1617291625/
@@ -123,3 +126,6 @@ Search for Elastic jobs at Linkedin</a>
 ## Alternatives</a>
 
 http://lucene.apache.org/solr/
+
+ * http://stackoverflow.com/questions/2271600/elasticsearch-sphinx-lucene-solr-xapian-which-fits-for-which-usage/2288211#2288211 is Shay Bannon's answer.
+
