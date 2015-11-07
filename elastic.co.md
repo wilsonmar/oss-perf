@@ -7,6 +7,12 @@ Sign-up at <a target="_blank" href="https://discuss.elastic.co/"> https://discus
 appears in email as [Discuss Elasticsearch, Logstash and Kibana | Elastic] 
 is built on the Discourse platform.
 
+<a id="Stackoverflow"> 
+## Stackoverflow searchs</a>
+
+ * <a target="_blank" href="http://stackoverflow.com/search?q=elasticsearch">elasticsearch</a>
+ * <a target="_blank" href="http://stackoverflow.com/search?q=logstash">logstash</a>
+ * <a target="_blank" href="http://stackoverflow.com/search?q=kibana">kibana</a>
 
 <a id="Meetups"> 
 ## Meetups</a>
@@ -23,7 +29,7 @@ The <a target="_blank" href="
 https://www.linkedin.com/grps?gid=3393294&trk=vsrp_groups_res_name&trkInfo=VSRPsearchId%3A40173581446906999171%2CVSRPtargetId%3A3393294%2CVSRPcmpt%3Aprimary">
 Elasticsearch LinkedIn Group</a> was started in 2010 by Shay Banon (Elastic.co CEO)
 
- * <a target="_blank" href="https://www.youtube.com/watch?v=fEsmydn747c"> VIDEO: Why we built ElasticSearch</a>
+ * <a target="_blank" href="https://www.youtube.com/watch?v=fEsmydn747c"> VIDEO: Why we built ElasticSearch</a> Aug 27, 2013
  * <a target="_blank" href="http://twitter.com/kimchy">@kimchy</a>
  * https://www.linkedin.com/in/shaybanon
  * http://thedudeabides.com/articles/
@@ -112,3 +118,8 @@ What is ELK and how can it help you discover, visualize and analyze your data?
 <a target="_blank" href="https://www.linkedin.com/vsearch/j?rsid=40173581446909150651&keywords=elastic&trk=vsrp_jobs_cluster_header&trkInfo=VSRPsearchId%3A40173581446909150651%2CVSRPcmpt%3Ajobs_cluster">
 Search for Elastic jobs at Linkedin</a>
 
+
+<a id="Alternatives"> 
+## Alternatives</a>
+
+http://lucene.apache.org/solr/
