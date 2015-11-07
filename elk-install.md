@@ -24,6 +24,7 @@ As with other AWS services, Amazon takes care of operating system updates and sc
 
 The issue with AWS is concern about privacy data protection ala Safe Harbor.
 
+My specific steps is at <a href="elk-install-aws.md">elk-install-aws.md</a>
 
 <a id="#Docker"> 
 ## Docker and Puppet</a>
