@@ -23,11 +23,26 @@ The <a target="_blank" href="
 https://www.linkedin.com/grps?gid=3393294&trk=vsrp_groups_res_name&trkInfo=VSRPsearchId%3A40173581446906999171%2CVSRPtargetId%3A3393294%2CVSRPcmpt%3Aprimary">
 Elasticsearch LinkedIn Group</a> was started in 2010 by Shay Banon (Elastic.co CEO)
 
+ * <a target="_blank" href="https://www.youtube.com/watch?v=fEsmydn747c"> VIDEO: Why we built ElasticSearch</a>
  * <a target="_blank" href="http://twitter.com/kimchy">@kimchy</a>
  * https://www.linkedin.com/in/shaybanon
  * http://thedudeabides.com/articles/
 
 The group is managed by Elastic.co Daniel Palay.
+
+
+<a id="SalesEngineering"> 
+## Solution Architects in Sales Engineering</a>
+
+Chad Pryor in Seattle:
+
+ * Chadwiki.com
+
+Steve Mayzak-Director of Sales Engineering @ ElasticSearch
+did https://www.youtube.com/watch?v=uxfvNwl_MGc
+What is ELK and how can it help you discover, visualize and analyze your data?
+Oct. 14, 2014
+
 
 
 <a id="Logstash"> 
@@ -39,19 +54,6 @@ Logstash was originally developed by Jordan Sissel when he was a system administ
   * https://twitter.com/jordansissel
   * http://semicomplete.com (latest post in 2012)
   * https://www.youtube.com/watch?v=fwMnb4-t8vo More Logstash Awesome - Jordan Sissel - PuppetConf 2013
-
-<a id="SalesEngineering"> 
-## Sales Engineering</a>
-
-Chad Pryor in Seattle:
-
- * Chadwiki.com
-
-Steve Mayzak-Director of Sales Engineering @ ElasticSearch
-did https://www.youtube.com/watch?v=uxfvNwl_MGc
-What is ELK and how can it help you discover, visualize and analyze your data?
-Oct. 14, 2014
-
 
 
 <a id="RockStars"> 
