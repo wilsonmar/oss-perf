@@ -355,3 +355,6 @@ in St. Louse, Missouri. Samples are at https://github.com/encog
  * http://colah.github.io/ at http://googleresearch.blogspot.com/
 
  * http://www.infoworld.com/article/2853707/machine-learning/11-open-source-tools-machine-learning.html
+
+ * https://www.youtube.com/watch?v=v-91JycaKjc From the Lab to the Factory: Building a Production Machine Learning
+  by Josh Wills (@josh_wills) is the Senior Director of Data Science at Cloudera
