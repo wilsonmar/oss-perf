@@ -33,6 +33,8 @@ On freenode, #logstash and #elasticsearch.
 <a target="_blank" href="http://elasticsearch.meetup.com/"> Elasticsearch.Meetup.com</a>
 is managed by Heather.
 
+Twitter #elkstack
+
 <a id="LinkedIn"> 
 ## LinkedIn Group</a>
 
