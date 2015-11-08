@@ -3,12 +3,21 @@ This page lists links about people within the ELK ecosystem.
 <a target="_blank" href="https://www.elastic.co/community">
 https://www.elastic.co/community</a> lists a lot of them.
 
+<a id="Support"> 
+## Support</a>
+
+<a target="_blank" href="https://www.elasticsearch.com/support/"> elasticsearch.com/support</a>
+
 <a id="Discussion"> 
-## Discussion Group</a>
+## Groups</a>
 
 Sign-up at <a target="_blank" href="https://discuss.elastic.co/"> https://discuss.elastic.co/</a>
 appears in email as [Discuss Elasticsearch, Logstash and Kibana | Elastic] 
 is built on the Discourse platform.
+
+Email logstash-users@googlegroups.com or elasticsearch-users@googlegroups.com
+(no kibana-users@googlegroups.com)
+
 
 <a id="Stackoverflow"> 
 ## Stackoverflow searchs</a>
@@ -18,9 +27,10 @@ is built on the Discourse platform.
  * <a target="_blank" href="http://stackoverflow.com/search?q=kibana">kibana</a>
 
 <a id="Meetups"> 
-## Meetups</a>
+## Local Meetups</a>
 
-Heather
+<a target="_blank" href="http://elasticsearch.meetup.com/"> Elasticsearch.Meetup.com</a>
+is managed by Heather.
 
 <a id="LinkedIn"> 
 ## LinkedIn Group</a>
