@@ -125,12 +125,20 @@ What is ELK and how can it help you discover, visualize and analyze your data?
  ElasticSearch in Production: lessons learned
  by LuceneSolrRevolution
 
+* David Pilato @dadoonet
+  developer | evangelist @ elastic 
 
 * https://www.youtube.com/watch?v=60UsHHsKyN4
  Getting started with ElasticSearch
  by Alex Botovich via c0deporn
 
 * https://www.youtube.com/watch?v=PpX7J-G2PEo Elasticsearch from the bottom up
+
+* https://www.youtube.com/watch?v=UTLwMyXoATQ
+
+* https://www.youtube.com/watch?v=d9l2-3QeDTs 
+
+
 
 <a id="Jobs"> 
 ## Jobs</a>
