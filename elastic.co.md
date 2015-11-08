@@ -9,7 +9,7 @@ https://www.elastic.co/community</a> lists a lot of them.
 <a target="_blank" href="https://www.elasticsearch.com/support/"> elasticsearch.com/support</a>
 
 <a id="Discussion"> 
-## Groups</a>
+## Discussions</a>
 
 Sign-up at <a target="_blank" href="https://discuss.elastic.co/"> https://discuss.elastic.co/</a>
 appears in email as [Discuss Elasticsearch, Logstash and Kibana | Elastic] 
@@ -18,6 +18,7 @@ is built on the Discourse platform.
 Email logstash-users@googlegroups.com or elasticsearch-users@googlegroups.com
 (no kibana-users@googlegroups.com)
 
+On freenode, #logstash and #elasticsearch.
 
 <a id="Stackoverflow"> 
 ## Stackoverflow searchs</a>
