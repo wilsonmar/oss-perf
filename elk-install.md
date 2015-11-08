@@ -4,20 +4,30 @@ However, we want a simple way to make it repeatable.
 The options:
 
  * <a href="#Amazon"> Amazon Elastic Service</a>
- * <a href="#Manual"> Manual download</a>
  * <a href="#Docker"> Docker and Puppet</a>
+ * <a href="#Manual"> Manual download</a>
 
 
 
 <hr />
 <a id="Amazon"> 
-### Amazon Elastic Service</a>
+## Amazon Elastic Service</a>
 Perhaps the easiest way to setup an ELK stack is to use Amazon's Elasticsearch service intorduced October, 2015.
 As with other AWS services, Amazon takes care of operating system updates and scaling hard drive space.
 
 The issue with AWS is concern about privacy data protection ala Safe Harbor.
 
 My specific steps is at <a href="elk-install-aws.md">elk-install-aws.md</a>
+
+
+<a id="#OtherHosting"> 
+### Other Hosting</a>
+
+ <a target="_blank" href="https://facetflow.com/">https://facetflow.com/</a> 
+ hosts Elasticsearch in Microsoft's Azure cloud.
+ They offer small free sandboxes.
+ 
+ * http://code972.com/blog/2014/07/74-the-definitive-guide-for-elasticsearch-on-windows-azure
 
 <a id="#Docker"> 
 ## Docker and Puppet</a>
@@ -91,5 +101,7 @@ modules</a>.
 
  * <a target="_blank" href="http://yaml-online-parser.appspot.com/">http://yaml-online-parser.appspot.com/</a>
 
- It is easy to break YAML files because YML uses new lines and white space and not 
+ YAML files are easy to break because YAML uses new lines and white space and not 
  quotes, braces, or other mark up for structuring data.
+
+0. Elasticsearch can store data in-memory (no persistence), or to the local file system. 
