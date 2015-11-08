@@ -138,7 +138,8 @@ What is ELK and how can it help you discover, visualize and analyze your data?
 
 * https://www.youtube.com/watch?v=d9l2-3QeDTs 
 
-
+* https://www.youtube.com/watch?v=2oMvUX8Ke5M&t=25m
+  Hands-on: 
 
 <a id="Jobs"> 
 ## Jobs</a>
