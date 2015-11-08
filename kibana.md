@@ -1,4 +1,4 @@
-Kibana presents a dashboard from ElasticSearch database.
+Kibana presents a dashboard from Elasticsearch databases.
 
 <a id="PanelTypes">
 ## Panel Types</a>
@@ -13,8 +13,11 @@ Kibana presents a dashboard from ElasticSearch database.
   * terms
   * text
   * trends
-  
-  
+
+ELK stack became popular among server admins analyzing server logs.
+
+But ELK can handle more variety.
+
 <a id="Videos">
 ## Videos</a>
 
