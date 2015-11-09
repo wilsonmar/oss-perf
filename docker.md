@@ -25,6 +25,17 @@ In it are Virtualbox images for:
   * database server (MongoDB, MySQL, Postgres, etc.)
   * Jenkins
 
+
+<a id="#Beaker">
+## Beaker</a>
+In https://puppetlabs.com/presentations/are-you-sure-works-test-your-modules-pe-and-puppet-using-beaker-docker-and-more
+at #PuppetConf2015, Richard Pijnenburg (@richardp82) working at Elastic 
+describes the use of using Beaker to maintain Docker hypervisors.
+
+   * Unit-testing with rspec-puppet
+   * Wrong assumptions can lead to working tests which should fail (false positives).
+
+
 <a id="#LR-Docker">
 ## Load Generator Docker</a>
 <a target="_blank" href="http://community.hpe.com/t5/LoadRunner-and-Performance/The-fastest-way-to-deploy-a-Load-Generator-using-Docker-with/ba-p/6807868">This blog</a> describes how to deploy a Docker-based Load Generator (LG) using a prebuilt LG Docker image  based on Linux Load Generator 12.50 and its prerequisites. 
