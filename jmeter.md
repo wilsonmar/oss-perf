@@ -41,6 +41,32 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    * Xebialabx.com
    * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
 
+<a id="ManualRun">
+** Manual Run steps</a>
+To run JMeter on its own, the steps are:
+
+0. Login to the machine containing JMeter
+0. Ensure enough disk space is available, and clean-up if necessary.
+1. Gather data to be consumed during the run.
+0. Invoke JMeter
+0. Load performance tests
+0. setup parameters
+1. setup monitoring
+0. run tests
+0. watch run
+0. analyze results
+1. Archive files and clean-up test rig.
+
+<a id="Headless">
+### Headless Jmeter runs</a>
+<a target="_blank" href="http://jmeter.apache.org/usermanual/get-started.html#non_gui">
+This page lists the parameters</a> for JMeter to kick it off in non-UI (headless mode) using a command such as:
+
+   ```
+   jmeter -n -t my_test.jmx -l log.jtl -H my.proxy.server -P 8000
+   ```
+
+
 <hr />
 ## <a name="Resources"> Resources specifically about viewing JMeter using the ELK stack</a>
 http://theworkaholic.blogspot.in/2015/05/graphs-for-jmeter-using-elasticsearch.html
