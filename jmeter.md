@@ -30,6 +30,16 @@ kowalcjZero</a> created a
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
+<hr />
+<a id="Addons">
+## Add-ons</a>
+For easier invocation of 
+
+For managed devops:
+https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-management-using-jenkins-and-xebialabs-software/
+
+   * Xebialabx.com
+   * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
 
 <hr />
 ## <a name="Resources"> Resources specifically about viewing JMeter using the ELK stack</a>
