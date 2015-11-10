@@ -30,24 +30,13 @@ kowalcjZero</a> created a
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
-<hr />
-<a id="Addons">
-## Add-ons</a>
-For easier invocation of 
-
-For managed devops:
-https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-management-using-jenkins-and-xebialabs-software/
-
-   * Xebialabx.com
-   * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
-
 <a id="ManualRun">
 ** Manual Run steps</a>
 To run JMeter on its own, the steps are:
 
 0. Login to the machine containing JMeter
 0. Ensure enough disk space is available, and clean-up if necessary.
-1. Gather data to be consumed during the run.
+1. Gather data to be consumed during the run (userids, passwords, requests, etc.)
 0. Invoke JMeter
 0. Load performance tests
 0. setup parameters
@@ -66,6 +55,19 @@ This page lists the parameters</a> for JMeter to kick it off in non-UI (headless
    jmeter -n -t my_test.jmx -l log.jtl -H my.proxy.server -P 8000
    ```
 
+<hr />
+<a id="Addons">
+## Add-ons</a>
+For easier invocation, the
+<a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin">
+Performance Plugin</a> from https://github.com/jenkinsci/performance-plugin.
+
+For managed devops:
+https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-management-using-jenkins-and-xebialabs-software/
+
+   * Xebialabx.com
+   * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
+
 
 <hr />
 ## <a name="Resources"> Resources specifically about viewing JMeter using the ELK stack</a>
@@ -77,7 +79,8 @@ http://ecmarchitect.com/archives/2014/09/09/3932
 
 
 <hr />
-## <a name="Resources"> Resources Links for JMeter </a>
+## <a name="Resources"> 
+## Official resources about JMeter </a>
 http://jmeter.apache.org/
 
 http://jmeter.apache.org/usermanual/index.html
@@ -93,6 +96,11 @@ http://jmeter.apache.org/usermanual/best-practices.html
 http://jmeter.apache.org/usermanual/remote-test.html
 
 http://wiki.apache.org/jmeter/
+
+<a name="OtherResources"> 
+## Other resources for JMeter </a>
+
+http://ibalosh.tumblr.com/post/35475979058/running-jmeter-tests-with-jenkins
 
 http://www.softwaretestingclass.com/learn-jmeter-performance-testing-jmeter-tutorial-series/
 
