@@ -81,7 +81,10 @@ On a CentOS (Linux) machine:
    
 2. Unzip apache-jmeter-*.tgz to your preferred location:
 
+2. Unzip apache-jmeter-*.zip:
+
    ```
+   unzip apache-jmeter-2.7.zip
    ```
 
 <a id="TestFolder">
