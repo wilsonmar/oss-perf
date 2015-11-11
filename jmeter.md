@@ -2,9 +2,10 @@ This page describes how to use JMeter.
 
 To run JMeter on its own, the steps are:
 
-0. Install jmeter
-1. Install add-ons
 0. Login to the machine containing JMeter
+0. <a href="#Installation">Install jmeter</a>
+1. <a href="#Addons">Install add-ons</a>
+0. <a href="#TestFolder">Create run assets folder</a>
 0. Ensure enough disk space is available, and clean-up if necessary.
 1. Gather data to be consumed during the run (userids, passwords, requests, etc.) in a .csv file.
 
@@ -46,31 +47,18 @@ On Windows, use Chocolatey:
    cinst jmeter
    ```
 
-To operate on a server, the easiest way is to run JMeter within Docker using
+On a server, the easiest way is to run JMeter within Docker using
 https://hub.docker.com/r/cirit/jmeter/
 based on 
 https://github.com/cagdascirit/docker-jmeter
+
 
 <a target="_blank" href="https://plus.google.com/114432111742231285408/posts">
 kowalcjZero</a> created a 
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
-<a id="TestFolder">
-** Test Folder Setup</a>
-0. If you don't already have one, create a workspace folder and under that, a folder to hold jmeter tests:
 
-   ```
-   cd ~/
-   pwd
-   mkdir ws
-   cd ws
-   mkdir jmeter
-   cd jmeter
-   ```
-
-<a id="ManualRun">
-** Manual Run steps</a>
 <a id="Addons">
 ## Add-ons</a>
 For easier invocation, the
@@ -83,15 +71,31 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    * Xebialabx.com
    * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
 
-
 <a id="JMeterGlobals">
-## JMeter Global Properties</a>
-In the bin folder where Jmeter was installed, 
-use a text editor to open file **jmeter.properties**.
+## Global Properties</a>
+0. To verify where Jmeter is installed:
 
-If github is used, this file should be copied from github to the installer.
+   ```
+   which jmeter
+   ```
+   
+   The response:
+   
+   ```
+   /usr/local/bin/jmeter
+   ```
 
-Some of the settings include:
+0. In the bin folder where Jmeter was installed:
+
+   ```
+   cd /usr/local/bin
+   ```
+
+0. Use a text editor to open file **jmeter.properties**.
+
+   PROTIP: If github is used, this file should be copied from github to the installer.
+
+0. Specify settings as appropriate:
 
    * **remote_hosts** - remote JMeter hosts, separated by commas.
    * **not_in_menu**	- With the help of this you can customize your JMeter by allowing only those components to display which you want to by listing their classname or their class label.
@@ -101,6 +105,20 @@ Some of the settings include:
    * **system.properties**	- additional system properties added before the -S and -D options are processed.
    * **user.classpath**	- The path to be searched for utility classes by JMeter in addition to jars kept in lib directory.
    * **ssl.provider** - If built-in Java implementation are not provided, the class can be specified by you for your SSL implementation.
+
+
+<a id="TestFolder">
+** Create run assets folder</a>
+0. If you don't already have one, create a workspace folder and under that, a folder to hold jmeter tests:
+
+   ```
+   cd ~/
+   pwd
+   mkdir ws
+   cd ws
+   mkdir jmeter
+   cd jmeter
+   ```
 
 
 <a id="JMeterUIRecording">
