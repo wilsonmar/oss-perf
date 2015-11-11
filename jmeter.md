@@ -30,10 +30,25 @@ kowalcjZero</a> created a
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
+<a id="TestFolder">
+** Test Folder Setup</a>
+0. If you don't already have one, create a workspace folder and under that, a folder to hold jmeter tests:
+
+   ```
+   cd ~/
+   pwd
+   mkdir ws
+   cd ws
+   mkdir jmeter
+   cd jmeter
+   ```
+
 <a id="ManualRun">
 ** Manual Run steps</a>
 To run JMeter on its own, the steps are:
 
+0. Install jmeter
+1. Install add-ons
 0. Login to the machine containing JMeter
 0. Ensure enough disk space is available, and clean-up if necessary.
 1. Gather data to be consumed during the run (userids, passwords, requests, etc.)
@@ -66,6 +81,10 @@ In Chrome, select 'Under the Hood'.
 ⌘+. In 'Advanced', go to Connection settings and set up your localhost as a proxy server. 
 Assign different ports to different protocols. 
 Press Start at the bottom of the page to begin recording.
+
+0. Run
+1. Notice that since Protocol: `https` was not specified, two requests were done. One for http and one for https.
+2. To avoid the repeat, specify Protocol `https`.
 
 <a id="JMeterAPIscripts">
 ## JMeter API scripts</a>
