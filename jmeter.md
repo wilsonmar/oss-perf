@@ -71,6 +71,77 @@ kowalcjZero</a> created a
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
+<a id="TestFolder">
+## Create run assets folder</a>
+0. To ensure that jmeter can be invoked from this data folder, add it to the end of the server's program path:
+
+   ```
+   echo $PATH
+   ```
+   
+   The response are paths separated by a colon:
+   
+   `/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/CONCUR/wmar/bin`
+
+0. Since root access is necessary:
+
+   ```
+   su
+   ```
+
+0. Add the JMeter path obtained in the previous step:
+
+   ```
+   echo 'pathmunge /usr/local/bin/jmeter' > /etc/profile.d/custompath.sh
+   ```
+
+0. Make the new file executable:
+
+   ```
+   chmod +x /etc/profile.d/custompath.sh
+   ```
+   
+0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
+   
+   ```
+   . /etc/profile
+   ```
+
+0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
+   
+   ```
+   . /etc/profile
+   ```
+
+0. If you don't already have one, create a workspace folder (and not necessary named ws under Users home):
+
+   ```
+   cd ~/
+   pwd
+   mkdir ws
+   cd ws
+   ```
+
+0. Under the workspace folder, create a folder to all jmeter tests:
+
+   ```
+   mkdir jmeter
+   cd jmeter
+   ```
+
+0. Verify:
+
+   ```
+   cd ~/ws/jmeter
+   ls
+   ```
+
+0. Verify jmeter can be invoked from a data folder:
+
+   ```
+   jmeter -version
+   ```
+
 ```
 log_file=jmeter.log java.io.FileNotFoundException: jmeter.log (Permission denied)
 [log_file-> System.out]
@@ -163,70 +234,6 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    * **ssl.provider** - If built-in Java implementation are not provided, the class can be specified by you for your SSL implementation.
 
 
-<a id="TestFolder">
-## Create run assets folder</a>
-0. To ensure that jmeter can be invoked from this data folder, add it to the end of the server's program path:
-
-   ```
-   echo $PATH
-   ```
-   
-   The response are paths separated by a colon:
-   
-   `/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/CONCUR/wmar/bin`
-
-0. Since root access is necessary:
-
-   ```
-   su
-   ```
-
-0. Add the JMeter path obtained in the previous step:
-
-   ```
-   echo 'pathmunge /usr/local/bin/jmeter' > /etc/profile.d/custompath.sh
-   ```
-
-0. Make the new file executable:
-
-   ```
-   chmod +x /etc/profile.d/custompath.sh
-   ```
-   
-0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
-   
-   ```
-   . /etc/profile
-   ```
-
-0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
-   
-   ```
-   . /etc/profile
-   ```
-
-0. If you don't already have one, create a workspace folder (and not necessary named ws under Users home):
-
-   ```
-   cd ~/
-   pwd
-   mkdir ws
-   cd ws
-   ```
-
-0. Under the workspace folder, create a folder to all jmeter tests:
-
-   ```
-   mkdir jmeter
-   cd jmeter
-   ```
-
-0. Verify:
-
-   ```
-   cd ~/ws/jmeter
-   ls
-   ```
 
 
 <a id="JMeterUIRecording">
