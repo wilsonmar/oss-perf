@@ -1,8 +1,26 @@
-To load JMeter output into Logstash and aggregated in Elasticsearch so that Kibana can display analytics graphs:
+This page describes how to use JMeter.
 
-0. <a href="#KibanaGraphsJMeter"> Kibana Graphs</a> - the objective of prepatory steps below:
-0. <a href="#AUTSetup"> Application Under Test Setup</a>
-0. <a href="#Resources"> Resources</a>
+To run JMeter on its own, the steps are:
+
+0. Install jmeter
+1. Install add-ons
+0. Login to the machine containing JMeter
+0. Ensure enough disk space is available, and clean-up if necessary.
+1. Gather data to be consumed during the run (userids, passwords, requests, etc.)
+
+0. Invoke JMeter
+0. Create script Test Plan
+0. Obtain initial response HTML for Pattern to test.
+0. Add Response Assertions
+1. Proving runs
+0. setup parameters
+
+0. setup monitoring
+0. Load performance tests
+0. run tests
+0. watch run
+0. analyze results
+1. Archive files and clean-up test rig.
 
 <hr />
 
@@ -45,29 +63,6 @@ series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
 <a id="ManualRun">
 ** Manual Run steps</a>
-To run JMeter on its own, the steps are:
-
-0. Install jmeter
-1. Install add-ons
-0. Login to the machine containing JMeter
-0. Ensure enough disk space is available, and clean-up if necessary.
-1. Gather data to be consumed during the run (userids, passwords, requests, etc.)
-
-0. Invoke JMeter
-0. Create script Test Plan
-0. Obtain initial response HTML for Pattern to test.
-0. Add Response Assertions
-1. Proving runs
-0. setup parameters
-
-0. setup monitoring
-0. Load performance tests
-0. run tests
-0. watch run
-0. analyze results
-1. Archive files and clean-up test rig.
-
-<hr />
 <a id="Addons">
 ## Add-ons</a>
 For easier invocation, the
