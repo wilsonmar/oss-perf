@@ -110,8 +110,10 @@ This page lists the parameters</a> for JMeter to kick it off in non-UI (headless
    jmeter -n -t testplan1.jmx -l log.jtl -H my.proxy.server -P 8000
    ```
 
-   The **-t** parameter prefixes test plan jmx files.
+   **-n** specifies no UI.
 
+   **-t** prefixes test plan jmx files.
+   
 <hr />
 ## <a name="Resources"> Resources specifically about viewing JMeter using the ELK stack</a>
 http://theworkaholic.blogspot.in/2015/05/graphs-for-jmeter-using-elasticsearch.html
