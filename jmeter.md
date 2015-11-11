@@ -2,7 +2,7 @@ This page describes how to use JMeter.
 
 To run JMeter on its own, the steps are:
 
-0. Login to the machine containing JMeter
+0. <a href="#AccessMachine">Access JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter</a>
 1. <a href="#Addons">Install add-ons</a>
 0. <a href="#TestFolder">Create run assets folder</a>
@@ -33,8 +33,21 @@ To run JMeter on its own, the steps are:
 
 <hr />
 
+<a id="AccessMachine">
+## Access JMeter slave machine</a>
+0. The server needs to be setup with LDAP
+1. If you don't have a SSH UI program,
+   open a terminal and type the ip address:
+
+   ```
+   ssh 10.28.xxx.xxx
+   ```
+
+0. If the server is setup with LDAP, input your password.
+
+   
 <a id="Installation">
-## Installation</a>
+## Provision and installation</a>
 On a Mac, use Homebrew:
    
    ```
