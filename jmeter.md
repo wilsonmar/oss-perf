@@ -71,6 +71,19 @@ kowalcjZero</a> created a
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
+On a CentOS (Linux) machine:
+
+1. Download the JMeter binary using the curl command:
+
+   ```
+   http://jmeter.apache.org/download_jmeter.cgi
+   ```
+   
+2. Unzip apache-jmeter-*.tgz to your preferred location:
+
+   ```
+   ```
+
 <a id="TestFolder">
 ## Create run assets folder</a>
 0. To ensure that jmeter can be invoked from this data folder, add it to the end of the server's program path:
@@ -101,12 +114,6 @@ series of videos</a> on JMeter in AWS EC2 and Vagrant box.
    chmod +x /etc/profile.d/custompath.sh
    ```
    
-0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
-   
-   ```
-   . /etc/profile
-   ```
-
 0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
    
    ```
