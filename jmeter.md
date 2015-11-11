@@ -22,6 +22,9 @@ To run JMeter on its own, the steps are:
 0. analyze results
 1. Archive files and clean-up test rig.
 
+0. Store JMeter files in github.
+0. Connect to Jenkins to kick off runs using assets in github.
+
 <hr />
 
 <a id="Installation">
