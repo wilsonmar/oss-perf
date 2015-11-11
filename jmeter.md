@@ -6,17 +6,20 @@ To run JMeter on its own, the steps are:
 1. Install add-ons
 0. Login to the machine containing JMeter
 0. Ensure enough disk space is available, and clean-up if necessary.
-1. Gather data to be consumed during the run (userids, passwords, requests, etc.)
+1. Gather data to be consumed during the run (userids, passwords, requests, etc.) in a .csv file.
 
-0. Invoke JMeter
+0. Record script.
+
+0. Invoke JMeter UI
 0. Create script Test Plan
 0. Obtain initial response HTML for Pattern to test.
+0. Add HTTP Authorization Manager, if applicable.
 0. Add Response Assertions
 1. Proving runs
-0. setup parameters
+0. setup parameters ${id} for the id column in the csv file.
 
-0. setup monitoring
-0. Load performance tests
+0. setup monitoring (Listener Aggregate Report)
+0. Run initial load tests viability.
 0. run tests
 0. watch run
 0. analyze results
@@ -24,6 +27,8 @@ To run JMeter on its own, the steps are:
 
 0. Store JMeter files in github.
 0. Connect to Jenkins to kick off runs using assets in github.
+
+0. Ramp-up, but watch monitoring to identify a bottleneck level being reached on the load generators OR the app.
 
 <hr />
 
@@ -111,7 +116,9 @@ Sample REST API services used for testing:
    * validate.jsontest.com which Blazemeter uses in its <a target="_blank"      href="https://blazemeter.com/blog/testing-soaprest-web-services-using-jmeter">documentation</a>
 
 
-0. In JMeter, create a Test Plan add a Test Group. Add to that group a Listener for HTTP.
+0. In JMeter, create a Test Plan.
+1. Specify Theads (users) to be run concurrently (at the same time). PROTIP: There is limit to how much each server can run.
+1. Add a Test Group. Add to that group a Listener for HTTP.
 For server name use a dev test site:
 
    ```
@@ -142,11 +149,15 @@ For server name use a dev test site:
 1. Type in `<title>`. This is in all HTML responses (including error pages).
 
 <a id="Runs">
-### Runs</a>
+### Proving Manual Runs</a>
 0. Press Ctrl+R to run the script.
 0. Click on a response listener such as View Results Tree.
 
 0. Press Ctrl+E to erase all results.
+
+To debug requests, on a Chrome browser add the Advanced REST client:
+
+   * https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo?hl=en-US
 
 <a id="HeadlessRuns">
 ### Headless API Jmeter runs</a>
