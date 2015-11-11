@@ -84,6 +84,25 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
 
 
+<a id="JMeterGlobals">
+## JMeter Global Properties</a>
+In the bin folder where Jmeter was installed, 
+use a text editor to open file **jmeter.properties**.
+
+If github is used, this file should be copied from github to the installer.
+
+Some of the settings include:
+
+   * **remote_hosts** - remote JMeter hosts, separated by commas.
+   * **not_in_menu**	- With the help of this you can customize your JMeter by allowing only those components to display which you want to by listing their classname or their class label.
+   * **user.properties** - Addition JMeter properties are contained in this file and are added before the -q and -J options are processed and after the initial property file.
+   * **xml.parser** - The default value is: org.apache.xerces.parsers.SAXParser. An implementation can be specified as XML parser.
+   * **search_paths** - lists of paths to search JMeter add-on classes by JMeter such as additional samplers which is in addition to the jars kept in  lib/ext directory.
+   * **system.properties**	- additional system properties added before the -S and -D options are processed.
+   * **user.classpath**	- The path to be searched for utility classes by JMeter in addition to jars kept in lib directory.
+   * **ssl.provider** - If built-in Java implementation are not provided, the class can be specified by you for your SSL implementation.
+
+
 <a id="JMeterUIRecording">
 ## JMeter UI Recording</a>
 0. Invoke JMeter in UI mode.
