@@ -108,7 +108,7 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
 
 
 <a id="TestFolder">
-** Create run assets folder</a>
+## Create run assets folder</a>
 0. If you don't already have one, create a workspace folder and under that, a folder to hold jmeter tests:
 
    ```
