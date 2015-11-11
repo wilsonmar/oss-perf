@@ -2,8 +2,14 @@ Jenkins is open-source Java software (running under a Tomcat web server)
 to invoke jobs on a schedule ("continuosly")
 such as for building software and conducting tests.
 
+<a id="Install">
+## Installation</a>
+To install on a Centos machine, follow instructions at:
 
+ * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
+<a id="Plugins">
+## Plugins</a>
 Jenkins has many plug-ins.
 
   * https://www.youtube.com/watch?v=XY-ZB3FRnxw 
