@@ -65,7 +65,7 @@ A recording of the UI can be made going through the proxy built into browsers' s
 In Chrome, select 'Under the Hood'.
 ⌘+. In 'Advanced', go to Connection settings and set up your localhost as a proxy server. 
 Assign different ports to different protocols. 
-
+Press Start at the bottom of the page to begin recording.
 
 <a id="JMeterAPIscripts">
 ## JMeter API scripts</a>
@@ -95,13 +95,22 @@ For server name use a dev test site:
 
 <a id="HeadlessRuns">
 ### Headless API Jmeter runs</a>
-<a target="_blank" href="http://jmeter.apache.org/usermanual/get-started.html#non_gui">
+0. For a list of parameters JMeter recognizes:
+
+   ```
+   jmeter -?
+   ```
+
+   Notice parameters are **case sensitive**.
+
+0. <a target="_blank" href="http://jmeter.apache.org/usermanual/get-started.html#non_gui">
 This page lists the parameters</a> for JMeter to kick it off in non-UI (headless mode) using a command such as:
 
    ```
-   jmeter -n -t my_test.jmx -l log.jtl -H my.proxy.server -P 8000
+   jmeter -n -t testplan1.jmx -l log.jtl -H my.proxy.server -P 8000
    ```
 
+   The **-t** parameter prefixes test plan jmx files.
 
 <hr />
 ## <a name="Resources"> Resources specifically about viewing JMeter using the ELK stack</a>
