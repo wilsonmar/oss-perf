@@ -42,3 +42,6 @@ By Chandra Shekhar Reddy:
 
 By Jeff Shantz:
   * https://www.youtube.com/watch?v=1JSOGJQAhtE Jenkins on Amazon
+
+By Chris Chrysostom:
+ * https://www.youtube.com/watch?v=RR0LabeUQ88 Create new job in Jenkins
