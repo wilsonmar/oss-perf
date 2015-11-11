@@ -10,3 +10,8 @@ Calculations performed on top of results of aggregations.
 An example is calculating the *rate of change**.
 
 https://www.elastic.co/blog/out-of-this-world-aggregations
+
+<a id="Resources">
+## Resources</a>
+
+  * https://berlinbuzzwords.de/session/algorithms-and-data-structures-power-lucene-and-elasticsearch
