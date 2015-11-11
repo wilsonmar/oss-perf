@@ -37,10 +37,10 @@ To run JMeter on its own, the steps are:
 ## Access JMeter slave machine</a>
 0. The server needs to be setup with LDAP
 1. If you don't have a SSH UI program,
-   open a terminal and type the ip address:
+   open a terminal and type the ip address. For example:
 
    ```
-   ssh 10.28.xxx.xxx
+   ssh 10.28.25.68
    ```
 
 0. If the server is setup with LDAP, input your password.
@@ -133,11 +133,13 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    which jmeter
    ```
    
-   The response:
+   The response (on a Mac):
    
-   ```
-   /usr/local/bin/jmeter
-   ```
+   `/usr/local/bin/jmeter`
+   
+   Alternately, if this appears:
+   
+   `/usr/bin/which: no jmeter in (/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/CONCUR/wmar/bin)`
 
 0. In the bin folder where Jmeter was installed:
 
@@ -186,6 +188,10 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    ```
    echo $PATH
    ```
+   
+   The response are paths separated by a colon:
+   
+   `/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/CONCUR/wmar/bin`
 
 0. Since root access is necessary:
 
@@ -193,10 +199,10 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    su
    ```
 
-0. Since root access is necessary, do this on Centos machines:
+0. Add the JMeter path obtained in the previous step:
 
    ```
-   echo 'pathmunge /usr/local/bin' > /etc/profile.d/custompath.sh
+   echo 'pathmunge /usr/local/bin/jmeter' > /etc/profile.d/custompath.sh
    ```
 
 0. Make the new file executable:
