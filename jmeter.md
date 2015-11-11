@@ -46,15 +46,6 @@ To run JMeter on its own, the steps are:
 0. analyze results
 1. Archive files and clean-up test rig.
 
-<a id="Headless">
-### Headless Jmeter runs</a>
-<a target="_blank" href="http://jmeter.apache.org/usermanual/get-started.html#non_gui">
-This page lists the parameters</a> for JMeter to kick it off in non-UI (headless mode) using a command such as:
-
-   ```
-   jmeter -n -t my_test.jmx -l log.jtl -H my.proxy.server -P 8000
-   ```
-
 <hr />
 <a id="Addons">
 ## Add-ons</a>
@@ -67,6 +58,49 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
 
    * Xebialabx.com
    * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
+
+<a id="JMeterUIRecording">
+## JMeter UI Recording</a>
+A recording of the UI can be made going through the proxy built into browsers' system preferences.
+In Chrome, select 'Under the Hood'.
+⌘+. In 'Advanced', go to Connection settings and set up your localhost as a proxy server. 
+Assign different ports to different protocols. 
+
+
+<a id="JMeterAPIscripts">
+## JMeter API scripts</a>
+0. In JMeter, create a Test Plan add a Test Group. Add to that group a Listener for HTTP.
+For server name use a dev test site:
+
+   ```
+   jsonplaceholder.typicode.com
+   ```
+
+0. In Path, enter `posts`.
+0. For Implementation, select HTTPClient4. 
+1. For Protocol, type `http`.
+2. For Method, type `POST`.
+3. Click the **Body Data** tab.
+0. Paste this sample JSON request text:
+   
+   ```
+   { title: 'foo', body: 'bar', userId: 1 }
+   ```
+
+0. Right-click on the HTTP Request to add Config Element - HTTP Header Manager.
+1. Click the Add button at the bottom of the screen.
+2. Click on the blue line under Name to add `Content-type`.
+3. Press tab key to enter `application/json`.
+4. Click Save.
+
+<a id="HeadlessRuns">
+### Headless API Jmeter runs</a>
+<a target="_blank" href="http://jmeter.apache.org/usermanual/get-started.html#non_gui">
+This page lists the parameters</a> for JMeter to kick it off in non-UI (headless mode) using a command such as:
+
+   ```
+   jmeter -n -t my_test.jmx -l log.jtl -H my.proxy.server -P 8000
+   ```
 
 
 <hr />
