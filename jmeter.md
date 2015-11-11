@@ -58,6 +58,47 @@ kowalcjZero</a> created a
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
+```
+log_file=jmeter.log java.io.FileNotFoundException: jmeter.log (Permission denied)
+[log_file-> System.out]
+2015/11/11 14:29:25 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/2.13/libexec/bin/user.properties 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/2.13/libexec/bin/system.properties 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Version 2.13 r1665067 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: java.version=1.8.0_60 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.name=Mac OS X 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.arch=x86_64 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.version=10.10.5 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: JMeterHome=/usr/local/Cellar/jmeter/2.13/libexec 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: user.dir  =/usr/local/bin 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: PWD       =/usr/local/bin 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: IP: 10.2.41.166 Name: 15mbp-10681 FullName: 10.2.41.166 
+2015/11/11 14:29:25 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: com.apple.laf.AquaLookAndFeel [Mac OS X, System] 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2015/11/11 14:29:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2015/11/11 14:29:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2015/11/11 14:29:27 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2015/11/11 14:29:28 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.control.gui.WebServiceSamplerGui 
+2015/11/11 14:29:28 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.modifier.gui.ParamModifierGui 
+2015/11/11 14:29:28 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /usr/local/Cellar/jmeter/2.13/libexec/bin/proxyserver.jks 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+```
+
 
 <a id="Addons">
 ## Add-ons</a>
