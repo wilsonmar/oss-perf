@@ -165,24 +165,6 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
 
 <a id="TestFolder">
 ## Create run assets folder</a>
-0. If you don't already have one, create a workspace folder and under that, a folder to hold jmeter tests:
-
-   ```
-   cd ~/
-   pwd
-   mkdir ws
-   cd ws
-   mkdir jmeter
-   cd jmeter
-   ```
-
-0. Verify:
-
-   ```
-   cd ~/ws/jmeter
-   ls
-   ```
-
 0. To ensure that jmeter can be invoked from this data folder, add it to the end of the server's program path:
 
    ```
@@ -210,6 +192,42 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    ```
    chmod +x /etc/profile.d/custompath.sh
    ```
+   
+0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
+   
+   ```
+   . /etc/profile
+   ```
+
+0. Type this command, including the period and space, to reload profile settings and add the directory to the path:
+   
+   ```
+   . /etc/profile
+   ```
+
+0. If you don't already have one, create a workspace folder (and not necessary named ws under Users home):
+
+   ```
+   cd ~/
+   pwd
+   mkdir ws
+   cd ws
+   ```
+
+0. Under the workspace folder, create a folder to all jmeter tests:
+
+   ```
+   mkdir jmeter
+   cd jmeter
+   ```
+
+0. Verify:
+
+   ```
+   cd ~/ws/jmeter
+   ls
+   ```
+
 
 <a id="JMeterUIRecording">
 ## JMeter UI Recording</a>
