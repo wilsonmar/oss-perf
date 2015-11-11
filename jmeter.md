@@ -73,7 +73,19 @@ series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
 On a CentOS (Linux) machine:
 
-1. Download the JMeter binary using the curl command:
+0. Go to URL to determine the bineary installer file to download:
+
+   ```
+   http://jmeter.apache.org/download_jmeter.cgi
+   ```
+   
+0. Right-click under Binaries to obtain the URL to download, such as:
+
+   ```
+   http://jmeter.apache.org/download_jmeter.cgi
+   ```
+   
+1. Create a curl command to download the JMeter installer binary:
 
    ```
    http://jmeter.apache.org/download_jmeter.cgi
