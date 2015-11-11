@@ -106,7 +106,7 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
 ## JMeter API scripts</a>
 Directories of web services:
 
-   * http://webservicex.net/New/Home/Directory
+   * http://webservicex.net/New/Home/Directory provides SOAP examples.
 
 Sample REST API services used for testing:
 
