@@ -52,10 +52,16 @@ To run JMeter on its own, the steps are:
 0. Login to the machine containing JMeter
 0. Ensure enough disk space is available, and clean-up if necessary.
 1. Gather data to be consumed during the run (userids, passwords, requests, etc.)
+
 0. Invoke JMeter
-0. Load performance tests
+0. Create script Test Plan
+0. Obtain initial response HTML for Pattern to test.
+0. Add Response Assertions
+1. Proving runs
 0. setup parameters
-1. setup monitoring
+
+0. setup monitoring
+0. Load performance tests
 0. run tests
 0. watch run
 0. analyze results
@@ -74,20 +80,39 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    * Xebialabx.com
    * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
 
+
 <a id="JMeterUIRecording">
 ## JMeter UI Recording</a>
-A recording of the UI can be made going through the proxy built into browsers' system preferences.
-In Chrome, select 'Under the Hood'.
-⌘+. In 'Advanced', go to Connection settings and set up your localhost as a proxy server. 
-Assign different ports to different protocols. 
-Press Start at the bottom of the page to begin recording.
+0. Invoke JMeter in UI mode.
 
+   ```
+   jmeter
+   ```
+
+   NOTE: JMeter runs from the terminal window. Destroy the terminal window and JMeter GUI will go away too.
+
+   A recording of the UI can be made going through the proxy built into browsers' system preferences.
+   In Chrome, select 'Under the Hood'.
+   ⌘+. In 'Advanced', go to Connection settings and set up your localhost as a proxy server. 
+   Assign different ports to different protocols. 
+   Press Start at the bottom of the page to begin recording.
+
+0. Save script as /HelloX.jmx to the ~/ws/jmeter folder created in the previous step.
 0. Run
 1. Notice that since Protocol: `https` was not specified, two requests were done. One for http and one for https.
 2. To avoid the repeat, specify Protocol `https`.
 
 <a id="JMeterAPIscripts">
 ## JMeter API scripts</a>
+Directories of web services:
+
+   * http://webservicex.net/New/Home/Directory
+
+Sample REST API services used for testing:
+
+   * validate.jsontest.com which Blazemeter uses in its <a target="_blank"      href="https://blazemeter.com/blog/testing-soaprest-web-services-using-jmeter">documentation</a>
+
+
 0. In JMeter, create a Test Plan add a Test Group. Add to that group a Listener for HTTP.
 For server name use a dev test site:
 
@@ -109,8 +134,21 @@ For server name use a dev test site:
 0. Right-click on the HTTP Request to add Config Element - HTTP Header Manager.
 1. Click the Add button at the bottom of the screen.
 2. Click on the blue line under Name to add `Content-type`.
-3. Press tab key to enter `application/json`.
+3. Press tab key to enter `application/json`. (Another is "application/x-www-form-urlencoded").
 4. Click Save.
+
+<a id="ResponseAssertion">
+### Response Assertion</a>
+0. Click **Text Response**.
+0. Click **Contains**.
+1. Type in `<title>`. This is in all HTML responses (including error pages).
+
+<a id="Runs">
+### Runs</a>
+0. Press Ctrl+R to run the script.
+0. Click on a response listener such as View Results Tree.
+
+0. Press Ctrl+E to erase all results.
 
 <a id="HeadlessRuns">
 ### Headless API Jmeter runs</a>
@@ -133,6 +171,11 @@ This page lists the parameters</a> for JMeter to kick it off in non-UI (headless
 
    **-t** prefixes test plan jmx files.
    
+<a id="ResponseAssertion">
+## Response Assertion</a>
+0. Right-click on the HTTP request and select Add, Assertion, Response Assertion.
+1. In the Pattern to Test section, add the pattern "title: 'foo'" coming back from a call to jsonplaceholder.
+
 <hr />
 ## <a name="Resources"> Resources specifically about viewing JMeter using the ELK stack</a>
 http://theworkaholic.blogspot.in/2015/05/graphs-for-jmeter-using-elasticsearch.html
