@@ -174,6 +174,36 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    cd jmeter
    ```
 
+0. Verify:
+
+   ```
+   cd ~/ws/jmeter
+   ls
+   ```
+
+0. To ensure that jmeter can be invoked from this data folder, add it to the end of the server's program path:
+
+   ```
+   echo $PATH
+   ```
+
+0. Since root access is necessary:
+
+   ```
+   su
+   ```
+
+0. Since root access is necessary, do this on Centos machines:
+
+   ```
+   echo 'pathmunge /usr/local/bin' > /etc/profile.d/custompath.sh
+   ```
+
+0. Make the new file executable:
+
+   ```
+   chmod +x /etc/profile.d/custompath.sh
+   ```
 
 <a id="JMeterUIRecording">
 ## JMeter UI Recording</a>
