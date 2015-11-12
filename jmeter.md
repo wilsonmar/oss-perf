@@ -52,7 +52,7 @@ Whereever they are, machines need significant network bandwidth and memory.
    open a terminal and type the ip address. For example:
 
    ```
-   ssh 10.28.25.68
+   ssh 10.28.99.99
    ```
 
 0. If the server is setup with LDAP, input your password.
