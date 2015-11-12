@@ -34,15 +34,18 @@ This page describes how to install and use JMeter.
 <hr />
 
 <a id="Provision">
-## Provision machine</a>
+## Provision JMeter slave machines</a>
 JMeter can be made available several ways:
 
    * Locally on a laptop after direct install, as explained below.
    * Locally running within a virual container such as Vagrant on a laptop.
    * In a PaaS (Platform as a service) cloud under Docker control.
-   * In a SaaS service such as what Blazmeter.com provides.
+   * In a SaaS service such as what <a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a> provides.
 
 Whereever they are, machines need significant network bandwidth and memory.
+
+Usually several JMeter servers need to be used to generate enough load to stress out an application infrastructure.
+So Puppet scripts are useful to save time and avoid mistakes, thus reducing troubleshooting frustrations.
 
 <a id="GrantAccess">
 ## Grant Access to server</a>
