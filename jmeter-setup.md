@@ -35,22 +35,8 @@ So Puppet scripts are useful to save time and avoid mistakes, thus reducing trou
 2. Group permissions need to be assigned to each user accessing the machine.
 
 
-<a id="AccessMachine">
-## Access JMeter slave machine</a>
-0. If you don't have a SSH UI program,
-   open a terminal and type the ip address. For example:
-
-   ```
-   ssh 10.28.99.99
-   ```
-
-  NOTE: The -X (X11) is not specified because iteraction with the server is not via a UI, only via command-line.
-
-0. If the server is setup with LDAP, input your password.
-
-   
 <a id="Installation">
-## Installation</a>
+## Installation on laptops</a>
 On a Mac, use Homebrew:
    
    ```
@@ -63,6 +49,26 @@ On Windows, use Chocolatey:
    cinst jmeter
    ```
 
+<a id="InitialRun">
+### Invoke JMeter UI</a>
+0. Position the present active directory to JMeter's bin folder:
+
+  ```
+  cd bin
+  ```
+
+0. Invoke the shell command:
+
+  ```
+  jmeter
+  ```
+
+  Windows uses jmeter.bat.
+  Mac OSX uses jmeter.sh.
+
+
+<a id="ServerInstall">
+### Installation on a server</a>
 On a server, the easiest way is to run JMeter within Docker using
 https://hub.docker.com/r/cirit/jmeter/
 based on 
@@ -131,8 +137,20 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
    mv apache-jmeter-2.13.zip
    ```
 
-<a id="InitialRun">
-### Invoke JMeter UI</a>
+<a id="AccessMachine">
+## Access Remote JMeter slave machine</a>
+0. If you don't have a SSH UI program,
+   open a terminal and type the ip address. For example:
+
+   ```
+   ssh 10.28.99.99
+   ```
+
+  NOTE: The -X (X11) is not specified because iteraction with the server is not via a UI, only via command-line.
+
+0. If the server is setup with LDAP, input your password.
+
+   
 To verify whether the program was installed in a way that can be invoked, invoke it:
 
 0. Position the present active directory to JMeter's bin folder:
