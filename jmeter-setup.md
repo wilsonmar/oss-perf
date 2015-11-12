@@ -136,6 +136,8 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
    ```
    unzip apache-jmeter-2.13.zip
    ```
+   
+   This creates new folder apache-jmeter-2.13.
 
 0. Move the files to the JMeter folder:
 
