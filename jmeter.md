@@ -47,8 +47,11 @@ Whereever they are, machines need significant network bandwidth and memory.
 
 <a id="AccessMachine">
 ## Access JMeter slave machine</a>
-0. The server needs to be setup with LDAP
-1. If you don't have a SSH UI program,
+0. The server needs to be setup with LDAP.
+1. The SSH certificate for userids need to be installed on the server.
+2. Group permissions need to be assigned to each user accessing the machine.
+
+0. If you don't have a SSH UI program,
    open a terminal and type the ip address. For example:
 
    ```
