@@ -1,4 +1,5 @@
-
+This page describes the creation of JMeter scripts.
+It is assummed a working JMeter environment was setup <a href="jmeter-setup.md">according to these instructions</a>.
 
 <a id="JMeterUIRecording">
 ## JMeter UI Recording</a>
