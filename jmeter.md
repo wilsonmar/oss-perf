@@ -3,6 +3,7 @@ This page describes how to use JMeter.
 To run JMeter on its own, the steps are:
 
 0. <a href="#Provision">Provision JMeter slave machine</a>
+0. <a href="#GrantAccess">Grant Access to server</a>
 0. <a href="#AccessMachine">Access JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter</a>
 1. <a href="#Addons">Install add-ons</a>
@@ -45,12 +46,15 @@ JMeter can be made available several ways:
 
 Whereever they are, machines need significant network bandwidth and memory.
 
-<a id="AccessMachine">
-## Access JMeter slave machine</a>
+<a id="GrantAccess">
+## Grant Access to server</a>
+
 0. The server needs to be setup with LDAP.
 1. The SSH certificate for userids need to be installed on the server.
 2. Group permissions need to be assigned to each user accessing the machine.
 
+<a id="AccessMachine">
+## Access JMeter slave machine</a>
 0. If you don't have a SSH UI program,
    open a terminal and type the ip address. For example:
 
