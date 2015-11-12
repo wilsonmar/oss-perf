@@ -9,27 +9,6 @@ This page describes how to install JMeter.
 0. <a href="#TestFolder">Create run assets folder</a>
 0. Ensure enough disk space is available, and clean-up if necessary.
 
-0. Gather data to be consumed during the run (userids, passwords, requests, etc.) in a .csv file.
-0. Record script.
-
-0. Create script Test Plan
-0. Obtain initial response HTML for Pattern to test.
-0. Add HTTP Authorization Manager, if applicable.
-0. Add Response Assertions
-1. Proving runs
-0. setup parameters ${id} for the id column in the csv file.
-
-0. setup monitoring (Listener Aggregate Report)
-0. Run initial load tests viability.
-0. run tests
-0. watch run
-0. analyze results
-1. Archive files and clean-up test rig.
-
-0. Store JMeter files in github.
-0. Connect to Jenkins to kick off runs using assets in github.
-
-0. Ramp-up, but watch monitoring to identify a bottleneck level being reached on the load generators OR the app.
 
 <hr />
 
