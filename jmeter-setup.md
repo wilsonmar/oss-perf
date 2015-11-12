@@ -3,7 +3,7 @@ This page describes how to install JMeter.
 0. <a href="#Provision">Provision JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter locally</a>
 0. <a href="#TestFolder">Create run assets folder</a>
-0. <a href="#InitialRun"> Invoke JMeter UI</a>
+0. <a href="#InitialRun"> Invoke JMeter UI locally</a>
 
 0. <a href="#GrantAccess">Grant Access to server</a>
 0. <a href="#AccessMachine">Access headless JMeter server remotely</a>
@@ -54,6 +54,21 @@ On Windows, use Chocolatey:
    ```
    cinst jmeter
    ```
+
+<a id="ConfigurePath">
+### Configure Path</a>
+This is so the jmeter command can be processed from any folder (including where Jmeter .jmx files are stored).
+
+0. Verify where Jmeter is installed:
+
+   ```
+   which jmeter
+   ```
+   
+   The response (on a Mac):
+   
+   `/usr/local/bin/jmeter`
+   
 
 <a id="InitialRun">
 ### Invoke JMeter UI</a>
