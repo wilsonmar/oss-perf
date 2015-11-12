@@ -38,7 +38,7 @@ It is assummed a working JMeter environment was setup <a href="jmeter-setup.md">
 2. To avoid the repeat, specify Protocol `https`.
 
 <a id="JMeterAPIscripts">
-## JMeter API scripts</a>
+## JMeter API script creation</a>
 Directories of web services:
 
    * http://webservicex.net/New/Home/Directory provides SOAP examples.
