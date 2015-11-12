@@ -1,10 +1,11 @@
 This page describes the creation of JMeter scripts.
-It is assummed a working JMeter environment was setup <a href="jmeter-setup.md">according to these instructions</a>.
+It is assummed a working JMeter environment was setup <a href="jmeter-setup.md">according to these instructions</a>
+and the present working directory is set to where JMeter scripts (.jmx files) are stored.
 
+0. <a href="#TestPlan">Create script Test Plan</a>
 0. Gather data to be consumed during the run (userids, passwords, requests, etc.) in a .csv file.
 0. Record script.
 
-0. Create script Test Plan
 0. Obtain initial response HTML for Pattern to test.
 0. Add HTTP Authorization Manager, if applicable.
 0. Add Response Assertions
@@ -23,6 +24,11 @@ It is assummed a working JMeter environment was setup <a href="jmeter-setup.md">
 
 0. Ramp-up, but watch monitoring to identify a bottleneck level being reached on the load generators OR the app.
 
+<hr />
+
+<a id="TestPlan">
+## Create JMeter Test Plan</a>
+To JMeter, a Test Plan is equivalent to a .jmx file.
 
 <a id="JMeterUIRecording">
 ## JMeter UI Recording</a>
