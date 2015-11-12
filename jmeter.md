@@ -6,6 +6,7 @@ To run JMeter on its own, the steps are:
 0. <a href="#GrantAccess">Grant Access to server</a>
 0. <a href="#AccessMachine">Access JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter</a>
+0. <a href="#InitialRun"> Invoke JMeter UI</a>
 1. <a href="#Addons">Install add-ons</a>
 0. <a href="#TestFolder">Create run assets folder</a>
 0. Ensure enough disk space is available, and clean-up if necessary.
@@ -13,7 +14,6 @@ To run JMeter on its own, the steps are:
 
 0. Record script.
 
-0. Invoke JMeter UI
 0. Create script Test Plan
 0. Obtain initial response HTML for Pattern to test.
 0. Add HTTP Authorization Manager, if applicable.
@@ -97,7 +97,7 @@ On Ubunto, see this 7-minute video (from Oct. 2014) about using apt-get:
 
    * https://www.youtube.com/watch?v=8_lEdaIUZRU
 
-On a CentOS (Linux) machine:
+On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow Update Modified) package manager for Centos.
 
 0. Position to the folder under where JMeter will reside:
 
@@ -116,12 +116,8 @@ On a CentOS (Linux) machine:
    http://jmeter.apache.org/download_jmeter.cgi
    ```
    
-0. Right-click under Binaries to obtain the URL to download:
+0. Right-click under Binaries to obtain the URL to download (*.zip):
 
-   ```
-   http://jmeter.apache.org/download_jmeter.cgi
-   ```
- 
    ![jmeter-download-link](https://cloud.githubusercontent.com/assets/300046/11106627/633db242-888c-11e5-9325-46f7e00a4514.png)
 
    
@@ -151,6 +147,23 @@ On a CentOS (Linux) machine:
    mv apache-jmeter-2.13.zip
    ```
 
+<a id="InitialRun">
+### Invoke JMeter UI</a>
+To verify whether the program was installed in a way that can be invoked, invoke it:
+
+0. Position the present active directory to JMeter's bin folder:
+
+  ```
+  cd bin
+  ```
+
+0. Invoke the shell command:
+
+  ```
+  sh jmeter
+  ``
+
+   NOTE: JMeter runs from the terminal window. Destroy the terminal window and JMeter GUI will go away too.
 
 <a id="TestFolder">
 ## Create run assets folder</a>
@@ -313,14 +326,6 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
 
 <a id="JMeterUIRecording">
 ## JMeter UI Recording</a>
-0. Invoke JMeter in UI mode.
-
-   ```
-   jmeter
-   ```
-
-   NOTE: JMeter runs from the terminal window. Destroy the terminal window and JMeter GUI will go away too.
-
    A recording of the UI can be made going through the proxy built into browsers' system preferences.
    In Chrome, select 'Under the Hood'.
    ⌘+. In 'Advanced', go to Connection settings and set up your localhost as a proxy server. 
