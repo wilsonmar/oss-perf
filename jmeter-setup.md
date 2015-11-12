@@ -127,7 +127,7 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
    
    ```
      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
+                                    Dload  Upload   Total   Spent    Left  Speed
 100 35.9M  100 35.9M    0     0  1727k      0  0:00:21  0:00:21 --:--:-- 1895k
    ```
    
