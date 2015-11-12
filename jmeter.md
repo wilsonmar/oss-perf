@@ -65,11 +65,14 @@ https://hub.docker.com/r/cirit/jmeter/
 based on 
 https://github.com/cagdascirit/docker-jmeter
 
-
 <a target="_blank" href="https://plus.google.com/114432111742231285408/posts">
 kowalcjZero</a> created a 
 <a target="_blank" href="https://www.youtube.com/watch?v=RWkJl4OXTJI&list=PLAUamg5VPF5HAxDQlDVItNLfTBNzhpnW4">
 series of videos</a> on JMeter in AWS EC2 and Vagrant box.
+
+On a machine with Node, JMeter can be installed using NPM (Node Package Manager) via a Grunt task:
+
+   * https://www.npmjs.com/package/grunt-jmeter
 
 On a CentOS (Linux) machine:
 
