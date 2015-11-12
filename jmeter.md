@@ -2,6 +2,7 @@ This page describes how to use JMeter.
 
 To run JMeter on its own, the steps are:
 
+0. <a href="#Provision">Provision JMeter slave machine</a>
 0. <a href="#AccessMachine">Access JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter</a>
 1. <a href="#Addons">Install add-ons</a>
@@ -32,6 +33,17 @@ To run JMeter on its own, the steps are:
 0. Ramp-up, but watch monitoring to identify a bottleneck level being reached on the load generators OR the app.
 
 <hr />
+
+<a id="Provision">
+## Provision machine</a>
+JMeter can be made available several ways:
+
+   * Locally on a laptop after direct install, as explained below.
+   * Locally running within a virual container such as Vagrant on a laptop.
+   * In a PaaS (Platform as a service) cloud under Docker control.
+   * In a SaaS service such as what Blazmeter.com provides.
+
+Whereever they are, machines need significant network bandwidth and memory.
 
 <a id="AccessMachine">
 ## Access JMeter slave machine</a>
