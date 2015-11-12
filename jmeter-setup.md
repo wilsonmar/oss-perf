@@ -7,7 +7,8 @@ This page describes how to install JMeter.
 0. <a href="#InitialRun"> Invoke JMeter UI</a>
 1. <a href="#Addons">Install add-ons</a>
 0. <a href="#TestFolder">Create run assets folder</a>
-0. Ensure enough disk space is available, and clean-up if necessary.
+0. Ensure enough disk space is available.
+1. Periodic archival and clean-up.
 
 
 <hr />
@@ -33,6 +34,7 @@ So Puppet scripts are useful to save time and avoid mistakes, thus reducing trou
 1. The SSH certificate for userids need to be installed on the server.
 2. Group permissions need to be assigned to each user accessing the machine.
 
+
 <a id="AccessMachine">
 ## Access JMeter slave machine</a>
 0. If you don't have a SSH UI program,
@@ -41,6 +43,8 @@ So Puppet scripts are useful to save time and avoid mistakes, thus reducing trou
    ```
    ssh 10.28.99.99
    ```
+
+  NOTE: The -X (X11) is not specified because iteraction with the server is not via a UI, only via command-line.
 
 0. If the server is setup with LDAP, input your password.
 
