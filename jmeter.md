@@ -1,6 +1,4 @@
-This page describes how to use JMeter.
-
-To run JMeter on its own, the steps are:
+This page describes how to install and use JMeter.
 
 0. <a href="#Provision">Provision JMeter slave machine</a>
 0. <a href="#GrantAccess">Grant Access to server</a>
@@ -10,8 +8,8 @@ To run JMeter on its own, the steps are:
 1. <a href="#Addons">Install add-ons</a>
 0. <a href="#TestFolder">Create run assets folder</a>
 0. Ensure enough disk space is available, and clean-up if necessary.
-1. Gather data to be consumed during the run (userids, passwords, requests, etc.) in a .csv file.
 
+0. Gather data to be consumed during the run (userids, passwords, requests, etc.) in a .csv file.
 0. Record script.
 
 0. Create script Test Plan
@@ -161,7 +159,7 @@ To verify whether the program was installed in a way that can be invoked, invoke
 
   ```
   sh jmeter
-  ``
+  ```
 
    NOTE: JMeter runs from the terminal window. Destroy the terminal window and JMeter GUI will go away too.
 
