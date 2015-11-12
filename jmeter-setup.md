@@ -1,14 +1,18 @@
 This page describes how to install JMeter.
 
 0. <a href="#Provision">Provision JMeter slave machine</a>
+0. <a href="#Installation">Install jmeter locally</a>
+0. <a href="#TestFolder">Create run assets folder</a>
+0. <a href="#InitialRun"> Invoke JMeter UI</a>
+
 0. <a href="#GrantAccess">Grant Access to server</a>
 0. <a href="#AccessMachine">Access JMeter slave machine</a>
-0. <a href="#Installation">Install jmeter</a>
-0. <a href="#InitialRun"> Invoke JMeter UI</a>
-1. <a href="#Addons">Install add-ons</a>
-0. <a href="#TestFolder">Create run assets folder</a>
+
+0. <a href="#Addons">Install add-ons</a>
+0. <a href="#Properties">Properties configuration</a>
+
 0. Ensure enough disk space is available.
-1. Periodic archival and clean-up.
+0. Periodic archival and clean-up.
 
 
 <hr />
