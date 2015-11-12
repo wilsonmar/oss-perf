@@ -41,6 +41,8 @@ So Puppet scripts are useful to save time and avoid mistakes, thus reducing trou
 
 <a id="Installation">
 ## Installation on laptops</a>
+This is done by a user with admin permissions.
+
 On a Mac, use Homebrew:
    
    ```
