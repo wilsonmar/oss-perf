@@ -6,7 +6,7 @@ This page describes how to install JMeter.
 0. <a href="#InitialRun"> Invoke JMeter UI</a>
 
 0. <a href="#GrantAccess">Grant Access to server</a>
-0. <a href="#AccessMachine">Access JMeter slave machine</a>
+0. <a href="#AccessMachine">Access headless JMeter server remotely</a>
 
 0. <a href="#Addons">Install add-ons</a>
 0. <a href="#Properties">Properties configuration</a>
@@ -154,15 +154,14 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
    ```
 
 <a id="AccessMachine">
-## Access Remote JMeter slave machine</a>
-0. If you don't have a SSH UI program,
-   open a terminal and type the ip address. For example:
+## Access headless JMeter server remotely</a>
+0. Open a terminal and type the ip address. For example:
 
    ```
    ssh 10.28.99.99
    ```
 
-  NOTE: The -X (X11) is not specified because iteraction with the server is not via a UI, only via command-line.
+  NOTE: The -X (X11) parameter is not specified because iteraction with the server is not via a UI, only via command-line.
 
 0. If the server is setup with LDAP, input your password.
 
