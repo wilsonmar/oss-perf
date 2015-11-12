@@ -74,6 +74,10 @@ On a machine with Node, JMeter can be installed using NPM (Node Package Manager)
 
    * https://www.npmjs.com/package/grunt-jmeter
 
+On Ubunto, see this 7-minute video (from Oct. 2014) about using apt-get:
+
+   * https://www.youtube.com/watch?v=8_lEdaIUZRU
+
 On a CentOS (Linux) machine:
 
 0. Position to the folder under where JMeter will reside:
@@ -127,6 +131,7 @@ On a CentOS (Linux) machine:
    ```
    mv apache-jmeter-2.13.zip
    ```
+
 
 <a id="TestFolder">
 ## Create run assets folder</a>
