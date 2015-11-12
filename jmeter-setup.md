@@ -139,10 +139,18 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
    
    This creates new folder apache-jmeter-2.13.
 
-0. Move the files to the JMeter folder:
+0. PROTIP: Rename the folder name so scripts referring to it do not need to be changed.
+
+  If an existing version exists, rename it back to the version number.
 
    ```
-   mv apache-jmeter-2.13.zip
+   mv apache-jmeter-current  apache-jmeter-2.09
+   ```
+   
+   Then:
+
+   ```
+   mv apache-jmeter-2.13  apache-jmeter-current 
    ```
 
 <a id="AccessMachine">
