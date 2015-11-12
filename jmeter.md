@@ -73,30 +73,56 @@ series of videos</a> on JMeter in AWS EC2 and Vagrant box.
 
 On a CentOS (Linux) machine:
 
-0. Go to URL to determine the bineary installer file to download:
+0. Position to the folder under where JMeter will reside:
+
+   ```
+   cd /usr/local/bin
+   pwd
+   ls
+   ```
+
+   Files and folders already there include:
+   `chattr.sh  chkwinbind.sh  rename2  showip.sh  winbash`
+   
+0. Use an internet browser to go to the URL listing bineary installers to download:
 
    ```
    http://jmeter.apache.org/download_jmeter.cgi
    ```
    
-0. Right-click under Binaries to obtain the URL to download, such as:
+0. Right-click under Binaries to obtain the URL to download:
 
    ```
    http://jmeter.apache.org/download_jmeter.cgi
    ```
+ 
+   ![jmeter-download-link](https://cloud.githubusercontent.com/assets/300046/11106627/633db242-888c-11e5-9325-46f7e00a4514.png)
+
    
-1. Create a curl command to download the JMeter installer binary:
+0. Create a curl command to download the JMeter zip file:
 
    ```
-   http://jmeter.apache.org/download_jmeter.cgi
+   curl -o apache-jmeter-2.13.zip  http://mirrors.koehn.com/apache//jmeter/binaries/apache-jmeter-2.13.zip
    ```
    
-2. Unzip apache-jmeter-*.tgz to your preferred location:
-
-2. Unzip apache-jmeter-*.zip:
+   Wait under the download summary shows 100%:
+   
+   ```
+     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 35.9M  100 35.9M    0     0  1727k      0  0:00:21  0:00:21 --:--:-- 1895k
+   ```
+   
+0. Unzip apache-jmeter-*.zip:
 
    ```
-   unzip apache-jmeter-2.7.zip
+   unzip apache-jmeter-2.13.zip
+   ```
+
+0. Move the files to the JMeter folder:
+
+   ```
+   mv apache-jmeter-2.13.zip
    ```
 
 <a id="TestFolder">
