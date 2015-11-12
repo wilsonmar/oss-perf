@@ -47,7 +47,7 @@ To run JMeter on its own, the steps are:
 
    
 <a id="Installation">
-## Provision and installation</a>
+## Installation</a>
 On a Mac, use Homebrew:
    
    ```
