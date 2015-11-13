@@ -120,7 +120,14 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
 
    Files and folders already there include:
    `chattr.sh  chkwinbind.sh  rename2  showip.sh  winbash`
-   
+
+  However, <a target="_blank" href="http://testedandwrote.blogspot.com/2012/09/installing-jmeter-on-centoswill-work-on.html">
+  this guy recommends</a>:
+  
+  ```
+  cd /var/www/html
+  ```
+  
 0. Use an internet browser to go to the URL listing bineary installers to download:
 
    ```
