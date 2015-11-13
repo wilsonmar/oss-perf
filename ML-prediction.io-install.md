@@ -184,3 +184,8 @@ Starting PredictionIO Event Server...
 [ERROR] [Console$] Source Name: LOCALFS; Type: localfs; Configuration: PATH -> /Users/wmar/.pio_store/models, TYPE -> localfs
 [ERROR] [Console$] Source Name: HBASE; Type: (error); Configuration: (error)
  ```
+
+<a id="Resources">
+## Resources</a>
+
+* http://www.guru99.com/hbase-tutorials.html
