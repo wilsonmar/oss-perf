@@ -152,7 +152,10 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
                                     Dload  Upload   Total   Spent    Left  Speed
 100 35.9M  100 35.9M    0     0  1727k      0  0:00:21  0:00:21 --:--:-- 1895k
    ```
-   
+
+  Alternately, some prefer <a target="_blank" href="http://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/">
+  wget</a>.
+
 0. Unzip apache-jmeter-*.zip:
 
    ```
