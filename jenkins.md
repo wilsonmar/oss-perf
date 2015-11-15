@@ -8,6 +8,29 @@ To install on a Centos machine, follow instructions at:
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
+Installers for other os:
+
+ * <a target="_blank" href="http://jenkins-ci.org">http://jenkins-ci.org</a>
+
+By default, Jenkins stores its configuration files in the user's home folder at `~/.jenkins`.
+
+Jenkins can be started for a specific port:
+
+ ```
+ java -jar jenkins.war --httpPort=8081
+ ```
+
+A Jenkins server can scale by adding nodes to spread build work across several servers running different operating systems.
+
+Several **executors** can be running simultaneously.
+
+Jenkins slave nodes can be started by the master using several launch methods:
+
+ * Launch slave agents on Unix machines via SSH
+ * Launch slave agents via Java Web Start
+ * Launch slave via execution of command on the Master
+ * Let Jenkins control this Window slave as a Windows service
+
 <a id="Plugins">
 ## Plugins</a>
 Jenkins has many plug-ins.
