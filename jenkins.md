@@ -20,7 +20,7 @@ Jenkins can be started for a specific port:
  java -jar jenkins.war --httpPort=8081
  ```
 
-A Jenkins server can scale by adding nodes to spread build work across several servers running different operating systems.
+A Jenkins server can scale by adding **nodes** to spread build work across several servers running different operating systems.
 
 Several **executors** can be running simultaneously.
 
