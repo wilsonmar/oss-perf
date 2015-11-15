@@ -140,6 +140,8 @@ The defaults are:
  * Installation path (/Users/wmar/PredictionIO): 
  * Vendor path (/Users/wmar/PredictionIO/vendors): 
 
+The concept of linear regression and correlation is not very new. 
+Francis Galton invented the least-squares method in 1885.
 
 <a id="Zookeeper">
 ### Zookeeper</a>
