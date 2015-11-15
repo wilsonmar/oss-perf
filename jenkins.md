@@ -31,6 +31,12 @@ Jenkins slave nodes can be started by the master using several launch methods:
  * Launch slave via execution of command on the Master
  * Let Jenkins control this Window slave as a Windows service
 
+0. From a slave command line, connect to a Jenkins master:
+ 
+ ```
+ java -jar slave.jar -jnlpUrl http://jenkins-master:8081/computer/Test Node/slave-agent.jnlp
+ ```
+
 <a id="Plugins">
 ## Plugins</a>
 Jenkins has many plug-ins.
