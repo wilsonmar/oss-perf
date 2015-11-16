@@ -98,7 +98,14 @@ This would centralize a single store of credentials.
 
 <a id="ScheduleBuild">
 ## Schedule builds</a>
-A build can be invoked by clicking the button with the green arrow at the right side of the list of projects.
+0. Right-click on a project for a drop-down list containing **workspace**.
+
+ <img width="321" alt="jenkins-build-dropdown" src="https://cloud.githubusercontent.com/assets/300046/11172423/8cffff32-8bc4-11e5-9e3b-4c92b9f7b3a1.png">
+
+ A build can also be invoked by clicking the button with the green arrow at the right side of the list of projects.
+
+ In the workspace for a project are folders and **.trx** files output from Jenkins runs.
+ 
 
 <a id="Reports">
 ## Reports</a>
@@ -113,10 +120,6 @@ A build can be invoked by clicking the button with the green arrow at the right 
 0. Select **Console Output** to view the log from each build.
 
  Jenkins provides RSS feeds exposing XML files containing lists of just failures or a list of just the latest builds.
-
-0. Right-click on the build name for a drop-down list containing **workspace**.
-
- <img width="321" alt="jenkins-build-dropdown" src="https://cloud.githubusercontent.com/assets/300046/11172423/8cffff32-8bc4-11e5-9e3b-4c92b9f7b3a1.png">
 
 
 <a id="Post-Build">
