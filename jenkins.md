@@ -126,6 +126,9 @@ Extension points</a> are plugins that extend other plugins.
 
  In the workspace for a project are folders and **.trx** files output from Jenkins runs.
  
+ The flow for programming code may includ **static code analysis** 
+ such as using SonarQube.
+ 
 
 <a id="Reports">
 ## Reports</a>
@@ -147,6 +150,9 @@ Extension points</a> are plugins that extend other plugins.
   * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
   sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
+If a job fails, 
+0. Email notifications are sent
+1. Chat room notifications are sent
 
 
 <a id="Resources">
