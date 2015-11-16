@@ -77,7 +77,8 @@ Ready to improve quality
 
 <a id="Configuration">
 ## Configuration</a>
-
+Connection to Jenkins:
+http://docs.sonarqube.org/display/PLUG/SonarQube+Scanner+for+Jenkins
 
 <a id="Videos">
 ## Videos</a>
