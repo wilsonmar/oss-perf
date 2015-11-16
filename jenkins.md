@@ -57,6 +57,7 @@ This is typically done only by the Administrator of the system.
 <a id="Nodes">
 ## Nodes</a>
  A Jenkins server can scale by adding **nodes** to spread build work across several servers running different operating systems.
+
  Look at the **Load Statistics** UI to see whether additional nodes are necessary.
  
  Jenkins slave nodes can be started by the master using several launch methods:
@@ -66,6 +67,17 @@ This is typically done only by the Administrator of the system.
   * Launch slave via execution of command on the Master
   * Let Jenkins control this Window slave as a Windows service
 
+0. Setup a node as a VirtualBox. TODO.
+
+0. In Configure Server, a node can be setup as a **Virtualbox** 
+   URL such as http://localhost:18083/.
+
+0. In Manage Nodes, configure a VBox host.
+1. Run the box by clicking the icon at the far right of the node listed.
+2. Launch Slave Agent to start the machine.
+
+
+### From a slave node
 0. From a slave command line, connect to a Jenkins master:
  
  ```
@@ -116,6 +128,11 @@ This would centralize a single store of credentials.
 <a target="_blank" href="http://wiki.jenkins-ci.org/display/JENKINS/Extension+points">
 Extension points</a> are plugins that extend other plugins.
 
+The flow for programming code may includ **static code analysis** 
+ such as using StyleCop (there is also SonarQube).
+This provides options on what violations to report. 
+
+
 <a id="ScheduleBuild">
 ## Schedule builds</a>
 0. Right-click on a project for a drop-down list containing **workspace**.
@@ -126,10 +143,7 @@ Extension points</a> are plugins that extend other plugins.
 
  In the workspace for a project are folders and **.trx** files output from Jenkins runs.
  
- The flow for programming code may includ **static code analysis** 
- such as using SonarQube.
  
-
 <a id="Reports">
 ## Reports</a>
 0. Enable auto-refresh at the upper-right of the jobs list.
@@ -144,6 +158,11 @@ Extension points</a> are plugins that extend other plugins.
 
  Jenkins provides RSS feeds exposing XML files containing lists of just failures or a list of just the latest builds.
 
+0. A link to a specific build attempt is like this example generated from Papercut.codeplex.com:
+
+ ```
+ http://localhost:8081/job/Hellow%20World/27/
+ ```
 
 <a id="Post-Build">
 ## Post-build actions</a>
@@ -178,7 +197,7 @@ By Chris Chrysostom:
 John Sonmez (@jsonmez, http://simpleprogrammer.com/)
  * Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com.
    In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, 
-   MSBuild (), MSTest, and MSTestRunner.
+   MSBuild (), MSTest, MSTestRunner, and Papercut.
   But other tools work in a similar way.
  The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
  
