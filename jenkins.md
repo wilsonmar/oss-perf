@@ -89,15 +89,23 @@ Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
   sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
 
-
 The plugin: <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin">
 https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin</a>
 triggers parameterized builds on other jenkins servers. 
 This would centralize a single store of credentials.
 
+ Plugins inject **Add build step** choices.
+
+<a id="ScheduleBuild">
+## Schedule builds</a>
+A build can be invoked by clicking the button with the green arrow at the right side of the list of projects.
 
 <a id="Reports">
 ## Reports</a>
+0. Enable auto-refresh at the upper-right of the jobs list.
+
+0. Builds appear in the Build Queue.
+
 Jenkins provides RSS feeds exposing XML files containing lists of just failures or a list of just the latest builds.
 
 
@@ -120,6 +128,7 @@ By Chris Chrysostom:
 
 John Sonmez (@jsonmez, http://simpleprogrammer.com/)
  * Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com.
-   In this course, examples use SVN (Subversion), Visual Studio, MSBuild, MSTest, and MSTestRunner.
-  But it doesn't matter. 
+   In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, MSBuild, MSTest, and MSTestRunner.
+  But tools work in a similar way.
+ The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
  
