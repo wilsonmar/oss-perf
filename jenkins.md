@@ -11,7 +11,7 @@ Cloudbees hosts Jenkins in the cloud.
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
- Alternately, installers for other os:
+ Alternately, installers for Windows, Mac OSX, and other os:
 
  * <a target="_blank" href="http://jenkins-ci.org">http://jenkins-ci.org</a>
 
