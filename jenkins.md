@@ -7,7 +7,7 @@ such as for building software and conducting tests.
 http://www.cloudbees.com/
 Cloudbees hosts Jenkins in the cloud.
 
-0. To install on a Centos machine, follow instructions at:
+0. To install on a RedHat and Centos machines, follow instructions at:
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
