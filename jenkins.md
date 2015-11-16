@@ -8,8 +8,8 @@ This is why people warn to not check in code that breaks things (fails even loca
 
 <a id="Install">
 ## Installation</a>
-http://www.cloudbees.com/
-Cloudbees hosts Jenkins in the cloud.
+0. Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
+Cloudbees.com</a> which hosts Jenkins in their cloud.
 
 0. To install on a RedHat and Centos machines, follow instructions at:
 
