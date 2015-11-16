@@ -4,26 +4,37 @@ such as for building software and conducting tests.
 
 <a id="Install">
 ## Installation</a>
-To install on a Centos machine, follow instructions at:
+0. To install on a Centos machine, follow instructions at:
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
-Installers for other os:
+ Alternately, installers for other os:
 
  * <a target="_blank" href="http://jenkins-ci.org">http://jenkins-ci.org</a>
 
  By default, Jenkins stores its configuration files in the user's home folder at `~/.jenkins`.
 
- Jenkins can be started for a specific port:
+ Installation options are described at:
+ * https://wiki.jenkins-ci.org/display/JENKINS/Starting-and-Accessing+Jenkins
+
+0. Start Jenkins to a specific port:
 
  ```
  java -jar jenkins.war --httpPort=8081
  ```
 
+ The tcp port Jenkins uses? (8005 sharing, 8009, 8080) 
+
+  ```
+  netstat -anp | grep java
+  ```
+
+<a id="Nodes">
+## Nodes</a>
  A Jenkins server can scale by adding **nodes** to spread build work across several servers running different operating systems.
 
- Several **executors** can be running simultaneously.
-
+ Look at the **Load Statistics** UI to see whether additional nodes are necessary.
+ 
  Jenkins slave nodes can be started by the master using several launch methods:
 
   * Launch slave agents on Unix machines via SSH
@@ -36,6 +47,19 @@ Installers for other os:
  ```
  java -jar slave.jar -jnlpUrl http://jenkins-master:8081/computer/Test Node/slave-agent.jnlp
  ```
+
+ Several **executors** can be running simultaneously.
+ This number is specified within the **Manage Jenkins** UI.
+ 
+ Tool locations (such as Github) is also specified in that UI.
+
+ Nodes are described at:
+ * https://wiki.jenkins-ci.org/display/JENKINS/Distributed+builds
+
+<a id="Projects">
+## Projects</a>
+
+
 
 <a id="Plugins">
 ## Plugins</a>
@@ -56,13 +80,16 @@ https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin
 triggers parameterized builds on other jenkins servers. 
 This would centralize a single store of credentials.
 
-.jenkins folder is created in the home folder.
 
-Which tcp port used? (8005 sharing, 8009, 8080) 
+<a id="Builds">
+## Builds</a>
+Jenkins was originally created for automating the building (compilation) of java programs.
+But Jenkins can be used for other types of work.
+Nevertheless, the Jenkins term "build" is another word for what operating systems call a "job" (unit of work).
 
-  ```
-  netstat -anp | grep java
-  ```
+Jenkins provides RSS feeds exposing XML files containing lists of just failures or a list of just the latest builds.
+
+Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
 <a id="Resources">
 ## Resources</a>
@@ -80,3 +107,8 @@ By Jeff Shantz:
 
 By Chris Chrysostom:
  * https://www.youtube.com/watch?v=RR0LabeUQ88 Create new job in Jenkins
+
+John Sonmez (@jsonmez, http://simpleprogrammer.com/)
+ * Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com.
+   In this course, examples use SVN and Visual Studio, but it doesn't matter. 
+ 
