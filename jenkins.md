@@ -51,6 +51,8 @@ This is typically done only by the Administrator of the system.
  <img width="710" alt="jenkins-security-permissions-matrix" src="https://cloud.githubusercontent.com/assets/300046/11181173/6ea5dfe4-8c1d-11e5-9674-ef0e7d88ef8d.png"> 
 
 
+ <img width="881" alt="jenkins-build-project-detail2" src="https://cloud.githubusercontent.com/assets/300046/11181632/017e375a-8c21-11e5-8147-4df54611d009.png">
+
 
 <a id="Nodes">
 ## Nodes</a>
