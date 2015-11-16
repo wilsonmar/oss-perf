@@ -104,6 +104,8 @@ A build can be invoked by clicking the button with the green arrow at the right 
 ## Reports</a>
 0. Enable auto-refresh at the upper-right of the jobs list.
 
+<img width="611" alt="jenkins-build-project-detail" src="https://cloud.githubusercontent.com/assets/300046/11172332/02c5ca5a-8bc3-11e5-8d53-b4a0b57a22a8.png">
+
 0. Builds appear in the Build Queue.
 
 Jenkins provides RSS feeds exposing XML files containing lists of just failures or a list of just the latest builds.
