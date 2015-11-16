@@ -201,7 +201,7 @@ By Chris Chrysostom:
 John Sonmez (@jsonmez, http://simpleprogrammer.com/)
  * Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com.
    In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, 
-   MSBuild (), MSTest, MSTestRunner, and Papercut.
+   MSBuild (), MSTest, MSTestRunner, StyleCop, and Papercut.
   But other tools work in a similar way.
  The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
  
