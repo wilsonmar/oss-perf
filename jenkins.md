@@ -2,6 +2,10 @@ Jenkins is open-source Java software (running under a Tomcat web server)
 to invoke jobs on a schedule ("continuosly")
 such as for building software and conducting tests.
 
+This is also called continuous integration because Jenkins is not for unit testing,
+but to ensure that components already unit-tested can be integrated together.
+This is why people warn to not check in code that breaks things (fails even local unit testing).
+
 <a id="Install">
 ## Installation</a>
 http://www.cloudbees.com/
