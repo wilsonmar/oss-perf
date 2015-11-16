@@ -80,21 +80,20 @@ Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
 <a id="Plugins">
 ## Plugins</a>
-0. In **Manage Jenkins** UI, has many plug-ins.
+0. In **Manage Jenkins** UI **Available** tab has many plug-ins.
 
-  * https://www.youtube.com/watch?v=XY-ZB3FRnxw 
-    Jenkins Tutorial - Part 01: Introduction & installation by Chandra Shekhar Reddy
-
-  * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
-  sets the final build status (as good, unstable or failed) based on the reported error percentage. 
+0. Click on a category (Artifact Uploaders) to expand additional categories.
 
 
 The plugin: <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin">
 https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin</a>
-triggers parameterized builds on other jenkins servers. 
+**triggers** parameterized builds on other jenkins servers. 
 This would centralize a single store of credentials.
 
  Plugins inject **Add build step** choices.
+
+<a target="_blank" href="http://wiki.jenkins-ci.org/display/JENKINS/Extension+points">
+Extension points</a> are plugins that extend other plugins.
 
 <a id="ScheduleBuild">
 ## Schedule builds</a>
@@ -124,6 +123,8 @@ This would centralize a single store of credentials.
 
 <a id="Post-Build">
 ## Post-build actions</a>
+  * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
+  sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
 
 
@@ -131,6 +132,9 @@ This would centralize a single store of credentials.
 ## Resources</a>
 
 By Chandra Shekhar Reddy:
+  * https://www.youtube.com/watch?v=XY-ZB3FRnxw 
+    Jenkins Tutorial - Part 01: Introduction & installation by Chandra Shekhar Reddy
+
   * https://www.youtube.com/watch?v=XY-ZB3FRnxw (19:25) Install JRE8 & Jenkins.war on Windows & /opt/tomcat7/webapps
     and ./bin/startup.sh
   * https://www.youtube.com/watch?v=RR0LabeUQ88  Create New Job in Jenkins on Windows.
