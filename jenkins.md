@@ -20,13 +20,19 @@ Cloudbees hosts Jenkins in the cloud.
  Installation options are described at:
  * https://wiki.jenkins-ci.org/display/JENKINS/Starting-and-Accessing+Jenkins
 
-0. Start Jenkins to a specific port:
+0. Start Jenkins to a specific port for HTTP:
 
  ```
  java -jar jenkins.war --httpPort=8081
  ```
 
- The tcp port Jenkins uses? (8005 sharing, 8009, 8080) 
+ Alternately, start Jenkins to a specific port for HTTPS:
+
+ ```
+ java -jar jenkins.war --httpPort=-1 --httpPort=221
+ ```
+
+0. Confirm tcp ports Jenkins uses as java (8005 sharing, 8009, 8080) 
 
   ```
   netstat -anp | grep java
