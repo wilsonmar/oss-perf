@@ -38,6 +38,20 @@ Cloudbees hosts Jenkins in the cloud.
   netstat -anp | grep java
   ```
 
+<a id="Security">
+## Security</a>
+This is typically done only by the Administrator of the system.
+
+0. In **Manage Jenkins** UI enter **Configre Global Security**.
+0. Check Enable Security.
+1. If you have an LDAP, select that, or check Use Jenkin's own user database. But you'll have to add each user.
+2. Check **Project-based Matrix Authorization Strategy** to limit Anonymous users Read-only access.
+3. Create the admin user permissions to do all activities by checking all boxes for that user.
+
+ <img width="710" alt="jenkins-security-permissions-matrix" src="https://cloud.githubusercontent.com/assets/300046/11181173/6ea5dfe4-8c1d-11e5-9674-ef0e7d88ef8d.png"> 
+
+
+
 <a id="Nodes">
 ## Nodes</a>
  A Jenkins server can scale by adding **nodes** to spread build work across several servers running different operating systems.
@@ -64,13 +78,8 @@ Cloudbees hosts Jenkins in the cloud.
  Nodes are described at:
  * https://wiki.jenkins-ci.org/display/JENKINS/Distributed+builds
 
-<a id="Projects">
-## Projects</a>
-
-
-
 <a id="Builds">
-## Builds</a>
+## Build Projects</a>
 Jenkins was originally created for automating the building (compilation) of java programs.
 But Jenkins can be used for other types of work.
 Nevertheless, the Jenkins term "build" is another word for what operating systems call a "job" (unit of work).
@@ -160,7 +169,8 @@ By Chris Chrysostom:
 
 John Sonmez (@jsonmez, http://simpleprogrammer.com/)
  * Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com.
-   In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, MSBuild, MSTest, and MSTestRunner.
-  But tools work in a similar way.
+   In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, 
+   MSBuild (), MSTest, and MSTestRunner.
+  But other tools work in a similar way.
  The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
  
