@@ -71,3 +71,5 @@ What automated scripts have not been evaluating are <strong>qualitative</strong>
 
 * Kin Lane, http://apievangelist.com/2014/02/25/api-design-tooling-from-swagger/
 * http://austin2015.apistrat.com/  API Strategy and Practice Conference in Austin November 18-20, 2015.
+* https://app.pluralsight.com/player?course=microservices-architecture&author=rag-dhiman&name=microservices-architecture-m1
+  Introduction to microservices 2h 22m video course by Rai Dhiman at Pluralsight.
