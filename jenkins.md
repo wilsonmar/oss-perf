@@ -84,6 +84,10 @@ Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
 0. Click on a category (Artifact Uploaders) to expand additional categories.
 
+0. View the <a target="_blank" href="http://wiki.jenkins-ci.org/display/JENKINS/Plugins">
+Wiki on Plugins</a>.
+
+ PROTIP: The wide variety of plugins is why Jenkins is popular.
 
 The plugin: <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin">
 https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin</a>
