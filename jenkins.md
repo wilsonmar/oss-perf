@@ -4,6 +4,9 @@ such as for building software and conducting tests.
 
 <a id="Install">
 ## Installation</a>
+http://www.cloudbees.com/
+Cloudbees hosts Jenkins in the cloud.
+
 0. To install on a Centos machine, follow instructions at:
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
@@ -32,7 +35,6 @@ such as for building software and conducting tests.
 <a id="Nodes">
 ## Nodes</a>
  A Jenkins server can scale by adding **nodes** to spread build work across several servers running different operating systems.
-
  Look at the **Load Statistics** UI to see whether additional nodes are necessary.
  
  Jenkins slave nodes can be started by the master using several launch methods:
@@ -61,9 +63,24 @@ such as for building software and conducting tests.
 
 
 
+<a id="Builds">
+## Builds</a>
+Jenkins was originally created for automating the building (compilation) of java programs.
+But Jenkins can be used for other types of work.
+Nevertheless, the Jenkins term "build" is another word for what operating systems call a "job" (unit of work).
+
+Builds can be automatically triggered several ways:
+
+ * after other projects
+ * periodically on a schedule
+ * poll a version control system for changes
+
+Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
+
+
 <a id="Plugins">
 ## Plugins</a>
-Jenkins has many plug-ins.
+0. In **Manage Jenkins** UI, has many plug-ins.
 
   * https://www.youtube.com/watch?v=XY-ZB3FRnxw 
     Jenkins Tutorial - Part 01: Introduction & installation by Chandra Shekhar Reddy
@@ -71,25 +88,18 @@ Jenkins has many plug-ins.
   * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
   sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
-http://www.cloudbees.com/
-Cloudbees hosts Jenkins in the cloud.
 
 
-The plugin:
-https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin
+The plugin: <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin">
+https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Remote+Trigger+Plugin</a>
 triggers parameterized builds on other jenkins servers. 
 This would centralize a single store of credentials.
 
 
-<a id="Builds">
-## Builds</a>
-Jenkins was originally created for automating the building (compilation) of java programs.
-But Jenkins can be used for other types of work.
-Nevertheless, the Jenkins term "build" is another word for what operating systems call a "job" (unit of work).
-
+<a id="Reports">
+## Reports</a>
 Jenkins provides RSS feeds exposing XML files containing lists of just failures or a list of just the latest builds.
 
-Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
 <a id="Resources">
 ## Resources</a>
@@ -110,5 +120,6 @@ By Chris Chrysostom:
 
 John Sonmez (@jsonmez, http://simpleprogrammer.com/)
  * Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com.
-   In this course, examples use SVN and Visual Studio, but it doesn't matter. 
+   In this course, examples use SVN (Subversion), Visual Studio, MSBuild, MSTest, and MSTestRunner.
+  But it doesn't matter. 
  
