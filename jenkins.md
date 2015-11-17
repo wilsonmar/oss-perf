@@ -19,11 +19,18 @@ Cloudbees.com</a> which hosts Jenkins in their cloud.
 
  * <a target="_blank" href="http://jenkins-ci.org">http://jenkins-ci.org</a>
 
- By default, Jenkins stores its configuration files in the user's home folder at `~/.jenkins`.
-
- Installation options are described at:
+<a id="Config">
+## Configuration</a>
+ Jenkins installation options are described at:
  * https://wiki.jenkins-ci.org/display/JENKINS/Starting-and-Accessing+Jenkins
 
+ By default, Jenkins stores its configuration files in the user's home folder at `~/.jenkins`.
+
+ Add "StrictHostKeyChecking no" to ~jenkins/.ssh/config.
+
+
+<a id="StartServer">
+## Start server</a>
 0. Start Jenkins to a specific port for HTTP:
 
  ```
