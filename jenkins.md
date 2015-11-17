@@ -205,3 +205,7 @@ John Sonmez (@jsonmez, http://simpleprogrammer.com/)
   But other tools work in a similar way.
  The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
  
+There is a company that is hoisting certifications of Jenkins people.
+There is the age-old question of whether organizations providing training also be the one offering certifications
+advertised as being of the whole community.
+The company is so commercial oriented that it does not allow newsletters to be sent to gmail and hotmail addresses.
