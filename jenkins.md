@@ -26,8 +26,29 @@ Cloudbees.com</a> which hosts Jenkins in their cloud.
 
  By default, Jenkins stores its configuration files in the user's home folder at `~/.jenkins`.
 
- Add "StrictHostKeyChecking no" to ~jenkins/.ssh/config.
+ To make a Jenkins server completely public (and open to hacking)
+ use a text editor to edit ~jenkins/.ssh/config
+ to add `StrictHostKeyChecking no`.
 
+0. Create a key without a passphrase, per https://help.github.com/articles/generating-ssh-keys/
+1. Login under Jenkins:
+
+ ```
+ sudo su jenkins
+ ```
+
+Copy your github key to Jenkins .ssh folder
+
+ ```
+ cp ~/.ssh/id_rsa_github* /var/lib/jenkins/.ssh/
+ ```
+
+ Raname the keys:
+
+ ```
+ mv id_rsa_github id_rsa
+ mv id_rsa_github.pub id_rsa.pub
+ ```
 
 <a id="StartServer">
 ## Start server</a>
