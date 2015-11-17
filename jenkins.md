@@ -205,6 +205,11 @@ John Sonmez (@jsonmez, http://simpleprogrammer.com/)
   But other tools work in a similar way.
  The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
  
+<img alt="jenkins-job-flow-diagram" src="https://cloud.githubusercontent.com/assets/300046/11226898/b5a246f6-8d37-11e5-86f4-1c75e6c49dee.png">
+
+
+<a id=SkillCert">
+## Skill Certification</a>
 There is a company that is hoisting certifications of Jenkins people.
 There is the age-old question of whether organizations providing training also be the one offering certifications
 advertised as being of the whole community.
