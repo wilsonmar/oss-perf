@@ -90,6 +90,8 @@ What automated scripts have not been evaluating are <strong>qualitative</strong>
         uri = "/help/appointment"/>
 </appointment>
  ```
+ 
+ One benefit of the response providing hypermedia controls is that the server can change its URI scheme without breaking clients because clients use the URI defined in the previous response, not months or years ago at time of design.
 
 <a name="Resources">
 ## References</a>
