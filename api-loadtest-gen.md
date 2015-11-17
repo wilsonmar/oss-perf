@@ -66,6 +66,31 @@ What automated scripts have not been evaluating are <strong>qualitative</strong>
  * metering, SLA,  
  * Allotment exceeded handling
 
+ * Martin Fowler, in his <a target="_blank" href="http://martinfowler.com/articles/richardsonMaturityModel.html#level3">
+ 2013 blog article</a>, 
+ notes the 3 levels in Leonard Richardson's Maturity Model (RMM),
+ where level 3 is called hypermedia controls, provides discoverability by
+ making a REST protocol response more self-documenting by including follow-on requests, such as:
+
+ ```
+ <appointment>
+  <slot id = "1234" doctor = "mjones" start = "1400" end = "1450"/>
+  <patient id = "jsmith"/>
+  <link rel = "/linkrels/appointment/cancel"
+        uri = "/slots/1234/appointment"/>
+  <link rel = "/linkrels/appointment/addTest"
+        uri = "/slots/1234/appointment/tests"/>
+  <link rel = "self"
+        uri = "/slots/1234/appointment"/>
+  <link rel = "/linkrels/appointment/changeTime"
+        uri = "/doctors/mjones/slots?date=20100104@status=open"/>
+  <link rel = "/linkrels/appointment/updateContactInfo"
+        uri = "/patients/jsmith/contactInfo"/>
+  <link rel = "/linkrels/help"
+        uri = "/help/appointment"/>
+</appointment>
+ ```
+
 <a name="Resources">
 ## References</a>
 
