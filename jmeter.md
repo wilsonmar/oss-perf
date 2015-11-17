@@ -132,6 +132,9 @@ http://blog.sematext.com/2015/06/23/replaying-elasticsearch-slowlogs-logstash-jm
 http://ecmarchitect.com/archives/2014/09/09/3932
 
 
+   * https://girliemangalo.wordpress.com/2009/11/03/jmeter_module_controller/
+      JMeter: Using property function to fetch data from user input
+
 <hr />
 ## <a name="Resources"> 
 ## Official resources about JMeter </a>
