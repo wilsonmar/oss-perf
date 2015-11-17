@@ -135,6 +135,8 @@ http://ecmarchitect.com/archives/2014/09/09/3932
    * https://girliemangalo.wordpress.com/2009/11/03/jmeter_module_controller/
       JMeter: Using property function to fetch data from user input
 
+   * 	http://90kts.com/2014/03/28/guide-to-jmeter-regular-expressions/
+
 <hr />
 ## <a name="Resources"> 
 ## Official resources about JMeter </a>
