@@ -227,7 +227,8 @@ By Chris Chrysostom:
  * https://www.youtube.com/watch?v=RR0LabeUQ88 Create new job in Jenkins
 
 John Sonmez (@jsonmez, http://simpleprogrammer.com/)
- * Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com.
+ * <a target="_blank" href="https://app.pluralsight.com/library/courses/jenkins-introduction/table-of-contents">
+   Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com</a>.
    In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, 
    MSBuild (), MSTest, MSTestRunner, StyleCop, and Papercut.
   But other tools work in a similar way.
