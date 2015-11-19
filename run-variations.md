@@ -1,8 +1,8 @@
-The approach here is to completely <strong>automate</strong> test runs so that
+The objective here is to completely <strong>automate</strong> test runs so that
 servers can be provisioned, all software deployed, and results obtained and analyzed
 without human attention.
 
-Experimentation is needed because there are interactions among the various <a href="configs.md">configurations:
+Variations in runs is needed to measure interactions among the various <a href="configs.md">configurations:
 
   * Number and size of machines provisioned (such as RAM, use of solid-state drives, etc.).
   * OS selection (such as Debian vs. Windows, etc).
@@ -25,7 +25,9 @@ necessary to obtain a statistically valid results.
 
 <a id="Alternatives">
 ## Alternatives</a>
-Several organizations have begun to adopt our thinking:
+Several organizations have work along this line of thinking.
+
+https://consul.io/intro/index.html
 
 Open-source TAURUS (Test Automation Running Smoothly) was 
 written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves
