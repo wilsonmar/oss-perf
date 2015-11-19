@@ -27,7 +27,11 @@ necessary to obtain a statistically valid results.
 ## Alternatives</a>
 Several organizations have work along this line of thinking.
 
-https://consul.io/intro/index.html
+Values to vary need to be stored (in a key/value store).
+
+<a target="_blank" href="https://consul.io/intro/index.html">
+Consul.io</a> powers a hive which maintains a K/V store containing the health of servers obtained from 
+service discovery agents.
 
 Open-source TAURUS (Test Automation Running Smoothly) was 
 written in Java and Python 2.7 to create and edit YAML files that control JMeter slaves
