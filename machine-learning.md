@@ -43,6 +43,8 @@ http://templates.prediction.io/RAditi/PredictionIO-MLLib-LinReg-Template
 BTW, data into these calculations is only the middle "steady state" portion of runs,
 which excludes ramp-up and ramp-down.
 
+<a target="_blank" href="http://wilsonmar.com/perftest.htm#Sumry">
+<img alt="Extending" src="http://merc.tv/img/fig/triggerpt_v2.png"></a>
 
 <a id="ToolChoices">
 ## Choice of tools: Python</a>
