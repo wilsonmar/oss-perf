@@ -86,7 +86,8 @@ The linear Support Vector Machine (SVM) algorithm is good at categorizing text.
 
 Its **Dimensionality reduction** reduces the number of random variables to consider.
 
-Signal processing
+<a id="SignalProcessing">
+## Signal processing</a>
 
 https://spark.apache.org/mllib/
 is Apache Spark's scalable machine learning library for Java, plus Python and Scala (via NumPy).
