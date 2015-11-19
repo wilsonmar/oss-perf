@@ -65,8 +65,7 @@ MySQL is supported.
 
 Docker and Puppet scripts to build the server ???
 
-
-
+https://github.com/sonarsource/sonar-examples
 
 
 Read the documentation
