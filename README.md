@@ -15,28 +15,26 @@ what many call <a href="perf-test-types.md">"performance engineering"</a>.
 BTW, If you see a typo that needs fixing or an idea that should be considered, please fork this repo,
 edit the file, and send us a pull request. Better yet, 
 <a href="#NewComponents">join us</a> to revolutionalize the industry.
-
+Organizations not in the business of selling performance engineering software and services to the public, 
+it’s natural for us to develop framework as **open source** on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
 
 <a name="Background">
 ## Background Why</a>
 Here is what even commercial vendors have not yet delivered:
 
-A. Organizations not in the business of selling performance engineering software and services to the public, 
-it’s natural for us to develop framework as **open source** on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
-
-B. **Eliminate errors** in program coding source by **automatic generation of programming code** 
+A. **Eliminate errors** in program coding source by **automatic generation of programming code** 
     based on specs.
    Although various attempts at generating UI code have not taken hold due to complexity,
    generation of APIs is less complex of an undertaking.
 
-C. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
+B. **Test immediately** in the dev. lifecycle through automatic **generation** of test automation scripts
    and API mock scripts.
    Making changes easy, fast, and safe enables fix-fast which makes systems more "correct" than monolithic design.
 
-D. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
+C. **Automatic alerts** of slow execution speeds during automated functional testing discovered automatically
    by **machine learning** robots rather than tedious manual examination of logs.
 
-E. **Automatically cycle though variations** of <a href="#configs">
+D. **Automatically cycle though variations** of <a href="#configs">
    several configurations</a> during a single manual run initiation.
    More important than hands-free,
    this enables performance analysis to go beyond merely testing to engineering.
@@ -44,7 +42,7 @@ E. **Automatically cycle though variations** of <a href="#configs">
 The objective here is to **reduce the amount of manual effort** (and human errors) to conducting tests
 through automation.
 
-F. **Centralizing data** from various views of system behavior under stress (or not) 
+E. **Centralizing data** from various views of system behavior under stress (or not) 
    can be analyzed together will provide the basis for identifying trends and other insights
    using both manual and **"machine learning"** techniques.
    Machine learning would identify more minute issues more comprehensively.
