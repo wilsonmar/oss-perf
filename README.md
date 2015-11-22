@@ -1,16 +1,12 @@
 <a id="TheVision"></a>
 <a name="Diagram"> 
-This diagram <a target="_blank" href="">
-is gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>:
+The diagram below is <a target="_blank" href="http://www.youtube.com/watch?v=WnVCUzCO1CI">
+gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>.
 
-<img name="Map" alt="oss-perf-v14_wm" src="https://cloud.githubusercontent.com/assets/300046/11249035/60bfda0c-8dd9-11e5-9ff2-d74f61edb8fe.png"
-usemap="#m_Map" border="0" width="100%">
-<map name="m_Map">
-<area shape="rect" coords="1,1,547,175" href="#Swagger-codege" title="Swagger-codege">
-</map>
+<img alt="oss-perf-v18_wm" src="https://cloud.githubusercontent.com/assets/300046/11321748/31de573e-9088-11e5-8708-3fd3ff0a2b24.png">
 
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
-   Other organizations have other divisions. Other diagrams use different colors to indicate status.
+   Other organizations will like use different colors to indicate status.
 
 This was created in response to the need for a **more nimble, comprehensive, yet lower cost** approach to
 measure and thus improve the speed, capacity, and reliability of high-traffic web and native mobile apps,
