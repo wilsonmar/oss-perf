@@ -17,7 +17,14 @@ During post-processing, pipeline aggregations such as mean-of-means
   
   https://www.elastic.co/webinars/scaling-data-ingestion-with-elastic
 
+<a id="Forecasts">
+## Forecasts</a>
+0. [37:50] Extend the holt_winters algorithm to make a forecast 60 days into the future.
 
+ ```
+ "predict":60
+ ```
+ 
 <a id="Aggregations">
 ## Aggregations</a>
 Pipeline Aggregations were introduced with Elastic 2.0
