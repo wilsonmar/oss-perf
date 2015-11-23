@@ -3,10 +3,10 @@ This page describes the steps to the different ways of installing the ELK stack.
 However, we want a simple way to make it repeatable.
 The options:
 
+ * <a href="#EFound"> Elastic Found Service</a>
  * <a href="#Amazon"> Amazon Elastic Service</a>
  * <a href="#Docker"> Docker and Puppet</a>
  * <a href="#Manual"> Manual download</a>
-
 
 
 <hr />
@@ -20,7 +20,7 @@ The issue with AWS is concern about privacy data protection ala Safe Harbor.
 My specific steps is at <a href="elk-install-aws.md">elk-install-aws.md</a>
 
 
-<a id="#OtherHosting"> 
+<a id="OtherHosting"> 
 ### Other Hosting</a>
 
  <a target="_blank" href="https://facetflow.com/">https://facetflow.com/</a> 
@@ -29,18 +29,29 @@ My specific steps is at <a href="elk-install-aws.md">elk-install-aws.md</a>
  
  * http://code972.com/blog/2014/07/74-the-definitive-guide-for-elasticsearch-on-windows-azure
 
-<a id="#Docker"> 
+<a id="Docker"> 
 ## Docker and Puppet</a>
 
 <a id="Puppet"> 
-#### Puppet Modules</a>
+#### Docker Puppet Modules</a>
 <a target="_blank" href="https://forge.puppetlabs.com/modules?q=logstash">
 https://forge.puppetlabs.com/modules?q=logstash</a>
 lists several scripts from several contributions of puppet configurations to 
 quickly stand-up a Logstash server.
 
- The scripts automatically implements all the tricks necessary during a manual install,
- explained below.
+Such scripts automatically implements all the tricks necessary during a manual install, explained below.
+
+This page explains step-by-step how to use <a target="_blank" href="https://github.com/ntfrnzn/elk-docker">
+https://github.com/ntfrnzn/elk-docker</a>.
+
+0. machine
+
+0. Download
+
+0. Configure
+
+0. Run
+
 
 <a id="Manual"> 
 ### Manual Download</a>
