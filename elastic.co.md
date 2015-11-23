@@ -68,17 +68,6 @@ Oct. 14, 2014
 
 
 
-<a id="Logstash"> 
-## Logstash</a>
-
-Logstash was originally developed by **Jordan Sissel** when he was a system administrator at Dreamhost. 
-
-  * https://github.com/jordansissel/
-  * https://twitter.com/jordansissel
-  * http://semicomplete.com (latest post in 2012)
-  * https://www.youtube.com/watch?v=fwMnb4-t8vo More Logstash Awesome - Jordan Sissel - PuppetConf 2013
-  * https://www.youtube.com/watch?v=RuUFnog29M4 
-
 
 <a id="RockStars"> 
 ## ELK Rock Stars</a>
@@ -92,7 +81,10 @@ Logstash was originally developed by **Jordan Sissel** when he was a system admi
   https://www.youtube.com/watch?v=Epe63Uu-IO0&spfreload=1
   Mar 17, 2015
 
-* Shane Connelly, Sr Product Manager of Elasticsearch. 
+* <a target="_blank" href="https://www.linkedin.com/in/shaneconnelly">Shane Connell (previously at HP Autonomy)y</a>, 
+  Sr Product Manager of Elasticsearch presented 28 Oct 2015 video
+  <a target="_blank" href="https://www.elastic.co/webinars/elasticsearch-2-0-overview">
+  Elastic v2.0 overview</a>
 
 * Andrew Puch @gmail 
 https://www.linkedin.com/in/apuch
@@ -154,6 +146,18 @@ What is ELK and how can it help you discover, visualize and analyze your data?
 
 * https://www.youtube.com/watch?v=2oMvUX8Ke5M&t=25m
   Hands-on: 
+
+<a id="Logstash"> 
+## Logstash</a>
+
+Logstash was originally developed by **Jordan Sissel** when he was a system administrator at Dreamhost. 
+
+  * https://github.com/jordansissel/
+  * https://twitter.com/jordansissel
+  * http://semicomplete.com (latest post in 2012)
+  * https://www.youtube.com/watch?v=fwMnb4-t8vo More Logstash Awesome - Jordan Sissel - PuppetConf 2013
+  * https://www.youtube.com/watch?v=RuUFnog29M4 
+
 
 <a id="Jobs"> 
 ## Jobs</a>
