@@ -80,10 +80,12 @@ Oct. 14, 2014
   <a target="_blank" href="https://www.elastic.co/webinars/elasticsearch-2-0-overview">
   Elastic 2.0 Overview</a> presented on 28 Oct 2015.
   
-* Clinton Gormley co-wrote 
-  wrote the Feb 7, 2015 book: <a target="_blank" href="http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/">
-  <strong>Elasticsearch: The Definitive Guide</strong> ($22.55)</a>
-
+* Zach co-wrote with Clinton Gormley 
+  the Feb 7, 2015 book: <a target="_blank" href="http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/">
+  <strong>Elasticsearch: The Definitive Guide</strong> ($22.55)</a>.
+    Get it <a target="_blank" href="http://shop.oreilly.com/product/0636920028505.do">
+    direct from O'Reilly</a>.'
+    
 * at Elasticsearch
   https://www.youtube.com/watch?v=Epe63Uu-IO0&spfreload=1
   Mar 17, 2015
