@@ -1,4 +1,4 @@
-This page describes how to configure aggregations using Elastic v2.0.
+This page describes how to configure aggregations using Elastic v2.0, following the video presented by
 
 During post-processing, pipeline aggregations such as mean-of-means
 <img width="688" alt="elastic20-timeseries" src="https://cloud.githubusercontent.com/assets/300046/11342759/2ae0ce00-91c6-11e5-8b67-e5a91083c4a4.png">
