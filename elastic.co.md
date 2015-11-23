@@ -83,15 +83,16 @@ Logstash was originally developed by **Jordan Sissel** when he was a system admi
 <a id="RockStars"> 
 ## ELK Rock Stars</a>
 
-* Clinton Gormley and Zachary Tong
-  Elasticsearch: The Definitive Guide Feb 7, 2015 $22.55
-  http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/
-
- * https://twitter.com/ZacharyTong
+* Clinton Gormley 
+  and Zachary Tong (<a target="_blank" href="https://twitter.com/ZacharyTong">@ZacharyTong</a>)
+  wrote the Feb 7, 2015 book: <a target="_blank" href="http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/">
+  <strong>Elasticsearch: The Definitive Guide</strong> ($22.55)</a>
 
 * at Elasticsearch
   https://www.youtube.com/watch?v=Epe63Uu-IO0&spfreload=1
   Mar 17, 2015
+
+* Shane Connelly, Sr Product Manager of Elasticsearch. 
 
 * Andrew Puch @gmail 
 https://www.linkedin.com/in/apuch
