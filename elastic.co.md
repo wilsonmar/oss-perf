@@ -8,6 +8,8 @@ https://www.elastic.co/community</a> lists a lot of them.
 
 <a target="_blank" href="https://www.elasticsearch.com/support/"> elasticsearch.com/support</a>
 
+  * https://www.elastic.co/webinars/hosted-managed-elasticsearch-found
+
 <a id="Discussion"> 
 ## Discussions</a>
 
@@ -72,8 +74,30 @@ Oct. 14, 2014
 <a id="RockStars"> 
 ## ELK Rock Stars</a>
 
-* Clinton Gormley 
-  and Zachary Tong (<a target="_blank" href="https://twitter.com/ZacharyTong">@ZacharyTong</a>)
+* Zachary (Zach) Tong (<a target="_blank" href="https://twitter.com/ZacharyTong">@ZacharyTong</a>),
+  <a target="_blank" href="https://www.linkedin.com/in/shaneconnelly">Shane Connell (previously at HP Autonomy)y</a>, 
+  is an Elastic developer. He demo'd **pipeline aggregations** 17:18 into video
+  <a target="_blank" href="https://www.elastic.co/webinars/elasticsearch-2-0-overview">
+  Elastic 2.0 Overview</a> presented on 28 Oct 2015.
+
+  During post-processing, pipeline aggregations such as mean-of-means
+  <img width="688" alt="elastic20-timeseries" src="https://cloud.githubusercontent.com/assets/300046/11342759/2ae0ce00-91c6-11e5-8b67-e5a91083c4a4.png">
+
+  Derivities
+  
+  Time-series predictions (moving averages)
+  
+  Anomaly detection
+  
+  Seasonality adjustments
+  
+  In previous versions, an external application processes records.
+
+  https://www.elastic.co/videos/time-series-analysis-using-timelion
+  
+  https://www.elastic.co/webinars/scaling-data-ingestion-with-elastic
+  
+* Clinton Gormley co-wrote 
   wrote the Feb 7, 2015 book: <a target="_blank" href="http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/">
   <strong>Elasticsearch: The Definitive Guide</strong> ($22.55)</a>
 
