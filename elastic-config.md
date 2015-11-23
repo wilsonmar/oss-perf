@@ -1,4 +1,4 @@
-This page describes 
+This page describes how to configure aggregations using Elastic v2.0.
 
 Indexes
 
