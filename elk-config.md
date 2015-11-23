@@ -3,11 +3,10 @@ This page provides a hands-on approach to learning how to configure
 
 PipeCalculations performed on top of results of aggregations.
 
-The steps below follow the 28 Oct 2015 video presented by
+The steps below follow video presented by
 Zachary (Zach) Tong (<a target="_blank" href="https://twitter.com/ZacharyTong">@ZacharyTong</a>,
-software developer at Elastic).
-
-We begin [17:18] into the video 
+software developer at Elastic). 
+We begin [17:18] into the 28 Oct 2015 video 
 <a target="_blank" href="https://www.elastic.co/webinars/elasticsearch-2-0-overview">
 Introduction to Elastic 2.0 Overview</a>.
 
@@ -19,12 +18,8 @@ Introduction to Elastic 2.0 Overview</a>.
 0. Read Zach's book on the ELK stack.
 
 
-    holt-winters season. The time period can be touchy.
 
-    alpha, beta, and gamma parameters are difficult to optiminze.
-
-
-0. Obtain the sample data. QUESTION: Zach?
+0. Obtain the sample data (bulk request). QUESTION: Zach?
 
 
     ```
@@ -33,18 +28,65 @@ GET ...
     {"color":"red","price": 14.50}
     ```
 
-0. Run the data.
+0. PROTIP: Run to make sure the data can be ingested without error.
 
-0. Specify standard calculations.
+0. Specify standard aggregation calculations.
+
+    ```
+GET /test/test/_search
+{
+    "size":0,
+    "aggs": {
+        "colors": {
+            "terms": {
+                "field": "color",
+                "size": 10
+            }
+        }
+    }
+}
+    ```
+
+    NOTE: These aggregations are run only on nodes.
+
+    Results are under buckets:
+
+    ```
+    "aggregations": {
+        "colors": {
+            "doc_counter_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+                {
+                "key": "red",
+                "doc_count": 6
+                },
+                {
+                "key": "green",
+                "doc_count": 4
+                }
+            ]
+        }
+    }
+    ```
+
 
 0. Run the standard aggregations.
+
+0. Add pipeline aggregations based on averages.
+
+    ```
+    "mean_of_means":{
+        "avg_bucket":{
+            
+        }
+    }
+    ```
 
     NOTE: Pipeline aggregations are run only on the coordinating node 
     after each shard calculates other buckets.
 
     31 MB per node.
-
-0. Add pipeline calculations for average.
 
 0. Add pipeline aggregations:
 
@@ -66,9 +108,11 @@ GET ...
   
   In previous versions, an external application processes records.
 
+<a id="Timelines">
+## Timelines</a>
   https://www.elastic.co/videos/time-series-analysis-using-timelion
   
-  https://www.elastic.co/webinars/scaling-data-ingestion-with-elastic
+    holt-winters season. The time period can be touchy.
 
 <a id="Forecasts">
 ## Forecasts</a>
@@ -78,7 +122,7 @@ GET ...
  "predict":60
  ```
 
-    NOTE: The program recognizes alpha, beta, and gamma adjustments. But it's difficult to tune.
+    PROTIP: alpha, beta, and gamma parameters can be added, but they are difficult to optiminze.
 
  
 <a id="Aggregations">
@@ -96,3 +140,6 @@ An example is calculating the *rate of change**.
 ## Resources</a>
 
   * https://berlinbuzzwords.de/session/algorithms-and-data-structures-power-lucene-and-elasticsearch
+
+    * https://www.elastic.co/webinars/scaling-data-ingestion-with-elastic
+
