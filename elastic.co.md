@@ -79,23 +79,6 @@ Oct. 14, 2014
   is an Elastic developer. He demo'd **pipeline aggregations** 17:18 into video
   <a target="_blank" href="https://www.elastic.co/webinars/elasticsearch-2-0-overview">
   Elastic 2.0 Overview</a> presented on 28 Oct 2015.
-
-  During post-processing, pipeline aggregations such as mean-of-means
-  <img width="688" alt="elastic20-timeseries" src="https://cloud.githubusercontent.com/assets/300046/11342759/2ae0ce00-91c6-11e5-8b67-e5a91083c4a4.png">
-
-  Derivities
-  
-  Time-series predictions (moving averages)
-  
-  Anomaly detection
-  
-  Seasonality adjustments
-  
-  In previous versions, an external application processes records.
-
-  https://www.elastic.co/videos/time-series-analysis-using-timelion
-  
-  https://www.elastic.co/webinars/scaling-data-ingestion-with-elastic
   
 * Clinton Gormley co-wrote 
   wrote the Feb 7, 2015 book: <a target="_blank" href="http://www.amazon.com/Elasticsearch-Definitive-Guide-Clinton-Gormley/dp/1449358543/">
