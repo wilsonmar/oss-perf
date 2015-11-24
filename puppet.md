@@ -28,12 +28,12 @@ so providers in Puppet's Resource Abstraction Layer resolves differences
 among various operating systems and its package managers 
 when implementing Puppet XML specs.
 
-| OS | package provider |
-| ---- | ------- |
-| Red Hat | yum install |
-| Ubuntu | apt install|
-| Windows | Windows |
-| Mac OSX | brew install |
+| OS | package provider | Notes |
+| ---- | ------- | --- |
+| Red Hat | yum install | - |
+| Ubuntu | apt install| - |
+| Windows | Windows Nu-get | Chocolatey command `cinst install package` |
+| Mac OSX | Homebrew install | command `brew install package` |
 
 Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
 
@@ -197,6 +197,63 @@ Discover other information using EC2 API.
 
 Look into:
 http://github.com/fanduel/hiera-cloudformation
+
+
+<a id="CloneChocoPkg">
+## Clone Choco JMeter package for internal Artifactory</a>
+
+0. Define the folder to download from instead of Chocolatey. 
+   There is likely a hierarchy of utilities such as Java, 7zip, etc.
+
+0. From https://chocolatey.org/packages/jmeter
+0. Scroll down to click Download.
+0. Save Jmeter.2.12.nupkg (Binary File 4.5KB) from https://packages.chocolatey.org
+0. Change extension from .nupkg to .zip.
+0. Open file using unzip.
+0. Drill into folder jmeter.2.12
+0. Open .ps1 in Sublime.
+0. Change the download url to the one identified in the first step above.
+
+    ```
+$url = 'http://archive.apache.org/dist/jmeter/binaries/apache-jmeter-2.12.zip' # download url
+    ```
+
+0. Zip the changed folder.
+0. Rename the file exention to .nupkg.
+0. Calculate SHA1 and MD5 hashes.
+0. Put the hash values into 32-byte SHA1 and 40-byte MD5 files.
+0. Open the Artifactory web aapp and upload to the folder designated.
+
+0. Try it on a new build (to verify SHA1 and MD5).
+0. Try this to update an existing JMeter (with a previous version).
+
+<a id="InstallChoco">
+## Puppet install from internal Choco package on Windows</a>
+The objective here is to start with a newly provisioned Windows server and
+populate it with all utilities and applications needed.
+
+Using one command.
+
+For example, after a server is provisioned with Application Cluster: **p1w** (Performance server on Windows),
+Puppet recognizes that tag and installs apps associated with p1w:
+
+    1. Windows Explorer settings to show file extensions, etc.
+    2. Network shares to app-specific test data files on a filer
+
+    4. Firefox
+    5. Chrome
+    6. Favorites in Internet Explorer and other browsers
+
+    7. Java 8 (file jdk-8u66-windows-x64.exe for Windows)
+    8. Java 7 (for backward compatibility some utilities require?)
+    9. 7Zip
+    10. Other utilities?
+
+    11. JMeter
+    12. TestNG
+    13. Selenium
+    14. Appium
+    15. LoadRunner
 
 
 <a id="Videos">
