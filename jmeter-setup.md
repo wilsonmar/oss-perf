@@ -222,7 +222,7 @@ No X11 DISPLAY variable was set, but this program performed an operation which r
   
   Type this on the main display before trying again:
 
-  ``
+  ```
 export DISPLAY=:0.0
   ```
   
