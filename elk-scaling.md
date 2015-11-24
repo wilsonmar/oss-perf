@@ -57,7 +57,7 @@ $ log_producer | grep ... | sed ... | awk ... | tee output \ | sort | uniq -c | 
 Elasticsearch provides consistency to different time stamp formats.
 
 Kibana "democratizes" data by putting a front-end to access data
-in a searcheable in fast a meaningful ways.
+in a searcheable in fast, meaningful ways.
 
 
 ## <a name="Docs"> Documentation</a>
@@ -119,81 +119,6 @@ Competitors to Logstash include
 
 
 ## <a name="DownloadVersions"> Download Version Sets</a>
-1. Identify the set of versions of various components from their web page
-   <a target="_blank" href="https://download.elastic.co/"> https://download.elastic.co</a>
-
-
-  | URL to Website | Version | Length |
-  | -------------- | ------- | -----: |
-  | https://www.elastic.co/downloads/logstash           | 1.5.3 |  88M |
-  | https://www.elastic.co/downloads/logstash Forwarder Mac | 1.5.3 | 5.8M |
-  | https://www.elastic.co/downloads/elasticsearch      | 1.7.1 |  27M |
-  | https://www.elastic.co/downloads/kibana             | 3.1.3 | 1.0M |
-
-   Clicking Download in these web pages will download to your default Downloads folder.
-
-   NOTE: Kibana version 4 is a major upgrade over version 3.
-
-2. PROTIP: Create a folder such as *ELK_installers_20150801* so the same set of versions tested together travel together.
-
-3. If you rather download and expand using a script as shown below, revise the version number to the latest ones.
-
-   ```
-mkdir ELK_Installers_20150801
-cd ELK_Installers_20150801
-
-wget https://download.elastic.co/logstash/logstash/logstash-1.5.3.tar.gz
-wget https://download.elastic.co/logstash-forwarder/binaries/logstash-forwarder_darwin_amd64
-wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.tar.gz
-wget https://download.elastic.co/kibana/kibana/kibana-3.1.3.tar.gz
-   ```
-
-   Instead of `wget`, one can use `curl -O `.
-
-4. In production mode, each component is usually installed to a separate machine.
-   So a different download installation script is used for each machine.
-   But for experimentation on a Macbook, all are installed.
-
-5. Decide on the folder where the components are expanded to.
-
-   It's better if components are referenced in a folder without a version code.
-
-   ```
-mkdir /usr/local/logstash
-tar zxvf logstash-1.5.3.tar.gz  -C mkdir /usr/local/logstash
-
-mkdir /usr/local/elasticsearch
-tar zxvf elasticsearch-1.7.1.tar.gz  -C /usr/local/elasticsearch
-
-mkdir /usr/local/kibana
-tar zxvf kibana-3.1.3.tar.gz  -C /usr/local/kibana
-   ```
-
-   Unix machines install packages under the <strong>/opt</strong> directory.
-   But Macs don't have that by default.
-  
-  Other folders in <strong>/usr/local</strong> include, Cellar, Library, opt, lib, bin, sbin, man.
-  So a better location may be <strong>/usr/local/opt</strong>?
-
-  When using a basic OS X Server, it may be:
-  
-  ```
-   /Library/Server/Web/Data/Sites/Default/
-  ```
-   
-   cp -R /usr/local/kibana/kibana-3.0.0/* 
-
-  A machine must have at least 85% disk space free to avoid <strong>low disk watermark</strong> errors
-  limiting Logstash operation.
-
-5. Once expanded, archive the installer folder and delete the tar.gz files.
-
-   http://krypted.com/windows-server/stashbox-turning-a-mac-mini-into-a-logstash-server/
-   suggests keeping older binaries in case they get revved out and a script against them.
-
-6. Follow the <strong>Configuration Steps</strong>.
-
-
 
 ## <a name="LogstashForwarder"> Logstash Forwarder on Shippers</a>
 Configure for scale by using a Logstash Forwarder and RabbitMQ between a Logstash Producer and Logstash Consumer

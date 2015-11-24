@@ -10,12 +10,12 @@ We begin [17:18] into the 28 Oct 2015 video
 <a target="_blank" href="https://www.elastic.co/webinars/elasticsearch-2-0-overview">
 Introduction to Elastic 2.0 Overview</a>.
 
-0. Install the Elastic 2.0 ELK stack if you haven't already.
+0. <a href="elk-install.md">Install the Elastic 2.0 ELK stack</a> if you haven't already.
 
-    NOTE: Data in Elastic 1.0 would need to be migrated using the tool Elastic provided
+    NOTE: Data in versions before Elastic 2.0 would need to be migrated up using the tool Elastic provided
     because its indexes are different.
 
-0. Read Zach's book on the ELK stack.
+0. Read Zach's book on the ELK stack (if you haven't already).
 
 
 
