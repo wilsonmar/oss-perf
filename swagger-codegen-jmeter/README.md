@@ -162,6 +162,19 @@ QUESTION: Is there a tutorial on this?
 
 <a href="#Resources">Videos</a>
 
+<hr />
+http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+
+Examples of REST API usage:
+
+ * https://developer.github.com/v3/gists/#list-gists
+
+ * https://stripe.com/docs/api takes a hybrid approach to versioning.
+   Their URLs contains a major version number (v1) to provide structural stability and 
+   browser explorability of  resources across versions.
+   But a custom HTTP request header provides sub-versions to note smaller changes (field deprecations, endpoint changes, etc).
+
+ * AppDynamics?
 
 <a id="BadResponseCodes"></a>
 ### 4.1). Recognize and handle problem HTTP response codes
@@ -172,19 +185,45 @@ QUESTION: Is there a tutorial on this?
 
 
 <a id="CleanHappyPath">
-### 4.2). Clean Happy paths</a>
-Valid atomic calls with valid response codes
+### 4.2). Clean happy atomic paths</a>
+Valid atomic calls with valid response codes.
+Notice the object "tickets" is a plural noun. Other nouns include users, groups, people, etc.
 
- 2.1). POST new (user registration)
+ 1. POST /tickets - creates new item (user registration)
 
- 2.2). GET new (lists)
+ 2. GET /tickets - retrieve a list
+
+ 3. GET /tickets/12 - Retrieves a specific ticket
  
- 2.3). PUT change
+ 4. PUT /tickets/12 - Updates ticket #12
  
- 2.4). DELETE newly created, which keeps database empty.
+ 5. PATCH /tickets/12/activate - Partially updates ticket #12, such as activate or deactivate.
+ 
+ 6. DELETE /tickets/12 - Deletes ticket 12. This keeps database empty.
 
+<a id="Relations">
+### 4.3). Relations</a>
+Hierarchy:
+
+ 1. POST /tickets/12/messages - Creates a new message in ticket #12
+ 2. GET /tickets/12/messages - Retrieves list of messages for ticket #12
+ 3. GET /tickets/12/messages/5 - Retrieves message #5 for ticket #12
+ 4. PUT /tickets/12/messages/5 - Updates message #5 for ticket #12
+ 5. PATCH /tickets/12/messages/5 - Partially updates message #5 for ticket #12
+ 6. DELETE /tickets/12/messages/5 - Deletes message #5 for ticket #12
+
+<a id="Filtering">
+### 4.4). Filtering</a>
+Each attribute
+
+ 1. GET /tickets - Retrieves an un-filtered list.
+ 2. GET /tickets?state=open - Retrieves a filtered list of only open tickets.
+ 3. GET /tickets?state=closed - Retrieves a filtered list of only closed tickets.
+
+ 1 = 2 + 3 ?
+ 
 <a id="AtomicRunTypes">
-### 4.3). "run-type" parameter defines repeating processing strategies</a>
+### 4.5). "run-type" parameter defines repeating processing strategies</a>
 
  3.1) Repeat POST new to populate the database and identify how many can register all at once.
 
@@ -194,9 +233,8 @@ Valid atomic calls with valid response codes
  
  3.4) Mix, to measure impact of database replication (log shipping).
 
-
 <a id="InvalidFieldValues">
-### 4.4). Invalid field values</a>
+### 4.6). Invalid field values</a>
 There are different invalid values for each data type.
 
   * Currency number has negative
@@ -206,7 +244,7 @@ There are different invalid values for each data type.
   * Credit card number has invalid checksum
 
 <a id="CrossFieldEdits">
-### 4.5) Cross-field edits</a>
+### 4.7) Cross-field edits</a>
 There are different invalid values for each data type.
 
   * Zip code out of state specified
