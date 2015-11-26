@@ -200,31 +200,40 @@ http://github.com/fanduel/hiera-cloudformation
 
 
 <a id="CloneChocoPkg">
-## Clone Choco JMeter package for internal Artifactory</a>
+## Download Choco JMeter package for internal Artifactory</a>
 
 0. Define the folder to download from instead of Chocolatey. 
    There is likely a hierarchy of utilities such as Java, 7zip, etc.
-
 0. From https://chocolatey.org/packages/jmeter
 0. Scroll down to click Download.
 0. Save Jmeter.2.12.nupkg (Binary File 4.5KB) from https://packages.chocolatey.org
 0. Change extension from .nupkg to .zip.
-0. Open file using unzip.
+0. Open zip file using unzip.
 0. Drill into folder jmeter.2.12
-0. Open .ps1 in Sublime.
+0. Open .ps1 for edit.
+0. Associate .ps1 with Sublime or whatever text editor you prefer (if you haven't already).
 0. Change the download url to the one identified in the first step above.
 
     ```
 $url = 'http://archive.apache.org/dist/jmeter/binaries/apache-jmeter-2.12.zip' # download url
     ```
 
+    BTW, this URL can be downloaded using a PowerShell command such as this:
+
+    ```
+wget http://archive.apache.org/dist/jmeter/binaries/apache-jmeter-2.12.zip -OutFile apache-jmeter-2.12.zip
+    ```
+
+    The above won't work if the server doesn't have a proxy connection to the public internet.
+
+### Create Choco JMeter package for internal Artifactory</a>
 0. Zip the changed folder.
 0. Rename the file exention to .nupkg.
 0. Calculate SHA1 and MD5 hashes.
 0. Put the hash values into 32-byte SHA1 and 40-byte MD5 files.
 0. Open the Artifactory web aapp and upload to the folder designated.
 
-0. Try it on a new build (to verify SHA1 and MD5).
+0. Try it on a new build (to verify SHA1 and MD5). See below.
 0. Try this to update an existing JMeter (with a previous version).
 
 <a id="InstallChoco">
@@ -237,23 +246,23 @@ Using one command.
 For example, after a server is provisioned with Application Cluster: **p1w** (Performance server on Windows),
 Puppet recognizes that tag and installs apps associated with p1w:
 
-    1. Windows Explorer settings to show file extensions, etc.
-    2. Network shares to app-specific test data files on a filer
+    1. Chocolatey in Powershell.
+    2. Windows Explorer settings to show file extensions, etc.
+    3. Map Network Drive shares to app-specific test data files on another Windows machine.
+    4. Favorites in Internet Explorer and other browsers
 
-    4. Firefox
-    5. Chrome
-    6. Favorites in Internet Explorer and other browsers
+    5. 7Zip (used by other installers)
+    6. Firefox
+    7. Chrome
 
-    7. Java 8 (file jdk-8u66-windows-x64.exe for Windows)
-    8. Java 7 (for backward compatibility some utilities require?)
-    9. 7Zip
-    10. Other utilities?
+    8. Java 8 (file jdk-8u66-windows-x64.exe for Windows)
+    9. Java 7 (for backward compatibility some utilities require?)
 
+    10. TestNG
     11. JMeter
-    12. TestNG
-    13. Selenium
-    14. Appium
-    15. LoadRunner
+    12. Selenium
+    13. Appium
+    14. LoadRunner
 
 
 <a id="Videos">
