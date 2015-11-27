@@ -1,16 +1,44 @@
 This is one of the options listed at <a href="elk-install.md">elk-install.md</a>.
 
-Amazon announced its ElastiSearch Service offering October 2015. See:
+Amazon announced its ElastiSearch Service offering October 1st 2015. See:
 <a target="_blank" href="https://aws.amazon.com/blogs/aws/new-amazon-elasticsearch-service/">
 https://aws.amazon.com/blogs/aws/new-amazon-elasticsearch-service/</a>
 
-Below are the steps I took to create a public instance.
+On Nov 1, http://kirankoduru.github.io/elasticsearch/moving-from-aws-elasticsearch-service.html
+identified reasons why he got away from it:
 
-0. Use Firefox to get in <a target="_blank" href="">EC2 dashboard</a>
+  * AWS's service does not consume credits companies accumulate.
+
+  * AWS's services uses a back version of Elasticsearch, such as 1.5 when version 2.0 is available. 
+    This is important for those who don't want to miss out on those bug fixes and shiny new feature releases.
+
+  * AWS's IAM policies are the only way to configure access to its Elasticsearch service.
+    That is a good way to secure inbound connections. 
+    But some prefer using security groups.
+
+  * AWS turns off dynamic scripting and does not allow script upload into the scripts directory.
+
+  * AWS performs backups only after receiving an email to AWS support rather 
+  than allowing the elasticsearch-aws-cloud plugin to configure s3 repositories from the elasticsearch service dashboard.
+
+  * AWS does not include Shield, the Elastic commercial security plugin that handles RBAC of cluster and indexes.
+
+  * AWS is now supported by Elastic Support.
+
+  * AWS controls the <strong>elasticsearch.yml</strong> file containing settings to tweak. 
+  The elasticsearch service makes sure everything works perfectly.
+
+<a id="Install">
+## Install Steps</a>
+
+Below are the steps I took to create a public instance within AWS.
+
+0. Use Firefox to get in <a target="_blank" href="http://aws.amazon.com/ec2/">
+   EC2 dashboard at http://aws.amazon.com/ec2/</a>
 
 0. Scroll down to the bottom of the Analytics section to 
   click on the Elasticsearch Service link. 
-The default is US West 2, which is Oregon.
+  The default for me is US West 2, which is in Oregon.
 
   ```
 https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2#
