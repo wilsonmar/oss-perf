@@ -4,7 +4,7 @@ Amazon announced its ElastiSearch Service offering October 1st 2015. See:
 <a target="_blank" href="https://aws.amazon.com/blogs/aws/new-amazon-elasticsearch-service/">
 https://aws.amazon.com/blogs/aws/new-amazon-elasticsearch-service/</a>
 
-On Nov 1, http://kirankoduru.github.io/elasticsearch/moving-from-aws-elasticsearch-service.html
+After a month working with it, http://kirankoduru.github.io/elasticsearch/moving-from-aws-elasticsearch-service.html
 identified reasons why he got away from it:
 
   * AWS's service does not consume credits companies accumulate.
@@ -26,7 +26,7 @@ identified reasons why he got away from it:
   * AWS is now supported by Elastic Support.
 
   * AWS controls the <strong>elasticsearch.yml</strong> file containing settings to tweak. 
-  The elasticsearch service makes sure everything works perfectly.
+  The AWS elasticsearch service makes sure everything works perfectly.
 
 <a id="Install">
 ## Install Steps</a>
