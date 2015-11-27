@@ -29,12 +29,18 @@ On freenode, #logstash and #elasticsearch (No #Kibana).
  * <a target="_blank" href="http://stackoverflow.com/search?q=logstash">logstash</a>
  * <a target="_blank" href="http://stackoverflow.com/search?q=kibana">kibana</a>
 
+<a id="Tweets"> 
+## Twitter searchs</a>
     * <a target="_blank" href="https://twitter.com/search?q=elastic"> 
-      @elastic is the Elastice company account</a>.
-    * <a target="_blank" href="https://twitter.com/search?q=%23elasticsearch&src=tyah"> 
-    Twitter #elasticsearch search</a>.
-    * <a target="_blank" href="https://twitter.com/search?q=%23elkstack&src=tyah"> 
-    Twitter #elkstack search</a>.
+      @elastic is the Elastice company Twitter account</a>.
+    * <a target="_blank" href="https://twitter.com/search?q=%23Elasticon"> 
+      #Elasticon tour tweets</a>
+    * <a target="_blank" href="https://twitter.com/search?q=%23elasticsearch"> 
+      #elasticsearch tweet search</a>.
+    * <a target="_blank" href="https://twitter.com/search?q=%23elkstack"> 
+      #elkstack tweet search</a>.
+    * <a target="_blank" href="https://twitter.com/search?q=%23eTimelion"> 
+      #Timelion tweet search</a>.
 
 <a id="Meetups"> 
 ## Local Live Meetups</a>
@@ -48,6 +54,9 @@ On freenode, #logstash and #elasticsearch (No #Kibana).
 
     * <a target="_blank" href="http://www.twitter.com/elkstack"> 
     Twitter #elkstack search</a>
+
+    * <a target="_blank" href="https://www.elastic.co/blog/witwies-elastic-meetup-london-paris">
+      Where in the World is Elastic? - Elastic Meetup in London and Paris</a>
 
 <a id="LinkedIn"> 
 ## LinkedIn Group</a>
