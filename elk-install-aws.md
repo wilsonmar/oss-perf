@@ -9,6 +9,8 @@ identified reasons why he got away from it:
 
   * AWS's service does not consume credits companies accumulate.
 
+  * AWS does not provide a selection of region, which may cause some latency. 
+
   * AWS's services uses a back version of Elasticsearch, such as 1.5 when version 2.0 is available. 
     This is important for those who don't want to miss out on those bug fixes and shiny new feature releases.
 
@@ -23,10 +25,13 @@ identified reasons why he got away from it:
 
   * AWS does not include Shield, the Elastic commercial security plugin that handles RBAC of cluster and indexes.
 
-  * AWS is now supported by Elastic Support.
+  * AWS is not supported by Elastic Support.
 
   * AWS controls the <strong>elasticsearch.yml</strong> file containing settings to tweak. 
   The AWS elasticsearch service makes sure everything works perfectly.
+
+
+The ironic thing is that Elastic's own Found service is run on AWS.'
 
 <a id="Install">
 ## Install Steps</a>
