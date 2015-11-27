@@ -6,27 +6,29 @@ beginning with the example at
 Bear in mind that we are not generating server code to respond to request from clients.
 That can be quite complicated, with calls to databases, etc.
 
- <a href="#SampleSwagger"> 1). Use swagger-codegen to create code for a Java client program.</a>
+0. <a href="#SampleSwagger"> Use swagger-codegen to create server program.</a>
+
+0. <a href="#GenClientSwagger"> Use swagger-codegen to create Java client program.</a>
  
- <a href="#UsualJMeter"> 2). Create JMeter resources for the sample API, manually.</a>
+0. <a href="#UsualJMeter"> Create JMeter resources for the sample API, manually.</a>
  
- <a href="#SwaggerJMeter"> 3). Edit the template to produce basic JMeter code.</a>
+0. <a href="#SwaggerJMeter"> Edit the template to produce basic JMeter code.</a>
 
- <a href="#JMeterTricks"> 4). Edit the template to address more risks.</a>
+0. <a href="#JMeterTricks"> Edit the template to address more risks.</a>
  
- <a href="#JMeterGenSvc"> 5). Make custom JMeter generator web service.</a>
+0. <a href="#JMeterGenSvc"> Make custom JMeter generator web service.</a>
 
- <a href="#JMeterGenWebsite"> 6). Make generator available from a website.</a>
+0. <a href="#JMeterGenWebsite"> Make generator available from a website.</a>
 
- <a href="#JMeterGenRefine"> 7). Refine generator code.</a>
+0. <a href="#JMeterGenRefine"> Refine generator code.</a>
 
- <a href="#SwaggerJMeterGroup"> 8). Run several at a time.</a>
+0. <a href="#SwaggerJMeterGroup"> Run several at a time.</a>
 
 <hr />
 
 
-<a id="SampleSwagger"> 
-### 1). Use swagger-codegen to manually generate code for a Java client program.</a>
+<a id="GenClientSwagger"> 
+### Use swagger-codegen to generate Java client program.</a>
 
 0. Open <a target="_blank" href="http://editor.swagger.io/#/"> http://editor.swagger.io/#</a>. 
 1. Click "Got it" if it's your first time at the site.
@@ -103,7 +105,7 @@ referencing the build.gradle file (containing Groovy program) declarative code.
 <a id="UsualJMeter">
 ### 2). Create JMeter resources for the sample API, manually.</a>
 
-The example script is from ____, a leading authority on JMeter performance testing (@twitter, website).
+The example script is from ___
 
 The JMeter script folder implements the <a href="#JMeterTricks"> tests below</a> to address potential risks.
 
