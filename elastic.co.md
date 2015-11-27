@@ -20,7 +20,7 @@ is built on the Discourse platform.
 Email logstash-users@googlegroups.com or elasticsearch-users@googlegroups.com
 (no kibana-users@googlegroups.com)
 
-On freenode, #logstash and #elasticsearch.
+On freenode, #logstash and #elasticsearch (No #Kibana).
 
 <a id="Stackoverflow"> 
 ## Stackoverflow searchs</a>
@@ -29,13 +29,25 @@ On freenode, #logstash and #elasticsearch.
  * <a target="_blank" href="http://stackoverflow.com/search?q=logstash">logstash</a>
  * <a target="_blank" href="http://stackoverflow.com/search?q=kibana">kibana</a>
 
+    * <a target="_blank" href="https://twitter.com/search?q=elastic"> 
+      @elastic is the Elastice company account</a>.
+    * <a target="_blank" href="https://twitter.com/search?q=%23elasticsearch&src=tyah"> 
+    Twitter #elasticsearch search</a>.
+    * <a target="_blank" href="https://twitter.com/search?q=%23elkstack&src=tyah"> 
+    Twitter #elkstack search</a>.
+
 <a id="Meetups"> 
-## Local Meetups</a>
+## Local Live Meetups</a>
 
-<a target="_blank" href="http://elasticsearch.meetup.com/"> Elasticsearch.Meetup.com</a>
-is managed by Heather.
+    * <a target="_blank" href="http://elasticsearch.meetup.com/"> Elasticsearch.Meetup.com</a>
+      is managed by Heather.
+      <a target="_blank" href="email:meetups@elastic.co"> Email: meetups@elastic.co</a>
 
-Twitter #elkstack
+    * <a target="_blank" href="https://speakerdeck.com/elastic/"> 
+    Speaker deck from Elastic road shows</a>
+
+    * <a target="_blank" href="http://www.twitter.com/elkstack"> 
+    Twitter #elkstack search</a>
 
 <a id="LinkedIn"> 
 ## LinkedIn Group</a>
@@ -155,6 +167,13 @@ What is ELK and how can it help you discover, visualize and analyze your data?
 
 * https://www.youtube.com/watch?v=2oMvUX8Ke5M&t=25m
   Hands-on: 
+
+
+<a id="External"> 
+## External to Elastic.co</a>
+Elastic keeps <a target="_blank" href="https://speakerdeck.com/elastic/">
+slidedecks from presentations at their Tours here</a>.
+
 
 <a id="Logstash"> 
 ## Logstash</a>
