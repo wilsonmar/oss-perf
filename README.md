@@ -3,7 +3,7 @@
 The diagram below is <a target="_blank" href="http://www.youtube.com/watch?v=WnVCUzCO1CI">
 gradually revealed in this video</a> with <a href="#Narrative">narrative text</a>.
 
-<img alt="oss-perf-v18_wm" src="https://cloud.githubusercontent.com/assets/300046/11321748/31de573e-9088-11e5-8708-3fd3ff0a2b24.png">
+<img alt="oss-perf-v20-wm" src="https://cloud.githubusercontent.com/assets/300046/11447698/e1d8a65c-9507-11e5-9bb3-291fd870e5d2.png">
 
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
    Other organizations will like use different colors to indicate status.
