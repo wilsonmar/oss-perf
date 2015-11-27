@@ -42,6 +42,14 @@ On freenode, #logstash and #elasticsearch (No #Kibana).
     * <a target="_blank" href="https://twitter.com/search?q=%23eTimelion"> 
       #Timelion tweet search</a>.
 
+<a id="News"> 
+## News</a>
+
+    * <a target="_blank" href="https://twitter.com/ElasticNews">
+      Elastic News tweets</a>
+    * <a target="_blank" href="https://www.reddit.com/r/elastic">
+      reddit.com/r/</a>
+
 <a id="Meetups"> 
 ## Local Live Meetups</a>
 
