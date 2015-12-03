@@ -146,7 +146,7 @@ is a Ruby based DSL for building JMeter test plans
 
 
 <a name="AgentMonitoring">
-**Monitoring** via agents (or JMX) include innovations from profilers and:
+**Monitoring** via agents (or JMX) include innovations such as:
 
    * https://github.com/GoogleCloudPlatform/PerfKitBenchmarker
 
