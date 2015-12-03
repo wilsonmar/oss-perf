@@ -31,39 +31,39 @@ On freenode, #logstash and #elasticsearch (No #Kibana).
 
 <a id="Tweets"> 
 ## Twitter searchs</a>
-    * <a target="_blank" href="https://twitter.com/search?q=elastic"> 
+ * <a target="_blank" href="https://twitter.com/search?q=elastic"> 
       @elastic is the Elastice company Twitter account</a>.
-    * <a target="_blank" href="https://twitter.com/search?q=%23Elasticon"> 
+ * <a target="_blank" href="https://twitter.com/search?q=%23Elasticon"> 
       #Elasticon tour tweets</a>
-    * <a target="_blank" href="https://twitter.com/search?q=%23elasticsearch"> 
+ * <a target="_blank" href="https://twitter.com/search?q=%23elasticsearch"> 
       #elasticsearch tweet search</a>.
-    * <a target="_blank" href="https://twitter.com/search?q=%23elkstack"> 
+ * <a target="_blank" href="https://twitter.com/search?q=%23elkstack"> 
       #elkstack tweet search</a>.
-    * <a target="_blank" href="https://twitter.com/search?q=%23eTimelion"> 
+ * <a target="_blank" href="https://twitter.com/search?q=%23eTimelion"> 
       #Timelion tweet search</a>.
 
 <a id="News"> 
 ## News</a>
 
-    * <a target="_blank" href="https://twitter.com/ElasticNews">
+ * <a target="_blank" href="https://twitter.com/ElasticNews">
       Elastic News tweets</a>
-    * <a target="_blank" href="https://www.reddit.com/r/elastic">
+ * <a target="_blank" href="https://www.reddit.com/r/elastic">
       reddit.com/r/</a>
 
 <a id="Meetups"> 
 ## Local Live Meetups</a>
 
-    * <a target="_blank" href="http://elasticsearch.meetup.com/"> Elasticsearch.Meetup.com</a>
+ * <a target="_blank" href="http://elasticsearch.meetup.com/"> Elasticsearch.Meetup.com</a>
       is managed by Heather.
       <a target="_blank" href="email:meetups@elastic.co"> Email: meetups@elastic.co</a>
 
-    * <a target="_blank" href="https://speakerdeck.com/elastic/"> 
+ * <a target="_blank" href="https://speakerdeck.com/elastic/"> 
     Speaker deck from Elastic road shows</a>
 
-    * <a target="_blank" href="http://www.twitter.com/elkstack"> 
+ * <a target="_blank" href="http://www.twitter.com/elkstack"> 
     Twitter #elkstack search</a>
 
-    * <a target="_blank" href="https://www.elastic.co/blog/witwies-elastic-meetup-london-paris">
+ * <a target="_blank" href="https://www.elastic.co/blog/witwies-elastic-meetup-london-paris">
       Where in the World is Elastic? - Elastic Meetup in London and Paris</a>
 
 <a id="LinkedIn"> 
