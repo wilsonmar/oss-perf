@@ -68,7 +68,7 @@ configure multirust with the most common options.
     curl -sf https://raw.githubusercontent.com/brson/multirust/master/blastoff.sh | sh
     ```
 
-    ... multirust installation ...
+    Multirust is from https://github.com/brson/multirust
 
     ```
 git clone https://github.com/polyfractal/playground/

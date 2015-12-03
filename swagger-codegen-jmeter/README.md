@@ -192,6 +192,8 @@ Valid atomic calls with valid response codes.
 Notice the object "tickets" is a plural noun. Other nouns include users, groups, people, etc.
 
  1. POST /tickets - creates new item (user registration)
+    
+    POST resulting in a creation should return a HTTP 201 status code and include a Location header that points to the URL of the new resource.
 
  2. GET /tickets - retrieve a list
 
