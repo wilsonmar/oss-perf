@@ -20,7 +20,11 @@ is built on the Discourse platform.
 Email logstash-users@googlegroups.com or elasticsearch-users@googlegroups.com
 (no kibana-users@googlegroups.com)
 
-On freenode, #logstash and #elasticsearch (No #Kibana).
+To chat on IRC, if you have a Mac and use <a target="_blank" href="https://www.codeux.com/textual/">
+Textual</a>: type freenode in Destination, then add channels #logstash and #elasticsearch (no #Kibana),
+then click Start chatting.
+
+QUESTION: Is there a Slack channel for ES?
 
 <a id="Stackoverflow"> 
 ## Stackoverflow searchs</a>
