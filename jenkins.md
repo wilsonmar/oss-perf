@@ -2,9 +2,18 @@ Jenkins is open-source Java software (running under a Tomcat web server)
 to invoke jobs on a schedule ("continuosly")
 such as for building software and conducting tests.
 
-This is also called continuous integration because Jenkins is not for unit testing,
-but to ensure that components already unit-tested can be integrated together.
-This is why people warn to not check in code that breaks things (fails even local unit testing).
+This is also called <strong>continuous integration</strong> because Jenkins
+is used to ensure that components already unit-tested can be integrated together.
+
+Experienced people warn to not check in code that breaks things (fails even local unit testing).
+This is achieved by having each developer having full capabilities,
+which may mean using mock code.
+
+Alternatives to Jenkins include Fabric and Capistrano.
+
+ * https://isotope11.com/blog/continuous-deployment-at-isotope11-an-update
+   Continuous deployment at Isotope11.
+
 
 <a id="Install">
 ## Installation</a>

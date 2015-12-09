@@ -46,16 +46,83 @@ which excludes ramp-up and ramp-down.
 <a target="_blank" href="http://wilsonmar.com/perftest.htm#Sumry">
 <img alt="Extending" src="http://merc.tv/img/fig/triggerpt_v2.png"></a>
 
-<a id="ToolChoices">
+
+<a id="https://isotope11.com/blog/continuous-deployment-at-isotope11-an-update">
 ## Choice of tools: Python</a>
 Python has become a go-to programming language for math, science, and statistics 
 due to its ease of adoption and the breadth of libraries available for nearly any application. 
 
 <a target="_blank" href="http://scikit-learn.org/stable/">Scikit-learn</a> 
 builds on top of existing Python packages NumPy, SciPy, and matplotlib. 
-It can be used either for interactive “workbench” applications or embedded into other software and reused. 
-Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.html#supervised-learning">
-Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
+
+0. Install Anaconda from https://www.continuum.io/downloads distributes Python with 300+ libraries.
+   After download, in the folder, install using this command-line:
+
+    ```
+bash Anaconda2-2.4.1-MacOSX-x86_64.sh
+    ```
+
+ * Alternately, install <a target="_blank" href="http://conda.pydata.org/miniconda.html">
+   Miniconda</a> for its compactness as it requires individual packages to be installed.
+
+    Python can be used either for interactive “workbench” applications or embedded into other software and reused. 
+    Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.html#supervised-learning">
+    Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
+
+ * <a target="_blank" href="https://docs.python.org/2/index.html">
+   https://docs.python.org/2/index.html</a> contains tutorials and docs.
+
+    Code for Python 2.7 cannot be run under Python 3.5.
+    Thus, python3 is the command instead of python.
+
+    The <a target="_blank" href="https://www.coursera.org/learn/ml-foundations/"> 
+    ML class at Coursera</a> teaches based on 
+    jupyter IPython Notebook 
+which combines Python with a wiki page that combines code, plots, and text.
+
+0. Install SFrame tabular data structure stored on disk
+    by downloading from https://dato.com/learn/gallery/notebooks/introduction_to_sframes.html
+
+    * introduction_to_sframes.py - the Python code
+    * introduction_to_sframes.ipynb - the iPython Notebook
+
+    with each column an SArray.
+
+The source is at:
+
+ * https://github.com/dato-code/SFrame
+
+    Claiming that the <a target="_blank" href="http://pandas.pydata.org/">Pandas (Python Data Analysis)</a>, 
+    open-source library does not scale, the course uses 
+    <a target="_blank" href="https://dato.com/learn/translator/">comparable</a>
+    open-source SFrame API 
+    with commercial (1 year free) <strong>GraphLab Create</strong> from Dato.com, where instructor Carlos is CEO.
+
+    It can be <a target="_blank" href="https://dato.com/download/install-graphlab-create-aws-coursera.html">
+    run within AWS EC2</a>.
+
+    Tasks include:
+
+* Constructing data objects
+* Accessing data in a table
+* Vector arithmetic
+* Saving and loading data tables
+* Data table operations
+* Manipulating data in a table
+* Computing statistics with data tables
+
+To load a csv file into SFrame:
+
+    ```
+import graphlab
+sf = graphlab.SFrame('your_data.csv')
+    ```
+
+
+Some other classes teach R, which is more a declarative language 
+rather than a programmatic language like Python.
+R is said to be less scalable and has fewer deployment tools than Python, 
+so it is more seldomly used for production code in industry.
 
 
 <a id="MachineLearning">

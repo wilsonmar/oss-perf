@@ -21,7 +21,8 @@ what is declared in **<a href="#ResourceDeclarations">resource declarations</a>*
 
 This is a less time-consuming and error-prone approach than procedural shell scripits.
 
-Thus, Puppet automates repetitive tasks to ensure consistency among servers.
+Thus, Puppet automates <strong>repetitive</strong> tasks to ensure consistency among servers,
+to use shareable code (Puppet scripts) to automate server builds which are testable.
 
 Puppet declarations specify **generic** resources,
 so providers in Puppet's Resource Abstraction Layer resolves differences 
@@ -35,9 +36,15 @@ when implementing Puppet XML specs.
 | Windows | Windows Nu-get | Chocolatey command `cinst install package` |
 | Mac OSX | Homebrew install | command `brew install package` |
 
-Alternatives to Puppet include Chef, Ansable, Salt, CF Engine (Ruby).
+Configuration management (CM) tools help to avoid manual install and configure
+once the hardware is in place.
 
+Installable alternatives to Puppet (configuration management)
+include Chef, Ansable, Salt, CF Engine (Ruby), Pallet, Bcfg2, etc.
 
+Cloud CM alternatives include Amazon OpsWorks and CloudFormation.
+Ubuntu's Juju.
+'
 
 <a id="ResourceDeclarations">
 ## Resource Declarations</a>

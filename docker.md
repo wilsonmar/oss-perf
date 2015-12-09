@@ -192,6 +192,8 @@ vagrant@precise64:~$ pwd
 /home/vagrant
     ```
 
+    NOTE: Initial versions of Docker were only available on Ubuntu.
+
 0. Install and run app software (Tomcat web server, etc.).
 
 0. Share your Vagrant enviornment
