@@ -3,8 +3,13 @@ There is a large amount of data generated during testing of apps.
 The objective is to augment time-consuming and error-prone **manual scanning** of metrics
 with a program that recognizes patterns and raises alerts.
 
- 1. As performance tests run, identify when a blocking condition has been reached among the various metrics being monitored,
-when a **threshold** for action is recognized in response time degrading, out of memory, CPU, out of disk space, etc.
+ 1. As performance tests run (also in production), 
+    proactively identify when a blocking condition is **imminent** from
+    continually scan through metrics and calculate leading indicators such as
+    the trend of disk space usage and the ratio of memory consumed per user, etc.
+
+    This is a step ahead of reactively recognizing when a **threshold** for action,
+    such as response time degrading, out of memory, CPU, out of disk space, etc.
 
  2. As Selenium runs, have it output **timings for each transaction**.
 When a transaction takes a sudden jump, raise an alert.
@@ -52,11 +57,52 @@ which excludes ramp-up and ramp-down.
 Python has become a go-to programming language for math, science, and statistics 
 due to its ease of adoption and the breadth of libraries available for nearly any application. 
 
+Right away, let me note code for Python 2.7 cannot be run under Python 3.5.
+Thus, python3 is the command instead of python.
+
+ * <a target="_blank" href="https://docs.python.org/2/index.html">
+   https://docs.python.org/2/index.html</a> contains tutorials and docs.
+
+Python can be used either for interactive “workbench” applications or embedded into other software and reused. 
+
 <a target="_blank" href="http://scikit-learn.org/stable/">Scikit-learn</a> 
 builds on top of existing Python packages NumPy, SciPy, and matplotlib. 
+Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.html#supervised-learning">
+Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
 
-0. Install Anaconda from https://www.continuum.io/downloads distributes Python with 300+ libraries.
-   After download, in the folder, install using this command-line:
+
+Claiming that the <a target="_blank" href="http://pandas.pydata.org/">Pandas (Python Data Analysis)</a>, 
+open-source library does not scale, 
+the <a target="_blank" href="https://www.coursera.org/learn/ml-foundations/"> 
+ML class from Washington U at Coursera</a> teaches based on 
+<a target="_blank" href="https://dato.com/learn/translator/">comparable</a>
+open-source SFrame API 
+with a commercial (1 year free) <strong>GraphLab Create</strong> from Dato.com, where instructor Carlos is CEO.
+
+It can be <a target="_blank" href="https://dato.com/download/install-graphlab-create-aws-coursera.html">
+run within AWS EC2</a>.
+
+**IPython Notebook**
+combines Python with a wiki page (named Jupyter) that combines code, plots, and text,
+(after installation described below at default http://localhost:8888).
+
+The jupyter web UI enables several clusters (engines) to be started.
+This is what provides the scalability.
+
+
+0. Install the **SFrame** tabular data structure (which provides a "database" stored on disk)
+   by downloading from https://dato.com/learn/gallery/notebooks/introduction_to_sframes.html
+   with source at https://github.com/dato-code/SFrame
+
+ * introduction_to_sframes.py - the Python code
+ * introduction_to_sframes.ipynb - the iPython Notebook
+
+
+The package includes installation of Anaconda from 
+https://www.continuum.io/downloads 
+which distributes Python with 300+ libraries.
+
+If you're not using the IPython installer, download, in the folder, install using this command-line:
 
     ```
 bash Anaconda2-2.4.1-MacOSX-x86_64.sh
@@ -65,43 +111,9 @@ bash Anaconda2-2.4.1-MacOSX-x86_64.sh
  * Alternately, install <a target="_blank" href="http://conda.pydata.org/miniconda.html">
    Miniconda</a> for its compactness as it requires individual packages to be installed.
 
-    Python can be used either for interactive “workbench” applications or embedded into other software and reused. 
-    Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.html#supervised-learning">
-    Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
 
- * <a target="_blank" href="https://docs.python.org/2/index.html">
-   https://docs.python.org/2/index.html</a> contains tutorials and docs.
 
-    Code for Python 2.7 cannot be run under Python 3.5.
-    Thus, python3 is the command instead of python.
-
-    The <a target="_blank" href="https://www.coursera.org/learn/ml-foundations/"> 
-    ML class at Coursera</a> teaches based on 
-    jupyter IPython Notebook 
-which combines Python with a wiki page that combines code, plots, and text.
-
-0. Install SFrame tabular data structure stored on disk
-    by downloading from https://dato.com/learn/gallery/notebooks/introduction_to_sframes.html
-
-    * introduction_to_sframes.py - the Python code
-    * introduction_to_sframes.ipynb - the iPython Notebook
-
-    with each column an SArray.
-
-The source is at:
-
- * https://github.com/dato-code/SFrame
-
-    Claiming that the <a target="_blank" href="http://pandas.pydata.org/">Pandas (Python Data Analysis)</a>, 
-    open-source library does not scale, the course uses 
-    <a target="_blank" href="https://dato.com/learn/translator/">comparable</a>
-    open-source SFrame API 
-    with commercial (1 year free) <strong>GraphLab Create</strong> from Dato.com, where instructor Carlos is CEO.
-
-    It can be <a target="_blank" href="https://dato.com/download/install-graphlab-create-aws-coursera.html">
-    run within AWS EC2</a>.
-
-    Tasks include:
+Tasks include:
 
 * Constructing data objects
 * Accessing data in a table
