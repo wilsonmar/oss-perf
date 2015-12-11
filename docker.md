@@ -8,12 +8,34 @@ What Docker helps to achieve is a single set of scripts that establish the envir
 (desktop, AWS, Kubernets within private data centers).
 This enables tests of apps to be applicable in the various envrionments.
 
-As of this writing, Docker only works under Linux (not Windows nor Mac OS).
-So VagrantUp is run under VMWare Fusion emulator
-running a CentOS core OS image.
+Several apps can run within a Docker machine as if they have their own operating system.
+
+As of this writing, Docker only works natively under Linux such as CentOS (not Windows nor Mac OS).
+Other operating systems include Ubuntu and the BusyBox small OS.
+CoreOS was developed specifically to operate within containers.
+
+So on a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWare Fusion or 
+<a href="#VirtualBoxInstall">VirtualBox</a> emulator.
+
+<a id="DockerDaemon">
+## Docker Daemon</a>
 
 
+Docker reduces the redundancy of common components running within the same Docker container.
 
+   ```
+   FROM wordpress
+   ```
+   
+   stand on the shoulders of others.
+
+   ```
+   RUN docker-php-ext-install mbstring
+   
+   COPY favicon.ico /var/www/html
+   RUN chown www-data:www-data /var/www/html/favicon.ico
+   ```
+   
 <a id="DockerImages">
 ## Docker images</a>
 Docker works only on 64-bit machines
@@ -25,6 +47,39 @@ and requires specific Linux kernel versions.
 Docker maintains official images at
 https://github.com/docker-library/official-images/tree/master/library
 for Jenkins, etc.
+
+Pull the busybox Docker image from the Docker website:
+
+   ```
+docker pull busybox
+   ```
+   
+To run the image:
+
+   ```
+docker run busybox echo hello
+   ```
+   
+Run the latest image:
+
+   ```
+docker run -it busybox:latest bash
+   ```
+
+For a list of processes running:
+
+   ```
+docker ps
+   ```
+   
+To confirm:
+
+   ```
+   cat /etc/*releases
+   ```
+
+Docker Engine ???
+
 
 <a id="VirtualBoxInstall">
 ## VirtualBox installation</a>
