@@ -31,17 +31,39 @@ On a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWa
 0. Click Download(Mac) to download file DockerToolbox-1.9.1c.pkg (the current version may be different).
 0. Click Save File in the pop-up.
 
+   The text below is a summary of my translation of https://docs.docker.com/v1.8/installation/mac/
+
    Mac OS X 10.8 “Mountain Lion” or newer has the ____ needed to use the Docker Toolbox
    which installs Docker. It consists of several components:
 
- * <a target="_blank" href="http://docs.docker.com/machine/">Docker Machine</a> for running the docker-machine binary (takes the place of Boot2Docker)
- * Docker Engine for running the docker binary
+ * <a target="_blank" href="http://docs.docker.com/machine/">Docker Machine</a> for running the `**docker-machine**` binary 
+   (previously Boot2Docker).
+ * Docker Client (Engine) for running the `**docker**` binary
  * <a target="_blank" href="https://docs.docker.com/kitematic/userguide/">Kitematic</a> (the Docker GUI) open sourced at https://github.com/docker/kitematic
+ * Docker Quickstart CLI Terminal app
  * a shell (such as bash) preconfigured for a Docker command-line environment
- * Oracle VM VirtualBox
- * <a target="_blank" href="https://www.docker.com/docker-compose">Docker Compose</a> to define apps and its dependencies in a Compose.yml file.
+ * Oracle VM VirtualBox 5.0.0
+ * <a target="_blank" href="https://www.docker.com/docker-compose">**docker-compose**</a> 
+   to define apps and its dependencies in a Compose.yml file.
 
-   See https://docs.docker.com/v1.8/installation/mac/
+
+   NOTE: Installation is to /usr/local/bin
+
+<a id="DockerCommands">
+## Docker Commands</a>
+0. Confirm by getting a list of sub-commands:
+   
+   ```
+docker
+   ```
+   
+   Additional information about each sub-command is available from http://docs.docker.com/machine/reference/
+
+0. If you run docker and get this message:
+   
+   ```
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?
+   ```
 
 Docker reduces the redundancy of common components running within the same Docker container.
 
