@@ -34,7 +34,7 @@ On a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWa
    Mac OS X 10.8 “Mountain Lion” or newer has the ____ needed to use the Docker Toolbox
    which installs Docker. It consists of several components:
 
- * Docker Machine for running the docker-machine binary (takes the place of Boot2Docker)
+ * <a target="_blank" href="http://docs.docker.com/machine/">Docker Machine</a> for running the docker-machine binary (takes the place of Boot2Docker)
  * Docker Engine for running the docker binary
  * <a target="_blank" href="https://docs.docker.com/kitematic/userguide/">Kitematic</a> (the Docker GUI) open sourced at https://github.com/docker/kitematic
  * a shell (such as bash) preconfigured for a Docker command-line environment
