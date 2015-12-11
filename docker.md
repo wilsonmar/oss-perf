@@ -1,25 +1,47 @@
 Notes on this page is about Docker and its ecosystem.
 
+Several apps can run within a Docker machine as if they have their own operating system.
 A running Docker container shares the Linux kernel with the host. 
 This makes it more **lightweight** and easier to deploy software than using VMware.
 So the performance of LG inside Docker is very close to that on a regular Linux host. 
+
+Perhaps as importantly, Docker is free open source software while 
+VMware Workstation (used to create VMWare images) is licensed.
 
 What Docker helps to achieve is a single set of scripts that establish the environment on several platforms
 (desktop, AWS, Kubernets within private data centers).
 This enables tests of apps to be applicable in the various envrionments.
 
-Several apps can run within a Docker machine as if they have their own operating system.
-
-As of this writing, Docker only works natively under Linux such as CentOS (not Windows nor Mac OS).
-Other operating systems include Ubuntu and the BusyBox small OS.
-CoreOS was developed specifically to operate within containers.
-
-So on a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWare Fusion or 
-<a href="#VirtualBoxInstall">VirtualBox</a> emulator.
 
 <a id="DockerDaemon">
 ## Docker Daemon</a>
+The Docker daemon uses Linux-specific kernel features,
+which means Docker only works natively under Linux such as CentOS (not Windows nor Mac OS).
+Other operating systems include Ubuntu and the BusyBox small OS.
+CoreOS was developed specifically to operate within containers.
 
+https://be.a.cloudgeni.us/workstation/
+
+<a id="DockerMachine">
+## Docker Machine for Mac</a>
+On a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWare Fusion or 
+<a href="#VirtualBoxInstall">VirtualBox</a> emulator.
+
+0. From within web page https://www.docker.com/docker-toolbox 
+0. Click Download(Mac) to download file DockerToolbox-1.9.1c.pkg (the current version may be different).
+0. Click Save File in the pop-up.
+
+   Mac OS X 10.8 “Mountain Lion” or newer has the ____ needed to use the Docker Toolbox
+   which installs Docker. It consists of several components:
+
+ * Docker Machine for running the docker-machine binary (takes the place of Boot2Docker)
+ * Docker Engine for running the docker binary
+ * <a target="_blank" href="https://docs.docker.com/kitematic/userguide/">Kitematic</a> (the Docker GUI) open sourced at https://github.com/docker/kitematic
+ * a shell (such as bash) preconfigured for a Docker command-line environment
+ * Oracle VM VirtualBox
+ * <a target="_blank" href="https://www.docker.com/docker-compose">Docker Compose</a> to define apps and its dependencies in a Compose.yml file.
+
+   See https://docs.docker.com/v1.8/installation/mac/
 
 Docker reduces the redundancy of common components running within the same Docker container.
 
@@ -430,7 +452,12 @@ ENTRYPOINT ["/bin/bash","-c","cd /opt/HP/HP_LoadGenerator/; source env.sh; cd bi
  ```
  
 
+<a id="InCloud">
+## In a Cloud</a>
+
+DigitalOcean.com hosts docker droplets (machines).
+
 <a id="Resources">
 ## Resources</a>
-docker machine creates daemons.
+
 
