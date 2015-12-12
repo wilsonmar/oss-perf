@@ -7,14 +7,57 @@ So the performance of LG inside Docker is very close to that on a regular Linux 
 
 Perhaps as importantly, Docker is free open source software while 
 VMware Workstation (used to create VMWare images) is licensed.
+Docker was open-sourced from within Twitter in 2013.
+
+ * https://www.youtube.com/watch?v=Q5POuMHxW-0
+   introduced by dotCloud founder and CTO Solomon Hykes (http://twitter.com/solomonstre) 
+   uses the analogy of shipping containers separating concerns for the shipping industry.
+
+ * https://www.youtube.com/watch?v=at72dhg-SZY
+   Solomon with CEO Ben Golub at DockerCon 15 keynote
+
+ * https://www.youtube.com/watch?v=at72dhg-SZY
+
+ * https://www.youtube.com/watch?v=ddhU3NMrhX4
+   3 hour presentation on Docker
 
 Docker solves the problem of "it works on my laptop but not in that server".
 Docker is able to makes use of a single set of scripts that establish the environment on several platforms
 (desktop, AWS, Kubernets within private data centers).
 This enables tests of apps to be applicable in the various envrionments.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=pGYAg7TMmp0">
-What is Docker?</a>
+LearnCode.academy has a 7-video series on YouTube:
+
+ * https://www.youtube.com/watch?v=pGYAg7TMmp0&list=PLoYCgNOIyGAAzevEST2qm2Xbe3aeLFvLc
+
+ * <a target="_blank" href="https://www.youtube.com/watch?v=pGYAg7TMmp0">
+   What is Docker?</a>
+
+ * <a target="_blank" href="https://www.youtube.com/watch?v=JBtWxj9l7zM">
+   Docker Tutorial - Docker Container Tutorial for Beginners
+
+
+ * http://youtu.be/JBtWxj9l7zM
+
+Christophe Limpalair of Codepen https://scaleyourcode.com/interviews/interview/9 
+has several videos on Docker:
+
+ * https://www.youtube.com/watch?v=9tDW5OyCY2c
+   Vagrant vs Docker?
+
+ * https://www.youtube.com/watch?v=fWkEcijmdsc
+   One-click Deploy and One-Click Test Environment with Kate Heddleston
+
+ * https://www.youtube.com/watch?v=v08U1-twsug
+   Docker in Production, Scaling, and Security
+
+ * https://www.youtube.com/watch?v=sYQ8j02wbCY
+   Running Agound: Debugging Docker in Production
+
+
+<a id="Kubernets">
+## Kubernets</a>
+Kubernets uses its own schedule to stand up Docker containers.
 
 
 <a id="DockerDaemon">
@@ -23,8 +66,13 @@ The Docker daemon uses Linux-specific kernel features,
 which means Docker only works natively under Linux such as CentOS (not Windows nor Mac OS).
 Other operating systems include Ubuntu and the BusyBox small OS.
 CoreOS was developed specifically to operate within containers.
+Mesos is another one.
 
-https://be.a.cloudgeni.us/workstation/
+Docker uses a "union" file system that treats elements atomically.
+This makes for smaller containers because duplicates are avoided.
+Docker works on configuration lines incrementally.
+
+ * https://be.a.cloudgeni.us/workstation/
 
 <a id="DockerMachine">
 ## Docker Machine for Mac</a>
@@ -40,15 +88,15 @@ On a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWa
    Mac OS X 10.8 “Mountain Lion” or newer has the ____ needed to use the Docker Toolbox
    which installs Docker. It consists of several components:
 
- * <a target="_blank" href="http://docs.docker.com/machine/">Docker Machine</a> for running the `**docker-machine**` binary 
+ * <a target="_blank" href="http://docs.docker.com/machine/">`**docker-machine**`</a> binary 
    (previously Boot2Docker).
- * Docker Client (Engine) for running the `**docker**` binary
+ * `**docker**` binary is the **Docker Client (Engine)** for running the 
  * <a target="_blank" href="https://docs.docker.com/kitematic/userguide/">Kitematic</a> (the Docker GUI) open sourced at https://github.com/docker/kitematic
- * Docker Quickstart CLI Terminal app
+ * Docker Quickstart CLI Terminal app)
  * a shell (such as bash) preconfigured for a Docker command-line environment
  * Oracle VM VirtualBox 5.0.0
  * <a target="_blank" href="https://www.docker.com/docker-compose">**docker-compose**</a> 
-   to define apps and its dependencies in a Compose.yml file.
+   defines apps and its dependencies in a Compose.yml file.
 
 
    NOTE: Installation is to /usr/local/bin
