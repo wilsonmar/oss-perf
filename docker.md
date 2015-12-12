@@ -8,9 +8,13 @@ So the performance of LG inside Docker is very close to that on a regular Linux 
 Perhaps as importantly, Docker is free open source software while 
 VMware Workstation (used to create VMWare images) is licensed.
 
-What Docker helps to achieve is a single set of scripts that establish the environment on several platforms
+Docker solves the problem of "it works on my laptop but not in that server".
+Docker is able to makes use of a single set of scripts that establish the environment on several platforms
 (desktop, AWS, Kubernets within private data centers).
 This enables tests of apps to be applicable in the various envrionments.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=pGYAg7TMmp0">
+What is Docker?</a>
 
 
 <a id="DockerDaemon">
