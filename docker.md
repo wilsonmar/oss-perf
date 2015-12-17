@@ -1,72 +1,143 @@
 Notes on this page is about Docker and its ecosystem.
 
+<a id="Intro">
+## "Configure Once, Run Anywhere"</a>
+
+Docker is one of the technologies that enables 
+<a target="_blank" href="http://12factor.net/"> The 12 Factor App</a> 
+methodology for modern DevOps.
+
+ * @RealGeneKim gives the "why" of Docker at 
+   <a target="_blank" href="https://www.youtube.com/watch?v=SaHbtEeu37M"> Dockercon 2014</a>
+
+ * https://www.youtube.com/watch?v=Tlgoq9t95ew
+   Rohan Singh describes Docker at Spotify
+
+
+Docker is based on several innovations: LXC, device-mapper, aufs, etc..
+
+<a id="Containers">
+### System Containers</a>
+Docker solves the problem of "it works on my laptop but not in that server"
+by enables several <strong>containers</strong> to run on the same hardware.
+
+ * https://linuxcontainers.org/
+
+Docker uses the LXC (Linux containers, https://linuxcontainers.org/lxc/downloads/)
+now in most Linux distros (so its use does not require patching of kernel source).
+LXC (along with cgroups and other tech) keep containers isolated using security features such as
+namespaces, mandatory access control and control groups.
+
+Docker works only on 64-bit machines.
+
+ * https://en.wikipedia.org/wiki/LXC
+
+ * <a target="_blank" href="https://docs.docker.com/installation/#installation">
+   https://docs.docker.com/installation/#installation</a>
+   is Docker’s official installation guide.
+
+
+<a id="LowCostOfEntry">
+### Low Cost of Entry</a>
+One reason for Docker's quick rise is pricing. Whereas 
+VMware Workstation (used to create VMWare images) is licensed,
+Docker is free, open-sourced from within Twitter in 2013 into
+<a target="_blank" href="http://github.com/dotcloud/docker">
+http://github.com/dotcloud/docker</a>. 
+
+<a id="RockStars">
+### Rock Stars</a>
+Meet its creators:
+
+ * https://www.youtube.com/watch?v=Q5POuMHxW-0
+   dotCloud founder and CTO Solomon Hykes (http://twitter.com/solomonstre) 
+   uses the analogy of shipping containers separating concerns for the shipping industry.
+
+ * https://www.youtube.com/watch?v=at72dhg-SZY
+   Solomon with CEO Ben Golub at DockerCon 15 keynote
+   has a good joke about how his family misunderstands what Docker is.
+   He acknowledged that Docker "stands on the shoulders of giants" such as
+   https://en.wikipedia.org/wiki/Cgroups
+   built into Linux to manage isolated namespaces.
+
+* https://docs.docker.com/
+houses the latest documentation.
+
+
+To run on Macs, Docker provides a <strong>docker-machine</strong> binary host Docker in Macs.
+
+Unlike VMWare and other hypervisors which use server images that 
+contains entire operating system bits (kernel) in each image,
+Docker makes use of the <strong>union file system</strong> that enables sharing of modules among
+containers.
+
+Containers start quicker because of this.
+
+Docker uses a single set of instructions (a yaml file) 
+to configure the same application on many different platforms
+(desktop, AWS, Cloud, private data centers, etc.).
+
 Several apps can run within a Docker machine as if they have their own operating system.
 A running Docker container shares the Linux kernel with the host. 
 This makes it more **lightweight** and easier to deploy software than using VMware.
 So the performance of LG inside Docker is very close to that on a regular Linux host. 
 
-Perhaps as importantly, Docker is free open source software while 
-VMware Workstation (used to create VMWare images) is licensed.
-Docker was open-sourced from within Twitter in 2013.
+<a id="DigitalOcean">
+## Cloud Deploy</a>
+https://www.digitalocean.com/community/tags/docker?type=tutorials
 
- * https://www.youtube.com/watch?v=Q5POuMHxW-0
-   introduced by dotCloud founder and CTO Solomon Hykes (http://twitter.com/solomonstre) 
-   uses the analogy of shipping containers separating concerns for the shipping industry.
-
- * https://www.youtube.com/watch?v=at72dhg-SZY
-   Solomon with CEO Ben Golub at DockerCon 15 keynote
-
- * https://www.youtube.com/watch?v=at72dhg-SZY
-
- * https://www.youtube.com/watch?v=ddhU3NMrhX4
-   3 hour presentation on Docker
-
-Docker solves the problem of "it works on my laptop but not in that server".
-Docker is able to makes use of a single set of scripts that establish the environment on several platforms
-(desktop, AWS, Kubernets within private data centers).
-This enables tests of apps to be applicable in the various envrionments.
-
-LearnCode.academy has a 7-video series on YouTube:
-
- * https://www.youtube.com/watch?v=pGYAg7TMmp0&list=PLoYCgNOIyGAAzevEST2qm2Xbe3aeLFvLc
-
- * <a target="_blank" href="https://www.youtube.com/watch?v=pGYAg7TMmp0">
-   What is Docker?</a>
-
- * <a target="_blank" href="https://www.youtube.com/watch?v=JBtWxj9l7zM">
-   Docker Tutorial - Docker Container Tutorial for Beginners
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-getting-started
 
 
- * http://youtu.be/JBtWxj9l7zM
 
-Christophe Limpalair of Codepen https://scaleyourcode.com/interviews/interview/9 
-has several videos on Docker:
+<a id="Union">
+## Union file system</a>
+0. Ensure support for aufs (advanced multi layered unification filesystem),
+also aufs = another union file system
+https://en.wikipedia.org/wiki/Aufs
+Aufs4 --  version 4.x
+http://aufs.sf.net
+Junjiro R. Okajima
+Unionfs is being developed by Professor Erez Zadok at Stony Brook
+University and his team.
 
- * https://www.youtube.com/watch?v=9tDW5OyCY2c
-   Vagrant vs Docker?
-
- * https://www.youtube.com/watch?v=fWkEcijmdsc
-   One-click Deploy and One-Click Test Environment with Kate Heddleston
-
- * https://www.youtube.com/watch?v=v08U1-twsug
-   Docker in Production, Scaling, and Security
-
- * https://www.youtube.com/watch?v=sYQ8j02wbCY
-   Running Agound: Debugging Docker in Production
+```
+sudo apt-get install linux-image-extra-`uname -r`
+```
 
 
 <a id="Kubernets">
 ## Kubernets</a>
-Kubernets uses its own schedule to stand up Docker containers.
+Kubernets manages containerized applications in a clustered environment.
+It uses its own schedule to stand up Docker containers.
+
+    * https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes
+
+Google open sourced Kube 
+
+ * https://github.com/Unitech/pm2
+   PM2 is a process manager for Node apps with a built-in load balancer.
 
 
 <a id="DockerDaemon">
-## Docker Daemon</a>
+## Docker Engine Daemon</a>
 The Docker daemon uses Linux-specific kernel features,
 which means Docker only works natively under Linux such as CentOS (not Windows nor Mac OS).
-Other operating systems include Ubuntu and the BusyBox small OS.
+Other operating systems:
+
+Ubuntu 
+
+BusyBox small OS.
+
 CoreOS was developed specifically to operate within containers.
-Mesos is another one.
+
+    * https://www.digitalocean.com/community/tutorials/an-introduction-to-coreos-system-components
+ 
+    CoreOS uses a globally distributed key-value store called etcd to pass configuration data between nodes.
+    This enables apps to be dynamically configured based on shared resources.
+
+Mesos is a large-scale cluster management platform based on container isolation.
+
 
 Docker uses a "union" file system that treats elements atomically.
 This makes for smaller containers because duplicates are avoided.
@@ -88,18 +159,53 @@ On a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWa
    Mac OS X 10.8 “Mountain Lion” or newer has the ____ needed to use the Docker Toolbox
    which installs Docker. It consists of several components:
 
- * <a target="_blank" href="http://docs.docker.com/machine/">`**docker-machine**`</a> binary 
-   (previously Boot2Docker).
- * `**docker**` binary is the **Docker Client (Engine)** for running the 
+ * <a target="_blank" href="http://docs.docker.com/machine/">`docker-machine`</a> binary 
+   (previously Boot2Docker) for running on Mac OSX.
+
+ * `**docker**` binary is the <strong>Docker Client</strong>
+    to create, load, and manage containers
+
  * <a target="_blank" href="https://docs.docker.com/kitematic/userguide/">Kitematic</a> (the Docker GUI) open sourced at https://github.com/docker/kitematic
+ 
  * Docker Quickstart CLI Terminal app)
+
  * a shell (such as bash) preconfigured for a Docker command-line environment
+
  * Oracle VM VirtualBox 5.0.0
+
  * <a target="_blank" href="https://www.docker.com/docker-compose">**docker-compose**</a> 
    defines apps and its dependencies in a Compose.yml file.
 
-
    NOTE: Installation is to /usr/local/bin
+
+
+
+<a id="StartDocker">
+## Start Docker</a>
+0. Start the Docker Engine daemon:
+
+    ```
+sudo docker -d &
+    ```
+
+    The response is the PID (which will be different each time):
+
+    ```
+[1] 58154
+    ```
+
+    If you run docker and get this message:
+
+    ```
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?
+    ```
+
+    Start Docker using docker-machine invoking virtualbox:
+
+    ```
+docker-machine create --driver virtualbox default
+    ```
+
 
 <a id="DockerCommands">
 ## Docker Commands</a>
@@ -109,13 +215,81 @@ On a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWa
 docker
    ```
    
-   Additional information about each sub-command is available from http://docs.docker.com/machine/reference/
+   Additional information about each sub-command is available from 
+ <a target="_blank" href="http://docs.docker.com/machine/reference/">
+ http://docs.docker.com/machine/reference</a>
 
-0. If you run docker and get this message:
-   
-   ```
-Cannot connect to the Docker daemon. Is the docker daemon running on this host?
-   ```
+0. Get information about what is installed:
+
+    ```
+docker info
+    ```
+
+    Example of response:
+
+    ```
+Containers: 0
+Images: 0
+Storage Driver: aufs
+ Root Dir: /var/lib/docker/aufs
+ Dirs: 0
+Execution Driver: native-0.1
+Kernel Version: 3.13.0-27-generic
+WARNING: No swap limit support
+    ```
+
+0. Get versions of installed:
+
+    ```
+docker version
+    ```
+
+Example of response:
+
+    ```
+Client:
+Version:      1.9.1
+API version:  1.21
+Go version:   go1.5.1
+Git commit:   a34a1d5
+Built:        Sat Nov 21 00:48:57 UTC 2015
+OS/Arch:      darwin/amd64
+    ```
+
+    NOTE: Docker was written in the Go language. A tutorial is at
+    http://pluralsight.com/training/Courses/TableOfContents/go
+
+    NOTE: A git client is built in, with tag support.
+
+
+<a id="RunContainer">
+## Run Docker Container</a>
+
+0. Invoke a container by its identifier:
+
+    ```
+sudo docker run c629b7d70666
+    ```
+
+0. List containers:
+
+    ```
+docker ps -l
+    ```
+
+    The -l lists non-running containers as well.
+
+
+0. ??? do some work?
+
+0. Remove a container by its identifier:
+
+```
+sudo docker rm c629b7d70666
+```
+
+
+
 
 Docker reduces the redundancy of common components running within the same Docker container.
 
@@ -134,12 +308,6 @@ Docker reduces the redundancy of common components running within the same Docke
    
 <a id="DockerImages">
 ## Docker images</a>
-Docker works only on 64-bit machines
-and requires specific Linux kernel versions.
-
- * <a target="_blank" href="https://docs.docker.com/installation/#installation">https://docs.docker.com/installation/#installation</a>
-   is Docker’s official installation guide.
-
 Docker maintains official images at
 https://github.com/docker-library/official-images/tree/master/library
 for Jenkins, etc.
@@ -408,18 +576,6 @@ In it are Virtualbox images for:
   * Jenkins
 
 
-0. Start the Docker daemon
-
-    ```
-sudo docker -d &
-    ```
-
-    The response is the PID:
-
-    ```
-[1] 58154
-    ```
-
 Another host is <a target="_blank" href="http://quay.io/">quay.io</a>,
 as quay is a British word for dock.
 It has the advantage of integration
@@ -531,7 +687,80 @@ ENTRYPOINT ["/bin/bash","-c","cd /opt/HP/HP_LoadGenerator/; source env.sh; cd bi
 
 DigitalOcean.com hosts docker droplets (machines).
 
+
+<a id="DockerWorkstation">
+## Docker Workstation</a>
+
+<a target="_blank" href="https://cloudgenius.slack.com/messages/@nilesh/">Nilesh Londhe</a>
+has come up with an ingenious approach using an installation of
+<a target="_blank" href="https://link.getsync.com/">
+BitTorrant-Sync.dmg</a> for peer-to-peer transfer to privately 
+<a target="_blank" href="https://be.a.cloudgeni.us/workstation/">
+obtain a workstation image</a>
+to play within VirtualBox.
+
+ * https://github.com/beacloudgenius/workstation/tree/master/playbooks
+   source for the WorkStation built using Ansible.
+   It install dependencies git, curl, ruby, textinfo, etc., 
+   then Linuxbrew, then python, then rbenv, and finally Docker.
+
+
+Docker Swarm
+
+
 <a id="Resources">
 ## Resources</a>
+Helpful links:
+
+ * http://docker.io
+ * https:/github.com/dotcloud/docker
+ * https://registry.hub.docker.com/
+
+ * https://www.youtube.com/watch?v=SaHbtEeu37M
+   Docker and DevOps by Gene Kim
+   June 9-10, 2014 DockerCon San Francisco
+   is an epic presentation of why technical debt occurs and its implications.
+
+<a id="Videos">
+## Videos</a>
+If you have a Pluralsight account:
+https://app.pluralsight.com/player?course=docker-fundamentals&author=adron-hall&name=docker-fundamentals-m1&clip=3&mode=live by Adron Hall (@adron, compositecode.com)
+
+ * https://www.youtube.com/watch?v=4W2YY-qBla0
+   1.3 hour Docker 101 by Stanley Lewis
+   is highly rated because he shows commands 
+
+ * https://www.youtube.com/watch?v=ddhU3NMrhX4
+   3 hour presentation on Docker
+
+
+ * https://www.youtube.com/watch?v=at72dhg-SZY
+
+LearnCode.academy has a 7-video series on YouTube:
+
+ * https://www.youtube.com/watch?v=pGYAg7TMmp0&list=PLoYCgNOIyGAAzevEST2qm2Xbe3aeLFvLc
+
+ * <a target="_blank" href="https://www.youtube.com/watch?v=pGYAg7TMmp0">
+   What is Docker?</a>
+
+ * <a target="_blank" href="https://www.youtube.com/watch?v=JBtWxj9l7zM">
+   Docker Tutorial - Docker Container Tutorial for Beginners
+
+ * http://youtu.be/JBtWxj9l7zM
+
+Christophe Limpalair of Codepen https://scaleyourcode.com/interviews/interview/9 
+has several good videos on Docker:
+
+ * https://www.youtube.com/watch?v=9tDW5OyCY2c
+   Vagrant vs Docker?
+
+ * https://www.youtube.com/watch?v=fWkEcijmdsc
+   One-click Deploy and One-Click Test Environment with Kate Heddleston
+
+ * https://www.youtube.com/watch?v=v08U1-twsug
+   Docker in Production, Scaling, and Security
+
+ * https://www.youtube.com/watch?v=sYQ8j02wbCY
+   Running Agound: Debugging Docker in Production
 
 
