@@ -57,13 +57,6 @@ What's most amazing, Tableau enables users to create charts just by dragging and
 <img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
 
-<a id=“TableauDesktop”>
-## Tableau Desktop</a>
-
-Tableau Online hosts Tableau Server within Tableau’s cloud.
-
-<img width="878" alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
-
 <a id=“LoadData”>
 ## Load Data</a>
 
@@ -85,6 +78,10 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
  <img width="207" alt="tableau heading options" src="https://cloud.githubusercontent.com/assets/300046/11996656/eca2f51a-aa24-11e5-9e3f-db7db424a206.png">
 
+0. Click on the data type under the heading name to change it.
+
+ <img width="130" alt="tableau data type options" src="https://cloud.githubusercontent.com/assets/300046/11996668/3f0d7fbe-aa25-11e5-8057-ef16bf34f4aa.png">
+
 <a id=“UI”>
 ## UI</a>
 
@@ -92,6 +89,12 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
 0. Select float.
  
+<a id=“TableauDesktop”>
+## Tableau Desktop</a>
+
+Tableau Online hosts Tableau Server within Tableau’s cloud.
+
+<img width="878" alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
 
 <a id=“Videos”>
 ## Videos</a>
