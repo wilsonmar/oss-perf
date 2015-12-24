@@ -37,7 +37,7 @@ Vizzes by bloggers can be published on other sites, such as:
 <a id=“ChartTypes”>
 ## Chart Types in Tableau</a>
 
-<img align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
+<img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
 
 Tableau provides a rich variety of chart types.
 
@@ -69,30 +69,30 @@ Tableau Public and Tableau Desktop are installed separately from different URLs:
 ## Videos</a>
 Ben Sullins (@bensullins, bensullins.com) created several video tutorials:
 
- * <a target="_blank" href="https://app.pluralsight.com/library/courses/business-dashboard-fundamentals">
+ 1. <a target="_blank" href="https://app.pluralsight.com/library/courses/business-dashboard-fundamentals">
 	Business Dashboard Fundamentals</a>
 	Feb 19, 2014 - 3h 36m 42s
 	provides advice about design of beautiful charts in Excel and Tableau 8.1,
 	such as removing Chart Junk.
 
- * <a target="_blank" href="https://app.pluralsight.com/library/courses/data-analytics-hands-on">
+ 2. <a target="_blank" href="https://app.pluralsight.com/library/courses/data-analytics-hands-on">
 	Data Analytics: Hands On</a>
 	Jul 15, 2015 - 5h 2m 19s
 	provides an introduction to use of Excel and SQL and Tableau
 
- * <a target="_blank" href="https://app.pluralsight.com/library/courses/data-analysis-fundamentals-tableau">
+ 3. <a target="_blank" href="https://app.pluralsight.com/library/courses/data-analysis-fundamentals-tableau">
 	Data Analysis Fundamentals with Tableau</a>
 	Sep 03, 2013 - 4h 47m 43s
 
- * <a target="_blank" href="https://app.pluralsight.com/library/courses/big-data-analytics-tableau">
+ 4. <a target="_blank" href="https://app.pluralsight.com/library/courses/big-data-analytics-tableau">
 	Big Data Analytics with Tableau</a>
 	Jul 21, 2013 - 3h 44m 55s
 
- * <a target="_blank" href="https://app.pluralsight.com/library/courses/enterprise-business-intelligence-tableau-server">
+ 5. <a target="_blank" href="https://app.pluralsight.com/library/courses/enterprise-business-intelligence-tableau-server">
 	Enterprise Business Intelligence with Tableau Server</a>
 	Nov 13, 2013 - 1h 36m 26s
 
- * <a target="_blank" href="https://app.pluralsight.com/library/courses/data-visualization-using-tableau-public">
+ 6. <a target="_blank" href="https://app.pluralsight.com/library/courses/data-visualization-using-tableau-public">
 	Data Visualizations Using Tableau Public</a>
 	Sep 09, 2013 - 1h 47m 56s
 
