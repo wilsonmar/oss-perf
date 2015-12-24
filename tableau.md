@@ -114,6 +114,9 @@ Each dimension element dragged to the column defines a level in the hierarchy of
 
 0. Drag the Market Dimension to the Columns field. This establish the top.
 0. Drag the Quarterly Measure (of the dimension selected) to the Columns field.
+ 
+  Measures are color coded green.
+
 0. Drag the Dimension Category to the Rows field. This segments the data further.
 0. Drag the Dimension Segment to the Rows field. This further segments the data shown.
  
@@ -143,8 +146,16 @@ which displays CO2 emissions by country, per-capita by decade, over time, by inc
 0. Select float.
 
 
-<a id=“LoadData”>
-## Load Data</a>
+<a id=“LoadExternalSimpleData”>
+## Load External Simple Data</a>
+
+Tableau makes several data sets available at:
+https://public.tableau.com/s/resources?qt-overview_resources=1#qt-overview_resources
+
+0. Click on a .csv (comma separated values format) or .xls (older Excel 1997+ format) or .xlsx (newer Excel 2007+ format).
+
+<a id=“LoadSophData”>
+## Load Sophisticated Data</a>
 
 The Pro version connects to Tableau Server for web-based analytics
 using a lot more different data sources under the <strong>Connect</strong> section of Desktop:
