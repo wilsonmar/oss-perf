@@ -5,7 +5,9 @@ insights from raw data. It makes working with data universally accessible.
 
 Tableau clients running on Windows and Macs are used to create ".viz" files which define visualization display settings.
 
-Tableau software consists of several separately installed components:
+Tableau software consists of several separately installed components
+downloaded from separate URLs.
+
 <a href="#TableauDesktop">Tableau Desktop</a> Personal and Pro editions are licensed at $999 and $1999 per year.
 
 http://www.tableau.com/products/reader
@@ -15,6 +17,7 @@ http://www.tableau.com/products/reader
 | 2015-12-01 | TableauReader-9-2-0.dmg | 185.5 MB |
 | 2015-12-01 | TableauPublic-9-2-0.dmg | 185.5 MB |
 | 2015-07-20 | TableauDesktop-9.0.4.dmg | 183.7 MB |
+
 
 <a id=“TableauPublic”>
 ## Tableau Public</a>
@@ -59,20 +62,22 @@ What's most amazing, Tableau enables users to create charts just by dragging and
 
 Tableau Online hosts Tableau Server within Tableau’s cloud.
 
-<img alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
+<img width="878" alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
+
+<a id=“LoadData”>
+## Load Data</a>
 
 The Pro version connects to Tableau Server for web-based analytics
 using a lot more different data sources under the <strong>Connect</strong> section of Desktop:
 
 <img width="676" alt="tableau data sources" src="https://cloud.githubusercontent.com/assets/300046/11996554/90f17590-aa22-11e5-8abd-5dec3b430966.png">
 
-<a id=“ClientInstallers”>
-## Client Installers</a>
+0. Store all Excel data files in the same Excel folder.
+0. Click on Excel to open your Excel data folder.
 
-Tableau Public and Tableau Desktop are installed separately from different URLs:
+ Tableau automatically suggests a join type:
 
- * Tableau Desktop from https://public.tableau.com/s/download
- * Tableau Public from https://public.tableau.com/s/resources
+ <img width="400" alt="tableau joins" src="https://cloud.githubusercontent.com/assets/300046/11996601/ba10d618-aa23-11e5-8c64-44044d1fa73e.png">
 
 <a id=“UI”>
 ## UI</a>
@@ -81,7 +86,6 @@ Tableau Public and Tableau Desktop are installed separately from different URLs:
 
 0. Select float.
  
-
 
 <a id=“Videos”>
 ## Videos</a>
