@@ -2,7 +2,7 @@ This page provides background informaiton on Tableau software.
 
 Tableau is a complete Data Analytics platform enabling everyone to gain
 insights from raw data. It makes working with data universally accessible.
-
+re
 Tableau clients running on Windows and Macs are used to create ".viz" files which define visualization display settings.
 
 Tableau software consists of several separately installed components
@@ -79,17 +79,39 @@ Vizzes by bloggers can be published on other sites, such as:
    The video at http://www.tableau.com/learn/tutorials/on-demand/getting-started 
    makes use of this file.
 
-   The sample Excel workbook contains Sheets named Orders, People, and Returns.
+<a id=“Joins”>
+## Joins</a>
+
+The sample Excel workbook contains Sheets named Orders, People, and Returns.
+
+0. Drag one of the Sheets (Orders) to the canvas pane.
+0. Drag another Sheet (Returns) to the canvas.
+
+ Tableau automatically suggests a join type:
+
+ <img width="400" alt="tableau joins" src="https://cloud.githubusercontent.com/assets/300046/11996601/ba10d618-aa23-11e5-8c64-44044d1fa73e.png">
+
+0. Because data is now loaded within Tableau, hover over a heading to Rename the heading or change its type.
+
+ <img width="207" alt="tableau heading options" src="https://cloud.githubusercontent.com/assets/300046/11996656/eca2f51a-aa24-11e5-9e3f-db7db424a206.png">
+
+0. Click on the data type under the heading name to change it.
+
+ <img width="130" alt="tableau data type options" src="https://cloud.githubusercontent.com/assets/300046/11996668/3f0d7fbe-aa25-11e5-8057-ef16bf34f4aa.png">
+
+0. If a column contains multiple fields, split them into sub-columns:
+
+ <img width="220" alt="tableau data split options" src="https://cloud.githubusercontent.com/assets/300046/11996699/ff0d9ed4-aa25-11e5-8411-c8281ace509e.png">
+
 
 <a id=“Dimensions”>
 ## Dimensions</a>
+<img align="right" width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
 
 One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
 
-<img width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
-
 0. Drag the dimension (such as Market) to the Column.
-1. 
+ 
 Each dimension element dragged to the column defines a level in the hierarchy of columns.
 
 Each 
@@ -129,25 +151,6 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 <img width="676" alt="tableau data sources" src="https://cloud.githubusercontent.com/assets/300046/11996554/90f17590-aa22-11e5-8abd-5dec3b430966.png">
 
 0. Click on Excel to open your Excel data folder.
-0. Drag one of the Sheets (table such as orders) to the canvas.
-0. Drag another Sheet (such as Returns) to the canvas.
-
- Tableau automatically suggests a join type:
-
- <img width="400" alt="tableau joins" src="https://cloud.githubusercontent.com/assets/300046/11996601/ba10d618-aa23-11e5-8c64-44044d1fa73e.png">
-
-0. Because data is now loaded within Tableau, hover over a heading to Rename the heading or change its type.
-
- <img width="207" alt="tableau heading options" src="https://cloud.githubusercontent.com/assets/300046/11996656/eca2f51a-aa24-11e5-9e3f-db7db424a206.png">
-
-0. Click on the data type under the heading name to change it.
-
- <img width="130" alt="tableau data type options" src="https://cloud.githubusercontent.com/assets/300046/11996668/3f0d7fbe-aa25-11e5-8057-ef16bf34f4aa.png">
-
-0. If a column contains multiple fields, split them into sub-columns:
-
- <img width="220" alt="tableau data split options" src="https://cloud.githubusercontent.com/assets/300046/11996699/ff0d9ed4-aa25-11e5-8411-c8281ace509e.png">
-
 
  
 <a id=“TableauDesktop”>
