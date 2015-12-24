@@ -105,17 +105,18 @@ The sample Excel workbook contains Sheets named Orders, People, and Returns.
 
 
 <a id=“Dimensions”>
-## Dimensions</a>
+## Dimensions and Metrics</a>
 <img align="right" width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
 
 One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
 
-0. Drag the dimension (such as Market) to the Column.
- 
 Each dimension element dragged to the column defines a level in the hierarchy of columns.
 
-Each 
-
+0. Drag the Market Dimension to the Columns field. This establish the top.
+0. Drag the Quarterly Measure (of the dimension selected) to the Columns field.
+0. Drag the Dimension Category to the Rows field. This segments the data further.
+0. Drag the Dimension Segment to the Rows field. This further segments the data shown.
+ 
 <img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
 
