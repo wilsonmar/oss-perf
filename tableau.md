@@ -119,7 +119,7 @@ Vizzes by bloggers can be published on other sites, such as:
  *   Show Me
  *   Filters
  *   Bar Chart
- *   [14:01] Markings
+ *   [14:05] Mark labels
  *   Hierarchies
  *   Sorting
  *   Grouping
@@ -160,6 +160,8 @@ You can return to this by clicking "Data Source" tab at the lower left.
 
 <a id=“Dimensions”>
 ## Dimensions and Metrics</a>
+Dimensions are categories that can be sliced and diced.
+
 <img align="right" width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
 
 0. Click on Sheet1 at the bottom set of tabs.
@@ -171,12 +173,14 @@ You can return to this by clicking "Data Source" tab at the lower left.
 0. Drag the Market Dimension to the Columns field. This establish the top.
 0. Drag the Quarterly Measure (of the dimension selected) to the Columns field.
  
-  Measures are color coded green.
+  Suasages representing measures are color coded green.
 
 0. Drag the Dimension Category to the Rows field. This segments the data further.
 0. Drag the Dimension Segment to the Rows field. This further segments the data shown.
 
-0. To vary colors of a dimension, drag it again and drop it on the color mark.
+   In scatterplots, Columns are on the horizontal X axis and Rows are on the vertical Y axis.
+
+0. To vary colors of a dimension, drag it again and drop it on the color icon in the Marks section.
  
 <img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
