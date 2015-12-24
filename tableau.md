@@ -107,6 +107,26 @@ Vizzes by bloggers can be published on other sites, such as:
    to the beginning. Registration is required for this.
    
    The site also provides a link to a transcript of the video.
+   
+ *   Connecting to Data
+ *   Joins and Data Preparation
+ *   Connecting Live versus Extracting
+ *   Dimensions and Measures
+ *   Building Views
+ *   Quick Table Calculations
+ *   Crosstab and Exporting Data
+ *   Show Me
+ *   Filters
+ *   Bar Chart
+ *   Hierarchies
+ *   Sorting
+ *   Grouping
+ *   Working with Marks
+ *   Trend Lines
+ *   Dashboards
+ *   Story Points
+ *   Distributing Content
+
 
 <a id=“Joins”>
 ## Joins</a>
