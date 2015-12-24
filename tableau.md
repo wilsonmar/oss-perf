@@ -41,6 +41,11 @@ Vizzes by bloggers can be published on other sites, such as:
  * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
 
+<a id=“StoreData”>
+## Store Data Locally</a>
+
+0. PROTIP: Store all Excel data files locally in the same Excel folder. Store all Microsoft Office Access files in an Access folder.
+
 <a id=“LoadData”>
 ## Load Data</a>
 
@@ -49,7 +54,6 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
 <img width="676" alt="tableau data sources" src="https://cloud.githubusercontent.com/assets/300046/11996554/90f17590-aa22-11e5-8abd-5dec3b430966.png">
 
-0. Store all Excel data files in the same Excel folder.
 0. Click on Excel to open your Excel data folder.
 0. Drag one of the Sheets (table such as orders) to the canvas.
 0. Drag another Sheet (such as Returns) to the canvas.
