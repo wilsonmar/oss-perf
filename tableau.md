@@ -40,22 +40,6 @@ Vizzes by bloggers can be published on other sites, such as:
 
  * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
-<a id=“ChartTypes”>
-## Chart Types in Tableau</a>
-
-<img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
-
-Tableau provides a rich variety of chart types.
-
-Tableau recommends a chart type based on the data set loaded when "Show Me" is clicked.
-
-The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
-which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
-
-What's most amazing, Tableau enables users to create charts just by dragging and dropping.
-
-<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
-
 
 <a id=“LoadData”>
 ## Load Data</a>
@@ -82,8 +66,30 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
  <img width="130" alt="tableau data type options" src="https://cloud.githubusercontent.com/assets/300046/11996668/3f0d7fbe-aa25-11e5-8057-ef16bf34f4aa.png">
 
+0. If a column contains multiple fields, split them into sub-columns:
+
+ <img width="220" alt="tableau data split options" src="https://cloud.githubusercontent.com/assets/300046/11996699/ff0d9ed4-aa25-11e5-8411-c8281ace509e.png">
+
+
+<a id=“ChartTypes”>
+## Chart Types in Tableau</a>
+
+<img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
+
+Tableau provides a rich variety of chart types.
+
+Tableau recommends a chart type based on the data set loaded when "Show Me" is clicked.
+
+The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
+which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
+
+What's most amazing, Tableau enables users to create charts just by dragging and dropping.
+
+<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
+
 <a id=“UI”>
 ## UI</a>
+
 
 0. To specific options for a graph pane, click the caret at the right of the gray bar above that pane.
 
