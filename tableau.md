@@ -46,7 +46,7 @@ Vizzes by bloggers can be published on other sites, such as:
 
 
 <a id=“LoadData”>
-## Load Local Data File</a>
+## Connect to (Load) Local Data File</a>
 
 0. Click Excel under "Connect ... To a file".
 
