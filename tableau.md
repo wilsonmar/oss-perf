@@ -1,4 +1,5 @@
-This page provides background informaiton on Tableau software.
+This page provides background informaiton on Tableau software,
+an alternative to Kibana.
 
 Tableau is a complete Data Analytics platform enabling everyone to gain
 insights from raw data. It makes working with data universally accessible.
@@ -118,6 +119,7 @@ Vizzes by bloggers can be published on other sites, such as:
  *   Show Me
  *   Filters
  *   Bar Chart
+ *   [14:01] Markings
  *   Hierarchies
  *   Sorting
  *   Grouping
@@ -127,6 +129,8 @@ Vizzes by bloggers can be published on other sites, such as:
  *   Story Points
  *   Distributing Content
 
+https://www.youtube.com/watch?v=W0TU1dCrmQ4&list=PLMZkG3MOarqI9UwuWmN4DkXqsax9H7rBV
+from TechAnalysists is a playlist of 15 videos beginning with Getting Started.
 
 <a id=“Joins”>
 ## Joins</a>
@@ -152,14 +156,17 @@ The sample Excel workbook contains Sheets named Orders, People, and Returns.
 
  <img width="220" alt="tableau data split options" src="https://cloud.githubusercontent.com/assets/300046/11996699/ff0d9ed4-aa25-11e5-8411-c8281ace509e.png">
 
+You can return to this by clicking "Data Source" tab at the lower left.
 
 <a id=“Dimensions”>
 ## Dimensions and Metrics</a>
 <img align="right" width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
 
-One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
+0. Click on Sheet1 at the bottom set of tabs.
 
-Each dimension element dragged to the column defines a level in the hierarchy of columns.
+   One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
+
+   Each dimension element dragged to the column defines a level in the hierarchy of columns.
 
 0. Drag the Market Dimension to the Columns field. This establish the top.
 0. Drag the Quarterly Measure (of the dimension selected) to the Columns field.
