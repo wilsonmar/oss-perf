@@ -74,10 +74,16 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
 0. Store all Excel data files in the same Excel folder.
 0. Click on Excel to open your Excel data folder.
+0. Drag one of the Sheets (table such as orders) to the canvas.
+0. Drag another Sheet (such as Returns) to the canvas.
 
  Tableau automatically suggests a join type:
 
  <img width="400" alt="tableau joins" src="https://cloud.githubusercontent.com/assets/300046/11996601/ba10d618-aa23-11e5-8c64-44044d1fa73e.png">
+
+0. Because data is now loaded within Tableau, hover over a heading to Rename the heading or change its type.
+
+ <img width="207" alt="tableau heading options" src="https://cloud.githubusercontent.com/assets/300046/11996656/eca2f51a-aa24-11e5-9e3f-db7db424a206.png">
 
 <a id=“UI”>
 ## UI</a>
