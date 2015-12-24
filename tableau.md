@@ -126,7 +126,8 @@ Vizzes by bloggers can be published on other sites, such as:
  *   Working with Marks
  *   Trend Lines
  *   Dashboards
- *   Story Points
+ * [19:50] Story Points walk users through several captions on a navigator scroller, each analyzing a snapshop of visualizations.
+ * Callouts can be added on top of each visualization.
  *   Distributing Content
 
 https://www.youtube.com/watch?v=W0TU1dCrmQ4&list=PLMZkG3MOarqI9UwuWmN4DkXqsax9H7rBV
