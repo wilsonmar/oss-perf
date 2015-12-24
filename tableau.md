@@ -34,6 +34,13 @@ Vizzes by bloggers can be published on other sites, such as:
 
  * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
+<a id=“ChartTypes”>
+## Chart Types in Tableau</a>
+
+<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
+
+
+
 <a id=“TableauDesktop”>
 ## Tableau Desktop</a>
 
@@ -52,8 +59,6 @@ Tableau Public and Tableau Desktop are installed separately from different URLs:
 
  * Tableau Desktop from https://public.tableau.com/s/download
  * Tableau Public from https://public.tableau.com/s/resources
-
-<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
 
 <a id=“Videos”>
