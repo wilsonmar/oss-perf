@@ -14,10 +14,14 @@ http://www.tableau.com/products/reader
 
 | Date | Component - Version | Size |
 | ------ | ----------------------- | -------: |
-| 2015-12-01 | TableauReader-9-2-0.dmg | 185.5 MB |
+| 2015-12-07 | TableauReader-9-2-0.dmg | 190.2 MB |
 | 2015-12-01 | TableauPublic-9-2-0.dmg | 185.5 MB |
 | 2015-07-20 | TableauDesktop-9.0.4.dmg | 183.7 MB |
 
+QUESTION: You don't need to instal Public or Reader if you have Deskstop installed?
+
+After installation on a Mac, select a client to invoke from within Finder. 
+Pull down the Go menu for Applications or press Shift+command+A.
 
 <a id=“TableauPublic”>
 ## Tableau Public</a>
@@ -43,6 +47,31 @@ Vizzes by bloggers can be published on other sites, such as:
 
 <a id=“StoreData”>
 ## Store Data Locally</a>
+
+0. Click Excel under "Connect ... To a file".
+
+  On the Mac, the "Datasources" folder is shown.
+  It is under the "My Tableau Repository" folder within your user's Documents folder
+  created during client installation.
+  
+  There is a separate folder for each version of Tableau (9.2, 9.0, etc.) because 
+  data structures often change with each new version.
+
+0. Click on a version, then your locale (en_US_US).
+
+   File types <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#environ_filesandfolders.html">explained here</a>:
+
+   .tds data source files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://kb.tableausoftware.com/articles/knowledgebase/export-data-connection">here</a>) are like shortcuts containing information needed to just connect to the data sources, such as data source type, location, and custom fields. 
+
+   .tde extract files (explained <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#extracting_data.html">here</a>) are a local copy of an entire data source or its subset.
+   
+   .tdsx Packaged Data Source files contains all the information in the Data Source (.tds) file as well as any local file data sources (Excel, Access, text, and extracts). Packaged means a single zipped file for easier sharing a data source with people who may not have access to the original data that is stored locally on your computer.
+
+   .twbx workbook files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://onlinehelp.tableausoftware.com/current/pro/online/en-us/help.htm#save_savework_packagedworkbooks.html">here</a>) contain one or more worksheets, plus zero or more dashboards and stories.
+
+   .twb is the native workbook and does not include any data, which is why you always need to post a packaged workbook.
+   
+0. Pull data file from a website.
 
 0. PROTIP: Store all Excel data files locally in the same Excel folder. Store all Microsoft Office Access files in an Access folder.
 
@@ -74,6 +103,15 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
  <img width="220" alt="tableau data split options" src="https://cloud.githubusercontent.com/assets/300046/11996699/ff0d9ed4-aa25-11e5-8411-c8281ace509e.png">
 
+<a id=“Dimensions”>
+## Dimensions</a>
+
+One of the amazing features of Tableau is it enables users to create charts just by dragging and dropping.
+
+<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
+
+
+
 
 <a id=“ChartTypes”>
 ## Chart Types in Tableau</a>
@@ -86,10 +124,6 @@ Tableau recommends a chart type based on the data set loaded when "Show Me" is c
 
 The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
 which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
-
-What's most amazing, Tableau enables users to create charts just by dragging and dropping.
-
-<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
 <a id=“UI”>
 ## UI</a>
