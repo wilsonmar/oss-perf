@@ -44,11 +44,23 @@ Vizzes by bloggers can be published on other sites, such as:
 
  * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
+<a id=“LoadExternalSimpleData”>
+## Get External Simple Data</a>
+
+0. Use an internet browser to view where Tableau makes public datasets available at:
+
+   https://public.tableau.com/s/resources?qt-overview_resources=1#qt-overview_resources
+
+0. Click on a .csv (comma separated values format) or .xls (older Excel 1997+ format) or .xlsx (newer Excel 2007+ format).
+
+   The file would go to your user's Download folder.
+   
+   PROTIP: Move downloaded datasets where Tableau clients can see them.
 
 <a id=“LoadData”>
-## Connect to (Load) Local Data File</a>
+## Connect to (Load) Local Sample Dataset</a>
 
-0. Click Excel under "Connect ... To a file".
+0. Under "Connect ... To a file", click Excel.
 
   On the Mac, the "Datasources" folder is shown.
   It is under the "My Tableau Repository" folder within your user's Documents folder
@@ -145,14 +157,6 @@ which displays CO2 emissions by country, per-capita by decade, over time, by inc
 
 0. Select float.
 
-
-<a id=“LoadExternalSimpleData”>
-## Load External Simple Data</a>
-
-Tableau makes several data sets available at:
-https://public.tableau.com/s/resources?qt-overview_resources=1#qt-overview_resources
-
-0. Click on a .csv (comma separated values format) or .xls (older Excel 1997+ format) or .xlsx (newer Excel 2007+ format).
 
 <a id=“LoadSophData”>
 ## Load Sophisticated Data</a>
