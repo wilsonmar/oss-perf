@@ -5,7 +5,13 @@ insights from raw data. It makes working with data universally accessible.
 
 Tableau clients running on Windows and Macs are used to create ".viz" files which define visualization display settings.
 
-<img alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
+Tableau software consists of several separately installed components:
+Tableau Personal and Pro are licensed at $999 and $1999 per year.
+
+| Date | Component - Version | Size |
+| ------ | ----------------------- | -------: |
+| 2015-12-01 | TableauPublic-9-2-0.dmg | 185.5 MB |
+| 2015-07-20 | TableauDesktop-9.0.4.dmg | 183.7 MB |
 
 <a id=“TableauPublic”>
 ## Tableau Public</a>
@@ -31,20 +37,13 @@ Vizzes by bloggers can be published on other sites, such as:
 <a id=“TableauDesktop”>
 ## Tableau Desktop</a>
 
-Tableau software consists of several separately installed components:
-Tableau Personal and Pro are licensed at $999 and $1999 per year.
+Tableau Online hosts Tableau Server within Tableau’s cloud.
 
-to create <strong>vizzes</strong> (package files) for Tableau Reader.
-
-| Date | Component - Version | Size |
-| ------ | ----------------------- | -------: |
-| 2015-12-01 | TableauPublic-9-2-0.dmg | 185.5 MB |
-| 2015-07-20 | TableauDesktop-9.0.4.dmg | 183.7 MB |
+<img alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
 
 The Pro version connects to Tableau Server for web-based analytics
-using a lot of different data sources.
+using a lot more different data sources.
 
-Tableau Online hosts Tableau Server within Tableau’s cloud.
 
 <a id=“ClientInstallers”>
 ## Client Installers</a>
