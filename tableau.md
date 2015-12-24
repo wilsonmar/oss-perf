@@ -45,8 +45,8 @@ Vizzes by bloggers can be published on other sites, such as:
  * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
 
-<a id=“StoreData”>
-## Store Data Locally</a>
+<a id=“LoadData”>
+## Load Local Data File</a>
 
 0. Click Excel under "Connect ... To a file".
 
@@ -71,9 +71,54 @@ Vizzes by bloggers can be published on other sites, such as:
 
    .twb is the native workbook and does not include any data, which is why you always need to post a packaged workbook.
    
-0. Pull data file from a website.
+   PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
+   Store all Microsoft Office Access files in an Access folder.
 
-0. PROTIP: Store all Excel data files locally in the same Excel folder. Store all Microsoft Office Access files in an Access folder.
+0. Double-click on the "Sample - superstore.xls" file installed. The .xls means it's a Microsoft Office Excel file.
+
+   The video at http://www.tableau.com/learn/tutorials/on-demand/getting-started 
+   makes use of this file.
+
+   The sample Excel workbook contains Sheets named Orders, People, and Returns.
+
+<a id=“Dimensions”>
+## Dimensions</a>
+
+One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
+
+<img width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
+
+0. Drag the dimension (such as Market) to the Column.
+1. 
+Each dimension element dragged to the column defines a level in the hierarchy of columns.
+
+Each 
+
+<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
+
+
+
+
+<a id=“ChartTypes”>
+## Chart Types in Tableau</a>
+
+<img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
+
+Tableau provides a rich variety of chart types.
+
+Tableau recommends a chart type based on the data set loaded when "Show Me" is clicked.
+
+The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
+which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
+
+<a id=“UI”>
+## UI</a>
+
+
+0. To specific options for a graph pane, click the caret at the right of the gray bar above that pane.
+
+0. Select float.
+
 
 <a id=“LoadData”>
 ## Load Data</a>
@@ -103,35 +148,7 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
  <img width="220" alt="tableau data split options" src="https://cloud.githubusercontent.com/assets/300046/11996699/ff0d9ed4-aa25-11e5-8411-c8281ace509e.png">
 
-<a id=“Dimensions”>
-## Dimensions</a>
 
-One of the amazing features of Tableau is it enables users to create charts just by dragging and dropping.
-
-<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
-
-
-
-
-<a id=“ChartTypes”>
-## Chart Types in Tableau</a>
-
-<img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
-
-Tableau provides a rich variety of chart types.
-
-Tableau recommends a chart type based on the data set loaded when "Show Me" is clicked.
-
-The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
-which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
-
-<a id=“UI”>
-## UI</a>
-
-
-0. To specific options for a graph pane, click the caret at the right of the gray bar above that pane.
-
-0. Select float.
  
 <a id=“TableauDesktop”>
 ## Tableau Desktop</a>
