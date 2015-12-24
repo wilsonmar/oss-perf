@@ -57,7 +57,20 @@ Vizzes by bloggers can be published on other sites, such as:
    
    PROTIP: Move downloaded datasets where Tableau clients can see them.
 
-<a id=“LoadData”>
+0. On a Mac, open a new Finder window.
+ 
+0. Within your user's Documents folder, scroll to click on the "My Tableau Repository" folder
+  created during client installation.
+
+0. Click to drill into the "Datasources" folder.
+0. Click on a version number (9.2).
+  
+  There is a separate folder for each version of Tableau (9.2, 9.0, etc.) because 
+  data structures often change with each new version.
+
+
+
+<a id=“LoadLocalData”>
 ## Connect to (Load) Local Sample Dataset</a>
 
 0. Under "Connect ... To a file", click Excel.
@@ -66,9 +79,6 @@ Vizzes by bloggers can be published on other sites, such as:
   It is under the "My Tableau Repository" folder within your user's Documents folder
   created during client installation.
   
-  There is a separate folder for each version of Tableau (9.2, 9.0, etc.) because 
-  data structures often change with each new version.
-
 0. Click on a version, then your locale (en_US_US).
 
    File types <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#environ_filesandfolders.html">explained here</a>:
