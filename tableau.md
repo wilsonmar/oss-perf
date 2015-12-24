@@ -5,6 +5,7 @@ insights from raw data. It makes working with data universally accessible.
 
 Tableau clients running on Windows and Macs are used to create ".viz" files which define visualization display settings.
 
+<img alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
 
 <a id=“TableauPublic”>
 ## Tableau Public</a>
@@ -52,6 +53,8 @@ Tableau Public and Tableau Desktop are installed separately from different URLs:
 
  * Tableau Desktop from https://public.tableau.com/s/download
  * Tableau Public from https://public.tableau.com/s/resources
+
+<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
 
 <a id=“Videos”>
