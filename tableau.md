@@ -37,6 +37,10 @@ Vizzes by bloggers can be published on other sites, such as:
 <a id=“ChartTypes”>
 ## Chart Types in Tableau</a>
 
+<img align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
+
+Tableau provides a rich variety of chart types.
+
 <img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
 
