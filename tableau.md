@@ -68,18 +68,7 @@ Vizzes by bloggers can be published on other sites, such as:
   There is a separate folder for each version of Tableau (9.2, 9.0, etc.) because 
   data structures often change with each new version.
 
-
-
-<a id=“LoadLocalData”>
-## Connect to (Load) Local Sample Dataset</a>
-
-0. Under "Connect ... To a file", click Excel.
-
-  On the Mac, the "Datasources" folder is shown.
-  It is under the "My Tableau Repository" folder within your user's Documents folder
-  created during client installation.
-  
-0. Click on a version, then your locale (en_US_US).
+0. Click on a locale (en_US_US).
 
    File types <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#environ_filesandfolders.html">explained here</a>:
 
@@ -96,10 +85,28 @@ Vizzes by bloggers can be published on other sites, such as:
    PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
    Store all Microsoft Office Access files in an Access folder.
 
+
+<a id=“LoadLocalData”>
+## Connect to (Load) Local Sample Dataset</a>
+
+0. Under "Connect ... To a file", click Excel.
+
+  On the Mac, the "Datasources" folder is shown.
+  It is under the "My Tableau Repository" folder within your user's Documents folder
+  created during client installation.
+  
+0. Click on a version, then your locale (en_US_US).
+
 0. Double-click on the "Sample - superstore.xls" file installed. The .xls means it's a Microsoft Office Excel file.
 
-   The video at http://www.tableau.com/learn/tutorials/on-demand/getting-started 
-   makes use of this file.
+   <a target="_blank" href="http://www.tableau.com/learn/tutorials/on-demand/getting-started">
+   Tableau's 23-minute Getting Started video</a>
+   shows step-by-step how this file is used.
+   
+   PROTIP: The webpage provides a link to save the MP4 video file so you can view it without it automatically jumping back 
+   to the beginning. Registration is required for this.
+   
+   The site also provides a link to a transcript of the video.
 
 <a id=“Joins”>
 ## Joins</a>
@@ -188,6 +195,9 @@ Tableau Online hosts Tableau Server within Tableau’s cloud.
 
 <a id=“Videos”>
 ## Videos</a>
+More Trainings: http://www.tableau.com/learn/training?qt-training_tabs=1#qt-training_tabs
+
+If you have a Pluralsight account:
 Ben Sullins (@bensullins, bensullins.com) created several video tutorials:
 
  1. <a target="_blank" href="https://app.pluralsight.com/library/courses/business-dashboard-fundamentals">
