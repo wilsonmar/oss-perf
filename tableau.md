@@ -175,6 +175,8 @@ You can return to this by clicking "Data Source" tab at the lower left.
 
 0. Drag the Dimension Category to the Rows field. This segments the data further.
 0. Drag the Dimension Segment to the Rows field. This further segments the data shown.
+
+0. To vary colors of a dimension, drag it again and drop it on the color mark.
  
 <img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
