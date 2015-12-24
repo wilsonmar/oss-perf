@@ -41,8 +41,14 @@ Vizzes by bloggers can be published on other sites, such as:
 
 Tableau provides a rich variety of chart types.
 
-<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
+Tableau recommends a chart type based on the data set loaded when "Show Me" is clicked.
 
+The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
+which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
+
+What's most amazing, Tableau enables users to create charts just by dragging and dropping.
+
+<img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
 
 <a id=“TableauDesktop”>
