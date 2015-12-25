@@ -178,6 +178,7 @@ Dimensions are categories that can be sliced and diced.
  <img align="right" width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
 
   Sausages (pills) representing measures are color coded green.
+  Measures always contain numbers such as counts, dollars, rankings, quantity, etc.
 
 0. Drag the Dimension Category to the Rows field. This segments the data further.
 0. Drag the Dimension Segment to the Rows field. This further segments the data shown.
