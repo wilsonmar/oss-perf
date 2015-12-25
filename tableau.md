@@ -112,7 +112,7 @@ Vizzes by bloggers can be published on other sites, such as:
 0. Double-click on the "Sample - superstore.xls" file installed. 
 
 <a id=“StartVideos”>
-## Getting Started Video</a>
+## Getting Started Videos</a>
 
    <a target="_blank" href="http://www.tableau.com/learn/tutorials/on-demand/getting-started">
    Tableau's 23-minute Getting Started video</a>
@@ -121,7 +121,8 @@ Vizzes by bloggers can be published on other sites, such as:
    The site also provides a link to a transcript pdf of the video.
    
    PROTIP: The video webpage provides a link to save the MP4 video file so you can download it for viewing 
-   since the web presentation automatically jumps back to the beginning after long pauses.
+   since the web presentation automatically jumps back to the beginning after long pauses, 
+   and doesn't show the entire screen until it's maximized. Annoying.
    Registration is required for this action.
    
    Below are time codes to the video and links to comments in this page:
@@ -184,6 +185,9 @@ Dimensions are categories that can be sliced and diced.
 <img align="right" width="368" alt="tableau shelves" src="https://cloud.githubusercontent.com/assets/300046/11999753/de18dbbe-aa82-11e5-83a1-64399f9df09c.png">
 
 0. Click on Sheet1 at the bottom set of tabs.
+ 
+<img width="740" alt="tableau bottom tabs" src="https://cloud.githubusercontent.com/assets/300046/12003056/671ccb96-aace-11e5-9d3c-3a9ab7f4f743.png">
+
 
    One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
 
