@@ -26,10 +26,13 @@ Pull down the Go menu for Applications or press Shift+command+A.
 
 <a id=“TableauPublic”>
 ## Tableau Public</a>
+<a id="ChartTypes"></a>
+<img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
 
-Tableau Public is meant for individuals to show off visualizations of public data sets
-(and blogging about them) in Tableau's social sharing site
-https://public.tableau.com/ 
+Tableau provides a rich variety of chart types.
+
+The https://public.tableau.com/ is a social sharing site
+for people to show and blog about their visualizations of public data sets.
 This is much like what Adobe offers.
 
 "VIZ of the day" from the Tableau Public sharing website is highlighted on the landing page of Tableau Desktop.
@@ -194,10 +197,6 @@ Dimensions are categories that can be sliced and diced.
 
 <a id=“ChartTypes”>
 ## Chart Types in Tableau</a>
-
-<img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
-
-Tableau provides a rich variety of chart types.
 
 Tableau recommends a chart type based on the data set loaded when "Show Me" is clicked.
 
