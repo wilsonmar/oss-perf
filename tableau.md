@@ -3,7 +3,7 @@ an alternative to Kibana.
 
 Tableau is a complete Data Analytics platform enabling everyone to gain
 insights from raw data. It makes working with data universally accessible.
-re
+
 Tableau clients running on Windows and Macs are used to create ".viz" files which define visualization display settings.
 
 Tableau software consists of several separately installed components
@@ -78,13 +78,15 @@ Vizzes by bloggers can be published on other sites, such as:
 
    <strong>.tds</strong> data source files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://kb.tableausoftware.com/articles/knowledgebase/export-data-connection">here</a>) are like shortcuts containing information needed to just connect to the data sources, such as data source type, location, and custom fields. 
 
-   <strong>.tde</strong> extract files (explained <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#extracting_data.html">here</a>) are a local copy of an entire data source or its subset.
-   
    <strong>.tdsx</strong> Packaged Data Source files contains all the information in the Data Source (.tds) file as well as any local file data sources (Excel, Access, text, and extracts). Packaged means a single zipped file for easier sharing a data source with people who may not have access to the original data that is stored locally on your computer.
 
    <strong>.twbx</strong> workbook files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://onlinehelp.tableausoftware.com/current/pro/online/en-us/help.htm#save_savework_packagedworkbooks.html">here</a>) contain one or more worksheets, plus zero or more dashboards and stories.
 
    <strong>.twb</strong> is the native workbook. It does not contain any data, which is why a packaged workbook is needed.
+   
+   <strong>.tde</strong> extract files (explained <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#extracting_data.html">here</a>) 
+   are a local copy of an entire data source (or its subset) created programmatically
+   using <a href="#ExtractAPI">Tableau Extract API</a>.
    
    <strong>.xls</strong> is a Microsoft Office Excel 1998+ format.
    
@@ -269,6 +271,35 @@ describes
 https://www.youtube.com/watch?v=CAZ3IAJEuCI
 Tips and Tricks from a Tableau Jedi
 by Alan Elderidge from Tableau Australia.
+
+<a id="ExtractAPI">
+## Tableau Extract API</a>.
+
+The 22 minute video at
+http://www.tableau.com/learn/tutorials/on-demand/extract-api-introduction
+explains the installation of Python 2.7.9 downloaded from
+http://www.tableau.com/data-extract-api
+which has both 32 and 64 bit binary Windows and Linux libraries using Python 2.7.9 or C/C++/Java.
+
+[6:27] https://downloads.tableausoftware.com/tssoftware/TDE-API-Python-Linux-64Bit.gz
+expands to folder DataExtract-8300.15.0308.1149
+
+[6:42] PROTIP: Create a Modules folder within Python27 to hold the DataExtract folder.
+cd to that folder and run the setup.py file.
+
+	```
+python setup.py install
+	```
+
+	This creates files for this command:
+
+	```
+>>> import dataextract
+>>> exit()
+	```
+
+[8:47] Open IDLE installed with Python.
+
 
 <a id=“AddOns”>
 ## Add-ons</a>
