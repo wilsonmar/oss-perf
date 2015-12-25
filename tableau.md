@@ -22,7 +22,7 @@ http://www.tableau.com/products/reader
 QUESTION: You don't need to instal Public or Reader if you have Deskstop installed?
 
 After installation on a Mac, select a client to invoke from within Finder. 
-Pull down the Go menu for Applications or press Shift+command+A.
+Pull down the Finder Go menu for Applications or press Shift+command+A.
 
 <a id=“TableauPublic”>
 ## Tableau Public</a>
@@ -76,23 +76,25 @@ Vizzes by bloggers can be published on other sites, such as:
 
    File types <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#environ_filesandfolders.html">explained here</a>:
 
-   .tds data source files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://kb.tableausoftware.com/articles/knowledgebase/export-data-connection">here</a>) are like shortcuts containing information needed to just connect to the data sources, such as data source type, location, and custom fields. 
+   <strong>.tds</strong> data source files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://kb.tableausoftware.com/articles/knowledgebase/export-data-connection">here</a>) are like shortcuts containing information needed to just connect to the data sources, such as data source type, location, and custom fields. 
 
-   .tde extract files (explained <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#extracting_data.html">here</a>) are a local copy of an entire data source or its subset.
+   <strong>.tde</strong> extract files (explained <a target="_blank" href="http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm#extracting_data.html">here</a>) are a local copy of an entire data source or its subset.
    
-   .tdsx Packaged Data Source files contains all the information in the Data Source (.tds) file as well as any local file data sources (Excel, Access, text, and extracts). Packaged means a single zipped file for easier sharing a data source with people who may not have access to the original data that is stored locally on your computer.
+   <strong>.tdsx</strong> Packaged Data Source files contains all the information in the Data Source (.tds) file as well as any local file data sources (Excel, Access, text, and extracts). Packaged means a single zipped file for easier sharing a data source with people who may not have access to the original data that is stored locally on your computer.
 
-   .twbx workbook files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://onlinehelp.tableausoftware.com/current/pro/online/en-us/help.htm#save_savework_packagedworkbooks.html">here</a>) contain one or more worksheets, plus zero or more dashboards and stories.
+   <strong>.twbx</strong> workbook files (as explained <a target="_blank" href="https://community.tableau.com/external-link.jspa?url=http://onlinehelp.tableausoftware.com/current/pro/online/en-us/help.htm#save_savework_packagedworkbooks.html">here</a>) contain one or more worksheets, plus zero or more dashboards and stories.
 
-   .twb is the native workbook and does not include any data, which is why you always need to post a packaged workbook.
+   <strong>.twb</strong> is the native workbook. It does not contain any data, which is why a packaged workbook is needed.
    
    <strong>.xls</strong> is a Microsoft Office Excel 1998+ format.
    
    <strong>.xlsx</strong> is a Microsoft Office Excel 2007+ format.
    
-   <strong>.csv</strong> is a Comma Separated Value text format that Excel and many other programs can open.
+   <strong>.csv</strong> is a Comma Separated Value text format that Excel and many other programs can open. 
+   CSV files are called "Statistical Files" in Tableau client UI Connect.
 
-
+   NOTE none of the above formats are encrypted with any data security.
+   
 0. PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
    Store all Microsoft Office Access files in an Access folder.
 
@@ -124,7 +126,7 @@ Vizzes by bloggers can be published on other sites, such as:
    since the web presentation automatically jumps back to the beginning after long pauses, 
    and doesn't show the entire screen until it's maximized. Annoying.
    Registration is required for this action.
-   
+
    Below are time codes to the video and links to comments in this page:
    
  *   Connecting to Data
@@ -148,8 +150,13 @@ Vizzes by bloggers can be published on other sites, such as:
  * Callouts can be added on top of each visualization.
  *   Distributing Content
 
+The video at
+http://www.tableau.com/learn/tutorials/on-demand/getting-started-data
+[at 1:04] opens a "Global Superstore.xls" file.
+
 https://www.youtube.com/watch?v=W0TU1dCrmQ4&list=PLMZkG3MOarqI9UwuWmN4DkXqsax9H7rBV
 from TechAnalysists is a playlist of 15 videos beginning with Getting Started.
+
 
 <a id=“Joins”>
 ## Joins</a>
@@ -182,7 +189,7 @@ You can return to this by clicking "Data Source" tab at the lower left.
 ## Dimensions and Metrics</a>
 Dimensions are categories that can be sliced and diced.
 
-0. Click on Sheet1 at the bottom set of tabs.
+0. Click on Sheet1 at the bottom set of tabs. Each sheet is also called a <strong>view</strong>.
  
 <img width="740" alt="tableau bottom tabs" src="https://cloud.githubusercontent.com/assets/300046/12003056/671ccb96-aace-11e5-9d3c-3a9ab7f4f743.png">
 
@@ -248,6 +255,10 @@ The Pro version connects to Tableau Server for web-based analytics
 using a lot more different data sources under the <strong>Connect</strong> section of Desktop:
 
 <img width="676" alt="tableau data sources" src="https://cloud.githubusercontent.com/assets/300046/11996554/90f17590-aa22-11e5-8abd-5dec3b430966.png">
+
+The Desktop has a server:
+
+<img width="640" alt="tableau desktop menu" src="https://cloud.githubusercontent.com/assets/300046/12003983/eef00806-aaf3-11e5-902b-6c8098fdfdd4.png">
 
 https://www.youtube.com/watch?v=fEoB8EIEETQ
 describes Connecting to databases and advanced features Tableau.
