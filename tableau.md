@@ -291,7 +291,7 @@ cd to that folder and run the setup.py file:
  python setup.py install
  ```
 
-	This creates files for this command:
+ This creates files for this command:
 
  ```
  >>> import dataextract
