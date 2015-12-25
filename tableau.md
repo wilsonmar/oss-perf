@@ -340,3 +340,19 @@ Ben Sullins (@bensullins, bensullins.com) created several video tutorials:
 	Data Visualizations Using Tableau Public</a>
 	Sep 09, 2013 - 1h 47m 56s
 
+<a id="Resources">
+## Resources</a>
+
+http://onlinehelp.tableau.com/current/server/en-us/help.htm
+replaces 
+http://onlinehelp.tableausoftware.com/
+
+User forum
+
+Twitter.com
+
+LinkedIn.com Group
+
+Facebook.com
+
+StackOverflow.com
