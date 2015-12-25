@@ -233,13 +233,13 @@ which displays CO2 emissions by country, per-capita by decade, over time, by inc
 
 <a id=“Calculations”>
 ## Calculations</a>
+<img align="right" width="208" alt="tableau dimensions alt menu" src="https://cloud.githubusercontent.com/assets/300046/12004326/a14ff02e-ab0d-11e5-922f-9e1ce9d5ff81.png">
 
 An example of predictions is Bollinger Bands (described in video
 http://www.tableau.com/learn/tutorials/on-demand/bollinger-bands)
 based on calculation of moving averages going back periods of time
 and upper and lower bands based on various standard deviations.
 
-<img align="right" width="208" alt="tableau dimensions alt menu" src="https://cloud.githubusercontent.com/assets/300046/12004326/a14ff02e-ab0d-11e5-922f-9e1ce9d5ff81.png">
 [2:46] Alt (right) click on the white space within the Dimensions pane for its context menu. 
    Select Create calculated Field. Define a new name and its formula.
    
