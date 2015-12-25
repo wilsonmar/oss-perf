@@ -287,16 +287,16 @@ expands to folder DataExtract-8300.15.0308.1149
 [6:42] PROTIP: Create a Modules folder within Python27 to hold the DataExtract folder.
 cd to that folder and run the setup.py file.
 
-	```
+ ```
 python setup.py install
-	```
+ ```
 
 	This creates files for this command:
 
-	```
+ ```
 >>> import dataextract
 >>> exit()
-	```
+ ```
 
 [8:47] Open IDLE installed with Python.
 
