@@ -223,7 +223,6 @@ Dimensions are categories that can be sliced and diced.
 
 
 
-
 <a id=“ChartTypes”>
 ## Chart Types in Tableau</a>
 
@@ -231,6 +230,24 @@ Tableau recommends a chart type based on the data set loaded when "Show Me" is c
 
 The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
 which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
+
+<a id=“Calculations”>
+## Calculations</a>
+
+An example of predictions is Bollinger Bands (described in video
+http://www.tableau.com/learn/tutorials/on-demand/bollinger-bands)
+based on calculation of moving averages going back periods of time
+and upper and lower bands based on various standard deviations.
+
+<img align="right" width="208" alt="tableau dimensions alt menu" src="https://cloud.githubusercontent.com/assets/300046/12004326/a14ff02e-ab0d-11e5-922f-9e1ce9d5ff81.png">
+[2:46] Alt (right) click on the white space within the Dimensions pane for its context menu. 
+   Select Create calculated Field. Define a new name and its formula.
+   
+[3:13] Edit to define a parameter to specify the periods to go back in time.
+
+<img width="690" alt="tableau calculation dialog" src="https://cloud.githubusercontent.com/assets/300046/12004377/ac98eb62-ab11-11e5-828c-45917c07a013.png">
+
+
 
 <a id=“UI”>
 ## UI</a>
@@ -266,7 +283,6 @@ describes Connecting to databases and advanced features Tableau.
 
 https://www.youtube.com/watch?v=bTU9sOfqjRo
 describes 
-
 https://www.youtube.com/watch?v=CAZ3IAJEuCI
 Tips and Tricks from a Tableau Jedi
 by Alan Elderidge from Tableau Australia.
