@@ -200,10 +200,9 @@ Dimensions are categories that can be sliced and diced.
 
    (By contrast, some coding the declarative statements used to define visualizations in Kibana.)
 
-<img align="right" width="368" alt="tableau shelves" src="https://cloud.githubusercontent.com/assets/300046/11999753/de18dbbe-aa82-11e5-83a1-64399f9df09c.png">
+   <img align="right" width="368" alt="tableau shelves" src="https://cloud.githubusercontent.com/assets/300046/11999753/de18dbbe-aa82-11e5-83a1-64399f9df09c.png">
 
    Each dimension element dragged to the column shelf defines a level in the hierarchy of columns.
-
 
 0. Drag the Market Dimension to the Columns field. This establish the top.
 0. Drag the Quarterly Measure (of the dimension selected) to the Columns field.
