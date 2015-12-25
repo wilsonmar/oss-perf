@@ -134,7 +134,7 @@ Vizzes by bloggers can be published on other sites, such as:
  *   Connecting to Data
  *   <a href="#Joins">Joins</a> and Data Preparation
  *   Connecting Live versus Extracting
- *   Dimensions and Measures
+ *   <a href="#Dimensions"Dimensions and Measures</a>
  *   Building Views
  *   Quick Table Calculations
  *   Crosstab and Exporting Data
@@ -193,7 +193,7 @@ Dimensions are categories that can be sliced and diced.
 
 0. Click on Sheet1 at the bottom set of tabs. Each sheet is also called a <strong>view</strong>.
  
-<img width="740" alt="tableau bottom tabs" src="https://cloud.githubusercontent.com/assets/300046/12003056/671ccb96-aace-11e5-9d3c-3a9ab7f4f743.png">
+   <img width="740" alt="tableau bottom tabs" src="https://cloud.githubusercontent.com/assets/300046/12003056/671ccb96-aace-11e5-9d3c-3a9ab7f4f743.png">
 
    One of the amazing features of Tableau is it enables users to 
    create sophisticated tables and charts just by dragging and dropping, then clicking around.
