@@ -285,17 +285,17 @@ which has both 32 and 64 bit binary Windows and Linux libraries using Python 2.7
 expands to folder DataExtract-8300.15.0308.1149
 
 [6:42] PROTIP: Create a Modules folder within Python27 to hold the DataExtract folder.
-cd to that folder and run the setup.py file.
+cd to that folder and run the setup.py file:
 
  ```
-python setup.py install
+ python setup.py install
  ```
 
 	This creates files for this command:
 
  ```
->>> import dataextract
->>> exit()
+ >>> import dataextract
+ >>> exit()
  ```
 
 [8:47] Open IDLE installed with Python.
