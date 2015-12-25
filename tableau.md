@@ -163,18 +163,22 @@ You can return to this by clicking "Data Source" tab at the lower left.
 ## Dimensions and Metrics</a>
 Dimensions are categories that can be sliced and diced.
 
-<img align="right" width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
+
+<img align="right" width="368" alt="tableau shelves" src="https://cloud.githubusercontent.com/assets/300046/11999753/de18dbbe-aa82-11e5-83a1-64399f9df09c.png">
 
 0. Click on Sheet1 at the bottom set of tabs.
 
    One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
 
-   Each dimension element dragged to the column defines a level in the hierarchy of columns.
+ <img align="right" width="288" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
+
+   Each dimension element dragged to the column shelf defines a level in the hierarchy of columns.
+
 
 0. Drag the Market Dimension to the Columns field. This establish the top.
 0. Drag the Quarterly Measure (of the dimension selected) to the Columns field.
  
-  Suasages representing measures are color coded green.
+  Sausages representing measures are color coded green.
 
 0. Drag the Dimension Category to the Rows field. This segments the data further.
 0. Drag the Dimension Segment to the Rows field. This further segments the data shown.
