@@ -208,6 +208,14 @@ which displays CO2 emissions by country, per-capita by decade, over time, by inc
 
 0. Select float.
 
+<a id=“TableauDesktop”>
+## Tableau Desktop</a>
+
+Tableau Online hosts Tableau Server within Tableau’s cloud.
+
+<img width="878" alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
+
+
 
 <a id=“LoadSophData”>
 ## Load Sophisticated Data</a>
@@ -217,15 +225,20 @@ using a lot more different data sources under the <strong>Connect</strong> secti
 
 <img width="676" alt="tableau data sources" src="https://cloud.githubusercontent.com/assets/300046/11996554/90f17590-aa22-11e5-8abd-5dec3b430966.png">
 
-0. Click on Excel to open your Excel data folder.
+https://www.youtube.com/watch?v=fEoB8EIEETQ
+describes Connecting to databases and advanced features Tableau.
 
- 
-<a id=“TableauDesktop”>
-## Tableau Desktop</a>
+https://www.youtube.com/watch?v=bTU9sOfqjRo
+describes 
 
-Tableau Online hosts Tableau Server within Tableau’s cloud.
+https://www.youtube.com/watch?v=CAZ3IAJEuCI
+Tips and Tricks from a Tableau Jedi
+by Alan Elderidge from Tableau Australia.
 
-<img width="878" alt="tableau how it works" src="https://cloud.githubusercontent.com/assets/300046/11996251/63b57000-aa1c-11e5-83a8-b233300d863a.png">
+<a id=“AddOns”>
+## Add-ons</a>
+Alteryx
+
 
 <a id=“Videos”>
 ## Videos</a>
