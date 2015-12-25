@@ -48,8 +48,8 @@ Vizzes by bloggers can be published on other sites, such as:
 
  * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
-<a id=“LoadExternalSimpleData”>
-## Get External Simple Data</a>
+<a id=“LocaDataFolder”>
+## View Local Data Folder</a>
 
 0. Use an internet browser to view where Tableau makes public datasets available at:
 
@@ -86,13 +86,21 @@ Vizzes by bloggers can be published on other sites, such as:
 
    .twb is the native workbook and does not include any data, which is why you always need to post a packaged workbook.
    
-   PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
+   <strong>.xls</strong> is a Microsoft Office Excel 1998+ format.
+   
+   <strong>.xlsx</strong> is a Microsoft Office Excel 2007+ format.
+   
+   <strong>.csv</strong> is a Comma Separated Value text format that Excel and many other programs can open.
+
+
+  0. PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
    Store all Microsoft Office Access files in an Access folder.
 
 
 <a id=“LoadLocalData”>
 ## Connect to (Load) Local Sample Dataset</a>
 
+0. Open a Tableau client UI program.
 0. Under "Connect ... To a file", click Excel.
 
   On the Mac, the "Datasources" folder is shown.
@@ -101,19 +109,25 @@ Vizzes by bloggers can be published on other sites, such as:
   
 0. Click on a version, then your locale (en_US_US).
 
-0. Double-click on the "Sample - superstore.xls" file installed. The .xls means it's a Microsoft Office Excel file.
+0. Double-click on the "Sample - superstore.xls" file installed. 
+
+<a id=“StartVideos”>
+## Getting Started Video</a>
 
    <a target="_blank" href="http://www.tableau.com/learn/tutorials/on-demand/getting-started">
    Tableau's 23-minute Getting Started video</a>
-   shows step-by-step how this file is used.
+   shows step-by-step how to use the Sample file within the Tableau client UI.
+
+   The site also provides a link to a transcript pdf of the video.
    
-   PROTIP: The webpage provides a link to save the MP4 video file so you can view it without it automatically jumping back 
-   to the beginning. Registration is required for this.
+   PROTIP: The video webpage provides a link to save the MP4 video file so you can download it for viewing 
+   since the web presentation automatically jumps back to the beginning after long pauses.
+   Registration is required for this action.
    
-   The site also provides a link to a transcript of the video.
+   Below are time codes to the video and links to comments in this page:
    
  *   Connecting to Data
- *   Joins and Data Preparation
+ *   <a href="#Joins">Joins</a> and Data Preparation
  *   Connecting Live versus Extracting
  *   Dimensions and Measures
  *   Building Views
@@ -140,6 +154,7 @@ from TechAnalysists is a playlist of 15 videos beginning with Getting Started.
 ## Joins</a>
 
 The sample Excel workbook contains Sheets named Orders, People, and Returns.
+"Users" are used in previous versions of this file.
 
 0. Drag one of the Sheets (Orders) to the canvas pane.
 0. Drag another Sheet (Returns) to the canvas.
@@ -165,7 +180,6 @@ You can return to this by clicking "Data Source" tab at the lower left.
 <a id=“Dimensions”>
 ## Dimensions and Metrics</a>
 Dimensions are categories that can be sliced and diced.
-
 
 <img align="right" width="368" alt="tableau shelves" src="https://cloud.githubusercontent.com/assets/300046/11999753/de18dbbe-aa82-11e5-83a1-64399f9df09c.png">
 
