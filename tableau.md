@@ -109,7 +109,7 @@ Vizzes by bloggers can be published on other sites, such as:
   
 0. Click on a version, then your locale (en_US_US).
 
-0. Double-click on the "Sample - superstore.xls" file installed. 
+0. Double-click on the <strong>Sample - superstore.xls</strong> file installed. 
 
 <a id=“StartVideos”>
 ## Getting Started Videos</a>
