@@ -93,7 +93,7 @@ Vizzes by bloggers can be published on other sites, such as:
    <strong>.csv</strong> is a Comma Separated Value text format that Excel and many other programs can open.
 
 
-  0. PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
+0. PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
    Store all Microsoft Office Access files in an Access folder.
 
 
@@ -182,16 +182,19 @@ You can return to this by clicking "Data Source" tab at the lower left.
 ## Dimensions and Metrics</a>
 Dimensions are categories that can be sliced and diced.
 
-<img align="right" width="368" alt="tableau shelves" src="https://cloud.githubusercontent.com/assets/300046/11999753/de18dbbe-aa82-11e5-83a1-64399f9df09c.png">
-
 0. Click on Sheet1 at the bottom set of tabs.
  
 <img width="740" alt="tableau bottom tabs" src="https://cloud.githubusercontent.com/assets/300046/12003056/671ccb96-aace-11e5-9d3c-3a9ab7f4f743.png">
 
+   One of the amazing features of Tableau is it enables users to 
+   create sophisticated tables and charts just by dragging and dropping, then clicking around.
 
-   One of the amazing features of Tableau is it enables users to create sophisticated tables and charts just by dragging and dropping.
+   (By contrast, some coding the declarative statements used to define visualizations in Kibana.)
+
+<img align="right" width="368" alt="tableau shelves" src="https://cloud.githubusercontent.com/assets/300046/11999753/de18dbbe-aa82-11e5-83a1-64399f9df09c.png">
 
    Each dimension element dragged to the column shelf defines a level in the hierarchy of columns.
+
 
 0. Drag the Market Dimension to the Columns field. This establish the top.
 0. Drag the Quarterly Measure (of the dimension selected) to the Columns field.
