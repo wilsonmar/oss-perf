@@ -184,7 +184,7 @@ Dimensions are categories that can be sliced and diced.
 
    In scatterplots, Columns are on the horizontal X axis and Rows are on the vertical Y axis.
 
-0. To vary colors of a dimension, drag it again and drop it on the color icon in the Marks section.
+0. To vary colors of a dimension, drag an element and drop it on the color icon within the Marks section.
  
 <img alt="tableau lines separated by year" src="https://cloud.githubusercontent.com/assets/300046/11996255/69a883b2-aa1c-11e5-8ac6-19168d517124.png">
 
