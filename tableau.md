@@ -163,7 +163,7 @@ from TechAnalysists is a playlist of 15 videos beginning with Getting Started.
 
 
 <a id=“Joins”>
-## Joins</a>
+## Joins and Splits</a>
 
 The sample Excel workbook contains Sheets named Orders, People, and Returns.
 "Users" are used in previous versions of this file.
