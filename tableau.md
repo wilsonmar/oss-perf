@@ -136,7 +136,7 @@ Vizzes by bloggers can be published on other sites, such as:
  *   Connecting to Data
  *   <a href="#Joins">Joins</a> and Data Preparation
  *   Connecting Live versus Extracting
- *   <a href="#Dimensions"Dimensions and Measures</a>
+ *   <a href="#Dimensions">Dimensions and Measures</a>
  *   Building Views
  *   Quick Table Calculations
  *   Crosstab and Exporting Data
