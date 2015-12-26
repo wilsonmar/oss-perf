@@ -243,11 +243,13 @@ and upper and lower bands based on various standard deviations.
 [2:46] Alt (right) click on the white space within the Dimensions pane for its context menu. 
    Select Create calculated Field. Define a new name and its formula.
    
-[3:13] Edit to define a parameter to specify the periods to go back in time.
+[3:13] Edit to define a parameter to specify the periods to go back in time to calculate the Moving Average.
 
 <img width="690" alt="tableau calculation dialog" src="https://cloud.githubusercontent.com/assets/300046/12004377/ac98eb62-ab11-11e5-828c-45917c07a013.png">
 
+[8:26] Edit to define a parameter to specify the bands based on standard deviations.
 
+TODO: Identify triggers to invoke when the moving average crosses one of the bands.
 
 <a id=“UI”>
 ## UI</a>
