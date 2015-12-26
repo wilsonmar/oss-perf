@@ -25,11 +25,13 @@ After installation on a Mac, select a client to invoke from within Finder.
 Pull down the Finder Go menu for Applications or press Shift+command+A.
 
 <a id=“TableauPublic”>
-## Tableau Public</a>
+## Gallery and Tableau Public</a>
 <a id="ChartTypes"></a>
 <img width="236" align="right" alt="tableau chart types" src="https://cloud.githubusercontent.com/assets/300046/11996347/f9ffb29a-aa1d-11e5-930a-ed789c88b939.png">
 
-Tableau provides a rich variety of chart types.
+Tableau's Gallery at http://www.tableau.com/learn/gallery
+shows why Tableau is among the most capable and popular of visualization software,
+providing a rich variety of chart types to make sense of data.
 
 The https://public.tableau.com/ is a social sharing site
 for people to show and blog about their visualizations of public data sets.
