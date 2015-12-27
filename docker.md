@@ -377,13 +377,21 @@ But the name is fitting because the open-source package enables movement of the 
 in multipe operating system homes (providers). Providers include Virtualbox, AWS, etc.
 
  * http://coolestguidesontheplanet.com/getting-started-vagrant-os-osx-10-9-mavericks/
+ 
  * http://sourabhbajaj.com/mac-setup/Vagrant/README.html
 
 Vagrant is used to build virtual images on a reference box.
 That template file can then be given to various users to spin up that reference box.
 
+<a id="VagrantInstall">
+## Vagrant Install</a>
 There are several ways to install Vagrant.
 
+ * Mac
+ * Centos within AWS
+
+<a id="VagrantOnMac">
+### Vagrant on Macs</a>
 0. The easiest way to install on a Mac is to use HomeBrew:
 
     ```
@@ -405,6 +413,29 @@ It links to the /usr/bin so it is added to the shell path.
     ```
 vagrant -v
     ```
+
+<a id="CentosWithinAWS">
+## Centos within AWS</a>
+
+0. Install **vagrant-aws** plug-in
+0. git clone https://github.com/dotcloud/docker.git
+0. Add AWS security credentials:
+
+    export AWS_ACCESS_KEY=XXX
+    export AWS_SECRET_KEY=xxx
+    export AWS_KEYPAIR_NAME=xxx
+    export SSH_PRIVKEY_PATH=xxx
+    export BOX_NAME=xxx
+    export AWS_REGION=xxx
+    export AWS_AMI=xxx
+    export AWS_INSTANCE_TYPE=xxx
+
+0. vagrantup --provider=AWS
+0. vagrant ssh && sudo docker
+
+
+<a id="DockerUpgrade">
+## Docker Upgrade</a>
 
 To upgrade to the latest version, download it and drag and drop the uninstall.tool onto an open Terminal window and follow the process, then install the Vagrant.pkg file.
 Alternately, a point release e.g 1.6.3 -> 1.7.2 can be installed on top of the older one.
@@ -610,7 +641,7 @@ describes the use of using Beaker to maintain Docker hypervisors.
 
 <a id="#LR-Docker">
 ## Load Generator Docker</a>
-<a target="_blank" href="http://community.hpe.com/t5/LoadRunner-and-Performance/The-fastest-way-to-deploy-a-Load-Generator-using-Docker-with/ba-p/6807868">This blog</a> describes how to deploy a Docker-based Load Generator (LG) using a prebuilt LG Docker image  based on Linux Load Generator 12.50 and its prerequisites. 
+<a target="_blank" href="http://community.hpe.com/t5/LoadRunner-and-Performance/The-fastest-way-to-deploy-a-Load-Generator-using-Docker-with/ba-p/6807868">This blog entry</a> describes how to deploy a Docker-based Load Generator (LG) using a prebuilt LG Docker image  based on Linux Load Generator 12.50 and its prerequisites. 
 
 (1) Download and install Docker (if you haven't already).
 
@@ -705,7 +736,11 @@ to play within VirtualBox.
    then Linuxbrew, then python, then rbenv, and finally Docker.
 
 
+<a id="Vendors">
+## Vendors</a>
 Docker Swarm
+
+Vormetric provides additional security.
 
 
 <a id="Resources">
