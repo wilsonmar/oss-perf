@@ -1,4 +1,4 @@
-This page provides an enhanced / deeper sequence to presenting Tableau based on a hands-on approach with less hype.
+IThis page provides an enhanced / deeper sequence to presenting Tableau based on a hands-on approach with less hype.
 
  * http://www.tableau.com/learn/starter-kit provides a learning sequence with clickable links to materials.
 
@@ -11,8 +11,7 @@ Tableau's promo video at http://www.tableau.com/products#video says
 
 * [0:30] "People build dashboards and applications like these, drag and drop, at up to 10 times the speed of a traditional business intellegence system".
  
-
-Tableau does not directly compete with other vendors with a strategy for being a broad BI platform offering:
+Garner notes "Tableau does not directly compete with other vendors with a strategy for being a broad BI platform offering":
 
  * IBM Cognos Insight, 
  * Microsoft Power View, 
@@ -22,12 +21,12 @@ Tableau does not directly compete with other vendors with a strategy for being a
  * <a target="_blank" href="http://www.informationweek.com/news/software/bi/240000455"> SAP Visual Intelligence</a>
  * Tibco Spotfire
 
-Tableau complements fully functional enterprise BI platforms that lack ADV capabilities.
+"Tableau complements fully functional enterprise BI platforms that lack ADV capabilities."
 That is why <a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> This Forrester report (although rather dated from 2012)</a> has Tableau behind strategy:
 
 <img width="550" alt="tableau forrester adv 2013" src="https://cloud.githubusercontent.com/assets/300046/12010835/88925420-ac73-11e5-9797-b0d484db016b.png">
 
-<a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> The Gartner Magic Quadrant report in 2015</a> also put Tableau at the top of the vendor heap:
+<a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> The Gartner Magic Quadrant report in 2015</a> also put Tableau way above other vendors on execution.
 
 <img width="550" alt="gartner adv quadrant 2015" src="https://cloud.githubusercontent.com/assets/300046/12011013/d49ac22e-ac7a-11e5-8427-aabe5e7c7a87.png">
 
@@ -57,17 +56,23 @@ The licensed Desktop edition can read more types of data sources.
 
 <img width="589" alt="tableau components v06" src="https://cloud.githubusercontent.com/assets/300046/12034893/1611fe8c-adf4-11e5-8023-b9444e536535.png">
 
-The Tableau Public website provides a gallery for showing and blogging about workbooks created on the Public edition of client software. Tableau limits public workbooks to 100,000 data rows.
+The Tableau Public website (http://public.tableausoftware.com) provides a gallery 
+for showing workbooks created using the Public edition of client software. 
+Tableau limits public workbooks up to 1 GB large containing up to 100,000 data rows.
 
-Private team workbooks are shared on a <strong>Tableau Server</strong> or in the Online service Tableau runs. A web app accessed using an internet browser is used to administer users on those servers. 
+Tableau also does not allow the Public client from storing files locally on a laptop.
+
+PROTIP: Use the Public client when you have reliable public network access.
+
+The Desktop edition can retrieve workbooks from the Public website.
+However, workbooks created on Tableau Desktop cannot be published to Tableau Public.
+
+<strong>Private workbooks</strong> can be shared on a <strong>Tableau Server</strong> or in the Online service Tableau runs. A web app accessed using an internet browser is used to administer users on those servers. 
 
 Tableau's native mobile apps on both Android and iPads make use of REST APIs
 that other servers can use to access data. 
 
 QUESTION: Can Mobile clients access Tableau Public?
-
-Data sources created on Tableau Desktop cannot be published to Tableau Public
-(public.tableausoftware.com).
 
 The <strong>Tableau Reader</strong> client can read (but not save) packaged workbooks.
 
@@ -134,12 +139,13 @@ There are several ways to open a Tableau client program (explained below):
 
 0. Click on a locale (en_US_US).
 
-   Tableau clients 9.0 come with an Excel file <strong>Sample - Superstore.xls</strong>.
+   Tableau clients 9.0 come with an Excel (.xls) file 
+   <strong>Sample - Superstore.xls</strong>.
    Notice it's 3.4 MB.
 
-0. Click on that file opens it within Excel (if you have Microsoft Office installed).
+0. Optionally, click on that file to open it within Excel (if you have Microsoft Office installed).
 
-   At the lower left corner, notice there are 3 tabs (worksheets) named Orders, Returns, People.
+   Within Excel, at the lower left corner, notice there are 3 tabs (worksheets) named Orders, Returns, People.
 
 0. Switch back to Finder. To open .xls files from the Finder, control-click on the xls file and select Open With > Other ..., select Tableau.
 0. For Enable: select All Applications.
@@ -213,8 +219,7 @@ After installation on a Mac, open a Tableu client:
 
    <img width="640" alt="tableau desktop menu" src="https://cloud.githubusercontent.com/assets/300046/12003983/eef00806-aaf3-11e5-902b-6c8098fdfdd4.png">
 
-
-   More than one instance of the Tableau client can be running at the same time.
+   EXTRA: More than one instance of the Tableau client can be running at the same time.
 
    <img width="676" alt="tableau data sources" src="https://cloud.githubusercontent.com/assets/300046/11996554/90f17590-aa22-11e5-8abd-5dec3b430966.png">
 
@@ -355,7 +360,8 @@ Geographic charts make use of geocodes that come with Tableau.
 QUESTION: How about custom plots (such as fields on a farm).
 
 
-<a id="ChartTypes">
+<a name="ShowMeMenu"></a>
+<a name="ChartTypes">
 ## Chart Types</a>
 <img align="right" width="162" alt="tableau chart types color" src="https://cloud.githubusercontent.com/assets/300046/12006691/20266ac8-ab9e-11e5-85af-b0a6765be10e.png">
 
@@ -363,13 +369,24 @@ QUESTION: How about custom plots (such as fields on a farm).
 
 * <a target="_blank" href="http://www.tableau.com/sites/default/files/whitepapers/whitepaper_best-practices_telling_great_stories.pdf">5 Best Practices for Telling Great Data Stories - And Why it Will Make You a Better Analyst</a>
 
-<strong>Story points</strong> (new since 8.2) lays out sequence of short captions that answer the question at the upper left:
+<a name="StoryPoints">
+### Story points</a> 
+(new since 8.2) A sequence of points, each containing a short caption. 
+
+PROTIP: Have an initial point introducing the viz.
+
+PROTIP: Pose a questions the content answers.
 
  * https://public.tableau.com/s/gallery/how-sun-controls-weather-0
  * https://public.tableau.com/profile/efields#!/vizhome/EarthquakesOnTheRise-Full/Earthquakestory enables users to select and provides a count of data ponints displayed on the map.
  * http://www.tableau.com/learn/tutorials/on-demand/story-points?reg-delay=true
+ * https://www.youtube.com/watch?v=-EhYY4gLt-c
 
-<strong>Tree map</strong> boxes show relative sizes of components in the box, such as profit contribution, etc.
+<a name=TreeMaps">
+### Tree maps</a>
+Boxes show relative sizes of components in the box, such as profit contribution, etc. (As long as data are all positive numbers)
+
+ * https://www.youtube.com/watch?v=ZJuDk1RH2eg
 
 Heat Map provide a two-dimensional set of colors which add a third dimension.
 
@@ -396,6 +413,10 @@ Histograms show distribution of counts within a dataset.
 
 Pareto Chart
 
+Waterfall charts show the running total 
+
+ * https://www.youtube.com/watch?v=ac7qfABRSBI
+
 Funnel charts presents stages, as in productivity of various sales activities leading up to a sale.
 
 Horizon charts show when occassional "bumps" (such as errors) occur over time:
@@ -405,7 +426,11 @@ Horizon charts show when occassional "bumps" (such as errors) occur over time:
 Line charts show trends over time or other metric.
 
  * https://public.tableau.com/s/gallery/life-expectancy-country
+ 
+Control charts 
 
+ * https://www.youtube.com/watch?v=YGsWJP0AClM
+ 
 Box and Whisker charts (new since v8) display quartiles in distributions:
 
  * http://www.tableau.com/learn/gallery/two-weeks-home-sales
@@ -416,6 +441,10 @@ Donut charts
 
 The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
 which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
+
+https://www.youtube.com/watch?v=amdR9SzcHDs&list=PLcTX_fKtDPs7x7DENN30sKjQvgwI1RtWW
+is a playlist of charts.
+
 
 <a name=“GettingStartedVideos”>
 ## Getting Started Video</a>
@@ -502,12 +531,17 @@ Below are time codes to the video and links to my enhanced notes lower on this p
 *   Quick Table Calculations
 * [7:42] Exporting Data by right-click on the viz. Copy Data. Switch to Excel. Paste.
 
-* [8:04] Right-click on the chart tab, Duplicate as <a href="#Crosstab">Crosstab</a>.
-* [8:45] Profit. Change font color for highlight table.
+   <strong>IMPORTANT: On a Mac, "right-click" by pressing down two fingers at a time on the touchpad. On Windows, it means clicking the right button on the mouse.</strong>
+
+* [8:04] <a href="#Crosstab">Crosstab</a>.
+
 * [9:38] <a href=“#GlobalSales”>Global Sales</a> Show Me chart types. Hold control key while clicking measures and dimensions.
 * [11:08] Filters. Quick filter.
 * [12:08] <a href="#SalesByCategory">Hierarchies by dragging Sub-Category</a> and dropping on Category. Call it Products.
 * [13:13] Expand and contract hierarchy clicking [+] and [-] on pills. 
+
+   EXTRA: Remove a pill by dragging and dropping on the Dimensions list.
+
 * [13:22] Swap axis and Fit Height
 * [13:30] Sort from pill and axis.
 * [14:05] Mark labels by clicking Abc button.
@@ -613,13 +647,17 @@ PROTIP: Add a version number to the file name if you would like to be able to go
 
 0. [3:35] Drag from among Dimension Market again and drop it on top of <strong>Color</strong> (one of the Marks) makes use of Color to differentiate values.
 
+   EXTRA: Notice a Market legend appearing when.
+   
    <img width="400" alt="tableau columns and rows" src="https://cloud.githubusercontent.com/assets/300046/11996924/bc88bdc2-aa2b-11e5-9aec-0cbd44120c5e.png">
    
-   EXTRA: Notice a Market legend appearing.
+   EXTRA: Click on the Swap axis icon to swap X and Y axis (Columns and Rows).
+
+   <img width="95" alt="tableau swap icon" src="https://cloud.githubusercontent.com/assets/300046/12041386/5f26cb0e-ae2e-11e5-915d-fccd02cac3f9.png">
 
    [3:49] Notice Canada is an "emerging" market.
    
-0. [4:41] The video shows a Clear Sheet by clicking the icon. But instead let's control+click "Sheet 1" and select Rename the sheet to "Market Sales".
+0. [4:41] The video shows a Clear Sheet by clicking the icon. But instead let's control+click "Sheet 1" and select Rename the sheet to <strong>Market Sales</strong>.
 
       <img width="212" alt="tableau clear icon items" src="https://cloud.githubusercontent.com/assets/300046/12011946/3e7a049a-aca1-11e5-822f-8d6c99f6088c.png">
 
@@ -667,7 +705,7 @@ PROTIP: Add a version number to the file name if you would like to be able to go
 
    <img width="235" alt="tableau sheet menu" src="https://cloud.githubusercontent.com/assets/300046/12018565/d6867978-ad21-11e5-9b82-f94dc7bdcaad.png">
 
-   QUESTION: Sesonality would be calculated how?
+   QUESTION: Sesonality would be calculated statitcally how?
 
 <a name=“CopyData”>
 ### Copy data</a>
@@ -682,17 +720,71 @@ PROTIP: Add a version number to the file name if you would like to be able to go
 0. [8:02] Right-click on sheet tab to select <strong>Duplicate as Crosstab</strong>.
 
    This creates a new sheet.
+   
+0. [8:04] Right-click on the Seasonality tab, select <strong>Duplicate as Crosstab</strong>.
+1. [8:11] Swap axis.
+2. Drag Category pill to the beginning of the Rows shelf.
+3. [8:14] Select Entire View from Normal.
+4. [8:15] Click Color button. Edit Colors
+0. [8:35] Drag Profit to drop on top of Color for clearer understanding of trends.
+0. Click Color Mark.
+1. Click Edit Colors.
+3. Check <strong>Use Full Color Range</strong>.
+4. Check Stepped Colors, 6 Steps. OK.
+5. Undo the above tweaks.
+
+0. Change the Marks type to Square.
+0. Click Marks: Lables and choose Show mark labels (so text appears).
+1. Rename shee to <strong>Crosstab</strong>.
+
 
 <a name=“GlobalSales”>
 ### Global Sales and Profits</a>
+[9:08] Although Office Supplies is doing well, Furniture doesn't have the same dark green swing. Where is it doing poorly? 
+Is this happening across all stores across sales region?
 
-New sheet 
-Show me
+0. [9:18] Click icon or pull down menu to create new sheet.
+0. [9:38] We don't know how to view the data. So make the <a href="#ShowMeMenu">Show Me menu</a> visible.
+0. [10:05] Command-click multiple relevant Dimensions and Metrics for suggestions highlighted in the Show Me: Sales and Countries. Good matches for chart type are highlighted in blue.
+0. [10:22] Cursor among the highlighted chart icons.
+0. [10:26] With simple map selected, click X to dismiss the Show Me menu.
+
+   This results in Columns: Longitude and Rows: Latitude.
+
+1. [10:27] Drag State and drop over map.
+2. [10:33] Click Size of Mark and increase size of dots on the map.
+3. [10:37] Click Color of Mark and change Transparency to 70%.
+4. Click on "Automatic" to the right of Borders within Marks and select a dark blue.
+5. [10:47] Click the gray bar of the Size legend to Hide Card.
+6. [10:53] Drag Profit and drop on Color Marks to color the dots.
+
+   NOTE: The size of each circle is based on level of Sales.  
+   But the color is based on level of profit.
+   There are two facets presented.
+
+0. [10:56] Click the magnifier button inside the map for a geographic search.
+1. [11:00] Type United Kingdom in the search bar.
+2. Click the unpin icon to zoom out.
+
+0. [11:13] Drag Categories to the Filters shelf for a pop-up.
+1. Select Furniture.
+2. [11:25] Click on the right edge of the pill in Filters to select <strong>Show Quick Filter</strong> (Show Quick Filter in earlier versions) so users would have the option of choosing when viewing. See the choice appear on the right edge.
+
+0. [11:29] Click the right edge of the Category filter to pull down and select
+
+   <img width="303" alt="tableau filter drop down" src="https://cloud.githubusercontent.com/assets/300046/12044537/44e197fc-ae50-11e5-8b5f-fb5cd9835548.png">
+
+0. [11:46] command-click the right edge of a Dimension (Market) and select Show Filter to add another way users can select data interactively.
+
+   <img width="179" alt="tableau dim options" src="https://cloud.githubusercontent.com/assets/300046/12044579/f4cfdb24-ae50-11e5-8c9f-2a8555cec2b4.png">
+
+0. [12:00] Double-click on the sheet name and Rename to Global Sales and Profit (but I prefer simply "Map").
+
 
 <a name=“SalesByCategory”>
 ### Sales by Category</a>
 
-* [12:08]
+* [12:08] 
 
 <a name="CustomerBreakdown">
 ### Customer Breakdown</a>
@@ -712,7 +804,7 @@ Show me
 <a name="DistributingContent"> 
 ## Distributing Content</a>
 
-[22:30] into Getting Started video, the display shown is hosted on localhost.
+* [22:30] into Getting Started video, the display shown is hosted on localhost.
 
   * The https://www.youtube.com/watch?v=aC7kVCWLNSM
 
@@ -720,10 +812,39 @@ Show me
 
    <img width="300" alt="tableau worksheet export" src="https://cloud.githubusercontent.com/assets/300046/12020838/ba2caaf6-ad3d-11e5-97a0-1842128fe16d.png">
 
+EXTRA: 
 
+0.   PROTIP: In the title and workbook name, specify a date reference since the work will be repeated in the future. Example: "Global Status 2015-01" because that's the most recent data. Putting year before month enables sorting of text by name.
 
+0. If you have been using the Tableau Public client, click on the <strong>Story</strong> before saving to the Tableau Public website.
+
+0. Enter your password again. every. time. 
+
+   A web page should pop up on your default internet browser.
+   
+0. Click Edit in the green bar at the top.
+0. Copy the URL from the browser, such as:
+
+   https://public.tableau.com/views/GlobalStatus2015-01/Story1?:embed=y&:display_count=yes&:showTabs=y
+
+0. Obtain a permalink from http://goo.gl by pasting the URL.
+
+   PROTIP: There are many URL shortener utility sites.
+   Google tracks link usage by all the Google Analytics metadata.
+
+0. Copy the generated permalink and paste it in the Permalink page.
+0. Click the Share icon at the bottom.
+
+   <img width="594" alt="tableau share links" src="https://cloud.githubusercontent.com/assets/300046/12054314/d7e822ac-aedf-11e5-937f-9d8c2be9df74.png">
+
+0. Copy the <strong>Embed Code</strong> (example shown below) and embed it on your website:
+
+	```
+<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1020px; height: 1033px;'><noscript><a href='#'><img alt='Global Status 2015-01 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalStatus2015-01&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1020' height='1033' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='GlobalStatus2015-01&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalStatus2015-01&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+	```
 
 <hr />
+
 <a name=“Calculations”>
 ## Calculations</a>
 <img align="right" width="208" alt="tableau dimensions alt menu" src="https://cloud.githubusercontent.com/assets/300046/12004326/a14ff02e-ab0d-11e5-922f-9e1ce9d5ff81.png">
@@ -784,32 +905,53 @@ But <strong>Measure Groups</strong> pre-selects them
 
 <a id="TableauServer">
 ## Tableau Server</a>
-Tableau Server consists of several processes operating together at the same time.
+The server enables workbooks to be organized into <strong>projects</strong> 
+and assigned specific permissions by user group. 
 
-| Server | Program | Function |
+<strong>Sites</strong> isolate multiple tenants on the same hardware.
+
+* http://onlinehelp.tableau.com/current/server/en-us/welcome.htm
+
+Tableau Server consists of several processes operating together at the same time
+(all Multi-threaded and Active/Active HA unless specified below):
+
+| Process | Program | Function |
 | ------ | ------- | -------- |
 | Application Server | wgserver.exe | log in, search, browse, generate static images, manage subscriptions |
 | VizQL Server | vizqlserver.exe | Load and render requested views |
 | Data Engine  | tdeserver.exe, tdeserver64.exe | load Tableau Data Extracts in memory based on queries from VizQL processes |
-| Backgrounder | backgrounder.exe | run maintenance tasks and data extract refreshes |
-| Data Server  | dataserver.exe | handles requests to Tableau Data Sources. These requests can come from the Tableau Server or from Tableau Desktop users.|
-| Repository   | postgres.exe | store settings, metadata, usage statistics and workbooks.|
+| Backgrounder | backgrounder.exe | run maintenance tasks and data extract refreshes. Not multi-threaded as it tries to use as much as it can. |
+| Data Server  | dataserver.exe | handles requests to Tableau Data Sources. These requests can come from the Tableau Server or from Tableau Desktop users. 2x2.|
+| Repository   | postgres.exe | store settings, metadata, usage statistics and workbooks. Single process runs Active/Passive standby. |
+| Gateway | ? | ? |
+| API Server | ? | responds to API requests |
+| Cache Server | ? | holds items in memory |
+| File Store | ? | provides files |
 
-The server enables workbooks to be organized into <strong>projects</strong> 
-and assigned specific permissions by user group.
+ * http://onlinehelp.tableau.com/current/server/en-us/distrib_ha_intro.htm
+ * http://onlinehelp.tableau.com/current/server/en-us/distrib_ha_fail.htm
 
- * https://www.youtube.com/watch?v=CpyrCryHr8c
-   Planning and Architecting Tableau Server 
-   by Neelesh Kamkolkar, Product Manager, Tableau Software
+Acess from views embedded in websites use Tableau's "Trusted Tickets" authentication.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=CpyrCryHr8c">
+   Planning and Architecting Tableau Server</a>
    published Dec 4, 2014
+   by Neelesh Kamkolkar, Product Manager, Tableau Software
+   notes use of SSO (Single Sign-On) support such as Microsoft Active Directory
+   SAML refreshed using command-line utility <a target="_blank" href="http://onlinehelp.tableau.com/current/server/en-us/tabcmd.htm">tabcmd</a> synchgroups.
+   
+   <a target="_blank" href="http://onlinehelp.tableau.com/current/server/en-us/tabadmin.htm">tabadmin</a>.
+
+<img width="795" alt="tableau 8 scalability" src="https://cloud.githubusercontent.com/assets/300046/12035873/e1377296-adfd-11e5-804f-fe9e07749b36.png">
+
+ * http://www.tableau.com/sites/default/files/media/whitepaper_tableau_server9.0scalability_eng_2.pdf
 
  * https://www.youtube.com/watch?v=34WGBP221aw
    Tableau Server Administration and Authentication
 
- * http://www.tableau.com/sites/default/files/media/whitepaper_tableau_server9.0scalability_eng_2.pdf
 
 <a id="ExtractAPI">
-## Tableau Extract API</a>.
+## Tableau Extract API</a>
 
 The 22 minute video at
 http://www.tableau.com/learn/tutorials/on-demand/extract-api-introduction
