@@ -36,6 +36,24 @@ Docker works only on 64-bit machines.
    https://docs.docker.com/installation/#installation</a>
    is Docker’s official installation guide.
 
+Several Docker containers on the same host enables simultaneously use of different TLS settings, network settings, log settings, or storage drivers within each container.
+<a target="_blank" href="https://dzone.com/articles/10-practical-docker-tips-for-day-to-day-docker-usa?edition=129166">This example</a>
+starts two docker deamons:
+
+```
+docker daemon -H tcp://$IP:5000 --storage-opt dm.fs=xfs \
+            -p "/var/run/docker1.pid" \
+            -g "/var/lib/docker1" \
+            --exec-root="/var/run/docker1
+
+docker daemon -H tcp://$IP:5001 --storage-opt dm.fs=xfs \
+        -s devicemapper \
+        --storage-opt dm.thinpooldev=/dev/mapper/docker--vg-docker--pool \
+        -p "/var/run/docker2.pid" \
+        -g "/var/lib/docker2" --exec-root="/var/run/docker2"
+        --cluster-store=consul://$IP:8500 \
+        --cluster-advertise=$IP:2376
+```
 
 <a id="LowCostOfEntry">
 ### Low Cost of Entry</a>
@@ -82,6 +100,21 @@ A running Docker container shares the Linux kernel with the host.
 This makes it more **lightweight** and easier to deploy software than using VMware.
 So the performance of LG inside Docker is very close to that on a regular Linux host. 
 
+<a id="Docker_CLI_remote">
+## Docker CLI Remmote</a>
+Control multiple Docker hosts using Docker CLI from a "stepping stone" machine:
+
+```
+$ docker-machine env demo:
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/wmar/.docker/machine/machines/demo"
+export DOCKER_MACHINE_NAME="demo"
+```
+
+(of course replace the path containing wmar to your path)
+
+
 <a id="DigitalOcean">
 ## Cloud Deploy</a>
 https://www.digitalocean.com/community/tags/docker?type=tutorials
@@ -111,7 +144,7 @@ sudo apt-get install linux-image-extra-`uname -r`
 Kubernets manages containerized applications in a clustered environment.
 It uses its own schedule to stand up Docker containers.
 
-    * https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes
+ * https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes
 
 Google open sourced Kube 
 
@@ -131,9 +164,9 @@ BusyBox small OS.
 
 CoreOS was developed specifically to operate within containers.
 
-    * https://www.digitalocean.com/community/tutorials/an-introduction-to-coreos-system-components
+ * https://www.digitalocean.com/community/tutorials/an-introduction-to-coreos-system-components
  
-    CoreOS uses a globally distributed key-value store called etcd to pass configuration data between nodes.
+CoreOS uses a globally distributed key-value store called etcd to pass configuration data between nodes.
     This enables apps to be dynamically configured based on shared resources.
 
 Mesos is a large-scale cluster management platform based on container isolation.
@@ -244,7 +277,7 @@ WARNING: No swap limit support
 docker version
     ```
 
-Example of response:
+   Example of response:
 
     ```
 Client:
@@ -256,8 +289,8 @@ Built:        Sat Nov 21 00:48:57 UTC 2015
 OS/Arch:      darwin/amd64
     ```
 
-    NOTE: Docker was written in the Go language. A tutorial is at
-    http://pluralsight.com/training/Courses/TableOfContents/go
+    NOTE: Docker was written in the Go language (See 
+    http://pluralsight.com/training/Courses/TableOfContents/go)
 
     NOTE: A git client is built in, with tag support.
 
@@ -284,14 +317,11 @@ docker ps -l
 
 0. Remove a container by its identifier:
 
-```
+   ```
 sudo docker rm c629b7d70666
-```
+   ```
 
-
-
-
-Docker reduces the redundancy of common components running within the same Docker container.
+   Docker reduces the redundancy of common components running within the same Docker container.
 
    ```
    FROM wordpress
@@ -527,9 +557,9 @@ vagrant up --provider virtualbox
 vagrant ssh
     ```
 
-    The response:
+   The response:
 
-    ```
+   ```
 Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic x86_64)
 
 * Documentation:  https://help.ubuntu.com/
@@ -540,20 +570,20 @@ Welcome to your Vagrant-built virtual machine.
 Last login: Fri Sep 14 06:23:18 2012 from 10.0.2.2
 vagrant@precise64:~$ pwd
 /home/vagrant
-    ```
+   ```
 
-    NOTE: Initial versions of Docker were only available on Ubuntu.
+   NOTE: Initial versions of Docker were only available on Ubuntu.
 
 0. Install and run app software (Tomcat web server, etc.).
 
 0. Share your Vagrant enviornment
 
-```
+   ```
 vagrant login
 vagrant share
-```
+   ```
 
-See https://atlas.hashicorp.com/help/vagrant/shares/create
+   See https://atlas.hashicorp.com/help/vagrant/shares/create
 
 0. Open the Virtualbox UI.
 
@@ -606,20 +636,19 @@ In it are Virtualbox images for:
   * database server (MongoDB, MySQL, Postgres, etc.)
   * Jenkins
 
-
 Another host is <a target="_blank" href="http://quay.io/">quay.io</a>,
 as quay is a British word for dock.
 It has the advantage of integration
 
-    ```
+   ```
 docker login quay.io
-    ```
+   ```
 
+   * http://livestream.com/concur/events/4366576
 
-http://livestream.com/concur/events/4366576
-
+   ```
 docker pull quay.io/concur_platform/centos:7.1.1583-c28b658
-
+   ```
 
 
 <a id="JMeterDockerImages">
@@ -767,7 +796,6 @@ https://app.pluralsight.com/player?course=docker-fundamentals&author=adron-hall&
 
  * https://www.youtube.com/watch?v=ddhU3NMrhX4
    3 hour presentation on Docker
-
 
  * https://www.youtube.com/watch?v=at72dhg-SZY
 

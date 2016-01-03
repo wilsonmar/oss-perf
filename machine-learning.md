@@ -1,11 +1,23 @@
 There is a large amount of data generated during testing of apps.
 
+<a id="Why">
+## Why this</a>
+If our objective is to take action to resolve anomalies the quickest possible time,
+we know that simply calculating averages and standard deviation statistics is not enough
+because it's time-consuming even for an expert to figure out what is wrong
+among the mass of data being churned out.
+
+There is so much going on that it's difficult to understand the **relationships among the data**,
+to correlate cause vs. effect, 
+and the cascade of events when a choke-point restricts capacity and cause performance bottlenecks.
+
+
 The objective is to augment time-consuming and error-prone **manual scanning** of metrics
 with a program that recognizes patterns and raises alerts.
 
  1. As performance tests run (also in production), 
-    proactively identify when a blocking condition is **imminent** from
-    continually scan through metrics and calculate leading indicators such as
+    proactively identify when a blocking condition is **imminent**. This is done by a
+    "continuous" (periodic) scan through metrics and calculate leading indicators such as
     the trend of disk space usage and the ratio of memory consumed per user, etc.
 
     This is a step ahead of reactively recognizing when a **threshold** for action,
@@ -20,17 +32,6 @@ This means a constant scan comparing previous history for each transaction.
 
 Data output from a load test run may be filtered so just the "steady state" or peak values are analyzed.
 
-
-<a id="Why">
-## Why this</a>
-If our objective is to take action to resolve anomalies the quickest possible time,
-we know that simply calculating averages and standard deviation statistics is not enough
-because it's time-consuming even for an expert to figure out what is wrong
-among the mass of data being churned out.
-
-There is so much going on that it's difficult to understand the **relationships among the data**,
-to correlate cause vs. effect, 
-and the cascade of events when a choke-point restricts capacity and cause performance bottlenecks.
 
 
 <a id="Statistics">
@@ -52,12 +53,28 @@ which excludes ramp-up and ramp-down.
 <img alt="Extending" src="http://merc.tv/img/fig/triggerpt_v2.png"></a>
 
 
+<a id="Resources">
+## Additional resources on machine learning</a>
+
+There are several courses on Coursera.org teaching Machine Learning.
+
+A) By Andrew Ng makes use of Matlab and Octave for audio processing.
+
+  * <a target="_blank" href="https://class.coursera.org/ml-003/lecture">
+    Videos</a>
+  * <a target="_blank" href="http://cs229.stanford.edu/materials.html">
+    Lecture notes</a>
+  * <a target="_blank" href="https://share.coursera.org/wiki/index.php/ML:Main">
+    Wiki of Discussions, video subtitles</a> maintained by students
+
+
+
 <a id="https://isotope11.com/blog/continuous-deployment-at-isotope11-an-update">
 ## Choice of tools: Python</a>
 Python has become a go-to programming language for math, science, and statistics 
 due to its ease of adoption and the breadth of libraries available for nearly any application. 
 
-Right away, let me note code for Python 2.7 cannot be run under Python 3.5.
+Code for Python 2.7 cannot be run under Python 3.5.
 Thus, python3 is the command instead of python.
 
  * <a target="_blank" href="https://docs.python.org/2/index.html">
@@ -71,10 +88,9 @@ Its <a target="_blank" href="http://scikit-learn.org/stable/supervised_learning.
 Regression</a> predicts a continuous-valued attribute associated with an object such as in the stock market.
 
 
-Claiming that the <a target="_blank" href="http://pandas.pydata.org/">Pandas (Python Data Analysis)</a>, 
-open-source library does not scale, 
+Claiming that the <a target="_blank" href="http://pandas.pydata.org/">Pandas (Python Data Analysis)</a> open-source library does NOT scale, 
 the <a target="_blank" href="https://www.coursera.org/learn/ml-foundations/"> 
-ML class from Washington U at Coursera</a> teaches based on 
+ML class from Washington U at Coursera.org</a> is based on 
 <a target="_blank" href="https://dato.com/learn/translator/">comparable</a>
 open-source SFrame API 
 with a commercial (1 year free) <strong>GraphLab Create</strong> from Dato.com, where instructor Carlos is CEO.
@@ -88,7 +104,6 @@ combines Python with a wiki page (named Jupyter) that combines code, plots, and 
 
 The jupyter web UI enables several clusters (engines) to be started.
 This is what provides the scalability.
-
 
 0. Install the **SFrame** tabular data structure (which provides a "database" stored on disk)
    by downloading from https://dato.com/learn/gallery/notebooks/introduction_to_sframes.html
@@ -110,7 +125,6 @@ bash Anaconda2-2.4.1-MacOSX-x86_64.sh
 
  * Alternately, install <a target="_blank" href="http://conda.pydata.org/miniconda.html">
    Miniconda</a> for its compactness as it requires individual packages to be installed.
-
 
 
 Tasks include:
@@ -138,8 +152,7 @@ so it is more seldomly used for production code in industry.
 
 
 <a id="MachineLearning">
-## Machine Learning</a>
-Python is We are looking to leverage "Machine Learning" (ML) technologies.
+## Machine Learning (ML) defined</a>
 
 According to https://en.wikipedia.org/wiki/Machine_learning,
 in 1959, Arthur Samuel defined machine learning as a 
@@ -152,6 +165,24 @@ The term refers to the use of computers to <strong>recognize patterns (anomalies
 <a target="_blank" href="http://www.KNIME.org/">KNIME.org</a> takes a code-free approach to predictive analytics. 
 Using a graphical workbench, you wire together workflows from an abundant library of processing nodes, which handle data access, transformation, analysis, and visualization. With KNIME, you can pull data from databases and big data platforms, run ETL transformations, perform data mining with R, and produce custom reports in the end.
 
+There are different approaches to ML.
+
+<strong>Unsupervised learning</strong> approach problems with little or no idea as to what the results should look like. This derives structure from data by <strong>clustering</strong> data based on relationships among the variables in the data. This calculates level of <strong>association</strong> among variables. This is not the same as expert systems applying rules.
+
+<strong>Supervised learning</strong> tasks include "regression" and "classification".
+
+   * <strong>Regression</strong> tries to predict results within a continuous output, mapping input variables to some continuous result function. Predicting the price of a house based solely on square footage is an example of using one input to predict a single output, also known as "univariate linear regression." But in real life, the regression models behind <a target="_blank" href="http://www.kbb.com">kbb.com</a> provides Kelly Blue Book prices of automobiles based on several variables (miles driven, age of car, accessories, etc.).
+
+   * Classification tries to predict results in a <strong>discrete</strong> output, mapping input variables into categories such as "Yes" or "No".
+
+Supervised learning approaches works by providing a <strong>training set</strong> of known
+input and outputs so the ML program can derive its formula.
+
+   * The variable <strong>m</strong> represents the number of training examples.
+   * The variable <strong>x</strong> represents the various input feature variables.
+   * The variable <strong>y</strong> represents the various output target variables.
+
+Numbers in superscipt slightly above each variable refer to a specific variable.
 
 <a id="AlgorithmChoices">
 ## Choice of algorithms</a>
@@ -249,7 +280,13 @@ ENCOG for Java and C# is maintained by <a target="_blank" href="http://heatonres
 in St. Louse, Missouri. Samples are at https://github.com/encog 
 
 <a id="Resources">
-## Additional resources on machien learning</a>
+## Additional resources on machine learning</a>
+
+There are several courses on Coursera.org
+
+ * By Ng makes use of Matlab.
+
+ * The University of Washington makes use of Python.
 
  * http://guidetodatamining.com/
  * http://colah.github.io/ at http://googleresearch.blogspot.com/

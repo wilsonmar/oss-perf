@@ -1,4 +1,4 @@
-IThis page provides an enhanced / deeper sequence to presenting Tableau based on a hands-on approach with less hype.
+This page provides an enhanced / deeper sequence to presenting Tableau based on a hands-on approach with less hype.
 
  * http://www.tableau.com/learn/starter-kit provides a learning sequence with clickable links to materials.
 
@@ -11,39 +11,56 @@ Tableau's promo video at http://www.tableau.com/products#video says
 
 * [0:30] "People build dashboards and applications like these, drag and drop, at up to 10 times the speed of a traditional business intellegence system".
  
-Garner notes "Tableau does not directly compete with other vendors with a strategy for being a broad BI platform offering":
-
  * IBM Cognos Insight, 
  * Microsoft Power View, 
  * MicroStrategy Visual Insight,
  * Oracle Exalytics appliance, 
  * SAS Visual Analytics Explorer,
+ * <a target="_blank" href="http://global.sap.com/campaign/ne/free_trial/visual_intelligence/index"> SAP Lumira</a>
  * <a target="_blank" href="http://www.informationweek.com/news/software/bi/240000455"> SAP Visual Intelligence</a>
  * Tibco Spotfire
+ * http://www.qlik.com/us/explore/products/sense
+ * http://www.xdat.org/
 
-"Tableau complements fully functional enterprise BI platforms that lack ADV capabilities."
+Garner notes "Tableau does not directly compete with other vendors with a strategy for being a broad BI platform offering. Tableau complements fully functional enterprise BI platforms that lack ADV capabilities."
 That is why <a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> This Forrester report (although rather dated from 2012)</a> has Tableau behind strategy:
 
 <img width="550" alt="tableau forrester adv 2013" src="https://cloud.githubusercontent.com/assets/300046/12010835/88925420-ac73-11e5-9797-b0d484db016b.png">
 
-<a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> The Gartner Magic Quadrant report in 2015</a> also put Tableau way above other vendors on execution.
+<a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> The Gartner Magic Quadrant report in 2015</a> also put Tableau above other vendors on their "ABILITY TO EXECUTE" scale.
 
 <img width="550" alt="gartner adv quadrant 2015" src="https://cloud.githubusercontent.com/assets/300046/12011013/d49ac22e-ac7a-11e5-8427-aabe5e7c7a87.png">
 
+Another alternative are JavaScript libraries developers incorporate into their home-grown visualization solutions:
 
-Their ratings are based on these traits: 
+  * D3.js. See https://leanpub.com/D3-Tips-and-Tricks
+  * http://nvd3.org/
 
- * dynamic data - update visualizations as data changes in sources such as databases. 
+Tableau focuses on presentation rather than both presentation and statistical calculations by software such as:
+
+  * Matlab
+  * R, an open-source (free) software
+
+Othere visualization tools:
+
+  * http://www.gapminder.org/world-offline/
+
+
+<a name=“VizFeatures”>
+## Visualization Features</a>
+Excellent visualization software possess these traits: 
+
+ * Dynamic data - update visualizations (in "live mode") as data changes in sources such as databases. 
  
- * visual querying -  change the query by selecting or clicking on a portion of the graph or chart (to drill down, for example). 
+ * Visual querying -  change the query by selecting or clicking on a portion of the graph or chart (to drill down, for example). 
  
- * linked multi-dimensional visualization - selections made in one chart are reflected as you navigate into other charts.
+ * Linked multi-dimensional visualization - selections made in one chart are reflected as you navigate into other charts.
  
- * animation -  
+ * Animation -  
  
- * personalization - give power users an in-depth view and newbies a simpler view, and also control access to data based on user- and role-based access privileges.
+ * Personalization - give power users an in-depth view and newbies a simpler view, and also control access to data based on user- and role-based access privileges.
   
- * actionable alerts  -  thresholds and parameters that trigger messages whether you're interacting with reports or not. 
+ * Actionable alerts  -  thresholds and parameters that trigger messages whether you're interacting with reports or not. 
 
 
 <a name=“Architecture”>
@@ -353,6 +370,7 @@ Geographic charts make use of geocodes that come with Tableau.
  * http://www.tableau.com/learn/tutorials/on-demand/maps-tableau
  * http://www.tableau.com/learn/tutorials/on-demand/editing-unrecognized-locations
  * http://www.tableau.com/learn/tutorials/on-demand/expanding-tableaus-mapping-capabilities
+ * http://vizwiz.blogspot.com/p/dear-data-two.html shows how custom markers can be added on a map by editing the map's CSV file.
  
    In version 9 define custom territories off a map and Tableau merges on the fly.
    Streets and satellite maps from Mapbox.com are supported.
@@ -382,7 +400,7 @@ PROTIP: Pose a questions the content answers.
  * http://www.tableau.com/learn/tutorials/on-demand/story-points?reg-delay=true
  * https://www.youtube.com/watch?v=-EhYY4gLt-c
 
-<a name=TreeMaps">
+<a name="TreeMaps">
 ### Tree maps</a>
 Boxes show relative sizes of components in the box, such as profit contribution, etc. (As long as data are all positive numbers)
 
@@ -1029,6 +1047,11 @@ begins with its Getting Started video.
 <a id="Resources">
 ## Resources</a>
 
+Book: <a target="_blank" href="https://leanpub.com/datastyle">
+The Elements of Data Analytic Style: A guide for people who want to analyze data.</a>
+by Jeff Leek
+was the <a target="_blank" href="http://blog.leanpub.com/2015/12/top-ten-bestselling-books-2015.html">#2 best-selling book on Leanpub in 2015</a>.
+
 http://onlinehelp.tableau.com/current/server/en-us/help.htm
 replaces 
 
@@ -1072,5 +1095,5 @@ Tableau corporate headquarters is in the bayside Freemont neighborhood of Seattl
 
 Tableau Software is traded on NYSE under ticker symbol DATA. The company went public on May 17, 2013 at an initial public offering price of $31 ￼per share.
 
-
+
 
