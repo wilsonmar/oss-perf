@@ -43,9 +43,9 @@ Tableau focuses on presentation rather than both presentation and statistical ca
 
 Othere visualization tools:
 
-   Dynamic (movie mode) is available only under Tableau Public,
-   not when viewed on
-   <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder"> the Tableau Public website.
+   Dynamic (movie mode) is available only under the Tableau Public client,
+   not when viewed 
+   <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder">on the Tableau Public website.
     Download the workbook of this Tableau viz</a> 
     by andy.cotgreave
     to see how Tableau recreates the
@@ -54,7 +54,7 @@ Othere visualization tools:
     presents multiple dimensions dynamically over time, made famous 
     by Hans Roling from Sweden on
     <a target="_blank" href="https://vimeo.com/18477762">
-    this video</a> shown on BBC Nov 10, 2010 and 
+    this "Joy of Stats" video</a> shown on BBC Nov 10, 2010 and 
     http://www.gapminder.org/videos/.
     
 <a name=“VizFeatures”>
@@ -251,8 +251,11 @@ After installation on a Mac, open a Tableu client:
 
    <img width="676" alt="tableau data sources" src="https://cloud.githubusercontent.com/assets/300046/11996554/90f17590-aa22-11e5-8abd-5dec3b430966.png">
 
-   The above is from the Pro version, which can connect to more data sources under the <strong>Connect</strong> section.
+   The above is from the Pro version, which has 
+   <a target="_blank" href="http://www.tableau.com/support/drivers">
+   many drivers</a> which connect to more data sources under the <strong>Connect</strong> section.
 
+ 
 0. Click <strong>Statistical Files</strong> to accesses files from SAS and IBM SPSS:
 
    <img width="327" alt="tableau statistical files" src="https://cloud.githubusercontent.com/assets/300046/12010742/4949dc5a-ac70-11e5-9883-12281f631669.png">
