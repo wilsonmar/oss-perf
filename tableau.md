@@ -12,11 +12,11 @@ Tableau's promo video at http://www.tableau.com/products#video says
 * [0:30] "People build dashboards and applications like these, drag and drop, at up to 10 times the speed of a traditional business intellegence system".
  
  * IBM Cognos Insight, 
- * Microsoft Power View, 
+ * Microsoft Power View, see http://www.jenunderwood.com/2014/01/02/understanding-the-differences-microsoft-power-bi-and-tableau/
  * MicroStrategy Visual Insight,
  * Oracle Exalytics appliance, 
  * SAS Visual Analytics Explorer,
- * <a target="_blank" href="http://global.sap.com/campaign/ne/free_trial/visual_intelligence/index"> SAP Lumira</a>
+ * <a target="_blank" href="http://saplumira.com/"> SAP Lumira</a>
  * <a target="_blank" href="http://www.informationweek.com/news/software/bi/240000455"> SAP Visual Intelligence</a>
  * Tibco Spotfire
  * http://www.qlik.com/us/explore/products/sense
@@ -43,16 +43,20 @@ Tableau focuses on presentation rather than both presentation and statistical ca
 
 Othere visualization tools:
 
-  * <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder"> Download the workbook of this Tableau viz</a> 
+   Dynamic (movie mode) is available only under Tableau Public,
+   not when viewed on
+   <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder"> the Tableau Public website.
+    Download the workbook of this Tableau viz</a> 
+    by andy.cotgreave
     to see how Tableau recreates the
   	<a target="_blank" href="http://www.gapminder.org/world-offline/">
     Gapminder</a> app which
-    presents multiple dimensions moving over time, made famous 
-    by Hans Roling from Sweden on the
+    presents multiple dimensions dynamically over time, made famous 
+    by Hans Roling from Sweden on
     <a target="_blank" href="https://vimeo.com/18477762">
-    video</a> shown on BBC Nov 10, 2010 and later on 
-    a TedTalk.
-
+    this video</a> shown on BBC Nov 10, 2010 and 
+    http://www.gapminder.org/videos/.
+    
 <a name=“VizFeatures”>
 ## Visualization Features</a>
 Excellent visualization software possess these traits: 
