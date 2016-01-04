@@ -43,8 +43,15 @@ Tableau focuses on presentation rather than both presentation and statistical ca
 
 Othere visualization tools:
 
-  * http://www.gapminder.org/world-offline/
-
+  * <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder"> Download the workbook of this Tableau viz</a> 
+    to see how Tableau recreates the
+  	<a target="_blank" href="http://www.gapminder.org/world-offline/">
+    Gapminder</a> app which
+    presents multiple dimensions moving over time, made famous 
+    by Hans Roling from Sweden on the
+    <a target="_blank" href="https://vimeo.com/18477762">
+    video</a> shown on BBC Nov 10, 2010 and later on 
+    a TedTalk.
 
 <a name=“VizFeatures”>
 ## Visualization Features</a>
