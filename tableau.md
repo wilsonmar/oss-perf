@@ -11,8 +11,8 @@ Tableau's promo video at http://www.tableau.com/products#video says
 
 * [0:30] "People build dashboards and applications like these, drag and drop, at up to 10 times the speed of a traditional business intellegence system".
  
- * IBM Cognos Insight, 
- * Microsoft Power View, see http://www.jenunderwood.com/2014/01/02/understanding-the-differences-microsoft-power-bi-and-tableau/
+ * Microsoft Power BI, Power Pivot, and Power View in Excel 2013, see http://www.jenunderwood.com/2014/01/02/understanding-the-differences-microsoft-power-bi-and-tableau/ and http://www.jenunderwood.com/blog.htm#BetterTogether
+ * IBM Cognos Insight,
  * MicroStrategy Visual Insight,
  * Oracle Exalytics appliance, 
  * SAS Visual Analytics Explorer,
@@ -43,20 +43,36 @@ Tableau focuses on presentation rather than both presentation and statistical ca
 
 Othere visualization tools:
 
-   Dynamic (movie mode) is available only under the Tableau Public client,
-   not when viewed 
-   <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder">on the Tableau Public website.
-    Download the workbook of this Tableau viz</a> 
-    by andy.cotgreave
-    to see how Tableau recreates the
-  	<a target="_blank" href="http://www.gapminder.org/world-offline/">
-    Gapminder</a> app which
-    presents multiple dimensions dynamically over time, made famous 
-    by Hans Roling from Sweden on
+   PROTIP: Dynamic (movie mode) is available only under the Tableau Public client,
+   not when viewed on websites.
+
+    since 2007 at
+    http://www.gapminder.org/videos/
+    Hans Roling, a professor of health statistics in Sweden, is
+    an internet legend for his
     <a target="_blank" href="https://vimeo.com/18477762">
-    this "Joy of Stats" video</a> shown on BBC Nov 10, 2010 and 
-    http://www.gapminder.org/videos/.
+    "Joy of Stats" video</a> shown on BBC Nov 10, 2010 and 
+    his <a target="_blank" href="http://www.gapminder.org/world-offline/">
+    Gapminder web app</a> which
+    presents multiple dimensions dynamically over time.
     
+    Below is the
+   <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">  recreation of Gapminder into Tableau Trendalyzer</a>
+    
+<img alt="tableau gapminder" src="https://cloud.githubusercontent.com/assets/300046/12102988/ba022edc-b2f3-11e5-8c2a-05c980223e21.png">
+
+   This was created by 
+   Andy Cotgreave (Technical Evangelist at Tableau)
+   who has built a wonderful Tableau gallery over the years at
+   http://public.tableau.com/profile/andy.cotgreave#!/
+
+<a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder">on the Tableau Public website.
+    Download the workbook of this Tableau bubble chart viz</a> 
+    to manipulate the viz on your Tableau Public client.
+
+   Note the choice of different X and Y axis.
+
+
 <a name=“VizFeatures”>
 ## Visualization Features</a>
 Excellent visualization software possess these traits: 
@@ -104,6 +120,9 @@ QUESTION: Can Mobile clients access Tableau Public?
 
 The <strong>Tableau Reader</strong> client can read (but not save) packaged workbooks.
 
+These are subject to change at any time, and subject to negotiation. But a little birdie told me ... Tableau Desktop costs $1999. Tableau Server is around $1000 per user or ~$200K for an unlimited user license. Tableau Cloud costs $500/per user per year. The Tableau Cloud plan includes 100 GB of storage. I do not know the storage add-on costs for groups wanting more than 100 GB.
+
+Tableau makes use of HTML5. It's unlike Microsoft Power Viewer, which depends upon installation of Silverlight and thus not mobile device friendly.
 
 <a name=“MobileApp”>
 ## Mobile App</a>
@@ -185,6 +204,13 @@ There are several ways to open a Tableau client program (explained below):
 
 0. Click the red x at the upper left corner to close the program.
 
+
+   NOTE: In 2015 Tableau did not have an ETL tool.
+   Tableau add-in Alteryx for groups wanting true self-service ETL
+   like Microsoft Power Query M scripting (formerly called Data Explorer)  that does pivot/unpivot, joining, filtering, deduplicating, grouping, splitting, and transforms.
+   
+   http://kb.tableausoftware.com/articles/knowledgebase/preparing-excel-files-analysis
+   has some basic pivoting and cleansing features. 
 
 <a name=“CloseClient”>
 ## Save and Close Client Program</a>
@@ -337,8 +363,25 @@ Store all Microsoft Office Access files in an Access folder.
 0. PROTIP: In Finder, navigate to the Downloads folder and delete the .csv file. This clears off clutter.
 
 See video http://www.tableau.com/learn/tutorials/on-demand/getting-started-data
-for more
+for more.
 
+<a name=“Addons”>
+## Add-ons to Tableau</a>
+Fine as it is out of the box, you should know about enhancements from others:
+
+ * http://powertoolsfortableau.com/ from
+   http://interworks.co.uk/business-intelligence/tableau-tools/
+
+   http://powertoolsfortableau.com/tools/workbook-tools-suite/
+   enables batch and automated interactions with Tableau workbooks
+   (for $449 USD per year).
+   
+   The $4999/year Workbook Software Development Kit (SDK) for Tableau by InterWorks enables batch, automated, programmatic access to Tableau workbooks. 
+   Visual Studio code completions.
+   Semantic validations to catch breaking changes to your workbooks.
+
+   http://powertoolsfortableau.com/tools/portals-for-tableau
+   enhances Tableau Server look-and-feel, filtering, and security.
 
 <a name=“Galleries”>
 ## Public Galleries</a>
@@ -378,19 +421,6 @@ Vizzes by bloggers can be published on other sites, such as:
 
 * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
-Geographic charts make use of geocodes that come with Tableau.
-
- * http://www.tableau.com/learn/tutorials/on-demand/getting-started-mapping
- * http://www.tableau.com/learn/tutorials/on-demand/maps-tableau
- * http://www.tableau.com/learn/tutorials/on-demand/editing-unrecognized-locations
- * http://www.tableau.com/learn/tutorials/on-demand/expanding-tableaus-mapping-capabilities
- * http://vizwiz.blogspot.com/p/dear-data-two.html shows how custom markers can be added on a map by editing the map's CSV file.
- 
-   In version 9 define custom territories off a map and Tableau merges on the fly.
-   Streets and satellite maps from Mapbox.com are supported.
-
-QUESTION: How about custom plots (such as fields on a farm).
-
 
 <a name="ShowMeMenu"></a>
 <a name="ChartTypes">
@@ -400,6 +430,13 @@ QUESTION: How about custom plots (such as fields on a farm).
 * <a target="_blank" href="http://www.tableau.com/sites/default/files/media/which_chart_v6_final_0.pdf">Which chart is right for you?</a>
 
 * <a target="_blank" href="http://www.tableau.com/sites/default/files/whitepapers/whitepaper_best-practices_telling_great_stories.pdf">5 Best Practices for Telling Great Data Stories - And Why it Will Make You a Better Analyst</a>
+
+The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
+which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
+
+https://www.youtube.com/watch?v=amdR9SzcHDs&list=PLcTX_fKtDPs7x7DENN30sKjQvgwI1RtWW
+is a playlist of charts.
+
 
 <a name="StoryPoints">
 ### Story points</a> 
@@ -471,11 +508,22 @@ Donut charts
 
  * http://vizwiz.blogspot.in/2014/12/donutcharts.html
 
-The value of various types are described in the video at https://www.youtube.com/watch?v=I_9nMSvY1FE
-which displays CO2 emissions by country, per-capita by decade, over time, by income group, grouped by region.
+### Geospatial Maps
+Geographic maps make use of geocodes that come with Tableau.
+Tableau allows use of WMS servers, GIS sources and custom shapes
 
-https://www.youtube.com/watch?v=amdR9SzcHDs&list=PLcTX_fKtDPs7x7DENN30sKjQvgwI1RtWW
-is a playlist of charts.
+ * http://www.tableau.com/learn/tutorials/on-demand/getting-started-mapping
+ * http://www.tableau.com/learn/tutorials/on-demand/maps-tableau
+ * http://www.tableau.com/learn/tutorials/on-demand/editing-unrecognized-locations
+ * http://www.tableau.com/learn/tutorials/on-demand/expanding-tableaus-mapping-capabilities
+ * http://vizwiz.blogspot.com/p/dear-data-two.html shows how custom markers can be added on a map by editing the map's CSV file.
+ 
+   In version 9 define custom territories off a map and Tableau merges on the fly.
+   Streets and satellite maps from Mapbox.com are supported.
+
+QUESTION: How about custom plots (such as fields on a farm).
+
+
 
 
 <a name=“GettingStartedVideos”>
@@ -900,8 +948,10 @@ TODO: Identify triggers to invoke when the moving average crosses one of the ban
 * https://www.youtube.com/watch?v=Y7OJjIeKcBM
   Tableau 8.1: Predictive Analytics with R
 
-<strong>Data Blending</strong> is the combination of data sets for analysis together.
-Examples are operational and financial data.
+<a name="DataBlending">
+### Data Blending
+<strong>Data Blending</strong> is the combination of several data sets for integrated analysis. Although Tableau in 2015 lacked a data modeling diagram view, semantic model development is easy, rapid, intuitive and powerful with one or two combined data sources.
+
 
 <a name=“UI”>
 ## Forecasts</a>
@@ -1015,6 +1065,9 @@ This creates files for this command:
 ## Add-ons</a>
 Alteryx
 
+<a name=“Subscriptions”>
+## Subscriptions</a>
+Tableau allows users to subscribe to dashboards for them to be automatically emailed to them on a schedule.
 
 <a name=“Videos”>
 ## Videos</a>
@@ -1050,7 +1103,7 @@ Nov 13, 2013 - 1h 36m 26s
 Data Visualizations Using Tableau Public</a>
 Sep 09, 2013 - 1h 47m 56s
 
-<a target="_blank" href=""https://www.youtube.com/watch?v=W0TU1dCrmQ4&list=PLMZkG3MOarqI9UwuWmN4DkXqsax9H7rBV">
+<a target="_blank" href="https://www.youtube.com/watch?v=W0TU1dCrmQ4&list=PLMZkG3MOarqI9UwuWmN4DkXqsax9H7rBV">
 This playlist of 15 videos from TechAnalysists</a>
 begins with its Getting Started video.
 
