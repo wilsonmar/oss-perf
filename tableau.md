@@ -43,21 +43,18 @@ Tableau focuses on presentation rather than both presentation and statistical ca
 
 Othere visualization tools:
 
-   PROTIP: Dynamic (movie mode) is available only under the Tableau Public client,
-   not when viewed on websites.
-
-    since 2007 at
-    http://www.gapminder.org/videos/
-    Hans Roling, a professor of health statistics in Sweden, is
-    an internet legend for his
-    <a target="_blank" href="https://vimeo.com/18477762">
-    "Joy of Stats" video</a> shown on BBC Nov 10, 2010 and 
-    his <a target="_blank" href="http://www.gapminder.org/world-offline/">
-    Gapminder web app</a> which
-    presents multiple dimensions dynamically over time.
-    
-    Below is the
-   <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">  recreation of Gapminder into Tableau Trendalyzer</a>
+  since 2007 at
+  http://www.gapminder.org/videos/
+  Hans Roling, a professor of health statistics in Sweden, is
+  an internet legend for his
+  <a target="_blank" href="https://vimeo.com/18477762">
+  "Joy of Stats" video</a> shown on BBC Nov 10, 2010 and 
+  his <a target="_blank" href="http://www.gapminder.org/world-offline/">
+  Gapminder web app</a> which
+  presents multiple dimensions dynamically over time.
+ 
+  Below is the
+ <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">  recreation of Gapminder into Tableau Trendalyzer</a>
     
 <img alt="tableau gapminder" src="https://cloud.githubusercontent.com/assets/300046/12102988/ba022edc-b2f3-11e5-8c2a-05c980223e21.png">
 
@@ -72,6 +69,9 @@ Othere visualization tools:
 
    Note the choice of different X and Y axis.
 
+ PROTIP: Dynamic (movie mode) is available only under the Tableau Public client,
+ not when viewed on websites.
+   
 
 <a name=“VizFeatures”>
 ## Visualization Features</a>
