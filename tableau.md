@@ -383,6 +383,9 @@ Fine as it is out of the box, you should know about enhancements from others:
    http://powertoolsfortableau.com/tools/portals-for-tableau
    enhances Tableau Server look-and-feel, filtering, and security.
 
+Alteryx
+
+
 <a name=“Galleries”>
 ## Public Galleries</a>
 
@@ -1060,10 +1063,6 @@ This creates files for this command:
 
 [8:47] Open IDLE installed with Python.
 
-
-<a name=“AddOns”>
-## Add-ons</a>
-Alteryx
 
 <a name=“Subscriptions”>
 ## Subscriptions</a>
