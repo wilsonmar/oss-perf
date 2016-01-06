@@ -56,7 +56,8 @@ Tableau focuses on presentation rather than both presentation and statistical ca
   presents multiple dimensions dynamically over time.
  
   Below is the
- <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">  recreation of Gapminder into Tableau Trendalyzer</a>
+ <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">  
+ recreation of Gapminder into Tableau Trendalyzer</a>
     
 <img alt="tableau gapminder" src="https://cloud.githubusercontent.com/assets/300046/12102988/ba022edc-b2f3-11e5-8c2a-05c980223e21.png">
 
