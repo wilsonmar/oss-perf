@@ -54,27 +54,21 @@ Tableau focuses on presentation rather than both presentation and statistical ca
   his <a target="_blank" href="http://www.gapminder.org/world-offline/">
   Gapminder web app</a> which
   presents multiple dimensions dynamically over time.
-The viz below <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">  
-recreates Gapminder using Tableau Trendalyzer</a>.
-    
+
+Within the <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/"> 
+wonderful Tableau gallery</a>
+Andy Cotgreave (Technical Evangelist at Tableau)
+built over the years is 
+<a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">
+a re-creation of Gapminder</a> 
+(using Tableau Trendalyzer),
+downloadable 
+<a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder">
+from the Tableau Public website</a> to manipulate using Tableau Public client installed on your laptop.
+
 <img alt="tableau gapminder" src="https://cloud.githubusercontent.com/assets/300046/12102988/ba022edc-b2f3-11e5-8c2a-05c980223e21.png">
 
-   This was created by 
-   Andy Cotgreave (Technical Evangelist at Tableau)
-   who has built a wonderful Tableau gallery over the years at
-   http://public.tableau.com/profile/andy.cotgreave#!/
-
-<a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder">on the Tableau Public website.
-    Download the workbook of this Tableau bubble chart viz</a> 
-    to manipulate the viz on your Tableau Public client.
-
-   Note the choice of different X and Y axis.
-
- PROTIP: Dynamic (movie mode) is available only under the Tableau Public client,
- not when viewed on websites.
-   
-
-Excellent visualization software possess these traits: 
+This chart is an example of traits excellent visualization software possess: 
 
  * Dynamic data - update visualizations (in "live mode") as data changes in sources such as databases. 
  
@@ -82,7 +76,10 @@ Excellent visualization software possess these traits:
  
  * Linked multi-dimensional visualization - selections made in one chart are reflected as you navigate into other charts.
  
- * Animation -  
+ * Animation -   
+
+ PROTIP: Dynamic (movie mode) is available only within the Tableau Public client,
+ not when viewed on websites (as of 2016-01-05).
  
  * Personalization - give power users an in-depth view and newbies a simpler view, and also control access to data based on user- and role-based access privileges.
   
