@@ -41,9 +41,11 @@ Tableau focuses on presentation rather than both presentation and statistical ca
   * Matlab
   * R, an open-source (free) software
 
-Othere visualization tools:
 
-  since 2007 at
+<a name=“VizFeatures”>
+## Visualization Features</a>
+
+  Since 2007 at
   http://www.gapminder.org/videos/
   Hans Roling, a professor of health statistics in Sweden, is
   an internet legend for his
@@ -73,8 +75,6 @@ Othere visualization tools:
  not when viewed on websites.
    
 
-<a name=“VizFeatures”>
-## Visualization Features</a>
 Excellent visualization software possess these traits: 
 
  * Dynamic data - update visualizations (in "live mode") as data changes in sources such as databases. 
