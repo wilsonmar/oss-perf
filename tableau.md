@@ -16,7 +16,7 @@ Tableau's promo video at http://www.tableau.com/products#video says
  * MicroStrategy Visual Insight,
  * Oracle Exalytics appliance, 
  * SAS Visual Analytics Explorer,
- * <a target="_blank" href="http://saplumira.com/"> SAP Lumira</a>
+ * <a target="_blank" href="http://saplumira.com/"> SAP Lumira</a> ($995/user from <a target="_blank" href="https://www.sapstore.com/solutions/99008/SAP-Lumira%2C-standard-edition"> SAP store</a>)
  * <a target="_blank" href="http://www.informationweek.com/news/software/bi/240000455"> SAP Visual Intelligence</a>
  * Tibco Spotfire
  * http://www.qlik.com/us/explore/products/sense
@@ -55,9 +55,18 @@ Tableau focuses on presentation rather than both presentation and statistical ca
   Gapminder web app</a> which
   presents multiple dimensions dynamically over time.
 
+Jeffrey Shaffer created <a target="_blank" href="https://www.youtube.com/watch?v=KdoBuNNvVec">
+a time lapse video</a> of <a target="_blank" href="
+https://public.tableau.com/s/profile/jeffs8297#!/vizhome/RoslinginTableau/RoslingGapminder">
+his viz</a> showing a trail of dots which grow in size and get darker over time (as the legend notes):
+
+<img width="795" alt="tableau time lapse gapminder" src="https://cloud.githubusercontent.com/assets/300046/12170866/a288bce6-b4f9-11e5-892b-d69d8cc35010.png">
+
+Here, different colors represent different countries, with the United States in red. Most other countries saw a decrease in fertility rate over time while life expectantcy increased.
+
 Within the <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/"> 
 wonderful Tableau gallery</a>
-Andy Cotgreave (Technical Evangelist at Tableau)
+Andy Cotgreave (<a target="_blank" href="https://twitter.com/acotgreave">@acotgreave</a>, <a target="_blank" href="https://www.linkedin.com/in/acotgreave">Technical Evangelist at Tableau</a>)
 built over the years is 
 <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">
 a re-creation of Gapminder</a> 
@@ -479,23 +488,29 @@ Histograms show distribution of counts within a dataset.
 
  * https://public.tableau.com/s/gallery/poverty-and-school-performance
 
-Pareto Chart
+### Pareto Charts
+are a form of bar line chart
 
-Waterfall charts show the running total 
+### Waterfall charts 
+show the running total of each column
 
  * https://www.youtube.com/watch?v=ac7qfABRSBI
 
-Funnel charts presents stages, as in productivity of various sales activities leading up to a sale.
+### Funnel charts 
+presents stages, as in productivity of various sales activities leading up to a sale.
 
-Horizon charts show when occassional "bumps" (such as errors) occur over time:
+### Horizon (Trellis) charts
+show when occassional "bumps" (such as errors) occur over time:
 
  * https://public.tableau.com/s/gallery/unemployment-horizon-chart
  
-Line charts show trends over time or other metric.
+### Line charts 
+Used to show trends over time. Segments show different categories.
 
  * https://public.tableau.com/s/gallery/life-expectancy-country
  
-Control charts 
+### Control charts 
+These have a thicker average line and upper and lower bounds.
 
  * https://www.youtube.com/watch?v=YGsWJP0AClM
  
@@ -503,12 +518,16 @@ Box and Whisker charts (new since v8) display quartiles in distributions:
 
  * http://www.tableau.com/learn/gallery/two-weeks-home-sales
 
-Donut charts
+### Donut charts
 
  * http://vizwiz.blogspot.in/2014/12/donutcharts.html
 
 ### Geospatial Maps
 Geographic maps make use of geocodes that come with Tableau.
+
+ * Choropleth maps color land forms to differentiate values.
+ * Geo bubble charts overlay different size dots.
+
 Tableau allows use of WMS servers, GIS sources and custom shapes
 
  * http://www.tableau.com/learn/tutorials/on-demand/getting-started-mapping
@@ -972,6 +991,10 @@ by Alan Elderidge from Tableau Australia.
 
 http://www.tableau.com/learn/tutorials/on-demand/connecting-google-analytics
 notes that extracts of Google Analytics are limited to 7 dimensions and 10 measures.
+
+Tableau’s standard extraction from GA is limited in that it uses Sampler.
+So Google Big Query is a better approach for data extraction.
+
 But <strong>Measure Groups</strong> pre-selects them
 
 * Bounces
@@ -1155,7 +1178,7 @@ Tableau was founded in 2003 by Christopher Stolte, Patrick Hanrahan and Christia
 
 Tableau corporate headquarters is in the bayside Freemont neighborhood of Seattle, Washington which locals call "The center of the universe".
 
-Tableau Software is traded on NYSE under ticker symbol DATA. The company went public on May 17, 2013 at an initial public offering price of $31 ￼per share.
+Tableau Software is traded on NYSE under ticker symbol DATA. The company went public on May 17, 2013 at an initial public offering price of $31 per share.
 
 
 

@@ -23,7 +23,7 @@ ga.js and dc.js are used by Classic.
 
 analytics.js is used by Universal Analytics since 2012,
 which includes an enhanced measurement protocol that supports custom data.
-Custom data can be a numeric metric or categorical (text) dimension.
+Custom data can be a numeric metric or categorical (text) dimension beyond:
 
  * Traffic source
  * Devices
