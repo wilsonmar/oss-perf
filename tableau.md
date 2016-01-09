@@ -50,10 +50,11 @@ Tableau focuses on presentation rather than both presentation and statistical ca
   Hans Roling, a professor of health statistics in Sweden, is
   an internet legend for his
   <a target="_blank" href="https://vimeo.com/18477762">
-  "Joy of Stats" video</a> shown on BBC Nov 10, 2010 and 
-  his <a target="_blank" href="http://www.gapminder.org/world-offline/">
+  "Joy of Stats" video</a> shown on BBC Nov 10, 2010 and Ted Talks.
+  In them he shows his 
+  <a target="_blank" href="http://www.gapminder.org/world-offline/">
   Gapminder web app</a> which
-  presents multiple dimensions dynamically over time.
+  presents multiple dimensions dynamically over time (nearly 300).
 
 Jeffrey Shaffer created <a target="_blank" href="https://www.youtube.com/watch?v=KdoBuNNvVec">
 a time lapse video</a> of <a target="_blank" href="
@@ -66,16 +67,19 @@ Here, different colors represent different countries, with the United States in 
 
 Within the <a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/"> 
 wonderful Tableau gallery</a>
-Andy Cotgreave (<a target="_blank" href="https://twitter.com/acotgreave">@acotgreave</a>, <a target="_blank" href="https://www.linkedin.com/in/acotgreave">Technical Evangelist at Tableau</a>)
-built over the years is 
+Andy Cotgreave (<a target="_blank" href="https://twitter.com/acotgreave">@acotgreave</a>, now <a target="_blank" href="https://www.linkedin.com/in/acotgreave">Technical Evangelist at Tableau</a>)
+built over the years is
 <a target="_blank" href="http://gravyanecdote.com/andy-cotgreave/joy-of-six-gapminder/">
-a re-creation of Gapminder</a> 
-(using Tableau Trendalyzer),
-downloadable 
-<a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder">
-from the Tableau Public website</a> to manipulate using Tableau Public client installed on your laptop.
+this re-creation of Gapminder</a>:
 
 <img alt="tableau gapminder" src="https://cloud.githubusercontent.com/assets/300046/12102988/ba022edc-b2f3-11e5-8c2a-05c980223e21.png">
+
+Andy
+<a target="_blank" href="http://interworks.co.uk/blog/joy-of-six-gapminder/">
+explained in 2010 how</a> he created the above using Tableau Trendalyzer v6.
+<a target="_blank" href="http://public.tableau.com/profile/andy.cotgreave#!/vizhome/GapminderFullScreen/Gapminder">
+Download his viz from the Tableau Public website</a> 
+to manipulate using Tableau Public client installed on your laptop.
 
 This chart is an example of traits excellent visualization software possess: 
 
@@ -216,6 +220,17 @@ There are several ways to open a Tableau client program (explained below):
    
    http://kb.tableausoftware.com/articles/knowledgebase/preparing-excel-files-analysis
    has some basic pivoting and cleansing features. 
+
+<a name=“Reshaper”>
+## Reshaper Add-in</a>
+Tableau no longer maintains its
+<a target="_blank" href="http://kb.tableau.com/articles/knowledgebase/addin-reshaping-data-excel"> 
+add-in</a> to <a target="_blank" href="
+http://kb.tableau.com/articles/knowledgebase/preparing-excel-files-analysis">
+prepare data in Excel to for use by Tableau</a>.
+
+File tableau_data_tool.zip downloaded from the website expands to 
+Setup-Tableau-Add-In-7.0.exe. Thus it's only for Windows edition of Office (not Mac).
 
 <a name=“CloseClient”>
 ## Save and Close Client Program</a>
@@ -430,6 +445,17 @@ Vizzes by bloggers can be published on other sites, such as:
 * http://blog.numbersbox.com/2015/06/global-obesity-were-getting-bigger.html
 
 
+<a name="Choosing"> 
+## Choosing Attention</a>
+
+This "visual significance scale" is from SAP, 
+but equally applicable for choosing how to convey a point:
+
+The most attention is naturally given to the position of items,
+with items at the top given initial attention.
+
+
+
 <a name="ShowMeMenu"></a>
 <a name="ChartTypes">
 ## Chart Types</a>
@@ -465,31 +491,37 @@ Boxes show relative sizes of components in the box, such as profit contribution,
 
  * https://www.youtube.com/watch?v=ZJuDk1RH2eg
 
-Heat Map provide a two-dimensional set of colors which add a third dimension.
+### Heat Maps 
+provide a two-dimensional set of colors which add a third dimension.
 
  * http://vizwiz.blogspot.in/2012/05/how-common-is-your-birthday-find-out.html
  
-Bubble charts show different size and colors in bubbles may convey relationships among bubbles.
+### Bubble charts 
+show different size and colors in bubbles to show the relative size of components which don't have anything in common with each other, such as sales from different industries.
 
-Scatterplots show specific XY points around a trend line of central tendency:
+
+### Scatterplots 
+show specific XY points around a trend line of central tendency:
 
  * http://www.tableau.com/learn/gallery/website-traffic-trends
  * http://www.tableau.com/learn/gallery/survey-satisfaction
 
    PROTIP: Add the statistical r value such as "r=-0.74" to disclose extent of correlation.
 
-Bar chart stacks show the make-up of <strong>components</strong>:
+### Bar chart stacks 
+show the make-up of <strong>components</strong>:
 
  * https://public.tableau.com/s/gallery/history-dow-30
  * https://public.tableau.com/s/gallery/smartphone-breakdown
  * https://public.tableau.com/s/gallery/what-music-matters-most-kexp
 
-Histograms show distribution of counts within a dataset.
+### Histograms 
+show distribution of counts within a dataset.
 
  * https://public.tableau.com/s/gallery/poverty-and-school-performance
 
 ### Pareto Charts
-are a form of bar line chart
+are a form of bar line chart that
 
 ### Waterfall charts 
 show the running total of each column
@@ -883,6 +915,7 @@ Is this happening across all stores across sales region?
 ### Sales by Category</a>
 
 * [12:08] 
+ * https://www.interworks.com/blog/rrouse/2015/12/14/new-way-visualize-kpis-tableau?es_c=24114&es_t=1450819328
 
 <a name="CustomerBreakdown">
 ### Customer Breakdown</a>
@@ -898,6 +931,9 @@ Is this happening across all stores across sales region?
 ### Story Points</a>
 
 * [19:52] The
+
+ * http://www.tableau.com/about/blog/2014/5/82-preview-tell-story-your-data-story-points-30761
+
 
 <a name="DistributingContent"> 
 ## Distributing Content</a>
@@ -971,7 +1007,11 @@ TODO: Identify triggers to invoke when the moving average crosses one of the ban
 <strong>Data Blending</strong> is the combination of several data sets for integrated analysis. Although Tableau in 2015 lacked a data modeling diagram view, semantic model development is easy, rapid, intuitive and powerful with one or two combined data sources.
 
 
-<a name=“UI”>
+<a name=“Parameters”>
+## Parameters</a>
+
+
+<a name=“Forecasts”>
 ## Forecasts</a>
 http://www.tableau.com/learn/tutorials/on-demand/forecasting
 
@@ -1083,6 +1123,10 @@ This creates files for this command:
 [8:47] Open IDLE installed with Python.
 
 
+ * http://vizninja.com/2015/11/15/how-to-properly-back-up-your-tableau-server/
+   by Paul Banoub
+
+
 <a name=“Subscriptions”>
 ## Subscriptions</a>
 Tableau allows users to subscribe to dashboards for them to be automatically emailed to them on a schedule.
@@ -1127,6 +1171,26 @@ begins with its Getting Started video.
 
  * https://www.youtube.com/watch?v=fEoB8EIEETQ
    describes Connecting to databases and advanced features.
+
+
+
+<a id="Bloggers">
+## Bloggers</a>
+Those what have taken the time to share their tips and tricks:
+
+ * http://vizpainter.com/
+ * http://vizwiz.blogspot.com/
+ * http://www.vizcandy.ca/
+ * http://vizninja.com/
+ * http://www.dataplusscience.com/TableauReferenceGuide/ by Jeffrey Shaffer 
+ * http://healthintelligence.drupalgardens.com/content/resources/tableau-training by Ramon Martinez
+ * http://www.theinformationlab.co.uk/TraininginTableau1
+
+Tableau has hosted <a target="_blank" href="http://www.tableausoftware.com/public/blog/2014/03/it039s-iron-viz-season-2343"> Iron Viz competitions</a>
+where, over the course of a year, submissions are received for three online viz challenges, each with a different theme and judging criteria. The winner of each challenge earns a spot on stage at Tableau’s fall conference to compete in front of a live, data-savvy audience for the title of Iron Viz Champion.
+
+ * https://www.slalom.com/thinking/iron-viz
+
 
 
 <a id="Resources">
