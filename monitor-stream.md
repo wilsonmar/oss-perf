@@ -12,7 +12,9 @@ so that the data can be exported from ELK for archival (in Amazon Glaciar).
 The data can be re-imported for comparisons among runs.
 
 The steps to create the export from AppDynamics:
-0. Get a service account to make API calls.
+0. <a href="#APIManual">Make API calls manually.</a>
+0. <a href="#SvcAcct">Get a service account to make API calls.</a>
+0. <a href="#APIProgram">Make API calls programatically.</a>
 0. <a href="#APICalls">Craft API calls on a subset</a>
 0. <a href="#APICallPreview">Prevew API execution on desktops.</a>
 0. Craft job to produce the set to load into Logstash/Elastisearch.
@@ -22,6 +24,41 @@ The steps to create the export from AppDynamics:
 0. Compare runs.
 0. Delete data.
 0. Apply to wider scope.
+0. <a href="#BuildJenkins"> Integrate API jobs in Jenkins builds</a>
+
+
+<a name="APIManual">
+## Make API calls manually</a>
+
+After one logs into AppD on a browser, the browser receives an authentication token that it returns to the server on subsequent requests.
+
+So after manually logging in, an API request can be pasted in the URL in the browser to obtain a response.
+
+<a name="SvcAcct">
+## Get a service account to make API calls</a>
+
+
+<a name="APIProgram">
+## Make API calls programmatically</a>
+https://wiki.jenkins-ci.org/display/JENKINS/AppDynamics+Plugin
+
+https://www.appdynamics.com/community/exchange/extension/python-sdk-for-controller-rest-api/
+
+ * Retrieve lists of business applications, tiers, and nodes.
+ * Retrieve metric values as native Python objects.
+ * Find out how many licenses you're using on different tiers.
+ * Build your own automated reports.
+
+<a target="_blank" href="https://www.appdynamics.com/community/exchange/extension/java-sdk-for-controller-rest-api/">
+Controller REST API SDK extension</a> (RESTToolkit.jar in file RESTToolkit.zip)
+ provides a high-level Java interface to accelerate your development of programs that use the AppDynamics REST interface.
+
+See http://www.appdynamics.com/blog/2012/06/26/going-mobile-with-appdynamics-rest-api/
+Going Mobile with AppDynamics REST API 
+to monitor an application that runs on a smart phone.
+
+The code is available at: https://github.com/unixunion/appdyngauges
+Courtesy Kegan Holtzhausen, thank you!
 
 <a name="APICalls">
 ## Craft API calls on a subset</a>
@@ -34,8 +71,19 @@ The steps to create the export from AppDynamics:
 These resources explain how:
 
 * https://docs.appdynamics.com/display/PRO14S/Use+the+AppDynamics+REST+API
+* https://docs.appdynamics.com/display/PRO14S/Example+Integrations+Using+the+AppDynamics+REST+API
 
 <a name="APICallPreview">
 ## Preview API execution</a>
 0. Install the Postman plug-in to Chrome
 https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
+
+
+<a name="BuildJenkins">
+## Integrate API jobs in Jenkins builds</a>
+
+This plugin makes it possible to integrate data from AppDynamics into your Jenkins build.
+The plugin is available at: https://wiki.jenkins-ci.org/display/JENKINS/AppDynamics+Plugin
+Courtesy Miel Donkers, thank you!
+
+
