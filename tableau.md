@@ -127,6 +127,10 @@ that other servers can use to access data.
 
 QUESTION: Can Mobile clients access Tableau Public?
 
+https://gallery.alteryx.com/#!
+is viewed using a <a target="_blank" href="http://www.alteryx.com/download?src=sc113">
+Alteryx Designer</a> Windows client.
+
 The <strong>Tableau Reader</strong> client can read (but not save) packaged workbooks.
 
 These are subject to change at any time, and subject to negotiation. But a little birdie told me ... Tableau Desktop costs $1999. Tableau Server is around $1000 per user or ~$200K for an unlimited user license. Tableau Cloud costs $500/per user per year. The Tableau Cloud plan includes 100 GB of storage. I do not know the storage add-on costs for groups wanting more than 100 GB.
@@ -220,6 +224,13 @@ There are several ways to open a Tableau client program (explained below):
    
    http://kb.tableausoftware.com/articles/knowledgebase/preparing-excel-files-analysis
    has some basic pivoting and cleansing features. 
+
+  Alteryx performs Data blending of multiple and disparate data sources
+ 
+  Alteryx does predictive and spatial analytics with no coding required
+ 
+  Alteryx makes re-useable, modifiable workflows and direct updates to Tableau workbooks.
+  
 
 <a name=“Reshaper”>
 ## Reshaper Add-in</a>
