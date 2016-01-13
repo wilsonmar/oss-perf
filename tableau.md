@@ -458,6 +458,7 @@ Vizzes by bloggers can be published on other sites, such as:
 
 <a name="Choosing"> 
 ## Choosing Attention</a>
+<img width="780" alt="tableau visual significance scale" src="https://cloud.githubusercontent.com/assets/300046/12224389/4ea8a34c-b7ac-11e5-9298-6172e912d36c.png">
 
 This "visual significance scale" is from SAP, 
 but equally applicable for choosing how to convey a point:
