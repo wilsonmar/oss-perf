@@ -103,7 +103,13 @@ Or, if you don't want/need launchctl, you can just run:
 
 <a id="StartServer">
 ## Start server</a>
-0. Start Jenkins to a specific port for HTTP:
+0. Start Jenkins to a specific port for HTTP on a Mac:
+
+ ```
+ jenkins
+ ```
+ 
+ Alternately, on a Windows machine:
 
  ```
  java -jar jenkins.war --httpPort=8081
