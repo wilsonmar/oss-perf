@@ -39,6 +39,36 @@ Cloudbees.com</a> which hosts Jenkins in their cloud.
  
  If Java is not installed on your computer already, it will be installed.
 
+ ```
+==> Downloading http://mirrors.jenkins-ci.org/war/1.632/jenkins.war
+==> Downloading from http://ftp-nyc.osuosl.org/pub/jenkins/war/1.632/jenkins.war
+######################################################################## 100.0%
+==> jar xvf jenkins.war
+==> Caveats
+Note: When using launchctl the port will be 8080.
+
+To have launchd start jenkins at login:
+  ln -sfv /usr/local/opt/jenkins/*.plist ~/Library/LaunchAgents
+Then to load jenkins now:
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.jenkins.plist
+Or, if you don't want/need launchctl, you can just run:
+  jenkins
+==> Summary
+🍺  /usr/local/Cellar/jenkins/1.632: 6 files, 61M, built in 57 seconds
+ ```
+
+0. Verify intallation on a Mac:
+
+ ```
+ which jenkins
+ ```
+ 
+ The response is the location it was installed:
+ 
+ ```
+ /usr/local/bin/jenkins
+ ```
+
 
 <a id="Config">
 ## Configuration</a>
