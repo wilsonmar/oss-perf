@@ -46,13 +46,13 @@ Cloudbees.com</a> which hosts Jenkins in their cloud.
  sudo su jenkins
  ```
 
-Copy your github key to Jenkins .ssh folder
+0. Copy your github key to Jenkins .ssh folder.
 
  ```
  cp ~/.ssh/id_rsa_github* /var/lib/jenkins/.ssh/
  ```
 
- Raname the keys:
+0. Raname the keys:
 
  ```
  mv id_rsa_github id_rsa
