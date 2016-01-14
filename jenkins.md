@@ -17,27 +17,33 @@ Alternatives to Jenkins include Fabric and Capistrano.
 
 <a id="Install">
 ## Installation</a>
-0. Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
+Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
 Cloudbees.com</a> which hosts Jenkins in their cloud.
 
-0. Alternately, to install on RedHat and Centos Linux machines, follow instructions at:
+<a id="Install_Linux">
+### Installation on Linux</a>
+Alternately, to install on RedHat and Centos Linux machines, follow instructions at:
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
- Alternately, install on Mac OSX using Homebrew:
+<a id="Install_Mac">
+### Installation on Macs</a>
+Alternately, install on Mac OSX using Homebrew:
 
  ```
  brew update
  brew install jenkins
  ```
  
- Alternately, install on Windows using <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>:
+<a id="Install_Windows">
+### Installation on Windows</a>
+Alternately, install on Windows using <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>:
  
  ```
  choco install jenkins
  ```
  
- If Java is not installed on your computer already, it will be installed.
+ If Java is not installed on your computer already, it will be installed as a dependency.
 
  ```
 ==> Downloading http://mirrors.jenkins-ci.org/war/1.632/jenkins.war
@@ -72,8 +78,9 @@ Or, if you don't want/need launchctl, you can just run:
 
 <a id="Config">
 ## Configuration</a>
- Jenkins installation options are described at:
- * https://wiki.jenkins-ci.org/display/JENKINS/Starting-and-Accessing+Jenkins
+Jenkins installation options are described at:
+ 
+ * https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
 
  By default, Jenkins stores its configuration files in the user's home folder at `~/.jenkins`.
 

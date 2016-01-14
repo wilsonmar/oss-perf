@@ -32,7 +32,15 @@ The steps to create the export from AppDynamics:
 
 After one logs into AppD on a browser, the browser receives an authentication token that it returns to the server on subsequent requests.
 
-So after manually logging in, an API request can be pasted in the URL in the browser to obtain a response.
+So after manually logging in, an API request can be pasted in the URL in the browser, such as this to list apps for the xxx company instance:
+
+ * https://xxx.saas.appdynamics.com/controller/rest/applications?output=json[{
+  DEFINITION: An "app" within AppD is a system containing several servers and layers.
+
+0. For a list of nodes (servers within a cluster): * https://concur.saas.appdynamics.com/controller/rest/applications/2/nodes?output=JSON
+
+For more examples:
+http://docs.appdynamics.com/display/PRO39/Use+the+AppDynamics+REST+API#UsetheAppDynamicsRESTAPI -ToCopytheRESTURLforaMetric
 
 <a name="SvcAcct">
 ## Get a service account to make API calls</a>
