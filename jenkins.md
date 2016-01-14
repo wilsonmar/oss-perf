@@ -27,7 +27,8 @@ Cloudbees.com</a> which hosts Jenkins in their cloud.
  Alternately, install on Mac OSX using Homebrew:
 
  ```
-brew install jenkins
+ brew update
+ brew install jenkins
  ```
  
  Alternately, install on Windows using <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>:
