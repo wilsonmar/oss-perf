@@ -20,7 +20,7 @@ Alternatives to Jenkins include Fabric and Capistrano.
 0. Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
 Cloudbees.com</a> which hosts Jenkins in their cloud.
 
-0. To install on a RedHat and Centos machines, follow instructions at:
+0. Alternately, to install on RedHat and Centos Linux machines, follow instructions at:
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
