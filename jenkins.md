@@ -24,9 +24,20 @@ Cloudbees.com</a> which hosts Jenkins in their cloud.
 
  * https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
 
- Alternately, installers for Windows, Mac OSX, and other os:
+ Alternately, install on Mac OSX using Homebrew:
 
- * <a target="_blank" href="http://jenkins-ci.org">http://jenkins-ci.org</a>
+ ```
+brew install jenkins
+ ```
+ 
+ Alternately, install on Windows using <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>:
+ 
+ ```
+ choco install jenkins
+ ```
+ 
+ If Java is not installed on your computer already, it will be installed.
+
 
 <a id="Config">
 ## Configuration</a>
