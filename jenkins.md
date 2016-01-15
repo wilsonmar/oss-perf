@@ -32,8 +32,36 @@ Alternately, install on Mac OSX using Homebrew:
 
  ```
  brew update
+ brew doctor
  brew install jenkins
  ```
+
+  A sample response:
+
+  ```
+==> Downloading http://mirrors.jenkins-ci.org/war/1.644/jenkins.war
+==> Downloading from http://ftp-nyc.osuosl.org/pub/jenkins/war/1.644/jenkins.war
+######################################################################## 100.0%
+==> jar xvf jenkins.war
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/jenkins
+/usr/local/bin is not writable.
+
+You can try again using:
+  brew link jenkins
+==> Caveats
+Note: When using launchctl the port will be 8080.
+
+To have launchd start jenkins at login:
+  ln -sfv /usr/local/opt/jenkins/*.plist ~/Library/LaunchAgents
+Then to load jenkins now:
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.jenkins.plist
+Or, if you don't want/need launchctl, you can just run:
+  jenkins
+==> Summary
+🍺  /usr/local/Cellar/jenkins/1.644: 6 files, 61.5M, built in 30 seconds
+  ```
  
 <a id="Install_Windows">
 ### Installation on Windows</a>
@@ -63,7 +91,10 @@ Or, if you don't want/need launchctl, you can just run:
 🍺  /usr/local/Cellar/jenkins/1.632: 6 files, 61M, built in 57 seconds
  ```
 
-0. Verify intallation on a Mac:
+<a id="Verify_install">
+### Verify Installation on Macs and Linux</a>
+
+0. Verify intallation on a Mac or Linux:
 
  ```
  which jenkins
@@ -76,8 +107,8 @@ Or, if you don't want/need launchctl, you can just run:
  ```
 
 
-<a id="Config">
-## Configuration</a>
+<a id="Config_Security">
+## Configure User Security</a>
 Jenkins installation options are described at:
  
  * https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
@@ -89,7 +120,8 @@ Jenkins installation options are described at:
  to add `StrictHostKeyChecking no`.
 
 0. Create a key without a passphrase, per https://help.github.com/articles/generating-ssh-keys/
-1. Login under Jenkins:
+
+0. Login under user named Jenkins (if applicable):
 
  ```
  sudo su jenkins
@@ -98,7 +130,7 @@ Jenkins installation options are described at:
 0. Copy your github key to Jenkins .ssh folder.
 
  ```
- cp ~/.ssh/id_rsa_github* /var/lib/jenkins/.ssh/
+ cp ~/.ssh/id_rsa_github*  /var/lib/jenkins/.ssh/
  ```
 
 0. Raname the keys:
@@ -110,12 +142,16 @@ Jenkins installation options are described at:
 
 <a id="StartServer">
 ## Start server</a>
-0. Start Jenkins to a specific port for HTTP on a Mac:
+0. Start Jenkins using defaults:
 
  ```
  jenkins
  ```
  
+ Add parameters as described in:
+ 
+ * https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
+
  Alternately, on a Windows machine:
 
  ```
@@ -134,8 +170,8 @@ Jenkins installation options are described at:
   netstat -anp | grep java
   ```
 
-<a id="Security">
-## Security</a>
+<a id="Server_Security">
+## Server Security</a>
 This is typically done only by the Administrator of the system.
 
 0. In **Manage Jenkins** UI enter **Configre Global Security**.
@@ -172,8 +208,8 @@ This is typically done only by the Administrator of the system.
 1. Run the box by clicking the icon at the far right of the node listed.
 2. Launch Slave Agent to start the machine.
 
-
-### From a slave node
+<a id="Node_Security">
+### From a slave node</a>
 0. From a slave command line, connect to a Jenkins master:
  
  ```

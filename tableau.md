@@ -22,7 +22,7 @@ Tableau's promo video at http://www.tableau.com/products#video says
  * http://www.qlik.com/us/explore/products/sense
  * http://www.xdat.org/
 
-Garner notes "Tableau does not directly compete with other vendors with a strategy for being a broad BI platform offering. Tableau complements fully functional enterprise BI platforms that lack ADV capabilities."
+Gartner notes "Tableau does not directly compete with other vendors with a strategy for being a broad BI platform offering. Tableau complements fully functional enterprise BI platforms that lack ADV capabilities."
 That is why <a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> This Forrester report (although rather dated from 2012)</a> has Tableau behind strategy:
 
 <img width="550" alt="tableau forrester adv 2013" src="https://cloud.githubusercontent.com/assets/300046/12010835/88925420-ac73-11e5-9797-b0d484db016b.png">
@@ -174,15 +174,15 @@ QUESTION: You don't need to instal Reader if you have Deskstop installed?
 The Server <a target="_blank" href="http://www.tableau.com/products/server/download">
 Download from here</a> only runs within Windows (32 or 64 bit) and uses Active Directory Authentication.
 
-There are several ways to open a Tableau client program (explained below):
+There are several ways to open a Tableau client program:
 
-1. <a href=“#ExcelOpen”>Open Excel from Local Data Folder</a>.
-2. <a href=“#ClientOpen”>Open a Tableau Client Program</a>.
-3. <a href=“#CSVPublicDatasets”> Load CSV from Public Sample Data Sets</a>
+1. <a href=“#ExcelOpen”>Open Excel Samples from Local Data Folder</a>.
+2. <a href=“#ClientOpen”>Open a Tableau Client Program</a> if you have your own file.
+3. <a href=“#CSVPublicDatasets”> Load CSV from Public Sample Data Sets</a>.
 
 
 <a name=“ExcelOpen”>
-## Open Excel from Local Sample</a>
+## Open Excel Samples from Local Data Folder</a>
 
 0. On a Mac, open a new Finder window.
 
@@ -231,6 +231,54 @@ There are several ways to open a Tableau client program (explained below):
  
   Alteryx makes re-useable, modifiable workflows and direct updates to Tableau workbooks.
   
+<a name=“DateAdjustExcel”>
+## Date Adjustments in Excel</a>
+It may be easier to adjust data within Excel before Tableau uses the file, 
+which is a number of seconds from 1970 (not the number since 1970 as Unix uses).
+
+Tableau doesn't read TIME according to  (as of Oct 12, 2015)
+https://community.tableau.com/ideas/3315
+and https://community.tableau.com/ideas/1054
+
+* http://kb.tableau.com/articles/knowledgebase/supported-date-formats
+* http://kb.tableau.com/articles/knowledgebase/fixing-date-fields
+* http://kb.tableau.com/articles/knowledgebase/understanding-the-dateparse-function
+
+Where A2 in the sample is replaced with wherever cell contains a date Excel recognizes,
+to convert the text "2016-01-12" to the internal date number of 42381.00:
+
+ ```
+ =DATEVALUE(LEFT(A2,4)&"-"&MID(A2,6,2)&"-"&MID(A2,9,2))+(NUMBERVALUE(MID(A2,12,2))/24)+(NUMBERVALUE(MID(A2,15,2))/1440)
+ ```
+
+Within Excel, hours and minutes are the decimals of a floating point number,
+such as .88 when the text equivalent is "21:40" on a 24 hour clock:
+
+ ```
+ =(NUMBERVALUE(MID(A2,12,2))/24)
+ ```
+
+To convert 40 minutes into the hour, divide the number of minutes in a day
+(24 * 60 = 1440):
+
+ ```
+ =(NUMBERVALUE(MID(A2,12,2))/24)+(NUMBERVALUE(MID(A2,15,2))/1440)
+ ```
+
+The number for minutes would not be more than 1/24 or 0.041666667.
+
+To convert UTC/GMT times to local time that is -8 hours for Pacific Standard Time (Seattle):
+
+ ```
+ =A2-TIME(8,0,0)
+ ```
+
+   NOTE UTC/GMT times are never adjusted for Daylight Savings, so the number of hours
+   difference changes during the year. During the summer it's 7 hours. See
+   http://www.timeanddate.com/worldclock/converted.html?iso=20160114T00&p1=0&p2=234
+
+   http://www.cpearson.com/excel/TimeZoneAndDaylightTime.aspx
+   The LocalOffsetFromGMT() function 
 
 <a name=“Reshaper”>
 ## Reshaper Add-in</a>
