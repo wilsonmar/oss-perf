@@ -135,8 +135,11 @@ Jenkins installation options are described at:
   ```
 
 <a id="Security">
-## Security</a>
-This is typically done only by the Administrator of the system.
+## User Security</a>
+<img align="right" width="181" alt="jenkins full menu" src="https://cloud.githubusercontent.com/assets/300046/12525765/b4483cbc-c11b-11e5-8053-57556314ff0e.png">
+If you don't see the full menu shown on the right, you don't have some permissions.
+
+As with other systems, granting permissions is typically done only by the Administrator of the system.
 
 0. In **Manage Jenkins** UI enter **Configre Global Security**.
 0. Check Enable Security.
