@@ -80,7 +80,7 @@ Let's create a new job for a hands-on understanding of the tool.
 
 0. In the Dashboard list, click on the (tiny) drop-down button for the drop-down context menu of a project.
 
- <img width="321" alt="jenkins-build-dropdown" src="https://cloud.githubusercontent.com/assets/300046/11172423/8cffff32-8bc4-11e5-9e3b-4c92b9f7b3a1.png">
+ <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
 0. Select <strong>Configure</strong>.
 <a id="ScheduleBuild">
 ## Schedule builds</a>
@@ -103,10 +103,6 @@ Let's create a new job for a hands-on understanding of the tool.
 
 0. Click Configure in the context menu or in the left menu.
 
- In the workspace for a project are folders and **.trx** files output from Jenkins runs.
- 
-Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
-
 A build can be triggered for invocation several ways.
 0. Click the button with the green arrow.
  
@@ -127,6 +123,8 @@ In a Configure screen:
   * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
   sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
+ In the workspace for a project are folders and **.trx** files output from Jenkins runs.
+ 
 If a job fails, 
 0. Email notifications are sent if <strong>Editable Email Notification</strong> is selected.
 0. Parameters defined earlier can be specified in the Default Content field:
@@ -144,6 +142,8 @@ ${FILE,path="Results.trx.htm"}
  
 * https://github.com/jenkinsci/slack-plugin
    can be installed to send chat room (Slack) notifications.
+
+Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
 
 <a id="Reports">
