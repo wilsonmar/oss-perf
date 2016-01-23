@@ -191,6 +191,256 @@ reports that native compiled Java runs twice faster than JSR233/Groovy and BeanS
 
 
 
+## <a name="ViewResultTree"> View Result Tree</a>
+1) This was created by right-clicking Thread Group, then Listeners, View Result Tree element.
+
+  This captures details on each request and response.
+  
+  QUESTION: Can JMeter capture in a buffer and not display unless there is an error, like what LoadRunner does?
+
+2) Click on an exchange, typically "HTTP Request".
+
+3) Click on Request.
+
+  This details the URL end-point, such as `http://localhost:9999/bottle`
+  and the JSON-formatted POST data, which you can toggle between Raw and HTTP.
+  
+  `Content-Type: application/json` means that 
+  JSON data is expected back.
+
+4) Click on Sampler result.
+
+  The expected response header is `HTTP/1.0 200 OK`.
+
+5) Click on Response Data.
+
+  "Cheers!" is what the server.py program returns.
+
+NOTE: This detail for every request/response exchange is expensive to capture and store.
+
+
+
+
+
+## <a name="ThreadGroups"> Thread Groups</a>
+Load on servers is imposed by activities within various program <strong>thread</strong>.
+The more threads, the more virtual users are being simulated.
+
+1) Create the <strong>Thread Group</strong> for the Test Plan: 
+Right-Click on Test Plan to select <strong>Edit | Add</strong> to create a <strong>Thread Group</strong>.
+
+  NOTE: Thread groups define the metadata
+
+2) In the current situation (for recording described below), use 1 user and loop count 1.
+
+3) PROTIP: Change the Thread Group's name to summarize the various settings, 
+   such as "1UserRecorded".
+
+4) Depending on the type of test, change the <strong>Ramp-up period</strong> 
+   to provide one second per user. For example, for 2 users, specify 2 seconds.
+   For now, leave the default of 1.
+
+Add directory to jar or classpath
+
+
+## <a name="Workbench"> Workbench</a>
+WorkBench is a temporary space to store a test plan's elements,
+such as requests recorded (captured) by a proxy and converted into commands.
+
+Below is a remix of
+https://chipcorrera.wordpress.com/2010/01/25/using-jmeter-and-firefox-to-load-test/
+by Chip Correra and
+http://jmeter.apache.org/usermanual/jmeter_proxy_step_by_step.pdf
+
+
+1) Get Firefox to use the JMeter proxy ???
+
+Now, lets set up Firefox to proxy actions. Bring up the Firefox browser and 
+  under Tools/options/advanced tab/network tab/settings button/”Manual proxy configuration”
+  + Set 127.0.0.1 port 9090
+  + Enable the “Use this proxy for all protocols” check box.
+
+
+2) Configure Internet Options to define Manual proxy configuration to localhost port 8080.
+
+3) Right-click on Workbench to Add | <strong>Non-test Elements | HTTP(S) Test Script Recorder</strong>.
+
+4) Right-click on Recorder to Add | <strong>Logic Controller | Recording Controller</strong>
+    (Once Only Controller)
+    If your application has a user login which generates session cookies,
+    otherwise skip this step and the next.
+
+  This conveniently packages all samples under one controller, which can be given a name that describes the test case.
+
+5) Right-clock Thread Group to Add | Config Element | HTTP Request Defaults.
+  This applies to your entire test suite.
+
+6) Specify <strong>Server Name or IP</strong> address and any required port #.
+
+  Other tutorials use google.com or jmeter.apache.org.
+  One live demo WebSockets website is 
+
+7) Add a HTTP Cookie Manager config element
+    This can be used to control and manage the cookie policy across the test.
+
+8) Add a HTTP Request Sampler to the Once Only Controller
+    Specify the protocol method (put/get), path to the request and any parameters
+
+9) Test Plan > Add > Listener > Aggregate Report.
+
+11) Right-click Workbench to Add | Non-Test Element | HTTP Proxy Server
+  + Port 9090
+  + Target Controller: Thread Group > Recording Controller
+  + Patterns to include: Click Add then enter “.*”
+
+12) Under HTTP Proxy Server, Add > Timer > Gaussian Random Timer
+  + Set Constant Delay Offset (in milliseconds): ${T}
+
+And when ready to start recording the browser action just bring up the HTPP Proxy Server within JMeter and click Start. Everything that is done within Firefox will be recorded in JMeter’s recording controller. When done, just click the Stop button on the HTTP Proxy Server within JMeter.
+
+
+## <a name="TestPlan"> Test Plan Elements</a>
+JMeter invokes <strong>Test Plans</strong>
+
+Test Plans are equivalent to what LoadRunner call Scenarios
+which references all that is required to run a test.
+
+Test Plans are XML files.
+
+Open an existing Test Plan group () to be executed.
+
+Select menu Edit | Add | Thread Group.
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8502621/c48a5aca-216f-11e5-860a-fb57d757bb4e.png">
+<img src="https://cloud.githubusercontent.com/assets/300046/8502621/c48a5aca-216f-11e5-860a-fb57d757bb4e.png"
+/></a>
+
+To group tests by functional or technical logic together,
+a test plan can contain other test plans.
+Each test plan can be selectively disabled for execution.
+
+Within each <strong>test plan</strong> are these elements:
+
+0. <a href="#Samplers"> Samplers</a>
+1. <a href="#ConfigNodes"> Configuration Nodes</a>
+2. <a href="#Preprocessors"> Pre-processors</a>
+3. <a href="#Timers">Timers</a>
+
+  If results are available: 
+
+5. <a href="#PreProcessors"> Post processors</a>
+6. <a href="#Assertions"> Assertions</a>
+7. <a href="#Listeners"> Listeners</a>
+
+
+
+## <a name="Samplers"> Samplers</a>
+JMeter <strong>samplers</strong> emulate real clients by sending (a lot of) requests to servers.
+
+
+
+## <a name="ConfigNodes"> Configuration Nodes</a>
+Nodes are associated with 
+different parameters passed into sampler request code by using 
+<strong>configuration elements</strong> which provide values to
+<strong>variables</strong> referenced by sampler code.
+
+Save Node as Image 
+
+
+## <a name="LogicControllers"> Logic Controllers</a>
+The order of execution of different samplers is controlled by
+<strong>Logic controllers</strong>: 
+If, While, FoEach, Loop, Random, etc.
+
+
+## <a name="Timers"> Timers</a>
+The time period to wait between requests are defined by <strong>timers</strong>,
+also known as "think time" in LoadRunner.
+By default, requests are executed immediately one after another without any waiting time.
+
+
+## <a name="PreProcessors"> Pre-Processors</a>
+Before a sampler is executed, elements (actions, assertions or basically whatever) that is going to happen 
+are defined in <strong>pre-processors</strong> which
+extract variables from a response that can be used in the sampler afterwards via configuration elements.
+
+Pre-processor is able to create variables for the next steps (sampler or any other entity in current thread group), something like vars.put("variable_name", "variable_value") in the pre-processor followed by ${variable_name} wherever you need to refer it. 
+
+## <a name="BSFPreProcessors"> BSF Pre-Processors</a>
+
+  BSF is the Bean Scriptingl Framework at http://beanshell.org/manual/bsf.html
+  and http://commons.apache.org/proper/commons-bsf/
+  and https://en.wikipedia.org/wiki/Bean_Scripting_Framework
+  
+ It is generic framework that allows many scripting languages to be plugged into an application. It shields the application from knowledge of how to invoke the scripting languages and their APIs, via adapter "engines". 
+  BeanShell dynamically executes Java code (is a Lightweight embedded Java source interpreter that).
+  for Java per [JSR223](http://jcp.org/en/jsr/detail?id=274)
+  described on http://www.drdobbs.com/jvm/jsr-223-scripting-for-the-java-platform/215801163
+  
+  BSP supports dynamic execution of JavaScript, achieved using Mozilla Rhino engine (from 
+  https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
+  which is also used in Oracle JVM.
+ 
+ However, it is recommended that for "heavy" operations it's better to use JSR223 Sampler and Groovy as a language.
+ See https://blazemeter.com/blog/beanshell-vs-jsr223-vs-java-jmeter-scripting-its-performance
+ 
+  It uses the ScriptEngine interface which became available in Java 6.
+ 
+## <a name="PostProcessors"> Post-Processors</a>
+After a sampler execution finishes,
+response data from the server can be parsed to extract values 
+by <strong>post-processors</strong>.
+
+
+## <a name="Listeners"> Listeners</a>
+Output from samplers to tables, trees, or plain log files are formatted by
+<strong>listeners</strong>
+provide different ways to view the results produced by a Sampler requests. 
+
+
+## <a name="Attributes"> Attributes</a>
+In the various listeners,
+sample results have various attributes (success/fail, elapsed time, data size etc).
+
+
+## <a name="Assertions"> Assertions</a>
+Validation of the validity of what was returned from the server is done by 
+<strong>assertions</strong>, which are based on the format of the response.
+
+VIDEO: 
+https://www.youtube.com/watch?t=74&v=kKnLsKpHn0Y (Dec. 11, 2015)
+provides a 30-minute introduction to various assertions:
+Duration, Size, XML, HTML, Response, XPath Compare.
+
+
+## <a name="SimulateJavaScript"> Simulate JavaScript</a>
+JMeter does not execute JavaScript.
+
+If JavaScript is downloaded from the server, JMeter can only parse it for data.
+
+
+
+## <a name="SetupThreadGroup"> Setup Thread Group</a>
+If there is work to do just once before iterating through,
+  select menu <strong>Edit | Add</strong> to create a <strong>setUp Thread Group</strong>.
+  This is similar to the LoadRunner VuserInit action.
+
+## <a name="tearDownThreadGroup"> tearDown Thread Group</a>
+Create a <strong>tearDown Thread Group</strong> to execute once.
+This is similar to the LoadRunner VuserEnd action.
+
+
+## Others
+Start no pauses.
+
+Maven build tool which manages dependencies.
+
+QUESTION: Who is working on JMeter's use of "Nashon" Groovy and Ruby engine in Java 8.
+Its REPL (Read, Eval, Print Loop) shell (jjs> prompt) interactively inteprets JavaScript inside Java programs.
+
+http://janalyser.com/
+
 <a id="TestPlan">
 ## Create JMeter Test Plan</a>
 To JMeter, a Test Plan is equivalent to a .jmx file.
