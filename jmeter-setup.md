@@ -1,7 +1,7 @@
 This page describes how to install JMeter.
 
 ## Contents
-0. <a href="EProvisioningOptions"> Options to provision JMeter slave machines</a>.
+0. <a href="#ProvisioningOptions"> Options to provision JMeter slave machines</a>.
 0. <a href="#Java"> Java SDK Pre-requisite</a>
 0. <a href="#Download4Mac"> Download JMeter for Macs</a>
 0. <a href="#Download4PC"> Download JMeter for PCs</a>
