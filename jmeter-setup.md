@@ -27,13 +27,25 @@ This page describes how to install JMeter.
 ## Options to provision JMeter slave machines</a>
 JMeter is available several ways (each explained below):
 
+   * <a href="#ManualInstall">Manually download and invoke setup of several steps.
    * <a href="#PackageInstall">Download and install using package managers Homebrew and Chocolatey</a>.
-   * Locally (on a laptop) after download, installation, and configuration.
    * Locally running within a virual container such as Vagrant on a laptop.
    * In a PaaS (Platform as a service) running under Docker control.
    * In a SaaS service such as what <a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a> provides.
 
 <hr />
+
+<a href="#ManualInstall">
+## Manually download and invoke setup of several steps.
+
+You can follow what <a target="_blank" href="http://zacster.blogspot.com/2008/03/quick-howto-to-setup-jmeter.html">
+Zac explained in 2008</a> and download from a mirror website on the
+<a target="_blank" href="http://jmeter.apache.org/download_jmeter.cgi"> 
+Apache download web page</a>,
+then unzip, create a folder, move it, etc. and click OK through the setup program.
+
+PROTIP: It's simpler to use a package manager (see below).
+
 
 <a id="PackageInstall">
 ## Install using package managers</a>
