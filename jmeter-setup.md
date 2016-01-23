@@ -1,5 +1,8 @@
 This page describes how to install JMeter.
 
+Scripts are useful to save time and avoid mistakes, 
+thus reducing troubleshooting frustrations.
+
 ## Contents
 0. <a href="#ProvisioningOptions"> Options to provision JMeter slave machines</a>.
 0. <a href="#Java"> Java SDK Pre-requisite</a>
@@ -112,10 +115,26 @@ http://jmeter.lazerycode.com/
   <a target="_blank" href="https://chocolatey.org/">https://chocolatey.org</a>.
 0. Copy the whole @powershell command.
 0. Open a command window
-1. Paste the command to install Chocolatey.
-0. Exit the command.
+0. Paste the command to install Chocolatey.
+0. Exit the browser.
 
-### Using Chocolatey on Windows:
+#### <a name="JavaWindows"> Java SDK Windows Pre-requisite</a>
+JMeter was written in Java. 
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+The path to the Java bin folder must be in the system PATH environment variable
+so Java executables can be found. See https://wiki.apache.org/jmeter/TestRecording210
+
+The path to JVM_HOME also needs to be defined, such as:
+
+   ```
+set JAVA_HOME=C:\jdk1.7.0_45
+   ```
+
+This is the same across operating systems, which is why JMeter can run on PC and Mac.
+
+
+#### <a name="JMeterWindows"> JMeter on Windows</a>
 0. Open a command window.
 0. From the default folder (or anywhere), type or run this command (described at https://chocolatey.org/packages?q=jmeter).
   (Instead of `choco install jmeter -y`):
@@ -132,21 +151,6 @@ http://jmeter.lazerycode.com/
 
 NOTE: Instructions here are based on Jmeter version 2.1.2 downloaded June 30, 2015.
 
-
-## <a name="Java"> Java SDK Pre-requisite</a>
-JMeter was written in Java. 
-http://www.oracle.com/technetwork/java/javase/downloads/index.html
-
-The path to the Java bin folder must be in the system PATH environment variable
-so Java executables can be found. See https://wiki.apache.org/jmeter/TestRecording210
-
-The path to JVM_HOME also needs to be defined, such as 
-
-   ```
-set JAVA_HOME=C:\jdk1.7.0_45
-   ```
-
-This is the same across operating systems, which is why JMeter can run on PC and Mac.
 
 
 <a name="Blazemeter">
@@ -170,8 +174,7 @@ JMeter machines need significant network bandwidth and memory.
 Usually many JMeter servers need to be used to generate enough load to 
 stress out an application infrastructure.
 
-Scripts are useful to save time and avoid mistakes, 
-thus reducing troubleshooting frustrations.
+
 
 <a id="GrantAccess">
 ## Grant Access to server</a>
