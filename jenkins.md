@@ -4,16 +4,23 @@ such as for building software and conducting tests.
 
 This is also called <strong>continuous integration</strong> because Jenkins
 is used to ensure that components already unit-tested can be integrated together.
+See <a target="_blank" href="http://pluralsight.com/training/courses/TableOfContents?courseName=continuous- integration">
+Pluralsight course by James Kovacs</a>
 
-Experienced people warn to not check in code that breaks things (fails even local unit testing).
+Experienced people warn to NOT check in code that breaks things (fails even local unit testing).
 This is achieved by having each developer having full capabilities,
 which may mean using mock code.
+
+<a id="Alternatives">
+## Alternatives</a>
+Jenkins began in 2010 as a fork of Hudson into Github from java.net after its acquisition by Oracle's purchase of Sun.
+
+* http://jenkins-ci.org/content/whos-driving-thing
 
 Alternatives to Jenkins include Fabric and Capistrano.
 
  * https://isotope11.com/blog/continuous-deployment-at-isotope11-an-update
    Continuous deployment at Isotope11.
-
 
 <a id="Install">
 ## Installation</a>
@@ -175,8 +182,8 @@ Jenkins installation options are described at:
   netstat -anp | grep java
   ```
 
-<a id="Security">
-## User Security</a>
+<a id="AddUser">
+## Add User Permissions</a>
 <img align="right" width="181" alt="jenkins full menu" src="https://cloud.githubusercontent.com/assets/300046/12525765/b4483cbc-c11b-11e5-8053-57556314ff0e.png">
 If you don't see the full menu shown on the right, you don't have some permissions.
 
@@ -242,16 +249,23 @@ As with other systems, granting permissions is typically done only by the Admini
 <a id="Builds">
 ## Build Projects</a>
 Jenkins was originally created for automating the building (compilation) of java programs.
-But Jenkins can be used for other types of work.
-Nevertheless, the Jenkins term "build" is another word for what operating systems call a "job" (unit of work).
+But Jenkins is ALSO used for other types of work.
+Nevertheless, the Jenkins term <strong>"build"</strong> 
+is another word for what operating systems call a <strong>"job"</strong> (unit of batch work).
 
-Builds can be automatically triggered several ways:
+Builds/jobs can be automatically triggered several ways:
 
  * after other projects
  * periodically on a schedule
  * poll a version control system for changes
 
-Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
+<a id="NewJob">
+## New Job</a>
+Let's create a new job for a hands-on understanding of the tool.
+
+
+
+
 
 
 <a id="Plugins">
@@ -280,6 +294,17 @@ The flow for programming code may includ **static code analysis**
 This provides options on what violations to report. 
 
 
+<a id="Post-Build">
+## Post-build actions</a>
+  * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
+  sets the final build status (as good, unstable or failed) based on the reported error percentage. 
+
+If a job fails, 
+0. Email notifications are sent
+1. Chat room notifications are sent
+
+
+
 <a id="ScheduleBuild">
 ## Schedule builds</a>
 0. Right-click on a project for a drop-down list containing **workspace**.
@@ -290,6 +315,8 @@ This provides options on what violations to report.
 
  In the workspace for a project are folders and **.trx** files output from Jenkins runs.
  
+Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
+
  
 <a id="Reports">
 ## Reports</a>
@@ -310,15 +337,6 @@ This provides options on what violations to report.
  ```
  http://localhost:8081/job/Hellow%20World/27/
  ```
-
-<a id="Post-Build">
-## Post-build actions</a>
-  * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
-  sets the final build status (as good, unstable or failed) based on the reported error percentage. 
-
-If a job fails, 
-0. Email notifications are sent
-1. Chat room notifications are sent
 
 
 <a id="Resources">
