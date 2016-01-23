@@ -14,6 +14,9 @@ Let's create a new job for a hands-on understanding of the tool.
 ## Job Status</a>
 <img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
 
+CAUTION: Don't click <strong>Build with Parameters</strong> if you're just looking around
+because that invokes the build job.
+
 Click on an existing job to see the status screen.
 To get back to this screen, click Status link on the left menu.
 
