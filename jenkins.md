@@ -181,6 +181,10 @@ Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 <a id="Artifactory">
 ## Output to Artifactory</a>
 
+* https://wiki.jenkins-ci.org/display/JENKINS/Artifactory+Plugin
+* 
+
+
 
 <a id="ELK">
 ## Output to ELK Stack</a>
