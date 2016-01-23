@@ -19,11 +19,12 @@ This page describes how to install JMeter.
 
 <a id="Provision">
 ## Provision JMeter slave machines</a>
-JMeter can be made available several ways:
+JMeter is available several ways (each explained below):
 
-   * Locally on a laptop after direct install, as explained below.
+   * Locally (on a laptop) after install using Chocolatey.
+   * Locally (on a laptop) after download, installation, and configuration.
    * Locally running within a virual container such as Vagrant on a laptop.
-   * In a PaaS (Platform as a service) cloud under Docker control.
+   * In a PaaS (Platform as a service) running under Docker control.
    * In a SaaS service such as what <a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a> provides.
 
 WARNING: Because of what they do (pretending to be many clients), 
