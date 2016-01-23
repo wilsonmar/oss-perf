@@ -17,11 +17,35 @@ thus reducing troubleshooting frustrations.
 0. <a href="#GrantAccess">Grant Access to server</a>
 0. <a href="#AccessMachine">Access headless JMeter server remotely</a>
 
-0. <a href="#Addons">Install add-ons</a>
-0. <a href="#Properties">Properties configuration</a>
+0. <a href="#InvokeUI"> Invoke JMeter UI</a>
+0. <a href="#TestPlanFolders"> Test Assets Folders</a>
+0. <a href="#GetSampleTest"> Get Sample Test Assets from Github</a>
+0. <a href="#SetupServerUnderTest"> Setup Python Server Under Test</a>
+0. <a href="#ExamineAppCode"> Examine Sample App Code</a>
+0. <a href="#ExamineSampleTest"> Examine Sample Test Plan Assets</a>
+0. <a href="#PythonSetup"> Setup for Python</a>
+0. <a href="#JMeterUI"> JMeter UI Run</a>
+0. <a href="#RunBatch"> Run in Batch Mode</a>
+0. <a href="#ViewLog"> View Log File</a>
+0. <a href="#ViewResultTree"> View Result Tree</a>
+0. <a href="#NewTestPlan"> New Test Plan</a>
+0. <a href="#ThreadGroups"> Thread Groups</a>
+0. <a href="#Workbench"> Workbench</a>
+0. <a href="#TestPlan"> Test Plan Elements</a>
+0. <a href="#Samplers"> Samplers</a>
+0. <a href="#ConfigNodes"> Configuration Nodes</a>
+0. <a href="#LogicControllers"> Logic Controllers</a>
+0. <a href="#Timers"> Timers</a> (to add delays)
+0. <a href="#PreProcessors"> Pre-Processors</a>
+0. <a href="#PostProcessors"> Post-Processors</a>
+0. <a href="#Listeners"> Listeners</a> (for reporting, logging, debugging)
+0. <a href="#Attributes"> Attributes</a>
+0. <a href="#Assertions"> Assertions</a> (for error checking)
+0. <a href="#SimulateJavaScript"> Simulate JavaScript</a>
+0. <a href="#SetupThreadGroup"> Setup Thread Group</a>
+0. <a href="#tearDownThreadGroup"> tearDown Thread Group</a>
 
-0. Ensure enough disk space is available.
-0. Periodic archival and clean-up.
+1. <a href="#Resources">Resources for learning</a>
 
 
 <hr />
@@ -735,7 +759,7 @@ In this example, the output file as 211,148 bytes:
 
 
 <a name="Resources">
-## Resources</a>
+## Resources for learning</a>
 
 * http://www.javacodegeeks.com/2014/11/jmeter-tutorial-load-testing.html
 * https://www.youtube.com/watch?t=933&v=8D6nKml88vE by Ashish Takur, who also published paid content at
