@@ -1,13 +1,20 @@
 This page takes a hands-on approach to learn usage of Jenkins as setup in <a href="jenkins-setup.md">jenkins-setup</a>.
 
+Rather than inundating you with all items on each screen, this tutorial takes you to several screens invovled with each of several themes, such as Parameters, Git connection, Coverage, etc.
+
+
 <a id="Tabs">
 ## View Tabs</a>
 To group jobs into separate page views, click on the [+] at the top.
 
-There are two ways to reach the same screen.
+There are two or more ways to reach each prticular screen.
 
 <a id="JobStatus">
 ## Job Status</a>
+In the list of jobs (Dashboard), different icons are used
+
+0. For smaller icons, click the S among S | M | L at the bottom of the list.
+
 0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see the status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
@@ -16,11 +23,6 @@ There are two ways to reach the same screen.
 
 0. Clicking <strong>Recent Changes</strong> on the Status screen is the same as clicking Changes on the left menu.
 0. Click Status on the left menu to return to the higher level screen.
-
-0. Click either <strong>Workspace</strong> link to view input files (pulled from Github).
-0. Click the cookie crumbs link at the top to return to the job status screen.
-
-0. Click the Coverage Trend link at the left menu. It does not display if the add-on is not installed.
 
    CAUTION: If you're just looking around, don't click the Disable button on the right or the Delete button on the left menu.
 
@@ -34,18 +36,38 @@ There are two ways to reach the same screen.
    CAUTION: Don't click <strong>Build</strong> if you're just looking around
    because that invokes the build job. 
 
+0. Escape the page by click the <strong>Coverage Trend</strong> link at the left menu. 
 
-   On the Status screen, notice the "Last build" under Permanlinks is a generic link for 
+   It does not display if the add-on is not installed.
+
+0. Click the "Last build" under Permanlinks. Notice it is a generic link for 
    the link at the top of the Build History at the left.
 
 <a id="BuildStatus">
 ## Individual Build Status</a>
 <img align="left" width="183" alt="jenkins build menu" src="https://cloud.githubusercontent.com/assets/300046/12532074/83e3a850-c1bf-11e5-836e-444ffff39424.png">
 
+0. Click <strong>Parameters</strong> to review the parameter values used in this particular run.
+0. Click <strong>Git Build Data</strong> for the code which uniquely identifies the data used to drive this particular build.
+1. Click the # listed in the breadcrumbs bar.
+2. Click <strong>Git Build Data</strong> for the same information.
 
-<a id="TestResults">
-## Test Results</a>
+3. Click the link to the job in the breadcrumbs bar to skip a level up.
+<a id="Workspace">
+## Workspace from Git</a>
+0. Click either <strong>Workspace</strong> link to view input files (pulled from Github).
+0. Click the job name in the cookie crumbs link at the top to return to the job status screen.
+0. Click a run # on the left menu.
+<a id="TestResult">
+## Test Result</a>
+0. Click <strong>Test Result</strong>.
 
+   Notice it's an expansion of items shown in the Workspace shown above.
+
+0. Click <strong>History</strong> on the left menu.
+
+   This lists the history for each <strong>run</strong> its duration and count of <strong>steps</strong> in each run.
+   These details are not shown in the list at the job level.
 
 <a id="Post-Build">
 ## Post-build actions</a>
