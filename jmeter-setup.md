@@ -26,10 +26,13 @@ JMeter can be made available several ways:
    * In a PaaS (Platform as a service) cloud under Docker control.
    * In a SaaS service such as what <a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a> provides.
 
-Whereever they are, machines need significant network bandwidth and memory.
+WARNING: Because of what they do (pretending to be many clients), 
+JMeter machines need significant network bandwidth and memory.
+Usually many JMeter servers need to be used to generate enough load to 
+stress out an application infrastructure.
 
-Usually several JMeter servers need to be used to generate enough load to stress out an application infrastructure.
-So Puppet scripts are useful to save time and avoid mistakes, thus reducing troubleshooting frustrations.
+Scripts are useful to save time and avoid mistakes, 
+thus reducing troubleshooting frustrations.
 
 <a id="GrantAccess">
 ## Grant Access to server</a>
@@ -43,49 +46,19 @@ So Puppet scripts are useful to save time and avoid mistakes, thus reducing trou
 ## Installation on laptops</a>
 This is done by a user with admin permissions.
 
-On a Mac, use Homebrew:
+0. On a Mac, use Homebrew:
    
    ```
    brew install jmeter
    ```
 
-On Windows, use Chocolatey:
+0. Alternately, on Windows, use Chocolatey:
    
    ```
    cinst jmeter
    ```
 
-<a id="ConfigurePath">
-### Configure Path</a>
-This is so the jmeter command can be processed from any folder (including where Jmeter .jmx files are stored).
-
-0. Verify where Jmeter is installed:
-
-   ```
-   which jmeter
-   ```
-   
-   The response (on a Mac):
-   
-   `/usr/local/bin/jmeter`
-   
-
-<a id="InitialRun">
-### Invoke JMeter UI</a>
-0. Position the present active directory to JMeter's bin folder:
-
-  ```
-  cd bin
-  ```
-
-0. Invoke the shell command:
-
-  ```
-  jmeter
-  ```
-
-  Windows uses jmeter.bat.
-  Mac OSX uses jmeter.sh.
+0. Either way, continue on to invoke the JMeter UI.
 
 
 <a id="ServerInstall">
@@ -230,6 +203,96 @@ export DISPLAY=:0.0
   
    NOTE: JMeter runs from the terminal window. Destroy the terminal window and JMeter GUI will go away too.
 
+
+<a name="InitialRun">
+## Invoke JMeter UI</a>
+This is so the jmeter command can be processed from any folder (including where Jmeter .jmx files are stored).
+
+0. To verify that the jmeter command is installed:
+
+   ```
+   which jmeter
+   ```
+   
+   The response (on a Mac):
+   
+   `/usr/local/bin/jmeter`
+   
+0. Copy the output to your clipboard.
+0. View the invocation file:
+Position the present active directory to JMeter's bin folder:
+
+  ```
+  vi /usr/local/bin/jmeter
+  ```
+
+  The editor window should show:
+
+   ```
+#!/bin/bash
+exec "/usr/local/Cellar/jmeter/2.13/libexec/bin/jmeter" "$@"
+   ```
+
+   Thus, when jmeter is invoked, it is called from the Homebrew Cellar.
+
+   The $@ processes <a name="CmdLineOptions">additional command line options</a>
+   specified with the jmeter command.
+
+0. Exit the editor by typing <strong>:q</strong>.
+0. Invoke the shell command:
+
+  ```
+  jmeter
+  ```
+
+  * Mac OSX uses jmeter.sh.
+
+  * Windows uses jmeter.bat.
+
+  The JMeter UI should appear in a new window after this:
+
+```
+log_file=jmeter.log java.io.FileNotFoundException: jmeter.log (Permission denied)
+[log_file-> System.out]
+2015/11/11 14:29:25 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/2.13/libexec/bin/user.properties 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/2.13/libexec/bin/system.properties 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Version 2.13 r1665067 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: java.version=1.8.0_60 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.name=Mac OS X 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.arch=x86_64 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.version=10.10.5 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: JMeterHome=/usr/local/Cellar/jmeter/2.13/libexec 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: user.dir  =/usr/local/bin 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: PWD       =/usr/local/bin 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: IP: 10.2.41.166 Name: 15mbp-10681 FullName: 10.2.41.166 
+2015/11/11 14:29:25 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: com.apple.laf.AquaLookAndFeel [Mac OS X, System] 
+2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2015/11/11 14:29:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2015/11/11 14:29:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2015/11/11 14:29:27 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2015/11/11 14:29:28 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.control.gui.WebServiceSamplerGui 
+2015/11/11 14:29:28 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.modifier.gui.ParamModifierGui 
+2015/11/11 14:29:28 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2015/11/11 14:29:28 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /usr/local/Cellar/jmeter/2.13/libexec/bin/proxyserver.jks 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+```
+
+
 <a id="TestFolder">
 ## Create run assets folder</a>
 0. To ensure that jmeter can be invoked from this data folder, add it to the end of the server's program path:
@@ -292,49 +355,85 @@ export DISPLAY=:0.0
 0. Verify jmeter can be invoked from a data folder:
 
    ```
-   jmeter -version
+   jmeter --version
    ```
 
-```
-log_file=jmeter.log java.io.FileNotFoundException: jmeter.log (Permission denied)
-[log_file-> System.out]
-2015/11/11 14:29:25 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/2.13/libexec/bin/user.properties 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/2.13/libexec/bin/system.properties 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: Version 2.13 r1665067 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: java.version=1.8.0_60 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.name=Mac OS X 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.arch=x86_64 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: os.version=10.10.5 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: file.encoding=UTF-8 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: Default Locale=English (United States) 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: JMeterHome=/usr/local/Cellar/jmeter/2.13/libexec 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: user.dir  =/usr/local/bin 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: PWD       =/usr/local/bin 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: IP: 10.2.41.166 Name: 15mbp-10681 FullName: 10.2.41.166 
-2015/11/11 14:29:25 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: com.apple.laf.AquaLookAndFeel [Mac OS X, System] 
-2015/11/11 14:29:25 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
-2015/11/11 14:29:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
-2015/11/11 14:29:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
-2015/11/11 14:29:27 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
-2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
-2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
-2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
-2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
-2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
-2015/11/11 14:29:28 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
-2015/11/11 14:29:28 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.control.gui.WebServiceSamplerGui 
-2015/11/11 14:29:28 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.modifier.gui.ParamModifierGui 
-2015/11/11 14:29:28 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
-2015/11/11 14:29:28 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /usr/local/Cellar/jmeter/2.13/libexec/bin/proxyserver.jks 
-2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
-2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
-2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
-2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
-```
+   The response is a 
+
+<a name="CmdLineOptions">
+## JMeter Command Line Options</a>
+
+
+   ```
+Usage
+  -h, --help
+    print usage information and exit
+  -v, --version
+    print the version information and exit
+  -p, --propfile <argument>
+    the jmeter property file to use
+  -q, --addprop <argument>
+    additional JMeter property file(s)
+  -t, --testfile <argument>
+    the jmeter test(.jmx) file to run
+  -l, --logfile <argument>
+    the file to log samples to
+  -j, --jmeterlogfile <argument>
+    jmeter run log file (jmeter.log)
+  -n, --nongui
+    run JMeter in nongui mode
+  -s, --server
+    run the JMeter server
+  -H, --proxyHost <argument>
+    Set a proxy server for JMeter to use
+  -P, --proxyPort <argument>
+    Set proxy server port for JMeter to use
+  -N, --nonProxyHosts <argument>
+    Set nonproxy host list (e.g. *.apache.org|localhost)
+  -u, --username <argument>
+    Set username for proxy server that JMeter is to use
+  -a, --password <argument>
+    Set password for proxy server that JMeter is to use
+  -J, --jmeterproperty <argument>=<value>
+    Define additional JMeter properties
+  -G, --globalproperty <argument>=<value>
+    Define Global properties (sent to servers)
+    e.g. -Gport=123
+     or -Gglobal.properties
+  -D, --systemproperty <argument>=<value>
+    Define additional system properties
+  -S, --systemPropertyFile <argument>
+    additional system property file(s)
+  -L, --loglevel <argument>=<value>
+    [category=]level e.g. jorphan=INFO or jmeter.util=DEBUG
+  -r, --runremote
+    Start remote servers (as defined in remote_hosts)
+  -R, --remotestart <argument>
+    Start these remote servers (overrides remote_hosts)
+  -d, --homedir <argument>
+    the jmeter home directory to use
+  -X, --remoteexit
+    Exit the remote servers at end of test (non-GUI)
+   ```
+
+0. Specify settings as appropriate:
+
+   * **remote_hosts** - remote JMeter hosts, separated by commas.
+
+   * **not_in_menu**  - With the help of this you can customize your JMeter by allowing only those components to display which you want to by listing their classname or their class label.
+
+   * **user.properties** - Addition JMeter properties are contained in this file and are added before the -q and -J options are processed and after the initial property file.
+
+   * **xml.parser** - The default value is: org.apache.xerces.parsers.SAXParser. An implementation can be specified as XML parser.
+
+   * **search_paths** - lists of paths to search JMeter add-on classes by JMeter such as additional samplers which is in addition to the jars kept in  lib/ext directory.
+
+   * **system.properties**  - additional system properties added before the -S and -D options are processed.
+
+   * **user.classpath** - The path to be searched for utility classes by JMeter in addition to jars kept in lib directory.
+
+   * **ssl.provider** - If built-in Java implementation are not provided, the class can be specified by you for your SSL implementation.
+
 
 
 <a id="Addons">
@@ -351,7 +450,7 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
 
 <a id="JMeterGlobals">
 ## Global Properties</a>
-0. To verify where Jmeter is installed:
+0. Verify where Jmeter is invoked from:
 
    ```
    which jmeter
@@ -361,7 +460,7 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    
    `/usr/local/bin/jmeter`
    
-   Alternately, if this appears:
+   Alternately, three is a problem if this appears:
    
    `/usr/bin/which: no jmeter in (/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/CONCUR/wmar/bin)`
 
@@ -371,19 +470,7 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    cd /usr/local/bin
    ```
 
-0. Use a text editor to open file **jmeter.properties**.
+0. Use a text editor to open file <strong>jmeter.properties</strong>.
 
    PROTIP: If github is used, this file should be copied from github to the installer.
-
-0. Specify settings as appropriate:
-
-   * **remote_hosts** - remote JMeter hosts, separated by commas.
-   * **not_in_menu**	- With the help of this you can customize your JMeter by allowing only those components to display which you want to by listing their classname or their class label.
-   * **user.properties** - Addition JMeter properties are contained in this file and are added before the -q and -J options are processed and after the initial property file.
-   * **xml.parser** - The default value is: org.apache.xerces.parsers.SAXParser. An implementation can be specified as XML parser.
-   * **search_paths** - lists of paths to search JMeter add-on classes by JMeter such as additional samplers which is in addition to the jars kept in  lib/ext directory.
-   * **system.properties**	- additional system properties added before the -S and -D options are processed.
-   * **user.classpath**	- The path to be searched for utility classes by JMeter in addition to jars kept in lib directory.
-   * **ssl.provider** - If built-in Java implementation are not provided, the class can be specified by you for your SSL implementation.
-
 

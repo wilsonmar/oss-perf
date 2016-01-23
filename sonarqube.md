@@ -74,10 +74,21 @@ Analyze projects
 Ready to improve quality
 
 
-<a id="Configuration">
-## Configuration</a>
+<a id="JenkinsConfiguration">
+## Jenkins Configuration</a>
 Connection to Jenkins:
 http://docs.sonarqube.org/display/PLUG/SonarQube+Scanner+for+Jenkins
+
+
+<a id="ClientConfiguration">
+## Client Configuration</a>
+http://www.sonarlint.org/visualstudio/
+SonarLint for Visual Studio is based on and benefits from the .NET Compiler Platform ("Roslyn") and its code analysis API to provide a fully-integrated user experience in Visual Studio 2015.
+SonarLint is free, open source, and available in the Visual Studio Gallery.
+
+
+Install in Eclipse?
+
 
 <a id="Videos">
 ## Videos</a>

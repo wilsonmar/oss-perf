@@ -12,6 +12,7 @@ Tableau's promo video at http://www.tableau.com/products#video says
 * [0:30] "People build dashboards and applications like these, drag and drop, at up to 10 times the speed of a traditional business intellegence system".
  
  * Microsoft Power BI, Power Pivot, and Power View in Excel 2013, see http://www.jenunderwood.com/2014/01/02/understanding-the-differences-microsoft-power-bi-and-tableau/ and http://www.jenunderwood.com/blog.htm#BetterTogether
+
  * IBM Cognos Insight,
  * MicroStrategy Visual Insight,
  * Oracle Exalytics appliance, 
@@ -133,9 +134,14 @@ Alteryx Designer</a> Windows client.
 
 The <strong>Tableau Reader</strong> client can read (but not save) packaged workbooks.
 
-These are subject to change at any time, and subject to negotiation. But a little birdie told me ... Tableau Desktop costs $1999. Tableau Server is around $1000 per user or ~$200K for an unlimited user license. Tableau Cloud costs $500/per user per year. The Tableau Cloud plan includes 100 GB of storage. I do not know the storage add-on costs for groups wanting more than 100 GB.
+ Prices are subject to change at any time, and subject to negotiation.
+ At time of writing, Tableau Desktop costs $1999. 
+ Tableau Server is around $1000 per user or ~$200K for an unlimited user license. 
+ Tableau Cloud costs $500/per user per year. 
+ The Tableau Cloud plan includes 100 GB of storage. I do not know the storage add-on costs for groups wanting more than 100 GB.
 
-Tableau makes use of HTML5. It's unlike Microsoft Power Viewer, which depends upon installation of Silverlight and thus not mobile device friendly.
+Tableau makes use of HTML5 within internet browsers. 
+It's unlike Microsoft Power Viewer, which depends upon installation of Silverlight and thus not mobile device friendly.
 
 <a name=“MobileApp”>
 ## Mobile App</a>
@@ -280,6 +286,15 @@ To convert UTC/GMT times to local time that is -8 hours for Pacific Standard Tim
    http://www.cpearson.com/excel/TimeZoneAndDaylightTime.aspx
    The LocalOffsetFromGMT() function 
 
+To zero-fill leading zeroes:
+
+ ```
+ =TEXT(A2,"000")
+ ```
+
+   * http://fczaja.blogspot.ca/2011/06/convert-excel-date-into-timestamp.html
+
+
 <a name=“Reshaper”>
 ## Reshaper Add-in</a>
 Tableau no longer maintains its
@@ -400,6 +415,10 @@ using <a href="#ExtractAPI">Tableau Extract API</a>.
 
 CAUTION: None of the above formats are encrypted with any data security.
 
+<strong>.ttde</strong> are <a target="_blank" href="http://kb.tableau.com/articles/knowledgebase/shadow-extracts">Shadow Extract files</a> 
+used for caching speed within clients
+and not directly referenced by users. Five of these files are stored within a Shadow Extract folder.
+
 http://onlinehelp.tableau.com/v9.2/public/online/mac/en-us/help.html#upgrading_connection.html
 
 0. PROTIP: You may want to create a separate folder to store all Excel data files locally in the same Excel folder. 
@@ -462,7 +481,75 @@ Fine as it is out of the box, you should know about enhancements from others:
    http://powertoolsfortableau.com/tools/portals-for-tableau
    enhances Tableau Server look-and-feel, filtering, and security.
 
-Alteryx
+  Zion Spencer, InterWorks Software Sales Engineer 405/624-3214
+
+Alteryx provides an alternative client.
+
+
+<a name=“PublicDatasets”>
+## Public Datasets</a>
+The Client Pro certification exam uses the 
+<a target="_blank" href="http://wildlife.faa.gov/">
+FAA Wildlife Strike Database</a>
+
+Tableau provides a <a target="_blank" href="http://mkt.tableau.com/files/Desktop-9-CP-Solution-Guide.pdf">
+   Solution Guide</a> which shows constructed viz to answer the certification questions:
+
+    * Do some species have more strikes in some months over others? 
+    * Are there any species appearing in the top that are surprising? 
+    * Calculate the strike rate (number of strikes divided by number of total flights) to see if the rate of wildlife strikes is increasing or decreasing over time.
+
+    * Where are these strikes most likely to occur?
+    * Are there certain months when wildlife strikes become more likely?
+    * Have the number of strikes per year been changing over time?
+    * Does the number of flights have any effect on seasonal trends?
+    * Combine views into a dashboard allowing users to explore the data themselves.
+
+    Note that you should not be confined to a specific number of species per month and should use a parameter to make a dynamic Top N.
+
+Get the sample dataset:
+
+ 0. Scroll to the bottom of the page to
+ 0. Click <a target="_blank" href="http://wildlife.faa.gov/downloads/wildlife.zip</a>
+    "FAA Wildlife Strike Database"</a> link 
+    without specifying any filters
+    to download <strong>wildlife.zip</strong>.
+ 0. Unzip the file for a folder named "wildlife".
+ 0. Drill into the folder.
+ 0. Double-click on "wildlife.accdb" to open it using Microsoft Office Access.
+ 0. The read-me.xls file in the folder is the same as the one obtained by 
+    clicking <a target="_blank" href="http://wildlife.faa.gov/downloads/fieldlist.xls">
+    "total of 94 fields of data" for the <strong>fieldlist.xls</strong></a>.
+    It contains a description of Column Names, Engine Codes, Aircraft Type, Engine Position.
+
+ If you are using a Mac, because
+    Microsft Office for Mac 2011/2016 does not include Access,
+    you'll need to consider
+    several options for reading the .accdb Microsoft Access database file.
+
+  * The simplest option is to temporarily use a Windows machine 
+    or a virtual Windows machine containing MS Office Access 
+    -- if they are already installed and available for use.
+
+  * The <a target="_blank" href="http://www.actualtech.com/product_access.php">
+    $39.99 ODBC read-only driver for Microsoft Access from Actual Technologies</a>
+    enables Excel 2011 for Mac to execute SQL queries using Microsoft Query (comes with Microsoft Office) or a PivotTable.
+    
+    * http://mthomas.co.uk/5-ways-to-access-access-on-a-mac/
+      notes that utilities such as http://mdbtocsv.codeplex.com
+      support only older .MDB formats, not the .accdb format.
+
+  * The $5.99 <a target="_blank" href="https://itunes.apple.com/us/app/mdb-tool-for-microsoft-access/id513995545?mt=12">MDB Tool - For Microsoft Access by Hankinsoft Development Inc
+   from Apple iTunes</a>
+    only handles databases in 2007 format, not 2010/2013 format.
+
+  * http://serversideguy.com/2014/02/05/import-microsoft-access-accdb-file-to-ms-sql-server/
+
+ 0. To return data to a table:
+    http://www.dummies.com/how-to/content/how-to-move-data-from-external-sources-into-excel-.html
+
+ 0. To return PivotTable
+    http://www.dummies.com/how-to/content/how-to-make-a-pivottable-in-excel-for-mac-2011.html
 
 
 <a name=“Galleries”>
@@ -610,9 +697,20 @@ Box and Whisker charts (new since v8) display quartiles in distributions:
 
  * http://www.tableau.com/learn/gallery/two-weeks-home-sales
 
+
 ### Donut charts
 
  * http://vizwiz.blogspot.in/2014/12/donutcharts.html
+
+### Radar charts
+  Radar charts are great for visually identifying which of several dimensions 
+  are possessed by specific sub-populations shown using cicle-ish lines in the middle.
+
+<a target="_blank" href="http://evafengeva.blogspot.com/2015/12/k-means-clustering-analysis-of-red-wine.html"><img alt="red wine polar chart" src="https://cloud.githubusercontent.com/assets/300046/12368996/3abeb68e-bba6-11e5-9154-8ff05ea528e1.jpg"></a>
+<p>
+  In this example, one can see that wines rated good and excellent (in dark red)
+  have high alcohol while wines rated as poor (shown in thick black line)
+  have low alcohol.
 
 ### Geospatial Maps
 Geographic maps make use of geocodes that come with Tableau.
@@ -633,7 +731,7 @@ Tableau allows use of WMS servers, GIS sources and custom shapes
 
 QUESTION: How about custom plots (such as fields on a farm).
 
-
+ * http://www.tableau.com/learn/tutorials/on-demand/custom-geocoding (7:03 minutes)
 
 
 <a name=“GettingStartedVideos”>
@@ -642,6 +740,9 @@ QUESTION: How about custom plots (such as fields on a farm).
 <a target="_blank" href="http://www.tableau.com/learn/tutorials/on-demand/getting-started">
 Tableau's 23-minute Getting Started video</a>
 shows step-by-step how to open a spreadsheet, create several charts from it, and a dashboard with a story.
+
+But before diving in, get to know <a target="_blank" href="http://onlinehelp.tableau.com/v8.2/pro/online/windows/en-us/help.htm#shortcut.html%3FTocPath%3DReference%7C_____5">
+Keyboard Shortcuts</a>
 
 <a name="FinishedWorkbook">
 ### Download and Open the "Finished" Workbook</a>
@@ -1070,6 +1171,7 @@ TODO: Identify triggers to invoke when the moving average crosses one of the ban
 <a name=“Parameters”>
 ## Parameters</a>
 
+http://www.tableau.com/LOD-expressions
 
 <a name=“Forecasts”>
 ## Forecasts</a>
@@ -1148,6 +1250,7 @@ Acess from views embedded in websites use Tableau's "Trusted Tickets" authentica
 
 <img width="795" alt="tableau 8 scalability" src="https://cloud.githubusercontent.com/assets/300046/12035873/e1377296-adfd-11e5-804f-fe9e07749b36.png">
 
+ * http://www.tableau.com/learn/whitepapers/tableau-server-scalability-explained
  * http://www.tableau.com/sites/default/files/media/whitepaper_tableau_server9.0scalability_eng_2.pdf
 
  * https://www.youtube.com/watch?v=34WGBP221aw
@@ -1191,6 +1294,36 @@ This creates files for this command:
 ## Subscriptions</a>
 Tableau allows users to subscribe to dashboards for them to be automatically emailed to them on a schedule.
 
+
+<a id="UserCerts">
+## Master Tableau via User Certification</a>
+Exam Details &amp; Prep Guides at <a target="_blank" href="http://www.tableau.com/support/certification">
+http://www.tableau.com/support/certification</a>
+provides information about taking Tableau's tests
+Tests at conferences and on your laptop.
+
+Tableau's Qualified Associate for Tableau Desktop and Server
+($250 to answer 16 questons over 2-hours).
+
+ * http://mkt.tableau.com/files/Desktop-9-QA-Prep-Guide.pdf
+ * http://mkt.tableau.com/files/Desktop-9-CP-Prep-Guide.pdf
+
+Tableau's Pro cert levels for Tableau Desktop and Server:
+
+ * http://mkt.tableau.com/files/Server-9-QA-Prep-Guide.pdf ($600 over 3 hours)
+ * http://mkt.tableau.com/files/Server-9-CP-Prep-Guide.pdf ($800 over 7 hours)
+
+These pdf files contain links to just the front page (not specific links, unfortunately):
+
+ * (tutorial) http://www.tableau.com/learn/training
+ * (kb) = Knowledge-base : http://kb.tableau.com
+
+Also see:
+
+ * Product Help: http://onlinehelp.tableau.com
+ * Training from Tableau at http://www.tableau.com/support/training
+
+
 <a name=“Videos”>
 ## Videos</a>
 More Trainings: http://www.tableau.com/learn/training?qt-training_tabs=1#qt-training_tabs
@@ -1232,7 +1365,7 @@ begins with its Getting Started video.
  * https://www.youtube.com/watch?v=fEoB8EIEETQ
    describes Connecting to databases and advanced features.
 
-
+ * Multidimensional data sources are supported by Tableau only in Windows, not in OSX.
 
 <a id="Bloggers">
 ## Bloggers</a>
@@ -1296,13 +1429,28 @@ by Emily and Matt Francis who did TFF (Tableau French Festival)
 
 <a target="_blank" href="http://www.slideshare.net/21_venkat/learning-tableau-data-graphs-filters-dashboards-and-advanced-features"> Slideshare: Learning Tableau- Step by Step Guide</a>
 
-Tableau was founded in 2003 by Christopher Stolte, Patrick Hanrahan and Christian Chabot, now CEO.
+Tableau was founded in 2003 by Christopher Stolte, Patrick Hanrahan, 
+and Christian Chabot, now CEO.
 
- VP Product Management Francois Ajenstat 
+VP Product Management Francois Ajenstat 
+
+VP Sales Kelly Wright will retire end of 2016.
 
 Tableau corporate headquarters is in the bayside Freemont neighborhood of Seattle, Washington which locals call "The center of the universe".
 
-Tableau Software is traded on NYSE under ticker symbol DATA. The company went public on May 17, 2013 at an initial public offering price of $31 per share.
+ * http://www.geekwire.com/2015/lead-global-company-tableaus-ceo-learned-year-london/
+
+Tableau Software is traded on NYSE under ticker symbol DATA. 
+The company went public on May 17, 2013 at an initial public offering price of $31 per share.
+ 
+ * https://www.tradingview.com/chart/DATA/?utm_source=www.tradingview.com&utm_medium=www.tradingview.com/widget/technical-analysis/
 
 
+## Random links
 
+ * https://www.tableau.com/about/blog/2016/1/5-tips-make-your-dashboards-more-performant-48574
+
+Certification
+
+ * https://www.youtube.com/watch?v=u5V83ms7yr4
+   
