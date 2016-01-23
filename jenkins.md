@@ -113,6 +113,9 @@ In a Configure screen:
 0. Cursor over a build step such as "Build a Visual Studio project" or "Run unit tests with MSTest" or "Execute Windows Batch command".
 1. Click <strong>Add Build Step</strong>.
 
+   <img width="344" alt="jenkins build steps" src="https://cloud.githubusercontent.com/assets/300046/12533016/bb8d66de-c1d7-11e5-9620-8d96de3e7300.png">
+
+
 <a id="RestrictRun">
 ## Restrict Run</a>
 0. In the first section, scroll to check <strong>Restrict where this project can be run</strong>.
@@ -120,6 +123,10 @@ In a Configure screen:
  
 <a id="Post-Build">
 ## Post-build actions</a>
+
+<img align="right" width="296" alt="jenks post-build action" src="https://cloud.githubusercontent.com/assets/300046/12533006/772cce4e-c1d7-11e5-9210-e8625dee9449.png">
+
+
   * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
   sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
@@ -165,3 +172,10 @@ Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
  ```
  http://localhost:8081/job/Hellow%20World/27/
  ```
+
+<a id="Artifactory">
+## Output to Artifactory</a>
+
+
+<a id="ELK">
+## Output to ELK Stack</a>
