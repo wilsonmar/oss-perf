@@ -259,15 +259,6 @@ Builds/jobs can be automatically triggered several ways:
  * periodically on a schedule
  * poll a version control system for changes
 
-<a id="NewJob">
-## New Job</a>
-Let's create a new job for a hands-on understanding of the tool.
-
-
-
-
-
-
 <a id="Plugins">
 ## Plugins</a>
 0. In **Manage Jenkins** UI **Available** tab has many plug-ins.
