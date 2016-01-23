@@ -2,14 +2,15 @@ Jenkins is open-source Java software (running under a Tomcat web server)
 to invoke jobs on a schedule ("continuosly")
 such as for building software and conducting tests.
 
-This is also called <strong>continuous integration</strong> because Jenkins
-is used to ensure that components already unit-tested can be integrated together.
+Jenkins is a key component of <strong>continuous integration</strong> 
+to invoke a chain of tasks needed to ensure that components already unit-tested can be integrated together.
 See <a target="_blank" href="http://pluralsight.com/training/courses/TableOfContents?courseName=continuous- integration">
 Pluralsight course by James Kovacs</a>
 
-Experienced people warn to NOT check in code that breaks things (fails even local unit testing).
-This is achieved by having each developer having full capabilities,
-which may mean using mock code.
+PROTIP: Experienced people warn to NOT check in code that may break things (fails even local unit testing).
+This is achieved by having each developer having full capabilities on their workstations or in a private cloud stack.
+This may mean using mock interfaces.
+
 
 <a id="Alternatives">
 ## Alternatives</a>
@@ -207,7 +208,6 @@ As with other systems, granting permissions is typically done only by the Admini
 0. Or create a user.
 
 
-
 <a id="Nodes">
 ## Nodes</a>
  A Jenkins server can scale by adding **nodes** to spread build work across several servers running different operating systems.
@@ -293,50 +293,6 @@ The flow for programming code may includ **static code analysis**
  such as using StyleCop (there is also SonarQube).
 This provides options on what violations to report. 
 
-
-<a id="Post-Build">
-## Post-build actions</a>
-  * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
-  sets the final build status (as good, unstable or failed) based on the reported error percentage. 
-
-If a job fails, 
-0. Email notifications are sent
-1. Chat room notifications are sent
-
-
-
-<a id="ScheduleBuild">
-## Schedule builds</a>
-0. Right-click on a project for a drop-down list containing **workspace**.
-
- <img width="321" alt="jenkins-build-dropdown" src="https://cloud.githubusercontent.com/assets/300046/11172423/8cffff32-8bc4-11e5-9e3b-4c92b9f7b3a1.png">
-
- A build can also be invoked by clicking the button with the green arrow at the right side of the list of projects.
-
- In the workspace for a project are folders and **.trx** files output from Jenkins runs.
- 
-Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
-
- 
-<a id="Reports">
-## Reports</a>
-0. Enable auto-refresh at the upper-right of the jobs list.
-
-0. Builds appear in the **Build Queue** at the left of the UI.
-
-0. Right-click on the # associated with a build for a drop-down list.
-
- <img width="611" alt="jenkins-build-project-detail" src="https://cloud.githubusercontent.com/assets/300046/11172332/02c5ca5a-8bc3-11e5-8d53-b4a0b57a22a8.png">
-
-0. Select **Console Output** to view the log from each build.
-
- Jenkins provides RSS feeds exposing XML files containing lists of just failures or a list of just the latest builds.
-
-0. A link to a specific build attempt is like this example generated from Papercut.codeplex.com:
-
- ```
- http://localhost:8081/job/Hellow%20World/27/
- ```
 
 
 <a id="Resources">
