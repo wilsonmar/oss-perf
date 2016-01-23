@@ -1,5 +1,11 @@
 This page describes how to install JMeter.
 
+## Contents
+0. <a href="EProvisioningOptions"> Options to provision JMeter slave machines</a>.
+0. <a href="#Java"> Java SDK Pre-requisite</a>
+0. <a href="#Download4Mac"> Download JMeter for Macs</a>
+0. <a href="#Download4PC"> Download JMeter for PCs</a>
+
 0. <a href="#Provision">Provision JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter locally</a>
 0. <a href="#TestFolder">Create run assets folder</a>
@@ -17,15 +23,117 @@ This page describes how to install JMeter.
 
 <hr />
 
-<a id="Provision">
-## Provision JMeter slave machines</a>
+<a id="ProvisioningOptions">
+## Options to provision JMeter slave machines</a>
 JMeter is available several ways (each explained below):
 
-   * Locally (on a laptop) after install using Chocolatey.
+   * <a href="#PackageInstall">Download and install using package managers Homebrew and Chocolatey</a>.
    * Locally (on a laptop) after download, installation, and configuration.
    * Locally running within a virual container such as Vagrant on a laptop.
    * In a PaaS (Platform as a service) running under Docker control.
    * In a SaaS service such as what <a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a> provides.
+
+<hr />
+
+<a id="PackageInstall">
+## Install using package managers</a>
+This is the quickest and easiest way that involves setting up a package manager:
+
+ * Homebrew on the Mac
+ * Chocolatey on Windows
+
+These instructions update instructions
+<a target="_blank" href="http://biscminds.blogspot.fr/2011/12/quick-jmeter-setup-on-mac.html">
+here from 2011</a> when JMeter was still under the Apache Jakarta project.
+
+http://www.apache.org/info/verification.html
+
+A package command can then be executed to both download and install a utility such as java and jmeter.
+
+CAUTION: This approach involves downloading of files over the internet from a server that could be compromised.
+So enterprises many download this way one time, analyze it for security, then populate the installer in an internal
+Artifactory instance to serve files within the corporate firewalls.
+
+NOTE: This is done by a user with admin permissions.
+
+<a name="Download4Mac"> 
+### Download, Install JMeter for Macs</a>
+
+0. Use Homebrew on a Mac to install the java dependency:
+
+   ```
+   brew install java
+   ```
+
+0. Use Homebrew on a Mac ot install Jmeter:
+   
+   ```
+   brew update
+   brew install jmeter --with-plugins
+   ```
+
+JMETER_BIN ???
+
+Since <storng>apache-jmeter-2.12.zip</strong> was installed,
+Homebrew saves jmeter to folder <strong>/usr/local/Cellar/jmeter/2.12/libexec</strong>.
+This is good to know for adding plug-ins, whose
+<strong>jar</strong> files go into JMeter's <strong>lib/ext</strong> (extension) folder.
+
+Jar files contents should follow
+http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+
+The <strong>pom.xml</strong> file in a github repository is used by maven to create jar files,
+perhaps with a script such as:
+https://draptik.wordpress.com/tag/pom-xml/
+
+See https://ribblescode.wordpress.com/2012/04/16/how-to-run-jmeter-tests-with-maven/
+
+Create the jar file using Maven ???
+
+http://jmeter.lazerycode.com/
+
+
+### Install Chocolatey on Windows:
+
+0. If you haven't already, open an internet browser, type or paste in URL:
+  <a target="_blank" href="https://chocolatey.org/">https://chocolatey.org</a>.
+0. Copy the whole @powershell command.
+0. Open a command window
+1. Paste the command to install Chocolatey.
+0. Exit the command.
+
+### Using Chocolatey on Windows:
+0. Open a command window.
+0. From the default folder (or anywhere), type or run this command (described at https://chocolatey.org/packages?q=jmeter).
+  (Instead of `choco install jmeter -y`):
+   
+   ```
+   cinst jmeter -y
+   ```
+
+   The -y confirms acceptance of the legal stuff.
+   Chocolatey installs without prompting for more user interaction.
+   So it's useful in server automation scripts.
+
+0. Continue on to invoke the JMeter UI.
+
+NOTE: Instructions here are based on Jmeter version 2.1.2 downloaded June 30, 2015.
+
+
+## <a name="Java"> Java SDK Pre-requisite</a>
+JMeter was written in Java. 
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+The path to the Java bin folder must be in the system PATH environment variable
+so Java executables can be found. See https://wiki.apache.org/jmeter/TestRecording210
+
+The path to JVM_HOME also needs to be defined, such as 
+set JAVA_HOME=C:\jdk1.7.0_45
+
+This is the same across operating systems, which is why JMeter can run on PC and Mac.
+
+
+
 
 WARNING: Because of what they do (pretending to be many clients), 
 JMeter machines need significant network bandwidth and memory.
@@ -41,25 +149,6 @@ thus reducing troubleshooting frustrations.
 0. The server needs to be setup with LDAP.
 1. The SSH certificate for userids need to be installed on the server.
 2. Group permissions need to be assigned to each user accessing the machine.
-
-
-<a id="Installation">
-## Installation on laptops</a>
-This is done by a user with admin permissions.
-
-0. On a Mac, use Homebrew:
-   
-   ```
-   brew install jmeter
-   ```
-
-0. Alternately, on Windows, use Chocolatey:
-   
-   ```
-   cinst jmeter
-   ```
-
-0. Either way, continue on to invoke the JMeter UI.
 
 
 <a id="ServerInstall">
