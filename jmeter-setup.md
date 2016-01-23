@@ -274,6 +274,9 @@ is among the most forked among jmeter repos.
 
 It is used to work with the flood.io cloud testing service.
 
+Python is one of several programming languages that JMeter can support.
+
+
 
 
 <hr />
@@ -653,8 +656,8 @@ developed by the same author.
   is a Ruby based DSL (Domain Specific Language) for building JMeter test plans 
 
 
-<a id="Addons">
-## Add-ons</a>
+<a id="JenksAddons">
+## Add-ons to Jenkins for JMeter</a>
 For easier invocation, the
 <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin">
 Performance Plugin</a> from https://github.com/jenkinsci/performance-plugin.
@@ -666,3 +669,59 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
    * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
 
 
+## <a name="RunBatch"> Run in Batch Mode</a>
+JMeter is often invoked automatically by a continuous integration tool such as Jenkins.
+See https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin.
+
+1) Open a command (terminal) window.
+
+2) Type cd and paste the file path to the test plan.
+
+3) Type:
+
+```
+jmeter -n -t "Test Plan.jmx" -l run001.jtl
+```
+
+* Parameter `-n` specifies no GUI.
+* Parameter `-t "Test Plan.jmx"` specifies the test plan.
+* Parameter `-l run001.jtl` specifies the text file to hold results from the run. See http://wiki.apache.org/jmeter/JtlFiles.
+* Parameter `-p parameters.txt` specifies the parameters to define.
+
+PROTIP:
+Avoid using spaces in test plan names.
+
+Example response to the Terminal:
+
+```
+Creating summariser <summary>
+Created the tree successfully using Test Plan.jmx
+Starting the test @ Sat Jul 04 06:45:16 MDT 2015 (1436013916367)
+Waiting for possible shutdown message on port 4445
+summary +    876 in  14.3s =   61.4/s Avg:   129 Min:     0 Max:  2011 Err:   876 (100.00%) Active: 10 Started: 10 Finished: 0
+summary +    124 in   2.1s =   58.4/s Avg:   146 Min:     0 Max:  2005 Err:   124 (100.00%) Active: 0 Started: 10 Finished: 10
+summary =   1000 in  14.4s =   69.5/s Avg:   131 Min:     0 Max:  2011 Err:  1000 (100.00%)
+Tidying up ...    @ Sat Jul 04 06:45:31 MDT 2015 (1436013931672)
+... end of run
+(env1)
+```
+
+## <a name="ViewLog"> View Log File</a>
+
+4) View the list of files with file sizes:
+
+```
+ls -all
+```
+
+In this example, the output file as 211,148 bytes:
+
+```
+  -rw-r--r--    1 wilsonmar  staff  211148 Jul  4 06:45 run001.jtl
+```
+
+5) Open the file using a text editor:
+
+```
+1436013917275,67,HTTP Request,Non HTTP response code: org.apache.http.conn.Http$
+```
