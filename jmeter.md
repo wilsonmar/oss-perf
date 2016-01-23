@@ -8,7 +8,7 @@ Similarities to LoadRunner, Visual Studio, and other similar tools.
 
 This assummes you have a working JMeter environment setup <a href="jmeter-setup.md">according to these instructions</a>.
 
-0. <a href="AppUnderTest">The apps under test</a>
+0. <a href="#AppUnderTest">The 99-bottles app under test</a>
 0. Set your present working directory to where JMeter scripts (.jmx files) are stored.
 
 0. <a href="#TestPlan">Create script Test Plan</a>
