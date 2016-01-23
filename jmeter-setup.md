@@ -44,6 +44,12 @@ Zac explained in 2008</a> and download from a mirror website on the
 Apache download web page</a>,
 then unzip, create a folder, move it, etc. and click OK through the setup program.
 
+These instructions update instructions
+<a target="_blank" href="http://biscminds.blogspot.fr/2011/12/quick-jmeter-setup-on-mac.html">
+from 2011</a> when JMeter was still under the Apache Jakarta project.
+
+http://www.apache.org/info/verification.html
+
 PROTIP: It's simpler to use a package manager (see below).
 
 
@@ -53,12 +59,6 @@ This is the quickest and easiest way that involves setting up a package manager:
 
  * <a href="#Download4Mac"> Homebrew on the Mac</a>
  * <a href="#Download4Win"> Chocolatey on Windows</a>
-
-These instructions update instructions
-<a target="_blank" href="http://biscminds.blogspot.fr/2011/12/quick-jmeter-setup-on-mac.html">
-here from 2011</a> when JMeter was still under the Apache Jakarta project.
-
-http://www.apache.org/info/verification.html
 
 A package command can then be executed to both download and install a utility such as java and jmeter.
 
