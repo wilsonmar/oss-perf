@@ -175,20 +175,30 @@ Jenkins installation options are described at:
   netstat -anp | grep java
   ```
 
-<a id="Server_Security">
-## Server Security</a>
-This is typically done only by the Administrator of the system.
+<a id="Security">
+## User Security</a>
+<img align="right" width="181" alt="jenkins full menu" src="https://cloud.githubusercontent.com/assets/300046/12525765/b4483cbc-c11b-11e5-8053-57556314ff0e.png">
+If you don't see the full menu shown on the right, you don't have some permissions.
+
+As with other systems, granting permissions is typically done only by the Administrator of the system.
 
 0. In **Manage Jenkins** UI enter **Configre Global Security**.
 0. Check Enable Security.
-1. If you have an LDAP, select that, or check Use Jenkin's own user database. But you'll have to add each user.
-2. Check **Project-based Matrix Authorization Strategy** to limit Anonymous users Read-only access.
-3. Create the admin user permissions to do all activities by checking all boxes for that user.
+0. If you have an LDAP, select that, or check Use Jenkin's own user database. But you'll have to add each user.
+0. Check **Project-based Matrix Authorization Strategy** to limit Anonymous users Read-only access.
 
- <img width="710" alt="jenkins-security-permissions-matrix" src="https://cloud.githubusercontent.com/assets/300046/11181173/6ea5dfe4-8c1d-11e5-9674-ef0e7d88ef8d.png"> 
+   PROTIP: Rather than specifying individual users and their permissions,
+   the preferred approach is to firt assign individual users to a group in LDAP,
+   then assign permission to the group.
 
+0. For an existing user/group, check boxes to its right.
 
- <img width="881" alt="jenkins-build-project-detail2" src="https://cloud.githubusercontent.com/assets/300046/11181632/017e375a-8c21-11e5-8147-4df54611d009.png">
+   <img width="710" alt="jenkins-security-permissions-matrix" src="https://cloud.githubusercontent.com/assets/300046/11181173/6ea5dfe4-8c1d-11e5-9674-ef0e7d88ef8d.png"> 
+
+   <img width="881" alt="jenkins-build-project-detail2" src="https://cloud.githubusercontent.com/assets/300046/11181632/017e375a-8c21-11e5-8147-4df54611d009.png">
+
+0. Or create a user.
+
 
 
 <a id="Nodes">
