@@ -16,7 +16,7 @@ Click on an existing job to see the status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
-<img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
+<img align="left" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
 
 CAUTION: Don't click <strong>Build with Parameters</strong> if you're just looking around
 because that invokes the build job.
@@ -30,8 +30,8 @@ Clicking the "Last build" under Permanlinks is a generic link for the link at th
 The Workspace are input files, pulled from Github.
 
 <a id="BuildStatus">
-## Build Status</a>
-<img align="right" width="183" alt="jenkins build menu" src="https://cloud.githubusercontent.com/assets/300046/12532074/83e3a850-c1bf-11e5-836e-444ffff39424.png">
+## Individual Build Status</a>
+<img align="left" width="183" alt="jenkins build menu" src="https://cloud.githubusercontent.com/assets/300046/12532074/83e3a850-c1bf-11e5-836e-444ffff39424.png">
 
 
 <a id="Post-Build">
