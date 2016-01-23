@@ -732,3 +732,16 @@ In this example, the output file as 211,148 bytes:
 ```
 1436013917275,67,HTTP Request,Non HTTP response code: org.apache.http.conn.Http$
 ```
+
+
+<a name="Resources">
+## Resources</a>
+
+* http://www.javacodegeeks.com/2014/11/jmeter-tutorial-load-testing.html
+* https://www.youtube.com/watch?t=933&v=8D6nKml88vE by Ashish Takur, who also published paid content at
+* http://loadrunnerjmeter.com
+* http://www.pluralsight.com/courses/java-web-fundamentals by Kevin Jones about creating Java servlets,
+  filters (controllers), and listeners. These are build using IntelliJ, built using Maven,
+  and run on Tomcat.apache.org web servers.
+* https://www.youtube.com/watch?v=4mfFSrxpl0Y JMeter Load Testing Beginner Tutorial
+* https://www.youtube.com/watch?v=cv7KqxaLZd8 Learn JMeter in 60 minutes by Ophir of BlazeMeter
