@@ -4,34 +4,47 @@ This page takes a hands-on approach to learn usage of Jenkins as setup in <a hre
 ## View Tabs</a>
 To group jobs into separate page views, click on the [+] at the top.
 
-
-<a id="NewJob">
-## New Job</a>
-Let's create a new job for a hands-on understanding of the tool.
-
+There are two ways to reach the same screen.
 
 <a id="JobStatus">
 ## Job Status</a>
-Click on an existing job to see the status screen.
+0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see the status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
 <img align="left" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
 
-CAUTION: Don't click <strong>Build with Parameters</strong> if you're just looking around
-because that invokes the build job.
+0. Clicking <strong>Recent Changes</strong> on the Status screen is the same as clicking Changes on the left menu.
+0. Click Status on the left menu to return to the higher level screen.
 
-To get back to this screen, click Status link on the left menu.
+0. Click either <strong>Workspace</strong> link to view input files (pulled from Github).
+0. Click the cookie crumbs link at the top to return to the job status screen.
 
-Clicking Recent Changes on the Status screen is the same as clicking Changes on the menu.
+0. Click the Coverage Trend link at the left menu. It does not display if the add-on is not installed.
 
-Clicking the "Last build" under Permanlinks is a generic link for the link at the top of the Build History at the left.
+   CAUTION: If you're just looking around, don't click the Disable button on the right or the Delete button on the left menu.
 
-The Workspace are input files, pulled from Github.
+0. Click the <strong>Configure</strong> link at the left menu for values in the form used to create the current job.
+0. Scroll down to notice the String Parameter names and default values (such as environment, browsertype).
+
+   PROTIP: Pay special attention whether the first letter of each parameter values are capitalized.
+
+0. Click the <strong>Build with Parameters</strong> link at the left menu for a list of parameter values fed to the job.
+
+   CAUTION: Don't click <strong>Build</strong> if you're just looking around
+   because that invokes the build job. 
+
+
+   On the Status screen, notice the "Last build" under Permanlinks is a generic link for 
+   the link at the top of the Build History at the left.
 
 <a id="BuildStatus">
 ## Individual Build Status</a>
 <img align="left" width="183" alt="jenkins build menu" src="https://cloud.githubusercontent.com/assets/300046/12532074/83e3a850-c1bf-11e5-836e-444ffff39424.png">
+
+
+<a id="TestResults">
+## Test Results</a>
 
 
 <a id="Post-Build">
@@ -42,6 +55,11 @@ The Workspace are input files, pulled from Github.
 If a job fails, 
 0. Email notifications are sent
 1. Chat room notifications are sent
+
+<a id="NewJob">
+## New Job</a>
+Let's create a new job for a hands-on understanding of the tool.
+
 
 
 
