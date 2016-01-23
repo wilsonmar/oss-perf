@@ -35,7 +35,7 @@ JMeter is available several ways (each explained below):
 
 <hr />
 
-<a href="#ManualInstall">
+<a name="ManualInstall">
 ### Manually download and invoke setup of several steps.
 
 You can follow what <a target="_blank" href="http://zacster.blogspot.com/2008/03/quick-howto-to-setup-jmeter.html">
