@@ -1,3 +1,32 @@
+This page takes a hands-on approach to learn usage of Jenkins as setup in <a href="jenkins-setup.md">jenkins-setup</a>.
+
+<a id="Tabs">
+## View Tabs</a>
+To group jobs into separate page views, click on the [+] at the top.
+
+
+<a id="NewJob">
+## New Job</a>
+Let's create a new job for a hands-on understanding of the tool.
+
+
+<a id="JobStatus">
+## Job Status</a>
+<img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
+
+Click on an existing job to see the status screen.
+To get back to this screen, click Status link on the left menu.
+
+Clicking Recent Changes on the Status screen is the same as clicking Changes on the menu.
+
+Clicking the "Last build" under Permanlinks is a generic link for the link at the top of the Build History at the left.
+
+The Workspace are input files, pulled from Github.
+
+<a id="BuildStatus">
+## Build Status</a>
+<img align="right" width="183" alt="jenkins build menu" src="https://cloud.githubusercontent.com/assets/300046/12532074/83e3a850-c1bf-11e5-836e-444ffff39424.png">
+
 
 <a id="Post-Build">
 ## Post-build actions</a>
