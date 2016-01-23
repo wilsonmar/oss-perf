@@ -1,6 +1,14 @@
-This page describes the creation of JMeter scripts.
-It is assummed a working JMeter environment was setup <a href="jmeter-setup.md">according to these instructions</a>
-and the present working directory is set to where JMeter scripts (.jmx files) are stored.
+This section describes the creation of JMeter scripts,
+introduced in a deeply technical hands-on way working on full samples, not incomplete demos.
+Rather than bombarding you with random concepts and making obvious statements,
+here concepts are pointed out along the way at "teachable moments".
+
+PROTIP of "best practices" are noted when appropriate, as are
+Similarities to LoadRunner, Visual Studio, and other similar tools.
+
+This assummes you have a working JMeter environment setup <a href="jmeter-setup.md">according to these instructions</a>.
+
+0. Set your present working directory to where JMeter scripts (.jmx files) are stored.
 
 0. <a href="#TestPlan">Create script Test Plan</a>
 0. Gather data to be consumed during the run (userids, passwords, requests, etc.) in a .csv file.
