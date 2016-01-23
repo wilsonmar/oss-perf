@@ -6,8 +6,8 @@ thus reducing troubleshooting frustrations.
 ## Contents
 0. <a href="#ProvisioningOptions"> Options to provision JMeter slave machines</a>.
 0. <a href="#Java"> Java SDK Pre-requisite</a>
-0. <a href="#Download4Mac"> Download JMeter for Macs</a>
-0. <a href="#Download4PC"> Download JMeter for PCs</a>
+  0. <a href="#Download4Mac"> Download JMeter for Macs</a>
+  0. <a href="#Download4PC"> Download JMeter for PCs</a>
 
 0. <a href="#Provision">Provision JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter locally</a>
@@ -601,18 +601,6 @@ Usage
 
 
 
-<a id="Addons">
-## Add-ons</a>
-For easier invocation, the
-<a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin">
-Performance Plugin</a> from https://github.com/jenkinsci/performance-plugin.
-
-For managed devops:
-https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-management-using-jenkins-and-xebialabs-software/
-
-   * Xebialabx.com
-   * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
-
 <a id="JMeterGlobals">
 ## Global Properties</a>
 0. Verify where Jmeter is invoked from:
@@ -638,4 +626,43 @@ https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-
 0. Use a text editor to open file <strong>jmeter.properties</strong>.
 
    PROTIP: If github is used, this file should be copied from github to the installer.
+
+
+
+
+## <a name="Plugins"> JMeter Plug-ins</a>
+Plug-ins extend the capability of JMeter.
+
+In Eclipse IDE, export it to a JAR.
+
+* https://github.com/undera/jmeter-plugins (described in http://jmeter-plugins.org/wiki/PluginInstall/)
+  are shown in menus prefixed with "jp@gc".
+
+* https://github.com/ATLANTBH/jmeter-components.
+  provides samplers for JSON, OAuth, HBase and Hadoop, etc.
+
+* https://github.com/afranken/jmeter-analysis-maven-plugin
+is a Maven plugin that parses JMeter result XML files and generates detailed reports with charts
+Can be used in combination with the JMeter Maven Plugin 
+https://github.com/afranken/jmeter-analysis-maven-plugin
+developed by the same author.
+
+* http://stackoverflow.com/users/460802/ubik-load-pack
+
+* https://github.com/flood-io/ruby-jmeter
+  is a Ruby based DSL (Domain Specific Language) for building JMeter test plans 
+
+
+<a id="Addons">
+## Add-ons</a>
+For easier invocation, the
+<a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin">
+Performance Plugin</a> from https://github.com/jenkinsci/performance-plugin.
+
+For managed devops:
+https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-management-using-jenkins-and-xebialabs-software/
+
+   * Xebialabx.com
+   * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
+
 
