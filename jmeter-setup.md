@@ -4,11 +4,8 @@ Scripts are useful to save time and avoid mistakes,
 thus reducing troubleshooting frustrations.
 
 ## Contents
+0. <a href="#Alternatives"> Alternatives to JMeter</a>
 0. <a href="#ProvisioningOptions"> Options to provision JMeter slave machines</a>.
-0. <a href="#Java"> Java SDK Pre-requisite</a>
-  0. <a href="#Download4Mac"> Download JMeter for Macs</a>
-  0. <a href="#Download4PC"> Download JMeter for PCs</a>
-
 0. <a href="#Provision">Provision JMeter slave machine</a>
 0. <a href="#Installation">Install jmeter locally</a>
 0. <a href="#TestFolder">Create run assets folder</a>
@@ -25,6 +22,11 @@ thus reducing troubleshooting frustrations.
 
 
 <hr />
+
+<a name="Alternatives">
+## Alternatives to JMeter</a>
+
+* http://tsung.erlang-projects.org/
 
 <a id="ProvisioningOptions">
 ## Options to provision JMeter slave machines</a>
