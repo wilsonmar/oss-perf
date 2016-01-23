@@ -153,21 +153,6 @@ NOTE: Instructions here are based on Jmeter version 2.1.2 downloaded June 30, 20
 
 
 
-<a name="Blazemeter">
-### Blazemeter.com SaaS service</a>
-<a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a>.
-
-
-<a name="FloodIO">
-### Flood.io SaaS service</a>
-
-<a target="_blank" href="https://github.com/flood-io/ruby-jmeter">
-The Ruby JMeter</a> from 
-<a target="_blank" href="http://flood.io/">Flood.io</a>
-is among the most forked among jmeter repos. 
-
-It is used to work with the flood.io cloud testing service.
-
 
 WARNING: Because of what they do (pretending to be many clients), 
 JMeter machines need significant network bandwidth and memory.
@@ -184,8 +169,8 @@ stress out an application infrastructure.
 2. Group permissions need to be assigned to each user accessing the machine.
 
 
-<a id="ServerInstall">
-### Installation on a server</a>
+<a id="DockerServerInstall">
+### Installation on a Docker server</a>
 On a server, the easiest way is to run JMeter within Docker using
 https://hub.docker.com/r/cirit/jmeter/
 based on 
@@ -273,6 +258,27 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
    ```
    mv apache-jmeter-2.13  apache-jmeter-current 
    ```
+
+<a name="Blazemeter">
+### Blazemeter.com SaaS service</a>
+<a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a>.
+
+
+<a name="FloodIO">
+### Flood.io SaaS service</a>
+
+<a target="_blank" href="https://github.com/flood-io/ruby-jmeter">
+The Ruby JMeter</a> from 
+<a target="_blank" href="http://flood.io/">Flood.io</a>
+is among the most forked among jmeter repos. 
+
+It is used to work with the flood.io cloud testing service.
+
+
+
+<hr />
+
+
 
 <a id="AccessMachine">
 ## Access headless JMeter server remotely</a>
@@ -414,6 +420,42 @@ log_file=jmeter.log java.io.FileNotFoundException: jmeter.log (Permission denied
 2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
 2015/11/11 14:29:28 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
 ```
+
+
+## <a name="InvokeUI"> Invoke JMeter UI</a>
+1) Open a new command or terminal window.
+
+2) Invoke the JMeter UI by typing in `Jmeter`.
+
+  On the PC this invokes <strong>Jmeter.bat</strong>.
+
+  Wait for the JMeter window to appear.
+
+  WARNING: Do not dismiss the command/terminal window which invoked JMeter.
+
+3) Press command + N or click menu <strong>File | Open</strong>.
+
+  On a Mac, notice the default location of test plans is <strong>usr</strong>.
+  
+  Notice the file format is JMeter [<strong>.jmx</strong>].
+  
+4) Select menu Open.
+
+5) Navigate to the test plan file described above: `/Users/wilsonmar/Downloads/99bottles-jmeter-master`
+
+6) Make sure menu <strong>Options | Log Viewer</strong> is checked so logs appear in the lower-right pane.
+
+7) To see more log entries, click on the edge above the log pane.
+   Scroll to the far left of log entries.
+   
+8) Run the test from the JMeter UI one of several ways:
+
+  * Click the Run button
+  * Select menu Run | Start
+  * Press command + R.
+
+9) During the run, at the upper-right corner in the gray bar is "0/1".
+
 
 
 <a id="TestFolder">
