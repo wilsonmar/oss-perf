@@ -34,6 +34,7 @@ JMeter is available several ways (each explained below):
    * <a href="#PackageInstall">Download and install using package managers Homebrew and Chocolatey</a>.
    * Locally running within a virual container such as Vagrant on a laptop.
    * In a PaaS (Platform as a service) running under Docker control.
+   * <a href="#Amazon">In PaaS service AWS (Amazon Web Service)</a>.
    * <a href="#Blazemeter">In SaaS service Blazemeter.com</a>.
    * <a href="#FloodIO">In SaaS service Flood.io</a>.
 
@@ -258,6 +259,12 @@ On a CentOS (Linux) machine, see https://www.centos.org/docs/5/html/yum/ (Yellow
    ```
    mv apache-jmeter-2.13  apache-jmeter-current 
    ```
+
+<a name="Amazon">
+### Amazon</a>
+<a target="_blank" href="https://github.com/oliverlloyd/jmeter-ec2">https://github.com/oliverlloyd/jmeter-ec2</a>
+Automates running Apache JMeter on Amazon EC2 
+
 
 <a name="Blazemeter">
 ### Blazemeter.com SaaS service</a>
