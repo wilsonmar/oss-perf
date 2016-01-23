@@ -15,7 +15,7 @@ In the list of jobs (Dashboard), different icons are used
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
-0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see the status screen.
+0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its    status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
@@ -69,14 +69,7 @@ In the list of jobs (Dashboard), different icons are used
    This lists the history for each <strong>run</strong> its duration and count of <strong>steps</strong> in each run.
    These details are not shown in the list at the job level.
 
-<a id="Post-Build">
-## Post-build actions</a>
-  * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
-  sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
-If a job fails, 
-0. Email notifications are sent
-1. Chat room notifications are sent
 
 <a id="NewJob">
 ## New Job</a>
@@ -85,19 +78,74 @@ Let's create a new job for a hands-on understanding of the tool.
 
 
 
-<a id="ScheduleBuild">
-## Schedule builds</a>
-0. Right-click on a project for a drop-down list containing **workspace**.
+0. In the Dashboard list, click on the (tiny) drop-down button for the drop-down context menu of a project.
 
  <img width="321" alt="jenkins-build-dropdown" src="https://cloud.githubusercontent.com/assets/300046/11172423/8cffff32-8bc4-11e5-9e3b-4c92b9f7b3a1.png">
+0. Select <strong>Configure</strong>.
+<a id="ScheduleBuild">
+## Schedule builds</a>
+0. Scroll to the <strong>Build Triggers</strong> section.
+1. Click <strong>Build periodically</strong>.
 
- A build can also be invoked by clicking the button with the green arrow at the right side of the list of projects.
+   PROTIP: Periodic builds are used when testing is disassociated from those who make changes.
+   
+   Jenkins makes use of 5 timing codes separated by spaces. The first position specifies the minute.
+   The second the hour, etc. A code such as "H H(9-10) * * *" specifies runs 
+   with H to specify use of a hash calculation of the job name that randomizes a time between 9 and 10 am.
+0. Click on the blue question mark for more detail.
+   
+   PROTIP: "Continuous integration" approaches typically favor "Build after other projects are built"
+   to remove a time window between developers building and Jenkins running tests.
+   
+   WARNING: "Poll SCM" (Source Code Management system) incurs overhead to service checks from Jenkins.
+
+3. A build job can be also invoked on a schedule.
+
+0. Click Configure in the context menu or in the left menu.
 
  In the workspace for a project are folders and **.trx** files output from Jenkins runs.
  
 Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
+A build can be triggered for invocation several ways.
+0. Click the button with the green arrow.
  
+<a id="Addons">
+## Build Add-ons</a>
+In a Configure screen:
+0. Scroll down to the <strong>Build</strong> section. 
+0. Cursor over a build step such as "Build a Visual Studio project" or "Run unit tests with MSTest" or "Execute Windows Batch command".
+1. Click <strong>Add Build Step</strong>.
+
+<a id="RestrictRun">
+## Restrict Run</a>
+0. In the first section, scroll to check <strong>Restrict where this project can be run</strong>.
+0. For <strong>Label Expression</strong>, enter <strong>WindowsHost</strong> to only run on Windows machines.
+ 
+<a id="Post-Build">
+## Post-build actions</a>
+  * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
+  sets the final build status (as good, unstable or failed) based on the reported error percentage. 
+
+If a job fails, 
+0. Email notifications are sent if <strong>Editable Email Notification</strong> is selected.
+0. Parameters defined earlier can be specified in the Default Content field:
+
+   ```
+Results For Build $BUILD_ID
+$DEFAULT_CONTENT
+${FILE,path="Results.trx.htm"}
+   ```
+
+* SMS via PagerDuty.
+
+   PROTIP: Email to a distribution list broadcasting to a small number of people
+   or only whoever is on-call.
+ 
+* https://github.com/jenkinsci/slack-plugin
+   can be installed to send chat room (Slack) notifications.
+
+
 <a id="Reports">
 ## Reports</a>
 0. Enable auto-refresh at the upper-right of the jobs list.
