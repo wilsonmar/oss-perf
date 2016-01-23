@@ -36,7 +36,7 @@ JMeter is available several ways (each explained below):
 <hr />
 
 <a href="#ManualInstall">
-## Manually download and invoke setup of several steps.
+### Manually download and invoke setup of several steps.
 
 You can follow what <a target="_blank" href="http://zacster.blogspot.com/2008/03/quick-howto-to-setup-jmeter.html">
 Zac explained in 2008</a> and download from a mirror website on the
@@ -48,11 +48,11 @@ PROTIP: It's simpler to use a package manager (see below).
 
 
 <a id="PackageInstall">
-## Install using package managers</a>
+### Install using package managers</a>
 This is the quickest and easiest way that involves setting up a package manager:
 
- * Homebrew on the Mac
- * Chocolatey on Windows
+ * <a href="#Download4Mac"> Homebrew on the Mac</a>
+ * <a href="#Download4Win"> Chocolatey on Windows</a>
 
 These instructions update instructions
 <a target="_blank" href="http://biscminds.blogspot.fr/2011/12/quick-jmeter-setup-on-mac.html">
@@ -104,8 +104,8 @@ Create the jar file using Maven ???
 
 http://jmeter.lazerycode.com/
 
-
-### Install Chocolatey on Windows:
+<a name="Download4Win"> 
+### Install Chocolatey on Windows</a>
 
 0. If you haven't already, open an internet browser, type or paste in URL:
   <a target="_blank" href="https://chocolatey.org/">https://chocolatey.org</a>.
