@@ -31,7 +31,8 @@ JMeter is available several ways (each explained below):
    * <a href="#PackageInstall">Download and install using package managers Homebrew and Chocolatey</a>.
    * Locally running within a virual container such as Vagrant on a laptop.
    * In a PaaS (Platform as a service) running under Docker control.
-   * In a SaaS service such as what <a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a> provides.
+   * <a href="#Blazemeter">In SaaS service Blazemeter.com</a>.
+   * <a href="#FloodIO">In SaaS service Flood.io</a>.
 
 <hr />
 
@@ -140,11 +141,28 @@ The path to the Java bin folder must be in the system PATH environment variable
 so Java executables can be found. See https://wiki.apache.org/jmeter/TestRecording210
 
 The path to JVM_HOME also needs to be defined, such as 
+
+   ```
 set JAVA_HOME=C:\jdk1.7.0_45
+   ```
 
 This is the same across operating systems, which is why JMeter can run on PC and Mac.
 
 
+<a name="Blazemeter">
+### Blazemeter.com SaaS service</a>
+<a target="_blank" href="http://blazemeter.com/">Blazmeter.com</a>.
+
+
+<a name="FloodIO">
+### Flood.io SaaS service</a>
+
+<a target="_blank" href="https://github.com/flood-io/ruby-jmeter">
+The Ruby JMeter</a> from 
+<a target="_blank" href="http://flood.io/">Flood.io</a>
+is among the most forked among jmeter repos. 
+
+It is used to work with the flood.io cloud testing service.
 
 
 WARNING: Because of what they do (pretending to be many clients), 
