@@ -125,6 +125,11 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    <img width="340" alt="jenkins build triggers" src="https://cloud.githubusercontent.com/assets/300046/12537282/0c3711f0-c270-11e5-8448-d4745280080a.png">
 
+   PROTIP: "Continuous integration" approaches typically favor "Build after other projects are built"
+   to remove a time window between developers building and Jenkins running tests.
+   
+   WARNING: "Poll SCM" (SCM = Source Code Management system) incurs overhead to service polling checks from Jenkins.
+
 1. Click <strong>Build periodically</strong>.
 
    PROTIP: Periodic builds are used when testing is disassociated from those who make changes.
@@ -132,21 +137,13 @@ CHALLENGE: Become famailiar with operations available in menus and links.
    Jenkins makes use of 5 timing codes separated by spaces. The first position specifies the minute.
    The second the hour, etc. A code such as "H H(9-10) * * *" specifies runs 
    with H to specify use of a hash calculation of the job name that randomizes a time between 9 and 10 am.
+
 0. Click on the blue question mark for more detail.
    
-   PROTIP: "Continuous integration" approaches typically favor "Build after other projects are built"
-   to remove a time window between developers building and Jenkins running tests.
-   
-   WARNING: "Poll SCM" (Source Code Management system) incurs overhead to service checks from Jenkins.
-
-3. A build job can be also invoked on a schedule.
+0. A build job can still be always be invoked manually anytime.
 
 0. Click Configure in the context menu or in the left menu.
 
-A build can be triggered for invocation several ways.
-
-0. Click the button with the green arrow.
- 
 <a id="Addons">
 ## Build Add-ons</a>
 In a Configure screen:
@@ -236,7 +233,7 @@ Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
 
 <a id="Resources">
-## Resources</a>
+## Resources for further learning</a>
 
 By Chandra Shekhar Reddy:
   * https://www.youtube.com/watch?v=XY-ZB3FRnxw 
