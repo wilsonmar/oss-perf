@@ -121,6 +121,7 @@ Or, if you don't want/need launchctl, you can just run:
  /usr/local/bin/jenkins
  ```
 
+ The version number is at the lower-right of the GUI.
 
 <a id="Config_Security">
 ## Configure User Security</a>
