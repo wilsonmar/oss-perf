@@ -7,6 +7,9 @@ Rather than inundating you with all items on each screen, this tutorial takes yo
 ## View Tabs</a>
 To group jobs into separate page views, click on the [+] at the top.
 
+ <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
+
+
 <a id="JobsDashboard">
 ## Jobs List in Jobs Dashboard</a>
 CHALLENGE: Become famailiar with operations available in menus and links.
@@ -14,6 +17,10 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
 0. Disable <strong>auto-refresh</strong> at the upper-right of the jobs list so you are not disturbed.
+
+0. Right-click on the # associated with a build for a drop-down list.
+
+ <img width="611" alt="jenkins-build-project-detail" src="https://cloud.githubusercontent.com/assets/300046/11172332/02c5ca5a-8bc3-11e5-8d53-b4a0b57a22a8.png">
 
 0. Click on an existing job to see its status screen.
 
