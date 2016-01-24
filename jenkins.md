@@ -29,6 +29,15 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
+<a id="Workspace">
+## Workspace from Git</a>
+0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
+   click the tiny drop-down arrow for a context menu.
+
+ <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
+
+
+
    <a id="RecentChanges">
    ## Recent Changes</a>
 
@@ -89,12 +98,6 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 2. Click <strong>Git Build Data</strong> for the same information.
 
 3. Click the link to the job in the breadcrumbs bar to skip a level up.
-<a id="Workspace">
-## Workspace from Git</a>
-0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
-   click the tiny drop-down arrow for a context menu.
-
- <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
 
 0. Click the job name in the cookie crumbs link at the top to return to the job status screen.
 0. Click a run # on the left menu.
