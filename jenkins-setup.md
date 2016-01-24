@@ -261,9 +261,27 @@ Builds/jobs can be automatically triggered several ways:
  * periodically on a schedule
  * poll a version control system for changes
 
+
 <a id="Plugins">
 ## Plugins</a>
-0. In **Manage Jenkins** UI **Available** tab has many plug-ins.
+0. Click **Manage Jenkins** on the left menu of the Dashboard screen.
+1. Clikc **Manage Plugins**.
+2. Click **Installed** tab to view what has been installed already.
+
+   * Email Extension Plugin
+   * Git Plugin
+   * Graddle Plugin
+   * SSH Slaves
+   * Translation Assistance
+   * Workspace Cleanup Plugin
+   
+   For Microsoft developers:
+
+   * MSBuild
+   * MSTest
+   * MSTest Runner
+   * VSTest Runner
+0. Click **Available** tab has many plug-ins.
 
 0. Click on a category (Artifact Uploaders) to expand additional categories.
 
