@@ -13,7 +13,7 @@ This may mean using mock interfaces.
 
 
 <a id="Alternatives">
-## Alternatives</a>
+## Alternatives to Jenkins</a>
 <img align="right" alt="jenkins alternatives" src="https://cloud.githubusercontent.com/assets/300046/12533728/df265ae4-c1ee-11e5-9a0b-bbc380a2d20f.png">
 
 Jenkins began in 2010 as a fork of Hudson into Github from java.net after its acquisition by Oracle's purchase of Sun.
@@ -311,17 +311,20 @@ By Chris Chrysostom:
 John Sonmez (@jsonmez, http://simpleprogrammer.com/)
  * <a target="_blank" href="https://app.pluralsight.com/library/courses/jenkins-introduction/table-of-contents">
    Getting Started with Jenkins Continuous Integration 2-hour 38-minute video course Feb. 2013 at Pluralsight.com</a>.
-   In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, 
+  So he is showing an older version of Jenkins. 
+  In this course, examples use SVN (Subversion) for the SCM (Source Control Manager), Visual Studio, 
    MSBuild (), MSTest, MSTestRunner, StyleCop, and Papercut.
   But other tools work in a similar way.
- The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
+  The sln (solution) MSBuild script file in the video can be an Ant or Maven script.
  
  <img alt="jenkins-job-flow-diagram" src="https://cloud.githubusercontent.com/assets/300046/11226898/b5a246f6-8d37-11e5-86f4-1c75e6c49dee.png">
+
+http://app.pluralsight.com/courses/jenkins-introduction
 
 
 <a id=SkillCert">
 ## Skill Certification</a>
-There is a company that is hoisting certifications of Jenkins people.
+The company hosting Jenkins servers is also hoisting certifications of Jenkins people.
 There is the age-old question of whether organizations providing training also be the one offering certifications
 advertised as being of the whole community.
 The company is so commercial oriented that it does not allow newsletters to be sent to gmail and hotmail addresses.
