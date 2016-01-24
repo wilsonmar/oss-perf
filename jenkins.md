@@ -65,7 +65,11 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 3. Click the link to the job in the breadcrumbs bar to skip a level up.
 <a id="Workspace">
 ## Workspace from Git</a>
-0. Click either <strong>Workspace</strong> link to view input files (pulled from Github).
+0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
+   click the tiny drop-down arrow for a context menu.
+
+ <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
+
 0. Click the job name in the cookie crumbs link at the top to return to the job status screen.
 0. Click a run # on the left menu.
 <a id="TestResult">
@@ -85,12 +89,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 ## New Job</a>
 Let's create a new job for a hands-on understanding of the tool.
 
-
-
-
 0. In the Dashboard list, click on the (tiny) drop-down button for the drop-down context menu of a project.
 
- <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
 0. Select <strong>Configure</strong>.
 <a id="ScheduleBuild">
 ## Schedule builds</a>
