@@ -35,8 +35,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    PROTIP: Pay special attention whether the first letter of each parameter values are capitalized.
 
-<a id="Parameters">
-## Parameters</a>
+   <a id="Parameters">
+   ## Parameters</a>
 
 0. Click the <strong>Build with Parameters</strong> link at the left menu for a list of parameter values fed to the job.
 
