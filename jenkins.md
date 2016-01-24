@@ -54,7 +54,7 @@ In the list of jobs (Dashboard), different icons are used
 
 <a id="BuildStatus">
 ## Individual Build Status</a>
-<img align="left" width="183" alt="jenkins build menu" src="https://cloud.githubusercontent.com/assets/300046/12532074/83e3a850-c1bf-11e5-836e-444ffff39424.png">
+<img align="right" width="183" alt="jenkins build menu" src="https://cloud.githubusercontent.com/assets/300046/12532074/83e3a850-c1bf-11e5-836e-444ffff39424.png">
 
 0. Click <strong>Parameters</strong> to review the parameter values used in this particular run.
 0. Click <strong>Git Build Data</strong> for the code which uniquely identifies the data used to drive this particular build.
