@@ -29,8 +29,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
-<a id="Workspace">
-## Workspace from Git</a>
+   <a id="Workspace">
+   ### Workspace from Git</a>
 0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
    click the tiny drop-down arrow for a context menu.
 
