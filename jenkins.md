@@ -62,7 +62,14 @@ CHALLENGE: Become famailiar with operations available in menus and links.
    <a name="Configure">
    ### Configure project</a>
 0. Click the <strong>Configure</strong> link at the left menu for values in the form used to create the current job.
-0. Scroll down to notice the String Parameter names and default values (such as environment, browsertype).
+
+0. Mouse over the green breadcrumbs line to the right of <strong>Configure</strong> for a menu:
+
+   <img width="208" alt="jenkins configure breadcrumbs menu" src="https://cloud.githubusercontent.com/assets/300046/12537497/94c341c4-c275-11e5-884e-c6962aafec72.png">
+   
+   PROTIP: Using the drop-down menu from the breadcrumbs green bar saves you from scrolling down the many pages in this screen.
+
+0. Scroll down to the <strong>String Parameter</strong> names and default values (such as environment, browsertype).
 
    PROTIP: Pay special attention whether the first letter of each parameter values are capitalized.
 
