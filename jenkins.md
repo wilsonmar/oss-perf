@@ -9,7 +9,7 @@ To group jobs into separate page views, click on the [+] at the top.
 
 <a id="JobsDashboard">
 ## Jobs List in Jobs Dashboard</a>
-CHALLENGE: Become famailiar with operations availalbe in menus and links.
+CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
