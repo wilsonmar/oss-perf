@@ -132,8 +132,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    <img width="340" alt="jenkins build triggers" src="https://cloud.githubusercontent.com/assets/300046/12537282/0c3711f0-c270-11e5-8448-d4745280080a.png">
 
-   PROTIP: "Continuous integration" approaches typically favor "Build after other projects are built"
-   to remove a time window between developers building and Jenkins running tests.
+   PROTIP: "Continuous integration" approaches typically favor <strong>Build after other projects are built</strong>
+   to remove the time window between developers building and Jenkins running tests.
    
    WARNING: "Poll SCM" (SCM = Source Code Management system) incurs overhead to service polling checks from Jenkins.
 
