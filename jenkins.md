@@ -46,9 +46,9 @@ CHALLENGE: Become famailiar with operations availalbe in menus and links.
 
    These are explained eleswhere.
 
-0. Escape the page by click the <strong>Coverage Trend</strong> link at the left menu. 
+0. Escape the page by clicking another menu item, the <strong>Coverage Trend</strong> link at the left menu. 
 
-   It does not display if the add-on is not installed.
+   It does not display much if the add-on is not installed.
 
 0. Click the "Last build" under Permanlinks. Notice it is a generic link for 
    the link at the top of the Build History at the left.
