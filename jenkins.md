@@ -24,6 +24,11 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    PROTIP: Viewing a specific run is more frequently done that reviewing the historical trend.
 
+0. Click ___ to return to the Jobs list.
+
+   <a id="RecentChanges">
+   ## Recent Changes</a>
+
 0. Click on an existing job <strong>Name</strong> to see its status screen.
 
    <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
