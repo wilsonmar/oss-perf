@@ -48,4 +48,18 @@ Its <a target="_blank" href="http://blog.xebialabs.com/author/dfarley/">
 Company blog</a> is by
 David Farley (@davidfarley, <a target="_blank" href="http://www.davefarley.net">http://www.davefarley.net</a>)
 
+<a name="React">
+## React App</a>
 
+Despite André Staltz's claim
+* http://staltz.com/why-react-redux-is-an-inferior-paradigm.html
+
+React (from Facebook) is popular when combined with additional libraries.
+
+* https://webpack.github.io/ module bundler of JSX, and ES6 code, 
+* Node.js & NPM 
+* author of http://survivejs.com/ book
+
+Additional resources for learning:
+
+* https://leanpub.com/hackingwithreact
