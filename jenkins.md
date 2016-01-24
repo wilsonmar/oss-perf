@@ -57,7 +57,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Click <strong>Status</strong> on the left menu to return to the higher level screen.
 
-   CAUTION: If you're just looking around, don't click the Disable button on the right or the Delete button on the left menu.
+   CAUTION: If you're just looking around, don't click the <strong>Disable</strong> button on the right 
+   or the <strong>Delete</strong> button on the left menu.
 
    <a name="Configure">
    ### Configure project</a>
