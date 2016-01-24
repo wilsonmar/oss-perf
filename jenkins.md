@@ -233,6 +233,11 @@ John Sonmez (@jsonmez, http://simpleprogrammer.com/)
 
 http://app.pluralsight.com/courses/jenkins-introduction
 
+* http://thepracticalsysadmin.com/setting-up-a-github-webhook-in-jenkins/
+
+* https://gist.github.com/misterbrownlee/3708738
+  Jenkins to build GitHub projects.
+
 
 <a id=SkillCert">
 ## Skill Certification</a>
