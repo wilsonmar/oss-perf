@@ -28,6 +28,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    PROTIP: Viewing a specific run is more frequently done that reviewing historical trends.
 
+0. Select from the context menu <strong>Console Output</strong> for the particular run clicked.
+
 0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
    <a id="Workspace">
