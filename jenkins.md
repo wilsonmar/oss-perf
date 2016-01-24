@@ -10,13 +10,15 @@ We begin with a look at an existing build job and its run history details as we 
  <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
 
 
-<a id="JobsDashboard">
-## Jobs List in Jobs Dashboard</a>
+<a id="Hierarchy">
+## Hierarchy of Projects/Jobs to Individual Builds</a>
 CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
 0. Disable <strong>auto-refresh</strong> at the upper-right of the jobs list so you are not disturbed.
+
+   NOTE: Several teams typically share use of the same Jenkins server.
 
 0. Right-click on the # link on the job list to go straight to the <strong>Console Output</strong> for that particular run.
 
@@ -24,7 +26,7 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    PROTIP: Viewing a specific run is more frequently done that reviewing the historical trend.
 
-0. Click ___ to return to the Jobs list.
+0. Click <strong>Back to Project</strong> to return to the Jobs/Projects list.
 
    <a id="RecentChanges">
    ## Recent Changes</a>
