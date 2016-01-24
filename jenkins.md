@@ -34,14 +34,6 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
-   <a id="Workspace">
-   ### Workspace from Git</a>
-0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
-   click the tiny drop-down arrow for a context menu.
-
- <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
-
-
    <a id="RecentChanges">
    ## Recent Changes</a>
 
@@ -59,7 +51,18 @@ CHALLENGE: Become famailiar with operations available in menus and links.
    PROTIP: The same link can appear in the left menu and in the screen.
    Prefer the left menu as it's easier to remember and to find.
 
-0. Click <strong>Status</strong> on the left menu to return to the higher level screen.
+0. Return to the higher level projects screen by clicking on another left menu item, such as <strong>Workspace</strong>.
+
+   <a name="Workspace">
+   ### Workspace</a>
+
+0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
+   click the tiny drop-down arrow for a context menu.
+
+ <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
+
+
+
 
    <a name="Configure">
    ### Configure project</a>
