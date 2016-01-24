@@ -40,10 +40,11 @@ CHALLENGE: Become famailiar with operations availalbe in menus and links.
    CAUTION: Don't click <strong>Build</strong> if you're just looking around
    because that invokes the build job. 
 
-0. More parameters can be added in Configure:
+   More parameters can be added in Configure:
 
    <img width="218" alt="jenkins add parameter" src="https://cloud.githubusercontent.com/assets/300046/12533031/033bb968-c1d8-11e5-86a6-f6ee97017dd8.png">
 
+   These are explained eleswhere.
 
 0. Escape the page by click the <strong>Coverage Trend</strong> link at the left menu. 
 
