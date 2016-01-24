@@ -58,7 +58,7 @@ React (from Facebook) is popular when combined with additional libraries.
 
 * https://webpack.github.io/ module bundler of JSX, and ES6 code, 
 * Node.js & NPM 
-* author of http://survivejs.com/ book
+* http://bebraw.github.io/reactabular/ table generator from the author of http://survivejs.com/ book
 
 Additional resources for learning:
 
