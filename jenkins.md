@@ -7,23 +7,21 @@ Rather than inundating you with all items on each screen, this tutorial takes yo
 ## View Tabs</a>
 To group jobs into separate page views, click on the [+] at the top.
 
+There are two or more ways to reach each prticular screen.
+
 <a id="JobStatus">
 ## Job Status</a>
 In the list of jobs (Dashboard), different icons are used
 
-0. To display smaller icons so more jobs are listed, click the S among S | M | L at the bottom of the list.
+0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
-0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its status screen.
+0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its    status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
-<img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
+<img align="left" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
 
 0. Clicking <strong>Recent Changes</strong> on the Status screen is the same as clicking Changes on the left menu.
-
-   PROTIP: The same link can appear in the left menu and in the screen.
-   Prefer the left menu as it's easier to remember.
-
 0. Click Status on the left menu to return to the higher level screen.
 
    CAUTION: If you're just looking around, don't click the Disable button on the right or the Delete button on the left menu.
@@ -111,14 +109,28 @@ Let's create a new job for a hands-on understanding of the tool.
 0. Click Configure in the context menu or in the left menu.
 
 A build can be triggered for invocation several ways.
+
 0. Click the button with the green arrow.
  
 <a id="Addons">
 ## Build Add-ons</a>
 In a Configure screen:
+
 0. Scroll down to the <strong>Build</strong> section. 
-0. Cursor over a build step such as "Build a Visual Studio project" or "Run unit tests with MSTest" or "Execute Windows Batch command".
-1. Click <strong>Add Build Step</strong>.
+
+0. Cursor over a build step such as "Build a Visual Studio project".
+1. For <strong>MSBuild Build File</strong>, the file extension should be <strong>.sln</strong> (solution).
+1. In "Run unit tests with MSTest", test file extension should be <strong>.dll</strong> (dynamic link library).
+2. The <strong>Results.trx</strong> file extension is ".trx".
+2. In "Execute Windows Batch command", the Command is first an .exe (executable).
+
+   ```
+   C:\Tools\trx2html.exe Results.trx
+   ```
+
+0. In "Publish MSTest test result report", it's <strong>*.trx</strong>.
+
+0. Click <strong>Add Build Step</strong>.
 
    <img width="344" alt="jenkins build steps" src="https://cloud.githubusercontent.com/assets/300046/12533016/bb8d66de-c1d7-11e5-9620-8d96de3e7300.png">
 
@@ -126,6 +138,7 @@ In a Configure screen:
 <a id="RestrictRun">
 ## Restrict Run</a>
 0. In the first section, scroll to check <strong>Restrict where this project can be run</strong>.
+
 0. For <strong>Label Expression</strong>, enter <strong>WindowsHost</strong> to only run on Windows machines.
  
 <a id="Post-Build">
@@ -140,7 +153,9 @@ In a Configure screen:
  In the workspace for a project are folders and **.trx** files output from Jenkins runs.
  
 If a job fails, 
+
 0. Email notifications are sent if <strong>Editable Email Notification</strong> is selected.
+
 0. Parameters defined earlier can be specified in the Default Content field:
 
    ```
