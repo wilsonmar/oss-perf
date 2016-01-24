@@ -13,7 +13,9 @@ In the list of jobs (Dashboard), different icons are used
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
-0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its    status screen.
+0. Disable <strong>auto-refresh</strong> at the upper-right of the jobs list if you are awaiting for jobs to finish.
+
+0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
@@ -179,8 +181,6 @@ Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
 <a id="Reports">
 ## Reports</a>
-0. Enable auto-refresh at the upper-right of the jobs list.
-
 0. Builds appear in the **Build Queue** at the left of the UI.
 
 0. Right-click on the # associated with a build for a drop-down list.
