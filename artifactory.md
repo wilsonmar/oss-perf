@@ -1,9 +1,13 @@
-This describes use of JFrong Artifactory, a private binary repository much like
+This describes use of JFrong Artifactory, a <strong>private</strong> binary repository much like
 what public <a href="#Chocolately"> Chocolatey</a> provides for Windows machines
 and <a target="_blank" href="http://www.homebrew.com"> Homebrew</a> for Macs.
 
+Local private binary repositories are more secure than public sites which can be hacked.
+Local is also quicker.
+
  * https://www.youtube.com/watch?v=-4VJ2uQ69MQ
    [Meetup] The Past, Present and Future of Artifactory
+ * https://www.youtube.com/watch?v=NcmTEevkqrU
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/12533663/5ecd525a-c1ec-11e5-9375-38fd43712cc0.png">
 <img width="1056" alt="artifactory system of record" src="https://cloud.githubusercontent.com/assets/300046/12533663/5ecd525a-c1ec-11e5-9375-38fd43712cc0.png"></a>
