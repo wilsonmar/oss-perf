@@ -49,6 +49,9 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
+   CAUTION: If you're just looking around, don't click the <strong>Disable</strong> button on the right 
+   or the <strong>Delete</strong> button on the left menu.
+
    <img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
 
 0. Clicking <strong>Recent Changes</strong> on the Status screen is the same as clicking <strong>Changes</strong> on the left menu.
@@ -57,9 +60,6 @@ CHALLENGE: Become famailiar with operations available in menus and links.
    Prefer the left menu as it's easier to remember and to find.
 
 0. Click <strong>Status</strong> on the left menu to return to the higher level screen.
-
-   CAUTION: If you're just looking around, don't click the <strong>Disable</strong> button on the right 
-   or the <strong>Delete</strong> button on the left menu.
 
    <a name="Configure">
    ### Configure project</a>
