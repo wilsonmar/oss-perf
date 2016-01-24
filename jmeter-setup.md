@@ -142,6 +142,11 @@ NOTE: This is done by a user with admin permissions.
 ==> Downloading http://jmeter-plugins.org/downloads/file/JMeterPlugins-Hadoop-1.3.1.zip
 ==> Downloading from http://jmeter-plugins.org/files/JMeterPlugins-Hadoop-1.3.1.zip
 ######################################################################## 100.0%
+   ```
+
+  You also get this message:
+
+  ```
 Error: The `brew link` step did not complete successfully
 The formula built, but is not symlinked into /usr/local
 Could not symlink bin/jmeter
@@ -153,7 +158,19 @@ You can try again using:
 🍺  /usr/local/Cellar/jmeter/2.13: 1,925 files, 108.6M, built in 2 minutes 19 seconds
    ```
 
+0. If you also got the above error messages, take ownership of /usr/local/bin and try the symlink again:
 
+   ```
+  sudo chown -R $USER:admin /usr/local/bin
+  brew link jmeter
+   ```
+
+  The response expected is:
+  
+  ```
+  Linking /usr/local/Cellar/jmeter/2.13... 1 symlinks created
+  ```
+  
 ---------------
 
 
