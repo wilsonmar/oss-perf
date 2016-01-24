@@ -15,7 +15,7 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Disable <strong>auto-refresh</strong> at the upper-right of the jobs list so you are not disturbed.
 
-0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its status screen.
+0. Click on an existing job to see its status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
@@ -83,11 +83,6 @@ CHALLENGE: Become famailiar with operations available in menus and links.
    This lists the history for each <strong>run</strong> its duration and count of <strong>steps</strong> in each run.
    These details are not shown in the list at the job level.
 
-
-
-<a id="NewJob">
-## New Job</a>
-Let's create a new job for a hands-on understanding of the tool.
 
 0. In the Dashboard list, click on the (tiny) drop-down button for the drop-down context menu of a project.
 
