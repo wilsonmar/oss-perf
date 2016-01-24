@@ -13,7 +13,7 @@ In the list of jobs (Dashboard), different icons are used
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
-0. Disable <strong>auto-refresh</strong> at the upper-right of the jobs list if you are awaiting for jobs to finish.
+0. Disable <strong>auto-refresh</strong> at the upper-right of the jobs list so you are not disturbed.
 
 0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its status screen.
 
