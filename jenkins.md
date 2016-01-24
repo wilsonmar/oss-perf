@@ -21,7 +21,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    NOTE: Several teams typically share use of the same Jenkins server.
 
-0. Right-click on the # link on the job list to go straight to the <strong>Console Output</strong> for that particular run.
+0. Mouse over the # link on the job list and select the tiny arrow that appears.
+1. Select an option from the context menu that appears:
 
    <img width="536" alt="jenkins projects run context" src="https://cloud.githubusercontent.com/assets/300046/12537175/a74fb83e-c26d-11e5-99eb-b03dac327a71.png">
 
