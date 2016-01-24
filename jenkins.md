@@ -122,6 +122,9 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 <a id="ScheduleBuild">
 ## Schedule builds</a>
 0. Scroll to the <strong>Build Triggers</strong> section.
+
+   <img width="340" alt="jenkins build triggers" src="https://cloud.githubusercontent.com/assets/300046/12537282/0c3711f0-c270-11e5-8448-d4745280080a.png">
+
 1. Click <strong>Build periodically</strong>.
 
    PROTIP: Periodic builds are used when testing is disassociated from those who make changes.
