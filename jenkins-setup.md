@@ -30,10 +30,9 @@ Alternatives to Jenkins include Fabric and Capistrano.
 Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
 Cloudbees.com</a> which hosts Jenkins in their cloud.
 
-* http://thepracticalsysadmin.com/setting-up-a-github-webhook-in-jenkins/
+ * https://www.youtube.com/watch?v=1JSOGJQAhtE Jenkins on Amazon
+   by Jeff Shantz:
 
-* https://gist.github.com/misterbrownlee/3708738
-  Jenkins to build GitHub projects.
   
 <a id="Install_Linux">
 ### Installation on Linux</a>
