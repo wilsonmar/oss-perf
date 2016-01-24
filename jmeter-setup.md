@@ -117,6 +117,45 @@ NOTE: This is done by a user with admin permissions.
    brew update
    brew install jmeter --with-plugins
    ```
+  
+  The response:
+  
+  ```
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=jmeter/binaries/apache-jmeter-2.13.tgz
+==> Best Mirror http://mirror.stjschools.org/public/apache/jmeter/binaries/apache-jmeter-2.13.tgz
+######################################################################## 100.0%
+==> Downloading http://jmeter-plugins.org/downloads/file/JMeterPlugins-Standard-1.3.1.zip
+==> Downloading from http://jmeter-plugins.org/files/JMeterPlugins-Standard-1.3.1.zip
+######################################################################## 100.0%
+==> Downloading http://jmeter-plugins.org/downloads/file/ServerAgent-2.2.1.zip
+==> Downloading from http://jmeter-plugins.org/files/ServerAgent-2.2.1.zip
+######################################################################## 100.0%
+==> Downloading http://jmeter-plugins.org/downloads/file/JMeterPlugins-Extras-1.3.1.zip
+==> Downloading from http://jmeter-plugins.org/files/JMeterPlugins-Extras-1.3.1.zip
+######################################################################## 100.0%
+==> Downloading http://jmeter-plugins.org/downloads/file/JMeterPlugins-ExtrasLibs-1.3.1.zip
+==> Downloading from http://jmeter-plugins.org/files/JMeterPlugins-ExtrasLibs-1.3.1.zip
+######################################################################## 100.0%
+==> Downloading http://jmeter-plugins.org/downloads/file/JMeterPlugins-WebDriver-1.3.1.zip
+==> Downloading from http://jmeter-plugins.org/files/JMeterPlugins-WebDriver-1.3.1.zip
+######################################################################## 100.0%
+==> Downloading http://jmeter-plugins.org/downloads/file/JMeterPlugins-Hadoop-1.3.1.zip
+==> Downloading from http://jmeter-plugins.org/files/JMeterPlugins-Hadoop-1.3.1.zip
+######################################################################## 100.0%
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/jmeter
+/usr/local/bin is not writable.
+
+You can try again using:
+  brew link jmeter
+==> Summary
+🍺  /usr/local/Cellar/jmeter/2.13: 1,925 files, 108.6M, built in 2 minutes 19 seconds
+   ```
+
+
+---------------
+
 
 JMETER_BIN ???
 
