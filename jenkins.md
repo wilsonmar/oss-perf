@@ -9,6 +9,7 @@ We begin with a look at an existing build job and its run history details as we 
 
    <img width="738" alt="jenkins view tabs" src="https://cloud.githubusercontent.com/assets/300046/12537097/e3120c20-c26b-11e5-84f5-5b2b32932540.png">
 
+0. Views can also be selected after clicking the tiny righ-pointing arrow to the left of Jenkins on the green bar.
 
 <a id="Hierarchy">
 ## Hierarchy of Projects/Jobs to Individual Builds</a>
