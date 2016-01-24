@@ -7,10 +7,8 @@ Rather than inundating you with all items on each screen, this tutorial takes yo
 ## View Tabs</a>
 To group jobs into separate page views, click on the [+] at the top.
 
-There are two or more ways to reach each prticular screen.
-
 <a id="JobsDashboard">
-## Jobs Dashboard</a>
+## Jobs List in Jobs Dashboard</a>
 In the list of jobs (Dashboard), different icons are used
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
@@ -19,10 +17,14 @@ In the list of jobs (Dashboard), different icons are used
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
-<img align="left" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
+<img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
 
-0. Clicking <strong>Recent Changes</strong> on the Status screen is the same as clicking Changes on the left menu.
-0. Click Status on the left menu to return to the higher level screen.
+0. Clicking <strong>Recent Changes</strong> on the Status screen is the same as clicking <strong>Changes</strong> on the left menu.
+ 
+   PROTIP: The same link can appear in the left menu and in the screen.
+   Prefer the left menu as it's easier to remember and to find.
+
+0. Click <strong>Status</strong> on the left menu to return to the higher level screen.
 
    CAUTION: If you're just looking around, don't click the Disable button on the right or the Delete button on the left menu.
 
