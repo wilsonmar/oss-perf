@@ -1,11 +1,11 @@
-This page takes a hands-on approach to learn usage of Jenkins as setup in <a href="jenkins-setup.md">jenkins-setup</a>.
+This chapter takes a hands-on approach to learn usage of Jenkins as setup in <a href="jenkins-setup.md">jenkins-setup</a>.
 
-Rather than inundating you with all items on each screen, this tutorial takes you to several screens invovled with each of several themes, such as Parameters, Git connection, Coverage, etc.
+We begin with a look at an existing build job and its run history details as we learn navigation tricks.
 
 
 <a id="Tabs">
 ## View Tabs</a>
-To group jobs into separate page views, click on the [+] at the top.
+0. To group jobs into separate page views, click on the [+] at the top.
 
  <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
 
@@ -22,7 +22,7 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
  <img width="611" alt="jenkins-build-project-detail" src="https://cloud.githubusercontent.com/assets/300046/11172332/02c5ca5a-8bc3-11e5-8d53-b4a0b57a22a8.png">
 
-0. Click on an existing job to see its status screen.
+0. Click on an existing job <strong>Name</strong> to see its status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
