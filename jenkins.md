@@ -26,7 +26,7 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    PROTIP: Viewing a specific run is more frequently done that reviewing the historical trend.
 
-0. Click <strong>Back to Project</strong> to return to the Jobs/Projects list.
+0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
    <a id="RecentChanges">
    ## Recent Changes</a>
