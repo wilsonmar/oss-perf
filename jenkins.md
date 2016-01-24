@@ -217,9 +217,6 @@ By Chandra Shekhar Reddy:
   * Git integration https://www.youtube.com/watch?v=ISAUsBSI8G0
   * Configuring slave nodes https://www.youtube.com/watch?v=EOp2VVRHrKQ
 
-By Jeff Shantz:
-  * https://www.youtube.com/watch?v=1JSOGJQAhtE Jenkins on Amazon
-
 By Chris Chrysostom:
  * https://www.youtube.com/watch?v=RR0LabeUQ88 Create new job in Jenkins
 
