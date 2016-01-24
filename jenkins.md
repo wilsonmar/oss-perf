@@ -7,15 +7,16 @@ Rather than inundating you with all items on each screen, this tutorial takes yo
 ## View Tabs</a>
 To group jobs into separate page views, click on the [+] at the top.
 
-There are two or more ways to reach each prticular screen.
+PROTIP: The same link can appear in the left menu and in the screen.
+Prefer the left menu as it's easier to remember.
 
 <a id="JobStatus">
 ## Job Status</a>
 In the list of jobs (Dashboard), different icons are used
 
-0. For smaller icons, click the S among S | M | L at the bottom of the list.
+0. To display smaller icons so more jobs are listed, click the S among S | M | L at the bottom of the list.
 
-0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its    status screen.
+0. Before <a href="#NewJob">creating a new job</a>, click on an existing job to see its status screen.
 
 <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
