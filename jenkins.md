@@ -7,7 +7,7 @@ We begin with a look at an existing build job and its run history details as we 
 ## View Tabs</a>
 0. To group jobs into separate page views, click on the [+] tab near the top.
 
- <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
+   <img width="738" alt="jenkins view tabs" src="https://cloud.githubusercontent.com/assets/300046/12537097/e3120c20-c26b-11e5-84f5-5b2b32932540.png">
 
 
 <a id="Hierarchy">
@@ -24,7 +24,7 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
  <img width="611" alt="jenkins-build-project-detail" src="https://cloud.githubusercontent.com/assets/300046/11172332/02c5ca5a-8bc3-11e5-8d53-b4a0b57a22a8.png">
 
-   PROTIP: Viewing a specific run is more frequently done that reviewing the historical trend.
+   PROTIP: Viewing a specific run is more frequently done that reviewing historical trends.
 
 0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
