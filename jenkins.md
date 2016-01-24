@@ -9,8 +9,8 @@ To group jobs into separate page views, click on the [+] at the top.
 
 There are two or more ways to reach each prticular screen.
 
-<a id="JobStatus">
-## Job Status</a>
+<a id="JobsDashboard">
+## Jobs Dashboard</a>
 In the list of jobs (Dashboard), different icons are used
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
