@@ -21,14 +21,16 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    NOTE: Several teams typically share use of the same Jenkins server.
 
-0. Mouse over the # link on the job list and select the tiny arrow that appears.
-1. Select an option from the context menu that appears:
+0. Mouse over the # link for the top row on the job list and select the tiny arrow that appears.
+0. Select an option from the context menu that appears:
 
    <img width="536" alt="jenkins projects run context" src="https://cloud.githubusercontent.com/assets/300046/12537175/a74fb83e-c26d-11e5-99eb-b03dac327a71.png">
 
    PROTIP: Viewing a specific run is more frequently done that reviewing historical trends.
 
 0. Select from the context menu <strong>Console Output</strong> for the particular run clicked.
+
+   This is the lowest detail to each run. Lines output are from the program that was invoked, not Jenkins.
 
 0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
@@ -38,7 +40,6 @@ CHALLENGE: Become famailiar with operations available in menus and links.
    click the tiny drop-down arrow for a context menu.
 
  <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
-
 
 
    <a id="RecentChanges">
