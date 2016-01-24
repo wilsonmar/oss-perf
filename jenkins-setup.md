@@ -14,6 +14,8 @@ This may mean using mock interfaces.
 
 <a id="Alternatives">
 ## Alternatives</a>
+<img align="right" alt="jenkins alternatives" src="https://cloud.githubusercontent.com/assets/300046/12533728/df265ae4-c1ee-11e5-9a0b-bbc380a2d20f.png">
+
 Jenkins began in 2010 as a fork of Hudson into Github from java.net after its acquisition by Oracle's purchase of Sun.
 
 * http://jenkins-ci.org/content/whos-driving-thing
