@@ -23,7 +23,7 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Right-click on the # link on the job list to go straight to the <strong>Console Output</strong> for that particular run.
 
- <img width="611" alt="jenkins-build-project-detail" src="https://cloud.githubusercontent.com/assets/300046/11172332/02c5ca5a-8bc3-11e5-8d53-b4a0b57a22a8.png">
+   <img width="536" alt="jenkins projects run context" src="https://cloud.githubusercontent.com/assets/300046/12537175/a74fb83e-c26d-11e5-99eb-b03dac327a71.png">
 
    PROTIP: Viewing a specific run is more frequently done that reviewing historical trends.
 
