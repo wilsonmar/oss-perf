@@ -18,15 +18,17 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Disable <strong>auto-refresh</strong> at the upper-right of the jobs list so you are not disturbed.
 
-0. Right-click on the # associated with a build for a drop-down list.
+0. Right-click on the # link on the job list to go straight to the <strong>Console Output</strong> for that particular run.
 
  <img width="611" alt="jenkins-build-project-detail" src="https://cloud.githubusercontent.com/assets/300046/11172332/02c5ca5a-8bc3-11e5-8d53-b4a0b57a22a8.png">
 
+   PROTIP: Viewing a specific run is more frequently done that reviewing the historical trend.
+
 0. Click on an existing job <strong>Name</strong> to see its status screen.
 
-<img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
+   <img width="909" alt="jenkins build screen" src="https://cloud.githubusercontent.com/assets/300046/12532100/4394d7b4-c1c0-11e5-8d40-e92263aa3369.png">
 
-<img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
+   <img align="right" width="201" alt="jenkins job menu" src="https://cloud.githubusercontent.com/assets/300046/12532075/9d34fae8-c1bf-11e5-83c2-d948fee7a22d.png">
 
 0. Clicking <strong>Recent Changes</strong> on the Status screen is the same as clicking <strong>Changes</strong> on the left menu.
  
