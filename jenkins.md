@@ -5,7 +5,7 @@ We begin with a look at an existing build job and its run history details as we 
 
 <a id="Tabs">
 ## View Tabs</a>
-0. To group jobs into separate page views, click on the [+] tab near the top.
+0. To group jobs into separate page views, click on the [+] tab above the list of projects.
 
    <img width="738" alt="jenkins view tabs" src="https://cloud.githubusercontent.com/assets/300046/12537097/e3120c20-c26b-11e5-84f5-5b2b32932540.png">
 
