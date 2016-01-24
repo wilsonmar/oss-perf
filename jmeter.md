@@ -61,16 +61,20 @@ let's look at a JMeter test plan that has scripting logic often needed.
 5) Type `cd` and paste the Clipboard containing the path to the "99bottles" repo folder on your local drive.
   For example:
   
-```
+  ```
   /Users/wilsonmar/Downloads/99bottles-jmeter-master
-```
+  ```
 
 6) View files by typing `ls` then Enter. The response:
 
-```
+   ```
 README.md        jmeter.log       
 Test Plan.jmx    requirements.txt server.py
-```
+   ```
+
+7) In a browser specify URL http://tech.mindcandy.com/2011/11/99-bottles-of-jmeter-on-the-wall/
+   for the blog which describes the repo.
+
 
 ## <a name="SetupServerUnderTest"> Setup Python Server Under Test</a>
 The env1 folder contains a <strong>server.py</strong> Python script.
