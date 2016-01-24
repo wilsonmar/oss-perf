@@ -46,6 +46,8 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    CAUTION: If you're just looking around, don't click the Disable button on the right or the Delete button on the left menu.
 
+   <a name="Configure">
+   ### Configure project</a>
 0. Click the <strong>Configure</strong> link at the left menu for values in the form used to create the current job.
 0. Scroll down to notice the String Parameter names and default values (such as environment, browsertype).
 
@@ -63,9 +65,13 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
    <img width="218" alt="jenkins add parameter" src="https://cloud.githubusercontent.com/assets/300046/12533031/033bb968-c1d8-11e5-86a6-f6ee97017dd8.png">
 
-   These are explained eleswhere.
+   (These are explained eleswhere.)
+   
+   PROTIP: Even though a page doesn't have a "Cancel" action (just Save or Apply),
+   exit without saving by clicking another menu item.
 
-0. Escape the page by clicking another menu item, the <strong>Coverage Trend</strong> link at the left menu. 
+0. <strong>Escape the page without saving</strong> 
+   by clicking another menu item, the <strong>Coverage Trend</strong> link at the left menu. 
 
    It does not display much if the add-on is not installed.
 
