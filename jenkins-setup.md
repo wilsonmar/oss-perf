@@ -79,6 +79,10 @@ Or, if you don't want/need launchctl, you can just run:
 🍺  /usr/local/Cellar/jenkins/1.644: 6 files, 61.5M, built in 30 seconds
   ```
  
+ For additional information:
+ 
+ * http://iosfactory.blogspot.com/2015/02/jenkins-setup-for-ios-development.html
+ 
 <a id="Install_Windows">
 ### Installation on Windows</a>
 0. Open a Command Window.
