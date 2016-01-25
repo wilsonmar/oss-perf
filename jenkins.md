@@ -287,3 +287,4 @@ There is the age-old question of whether organizations providing training also b
 advertised as being of the whole community.
 The company is so commercial oriented that it does not allow newsletters to be sent to gmail and hotmail addresses.
 
+* http://wakaleo.com/books/jenkins-the-definitive-guide/download-jtdg-pdf free download from John Ferguson Smart.
