@@ -82,7 +82,11 @@ Or, if you don't want/need launchctl, you can just run:
 🍺  /usr/local/Cellar/jenkins/1.644: 6 files, 61.5M, built in 30 seconds
   ```
  
- For additional information:
+  Homebrew puts the jenkins.war file in:
+  
+  /usr/local/Cellar/jenkins/1.644/libexec/jenkins.war
+ 
+ For more information:
  
  * http://iosfactory.blogspot.com/2015/02/jenkins-setup-for-ios-development.html
  
