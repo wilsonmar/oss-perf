@@ -103,11 +103,39 @@ Or, if you don't want/need launchctl, you can just run:
  
    If Java is not installed on your computer already, it will be installed as a dependency.
 
+A sample response:
+
   ```
-???
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Mainali>choco install jenkins
+Chocolatey detected you are not running from an elevated command shell
+  (cmd/powershell). You may experience errors - many functions/packages
+  require admin rights. Only advanced users should run choco w/out an
+  elevated shell (and very advanced users as non-admin). When you open
+  the command shell, you should ensure "Run as Administrator".
+Chocolatey (v0.9.8.31) is installing 'jenkins' and dependencies. By installing y
+ou accept the license for 'jenkins' and each dependency you are installing.
+
+jenkins v1.645.0.0
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----        01/24/2016     23:09            jenkins
+Downloading jenkins 64 bit
+  from 'http://mirrors.jenkins-ci.org/windows/jenkins-1.645.zip'
+Extracting C:\Users\Mainali\AppData\Local\Temp\chocolatey\jenkins\jenkins-1.645.
+zip to C:\Users\Mainali\AppData\Local\Temp\chocolatey\jenkins...
+C:\Users\Mainali\AppData\Local\Temp\chocolatey\jenkins
+Installing jenkins...
+jenkins has been installed.
+Finished installing 'jenkins' and dependencies - if errors not shown in console,
+ none detected. Check log for errors if unsure.
+
   ```
    
- Notice Java is installed on path `C:\???`.
+ Notice Java is installed on path `C:\Users\Mainali\AppData\Local\Temp\chocolatey\jenkins`.
 
 0. Verify install by <a href="#Start-server">starting Jenkins server</a>.
 
