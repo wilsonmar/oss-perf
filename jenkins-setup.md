@@ -135,7 +135,7 @@ Finished installing 'jenkins' and dependencies - if errors not shown in console,
 
   ```
    
- Notice Java is installed on path `C:\???`.
+ Notice Java is installed on path `C:\Users\Mainali\AppData\Local\Temp\chocolatey\jenkins`.
 
 0. Verify install by <a href="#Start-server">starting Jenkins server</a>.
 
