@@ -103,6 +103,8 @@ Or, if you don't want/need launchctl, you can just run:
  
    If Java is not installed on your computer already, it will be installed as a dependency.
 
+A sample response:
+
   ```
 Microsoft Windows [Version 6.1.7601]
 Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
