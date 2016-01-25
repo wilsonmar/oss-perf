@@ -94,7 +94,9 @@ Or, if you don't want/need launchctl, you can just run:
 
   ```
 ???
- ```
+  ```
+   
+ Notice Java is installed on path `C:\???`.
 
 0. Verify install by <a href="#Start-server">starting Jenkins server</a>.
 
