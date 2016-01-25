@@ -152,6 +152,8 @@ The command to start Jenkins has several parameters:
  ```
  java -jar jenkins.war --httpPort=-1 --httpPort=221
  ```
+ 
+0. View Jenkins in your default browser by clicking: <a target="_blank" href="http://localhost:8081/">http://localhost:8081/</a>.
 
 0. Confirm tcp ports Jenkins uses as java (8005 sharing, 8009, 8080) 
 
