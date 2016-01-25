@@ -28,7 +28,10 @@ Alternatives to Jenkins include Fabric and Capistrano.
 <a id="Install">
 ## Installation</a>
 Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
-Cloudbees.com</a> which hosts Jenkins in their cloud.
+Cloudbees.com</a> which hosts Jenkins in their cloud. Their CEO is Kohsuke Kawaguchi (@kohsukekwa, kk@kohsuke.org)
+who invented Jenkins. He speaks at:
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=0nG4xGYvAa0"> On Oct, 2014 about Workflow</a>
 
 Alternately, many host Jenkins on the Amazon cloud:
 
