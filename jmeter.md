@@ -84,17 +84,44 @@ So the Python package installer (pip) needs to be installed.
   which makes use of a Powershell clone of the unix scripts.
   On Macs:
 
-```
+   ```
 sudo easy_install pip
-```
+   ```
+
+   The response:
+   
+   ```
+Password:
+Searching for pip
+Best match: pip 8.0.0
+Adding pip 8.0.0 to easy-install.pth file
+Installing pip script to /Users/wmar/anaconda/bin
+Installing pip3.5 script to /Users/wmar/anaconda/bin
+Installing pip3 script to /Users/wmar/anaconda/bin
+
+Using /Users/wmar/anaconda/lib/python2.7/site-packages
+Processing dependencies for pip
+Finished processing dependencies for pip
+   ```
 
 2) Create a virtualenv for Python. 
   (as described in the "99 Bottles of JMeter on the wall" website
   http://tech.mindcandy.com/2011/11/99-bottles-of-jmeter-on-the-wall )
 
-```
+   ```
 pip install virtualenv
-```
+   ```
+
+   The response:
+   
+   ```
+   Collecting virtualenv
+  Downloading virtualenv-14.0.1-py2.py3-none-any.whl (1.8MB)
+    100% |████████████████████████████████| 1.8MB 151kB/s 
+Installing collected packages: virtualenv
+Successfully installed virtualenv-14.0.1
+   ```
+
 
 3) Use virtualenv to install virtualenvwrapper:
   (based on http://virtualenvwrapper.readthedocs.org/en/latest/)
@@ -389,7 +416,10 @@ Pre-processor is able to create variables for the next steps (sampler or any oth
  However, it is recommended that for "heavy" operations it's better to use JSR223 Sampler and Groovy as a language.
  See https://blazemeter.com/blog/beanshell-vs-jsr223-vs-java-jmeter-scripting-its-performance
  
-  It uses the ScriptEngine interface which became available in Java 6.
+ https://www.youtube.com/watch?v=T3Ysb9O3EWI
+ Advanced JMeter Training & Report Analysis
+ 
+ It uses the ScriptEngine interface which became available in Java 6.
  
 ## <a name="PostProcessors"> Post-Processors</a>
 After a sampler execution finishes,
