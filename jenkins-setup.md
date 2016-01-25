@@ -79,31 +79,23 @@ Or, if you don't want/need launchctl, you can just run:
  
 <a id="Install_Windows">
 ### Installation on Windows</a>
-Alternately, install on Windows using <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>:
+0. Open a Command Window.
+0. Install the Chocolatey package manager (if you haven't already) by copying and pasting the PowerShell command from
+   <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>
+0. Install the version of Jenkins that Chocolatey makes available:
  
- ```
+  ```
  choco install jenkins
- ```
+  ```
  
- If Java is not installed on your computer already, it will be installed as a dependency.
+   If Java is not installed on your computer already, it will be installed as a dependency.
 
+  ```
+???
  ```
-==> Downloading http://mirrors.jenkins-ci.org/war/1.632/jenkins.war
-==> Downloading from http://ftp-nyc.osuosl.org/pub/jenkins/war/1.632/jenkins.war
-######################################################################## 100.0%
-==> jar xvf jenkins.war
-==> Caveats
-Note: When using launchctl the port will be 8080.
 
-To have launchd start jenkins at login:
-  ln -sfv /usr/local/opt/jenkins/*.plist ~/Library/LaunchAgents
-Then to load jenkins now:
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.jenkins.plist
-Or, if you don't want/need launchctl, you can just run:
-  jenkins
-==> Summary
-🍺  /usr/local/Cellar/jenkins/1.632: 6 files, 61M, built in 57 seconds
- ```
+0. Verify install by <a href="#Start-server">starting Jenkins server</a>.
+
 
 <a id="Verify_install">
 ### Verify Installation on Macs and Linux</a>
@@ -120,7 +112,38 @@ Or, if you don't want/need launchctl, you can just run:
  /usr/local/bin/jenkins
  ```
 
- The version number is at the lower-right of the GUI.
+<a id="Start-server">
+## Start and stop server</a>
+The command to start Jenkins has several parameters:
+ 
+ * https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
+
+0. Start Jenkins using defaults:
+
+ ```
+ jenkins
+ ```
+
+0. Stop the server by closing the command window which it runs under.
+
+0. Start Jenkins again using more parameters as described in:
+
+ ```
+ java -jar jenkins.war --httpPort=8081
+ ```
+
+  Alternately, start Jenkins to a specific port for HTTPS:
+
+ ```
+ java -jar jenkins.war --httpPort=-1 --httpPort=221
+ ```
+
+0. Confirm tcp ports Jenkins uses as java (8005 sharing, 8009, 8080) 
+
+  ```
+  netstat -anp | grep java
+  ```
+
 
 <a id="Config_Security">
 ## Configure User Security</a>
@@ -155,35 +178,7 @@ Jenkins installation options are described at:
  mv id_rsa_github.pub id_rsa.pub
  ```
 
-<a id="StartServer">
-## Start server</a>
-0. Start Jenkins using defaults:
 
- ```
- jenkins
- ```
- 
- Add parameters as described in:
- 
- * https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
-
- Alternately, on a Windows machine:
-
- ```
- java -jar jenkins.war --httpPort=8081
- ```
-
- Alternately, start Jenkins to a specific port for HTTPS:
-
- ```
- java -jar jenkins.war --httpPort=-1 --httpPort=221
- ```
-
-0. Confirm tcp ports Jenkins uses as java (8005 sharing, 8009, 8080) 
-
-  ```
-  netstat -anp | grep java
-  ```
 
 <a id="AddUser">
 ## Add User Permissions</a>
