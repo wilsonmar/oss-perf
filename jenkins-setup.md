@@ -97,13 +97,13 @@ Or, if you don't want/need launchctl, you can just run:
    <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>
 0. Install the version of Jenkins that Chocolatey makes available:
  
-  ```
+ ```
  choco install jenkins
-  ```
+ ```
  
-   If Java is not installed on your computer already, it will be installed as a dependency.
+ If Java is not installed on your computer already, it will be installed as a dependency.
 
-A sample response:
+  A sample response:
 
   ```
 Microsoft Windows [Version 6.1.7601]
@@ -135,7 +135,8 @@ Finished installing 'jenkins' and dependencies - if errors not shown in console,
 
   ```
    
- Notice Java is installed on path `C:\Users\Mainali\AppData\Local\Temp\chocolatey\jenkins`.
+ Notice Java is installed on path `C:\Users\%User%\AppData\Local\Temp\chocolatey\jenkins`,
+ where %user% is what's on your own computer.
 
 0. Verify install by <a href="#Start-server">starting Jenkins server</a>.
 
