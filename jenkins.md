@@ -59,7 +59,7 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
    click the tiny drop-down arrow for a context menu.
 
- <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
+   <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
 
 
 
@@ -287,4 +287,6 @@ There is the age-old question of whether organizations providing training also b
 advertised as being of the whole community.
 The company is so commercial oriented that it does not allow newsletters to be sent to gmail and hotmail addresses.
 
-* http://wakaleo.com/books/jenkins-the-definitive-guide/download-jtdg-pdf free download from John Ferguson Smart.
+John Ferguson Smart (O'Reilly) used DocBook and 
+XmlMind to write http://www.github.org/wakaleo/jenkins-the-definitive-guide
+also available as a free pdf download from http://wakaleo.com/books/jenkins-the-definitive-guide/download-jtdg-pdf  

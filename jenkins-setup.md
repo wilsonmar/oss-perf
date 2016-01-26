@@ -29,9 +29,8 @@ Alternatives to Jenkins include Fabric and Capistrano.
 ## Installation</a>
 Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
 Cloudbees.com</a> which hosts Jenkins in their cloud. Their CEO is Kohsuke Kawaguchi (@kohsukekwa, kk@kohsuke.org)
-who invented Jenkins. He speaks at:
-
-* <a target="_blank" href="https://www.youtube.com/watch?v=0nG4xGYvAa0"> On Oct, 2014 about Workflow</a>
+who invented Hudson/Jenkins. Hear him speak at <a target="_blank" href="https://www.youtube.com/watch?v=0nG4xGYvAa0"> this Oct, 2014 meetup about Workflow</a>.
+Cloudbees also sells Nectar, a supported and enhanced on-premise version of Jenkins that automatically scales on VMWare virtual machines.
 
 Alternately, many host Jenkins on the Amazon cloud:
 
@@ -97,15 +96,15 @@ Or, if you don't want/need launchctl, you can just run:
    <a target="_blank" href="http://chocolatey.org/">Chocolatey.org</a>
 0. Install the version of Jenkins that Chocolatey makes available:
  
- ```
+   ```
  choco install jenkins
- ```
+   ```
  
- If Java is not installed on your computer already, it will be installed as a dependency.
+   If Java is not installed on your computer already, it will be installed as a dependency.
 
-  A sample response:
+   A sample response:
 
-  ```
+   ```
 Microsoft Windows [Version 6.1.7601]
 Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
 
@@ -122,7 +121,9 @@ jenkins v1.645.0.0
 
 Mode                LastWriteTime     Length Name
 ----                -------------     ------ ----
+
 d----        01/24/2016     23:09            jenkins
+
 Downloading jenkins 64 bit
   from 'http://mirrors.jenkins-ci.org/windows/jenkins-1.645.zip'
 Extracting C:\Users\Mainali\AppData\Local\Temp\chocolatey\jenkins\jenkins-1.645.
@@ -132,11 +133,9 @@ Installing jenkins...
 jenkins has been installed.
 Finished installing 'jenkins' and dependencies - if errors not shown in console,
  none detected. Check log for errors if unsure.
-
   ```
-   
- Notice Java is installed on path `C:\Users\%User%\AppData\Local\Temp\chocolatey\jenkins`,
- where %user% is what's on your own computer.
+ 
+   Notice Java is installed on path `C:\Users\%User%\AppData\Local\Temp\chocolatey\jenkins`, where %user% is what's on your own computer.
 
 0. Verify install by <a href="#Start-server">starting Jenkins server</a>.
 
@@ -158,9 +157,10 @@ Finished installing 'jenkins' and dependencies - if errors not shown in console,
 
 <a id="Start-server">
 ## Start and stop server</a>
-The command to start Jenkins has several parameters:
- 
- * https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
+The command to start Jenkins has several parameters.
+
+0. See https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
+   for a full explanation, inclidiong use of <strong>nohup</strong>.
 
 0. Start Jenkins using defaults:
 
@@ -168,7 +168,19 @@ The command to start Jenkins has several parameters:
  jenkins
  ```
 
-0. Stop the server by closing the command window which it runs under.
+0. Stop the server by escaping the process.
+
+   * Ctrl+C on Windows
+   * command+C on Macs
+
+   The response is:
+   
+   ```
+   INFO: JVM is terminating. Shutting down Winstone
+   ```
+
+   This soft-stop enables Jenkins to save data to memory rather than potentially lose data during a hard and sudden stop by closing the command window which it runs under (by clicking the red X on that window).
+
 
 0. Start Jenkins again using more parameters as described in:
 
@@ -176,11 +188,11 @@ The command to start Jenkins has several parameters:
  java -jar jenkins.war --httpPort=8081
  ```
 
-  Alternately, start Jenkins to a specific port for HTTPS:
+   Alternately, start Jenkins to a specific port for HTTPS:
 
- ```
- java -jar jenkins.war --httpPort=-1 --httpPort=221
- ```
+   ```
+   java -jar jenkins.war --httpPort=-1 --httpPort=221
+   ```
  
 0. View Jenkins in your default browser by clicking: <a target="_blank" href="http://localhost:8081/">http://localhost:8081/</a>.
 
