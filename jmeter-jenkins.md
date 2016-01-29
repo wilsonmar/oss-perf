@@ -2,13 +2,14 @@ This page describes how to install and use Jenkins to process JMeter jobs.
 
 There are several alternatives:
 
-
+* 
 
 
 <a id="Installation">
 ## Installation</a>
 See <a href="jenkins-setup.md">jenkins-setup.md</a> about generic setup.
 
+* https://github.com/mlex/jmeter-maven-example
 
 <a id="JenkinsAddons">
 ## Add-ons to Jenkins for JMeter</a>
@@ -75,15 +76,20 @@ clean verify -Dperformancetest.threadCount=$THREAD_COUNT -Dperformancetest.loopC
 0. Click <strong>jmeter</strong>.
 0. Click <strong>results</strong>.
 
-   * File /job/JMeterCI/ws/target/jmeter/...ThreadStateOverTime.png 
+   * Sample file /job/JMeterCI/ws/target/jmeter/...ThreadStateOverTime.png 
    
    <img width="801" alt="jenkins jmeter thread group graph" src="https://cloud.githubusercontent.com/assets/300046/12677781/3640d43e-c650-11e5-8d2c-cc84d7c6359b.png">
    
-   * File /job/JMeterCI/ws/target/jmeter/...ResponseTimeOverTime.png
+   * Sample file /job/JMeterCI/ws/target/jmeter/...ResponseTimeOverTime.png
    
    <img width="799" alt="jenkins jmeter response time graph" src="https://cloud.githubusercontent.com/assets/300046/12677849/9508bd10-c650-11e5-9fd8-f440d7b7fcae.png">
    
-   * File /job/JMeterCI/ws/target/jmeter/...TransactionsPerSecond.png
+   * Sample file /job/JMeterCI/ws/target/jmeter/...TransactionsPerSecond.png
    
    <img width="799" alt="jenkins jmeter transpersec graph" src="https://cloud.githubusercontent.com/assets/300046/12677894/c6610d68-c650-11e5-8d45-f5eba6bef245.png">
 
+<a name="Resources">
+## Resources</a>
+
+A silent video showing the above is at: https://www.youtube.com/watch?v=9WkuapS3Ki0
+using https://github.com/smarigowda/jmeter-maven-example
