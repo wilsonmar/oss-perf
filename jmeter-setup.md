@@ -779,19 +779,6 @@ developed by the same author.
   is a Ruby based DSL (Domain Specific Language) for building JMeter test plans 
 
 
-<a id="JenksAddons">
-## Add-ons to Jenkins for JMeter</a>
-For easier invocation, the
-<a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin">
-Performance Plugin</a> from https://github.com/jenkinsci/performance-plugin.
-
-For managed devops:
-https://xebialabs.com/community/webinars/dzone-presents-seamless,-scalable-test-management-using-jenkins-and-xebialabs-software/
-
-   * Xebialabx.com
-   * https://www.youtube.com/channel/UC3XtKwSYyeQfGirLL_IW_Qw
-
-
 ## <a name="RunBatch"> Run in Batch Mode</a>
 JMeter is often invoked automatically by a continuous integration tool such as Jenkins.
 See https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin.
