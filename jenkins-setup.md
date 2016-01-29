@@ -25,20 +25,37 @@ Alternatives to Jenkins include Fabric and Capistrano.
  * https://isotope11.com/blog/continuous-deployment-at-isotope11-an-update
    Continuous deployment at Isotope11.
 
-<a id="Install">
+<a id="Installation">
 ## Installation</a>
+
+* <a href="#CloudbeesInstall">Cloudbees</a>
+* <a href="#AmazonInstall">Amazon</a>
+* <a href="#Install_Linux">Linux</a>
+* <a href="#Install_Mac">Mac</a>
+* <a href="#AmazonInstall">Windows</a>
+* <a href="#Verify_install">Verify install</a>
+
+
+<a id="CloudbeesInstall">
+### Cloudbees Installation</a>
 Installation is not necessary if you use <a target="_blank" href="http://www.cloudbees.com/">
 Cloudbees.com</a> which hosts Jenkins in their cloud. Their CEO is Kohsuke Kawaguchi (@kohsukekwa, kk@kohsuke.org)
 who invented Hudson/Jenkins. Hear him speak at <a target="_blank" href="https://www.youtube.com/watch?v=0nG4xGYvAa0"> this Oct, 2014 meetup about Workflow</a>.
-Cloudbees also sells Nectar, a supported and enhanced on-premise version of Jenkins that automatically scales on VMWare virtual machines.
 
+Cloudbees sells Nectar, a supported and enhanced on-premise version of Jenkins that automatically scales on VMWare virtual machines.
+
+An example of
+
+
+<a name="AmazonInstall">
+### Amazon Installation</a>
 Alternately, many host Jenkins on the Amazon cloud:
 
  * https://www.youtube.com/watch?v=1JSOGJQAhtE Jenkins on Amazon
    by Jeff Shantz:
 
   
-<a id="Install_Linux">
+<a name="Install_Linux">
 ### Installation on Linux</a>
 Alternately, to install on RedHat and Centos Linux machines, follow instructions at:
 
