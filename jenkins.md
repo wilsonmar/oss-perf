@@ -1,19 +1,36 @@
-This chapter takes a hands-on approach to learn usage of Jenkins as setup in <a href="jenkins-setup.md">jenkins-setup</a>.
+This chapter takes a hands-on approach to create Jenkins jobs.
+
+First, we assume Jenkins server was setup in <a href="jenkins-setup.md">jenkins-setup</a>.
 
 We begin with a look at an existing build job and its run history details as we learn navigation tricks.
 
 
 <a id="Tabs">
-## View Tabs</a>
-0. To group jobs into separate page views, click on the [+] tab above the list of projects.
+## Tabs</a>
+If there are a lot of jobs listed (especially on a Jenkins server shared by many):
+
+0. Group jobs into separate page views, click on the [+] tab above the list of projects.
 
    <img width="738" alt="jenkins view tabs" src="https://cloud.githubusercontent.com/assets/300046/12537097/e3120c20-c26b-11e5-84f5-5b2b32932540.png">
 
 0. Views can also be selected after clicking the tiny righ-pointing arrow to the left of Jenkins on the green bar.
 
+0. Best to be in a View before you create an item within that view.
+
+<a name="NewJob">
+## New Item/Project/Job</a>
+
+0. Click the <strong>New Item</strong> link on the left menu.
+ 
+   PROTIP: In the description field, put a link to the wiki page which describes the 
+   logic for selections made in the project and/or 
+   the standards document mandating selections.
+
+Check out
+
 <a id="Hierarchy">
 ## Hierarchy of Projects/Jobs to Individual Builds</a>
-CHALLENGE: Become famailiar with operations available in menus and links.
+CHALLENGE: Become famailiar with operations available in menus and links at different levels of the hierachy.
 
 0. For smaller icons, click the S among S | M | L at the bottom of the list.
 
@@ -34,8 +51,9 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 0. Click <strong>Back to Dashboard</strong> to return to the Jobs/Projects list.
 
-   <a id="RecentChanges">
-   ## Recent Changes</a>
+
+   <a id="JobScreen">
+   ## Job Screen - builds</a>
 
 0. Click on an existing job <strong>Name</strong> to see its status screen.
 
@@ -54,18 +72,21 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 0. Return to the higher level projects screen by clicking on another left menu item, such as <strong>Workspace</strong>.
 
    <a name="Workspace">
-   ### Workspace</a>
+   ### Item Context Workspace</a>
 
 0. In addition to the choice of clicking either <strong>Workspace</strong> link to view input files (pulled from Github),
    click the tiny drop-down arrow for a context menu.
 
    <img width="321" alt="jenkins job context menu 2" src="https://cloud.githubusercontent.com/assets/300046/12532955/c63b2316-c1d5-11e5-9fb0-fe28d241a998.png">
 
+   The workspace shown was obtained from the last build.
+   
 
+   <a name="ConfigureWorkspace">
+   ### Workspace Configuration</a>
+   
+   PROTIP: Being able to pull down a workspace is the first achievement of a new job.
 
-
-   <a name="Configure">
-   ### Configure project</a>
 0. Click the <strong>Configure</strong> link at the left menu for values in the form used to create the current job.
 
 0. Mouse over the green breadcrumbs line to the right of <strong>Configure</strong> for a menu:
@@ -74,12 +95,44 @@ CHALLENGE: Become famailiar with operations available in menus and links.
    
    PROTIP: Using the drop-down menu from the breadcrumbs green bar saves you from scrolling down the many pages in this screen.
 
+0. Select Source Code Management.
+0. Select Git. This also applies to github.
+0. Specify the Repository URL, such as `git@github.yours.com:Project1/repo1.git`.
+
+   PROTIP: Private (corporate) repos use this format for more secure communications.
+
+0. In Credentials enter a user name. Click Add.
+
+   PROTIP: Rather than using individual accounts that expire, create
+   service accounts that do not expire.
+
+0. In Branches to build, specify `*/master` or whatever branch you use.
+
+0. Scroll to <strong>Build Environment</strong> section.
+0. Check <strong>Delete workspace before build starts</strong>.
+
+   <a name="BuildWorkspace">
+   ### Build project for Workspace</a>
+   
+0. Click to build the project to see if the Workspace can be pulled into Jenkins.
+
+0. In the Console Output:
+
+
+   ```
+   [description-setter] Could not determine description.
+   ```
+
+
+   <a name="ConfigureProject">
+   ### Configure project</a>
+   
 0. Scroll down to the <strong>String Parameter</strong> names and default values (such as environment, browsertype).
 
    PROTIP: Pay special attention whether the first letter of each parameter values are capitalized.
 
    <a id="Parameters">
-   ## Parameters</a>
+   ### Parameters</a>
 
 0. Click the <strong>Build with Parameters</strong> link at the left menu for a list of parameter values fed to the job.
 
@@ -158,6 +211,26 @@ CHALLENGE: Become famailiar with operations available in menus and links.
 
 <a id="Addons">
 ## Build Add-ons</a>
+These are for JMeter:
+
+   * https://github.com/jmeter-maven-plugin/jmeter-maven-plugin
+     from https://github.com/mlex/jmeter-maven-example/ 
+     
+   * http://mojo.codehaus.org/chronos/chronos-jmeter-maven-plugin/
+
+<a target="_blank" href="https://blog.codecentric.de/en/2014/01/automating-jmeter-tests-maven-jenkins/">Michael Lex</a> 
+lists the evaluation criteria:
+
+   * The plugin should not depend on a local JMeter installation.
+   * It must be possible to start the JMeter test from command line (without gui). With the jmeter-maven-plugin, a simple additional dependency to kg.apc:jmeter-plugins allowed using the JMeter Plugins in GUI as well as in headless mode. 
+   * The JMeter GUI should also be accessibla directly via the plugin (e.g. via a separate Maven goal).
+   * It should be possible to include the JMeter Plugins.
+   * The plugin should generate meaningful reports (or there must be some other possibility to generate these reports).
+
+Additional:
+
+   * generate graphs from the test results using the jmeter plugins CMDRunner.
+
 In a Configure screen:
 
 0. Scroll down to the <strong>Build</strong> section. 
@@ -177,8 +250,7 @@ In a Configure screen:
 0. Click <strong>Add Build Step</strong>.
 
    <img width="344" alt="jenkins build steps" src="https://cloud.githubusercontent.com/assets/300046/12533016/bb8d66de-c1d7-11e5-9620-8d96de3e7300.png">
-
-
+   
 <a id="RestrictRun">
 ## Restrict Run</a>
 0. In the first section, scroll to check <strong>Restrict where this project can be run</strong>.

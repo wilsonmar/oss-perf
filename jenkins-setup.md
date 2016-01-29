@@ -83,8 +83,10 @@ Or, if you don't want/need launchctl, you can just run:
  
   Homebrew puts the jenkins.war file in:
   
+  ```
   /usr/local/Cellar/jenkins/1.644/libexec/jenkins.war
- 
+  ```
+  
  For more information:
  
  * http://iosfactory.blogspot.com/2015/02/jenkins-setup-for-ios-development.html
@@ -121,7 +123,6 @@ jenkins v1.645.0.0
 
 Mode                LastWriteTime     Length Name
 ----                -------------     ------ ----
-
 d----        01/24/2016     23:09            jenkins
 
 Downloading jenkins 64 bit
@@ -145,15 +146,15 @@ Finished installing 'jenkins' and dependencies - if errors not shown in console,
 
 0. Verify intallation on a Mac or Linux:
 
- ```
- which jenkins
- ```
+   ```
+   which jenkins
+   ```
  
- The response is the location it was installed:
+   The response is the location Jenkins was installed:
  
- ```
- /usr/local/bin/jenkins
- ```
+   ```
+   /usr/local/bin/jenkins
+   ```
 
 <a id="Start-server">
 ## Start and stop server</a>
@@ -164,9 +165,16 @@ The command to start Jenkins has several parameters.
 
 0. Start Jenkins using defaults:
 
- ```
- jenkins
- ```
+   ```
+   jenkins
+   ```
+
+
+0. Confirm tcp ports Jenkins uses as java (8005 sharing, 8009, 8080):
+
+   ```
+   netstat | grep java
+   ```
 
 0. Stop the server by escaping the process.
 
@@ -181,12 +189,18 @@ The command to start Jenkins has several parameters.
 
    This soft-stop enables Jenkins to save data to memory rather than potentially lose data during a hard and sudden stop by closing the command window which it runs under (by clicking the red X on that window).
 
+   BTW, some install the 
+<a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/SafeRestart+Plugin"> 
+SafeRestart plug-in</a>, which adds the <strong>Restart Safely</strong> option to the 
+<a title="jenkins saferestart_plugin" href="https://cloud.githubusercontent.com/assets/300046/12584913/9681b1d2-c3fe-11e5-9359-e51fc5809734.png">
+Jenkins left menu</a> to avoid needing to be at the server console at all.
 
 0. Start Jenkins again using more parameters as described in:
 
- ```
- java -jar jenkins.war --httpPort=8081
- ```
+   ```
+   cd /usr/local/Cellar/jenkins/1.644/libexec
+   java -jar jenkins.war --httpPort=8081
+   ```
 
    Alternately, start Jenkins to a specific port for HTTPS:
 
@@ -194,13 +208,30 @@ The command to start Jenkins has several parameters.
    java -jar jenkins.war --httpPort=-1 --httpPort=221
    ```
  
+    PROTIP: Put one of these commands in a shell script.
+    
+    The response:
+    
+    ```
+Running from: /usr/local/Cellar/jenkins/1.644/libexec/jenkins.war
+webroot: $user.home/.jenkins
+Jan 26, 2016 8:52:21 AM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Jan 26, 2016 8:52:21 AM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: jetty-winstone-2.9
+Jan 26, 2016 8:52:27 AM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+Jenkins home directory: /Users/wmar/.jenkins found at: $user.home/.jenkins
+Jan 26, 2016 8:52:34 AM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Started SelectChannelConnector@0.0.0.0:8081
+Jan 26, 2016 8:52:34 AM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+    ```
+
 0. View Jenkins in your default browser by clicking: <a target="_blank" href="http://localhost:8081/">http://localhost:8081/</a>.
 
-0. Confirm tcp ports Jenkins uses as java (8005 sharing, 8009, 8080) 
+   <img width="643" alt="jenkins virgin menu" src="https://cloud.githubusercontent.com/assets/300046/12587756/7da7b5d8-c40a-11e5-88fa-a2b668c3dba6.png">
 
-  ```
-  netstat -anp | grep java
-  ```
 
 
 <a id="Config_Security">
@@ -219,23 +250,22 @@ Jenkins installation options are described at:
 
 0. Login under user named Jenkins (if applicable):
 
- ```
- sudo su jenkins
- ```
+   ```
+   sudo su jenkins
+   ```
 
 0. Copy your github key to Jenkins .ssh folder.
 
- ```
- cp ~/.ssh/id_rsa_github*  /var/lib/jenkins/.ssh/
- ```
+   ```
+   cp ~/.ssh/id_rsa_github*  /var/lib/jenkins/.ssh/
+   ```
 
 0. Raname the keys:
 
- ```
- mv id_rsa_github id_rsa
- mv id_rsa_github.pub id_rsa.pub
- ```
-
+   ```
+   mv id_rsa_github id_rsa
+   mv id_rsa_github.pub id_rsa.pub
+   ```
 
 
 <a id="AddUser">
@@ -262,9 +292,90 @@ As with other systems, granting permissions is typically done only by the Admini
 
 0. Or create a user.
 
+   <a id="JMeterPlugin">
+   ## Performance Plug-in for JMeter</a>
+
+WARNING: This is no longer maintained, with a large <a target="_blank" href="https://issues.jenkins-ci.org/browse/JENKINS-28426?jql=project%20%3D%20JENKINS%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Reopened)%20AND%20component%20%3D%20'performance-plugin">bug list</a>.
+
+To add the
+<a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin"> 
+Performance plug-in</a> to display results from JMeter runs:
+
+1. Click the Manage Jenkins link.
+2. Click the Manage Plugins link.
+3. Select the Available tab.
+4. In Filter type "Performance".
+5. Check to select "Performance plugin".
+6. Click "Download now and install after restart".
+7. Click to restart server.
+
+If you prefer a manual approach:
+
+0. Create a folder to hold the folder created during cloning (such as jmeter or jenkinsci).
+1. cd to that folder, then:
+
+   ```
+git clone https://github.com/jenkinsci/performance-plugin.git performance
+cd performance
+   ```
+   
+   This contains a pom.xml file for Maven to compile the src folder.
+   
+0. If you haven't already:
+
+   ```
+brew install maven
+   ```
+   
+0. Compile in a command window:
+
+   ```
+mvn package
+   ```
+
+   This downloads a bunch of files specified as dependencies, ending in this:
+   
+   ```
+   [INFO] Total time: 09:20 min
+[INFO] Finished at: 2016-01-26T08:31:04-08:00
+[INFO] Final Memory: 52M/259M
+   ```
+
+0. Get the address of the Jenkins server. To find (ignoring case)
+
+   ```
+   find . -iname "jenkins.war"
+   ```
+
+0. Copy to the target server the .hpi file which <a target="_blank" href="https://wiki.jenkins-ci.org/display/JENKINS/Plugin+Structure">defines a plug-in</a>:
+
+   ```
+cp <target>/performance.hpi <path_to_jenkins>/data/plugins
+   ```
+
+0. To fix <a target="_blank" href="http://stackoverflow.com/questions/33126279/jenkins-performance-plugin-for-jmeter">this</a>
+switching report format to xml in jmeter properties file:
+
+   ```
+   jmeter.save.saveservice.output_format=xml
+   ```
+
+0. Configure the search pattern to select the files to be parsed by the Performance plugin. JMeter generates <strong>.jtl</strong> files.
+
+0. Configure the error percentage thresholds which would make the project unstable or failed 
+
+  
+0. When no jobs are running, restart the Jenkins server to reload the plugin.
+
+   Read more about plugins:
+
+   * http://wiki.jenkins-ci.org/display/JENKINS/Checking+out+existing+plugins
+   * http://wiki.jenkins-ci.org/display/JENKINS/Plugin+tutorial
+   * http://wiki.jenkins-ci.org/display/JENKINS/Hosting+Plugins
+
 
 <a id="Nodes">
-## Nodes</a>
+## Nodes for scalability</a>
  A Jenkins server can scale by adding **nodes** to spread build work across several servers running different operating systems.
 
  Look at the **Load Statistics** UI to see whether additional nodes are necessary.
@@ -289,9 +400,9 @@ As with other systems, granting permissions is typically done only by the Admini
 ### From a slave node</a>
 0. From a slave command line, connect to a Jenkins master:
  
- ```
- java -jar slave.jar -jnlpUrl http://jenkins-master:8081/computer/Test Node/slave-agent.jnlp
- ```
+   ```
+   java -jar slave.jar -jnlpUrl http://jenkins-master:8081/computer/Test Node/slave-agent.jnlp
+   ```
 
  Several **executors** can be running simultaneously.
  This number is specified within the **Manage Jenkins** UI.

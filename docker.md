@@ -1,7 +1,7 @@
 Notes on this page is about Docker and its ecosystem.
 
 <a id="Intro">
-## "Configure Once, Run Anywhere"</a>
+## "Configure Once, Run Anywhere"</a>http://www.slideshare.net/carlossg/scaling-docker-with-kubernetes
 
 Docker is one of the technologies that enables 
 <a target="_blank" href="http://12factor.net/"> The 12 Factor App</a> 
@@ -142,14 +142,67 @@ sudo apt-get install linux-image-extra-`uname -r`
 <a id="Kubernets">
 ## Kubernets</a>
 Kubernets manages containerized applications in a clustered environment.
-It uses its own schedule to stand up Docker containers.
+It uses its own schedule to stand up Docker containers (called nodes or minions), then monitors those endpoints.
+So it does container cluster orchestration, enforces state.
 
  * https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes
 
-Google open sourced Kube 
+Google open sourced Kube (its nickname).
+
+0. Google Container Engine (GCE):
+
+   ```
+   gcloud preview container
+   --project my-project
+   cluster create cluster-1
+   --zone us-central1-a
+   --machine-type n1-standard-1
+   --no-scopes
+   --num-nodes 2
+   --network default
+   ```
+
+Each node instance would have a <strong>Kubelet</strong>
+to collect the state of Pods.
+
+A <strong>pod</strong> is a group of colocated containers
+with the same network namespace/IP,
+Environment variables,
+shared volumes (host mounted, empty volumes, or GCE data disks)
+
+The Kubernetes Proxy is a simple network proxy.
+
+SkyDNS
 
  * https://github.com/Unitech/pm2
    PM2 is a process manager for Node apps with a built-in load balancer.
+
+Kube provides a higher level API in its API Server.
+
+Kube Controller Manager Server implements replication algorithm watching <strong>etcd</strong>.
+
+0. To do a cluster:
+
+   ```
+   export KUBERNETES_PROVIDER=gce
+   export KUBERNETES_NUM_MINIONS=2
+   cluster/kube-up.sh
+   ```
+
+http://github.com/carlossg/kubernetes-jenkins
+has Kubernetes examples running Jenkins master and slaves.
+
+As a Jenkins plugin:
+http://github.com/jenkinsci/kubernetes-plugin
+
+Additional resources:
+
+   * http://www.slideshare.net/carlossg/scaling-docker-with-kubernetes
+
+<a id="Flocker">
+## Flocker</a>
+Flocker is a ZFS data volume manager - a multi-host Docker cluster.
+http://github.com/ClusterHQ/flocker
 
 
 <a id="DockerDaemon">
@@ -192,7 +245,7 @@ On a Mac, Docker runs within <a href="#VagrantUp">Vagrant</a> running under VMWa
    Mac OS X 10.8 “Mountain Lion” or newer has the ____ needed to use the Docker Toolbox
    which installs Docker. It consists of several components:
 
- * <a target="_blank" href="http://docs.docker.com/machine/">`docker-machine`</a> binary 
+ * <a target="_blank" href="http://docs.docker.com/machine/">`docker-machine`</a> binary
    (previously Boot2Docker) for running on Mac OSX.
 
  * `**docker**` binary is the <strong>Docker Client</strong>
@@ -311,6 +364,7 @@ docker ps -l
     ```
 
     The -l lists non-running containers as well.
+    The -a lists all.
 
 
 0. ??? do some work?
@@ -656,6 +710,12 @@ docker pull quay.io/concur_platform/centos:7.1.1583-c28b658
 JMeter and TestNG are not among official images.
 
 
+<a id="#Rocket">
+## Rocket</a>
+
+* App Container Image
+* App Container Runtime
+* App Container Discovery
 
 
 <a id="#Beaker">

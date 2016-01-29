@@ -184,6 +184,8 @@ input and outputs so the ML program can derive its formula.
 
 Numbers in superscipt slightly above each variable refer to a specific variable.
 
+* https://github.com/karpathy/convnetjs
+
 <a id="AlgorithmChoices">
 ## Choice of algorithms</a>
 Not all machine learning algorithms are approapriate for use with the use case defined here.
@@ -199,12 +201,12 @@ Its **Dimensionality reduction** reduces the number of random variables to consi
 <a id="SignalProcessing">
 ## Signal processing</a>
 
-https://spark.apache.org/mllib/
-is Apache Spark's scalable machine learning library for Java, plus Python and Scala (via NumPy).
-Faster than Hadoop map-reduce programs.
+<a target="_blank" href="https://spark.apache.org/mllib/">
+Apache Spark's scalable machine learning library</a>
+for Java, plus Python and Scala (via NumPy) is 
+faster than Hadoop map-reduce programs because it leverages faster solid-state drives.
+
 It works in EC2 or on Mesos.
-http://www.mlbase.org/ 
-enables users to obtain results by make queries using a declarative language like SQL.
 
 It is made of these parts:
 
@@ -224,6 +226,10 @@ A sample call to a **rating service** is:
   val num: Int
  } extends Serializable
  ```
+
+http://www.mlbase.org/ 
+enables users to obtain results by make queries using a declarative language like SQL.
+
 
 
 <a id="Training">

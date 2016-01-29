@@ -51,15 +51,25 @@ David Farley (@davidfarley, <a target="_blank" href="http://www.davefarley.net">
 <a name="React">
 ## React App</a>
 
-Despite André Staltz's claim
-* http://staltz.com/why-react-redux-is-an-inferior-paradigm.html
-
 React (from Facebook) is popular when combined with additional libraries.
 
 * https://webpack.github.io/ module bundler of JSX, and ES6 code, 
 * Node.js & NPM 
-* http://bebraw.github.io/reactabular/ table generator from the author of http://survivejs.com/ book
+* http://bebraw.github.io/reactabular/ table generator (from the author of http://survivejs.com/ book on React/Redux)
+
+Although there is André Staltz's claim:
+
+* http://staltz.com/why-react-redux-is-an-inferior-paradigm.html
 
 Additional resources for learning:
 
 * https://leanpub.com/hackingwithreact
+
+* Dan Abramov
+
+* http://www.reactindiebundle.com/
+
+
+UX
+
+ * https://hackdesign.org/lessons/1
