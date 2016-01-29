@@ -44,6 +44,15 @@ plug-ins and external dependencies that Maven downloads to its cache or the dire
 The above example is from https://en.wikipedia.org/wiki/Apache_Maven
 
 
+<a name="Alternatives">
+## Alternatives</a>
+
+Alternatives to Maven include:
+
+ * Ant
+ * sbt
+   
+
 <a name="Installation">
 ## Installation</a>
 Mac users can install Maven with this Homebrew command:
