@@ -11,14 +11,18 @@ developed by Monica Sarbu and Tudor Golubenco.
 0. Its home page is now at https://www.elastic.co/products/beats/packetbeat under https://www.elastic.co/products/beats
 
 0. To get the installer, click Download from https://www.elastic.co/downloads/beats/packetbeat. 
-   The Mac version I got is packetbeat-1.0.0-rc1-darwin.tgz
 
-   Or use commands from https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html
+   Alternately, use commands from https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html
 
    ```
    curl -L -O https://download.elastic.co/beats/packetbeat/packetbeat-1.0.0-rc1-darwin.tgz
 tar xzvf packetbeat-1.0.0-rc1-darwin.tgz
    ```
+
+   | File                            | MB |
+   | ------------------------------- | -: |
+   | packetbeat-1.0.0-rc1-darwin.tgz |  ? |
+
 
 0. Unzip the gunzip file to folder packetbeat-1.0.0-beta4-darwin. It contains 3 files:
 

@@ -112,9 +112,16 @@ CHALLENGE: Become famailiar with operations available in menus and links at diff
 0. Check <strong>Delete workspace before build starts</strong>.
 
    <a name="BuildWorkspace">
-   ### Build project for Workspace</a>
+   ### Build project to obtain Workspace</a>
    
-0. Click to build the project to see if the Workspace can be pulled into Jenkins.
+0. Click to build the project.
+0. Click Workspace to determine if the Workspace was pulled into Jenkins.
+
+0. The full Git commit ID should appear in the build page.
+
+   <img width="428" alt="jenkins git commit id" src="https://cloud.githubusercontent.com/assets/300046/12690816/187a8b48-c69b-11e5-93af-faa7402f29de.png">
+
+   Only the first 7 characters is usually displayed in git clients.
 
 0. In the Console Output:
 
@@ -209,6 +216,31 @@ CHALLENGE: Become famailiar with operations available in menus and links at diff
 
 0. Click Configure in the context menu or in the left menu.
 
+<a id="ExtensionPoints">
+## Extension Points</a>
+Plugins act on classes named here:
+
+ * https://wiki.jenkins-ci.org/display/JENKINS/Extension-points
+
+0. Click on a plug-in category name to collapse or expand its items
+   ("Source Code Management", etc.).
+   But no need to click on them all.
+   A list of categories is at
+   <a target="_blank" href="http://wiki.jenkins-ci.org/display/JENKINS/Plugins">
+   http://wiki.jenkins-ci.org/display/JENKINS/Plugins</a>
+
+
+<a id="Triggers">
+### Triggers</a>
+A <strong>join</strong> ensures that dependency items are done before invoking.
+
+<strong> Locks and latches</strong> are explicity "gates" to control which jobs run in 
+<strong>parallel</strong>.
+
+
+<strong>Copy artifacts</strong> duplicates files.
+
+
 <a id="Addons">
 ## Build Add-ons</a>
 These are for JMeter:
@@ -266,6 +298,12 @@ In a Configure screen:
   * https://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
   sets the final build status (as good, unstable or failed) based on the reported error percentage. 
 
+0. In the post-build actions, 
+to update the results of the build back to a central git repo,
+select "Push GIT tags back to origin repository".
+
+   * https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin#GitPlugin-AdvancedFeatures
+
  In the workspace for a project are folders and **.trx** files output from Jenkins runs.
  
 If a job fails, 
@@ -288,8 +326,18 @@ ${FILE,path="Results.trx.htm"}
 * https://github.com/jenkinsci/slack-plugin
    can be installed to send chat room (Slack) notifications.
 
+<a name="Wrappers">
+## Wrappers</a>
+
 Invoke **Prepare for Shutdown** to stop work, to avoid abruptly stopping jobs.
 
+Wrappers start a parallel process before a job starts and shuts it down when the job is done.
+include Selenium RC
+VMWare
+VirtualBox
+in which to run the Jenkins job.
+
+Notifiers
 
 <a id="Reports">
 ## Reports</a>
