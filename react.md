@@ -46,6 +46,8 @@ Alternately, when working with Grunt:
  * https://npmjs.org/package/grunt-react
  * https://npmjs.org/package/grunt-browserify
 
+Browserify is an alternative to Webpack, wich I favor because of its support for hot module replacement (HMR) used by react-hot-loader.
+
 
 <a name="SampleApps">
 ## Sample Apps</a>
