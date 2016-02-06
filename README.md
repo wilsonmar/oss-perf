@@ -41,7 +41,7 @@ it’s natural for us to develop framework as **open source** on public github r
 | The sequence and logic of actions are provided by emulation (JMeter) scripts that | <a href="jmeter-scripting.md">JMeter scripts</a> |
 | reference (sham) data generated to avoid using sensitive or personal identification information. | <a href="#sham-data">sham data</a> |
 | To ensure code quality, <strong>static scans</strong> of source code (using perhaps SonarQube) are run according to rules defined by the team. | <a href="#sonarqube.md">SonarQube</a> |
-| During development, testing, and deployment, <strong>external vendor APIs</strong> are often used by apps to send email, SMS, get vendor inventory status, etc. | External APIs |
+| During development, testing, and deployment, <strong>external vendor APIs</strong> are often used by apps to send email, SMS, get vendor inventory status, etc. | <a href="apis.md">External APIs</a> |
 | So we mock those dependency services (using Wiremock) to ensure constant access. This also enables us to artificially vary vendor response time to see their consequence in our system. | <a href="#wirehock.md">Wiremock</a> |
 | The amount of time and how often each line of code was executed can be analyzed using profiler software. | <a href="profiler.md">profiler</a> |
 | But that often requires repeatable execution of the same scenarios. So on desktop browsers, | <a href="selenium.md">Selenium Web Driver</a> |
@@ -54,7 +54,7 @@ it’s natural for us to develop framework as **open source** on public github r
 | **Configuration** settings controlling app servers, such as memory and thread limits, can limit the rate of processing. | configs |
 | So a program is needed to automate the planning, re-building, and running of servers with different mixes to identify that ideal set of configuration values that yield the most throughput at the least cost. | <a href="run-variations.md">run variations</a> | 
 | | |
-| Apps being built today make use of microservices REST APIs (application programming interfaces) for computers to communicate directly with other computers. | APIs |
+| Apps being built today make use of microservices REST APIs (application programming interfaces) for computers to communicate directly with other computers. | <a href="APIs.md">Internal APIs</a> |
 | When these APIs are completely described in a standard format (called Swagger spec), | <a href="swagger.md">Swagger spec</a> |
 | client code can be generated. Code generation is revolutionary in its potential for reducing cycle time. | <a href="swagger-codegen.md">Swagger codegen</a> |
 | Automatic generation of load test scripts mean that micro-benchmarks or entire stress tests can be run as soon as a developer checks in code, without waiting for manual test script creation. | Jmeter gen |

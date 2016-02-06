@@ -5,7 +5,7 @@ React is used to develop dynamic SPA UI running on modern browsers
 (not static sites).
 React Native is used to develop native apps running on Android and iOS mobile devices.
 
-They were open-sourced by Facebook, and thus its Github location:
+The React.js logo ( bit.ly/reactjs-logo - changes were made ) belongs to Facebook and is available under CC BY 4.0 license ( bit.ly/reactjs-logo-license ). React was open-sourced by Facebook, and thus its Github location:
 
  * https://facebook.github.io/react/ rendered from
    https://github.com/facebook/react
