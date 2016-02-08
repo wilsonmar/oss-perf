@@ -29,6 +29,9 @@ and partners, if not to the public.
 * Netflix was one of the first to provide an API, 
   but in 2015 announced that they will no longer be providing it.
 
+ProgrammableWeb.com provides a registry of APIs.
+
+
 <a name="ProcessingWorkflow">
 ## Account Workflow Processing</a>
 The basic workflow involved with working with APIs are similar among providers:
@@ -37,19 +40,20 @@ The basic workflow involved with working with APIs are similar among providers:
 2. Confirm email.
 3. Complete registration details.
 4. Request a Certificate Signing Request.
-5. Obtain test keys.
+5. Obtain test keys (a .pem file).
 6. Insert test keys in your certificate store.
-7. Run tests using test endpoints.
+7. Generate public and private test keys.
+8. Run tests using test endpoints.
 
-8. Determine scaling.
-9. Obtain production keys.
-10. Insert production keys in your certificate store.
-11. Run go-live tests.
-12. Run in production.
+9. Determine scaling.
+10. Obtain production keys.
+11. Insert production keys in your certificate store.
+12. Generate public and private test keys.
+13. Run go-live tests.
+14. Run in production.
 
 
 <a name="Resources">
 ## Resources</a>
 
-ProgrammableWeb.com
 

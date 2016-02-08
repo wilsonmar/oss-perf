@@ -34,6 +34,10 @@ Its objective is to eliminate delays between coding and full testing, just as
 the overarching goal of Swagger is to update client code at the same pace as the server
 by means of code generation.
 
+<a id="Alternatives">
+## Alternatives</a>
+<a target="_blank" href="https://github.com/Azure/autorest">
+AutoRest</a> generates client libraries for accessing RESTful web services. Input to AutoRest is a spec that describes the REST API using the Swagger format.
 
 <a id="InstallScala"> 
 ## Install Scala</a>
