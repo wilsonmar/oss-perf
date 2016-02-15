@@ -69,8 +69,10 @@ A) By Andrew Ng makes use of Matlab and Octave for audio processing.
 
 
 
-<a id="https://isotope11.com/blog/continuous-deployment-at-isotope11-an-update">
-## Choice of tools: Python</a>
+ * https://isotope11.com/blog/continuous-deployment-at-isotope11-an-update
+
+<a name="Python">
+## Python</a>
 Python has become a go-to programming language for math, science, and statistics 
 due to its ease of adoption and the breadth of libraries available for nearly any application. 
 
@@ -185,6 +187,13 @@ input and outputs so the ML program can derive its formula.
 Numbers in superscipt slightly above each variable refer to a specific variable.
 
 * https://github.com/karpathy/convnetjs
+
+* https://azure.microsoft.com/en-us/services/machine-learning/
+  part of the Cortana Analytics Suite
+  http://gallery.cortanaanalytics.com/
+
+* Google has Tensorflow
+
 
 <a id="AlgorithmChoices">
 ## Choice of algorithms</a>

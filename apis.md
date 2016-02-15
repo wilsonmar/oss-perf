@@ -56,4 +56,5 @@ The basic workflow involved with working with APIs are similar among providers:
 <a name="Resources">
 ## Resources</a>
 
-
+* https://www.mulesoft.com/ty/ebook/restbook
+* 

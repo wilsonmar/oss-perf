@@ -1,9 +1,11 @@
+# Docker
+
 Notes on this page is about Docker and its ecosystem.
 
 <a id="Intro">
 ## "Configure Once, Run Anywhere"</a>http://www.slideshare.net/carlossg/scaling-docker-with-kubernetes
 
-Docker is one of the technologies that enables 
+Docker is a technology that enables
 <a target="_blank" href="http://12factor.net/"> The 12 Factor App</a> 
 methodology for modern DevOps.
 
@@ -13,6 +15,8 @@ methodology for modern DevOps.
  * https://www.youtube.com/watch?v=Tlgoq9t95ew
    Rohan Singh describes Docker at Spotify
 
+ * Kitematic is part of a whole Docker Toolbox
+   https://www.docker.com/products/docker-toolbox
 
 Docker is based on several innovations: LXC, device-mapper, aufs, etc..
 
