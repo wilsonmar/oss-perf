@@ -3,7 +3,9 @@
 Notes on this page is about Docker and its ecosystem.
 
 <a id="Intro">
-## "Configure Once, Run Anywhere"</a>http://www.slideshare.net/carlossg/scaling-docker-with-kubernetes
+## "Configure Once, Run Anywhere"
+
+   * http://www.slideshare.net/carlossg/scaling-docker-with-kubernetes
 
 Docker is a technology that enables
 <a target="_blank" href="http://12factor.net/"> The 12 Factor App</a> 
@@ -121,10 +123,11 @@ export DOCKER_MACHINE_NAME="demo"
 
 <a id="DigitalOcean">
 ## Cloud Deploy</a>
-https://www.digitalocean.com/community/tags/docker?type=tutorials
+* IBM Cloud Foundry
 
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-getting-started
+* https://www.digitalocean.com/community/tags/docker?type=tutorials
 
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-getting-started
 
 
 <a id="Union">
@@ -145,8 +148,8 @@ sudo apt-get install linux-image-extra-`uname -r`
 
 <a id="Kubernets">
 ## Kubernets</a>
-Kubernets manages containerized applications in a clustered environment.
-It uses its own schedule to stand up Docker containers (called nodes or minions), then monitors those endpoints.
+Kubernets manages containerized applications in a clustered environment
+by using its own <strong>schedule</strong> to stand up Docker containers (called nodes or minions), then monitors those endpoints.
 So it does container cluster orchestration, enforces state.
 
  * https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes
