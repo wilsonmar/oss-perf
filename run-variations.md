@@ -73,3 +73,9 @@ Additional resources for learning:
 UX
 
  * https://hackdesign.org/lessons/1
+ * 
+ 
+
+## Database
+
+   * https://www.rethinkdb.com/ for real time, has a ReQL Query Language
