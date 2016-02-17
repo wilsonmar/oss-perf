@@ -73,9 +73,13 @@ Additional resources for learning:
 UX
 
  * https://hackdesign.org/lessons/1
- * 
  
 
-## Database
+## Rethink Database
 
-   * https://www.rethinkdb.com/ for real time, has a ReQL Query Language
+   * https://www.rethinkdb.com/ for real time, has a ReQL Query Language. @rethinkdb
+   * https://zapier.com/zapbook/rethinkdb/slack/
+   * React change feeds update in real time
+   * rethinkdb @thinkerbooth
+   * 
+   
