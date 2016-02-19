@@ -38,3 +38,11 @@ make diffs look better by piping output
    ```
 git diff --color | diff-so-fancy
    ```
+
+   Install it:
+   
+   ```
+   npm install -g diff-so-fancy
+   ```
+   
+   
