@@ -2,15 +2,24 @@ This chapter describes git and other source code version control systems that st
 
 <a name="VisualStudio">
 ## Visual Studio IDE</a>
-Assuming that you have Visual Studio 2012 installed on your Windows 7 machine:
+For Visual Studio 2013 or later, Git support is built in and doesn't require any plugin installation.
+In Options, under Source Control, enable "Microsoft Git Provider".
 
-0. Use an internet browser to get to URL
-https://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c
-Visual Studio Tools for Git</a>
-is an extension built by the TFS Power Tools Team within Microsoft to work within VS Team Explorer to provide source control integration for Git.  This extension enables integration with any local Git repository, and provides tools to work with Github and other third party hosted Git repositories. The extension also enables the use of Team Foundation Service hosted Git projects.
+   * http://stackoverflow.com/questions/19892232/how-to-connect-visual-studio-2012-with-git-github
+
+But assuming that you have
+<a target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=39305">
+Update 4</a> of 
+ <strong>Visual Studio 2012 
+ installed on your Windows 7 machine:
+
+0. Use an internet browser to get to 
+<a target="_blank" href="https://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c">
+Visual Studio Tools for Git</a>,
+a free extension built by the TFS Power Tools Team within Microsoft to work within VS Team Explorer to provide source control integration for Git.  This extension enables integration with any local Git repository, and provides tools to work with Github and other third party hosted Git repositories. The extension also enables the use of Team Foundation Service hosted Git projects.
 
    Microsoft, which makes Visual Studio IDE, also sells a competing product called TFS (Team Foundation Server).
-   This add-in tries to mimic that product (with limited success).
+   The UI of this add-in tries to mimic that product (with limited success).
 
 0. Click Download of file Microsoft.TeamFoundation.Git.Provider.msi.
 
