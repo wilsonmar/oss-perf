@@ -9,8 +9,8 @@ https://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb9
 Visual Studio Tools for Git</a>
 is an extension built by the TFS Power Tools Team within Microsoft to work within VS Team Explorer to provide source control integration for Git.  This extension enables integration with any local Git repository, and provides tools to work with Github and other third party hosted Git repositories. The extension also enables the use of Team Foundation Service hosted Git projects.
 
-Microsoft, which makes Visual Studio IDE, also sells a competing product called TFS (Team Foundation Server).
-This add-in tries to mimic that product (with limited success).
+   Microsoft, which makes Visual Studio IDE, also sells a competing product called TFS (Team Foundation Server).
+   This add-in tries to mimic that product (with limited success).
 
 0. Click Download of file Microsoft.TeamFoundation.Git.Provider.msi.
 
