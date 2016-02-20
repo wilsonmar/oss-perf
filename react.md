@@ -1,4 +1,4 @@
-This page describes how to learn and make use of React
+﻿This page describes how to learn and make use of React
 at an enterprise level.
 
 React is used to develop dynamic SPA UI running on modern browsers
@@ -95,23 +95,6 @@ Listed below in order of complexity:
 
     Contrast vs. https://github.com/suitcss/suit/blob/master/doc/README.md
 
- 0. <a href="#Reapp">Reapp</a> seems the most complete.
-    Alas, the main contributor Nate Wienert (https://github.com/natew) 
-    is not maintaining it, but there hasn't been any blogpost or message on the reapp website telling developers that the framework is no longer maintained, which we think is a rather poor way of discontinueing an open source project.
-
- 0. https://github.com/touchstonejs/touchstonejs
-    http://touchstonejs.io is the next hope.
-
- 0. So React Native is still the way to go.
-    https://www.udemy.com/reactnative/learn/#/ with
-    https://github.com/StephenGrider/ReactNativeCasts
-    shows how to use ES5 to build a list app
-    using default properties and text formatting functions.
-
-   <img width="999" alt="react redux flow" src="https://cloud.githubusercontent.com/assets/300046/12704033/af5bc36c-c806-11e5-8bd9-a2bfbcde35a5.png">
-
-
-
 
 The unicorn boilerplate contains several libraries that can be 
 leveraged by other React apps:
@@ -136,9 +119,6 @@ To work with React-Native:
 
 Each repo installs depdendencies in either the global cache or in its own
 <strong>node_modules</strong> subfolder. 
-
-NOTE: React Native mobile apps need to have all dependencies in node_modules so the app runs stand-alone.
-
 0. Update the npm cache:
 
    ```
@@ -378,47 +358,6 @@ React.DOM.div( {className:"Module"},
 )
    ```
 
-
-<a name="MobileStyles">
-### Styles</a>
-On a React native mobile app, text is specified between `<Text>` and `</Text>` encapsulated within a View.
-
-   ```
-    return <View style={styles.container}>
-       <Text> Days of the week:
-       </Text>
-    </header>;
-   ```
-
-These require at the top:
-
-   ```
-var Text = React.Text;
-var View = React.View;
-   ```
-
-Alternately, the above can be written as:
-
-   ```
-var {
-  Text,
-  View,
-  AppRegistry
-} = React;
-   ```
-
-NOTE: In a mobile React app, instead of CSS are this esoteric commands:
-
-   ```
-var styles = StyleSheet.create({
-   container: {
-      flex: 1,
-      justifyContent: 'center', // moves stuff height wise
-      alignItems: 'center' // moves stuff width wise
-      backgroundColor: '#F5FCFF',
-}
-});
-   ```
 
 <a name="MoreJSX">
 ## For more on JSX</a>
@@ -823,11 +762,6 @@ Sensha using Cordova libraries that renders JavaScript within a browser view on 
 Although not as fast as native rendering, this technology can accomodate
 very complex interaction workflows.
 
-<a name="NativeAlternatives">
-### Alternatives to React Native</a>
-React Native converts code into
-UI elements native to the app, using Andorid Java and
-nearly as if Swift was used to write the iOS app.
 
 <a name="ReactWebAlternatives">
 ### Alternatives to React Web</a>
@@ -905,10 +839,6 @@ for different identityProperty.
 Random thoughts here:
 
 
-
-   NOTE: There is currently no built-in scrolling within React Native,
-   such as two-finger swipping.
-
 * https://scotch.io/tutorials/make-a-mobile-app-with-reactjs-in-30-minutes
 
 
@@ -972,46 +902,12 @@ because it responds to Socket.io which
 * https://www.codementor.io/tips/0175438572/using-socket-io-with-rethinkdb-changefeeds-to-build-a-reactive-backend
 
 
-
-<a name="ReactNative">
-## React Native</a>
-
-React Native apps downloaded in mobile app stores (Google Play, Apple, Amazon, etc.)
-make use of JavaScript Core in apps:
-
- * http://trac.webkit.org/wiki/JavaScriptCore
-
- * http://testdroid.com/tech/testing-react-native-apps-on-android-and-ios
-   recommends using Appium
-   over Robotium.
-
-
-0. In a Terminal in the weekdays folder, run npm start
-0. In XCode, click the play button to create an iPhone simulator.
-
-   WARNING: Recent smartphones have higher resolution than what many
-   laptop display can render.
-
-0. Press command+Tab to switch to the simulator window.
-
-   "Welcome to React Native!" is from the sample app.
-
-0. In Finder, open file <strong>index.ios.js</strong> with (using) your IDE.
-0. Change something. Save it. Press command+R to see it in the simulator.
-
-0. localhost:8081
-
-
-<a name="TablesReactNative">
-## Tables in React Native</a>
-It is said that 90% of iOS apps display tables.
-
-
 <a name="Newsletters">
 ## Newsletters</a>
 
  * http://reactkungfu.com/
  * https://reactjsnews.com/ 
+
 
 <a name="Resources">
 ## Resources for learning</a>
