@@ -10,12 +10,45 @@ React was open-sourced by Facebook, and thus its Github location:
  * https://facebook.github.io/react-native/ rendered from
    https://github.com/facebook/react-native
 
-However, to get started, we'll first look at sample React Native apps.
+
+
+To get started, we'll first look at sample React Native apps.
 
 Before we do that, most tutorials assume developer utilities are installed:
 
+
+<a name="SetupReactNative">
+## Setup React Native</a>
+
+Each repo installs dependencies in either the global cache or in its own
+<strong>node_modules</strong> subfolder. 
+
+   NOTE: React Native mobile apps need to have all dependencies stored in node_modules 
+   so the app runs stand-alone.
+
+0. Update the npm cache:
+
+   ```
+   npm update
+   ```
+
+0. Install globally from any folder:
+
+   ```
+  npm install -g react-native-cli
+   ```
+
+0. For a list of what's in the global cache:
+
+   ```
+npm list -g
+   ```
+
 <a name="SetupWindows">
-## Setup on Windows</a>
+## Setup on Windows for Android</a>
+
+![released 15 September 2015](https://code.facebook.com/posts/1189117404435352)
+
 To work with React-Native on a Windows 7 or 10 machine:
 
   * https://facebook.github.io/react-native/docs/android-setup.html
@@ -31,16 +64,15 @@ To work with React-Native on a Windows 7 or 10 machine:
 
 To use it with react-native you just have to add a key and value to your registry:
 
-    Open the Run Command (Windows+R)
-    Enter regedit.exe
-    In the Registry Editor navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools
-    Right Click on Android SDK Tools and choose New > String Value
-    Set the name to Path
-    Double Click the new Path Key and set the value to C:\Program Files\Android\sdk. The path value might be different on your machine.
-
-You will also need to run the command adb reverse tcp:8081 tcp:8081 with this emulator.
-
-Then restart the emulator and when it runs you can just do react-native run-android as usual.
+0.    Open the Run Command (Windows+R)
+0.    Enter regedit.exe
+0.    In the Registry Editor navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools
+0.    Right Click on Android SDK Tools and choose New > String Value
+0.    Set the name to Path
+0.    Double Click the new Path Key and set the value to C:\Program Files\Android\sdk. The path value might be different on your machine.
+0. Run the command adb reverse tcp:8081 tcp:8081 with this emulator.
+0. Restart the emulator
+0. Do react-native run-android as usual.
 
 
 <a name="SetupMac">
@@ -50,40 +82,23 @@ To work with React-Native on a Mac:
 
 0. Install XCode from the Apple AppStore, which takes up 2 Gigabytes.
 0. Install Command Line Tools from menu Xcode -> Preferences -> Downloads
-
-Each repo installs dependencies in either the global cache or in its own
-<strong>node_modules</strong> subfolder. 
-
-   NOTE: React Native mobile apps need to have all dependencies stored in node_modules 
-   so the app runs stand-alone.
-
-0. Update the npm cache:
-
-   ```
-   npm update
-   ```
-
-0. Install:
-
-   ```
-  npm install -g react-native-cli
-   ```
-
-0. For a list of what's in the global cache:
-
-   ```
-npm list -g
-   ```
    
-<a name="Addons">
-## Addons</a>
+0. To use React Native for developing Android apps, 
+   set environment variable ANDROID_HOME to the absolute path of the directory containing the Android SDK. 
 
-Make use of smartphone:
+	
+   ```
+export ANDROID_HOME=/path/to/Android/Sdk
+   ```   
 
- * Send Email, SMS, voicemail, fax
- * Take picture, video
+<a name="EntryPoint">
+## Create Entry Point</a>
+Unlike web desktop React apps which uses index.html,
+React Native compiler for Android looks for a file named <strong>index.android.js</strong>.
 
-
+  ```
+var React = require('react-native');
+   ```
 
 <a name="DevApproaches">
 ## Development Approaches</a>
@@ -120,15 +135,31 @@ There are several approaches to developing mobile apps:
    from "How React Native Works" in <a href="#Swanepoel_2015">Swanepoel's tutorial</a>.
 
    0. Developers code in JSX declarative mark-up, as with normal React coding.
+
    0. The Reactive Native compiler creates JavaScript
-   0. JSCore bridge loads into JavaScriptCore
+
+   0. JSCore bridge loads into <a target="_blank" href="http://trac.webkit.org/wiki/JavaScriptCore">
+      JavaScriptCore</a>, the same JavaScript engine that powers Apple’s Safari.
+
    0. Objective-C code is then compiled as other native iOS code.
 
 
    <img width="999" alt="react redux flow" src="https://cloud.githubusercontent.com/assets/300046/12704033/af5bc36c-c806-11e5-8bd9-a2bfbcde35a5.png">
 
+
 <a name="SampleApps">
 ## Sample Apps</a>
+
+* https://github.com/facebook/react-native/tree/master/Examples
+  has several examples: 
+
+   * ![Movies](https://github.com/facebook/react-native/tree/master/Examples/Movies) 
+     demonstrates basic concepts, such as fetching data, 
+    rendering a list of data including images, and navigating between different screens.
+
+   * TicTacToe
+   * UIExplorer
+   * 2048 game
 
 *   ??? in the Android Play store
     was developed based on the tutorial at
@@ -143,10 +174,12 @@ There are several approaches to developing mobile apps:
    and the library at:
 
 
-   ```
-<script src="https://facebook.github.io/react/js/jsfiddle-integration-babel.js"></script>
+<a name="i18n">
+## Internationalization</a>
 
-   ```
+The app that I show makes use of the internationalization library from Yahoo.
+
+
 
 
 <a name="Reapp">
@@ -257,6 +290,10 @@ react-native init MyApp
    ```
 
 
+var Dictionary = React.createClass({
+ 
+});
+
 
 
 <a name="Features">
@@ -267,8 +304,19 @@ Various views and components:
 0. Tabs
 0. Search
 0. Breadcrumbs
+0. Table view
 
 Call Objective-C code from React Native code.
+
+<a name="Addons">
+## Addons</a>
+
+Make use of smartphone:
+
+ * Send Email, SMS, voicemail, fax
+ * Take picture, video
+
+
 
 
 
@@ -320,6 +368,16 @@ make use of JavaScript Core in apps:
  * http://trac.webkit.org/wiki/JavaScriptCore
 
 
+<a name="TablesReactNative">
+### Tables in React Native</a>
+It is said that 90% of iOS apps display tables.
+
+
+   NOTE: There is currently no built-in scrolling within React Native,
+   such as two-finger swipping.
+
+
+
 <a name="TestingReactNative">
 ## Testing React Native</a>
 
@@ -344,15 +402,6 @@ make use of JavaScript Core in apps:
 0. Change something. Save it. Press command+R to see it in the simulator.
 
 0. localhost:8081
-
-
-<a name="TablesReactNative">
-### Tables in React Native</a>
-It is said that 90% of iOS apps display tables.
-
-
-   NOTE: There is currently no built-in scrolling within React Native,
-   such as two-finger swipping.
 
 
 
@@ -418,3 +467,13 @@ var styles = StyleSheet.create({
    React for Web Developers live course March 17 - April 14
    by Jonathan Stark
    
+ * https://tmail21.com/startup-stories/why-our-startup-chose-react-native-and-what-we-learned/
+   say they abandoned Ionic for React Native.
+
+ * http://code.tutsplus.com/tutorials/creating-a-dictionary-app-using-react-native-for-android--cms-24969
+
+ * https://egghead.io/series/react-native-fundamentals
+   ($20/month)   
+   by Tyler McGinnis has 17 video modules
+   on the Notes view.
+  

@@ -3,14 +3,18 @@ This chapter describes git and other source code version control systems that st
 <a name="VisualStudio">
 ## Visual Studio IDE</a>
 For Visual Studio 2013 or later, Git support is built in and doesn't require any plugin installation.
-In Options, under Source Control, enable "Microsoft Git Provider".
+
+  * https://www.visualstudio.com/en-us/get-started/code/gitquickstart
+
+For Visual Studio 2012,
+in Options, under Source Control, enable "Microsoft Git Provider".
 
    * http://stackoverflow.com/questions/19892232/how-to-connect-visual-studio-2012-with-git-github
 
 But assuming that you have
 <a target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=39305">
 Update 4</a> of 
- <strong>Visual Studio 2012 
+ <strong>Visual Studio 2012</strong>
  installed on your Windows 7 machine:
 
 0. Use an internet browser to get to 

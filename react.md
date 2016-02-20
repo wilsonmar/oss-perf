@@ -12,6 +12,14 @@ The React.js logo ( bit.ly/reactjs-logo - changes were made ) belongs to Faceboo
  * https://facebook.github.io/react-native/ rendered from
    https://github.com/facebook/react-native
 
+
+To use Babble within JSFiddle:
+
+   ```
+<script src="https://facebook.github.io/react/js/jsfiddle-integration-babel.js"></script>
+
+   ```
+
 However, to get started, we'll look at sample React apps.
 
 Before we do that, most tutorials assume developer utilities are installed:
