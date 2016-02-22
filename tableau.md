@@ -223,6 +223,8 @@ There are several ways to open a Tableau client program:
 
 0. Click the red x at the upper left corner to close the program.
 
+<a name=“DataAlteryx”>
+## Data Transformation using Alteryx</a>
 
    NOTE: In 2015 Tableau did not have an ETL tool.
    Tableau add-in Alteryx for groups wanting true self-service ETL
