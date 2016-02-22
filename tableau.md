@@ -26,7 +26,7 @@ By "traditional" it means:
  * http://www.xdat.org/
 
 Gartner notes "Tableau does not directly compete with other vendors with a strategy for being a broad BI platform offering. Tableau complements fully functional enterprise BI platforms that lack ADV capabilities."
-That is why <a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> This Forrester report (although rather dated from 2012)</a> has Tableau behind strategy:
+That is why <a target="_blank" href="http://www.tableau.com/learn/whitepapers/forrester-advanced-data-visualization-platforms"> This Forrester report (although rather dated from 2012)</a> has Tableau behind others on the strategy dimension:
 
 <img width="550" alt="tableau forrester adv 2013" src="https://cloud.githubusercontent.com/assets/300046/12010835/88925420-ac73-11e5-9797-b0d484db016b.png">
 
