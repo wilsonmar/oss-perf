@@ -310,3 +310,5 @@ There are several courses on Coursera.org
 
  * https://www.youtube.com/watch?v=v-91JycaKjc From the Lab to the Factory: Building a Production Machine Learning
   by Josh Wills (@josh_wills) is the Senior Director of Data Science at Cloudera
+
+ * http://datasciencedojo.com/bootcamp/curriculum/ gives a 5-day overview of Data Science for $2500.
