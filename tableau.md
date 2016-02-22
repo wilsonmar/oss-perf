@@ -2,12 +2,12 @@ This page provides an enhanced / deeper sequence to presenting Tableau based on 
 
  * http://www.tableau.com/learn/starter-kit provides a learning sequence with clickable links to materials.
 
-Tableau is a complete Data Analytics platform enabling everyone to gain
-insights from raw data. It makes working with data universally accessible.
+Tableau enables everyone to gain insights from raw data by providing a drag-and-drop UI working on data in many formats.
+In the biz it's called a visual Data Analytics platform. 
 
 <a id="Advanced">
 ## Alternatives to Advanced Data Analytics</a>
-Tableau's promo video at http://www.tableau.com/products#video says
+Tableau's promo video at http://www.tableau.com/products#video says:
 
 * [0:30] "People build dashboards and applications like these, drag and drop, at up to 10 times the speed of a traditional business intellegence system".
  
