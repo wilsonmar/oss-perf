@@ -11,6 +11,8 @@ Tableau's promo video at http://www.tableau.com/products#video says:
 
 * [0:30] "People build dashboards and applications like these, drag and drop, at up to 10 times the speed of a traditional business intellegence system".
  
+By "traditional" it means:
+
  * Microsoft Power BI, Power Pivot, and Power View in Excel 2013, see http://www.jenunderwood.com/2014/01/02/understanding-the-differences-microsoft-power-bi-and-tableau/ and http://www.jenunderwood.com/blog.htm#BetterTogether
 
  * IBM Cognos Insight,
