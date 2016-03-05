@@ -22,6 +22,8 @@ it’s natural for us to develop framework as **open source** on public github r
 <a name="Narrative"> 
 ## Narrative of diagram</a>
 
+[![Join the chat at https://gitter.im/wilsonmar/oss-perf](https://badges.gitter.im/wilsonmar/oss-perf.svg)](https://gitter.im/wilsonmar/oss-perf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 | Capabilities | Components |
 | ----------- | ---------- |
 | Our concern is the ability of <strong>servers</strong> running individually and within a cluster to | <a href="app-under-test.md">app server</a> |
