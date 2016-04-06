@@ -22,49 +22,6 @@ by making a lagre number of REST APIs governable, shareable, and human-readeable
 
 Swagger's focus is currently serving Node.js developers.
 
-
-<a id="Alternatives">
-### Alternatives to Swagger</a>
-
-|   | Swagger | <a href="#RAML">RAML</a> | API-Blueprint |
-| --- | --- | --- | --- |
-| Format:  | JSON | YAML | Markdown |
-| Sponsor: | <a href="#Who">Reverb</a> | <a target="_blank" href="http://mulesoft.com/">Mulesoft</a> | Apiary |
-| Initial: | July, 2011 | Sep, 2013 | April, 2013 |
-| Approach: | Bottom-up | Top-down | Top-down |
-
-Other alternatives to Swagger Core include:
-
-  * <a target="_blank" href="http://github.com/mashery/iodocs"> IO-Docs</a> from <a target="_blank" href="http://mashery.com/product/io-docs">Mashery</a> (licensed).
-  * <a target="_blank" href="http://jsondoc.org/">JASONDoc</a> has a 
-<a target="_blank" href="https://github.com/jdorn/json-editor">Editor</a> that reads a JSON Schema
-    and generates an HTML form to manipulate it.
-  * <a target="_blank" href="http://Apiary.io">Apiary.io</a> (licensed)
-  * <a target="_blank" href="http://www.w3.org/TR/wsdl/">WSDL</a> 
-  * <a target="_blank" href="http://en.wikipedia.org/wiki/Web_Application_Description_Language">WADL (Web Application Description Language) generated to describe SOAP are not viable for REST API because they do not include enough information.
-
-<a id="RAML"></a>
-RAML (at <a target="_blank" href="http://raml.org/"> RAML</a>)
-can reuse WADL (pronounced "waddle") 
-introspection logic of 
-<a target="_blank" href="http://restlet.com/">Restlet Framework resources</a>
-developed by Java (SE/EE, Google AppEngine, OSGi, GWT, Android) 
-REST API developers using the Restlet Studio and the APISpark cloud managed by
-Reslet based in France with an office in Palo Alto.
-
-Reslet (in Oct. 2015) bought Czech Filip Kolařík's 
-<a target="_blank" href="https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm">
-DHC (Dev HTTP Client) Chrome Add-in</a> and https://www.sprintapi.com/dhcs.html
-to test and debug web APIs
-
-Swagger2RAML converts Swagger JSON to RAML YAML.
-
-
-<a id="[1]"></a>
-https://www.youtube.com/watch?v=vu8_QLkW1mg
-API Description Languages: Which One Is Right For Me?
-Aug. 15, 2014 by Laura dot Heritage at soa.com (Akana, formerly SOA Software).
-
 <a id="Who">
 ### Who built Swagger?</a>
 
