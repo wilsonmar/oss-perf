@@ -15,6 +15,9 @@ Introduction to Elastic 2.0 Overview</a>.
     NOTE: Data in versions before Elastic 2.0 would need to be migrated up using the tool Elastic provided
     because its indexes are different.
 
+   Alternately, <a target="_blank" href="https://elements.heroku.com/addons/bonsai">
+   Bonsai on Heroku</a> is also free.
+
 0. Read Zach's book on the ELK stack (if you haven't already).
 
 
