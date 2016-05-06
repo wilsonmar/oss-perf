@@ -65,7 +65,7 @@ it’s natural for us to develop framework as **open source** on public github r
 | as well as tracing from network captures. | <a href="network-mon.md">Network trace</a> |
 | Finding root causes requires all this sensor data to be collected and digested together. |<a href="logstash.md"> Logstash</a> |
 | Since there can be a large number of logs, intermediate servers (such as RabbitMQ) may be added.  |<a href="logstash-setup.md"> Logstash setup</a> |
-| Indexing data over time and various other dimensions | <a href="elastisearch.md">ElastiSearch</a> |
+| Indexing data over time and various other dimensions | <a href="elasticsearch.md">ElasticSearch</a> |
 | enables us to filter and sort data creatively for insights. | <a href="kibana.md">Kibana</a> |
 | One key insight is understanding why individual spikes or drops occur. This is why, instead of summarizing data, we need to export and archive detailed data, then import them back later | <a href="import-export.md">import-export</a> |
 | so we can compare fine-grained data across several releases. | compare |
