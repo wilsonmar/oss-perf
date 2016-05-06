@@ -63,7 +63,7 @@ it’s natural for us to develop framework as **open source** on public github r
 | Analysis of the impact from load imposed over time | loadtest logs |
 | need to be correlated to the same time context of logs from operating systems and app servers | app server logs |
 | as well as tracing from network captures. | <a href="network-mon.md">Network trace</a> |
-| Finding root causes requires all this sensor data to be collected and digested together. |<a href="logstash-setup.md"> Logstash</a> |
+| Finding root causes requires all this sensor data to be collected and digested together. |<a href="logstash.md"> Logstash</a> |
 | Since there can be a large number of logs, intermediate servers (such as RabbitMQ) may be added.  |<a href="logstash-setup.md"> Logstash setup</a> |
 | Indexing data over time and various other dimensions | <a href="elastiSearch.md">ElastiSearch</a> |
 | enables us to filter and sort data creatively for insights. | <a href="kibana.md">Kibana</a> |
