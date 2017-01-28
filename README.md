@@ -42,13 +42,13 @@ it’s natural for us to develop framework as **open source** on public github r
 | To **predict** what load a system might be really able to deliver, we artificially <strong>generate load</strong> on servers by programs taking the place of humans typing on browsers and mobile devices. | <a href="loadgen-server.md">load gen</a> |
 | The sequence and logic of actions are provided by emulation (JMeter) scripts that | <a href="jmeter-scripting.md">JMeter scripts</a> |
 | reference (sham) data generated to avoid using sensitive or personal identification information. | <a href="#sham-data">sham data</a> |
-| To ensure code quality, <strong>static scans</strong> of source code (using perhaps SonarQube) are run according to rules defined by the team. | <a href="#sonarqube.md">SonarQube</a> |
+| To ensure code quality, <strong>static scans</strong> of source code (using perhaps SonarQube) are run according to rules defined during team code inspection discussions. | <a href="#sonarqube.md">SonarQube</a> |
 | During development, testing, and deployment, <strong>external vendor APIs</strong> are often used by apps to send email, SMS, get vendor inventory status, etc. | <a href="apis.md">External APIs</a> |
-| So we mock those dependency services (using Wiremock) to ensure constant access. This also enables us to artificially vary vendor response time to see their consequence in our system. | <a href="#wirehock.md">Wiremock</a> |
-| The amount of time and how often each line of code was executed can be analyzed using profiler software. | <a href="profiler.md">profiler</a> |
-| But that often requires repeatable execution of the same scenarios. So on desktop browsers, | <a href="selenium.md">Selenium Web Driver</a> |
-| we use code that manipulate the browser UI like real people do, | Selenium code |
-| just as we control mobile native apps | <a href="appium-driver.md">Appium Driver</a> |
+| So we mock those dependency services (using Wiremock) to ensure constant access. This also enables us to artificially vary vendor response times to see their consequence in our system, such as fail-over behavior. | <a href="#wirehock.md">Wiremock</a> |
+| The amount of time and how often each line of code was executed can be analyzed using <strong>profiler</strong> software invoked by and IDE (IntelliJ or Eclipse). | <a href="profiler.md">profiler</a> |
+| But that requires repeatable execution of the same scenarios. Thus: | <a href="selenium.md">Selenium Web Driver</a> |
+| On desktop browsers, code run by a Robot framework manipulates the browser UI like real people do, | Robot framework, Selenium |
+| On mobile devices, there are also robot frameworks to control them | <a href="appium-driver.md">Appium Driver</a> |
 | using (Appium) mobile app test automation code. | <a href="appium-code.md">Appium Code</a> |
 | The **timing** of each manual action during functional test script execution can be captured and stored to automatically detect changes in response time. | timings |
 | The size and download time of each file can be optionally captured | <a href="browsermob-proxy.md">BrowserMob Proxy</a> |
