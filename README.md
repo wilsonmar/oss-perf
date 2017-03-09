@@ -2,7 +2,8 @@
 <a name="Diagram"> 
 The diagram below is <a target="_blank" href="http://www.youtube.com/watch?v=WnVCUzCO1CI">
 gradually revealed in this video
-<img alt="oss-perf-flow-v12" src="https://cloud.githubusercontent.com/assets/300046/12682771/2e17337e-c66a-11e5-9d22-9f5b67eadc1b.png"></a>
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/23730045/54aaf1c6-0433-11e7-97eb-da4b8949d0dc.png">
+<img alt="oss-perf-flow-v14" src="https://cloud.githubusercontent.com/assets/300046/23730045/54aaf1c6-0433-11e7-97eb-da4b8949d0dc.png"></a>
 <a href="#Narrative">Click here for narrative text below</a>.
 
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
