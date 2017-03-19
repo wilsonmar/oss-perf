@@ -23,6 +23,8 @@ edit the file, and send us a pull request. Better yet,
 Organizations not in the business of selling performance engineering software and services to the public, 
 it’s natural for us to develop framework as **open source** on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
 
+<a name="Narrative"></a>
+
 ## Narrative
 
 Here we gradually reveal a map of an "end state" of relationships among various categories of tools that enable DevOps and Agile. This is so we can optimize the stack of apps in servers and firewalls serving customers using various devices, including mobile.
@@ -121,8 +123,10 @@ So here you go, a template to shift tuning earlier and throughout the lifecycle 
 | It takes a tremendous amount of attention and skill to be the "air traffic controller" to a complex mix of clustered servers. So we want to make use of recent advances in statistical data science and "Machine learning" which can scan the database to dynamically identify thresholds and issue alerts. | <a href="machine-learning.md">DS & machine learning</a> |
 | And since people can be overwhelmed by too many alerts and emails, we also recommendations to helping us focus on the most effective action among the cascade of events. | schedule |
 
-<a name="Background">
-## Background Why</a>
+<a name="Background"></a>
+
+## Background Why
+
 Here is what even commercial vendors have not yet delivered:
 
 A. **Eliminate errors** in program coding source by **automatic generation of programming code** 
@@ -156,8 +160,10 @@ So Kibana would replace what Blazemeter displays.
 
 
 
-<a name="Authors">
-## Authors </a>
+<a name="Authors"></a>
+
+## Authors
+
 Contact information for authors of this repo:
 
 Wilson Mar, @wilsonmar, https://www.linkedin.com/in/wilsonmar
