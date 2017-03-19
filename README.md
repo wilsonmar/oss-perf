@@ -11,10 +11,7 @@ gradually revealed in this video<br />
 
 [![Join the chat at https://gitter.im/wilsonmar/oss-perf](https://badges.gitter.im/wilsonmar/oss-perf.svg)](https://gitter.im/wilsonmar/oss-perf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Narrative
-
-   Different colors in the diagram represent "ownership" (who does what) within a particular organization.
-   Other organizations will like use different colors to indicate status.
+## About this diagram
 
 This was created in response to the need for a **more nimble, comprehensive, yet lower cost** approach to
 measure and thus improve the speed, capacity, and reliability of high-traffic web and native mobile apps,
@@ -26,6 +23,47 @@ edit the file, and send us a pull request. Better yet,
 Organizations not in the business of selling performance engineering software and services to the public, 
 it’s natural for us to develop framework as **open source** on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
 
+## Narrative
+
+Here we gradually reveal a map of an "end state" of relationships among various categories of tools that enable DevOps and Agile. This is so we can optimize the stack of apps in servers and firewalls serving customers using various devices, including mobile.
+
+We begin with Collaboration tools as a fundamental enabler. Society as a whole is now able to move faster by augmenting email with use of (IM) immediate messaging (such as Skype) and SMS text messaging on smart phones. 
+
+What began on wiki's (such as Confluence) are shifting to videos because they help us better appreciate time sequences. Video recordings convey the performance and functional flow of apps much quicker. Experts such as Gene Kim note that to optimize quality, performance, cost, we should focus first on cycle time. 
+
+Other tool strategies include Intelligent Alerts, Shift-Left, and Integrated tuning. In this diagram we use a different color for each strategy. BTW, in this diagram we purposely describe categories of tools because there are usually several tools for each category. 
+Faster provisioning to setup new servers is a key success factor in a DevOps transformation. 
+Specific tools for provisioning include Docker and Ansible. 
+
+The DevOps concept is to treat hardware not as pets which we would do anything to keep alive, but as "cattle" which we treat as disposable inventory. DevOps means treating configuration settings as code in automated setup which consistently add agents such they are always installed without additional manual effort or forgetting. (Examples are monitoring of Java Garbage Collection)
+
+For consistency and security, installers from vendors and compiled application executables are deployed from an asset repository (such as Artifactory or Nexus). 
+
+We save money by not over-buying servers if we use the best possible combination of configuration settings that control servers. Examples are memory and thread maximums which limit the rate of processing. 
+
+But it is challenging to find that one precise set. So we need to vary different configurations in experiments driven by Data, made-up sham data or cleansed production data.
+
+Efforts to facilitate rapid change depend on efficient Software Version Control (especially Git, which enables small changes to branch and then easily merged together again). 
+
+Rapid iterations require a task runner (such as Jenkins or bamboo) that manage various versions while automating workflows involved in re-building, starting, and stopping of servers. 
+
+Knowing the usable status of servers and the specific version of each component being used is important to avoid wasting time. So we constantly track the availability of each dependency, even mock servers, so we can anticipate down-time patterns based on historical logs. 
+
+Packages to emulate load generation (such as JMeter, LoadRunner, NeoLoad, and others) are now just one part of an overall ecosystem for tuning to achieve time and cost reduction. 
+
+Developers who profile code (using JProfiler with the Eclipse or IntelliJ IDE) often benefit from driver programs (such as Selenium) which exercise the UI automatically. This avoids error-prone manual repetition. This automation can also be used to partly generate load test scripts which are further processed by script utility programs. 
+
+We see more and more example of code generation from data and requirements (such as WSDL, Swagger, and GraphQL) because they save so much time. We also scan code (using programs such as SonarQube) to ensure all coding complies with rules teams have defined to constitute quality.
+
+Analyzing timings to spot individual resource file sizes that are too big is time consuming for testers. So many now use a utility that listens on network traffic while automated UI scripts run. For public networks, Network Virtualization (NV) software can artificially emulate the impact of slow networks experienced by mobile customers. 
+
+Network logs and results from runs, indeed all metrics collected need be managed like an integrated big data set that they really are, collected locally from each server, then sent to a central metric repository from which visualizations can compare and contrast across versions and environments. 
+
+To keep active data small, we export to an archive, then import back for historical comparisons. Ideally, graphs enable use to compare current metrics against reference data such as projections, budgets, and other context so we can see whether what is occurring violates thresholds defined for action. 
+
+But the large amount of complex information now is more than what individual people watching screens can assimilate. To issue Alerts more quickly and to accommodate various perhaps conflicting schedules, a comprehensive automated watcher is necessary -- a program that dynamically tunes action thresholds.
+
+So here you go, a template to shift tuning earlier and throughout the lifecycle for faster delivery through automation and Intelligent alerts for tuning.
 
 <a name="Components"></a>
 
