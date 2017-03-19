@@ -7,7 +7,11 @@ gradually revealed in this video<br />
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png">
 <br />Click to pop-up full screen image</a>
 
-<a href="#Narrative">Click here for narrative text below</a>.
+<a href="#Components">Click here for details on each component</a>.
+
+[![Join the chat at https://gitter.im/wilsonmar/oss-perf](https://badges.gitter.im/wilsonmar/oss-perf.svg)](https://gitter.im/wilsonmar/oss-perf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+## Narrative
 
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
    Other organizations will like use different colors to indicate status.
@@ -23,10 +27,7 @@ Organizations not in the business of selling performance engineering software an
 it’s natural for us to develop framework as **open source** on public github repos so we can share the benefits as well as development costs, but also to ensure continuity of skills and effort. 
 
 
-<a name="Narrative"> 
-## Narrative of diagram</a>
-
-[![Join the chat at https://gitter.im/wilsonmar/oss-perf](https://badges.gitter.im/wilsonmar/oss-perf.svg)](https://gitter.im/wilsonmar/oss-perf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<a name="Components"></a>
 
 | Capabilities | Components |
 | ----------- | ---------- |
