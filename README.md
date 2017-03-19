@@ -1,11 +1,11 @@
 <a id="TheVision"></a>
 <a name="Diagram"> 
 The diagram below is <a target="_blank" href="http://www.youtube.com/watch?v=oNiAVL0DS8Y">
-gradually revealed in this video
+gradually revealed in this video<br />
+<img alt="oss-perf-flow-v20" src="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png"></a>
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png">
-<img alt="oss-perf-flow-v20" src="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png"><br />Click to pop-up full screen image</a>
-
+<br />Click to pop-up full screen image</a>
 
 <a href="#Narrative">Click here for narrative text below</a>.
 
