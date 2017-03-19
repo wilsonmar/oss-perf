@@ -1,9 +1,12 @@
 <a id="TheVision"></a>
 <a name="Diagram"> 
-The diagram below is <a target="_blank" href="http://www.youtube.com/watch?v=WnVCUzCO1CI">
+The diagram below is <a target="_blank" href="http://www.youtube.com/watch?v=oNiAVL0DS8Y">
 gradually revealed in this video
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/23730045/54aaf1c6-0433-11e7-97eb-da4b8949d0dc.png">
-<img alt="oss-perf-flow-v14" src="https://cloud.githubusercontent.com/assets/300046/23730045/54aaf1c6-0433-11e7-97eb-da4b8949d0dc.png"></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oNiAVL0DS8Y" frameborder="0" allowfullscreen></iframe>
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png">
+<img alt="oss-perf-flow-v20" src="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png"><br />Click to pop-up full screen image</a>
+
 <a href="#Narrative">Click here for narrative text below</a>.
 
    Different colors in the diagram represent "ownership" (who does what) within a particular organization.
