@@ -65,7 +65,10 @@ But the large amount of complex information now is more than what individual peo
 
 So here you go, a template to shift tuning earlier and throughout the lifecycle for faster delivery through automation and Intelligent alerts for tuning.
 
+
 <a name="Components"></a>
+
+## Capabilities and components
 
 | Capabilities | Components |
 | ----------- | ---------- |
