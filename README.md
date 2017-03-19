@@ -2,10 +2,10 @@
 <a name="Diagram"> 
 The diagram below is <a target="_blank" href="http://www.youtube.com/watch?v=oNiAVL0DS8Y">
 gradually revealed in this video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oNiAVL0DS8Y" frameborder="0" allowfullscreen></iframe>
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png">
 <img alt="oss-perf-flow-v20" src="https://cloud.githubusercontent.com/assets/300046/24084104/6e20beb2-0cba-11e7-9ab1-8159b375cc5d.png"><br />Click to pop-up full screen image</a>
+
 
 <a href="#Narrative">Click here for narrative text below</a>.
 
